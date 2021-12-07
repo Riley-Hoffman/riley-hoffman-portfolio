@@ -31,7 +31,19 @@ section {
 @import './partials/footer';
 @import './partials/media-queries';
 
+.iconContainer {
+    height: 16px;
+    overflow: hidden; 
+    margin-bottom: 5px;  
+}
 
+.fa-water {
+    font-size: 2.5rem;
+    color: #17a2aa;
+    margin: 0;
+    transform:rotate(180deg);
+    width: 57px;
+}
 
 .gallery {
     display: grid;

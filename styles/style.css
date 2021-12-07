@@ -422,20 +422,6 @@ form {
   text-decoration: underline;
 }
 
-.line {
-  display: block;
-  margin: -6px 105px 0;
-  background: #00050f;
-  border: 1px solid #17a2aa;
-  height: 5px;
-  width: 205px;
-  /* position: absolute;
-  top: 93%;
-  right: 45.5%; */
-  z-index: 0;
-  opacity: 0.6;
-}
-
 .searchBox {
   display: block;
   position: relative;
@@ -488,16 +474,6 @@ form {
   color: #00050f;
 }
 
-.fa-water {
-  font-size: 2.5rem;
-  color: #ea58a3;
-  margin: 12px 0;
-  opacity: 0.7;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  width: 57px;
-}
-
 .about {
   background-color: #f6f6f6;
   padding: 100px 0;
@@ -516,9 +492,6 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50vw;
-}
-.about .wrapper .fa-water {
-  opacity: 1;
 }
 .about .wrapper figcaption {
   display: -webkit-box;
@@ -672,7 +645,6 @@ footer .footerBody .bottom {
   }
   .searchBox .searchInputOpen {
     width: 100%;
-    /* margin-left: 30px; */
   }
 
   .bottom {
@@ -700,6 +672,21 @@ footer .footerBody .bottom {
   }
 }
 /* Smallest phones */
+.iconContainer {
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.fa-water {
+  font-size: 2.5rem;
+  color: #17a2aa;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 57px;
+}
+
 .gallery {
   display: grid;
   grid-template-rows: 1fr 1fr;
