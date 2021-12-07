@@ -15,6 +15,12 @@ footer {
         > a {
             color: #17a2aa;
         }
+         > a:hover {
+            color: #e5e8ee;
+        }
+        .fa-linkedin:hover, .fa-github:hover {
+            color: #17a2aa;
+        }
         .contactIcons {
             font-size: 2em;
             width: 135px;

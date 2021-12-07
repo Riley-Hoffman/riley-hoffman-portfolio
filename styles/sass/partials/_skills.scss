@@ -1,6 +1,5 @@
 .skills {
     background-color: #e5e8ee;
-    s
     > .wrapper.flexBox {
         justify-content: center;
     }   
@@ -19,5 +18,8 @@
         i {
             font-size: 2.5rem;
         }
+    }
+    li:hover {
+        color: #17a2aa;
     }
 }
