@@ -22,6 +22,7 @@ searchBar.formSubmit = () => {
             searchBar.searchButton.classList.add('rotateButton')
             // enable input
             searchBar.searchInput.disabled = false
+            searchBar.searchInput.focus()
            
             // Highlight text on the page matching user input
             searchBar.queryHighlighter()
