@@ -1,26 +1,29 @@
 // Search Bar
 
-// const searchForm = document.getElementById('searchForm')
-const searchButton = document.getElementById('searchButton')
-const searchInput = document.getElementById('searchInput')
-const searchForm = document.getElementById('searchForm')
-const searchIcon = document.getElementById('fa-search')
-const searchOpen = document.getElementsByClassName('searchInputOpen')
+// Namespace object
+const searchBar = {};
 
-function formSubmit() {
+searchBar.searchButton = document.getElementById('searchButton')
+searchBar.searchInput = document.getElementById('searchInput')
+searchBar.searchForm = document.getElementById('searchForm')
+searchBar.searchIcon = document.getElementById('fa-search')
+searchBar.searchOpen = document.getElementsByClassName('searchInputOpen')
+
+searchBar.formSubmit = () => {
     // Listen for form submission (search icon click)
-    searchForm.addEventListener("submit", function (e) {
+    searchBar.searchForm.addEventListener("submit", function (e) {
         // Stop page refresh
         e.preventDefault()
         
         // If search bar is hidden
-        if (!searchInput.classList.contains('searchInputOpen')) {
+        if (!searchBar.searchInput.classList.contains('searchInputOpen')) {
      
             
             // When magnifying glass is clicked, show search bar
-            searchInput.classList.add('searchInputOpen')
-            searchButton.classList.add('rotateButton')
-            searchInput.disabled = false
+            searchBar.searchInput.classList.add('searchInputOpen')
+            searchBar.searchButton.classList.add('rotateButton')
+            // enable input
+            searchBar.searchInput.disabled = false
            
             // Highlight text on the page matching user input
             queryHighlighter()
@@ -28,24 +31,32 @@ function formSubmit() {
             document.addEventListener("click", function (event) {
                 
                 // if the user clicks outside the form
-                if (event.target != searchInput && event.target != searchButton && event.target != searchIcon) {
-                    searchInput.classList.remove('searchInputOpen')
-                    searchButton.classList.remove('rotateButton')
-                    searchInput.disabled = true
+                if (event.target != searchBar.searchInput && event.target != searchBar.searchButton && event.target != searchBar.searchIcon) {
+                    // hide search bar
+                    searchBar.searchInput.classList.remove('searchInputOpen')
+                    searchBar.searchButton.classList.remove('rotateButton')
+                    // clear input
+                    searchBar.searchInput.value = ''
+                    // disable input
+                    searchBar.searchInput.disabled = true
                     
 
 
                  // if the search button is clicked stop listening for click on document
-                } else if (event.target === searchButton || event.target === searchIcon) {
+                } else if (event.target === searchBar.searchButton || event.target === searchBar.searchIcon) {
                     event.stopPropagation()
                 }
             })
         
         // If search bar is showing 
-        } else if (searchInput.classList.contains('searchInputOpen')) {
-            searchInput.classList.remove('searchInputOpen')
-            searchButton.classList.remove('rotateButton')
-            searchInput.disabled = true            
+        } else if (searchBar.searchInput.classList.contains('searchInputOpen')) {
+            // hide search bar
+            searchBar.searchInput.classList.remove('searchInputOpen')
+            searchBar.searchButton.classList.remove('rotateButton')
+            // clear input
+            searchBar.searchInput.value = ''
+            // disable input
+            searchBar.searchInput.disabled = true
         } 
         
         
@@ -55,7 +66,7 @@ function formSubmit() {
 // Function to hightlist text based on user input
 function queryHighlighter () {
     // Listen for keydown on search input
-    searchInput.addEventListener('keydown', (keystrokes) => {
+    searchBar.searchInput.addEventListener('keydown', (keystrokes) => {
         
         // Get users keystrokes
         const searchText = keystrokes.target.value;
@@ -78,7 +89,14 @@ function queryHighlighter () {
     });
 }
 
-formSubmit()
+searchBar.init = () => {
+    // Listen for Form Submission
+    searchBar.formSubmit()
+}
+
+// Initialize 
+searchBar.init();
+
 
 
 
