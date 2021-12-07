@@ -119,6 +119,9 @@ form {
         transition-timing-function: ease-in-out;
         transition: all 0.5s;
     }
+    .searchInput:focus-visible {
+        outline: 2px solid #17a2aa;
+    }
     .searchButton {
         background: transparent;
         border: none;     
@@ -127,10 +130,14 @@ form {
         position: absolute;
         display: inline-block;
         top: 6%;
-        right: 0;
-        width: 50px;
-        height: 50px;
+        right: 2px;
+        width: 45px;
+        height: 45px;
         padding: 0;
+        border-radius: 50px;
+    }
+    .searchButton:focus {
+        outline: 2px solid #17a2aa;
     }
     .rotateButton {
         transform: rotate(-17deg);
