@@ -1,5 +1,14 @@
 .projects {
     padding: 85px 0;
+    .wrapper.flexBox {
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            color: #e5e8ee;
+            margin-bottom: 40px;
+        }
+    }
 }
+
 
 // test
