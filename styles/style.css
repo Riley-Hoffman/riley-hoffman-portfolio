@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color: #585858;
+  color: #525252FF;
   margin: 10px 0;
 }
 
@@ -329,10 +329,6 @@ header h1 {
   line-height: 1.3;
 }
 
-header h1 span:first-of-type {
-  display: block;
-}
-
 header .navBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -356,8 +352,12 @@ header .navBox ul a {
 }
 
 header .navBox ul a:hover, header .navBox ul a:focus {
-  border-bottom: 1px solid #FF5271;
+  border-bottom: 1px solid #17a2aa;
   outline: none;
+}
+
+form {
+  position: relative;
 }
 
 .headerFlexWrapper {
@@ -388,7 +388,7 @@ header .navBox ul a:hover, header .navBox ul a:focus {
 
 .headerFlexWrapper .headerBodyFlexBox .outlined {
   color: #00050f;
-  text-shadow: -1px -1px 0 #FF5271, 1px -1px 0 #FF5271, -1px 1px 0 #FF5271, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #17a2aa, 1px -1px 0 #17a2aa, -1px 1px 0 #17a2aa, 1px 1px 0 #000;
 }
 
 .headerFlexWrapper .headerBodyFlexBox .indexed.outlined {
@@ -401,7 +401,7 @@ header .navBox ul a:hover, header .navBox ul a:focus {
 }
 
 .headerFlexWrapper .headerBodyFlexBox a {
-  background: #FF5271;
+  background: #17a2aa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,11 +432,11 @@ header .navBox ul a:hover, header .navBox ul a:focus {
 
 .line {
   display: block;
-  margin: -9px 175px 0;
+  margin: -6px 105px 0;
   background: #00050f;
-  border: 1px solid #FF5271;
+  border: 1px solid #17a2aa;
   height: 5px;
-  width: 183px;
+  width: 205px;
   /* position: absolute;
     top: 93%;
     right: 45.5%; */
@@ -488,9 +488,21 @@ header .navBox ul a:hover, header .navBox ul a:focus {
   transition: all 0.5s;
 }
 
+.searchBox .searchLabel {
+  position: absolute;
+  color: white;
+  display: none;
+}
+
 .searchBox .searchInputOpen {
   width: 230px;
   color: #00050f;
+}
+
+.fa-dice-d20 {
+  font-size: 2.5rem;
+  color: #ea58a3;
+  margin-bottom: 25px;
 }
 
 .squiggle {
@@ -538,7 +550,7 @@ header .navBox ul a:hover, header .navBox ul a:focus {
 }
 
 .about .wrapper .captionNumber {
-  color: #FF5271;
+  color: #17a2aa;
   font-weight: 400;
 }
 
@@ -548,10 +560,10 @@ header .navBox ul a:hover, header .navBox ul a:focus {
 
 .skills {
   background-color: #e5e8ee;
-  padding: 65px 0;
 }
 
-.skills > .wrapper.flexBox {
+.skills s
+> .wrapper.flexBox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -567,7 +579,20 @@ header .navBox ul a:hover, header .navBox ul a:focus {
   width: 80vw;
 }
 
-.skillsGallery i {
+.skillsGallery li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillsGallery li i {
   font-size: 2.5rem;
 }
 
@@ -595,7 +620,7 @@ footer .footerBody {
 }
 
 footer .footerBody > a {
-  color: #FF5271;
+  color: #17a2aa;
 }
 
 footer .footerBody .contactIcons {

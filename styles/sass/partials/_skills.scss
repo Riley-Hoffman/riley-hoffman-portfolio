@@ -1,6 +1,6 @@
 .skills {
     background-color: #e5e8ee;
-    padding: 65px 0;
+    s
     > .wrapper.flexBox {
         justify-content: center;
     }   
@@ -12,7 +12,12 @@
     grid-row-gap: 60px;
     justify-items: center;
     width: 80vw;
-    i {
-        font-size: 2.5rem;
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i {
+            font-size: 2.5rem;
+        }
     }
 }
