@@ -551,6 +551,17 @@ form {
   font-weight: 400;
 }
 
+.about1 figure {
+  margin: 20px 0 0;
+  max-width: 50%;
+}
+
+.about2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .projects {
   padding: 85px 0;
 }
