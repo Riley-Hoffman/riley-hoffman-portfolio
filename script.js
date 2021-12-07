@@ -1,5 +1,4 @@
 // Search Bar
-
 // Namespace object
 const searchBar = {};
 
@@ -7,7 +6,6 @@ searchBar.searchButton = document.getElementById('searchButton')
 searchBar.searchInput = document.getElementById('searchInput')
 searchBar.searchForm = document.getElementById('searchForm')
 searchBar.searchIcon = document.getElementById('fa-search')
-searchBar.searchOpen = document.getElementsByClassName('searchInputOpen')
 
 searchBar.formSubmit = () => {
     // Listen for form submission (search icon click)
@@ -26,22 +24,14 @@ searchBar.formSubmit = () => {
             searchBar.searchInput.disabled = false
            
             // Highlight text on the page matching user input
-            queryHighlighter()
+            searchBar.queryHighlighter()
             // listen for click on document
             document.addEventListener("click", function (event) {
                 
                 // if the user clicks outside the form
                 if (event.target != searchBar.searchInput && event.target != searchBar.searchButton && event.target != searchBar.searchIcon) {
-                    // hide search bar
-                    searchBar.searchInput.classList.remove('searchInputOpen')
-                    searchBar.searchButton.classList.remove('rotateButton')
-                    // clear input
-                    searchBar.searchInput.value = ''
-                    // disable input
-                    searchBar.searchInput.disabled = true
+                    searchBar.hideSearch()
                     
-
-
                  // if the search button is clicked stop listening for click on document
                 } else if (event.target === searchBar.searchButton || event.target === searchBar.searchIcon) {
                     event.stopPropagation()
@@ -50,21 +40,23 @@ searchBar.formSubmit = () => {
         
         // If search bar is showing 
         } else if (searchBar.searchInput.classList.contains('searchInputOpen')) {
-            // hide search bar
-            searchBar.searchInput.classList.remove('searchInputOpen')
-            searchBar.searchButton.classList.remove('rotateButton')
-            // clear input
-            searchBar.searchInput.value = ''
-            // disable input
-            searchBar.searchInput.disabled = true
-        } 
-        
-        
+            searchBar.hideSearch()
+        }  
     })
 }
 
+searchBar.hideSearch = () => {
+    // hide search bar
+    searchBar.searchInput.classList.remove('searchInputOpen')
+    searchBar.searchButton.classList.remove('rotateButton')
+    // clear input
+    searchBar.searchInput.value = ''
+    // disable input
+    searchBar.searchInput.disabled = true
+}
+
 // Function to hightlist text based on user input
-function queryHighlighter () {
+searchBar.queryHighlighter = () => {
     // Listen for keydown on search input
     searchBar.searchInput.addEventListener('keydown', (keystrokes) => {
         
