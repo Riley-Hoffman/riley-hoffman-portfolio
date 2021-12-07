@@ -1,0 +1,85 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 900px) {
+    .headerBodyFlexBox a.redContactButton {
+        width: 60%;
+    }
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 780px) {
+.line {
+    margin: -9px 0 0;
+}
+
+.about {
+    margin-top: 45px;
+    > .wrapper {
+        flex-direction: column;
+    } 
+}
+
+.headerFlexWrapper .headerBodyFlexBox {
+    width: 100%;
+    .outlined {
+        display: block;
+    }
+}
+
+ .headerBodyFlexBox a.redContactButton {
+        width: 50%;
+}
+
+header .navBox {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+        nav {
+            width: 100%;
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-row-gap: 20px;
+            }
+    }
+}
+
+.searchBox {
+    margin: 30px 0 0;
+    .searchInputOpen {
+        width: 100%;
+        /* margin-left: 30px; */
+    }
+}
+
+.bottom {
+    justify-content: center;
+}
+
+}
+
+/* Medium phones and down */
+@media (max-width: 675px) {
+    header {
+        padding-bottom: 140px;
+    }
+    
+    .searchBox .rotateButton {
+        right: 4%;
+    }
+
+    .headerBodyFlexBox {
+        margin-top: 50px;
+    }
+
+    .line {
+        margin: -9px 0 0;
+    }   
+ 
+}
+
+/* Smallest phones */
+// @media (max-width: 500px) {
+  
+  
+// }

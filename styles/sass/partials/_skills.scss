@@ -1,0 +1,18 @@
+.skills {
+    background-color: #e5e8ee;
+    padding: 65px 0;
+    > .wrapper.flexBox {
+        justify-content: center;
+    }   
+}
+
+.skillsGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+    justify-items: center;
+    width: 80vw;
+    i {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,24 @@
+.about {
+    background-color: #f6f6f6;
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        .about1, .about2 {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+        }
+        .squiggle {
+            margin: 10px 0;
+        }
+        figcaption {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+        .captionNumber {
+            color: #FF5271;
+            font-weight: 400;
+        }
+    }
+}

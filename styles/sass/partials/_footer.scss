@@ -1,0 +1,28 @@
+footer, footer p {
+    color: #e5e8ee;
+}
+
+.footerBody h2, .footerBody a {
+    margin: 10px auto;
+}
+
+footer {
+    padding: 10px 0;
+    .footerBody {
+        align-items: center;
+        flex-direction: column;
+        padding: 65px 0;
+        > a {
+            color: #FF5271;
+        }
+        .contactIcons {
+            font-size: 2em;
+            width: 135px;
+        }
+
+        .bottom {
+            justify-content: flex-end;
+        }
+    } 
+}
+
