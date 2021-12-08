@@ -3,6 +3,9 @@
     .wrapper.flexBox {
         align-items: center;
         flex-direction: column;
+        h2 {
+            color: #e5e8ee;
+        }
     }
 }
 
@@ -13,6 +16,10 @@
     .projectInfo {
         flex-basis: 50%;
     }
+}
+
+.projectBox:first-of-type {
+    margin-top: 50px;
 }
 
 .projectInfo:nth-child(even) {
@@ -41,11 +48,11 @@
     p {
         padding-bottom: 15px;
     }
-    h2, h3, h4 {
+    h3, h4 {
         margin-bottom: 40px;
     }
 
-    h2, h3, h4, p {
+    h3, h4, p {
             color: #e5e8ee;
         }
     a {
@@ -63,7 +70,7 @@
         opacity: 1;
     }
     p, h3, h4 {
-        text-shadow: 3px 3px 5px #00050F;;
+        text-shadow: 3px 3px 5px #00050F;
     }
 }
 

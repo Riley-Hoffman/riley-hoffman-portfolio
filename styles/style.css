@@ -585,6 +585,9 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.projects .wrapper.flexBox h2 {
+  color: #e5e8ee;
+}
 
 .projectBox {
   display: -webkit-box;
@@ -596,6 +599,10 @@ form {
 .projectBox .projectInfo {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.projectBox:first-of-type {
+  margin-top: 50px;
 }
 
 .projectInfo:nth-child(even) {
@@ -624,10 +631,10 @@ form {
 .projectInfo p {
   padding-bottom: 15px;
 }
-.projectInfo h2, .projectInfo h3, .projectInfo h4 {
+.projectInfo h3, .projectInfo h4 {
   margin-bottom: 40px;
 }
-.projectInfo h2, .projectInfo h3, .projectInfo h4, .projectInfo p {
+.projectInfo h3, .projectInfo h4, .projectInfo p {
   color: #e5e8ee;
 }
 .projectInfo a {
