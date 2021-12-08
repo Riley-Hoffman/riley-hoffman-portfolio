@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        <a href="#main" class="skip-link">Skip To Content</a>
         <div class="wrapper headerFlexWrapper">
             <div class="flexBox navBox">
                 <nav>
@@ -56,161 +57,176 @@
                 <!-- redContactButton class is to facilitate media query targetting -->
                 <a href="mailto:riley.n.hoffman@gmail.com" class="redContactButton"><span class="indexed">Contact Me </span><i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
+            <a href="#main" class="chevronLink" aria-label="Skip to main content.">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </header>
-    <section class="about" id="about">
-        <div class="wrapper">
-            <div class="flexBox about1">
-                <div class="flexBox iconContainer">
-                    <i class="fas fa-water"></i>
+    <main id="main">
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="flexBox about1">
+                    <div class="flexBox iconContainer">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <p class="indexed">About Me</p>
+                    <h2 class="indexed">What I Do</h2>
+                    <figure>
+                        <!-- 
+                            Mo's headshot tips
+                            -use a big blank wall with nothing on it. 
+                            -find a lamp and take off the shade have to to the right of the camera
+                            -make it black and white
+                            -add some grain to it 
+                            -face the light, no patterned shirt
+                            -smile with your eyes
+    
+                         -->
+                        <img src="./assets/placeholder.png" alt="Riley Hoffman sitting at a table in a restaurant.">
+                    </figure>
                 </div>
-                <p class="indexed">About Me</p>
-                <h2 class="indexed">What I Do</h2>
-                <figure>
-                    <img src="./assets/placeholder.png" alt="Riley Hoffman sitting at a table in a restaurant.">
-                </figure>
+                <div class="flexBox about2">
+                    <p class="indexed">I'm a front-end developer who is passionate about accessible and responsive web applications, well-structured code, and user experience. My background in technical troubleshooting and customer service has given me perspective on user experience, and a wide variety of software and communication skills which benefit my work today.</p>
+                    <figure>
+                        <figcaption><span class="indexed">Design Strategy </span><span class="indexed captionNumber">85%</span></figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="flexBox about2">
-                <p class="indexed">I'm a front-end developer who is passionate about accessible and responsive web applications, well-structured code, and user experience. My background in technical troubleshooting and customer service has given me perspective on user experience, and a wide variety of software and communication skills which benefit my work today.</p>
-                <figure>
-                    <figcaption><span class="indexed">Design Strategy </span><span class="indexed captionNumber">85%</span></figcaption>
-                </figure>
+        </section>
+        <section class="projects" id="projects">
+            <div class="wrapper flexBox">
+                <h2>Projects</h2>
+            
+                <ul>
+                    <li class="projectBox">
+                        <div class="projectInfo">
+                            <h3>Out Of Context</h3>
+                            <h4>React, JSX, AXIOS, SCSS</h4>
+                            <p>A react based app that allows users to generate a list of recipes from an api, searching by
+                                ingredient. The user can then click on an individual recipe to see a full ingredient list and
+                                description. The app also uses firebase to allow the user to store preferred recipes for later.</p>
+                            <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/dearJuno/outofContext" target="_blank">Repo</a>
+                        </div>
+                        <div class="imgBox">
+                            <a href="https://focused-varahamihira-abf5da.netlify.app/" title="Out Of Context" target="_blank">
+                                <img src="./assets/out-of-context.png" alt="Screenshot of the recipe generator app">
+                                <div class="oval"></div>
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li class="projectBox">
+                        <div class="imgBox">
+                            <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" title="Infinity Corkboard" target="_blank">
+                                <img src="./assets/infinity-corkboard.png" alt="Screenshot of the Smarter Snack app">
+                                <div class="oval"></div>
+                            </a>
+                        </div>
+                        <div class="projectInfo">
+                            <h3>Infinity Corkboard</h3>
+                            <h4>React, JSX, REST API, CSS</h4>
+                            <p>The react app uses the nutritionix API to generate snack results based on a user search, and then
+                                suggest a healthier option based on the user's choice. The app compares sugar content to find a
+                                healthier alternative. The user can then save snack pairs for later using Firebase.</p>
+                            <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/Riley-Hoffman/riley-hoffman-project-three" target="_blank">Repo</a>
+                        </div>
+                    </li>
+            
+                    <li class="projectBox">
+                        <div class="projectInfo">
+                            <h3>Weather Scout</h3>
+                            <h4>HTML, Javascript, REST API, SCSS</h4>
+                            <p>This app uses javascript and the datamuse api to allow the user to search for words using multiple
+                                parameters. The search can be filtered based on meaning, sound, first letter and last letter. The
+                                user can also click a word to get a definition from the Merriam Webster api.</p>
+                            <a href="https://romantic-kowalevski-f7a14c.netlify.app/" title="Weather Scout" target="_blank">Live</a>
+                            <a href="https://github.com/Linda-Columbus-Riley-Hoffman-Developers/weatherScout" target="_blank">Repo</a>
+                        </div>
+                        <div class="imgBox">
+                            <a href="https://romantic-kowalevski-f7a14c.netlify.app/" target="_blank">
+                                <img src="./assets/weather-scout.png" alt="Screenshot of the word finder app">
+                                <div class="oval"></div>
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li class="projectBox">
+                        <div class="imgBox">
+                            <a href="https://vigilant-albattani-29bee8.netlify.app/" title="Delicious" target="_blank">
+                                <img src="./assets/delicious.png" alt="Screenshot of the creative PSD conversion">
+                                <div class="oval"></div>
+                            </a>
+                        </div>
+                        <div class="projectInfo">
+                            <h3>Delicious</h3>
+                            <h4>HTML, SCSS</h4>
+                            <p>A multi-page PSD conversion project.</p>
+                            <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/Riley-Hoffman/riley_hoffman_project_1_delicious" target="_blank">Repo</a>
+                        </div>
+                    </li>
+                </ul>
+            
             </div>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <div class="wrapper flexBox">
-            <h2>Projects</h2>
-        
-            <ul>
-                <li class="projectBox">
-                    <div class="projectInfo">
-                        <h3>Out Of Context</h3>
-                        <h4>React, JSX, AXIOS, SCSS</h4>
-                        <p>A react based app that allows users to generate a list of recipes from an api, searching by
-                            ingredient. The user can then click on an individual recipe to see a full ingredient list and
-                            description. The app also uses firebase to allow the user to store preferred recipes for later.</p>
-                        <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank">Live</a>
-                        <a href="https://github.com/dearJuno/outofContext" target="_blank">Repo</a>
-                    </div>
-                    <div class="imgBox">
-                        <a href="https://focused-varahamihira-abf5da.netlify.app/" title="Out Of Context" target="_blank">
-                            <img src="./assets/out-of-context.png" alt="Screenshot of the recipe generator app">
-                            <div class="oval"></div>
-                        </a>
-                    </div>
-                </li>
-        
-                <li class="projectBox">
-                    <div class="imgBox">
-                        <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" title="Infinity Corkboard" target="_blank">
-                            <img src="./assets/infinity-corkboard.png" alt="Screenshot of the Smarter Snack app">
-                            <div class="oval"></div>
-                        </a>
-                    </div>
-                    <div class="projectInfo">
-                        <h3>Infinity Corkboard</h3>
-                        <h4>React, JSX, REST API, CSS</h4>
-                        <p>The react app uses the nutritionix API to generate snack results based on a user search, and then
-                            suggest a healthier option based on the user's choice. The app compares sugar content to find a
-                            healthier alternative. The user can then save snack pairs for later using Firebase.</p>
-                        <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank">Live</a>
-                        <a href="https://github.com/Riley-Hoffman/riley-hoffman-project-three" target="_blank">Repo</a>
-                    </div>
-                </li>
-        
-                <li class="projectBox">
-                    <div class="projectInfo">
-                        <h3>Weather Scout</h3>
-                        <h4>HTML, Javascript, REST API, SCSS</h4>
-                        <p>This app uses javascript and the datamuse api to allow the user to search for words using multiple
-                            parameters. The search can be filtered based on meaning, sound, first letter and last letter. The
-                            user can also click a word to get a definition from the Merriam Webster api.</p>
-                        <a href="https://romantic-kowalevski-f7a14c.netlify.app/" title="Weather Scout" target="_blank">Live</a>
-                        <a href="https://github.com/Linda-Columbus-Riley-Hoffman-Developers/weatherScout" target="_blank">Repo</a>
-                    </div>
-                    <div class="imgBox">
-                        <a href="https://romantic-kowalevski-f7a14c.netlify.app/" target="_blank">
-                            <img src="./assets/weather-scout.png" alt="Screenshot of the word finder app">
-                            <div class="oval"></div>
-                        </a>
-                    </div>
-                </li>
-        
-                <li class="projectBox">
-                    <div class="imgBox">
-                        <a href="https://vigilant-albattani-29bee8.netlify.app/" title="Delicious" target="_blank">
-                            <img src="./assets/delicious.png" alt="Screenshot of the creative PSD conversion">
-                            <div class="oval"></div>
-                        </a>
-                    </div>
-                    <div class="projectInfo">
-                        <h3>Delicious</h3>
-                        <h4>HTML, SCSS</h4>
-                        <p>A multi-page PSD conversion project.</p>
-                        <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank">Live</a>
-                        <a href="https://github.com/Riley-Hoffman/riley_hoffman_project_1_delicious" target="_blank">Repo</a>
-                    </div>
-                </li>
-            </ul>
-        
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <div class="wrapper flexBox">
-            <h2 class="indexed">Skills</h2>
-            <ul class="skillsGallery">
-                <li>
-                    <i class="devicon-html5-plain" aria-hidden="true"></i>
-                    <p class="indexed">HTML5</p>
-                </li>
-                <li>
-                    <i class="devicon-css3-plain" aria-hidden="true"></i>
-                    <p class="indexed">CSS3</p>
-                </li>
-                <li>
-                    <i class="devicon-javascript-plain" aria-hidden="true"></i>
-                    <p class="indexed">Javascript + ES6</p>
-                </li>
-                <li>
-                    <i class="devicon-sass-original" aria-hidden="true"></i>
-                    <p class="indexed">SASS</p>
-                </li>
-                <li>
-                    <i class="fas fa-universal-access" aria-hidden="true"></i>
-                    <p class="indexed">Accessibility</p>
-                </li>
-                <li>
-                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    <p class="indexed">Mobile Responsiveness</p>
-                </li>
-                <li>
-                    <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
-                    <p class="indexed">Rest API</p>
-                </li>
-                <li>
-                    <i class="devicon-github-original" aria-hidden="true"></i>
-                    <p class="indexed">Github</p>
-                </li>
-                <li>
-                    <i class="devicon-react-original" aria-hidden="true"></i>
-                    <p class="indexed">React</p>
-                </li>
-                <li>
-                    <i class="devicon-jquery-plain-wordmark" aria-hidden="true"></i>
-                    <p class="indexed">jQuery</p>
-                </li>
-                <li>
-                    <i class="devicon-vscode-plain" aria-hidden="true"></i>
-                    <p class="indexed">VC Code</p>
-                </li>
-                <li>
-                    <i class="devicon-firebase-plain" aria-hidden="true"></i>
-                    <p class="indexed">Firebase</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+        </section>
+        <section class="skills" id="skills">
+            <div class="wrapper flexBox">
+                <h2 class="indexed">Skills</h2>
+                <ul class="skillsGallery">
+                    <li>
+                        <i class="devicon-html5-plain" aria-hidden="true"></i>
+                        <p class="indexed">HTML5</p>
+                    </li>
+                    <li>
+                        <i class="devicon-css3-plain" aria-hidden="true"></i>
+                        <p class="indexed">CSS3</p>
+                    </li>
+                    <li>
+                        <i class="devicon-javascript-plain" aria-hidden="true"></i>
+                        <p class="indexed">Javascript + ES6</p>
+                    </li>
+                    <li>
+                        <i class="devicon-sass-original" aria-hidden="true"></i>
+                        <p class="indexed">SASS</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                        <p class="indexed">Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <p class="indexed">Mobile Responsiveness</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
+                        <p class="indexed">Rest API</p>
+                    </li>
+                    <li>
+                        <i class="devicon-github-original" aria-hidden="true"></i>
+                        <p class="indexed">Github</p>
+                    </li>
+                    <li>
+                        <i class="devicon-react-original" aria-hidden="true"></i>
+                        <p class="indexed">React</p>
+                    </li>
+                    <li>
+                        <i class="devicon-jquery-plain-wordmark" aria-hidden="true"></i>
+                        <p class="indexed">jQuery</p>
+                    </li>
+                    <li>
+                        <i class="devicon-vscode-plain" aria-hidden="true"></i>
+                        <p class="indexed">VC Code</p>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain" aria-hidden="true"></i>
+                        <p class="indexed">Firebase</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer id="contact">
         <div class="wrapper flexBox footerBody">
             <h2>Contact</h2>

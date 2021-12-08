@@ -317,8 +317,22 @@ time {
 
 header {
   background-color: #00050f;
-  height: 95vh;
+  height: 100vh;
   padding-bottom: 50px;
+}
+header .skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #17a2aa;
+  border-radius: 3px;
+  color: #e5e8ee;
+  padding: 15px 15px;
+  margin-left: 7px;
+}
+header .skip-link:focus {
+  left: 0;
 }
 header h1, header p, header .navBox a {
   color: #e5e8ee;
@@ -329,6 +343,25 @@ header h1 {
 }
 header p:last-of-type {
   margin: 20px 0;
+}
+header .chevronLink {
+  top: 85%;
+  left: 50%;
+  right: 50%;
+  position: absolute;
+}
+header .fa-chevron-down {
+  color: #17a2aa;
+  font-size: 2.5rem;
+  width: 5vw;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+header .fa-chevron-down:hover, header .chevronLink:focus .fa-chevron-down {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #e5e8ee;
 }
 header .navBox {
   -webkit-box-align: center;
@@ -434,7 +467,7 @@ form {
   line-height: 24px;
 }
 .headerFlexWrapper .headerBodyFlexBox a:focus {
-  outline: 1px solid;
+  outline: 2px solid;
 }
 .headerFlexWrapper .headerBodyFlexBox a:hover .indexed, .headerFlexWrapper .headerBodyFlexBox a:focus .indexed {
   text-decoration: underline;
