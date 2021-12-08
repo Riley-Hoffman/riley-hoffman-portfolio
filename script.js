@@ -26,6 +26,7 @@ searchBar.formSubmit = () => {
            
             // Highlight text on the page matching user input
             searchBar.queryHighlighter()
+           
             // listen for click on document
             document.addEventListener("click", function (event) {
                 
@@ -71,16 +72,19 @@ searchBar.queryHighlighter = () => {
         const content = [...document.getElementsByClassName('indexed')]
 
         // for each 'indexed' element
-        content.forEach(function (element, index, theArray) {
+        content.forEach(function (element, index) {
             let text = element.innerHTML;
             // Prepare html to hightlight searched text on the page
             text = text.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
              // highlight searched text by adding html around it
             const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
             element.innerHTML = newText;
+        
         }, content);
-    });
+        
+    }); 
 }
+
 
 searchBar.init = () => {
     // Listen for Form Submission
