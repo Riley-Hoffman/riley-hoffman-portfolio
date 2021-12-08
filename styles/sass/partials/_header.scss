@@ -78,7 +78,7 @@ form {
         p:nth-child(2) {
             margin-bottom: 10px;
         }
-        a {
+        a { /* Use .redContactButton for MEDIA QUERIES => NOT HERE! */
             background: #17a2aa;
             border-radius: 3px;
             display: flex;
@@ -137,6 +137,7 @@ form {
         border-radius: 50px;
     }
     .searchButton:focus {
+        // needs additional effet on hover
         outline: 2px solid #17a2aa;
     }
     .rotateButton {

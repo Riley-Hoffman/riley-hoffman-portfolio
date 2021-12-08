@@ -40,7 +40,9 @@
                     <form action="_blank" id="searchForm">
                         <label for="searchInput" class="searchLabel">Highlight text you enter on the page</label>
                         <input type="search" class="searchInput" id="searchInput" title="Highlight text if it's on the page."disabled>
-                        <button class="searchButton" id="searchButton" type="submit"><i class="fas fa-search" id="fa-search"></i><span class="sr-only" class="indexed">Open search with this</span></button>
+                        <button class="searchButton" id="searchButton" type="submit"><i class="fas fa-search" id="fa-search"></i><span class="sr-only" class="indexed">Open search with this</span>
+                        <!-- ^ SR reads "Open search with this button." ^ -->
+                        </button>
                     </form>
                 </div>
             </div>
@@ -51,6 +53,7 @@
                     <p class="indexed">Riley Hoffman</p>
                 <h1><span class="indexed">Web </span><span class="indexed outlined">Developer</span></h1>
                 <p class="indexed">Welcome to my portfolio. If you want, you can have one also, and it can look like this.</p>
+                <!-- redContactButton class is to facilitate media query targetting -->
                 <a href="mailto:riley.n.hoffman@gmail.com" class="redContactButton"><span class="indexed">Contact Me </span><i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
         </div>
@@ -164,12 +167,12 @@
                     <i class="fab fa-github"></i><span class="sr-only">Github</span>
                 </a>
                 <a href="">
-                    <i class="fab fa-linkedin"></i><span class="sr-only">Linkedin</span>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">Linkedin</span>
                 </a>
             </div>
         </div>
         <div class="wrapper flexBox bottom">
-            <p class="indexed">Riley Hoffman | Developer</p>
+            <p><span class="indexed">Riley Hoffman </span><i class="fas fa-grip-lines-vertical"></i><span class="indexed"> Developer</span></p>
         </div>
     </footer>
     <script src="./script.js"></script>

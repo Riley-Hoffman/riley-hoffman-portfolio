@@ -412,6 +412,7 @@ form {
   margin-bottom: 10px;
 }
 .headerFlexWrapper .headerBodyFlexBox a {
+  /* Use .redContactButton for MEDIA QUERIES => NOT HERE! */
   background: #17a2aa;
   border-radius: 3px;
   display: -webkit-box;
@@ -473,7 +474,7 @@ form {
   right: 2px;
   width: 45px;
   height: 45px;
-  padding: 0;
+  padding: 2px 0 0;
   border-radius: 50px;
 }
 .searchBox .searchButton:focus {
@@ -666,6 +667,14 @@ footer .footerBody .bottom {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.nameSeparator {
+  margin: 0 6px;
+}
+
+i.fa-grip-lines-vertical {
+  font-size: 84%;
 }
 
 /* Portrait tablet and small desktops */
