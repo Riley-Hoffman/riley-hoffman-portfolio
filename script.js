@@ -6,6 +6,7 @@ searchBar.searchButton = document.getElementById('searchButton')
 searchBar.searchInput = document.getElementById('searchInput')
 searchBar.searchForm = document.getElementById('searchForm')
 searchBar.searchIcon = document.getElementById('fa-search')
+searchBar.modal = document.querySelector(`.modal`);
 
 searchBar.formSubmit = () => {
     // Listen for form submission (search icon click)
@@ -33,6 +34,7 @@ searchBar.formSubmit = () => {
                 // if the user clicks outside the form
                 if (event.target != searchBar.searchInput && event.target != searchBar.searchButton && event.target != searchBar.searchIcon) {
                     searchBar.hideSearch()
+                    searchBar.modal.style.visibility = `hidden`;
                     
                  // if the search button is clicked stop listening for click on document
                 } else if (event.target === searchBar.searchButton || event.target === searchBar.searchIcon) {
@@ -79,10 +81,46 @@ searchBar.queryHighlighter = () => {
              // highlight searched text by adding html around it
             const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
             element.innerHTML = newText;
-        
+            const results = document.querySelectorAll('mark')
+            
+            // give some time to make sure user is done typing
+                setTimeout(function () { 
+                    // display results message
+                    searchBar.resultsModal(results)
+                }, 2000);
         }, content);
         
     }); 
+}
+
+// Modal display search result message handling
+searchBar.resultsModal = (query) => {
+    searchBar.modal.style.display = `block`;
+    if (query.length === 0) {
+        searchBar.modal.innerHTML = `
+            <p class="message">Sorry the text you entered doesn't appear on this page!</p>
+            <button class="modalButton">Close</button>
+            `;
+
+        // Close modal window button
+        const modalButton = document.querySelector(`.modalButton`);
+        modalButton.addEventListener(`click`, function (modalEvent) {
+            searchBar.modal.style.visibility = `hidden`;
+        })
+    } else if (query.length) {
+        searchBar.modal.innerHTML = `
+            <p class="message">The text you entered was found and highlighted on the page!</p>
+            <button class="modalButton">Close</button>
+            `;
+
+        // Close modal window button
+        const modalButton = document.querySelector(`.modalButton`);
+        modalButton.addEventListener(`click`, function (modalEvent) {
+            searchBar.modal.style.visibility = `hidden`;
+        })
+        
+
+    }
 }
 
 
