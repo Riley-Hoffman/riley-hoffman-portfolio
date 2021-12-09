@@ -349,6 +349,8 @@ header .chevronLink {
   left: 50%;
   right: 50%;
   position: absolute;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 header .fa-chevron-down {
   color: #17a2aa;
@@ -758,6 +760,9 @@ form {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
+.skillsGallery li p {
+  text-align: center;
+}
 
 @-webkit-keyframes spin {
   from {
@@ -844,14 +849,30 @@ i.fa-grip-lines-vertical {
     margin-top: 45px;
   }
   .about > .wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .about > .wrapper .about2 {
+    width: 90%;
+  }
 
   .headerFlexWrapper .headerBodyFlexBox {
     width: 100%;
+    margin-top: 20px;
+  }
+  .headerFlexWrapper .headerBodyFlexBox .iconContainer {
+    display: none;
+  }
+  .headerFlexWrapper .headerBodyFlexBox h1 {
+    margin-bottom: 2px;
+  }
+  .headerFlexWrapper .headerBodyFlexBox p:last-of-type {
+    margin-bottom: 2px;
   }
   .headerFlexWrapper .headerBodyFlexBox .outlined {
     display: block;
@@ -859,6 +880,13 @@ i.fa-grip-lines-vertical {
 
   .headerBodyFlexBox a.redContactButton {
     width: 50%;
+  }
+
+  header .chevronLink {
+    top: 90%;
+  }
+  header .chevronLink .fa-chevron-down {
+    font-size: 1.8rem;
   }
 
   header .navBox {
@@ -889,7 +917,50 @@ i.fa-grip-lines-vertical {
     width: 100%;
   }
 
-  .bottom {
+  .projects {
+    padding: 85px 0 40px;
+  }
+  .projects .projectBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectBox .imgBox img {
+    margin-top: 50px;
+  }
+  .projects .projectBox .imgBox .oval {
+    display: none;
+  }
+  .projects .projectBox .projectInfo a:last-of-type {
+    margin-left: 30px;
+    margin-right: auto;
+  }
+  .projects .projectBox .projectInfo a:first-of-type {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  .projectInfo p {
+    margin-bottom: 50px;
+  }
+
+  .projectInfo:nth-child(even), .projectInfo:nth-child(odd) {
+    padding: 0;
+    text-align: center;
+  }
+
+  .projectBox:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  footer {
+    padding: 0 0 20px;
+  }
+  footer .bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -900,13 +971,12 @@ i.fa-grip-lines-vertical {
   header {
     padding-bottom: 140px;
   }
+  header .fa-chevron-down {
+    font-size: 1.5rem;
+  }
 
   .searchBox .rotateButton {
     right: 4%;
-  }
-
-  .headerBodyFlexBox {
-    margin-top: 50px;
   }
 
   .line {
@@ -914,11 +984,8 @@ i.fa-grip-lines-vertical {
   }
 
   header .chevronLink {
-    top: 95%;
-  }
-
-  header .fa-chevron-down {
-    font-size: 1.5rem;
+    left: 73%;
+    top: 81%;
   }
 
   .about1 > p:nth-child(2) {
@@ -934,16 +1001,21 @@ i.fa-grip-lines-vertical {
     padding-top: 20px;
   }
 
-  .about1 {
+  .about > .wrapper .about1 {
     width: 100%;
   }
-
-  .about1 figure {
+  .about > .wrapper .about1 figure {
     max-width: 82%;
   }
-
-  .about2 {
+  .about > .wrapper .about2 {
     width: 100%;
+  }
+
+  .skillsGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skillsGallery p {
+    font-size: 18px;
   }
 }
 /* Smallest phones */

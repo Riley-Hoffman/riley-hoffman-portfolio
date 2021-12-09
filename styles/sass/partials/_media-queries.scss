@@ -7,52 +7,119 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 780px) {
-.line {
-    margin: -9px 0 0;
-}
-
-.about {
-    margin-top: 45px;
-    > .wrapper {
-        flex-direction: column;
-    } 
-}
-
-.headerFlexWrapper .headerBodyFlexBox {
-    width: 100%;
-    .outlined {
-        display: block;
+    .line {
+        margin: -9px 0 0;
     }
-}
-
- .headerBodyFlexBox a.redContactButton {
-        width: 50%;
-}
-
-header .navBox {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-between;
-        nav {
-            width: 100%;
-            ul {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-row-gap: 20px;
-            }
+    
+    .about {
+        margin-top: 45px;
+        > .wrapper {
+            align-items: center;
+            flex-direction: column;
+            .about2 {
+                width: 90%;
+            }  
+        } 
     }
-}
-
-.searchBox {
-    margin: 30px 0 0;
-    .searchInputOpen {
+    
+    .headerFlexWrapper .headerBodyFlexBox {
         width: 100%;
+        margin-top: 20px;
+        .iconContainer {
+            display: none;
+        }
+        h1 {
+            margin-bottom: 2px;
+        }
+        p:last-of-type {
+            margin-bottom: 2px;
+        }
+        a {
+            // padding: 20px 5px;
+        }
+        .outlined {
+            display: block;
+        }
     }
-}
-
-.bottom {
-    justify-content: center;
-}
+    
+     .headerBodyFlexBox a.redContactButton {
+            width: 50%;
+    }
+    
+    header .chevronLink {
+        top: 90%;
+        .fa-chevron-down {
+                font-size: 1.8rem;
+        }
+    }
+    
+    header .navBox {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+            nav {
+                width: 100%;
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-row-gap: 20px;
+                }
+        }
+    }
+    
+    .searchBox {
+        margin: 30px 0 0;
+        .searchInputOpen {
+            width: 100%;
+        }
+    }
+    .projects {
+        padding: 85px 0 40px;
+        .projectBox {
+            flex-direction: column;
+            .imgBox {
+                img {
+                    margin-top: 50px;
+                }
+                .oval {
+                    display: none;
+                }
+            }
+    
+            .projectInfo a:last-of-type {
+                margin-left: 30px;
+                margin-right: auto; 
+            }
+    
+            .projectInfo a:first-of-type {
+                margin-right: 30px;
+                margin-left: auto;
+    
+            }
+            
+        }
+    }
+    
+    .projectInfo p {
+                margin-bottom: 50px;
+            }
+    
+    .projectInfo:nth-child(even), .projectInfo:nth-child(odd) {
+        padding: 0;
+        text-align: center;
+    
+    }
+    
+    .projectBox:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    
+    footer {
+        padding: 0 0 20px;
+        .bottom {
+            justify-content: center;
+        }
+    }
 
 }
 
@@ -60,54 +127,60 @@ header .navBox {
 @media (max-width: 675px) {
     header {
         padding-bottom: 140px;
+        .fa-chevron-down {
+            font-size: 1.5rem;
+        }
     }
     
     .searchBox .rotateButton {
         right: 4%;
     }
 
-    .headerBodyFlexBox {
-        margin-top: 50px;
-    }
-
     .line {
         margin: -9px 0 0;
     }   
     header .chevronLink {
-        top: 95%;
+        left: 73%;
+        top: 81%;
+    }
+    
+    .about1 > p:nth-child(2) {
+      font-size: 2rem;
+    }
+    
+    h2.indexed:nth-child(3) {
+      font-size: 2rem;
+    }
+    
+    p.indexed:nth-child(1) {
+      font-size: 1.2rem;
+      padding-top: 20px;
+    }
+    
 
+    .about {
+        > .wrapper {
+            .about1 {
+                width: 100%;
+            }
+            
+            .about1 figure {
+                max-width: 82%;
+            }
+            
+            .about2 {
+                width: 100%;
+            }
+            
+        } 
     }
 
-    header .fa-chevron-down {
-        font-size: 1.5rem;
+    .skillsGallery {
+        grid-template-columns: 1fr 1fr;
+        p {
+            font-size: 18px;
+        }
     }
-
-
-.about1 > p:nth-child(2) {
-  font-size: 2rem;
-}
-
-h2.indexed:nth-child(3) {
-  font-size: 2rem;
-}
-
-p.indexed:nth-child(1) {
-  font-size: 1.2rem;
-  padding-top: 20px;
-}
-
-.about1 {
-  width: 100%;
-}
-
-.about1 figure {
-    max-width: 82%;
-}
-
-.about2 {
-  width: 100%;
-}
-
  
 }
 
