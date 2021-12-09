@@ -1116,7 +1116,7 @@ i.fa-grip-lines-vertical {
 }
 /* Smallest phones */
 @media (max-width: 365px) {
-  .chevronLink {
+  header a.chevronLink {
     left: 65%;
   }
 }
