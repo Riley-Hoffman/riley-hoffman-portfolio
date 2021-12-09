@@ -166,13 +166,22 @@ form {
         height: 45px;
         padding: 2px 0 0;
         border-radius: 50px;
-    }
+        .fa-search:hover {
+        color: #196c71;
+        }
+    } 
+
     .searchButton:focus {
         outline: 2px solid #17a2aa;
     }
-    .fa-search:hover {
-        color: #196c71;
+
+   .searchButton:active {
+        outline: none;
+        .fa-search {
+            color: #196c71;;
+        }
     }
+
     .rotateButton {
         transform: rotate(-17deg);
         transition: all 0.5s;

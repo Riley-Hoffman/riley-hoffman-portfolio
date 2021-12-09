@@ -30,33 +30,48 @@ searchBar.formSubmit = () => {
            
             // listen for click on document
             document.addEventListener("click", function (event) {
+                // searchBar.searchButtonFocused = document.querySelector(`button.searchButton:focus`);
+                // searchBar.searchButtonFocused.style.outline = 'none';
                 
                 // if the user clicks outside the form
-                if (event.target != searchBar.searchInput && event.target != searchBar.searchButton && event.target != searchBar.searchIcon) {
+                if (event.target != searchBar.searchInput && event.target != searchBar.searchButton && event.target != searchBar.searchIcon && event.target != searchBar.modal) {
+                    // hide search bar
                     searchBar.hideSearch()
+                    // hide modal
                     searchBar.modal.style.visibility = `hidden`;
+                    // reload with delay
+                    searchBar.delayedRefresh()
+                    
                     
                  // if the search button is clicked stop listening for click on document
                 } else if (event.target === searchBar.searchButton || event.target === searchBar.searchIcon) {
-                    event.stopPropagation()
+                    // Focus input to avoid seeing button outline
+                    searchBar.searchInput.focus();
+                    // Change icon color to avoid seeing it outside the form
+                    searchBar.searchButton.firstChild.style.color = '#00050f';
+                    // Hide modal
+                    searchBar.modal.style.visibility = `hidden`;
+                    
+                    // reload with delay
+                    searchBar.delayedRefresh();
                 }
             })
         
         // If search bar is showing 
         } else if (searchBar.searchInput.classList.contains('searchInputOpen')) {
-            searchBar.hideSearch()
+            searchBar.hideSearch();
         }  
     })
 }
 
 searchBar.hideSearch = () => {
     // hide search bar
-    searchBar.searchInput.classList.remove('searchInputOpen')
-    searchBar.searchButton.classList.remove('rotateButton')
+    searchBar.searchInput.classList.remove('searchInputOpen');
+    searchBar.searchButton.classList.remove('rotateButton');
     // clear input
-    searchBar.searchInput.value = ''
+    searchBar.searchInput.value = '';
     // disable input
-    searchBar.searchInput.disabled = true
+    searchBar.searchInput.disabled = true;
 }
 
 // Function to hightlist text based on user input
@@ -80,22 +95,24 @@ searchBar.queryHighlighter = () => {
             text = text.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
              // highlight searched text by adding html around it
             const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
-            element.innerHTML = newText;
+            element.innerHTML = newText;  
             const results = document.querySelectorAll('mark')
-            
+
             // give some time to make sure user is done typing
-                setTimeout(function () { 
-                    // display results message
-                    searchBar.resultsModal(results)
-                }, 2000);
+            setTimeout(function () {
+                searchBar.modal.style.display = `block`;
+
+                // display results message
+                searchBar.resultsModal(results)
+            }, 3000);         
         }, content);
         
     }); 
+   
 }
 
 // Modal display search result message handling
 searchBar.resultsModal = (query) => {
-    searchBar.modal.style.display = `block`;
     if (query.length === 0) {
         searchBar.modal.innerHTML = `
             <p class="message">Sorry the text you entered doesn't appear on this page!</p>
@@ -106,6 +123,8 @@ searchBar.resultsModal = (query) => {
         const modalButton = document.querySelector(`.modalButton`);
         modalButton.addEventListener(`click`, function (modalEvent) {
             searchBar.modal.style.visibility = `hidden`;
+            // reload with delay
+            searchBar.delayedRefresh()
         })
     } else if (query.length) {
         searchBar.modal.innerHTML = `
@@ -117,10 +136,19 @@ searchBar.resultsModal = (query) => {
         const modalButton = document.querySelector(`.modalButton`);
         modalButton.addEventListener(`click`, function (modalEvent) {
             searchBar.modal.style.visibility = `hidden`;
+            // reload with delay
+            searchBar.delayedRefresh()
         })
-        
-
     }
+}
+
+// Function to reload page after giving time for input to resize
+// For now this keeep results message display after every search. 
+// otherwise it doesn't trigger again after closing
+searchBar.delayedRefresh = () => {
+    setTimeout(function () {
+        window.location.reload();
+    }, 900);
 }
 
 

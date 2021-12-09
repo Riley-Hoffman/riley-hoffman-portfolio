@@ -62,6 +62,21 @@
                     grid-row-gap: 20px;
                 }
         }
+        .modal {
+            top: 17%;
+            left: 63%;
+            height: 183px;
+            width: 151px;
+            .message {
+                font-size: 0.8rem;
+            }
+            .modalButton {
+                left: 20%;
+                top: 4%;
+                bottom: auto;
+                padding: 10px 16px 7px;
+            }
+        }
     }
     
     .searchBox {
