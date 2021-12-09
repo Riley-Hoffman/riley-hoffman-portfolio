@@ -64,7 +64,7 @@
         }
         .modal {
             top: 17%;
-            left: 63%;
+            left: 50%;
             height: 183px;
             width: 151px;
             .message {
@@ -136,9 +136,14 @@
 }
 
 /* Medium phones and down */
-@media (max-width: 675px) {
+@media (max-width: 650px) {
     header {
         padding-bottom: 140px;
+        .navBox {
+            .modal {
+                left: 63%;
+            }
+        }
         .fa-chevron-down {
             font-size: 1.5rem;
         }

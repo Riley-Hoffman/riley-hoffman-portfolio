@@ -951,7 +951,7 @@ i.fa-grip-lines-vertical {
   }
   header .navBox .modal {
     top: 17%;
-    left: 63%;
+    left: 50%;
     height: 183px;
     width: 151px;
   }
@@ -1022,9 +1022,12 @@ i.fa-grip-lines-vertical {
   }
 }
 /* Medium phones and down */
-@media (max-width: 675px) {
+@media (max-width: 650px) {
   header {
     padding-bottom: 140px;
+  }
+  header .navBox .modal {
+    left: 63%;
   }
   header .fa-chevron-down {
     font-size: 1.5rem;
