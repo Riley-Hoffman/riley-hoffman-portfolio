@@ -218,7 +218,7 @@
  
 }
 
-/* Smallest phones */
+/* Small phones */
 @media (max-width: 500px) {
   header {
       font-size: 0.8rem;
@@ -247,4 +247,11 @@
           left: 50%;
       }
   }
+}
+
+/* Smallest phones */
+@media (max-width: 365px) {
+      .chevronLink {
+          left: 65%;
+      }
 }

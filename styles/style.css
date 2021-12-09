@@ -1089,7 +1089,7 @@ i.fa-grip-lines-vertical {
     font-size: 18px;
   }
 }
-/* Smallest phones */
+/* Small phones */
 @media (max-width: 500px) {
   header {
     font-size: 0.8rem;
@@ -1112,6 +1112,12 @@ i.fa-grip-lines-vertical {
   }
   header .chevronLink {
     left: 50%;
+  }
+}
+/* Smallest phones */
+@media (max-width: 365px) {
+  .chevronLink {
+    left: 65%;
   }
 }
 .iconContainer {
