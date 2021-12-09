@@ -21,7 +21,7 @@ searchBar.formSubmit = () => {
             // When magnifying glass is clicked, show search bar
             searchBar.searchInput.classList.add('searchInputOpen')
             searchBar.searchButton.classList.add('rotateButton')
-            // enable input
+            // enable and focus input
             searchBar.searchInput.disabled = false
             searchBar.searchInput.focus()
            
@@ -74,7 +74,7 @@ searchBar.hideSearch = () => {
     searchBar.searchInput.disabled = true;
 }
 
-// Function to hightlist text based on user input
+// Function to highlights text based on user input
 searchBar.queryHighlighter = () => {
     // Listen for keydown on search input
     searchBar.searchInput.addEventListener('keydown', (keystrokes) => {
@@ -89,7 +89,7 @@ searchBar.queryHighlighter = () => {
         const content = [...document.getElementsByClassName('indexed')]
 
         // for each 'indexed' element
-        content.forEach(function (element, index) {
+        content.forEach(function (element) {
             let text = element.innerHTML;
             // Prepare html to hightlight searched text on the page
             text = text.replace(/(<mark class="highlight">|<\/mark>)/gim, '');
@@ -97,14 +97,18 @@ searchBar.queryHighlighter = () => {
             const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
             element.innerHTML = newText;  
             const results = document.querySelectorAll('mark')
+ 
+                // give some time to make sure user is done typing
+                setTimeout(function () {
+                    // If input contains characters
+                    if (searchBar.searchInput.value && searchBar.searchInput.value.replace(/\s/g, '').length != 0) {
+                        // Show results modal
+                        searchBar.modal.style.display = `block`;
 
-            // give some time to make sure user is done typing
-            setTimeout(function () {
-                searchBar.modal.style.display = `block`;
-
-                // display results message
-                searchBar.resultsModal(results)
-            }, 3000);         
+                        // Generate results message
+                        searchBar.resultsModal(results)
+                    }
+                }, 3000);
         }, content);
         
     }); 
