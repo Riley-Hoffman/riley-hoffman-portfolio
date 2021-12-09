@@ -1,41 +1,44 @@
-footer, footer p {
-    color: #e5e8ee;
+footer,
+footer p {
+  color: #e5e8ee;
 }
 
-.footerBody h2, .footerBody a {
-    margin: 10px auto;
+.footerBody h2,
+.footerBody a {
+  margin: 10px auto;
 }
 
 footer {
-    padding: 10px 0;
-    .footerBody {
-        align-items: center;
-        flex-direction: column;
-        padding: 65px 0;
-        > a {
-            color: #17a2aa;
-        }
-         > a:hover {
-            color: #e5e8ee;
-        }
-        .fa-linkedin:hover, .fa-github:hover {
-            color: #17a2aa;
-        }
-        .contactIcons {
-            font-size: 2em;
-            width: 135px;
-        }
+  padding: 10px 0;
+  .footerBody {
+    align-items: center;
+    flex-direction: column;
+    padding: 65px 0;
+    > a {
+      color: #17a2aa;
+    }
+    > a:hover {
+      color: #e5e8ee;
+    }
+    .fa-linkedin:hover,
+    .fa-github:hover {
+      color: #17a2aa;
+    }
+    .contactIcons {
+      font-size: 2em;
+      width: 135px;
+    }
 
-        .bottom {
-            justify-content: flex-end;
-        }
-    } 
+    .bottom {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .nameSeparator {
-                margin: 0 6px;
-            }
+  margin: 0 6px;
+}
 
 i.fa-grip-lines-vertical {
-    font-size: 84%;
+  font-size: 84%;
 }

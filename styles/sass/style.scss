@@ -1,52 +1,47 @@
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap");
 
 html {
-    background-color: #00050f;
+  background-color: #00050f;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.5px;
-    line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 
 p {
-    color: #525252FF;
-    margin: 10px 0;
+  color: #525252ff;
+  margin: 10px 0;
 }
 
 section {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
-.highlight { background-color: yellow }
+.highlight {
+  background-color: yellow;
+}
 
-@import './base/normalize';
-@import './partials/header';
-@import './partials/about';
-@import './partials/projects';
-@import './partials/skills';
-@import './partials/footer';
-@import './partials/media-queries';
+@import "./base/normalize";
+@import "./partials/header";
+@import "./partials/about";
+@import "./partials/projects";
+@import "./partials/skills";
+@import "./partials/footer";
+@import "./partials/media-queries";
 
 .iconContainer {
-    height: 16px;
-    overflow: hidden; 
-    margin-bottom: 5px;  
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .fa-water {
-    font-size: 2.5rem;
-    color: #17a2aa;
-    margin: 0;
-    transform:rotate(180deg);
-    width: 57px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr; 
+  font-size: 2.5rem;
+  color: #17a2aa;
+  margin: 0;
+  transform: rotate(180deg);
+  width: 57px;
 }

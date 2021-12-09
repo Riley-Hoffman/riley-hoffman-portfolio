@@ -1,257 +1,249 @@
 /* mid-size screens */
 @media (max-width: 1300px) {
-
-    header .navBox {
-        .modal {
-            right: calc(16.5% - 101px);
-        }
+  header .navBox {
+    .modal {
+      right: calc(16.5% - 101px);
     }
+  }
 }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1020px) {
-     header .navBox {
-        .modal {
-            right: calc(19.5% - 101px);
-        }
+  header .navBox {
+    .modal {
+      right: calc(19.5% - 101px);
     }
-    
-    .headerBodyFlexBox a.tealContactButton {
-        width: 60%;
-    }
+  }
+
+  .headerBodyFlexBox a.tealContactButton {
+    width: 60%;
+  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 780px) {
-    .line {
-        margin: -9px 0 0;
-    }
-    
-    .about {
-        margin-top: 45px;
-        > .wrapper {
-            align-items: center;
-            flex-direction: column;
-            .about2 {
-                width: 90%;
-            }  
-        } 
-    }
-    
-    .headerFlexWrapper .headerBodyFlexBox {
-        width: 100%;
-        margin-top: 20px;
-        .iconContainer {
-            display: none;
-        }
-        h1 {
-            margin-bottom: 2px;
-        }
-        p:last-of-type {
-            margin-bottom: 2px;
-        }
-        .outlined {
-            display: block;
-        }
-    }
-    
-     .headerBodyFlexBox a.tealContactButton {
-            width: 50%;
-    }
-    
-    header .chevronLink {
-        top: 90%;
-        .fa-chevron-down {
-                font-size: 1.8rem;
-        }
-    }
-    
-    header .navBox {
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
-            nav {
-                width: 100%;
-                ul {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-row-gap: 20px;
-                }
-        }
-        .modal {
-            top: 17%;
-            left: 50%;
-            right: auto;
-            height: 183px;
-            width: 151px;
-            .message {
-                font-size: 0.8rem;
-            }
-            .modalButton {
-                left: 20%;
-                top: 4%;
-                bottom: auto;
-                padding: 10px 16px 7px;
-            }
-        }
-    }
-    
-    .searchBox {
-        margin: 30px 0 0;
-        .searchInputOpen {
-            width: 100%;
-        }
-    }
-    .projects {
-        padding: 85px 0 40px;
-        .projectBox {
-            flex-direction: column;
-            .imgBox {
-                img {
-                    margin-top: 50px;
-                }
-                .oval {
-                    display: none;
-                }
-            }
-    
-            .projectInfo a:last-of-type {
-                margin-left: 30px;
-                margin-right: auto; 
-            }
-    
-            .projectInfo a:first-of-type {
-                margin-right: 30px;
-                margin-left: auto;
-    
-            }
-            
-        }
-    }
-    
-    .projectInfo p {
-                margin-bottom: 50px;
-            }
-    
-    .projectInfo:nth-child(even), .projectInfo:nth-child(odd) {
-        padding: 0;
-        text-align: center;
-    
-    }
-    
-    .projectBox:nth-child(even) {
-        flex-direction: column-reverse;
-    }
-    
-    footer {
-        padding: 0 0 20px;
-        .bottom {
-            justify-content: center;
-        }
-    }
+  .line {
+    margin: -9px 0 0;
+  }
 
+  .about {
+    margin-top: 45px;
+    > .wrapper {
+      align-items: center;
+      flex-direction: column;
+      .about2 {
+        width: 90%;
+      }
+    }
+  }
+
+  .headerFlexWrapper .headerBodyFlexBox {
+    margin-top: 20px;
+    width: 100%;
+    .iconContainer {
+      display: none;
+    }
+    h1 {
+      margin-bottom: 2px;
+    }
+    p:last-of-type {
+      margin-bottom: 2px;
+    }
+    .outlined {
+      display: block;
+    }
+  }
+
+  .headerBodyFlexBox a.tealContactButton {
+    width: 50%;
+  }
+
+  header .chevronLink {
+    top: 90%;
+    .fa-chevron-down {
+      font-size: 1.8rem;
+    }
+  }
+
+  header .navBox {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    nav {
+      width: 100%;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+      }
+    }
+    .modal {
+      top: 17%;
+      left: 50%;
+      right: auto;
+      height: 183px;
+      width: 151px;
+      .message {
+        font-size: 0.8rem;
+      }
+      .modalButton {
+        left: 20%;
+        top: 4%;
+        bottom: auto;
+        padding: 10px 16px 7px;
+      }
+    }
+  }
+
+  .searchBox {
+    margin: 30px 0 0;
+    .searchInputOpen {
+      width: 100%;
+    }
+  }
+  .projects {
+    padding: 85px 0 40px;
+    .projectBox {
+      flex-direction: column;
+      .imgBox {
+        img {
+          margin-top: 50px;
+        }
+        .oval {
+          display: none;
+        }
+      }
+
+      .projectInfo a:last-of-type {
+        margin-left: 30px;
+        margin-right: auto;
+      }
+
+      .projectInfo a:first-of-type {
+        margin-left: auto;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .projectInfo p {
+    margin-bottom: 50px;
+  }
+
+  .projectInfo:nth-child(even),
+  .projectInfo:nth-child(odd) {
+    padding: 0;
+    text-align: center;
+  }
+
+  .projectBox:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    padding: 0 0 20px;
+    .bottom {
+      justify-content: center;
+    }
+  }
 }
 
 /* Medium phones and down */
 @media (max-width: 650px) {
-    header {
-        padding-bottom: 140px;
-        .navBox {
-            .modal {
-                left: 63%;
-            }
-        }
-        .fa-chevron-down {
-            font-size: 1.5rem;
-        }
+  header {
+    padding-bottom: 140px;
+    .navBox {
+      .modal {
+        left: 63%;
+      }
     }
-    
-    .searchBox .rotateButton {
-        right: 4%;
+    .fa-chevron-down {
+      font-size: 1.5rem;
     }
+  }
 
-    .line {
-        margin: -9px 0 0;
-    }   
-    header .chevronLink {
-        left: 73%;
-        top: 81%;
-    }
-    
-    .about1 > p:nth-child(2) {
-      font-size: 2rem;
-    }
-    
-    h2.indexed:nth-child(3) {
-      font-size: 2rem;
-    }
-    
-    p.indexed:nth-child(1) {
-      font-size: 1.2rem;
-      padding-top: 20px;
-    }
-    
+  .searchBox .rotateButton {
+    right: 4%;
+  }
 
-    .about {
-        > .wrapper {
-            .about1 {
-                width: 100%;
-            }
-            
-            .about1 figure {
-                max-width: 82%;
-            }
-            
-            .about2 {
-                width: 100%;
-            }
-            
-        } 
-    }
+  .line {
+    margin: -9px 0 0;
+  }
+  header .chevronLink {
+    left: 73%;
+    top: 81%;
+  }
 
-    .skillsGallery {
-        grid-template-columns: 1fr 1fr;
-        p {
-            font-size: 18px;
-        }
+  .about1 > p:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  h2.indexed:nth-child(3) {
+    font-size: 2rem;
+  }
+
+  p.indexed:nth-child(1) {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+
+  .about {
+    > .wrapper {
+      .about1 {
+        width: 100%;
+      }
+
+      .about1 figure {
+        max-width: 82%;
+      }
+
+      .about2 {
+        width: 100%;
+      }
     }
- 
+  }
+
+  .skillsGallery {
+    grid-template-columns: 1fr 1fr;
+    p {
+      font-size: 18px;
+    }
+  }
 }
 
 /* Small phones */
 @media (max-width: 500px) {
   header {
-      font-size: 0.8rem;
-      .navBox {
-          .modal {
-              top: 10%;
-              height: 173px;
-              width: 126px;
-              .message {
-                  font-size: 0.7rem;
-              }
-              .modalButton {
-                  font-size: 0.8rem;
-                  padding: 9px 10px 7px;
-              }
-          }
+    font-size: 0.8rem;
+    .navBox {
+      .modal {
+        top: 10%;
+        height: 173px;
+        width: 126px;
+        .message {
+          font-size: 0.7rem;
+        }
+        .modalButton {
+          font-size: 0.8rem;
+          padding: 9px 10px 7px;
+        }
       }
-      .headerBodyFlexBox {
-          a.tealContactButton {
-              font-size: 0.7rem;
-              padding: 15px 0;
-          }
-
+    }
+    .headerBodyFlexBox {
+      a.tealContactButton {
+        font-size: 0.7rem;
+        padding: 15px 0;
       }
-      .chevronLink {
-          left: 50%;
-      }
+    }
+    .chevronLink {
+      left: 50%;
+    }
   }
 }
 
 /* Smallest phones */
 @media (max-width: 365px) {
-    header  a.chevronLink {
-            left: 65%;
-        }
+  header a.chevronLink {
+    left: 65%;
+  }
 }
