@@ -203,10 +203,13 @@ form {
     display: none;
     position: absolute;
     top: 11%;
-    left: 74%;
+    // left: 74%;
+    // right: 12%;
+    right: calc(19.5% - 101px);
     padding: 8px 5px 10px;
     height: 148px;
     width: 202px;
+    border: 3px ridge #17a2aa;
     border-radius: 3px; 
     background-color: #17a2aa;
     z-index: 20;  
@@ -221,7 +224,8 @@ form {
     padding: 6px 9px 3px;
     font-size: 0.9rem;
     background: #00050f;
-    border: none;   
+    border: none;
+    border-radius: 3px;   
 }
 
 p.message {

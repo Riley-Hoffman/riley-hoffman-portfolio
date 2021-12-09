@@ -544,10 +544,11 @@ form {
   display: none;
   position: absolute;
   top: 11%;
-  left: 74%;
+  right: calc(19.5% - 101px);
   padding: 8px 5px 10px;
   height: 148px;
   width: 202px;
+  border: 3px ridge #17a2aa;
   border-radius: 3px;
   background-color: #17a2aa;
   z-index: 20;
@@ -563,6 +564,7 @@ form {
   font-size: 0.9rem;
   background: #00050f;
   border: none;
+  border-radius: 3px;
 }
 
 p.message {
@@ -873,9 +875,19 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
+/* mid-size screens */
+@media (max-width: 1300px) {
+  header .navBox .modal {
+    right: calc(16.5% - 101px);
+  }
+}
 /* Portrait tablet and small desktops */
-@media (max-width: 900px) {
-  .headerBodyFlexBox a.redContactButton {
+@media (max-width: 1020px) {
+  header .navBox .modal {
+    right: calc(19.5% - 101px);
+  }
+
+  .headerBodyFlexBox a.tealContactButton {
     width: 60%;
   }
 }
@@ -918,7 +930,7 @@ i.fa-grip-lines-vertical {
     display: block;
   }
 
-  .headerBodyFlexBox a.redContactButton {
+  .headerBodyFlexBox a.tealContactButton {
     width: 50%;
   }
 
@@ -952,6 +964,7 @@ i.fa-grip-lines-vertical {
   header .navBox .modal {
     top: 17%;
     left: 50%;
+    right: auto;
     height: 183px;
     width: 151px;
   }
@@ -1077,6 +1090,30 @@ i.fa-grip-lines-vertical {
   }
 }
 /* Smallest phones */
+@media (max-width: 500px) {
+  header {
+    font-size: 0.8rem;
+  }
+  header .navBox .modal {
+    top: 10%;
+    height: 173px;
+    width: 126px;
+  }
+  header .navBox .modal .message {
+    font-size: 0.7rem;
+  }
+  header .navBox .modal .modalButton {
+    font-size: 0.8rem;
+    padding: 9px 10px 7px;
+  }
+  header .headerBodyFlexBox a.tealContactButton {
+    font-size: 0.7rem;
+    padding: 15px 0;
+  }
+  header .chevronLink {
+    left: 50%;
+  }
+}
 .iconContainer {
   height: 16px;
   overflow: hidden;

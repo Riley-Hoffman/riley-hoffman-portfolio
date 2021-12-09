@@ -1,6 +1,22 @@
+/* mid-size screens */
+@media (max-width: 1300px) {
+
+    header .navBox {
+        .modal {
+            right: calc(16.5% - 101px);
+        }
+    }
+}
+
 /* Portrait tablet and small desktops */
-@media (max-width: 900px) {
-    .headerBodyFlexBox a.redContactButton {
+@media (max-width: 1020px) {
+     header .navBox {
+        .modal {
+            right: calc(19.5% - 101px);
+        }
+    }
+    
+    .headerBodyFlexBox a.tealContactButton {
         width: 60%;
     }
 }
@@ -39,7 +55,7 @@
         }
     }
     
-     .headerBodyFlexBox a.redContactButton {
+     .headerBodyFlexBox a.tealContactButton {
             width: 50%;
     }
     
@@ -65,6 +81,7 @@
         .modal {
             top: 17%;
             left: 50%;
+            right: auto;
             height: 183px;
             width: 151px;
             .message {
@@ -202,7 +219,32 @@
 }
 
 /* Smallest phones */
-// @media (max-width: 500px) {
-  
-  
-// }
+@media (max-width: 500px) {
+  header {
+      font-size: 0.8rem;
+      .navBox {
+          .modal {
+              top: 10%;
+              height: 173px;
+              width: 126px;
+              .message {
+                  font-size: 0.7rem;
+              }
+              .modalButton {
+                  font-size: 0.8rem;
+                  padding: 9px 10px 7px;
+              }
+          }
+      }
+      .headerBodyFlexBox {
+          a.tealContactButton {
+              font-size: 0.7rem;
+              padding: 15px 0;
+          }
+
+      }
+      .chevronLink {
+          left: 50%;
+      }
+  }
+}
