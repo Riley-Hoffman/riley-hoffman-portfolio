@@ -167,8 +167,10 @@ form {
         border-radius: 50px;
     }
     .searchButton:focus {
-        // needs additional effet on hover
         outline: 2px solid #17a2aa;
+    }
+    .fa-search:hover {
+        color: #196c71;
     }
     .rotateButton {
         transform: rotate(-17deg);

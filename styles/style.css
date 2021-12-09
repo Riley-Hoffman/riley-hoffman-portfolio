@@ -492,7 +492,7 @@ form {
   transition: all 0.5s;
 }
 .searchBox .searchInput:focus-visible {
-  outline: 2px solid #17a2aa;
+  outline: 3px solid #17a2aa;
 }
 .searchBox .searchButton {
   background: transparent;
@@ -512,6 +512,9 @@ form {
 }
 .searchBox .searchButton:focus {
   outline: 2px solid #17a2aa;
+}
+.searchBox .fa-search:hover {
+  color: #196c71;
 }
 .searchBox .rotateButton {
   -webkit-transform: rotate(-17deg);
