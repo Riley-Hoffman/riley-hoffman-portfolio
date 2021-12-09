@@ -16,22 +16,28 @@ searchBar.formSubmit = () => {
         
         // If search bar is hidden
         if (!searchBar.searchInput.classList.contains('searchInputOpen')) {
-     
             
+            // Reference searchButton hover state
+            searchBar.searchButtonHover = document.querySelector('.searchButton:hover')
+            // Change icon:hover color to avoid seeing it outside the form on some small
+            searchBar.searchButtonHover.firstChild.style.color = '#00050f';  
+            // enable and focus input
+            searchBar.searchInput.disabled = false
+            searchBar.searchInput.focus()          
             // When magnifying glass is clicked, show search bar
             searchBar.searchInput.classList.add('searchInputOpen')
             searchBar.searchButton.classList.add('rotateButton')
-            // enable and focus input
-            searchBar.searchInput.disabled = false
-            searchBar.searchInput.focus()
            
             // Highlight text on the page matching user input
             searchBar.queryHighlighter()
+            // give some time for the input to resize
+            setTimeout(function () {
+                // Return icon:hover color
+                searchBar.searchButtonHover.firstChild.style.color = 'initial'; 
+            }, 3000);
            
             // listen for click on document
             document.addEventListener("click", function (event) {
-                // searchBar.searchButtonFocused = document.querySelector(`button.searchButton:focus`);
-                // searchBar.searchButtonFocused.style.outline = 'none';
                 
                 // if the user clicks outside the form
                 if (event.target != searchBar.searchInput && event.target != searchBar.searchButton && event.target != searchBar.searchIcon && event.target != searchBar.modal) {
