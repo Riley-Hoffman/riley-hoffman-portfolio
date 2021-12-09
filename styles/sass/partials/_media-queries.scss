@@ -73,6 +73,41 @@ header .navBox {
     .line {
         margin: -9px 0 0;
     }   
+    header .chevronLink {
+        top: 95%;
+
+    }
+
+    header .fa-chevron-down {
+        font-size: 1.5rem;
+    }
+
+
+.about1 > p:nth-child(2) {
+  font-size: 2rem;
+}
+
+h2.indexed:nth-child(3) {
+  font-size: 2rem;
+}
+
+p.indexed:nth-child(1) {
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+
+.about1 {
+  width: 100%;
+}
+
+.about1 figure {
+    max-width: 82%;
+}
+
+.about2 {
+  width: 100%;
+}
+
  
 }
 
