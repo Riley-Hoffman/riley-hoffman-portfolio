@@ -329,6 +329,7 @@ header .skip-link {
 }
 header .skip-link:focus {
   left: 0;
+  outline: 2px solid #e5e8ee;
 }
 header h1,
 header p,
@@ -782,10 +783,16 @@ footer .footerBody {
   padding: 65px 0;
 }
 footer .footerBody > a {
+  padding: 5px;
+}
+footer .footerBody > a {
   color: #17a2aa;
 }
 footer .footerBody > a:hover {
   color: #e5e8ee;
+}
+footer .footerBody a:focus {
+  outline: 2px solid #e5e8ee;
 }
 footer .footerBody .fa-linkedin:hover,
 footer .footerBody .fa-github:hover {
@@ -794,6 +801,9 @@ footer .footerBody .fa-github:hover {
 footer .footerBody .contactIcons {
   font-size: 2em;
   width: 135px;
+}
+footer .footerBody .contactIcons a {
+  padding: 0 5px;
 }
 footer .footerBody .bottom {
   -webkit-box-pack: end;

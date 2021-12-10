@@ -15,11 +15,18 @@ footer {
     flex-direction: column;
     padding: 65px 0;
     > a {
+      padding: 5px;
+    }
+    > a {
       color: #17a2aa;
     }
     > a:hover {
       color: #e5e8ee;
     }
+    a:focus {
+      outline: 2px solid #e5e8ee;
+    }
+
     .fa-linkedin:hover,
     .fa-github:hover {
       color: #17a2aa;
@@ -27,6 +34,9 @@ footer {
     .contactIcons {
       font-size: 2em;
       width: 135px;
+      a {
+        padding: 0 5px;
+      }
     }
 
     .bottom {
