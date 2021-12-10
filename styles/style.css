@@ -312,9 +312,17 @@ section {
 }
 
 header {
-  background-color: #00050f;
-  height: 100vh;
+  background-image: url("../assets/portfolio-background.png");
+  background-size: fill;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  background-size: cover;
+  background-clip: content;
   padding-bottom: 50px;
+  height: 100vh;
+  width: 100%;
 }
 header .skip-link {
   background: #17a2aa;
@@ -1004,11 +1012,20 @@ i.fa-grip-lines-vertical {
   .skillsGallery p {
     font-size: 18px;
   }
+
+  .headerFlexWrapper .headerBodyFlexBox {
+    height: 45vh;
+  }
+
+  header .navBox {
+    margin-top: 20px;
+  }
 }
 /* Small phones */
 @media (max-width: 500px) {
   header {
     font-size: 0.8rem;
+    background-position-x: -33vw;
   }
   header .headerBodyFlexBox a.tealContactButton {
     font-size: 0.7rem;
@@ -1016,10 +1033,6 @@ i.fa-grip-lines-vertical {
   }
   header .chevronLink {
     left: 50%;
-  }
-
-  .headerFlexWrapper .headerBodyFlexBox {
-    height: 40vh;
   }
 }
 /* Smallest phones */

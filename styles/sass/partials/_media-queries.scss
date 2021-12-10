@@ -173,12 +173,20 @@
       font-size: 18px;
     }
   }
+  .headerFlexWrapper .headerBodyFlexBox {
+    height: 45vh;
+  }
+
+  header .navBox {
+    margin-top: 20px;
+  }
 }
 
 /* Small phones */
 @media (max-width: 500px) {
   header {
     font-size: 0.8rem;
+    background-position-x: -33vw;
     .headerBodyFlexBox {
       a.tealContactButton {
         font-size: 0.7rem;
@@ -190,9 +198,6 @@
     }
   }
 
-  .headerFlexWrapper .headerBodyFlexBox {
-    height: 40vh;
-  }
 }
 
 /* Smallest phones */
