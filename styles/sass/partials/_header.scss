@@ -164,5 +164,8 @@ form {
     a:focus .target {
       text-decoration: underline;
     }
+    a:active .target {
+      text-decoration: none;
+    }
   }
 }
