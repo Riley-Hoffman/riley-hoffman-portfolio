@@ -484,7 +484,7 @@ form {
   width: 35%;
 }
 .headerFlexWrapper .headerBodyFlexBox a i.fa-long-arrow-alt-right {
-  line-height: 24px;
+  line-height: 27px;
   margin-left: 10px;
 }
 .headerFlexWrapper .headerBodyFlexBox a:focus {
@@ -1030,6 +1030,9 @@ i.fa-grip-lines-vertical {
   header .headerBodyFlexBox a.tealContactButton {
     font-size: 0.8rem;
     padding: 15px 0;
+  }
+  header .headerBodyFlexBox a.tealContactButton i.fa-long-arrow-alt-right {
+    line-height: 25px;
   }
   header .chevronLink {
     left: 50%;
