@@ -507,6 +507,20 @@ form {
   width: 50vw;
 }
 
+.about1 .iconContainer {
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.about1 .iconContainer .fa-water {
+  color: #17a2aa;
+  font-size: 2.5rem;
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 57px;
+}
+
 .about1 figure {
   margin: 20px 0 0;
   max-width: 50%;
