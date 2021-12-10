@@ -415,6 +415,11 @@ header .navBox ul a:hover::after,
 header .navBox ul a:focus::after {
   width: 100%;
 }
+header .navBox ul a:active::after {
+  -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  width: 0;
+}
 
 form {
   position: relative;
