@@ -1,20 +1,5 @@
-/* mid-size screens */
-@media (max-width: 1300px) {
-  header .navBox {
-    .modal {
-      right: calc(16.5% - 101px);
-    }
-  }
-}
-
 /* Portrait tablet and small desktops */
 @media (max-width: 1020px) {
-  header .navBox {
-    .modal {
-      right: calc(19.5% - 101px);
-    }
-  }
-
   .headerBodyFlexBox a.tealContactButton {
     width: 60%;
   }
@@ -77,22 +62,6 @@
         grid-row-gap: 20px;
       }
     }
-    .modal {
-      top: 17%;
-      left: 50%;
-      right: auto;
-      height: 183px;
-      width: 151px;
-      .message {
-        font-size: 0.8rem;
-      }
-      .modalButton {
-        left: 20%;
-        top: 4%;
-        bottom: auto;
-        padding: 10px 16px 7px;
-      }
-    }
   }
 
   .searchBox {
@@ -152,11 +121,6 @@
 @media (max-width: 650px) {
   header {
     padding-bottom: 140px;
-    .navBox {
-      .modal {
-        left: 63%;
-      }
-    }
     .fa-chevron-down {
       font-size: 1.5rem;
     }
@@ -178,11 +142,11 @@
     font-size: 2rem;
   }
 
-  h2.indexed:nth-child(3) {
+  h2.target:nth-child(3) {
     font-size: 2rem;
   }
 
-  p.indexed:nth-child(1) {
+  p.target:nth-child(1) {
     font-size: 1.2rem;
     padding-top: 20px;
   }
@@ -215,20 +179,6 @@
 @media (max-width: 500px) {
   header {
     font-size: 0.8rem;
-    .navBox {
-      .modal {
-        top: 10%;
-        height: 173px;
-        width: 126px;
-        .message {
-          font-size: 0.7rem;
-        }
-        .modalButton {
-          font-size: 0.8rem;
-          padding: 9px 10px 7px;
-        }
-      }
-    }
     .headerBodyFlexBox {
       a.tealContactButton {
         font-size: 0.7rem;

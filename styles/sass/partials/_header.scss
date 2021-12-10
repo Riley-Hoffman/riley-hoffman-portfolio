@@ -103,15 +103,23 @@ form {
     flex-direction: column;
     height: 60vh;
     width: 45vw;
+    .iconContainer {
+      height: 16px;
+      overflow: hidden;
+      margin-bottom: 5px;
+      .fa-water {
+        font-size: 2.5rem;
+        color: #17a2aa;
+        margin: 0;
+        transform: rotate(180deg);
+        width: 57px;
+      }
+    }
     .outlined {
       color: #00050f;
       font-weight: 800;
       text-shadow: -1px -1px 0 #17a2aa, 1px -1px 0 #17a2aa, -1px 2px 0 #17a2aa,
         1px 1px 0 #00050f;
-    }
-    .indexed.outlined {
-      position: relative;
-      z-index: 10;
     }
     p:nth-child(2) {
       margin-bottom: 10px;
@@ -137,109 +145,9 @@ form {
     a:focus {
       outline: 2px solid;
     }
-    a:hover .indexed,
-    a:focus .indexed {
+    a:hover .target,
+    a:focus .target {
       text-decoration: underline;
     }
   }
-}
-
-.searchBox {
-  display: block;
-  margin-left: 20px;
-  position: relative;
-  .searchInput {
-    background-color: #e5e8ee;
-    border: 2px solid #00050f;
-    border-radius: 50px;
-    color: #e5e8ee;
-    height: 50px;
-    width: 50px;
-    padding: 0 10px;
-    transition-timing-function: ease-in-out;
-    transition: all 0.5s;
-  }
-  .searchInput:focus-visible {
-    outline: 3px solid #17a2aa;
-  }
-  .searchButton {
-    background: transparent;
-    border: none;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 2px 0 0;
-    position: absolute;
-    transition-timing-function: ease-in-out;
-    transition: all 0.1s;
-    top: 6%;
-    right: 2px;
-    width: 45px;
-    height: 45px;
-    .fa-search:hover {
-      color: #196c71;
-    }
-  }
-
-  .searchButton:focus {
-    outline: 2px solid #17a2aa;
-  }
-
-  .searchButton:active {
-    outline: none;
-    .fa-search {
-      color: #196c71;
-    }
-  }
-
-  .rotateButton {
-    transform: rotate(-17deg);
-    transition: all 0.5s;
-  }
-
-  .searchLabel {
-    color: white;
-    display: none;
-    position: absolute;
-  }
-
-  .searchInputOpen {
-    color: #00050f;
-    width: 230px;
-  }
-}
-
-.modal {
-  background-color: #17a2aa;
-  border: 3px ridge #17a2aa;
-  border-radius: 3px;
-  display: none;
-  position: absolute;
-  top: 11%;
-  right: calc(19.5% - 101px);
-  padding: 8px 5px 10px;
-  height: 165px;
-  width: 202px;
-  z-index: 20;
-}
-
-.modal .modalButton {
-  background: #00050f;
-  border: none;
-  border-radius: 3px;
-  color: #f0eaea;
-  font-size: 0.9rem;
-  margin: 2px;
-  padding: 6px 9px 3px;
-  position: relative;
-  left: 59%;
-  bottom: 16%;
-}
-
-p.message {
-  font-size: 0.9rem;
-  margin: 0px 4px 0 7px;
-}
-
-.modal button {
-  color: #c4bfbf;
 }

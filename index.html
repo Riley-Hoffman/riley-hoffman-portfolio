@@ -17,59 +17,48 @@
     <!-- Header Starts -->
     <header>
         <a href="#main" class="skip-link">Skip To Content</a>
-        <div class="wrapper headerFlexWrapper"> 
+        <div class="wrapper headerFlexWrapper">
             <div class="flexBox navBox">
                 <nav>
                     <ul>
                         <li>
-                            <a href="file:///Users/rileyhoffman/Sites/web_development_bootcamp/riley-hoffman-portfolio/index.html"
-                                class="indexed">Home</a>
+                            <a
+                                href="file:///Users/rileyhoffman/Sites/web_development_bootcamp/riley-hoffman-portfolio/index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#about" class="indexed">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#projects" class="indexed">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="#skills" class="indexed">Skills</a>
+                            <a href="#skills">Skills</a>
                         </li>
                         <li>
-                            <a href="#contact" class="indexed">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="searchBox">
-                    <form action="_blank" id="searchForm">
-                        <label for="searchInput" class="searchLabel">Highlight text you enter on the page</label>
-                        <input type="search" class="searchInput" id="searchInput"
-                            title="Highlight text if it's on the page." disabled />
-                        <button class="searchButton" id="searchButton" type="submit">
-                            <i class="fas fa-search" id="fa-search"></i><span class="sr-only">Open
-                                search with this</span>
-                            <!-- ^ SR reads "Open search with this button." ^ -->
-                        </button>
-                    </form>
-                </div>
-                <div class="modal"></div> <!-- Modal To Hold Search Results Message -->
             </div>
             <div class="headerBodyFlexBox">
                 <div class="flexBox iconContainer">
                     <i class="fas fa-water"></i>
                 </div>
-                <p class="indexed">Riley Hoffman</p>
+                <p>Riley Hoffman</p>
                 <h1 class="animate__animated animate__backInLeft">
-                    <span class="indexed">Web </span><span class="indexed outlined">Developer</span>
+                    <span>Web </span><span class="outlined">Developer</span>
                 </h1>
                 <!-- tealContactButton class is to facilitate media query targetting -->
-                <a href="mailto:riley.n.hoffman@gmail.com" class="tealContactButton"><span class="indexed">Contact Me
+                <a href="mailto:riley.n.hoffman@gmail.com" class="tealContactButton"><span class="target">Contact Me
                     </span><i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
             <a href="#main" class="chevronLink" aria-label="Skip to main content.">
                 <i class="fas fa-chevron-down"></i>
             </a>
-        </div> <!-- Wrapper Ends -->
-    </header> <!-- Header Ends -->
+        </div>
+        <!-- Wrapper Ends -->
+    </header>
+    <!-- Header Ends -->
     <!-- Main Starts -->
     <main id="main">
         <!-- About Section Starts -->
@@ -79,14 +68,15 @@
                     <div class="flexBox iconContainer">
                         <i class="fas fa-water"></i>
                     </div>
-                    <p class="indexed">About Me</p>
-                    <h2 class="indexed">What I Do</h2>
+                    <p class="target">About Me</p>
+                    <h2 class="target">What I Do</h2>
                     <figure>
-                        <img src="./assets/headshot.jpg" alt="Headshot of Riley Hoffman with a flower behind his ear." />
+                        <img src="./assets/headshot.jpg"
+                            alt="Headshot of Riley Hoffman with a flower behind his ear." />
                     </figure>
                 </div>
                 <div class="flexBox about2">
-                    <p class="indexed">
+                    <p>
                         I'm a front-end developer who is passionate about accessible and
                         responsive web applications, well-structured code, and user
                         experience. My background in technical troubleshooting and
@@ -95,22 +85,29 @@
                         my work today.
                     </p>
                 </div>
-            </div> <!-- Wrapper Ends -->
-        </section> <!-- About Section Ends -->
+            </div>
+            <!-- Wrapper Ends -->
+        </section>
+        <!-- About Section Ends -->
         <!-- Projects Section Starts -->
         <section class="projects" id="projects">
             <div class="wrapper flexBox">
-                <h2 class="indexed">Projects</h2>
+                <h2>Projects</h2>
                 <ul>
                     <li class="projectBox">
                         <div class="projectInfo">
-                            <h3 class="indexed">Out Of Context</h3>
-                            <h4 class="indexed">React, JSX, AXIOS, SCSS</h4>
-                            <p class="indexed">
-                                Created with React, this app allows users to search by movie name and displays GIFs based on themes (keywords) from the movie (love, war, sports etc). Three GIFs are displayed initially, with their keywords underneath. By clicking, the user can cycle through all GIFs per keyword, or look at other keywords associated with the movie, returning new GIFs!
+                            <h3>Out Of Context</h3>
+                            <h4>React, JSX, AXIOS, SCSS</h4>
+                            <p>
+                                Created with React, this app allows users to search by movie
+                                name and displays GIFs based on themes (keywords) from the
+                                movie (love, war, sports etc). Three GIFs are displayed
+                                initially, with their keywords underneath. By clicking, the
+                                user can cycle through all GIFs per keyword, or look at other
+                                keywords associated with the movie, returning new GIFs!
                             </p>
-                            <a href="https://focused-varahamihira-abf5da.netlify.app/"  class="indexed" target="_blank">Live</a>
-                            <a href="https://github.com/dearJuno/outofContext"  class="indexed" target="_blank">Repo</a>
+                            <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/dearJuno/outofContext" target="_blank">Repo</a>
                         </div>
                         <div class="imgBox">
                             <a href="https://focused-varahamihira-abf5da.netlify.app/" title="Out Of Context"
@@ -125,33 +122,45 @@
                         <div class="imgBox">
                             <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" title="Infinity Corkboard"
                                 target="_blank">
-                                <img src="./assets/infinity-corkboard.png" alt="Screenshot of the Infinity Corkboard app." />
+                                <img src="./assets/infinity-corkboard.png"
+                                    alt="Screenshot of the Infinity Corkboard app." />
                                 <div class="oval"></div>
                             </a>
                         </div>
                         <div class="projectInfo">
-                            <h3 class="indexed">Infinity Corkboard</h3>
-                            <h4 class="indexed">React, JSX, REST API, CSS</h4>
-                            <p class="indexed">
-                                This React based app presents the user with a 4X4 grid of photos from NASA APIs' Astronomy Picture of the Day endpoint. The user can click any images they wish to change, which swaps it out for a new one in the same position. When the user is pleased with how the grid looks, they may save it by printing to pdf. Print output is styled so the grid appears with no other page elements in the saved file.
+                            <h3>Infinity Corkboard</h3>
+                            <h4>React, JSX, REST API, CSS</h4>
+                            <p>
+                                This React based app presents the user with a 4X4 grid of
+                                photos from NASA APIs' Astronomy Picture of the Day endpoint.
+                                The user can click any images they wish to change, which swaps
+                                it out for a new one in the same position. When the user is
+                                pleased with how the grid looks, they may save it by printing
+                                to pdf. Print output is styled so the grid appears with no
+                                other page elements in the saved file.
                             </p>
-                            <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" class="indexed" target="_blank">Live</a>
+                            <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley-hoffman-project-three"
-                                 class="indexed" target="_blank">Repo</a>
+                                target="_blank">Repo</a>
                         </div>
                     </li>
 
                     <li class="projectBox">
                         <div class="projectInfo">
-                            <h3 class="indexed">Weather Scout</h3>
-                            <h4 class="indexed">HTML, Javascript, REST API, SCSS</h4>
-                            <p class="indexed">
-                                With this app, users can search by city and get corresponding weather data. 'Right Now' or 'Future Forecast' can be specified. 'Right Now' returns a weather description with associated icon, and the current temperature. Future forecast returns a grid of dates with forecast temperatures. Created with Javascript, HTML and CSS.
+                            <h3>Weather Scout</h3>
+                            <h4>HTML, Javascript, REST API, SCSS</h4>
+                            <p>
+                                With this app, users can search by city and get corresponding
+                                weather data. 'Right Now' or 'Future Forecast' can be
+                                specified. 'Right Now' returns a weather description with
+                                associated icon, and the current temperature. Future forecast
+                                returns a grid of dates with forecast temperatures. Created
+                                with Javascript, HTML and CSS.
                             </p>
                             <a href="https://romantic-kowalevski-f7a14c.netlify.app/" title="Weather Scout"
-                                class="indexed" target="_blank">Live</a>
+                                target="_blank">Live</a>
                             <a href="https://github.com/Linda-Columbus-Riley-Hoffman-Developers/weatherScout"
-                                class="indexed" target="_blank">Repo</a>
+                                target="_blank">Repo</a>
                         </div>
                         <div class="imgBox">
                             <a href="https://romantic-kowalevski-f7a14c.netlify.app/" target="_blank">
@@ -164,84 +173,93 @@
                     <li class="projectBox">
                         <div class="imgBox">
                             <a href="https://vigilant-albattani-29bee8.netlify.app/" title="Delicious" target="_blank">
-                                <img src="./assets/delicious.png" alt="Screenshot of Delicious, a PSD conversion project." />
+                                <img src="./assets/delicious.png"
+                                    alt="Screenshot of Delicious, a PSD conversion project." />
                                 <div class="oval"></div>
                             </a>
                         </div>
                         <div class="projectInfo">
-                            <h3 class="indexed">Delicious</h3>
-                            <h4 class="indexed">HTML, SCSS</h4>
-                            <p class="indexed">A multi-page PSD conversion project for a fictional restaurant chain.</p>
-                            <a href="https://vigilant-albattani-29bee8.netlify.app/" class="indexed" target="_blank">Live</a>
+                            <h3>Delicious</h3>
+                            <h4>HTML, SCSS</h4>
+                            <p>
+                                A multi-page PSD conversion project for a fictional restaurant
+                                chain.
+                            </p>
+                            <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley_hoffman_project_1_delicious"
-                                target="_blank" class="indexed">Repo</a>
+                                target="_blank">Repo</a>
                         </div>
                     </li>
                 </ul>
-            </div> <!-- Wrapper Ends -->
-        </section> <!-- Project Section Ends -->
+            </div>
+            <!-- Wrapper Ends -->
+        </section>
+        <!-- Project Section Ends -->
         <!-- Skills Section Starts -->
         <section class="skills" id="skills">
             <div class="wrapper flexBox">
-                <h2 class="indexed">Skills</h2>
+                <h2>Skills</h2>
                 <ul class="skillsGallery">
                     <li>
                         <i class="devicon-html5-plain" aria-hidden="true"></i>
-                        <p class="indexed">HTML5</p>
+                        <p>HTML5</p>
                     </li>
                     <li>
                         <i class="devicon-css3-plain" aria-hidden="true"></i>
-                        <p class="indexed">CSS3</p>
+                        <p>CSS3</p>
                     </li>
                     <li>
                         <i class="devicon-javascript-plain" aria-hidden="true"></i>
-                        <p class="indexed">Javascript + ES6</p>
+                        <p>Javascript + ES6</p>
                     </li>
                     <li>
                         <i class="devicon-sass-original" aria-hidden="true"></i>
-                        <p class="indexed">SASS</p>
+                        <p>SASS</p>
                     </li>
                     <li>
                         <i class="fas fa-universal-access" aria-hidden="true"></i>
-                        <p class="indexed">Accessibility</p>
+                        <p>Accessibility</p>
                     </li>
                     <li>
                         <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                        <p class="indexed">Mobile Responsiveness</p>
+                        <p>Mobile Responsiveness</p>
                     </li>
                     <li>
                         <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
-                        <p class="indexed">Rest API</p>
+                        <p>Rest API</p>
                     </li>
                     <li>
                         <i class="devicon-github-original" aria-hidden="true"></i>
-                        <p class="indexed">Github</p>
+                        <p>Github</p>
                     </li>
                     <li>
                         <i class="devicon-react-original" aria-hidden="true"></i>
-                        <p class="indexed">React</p>
+                        <p>React</p>
                     </li>
                     <li>
                         <i class="devicon-jquery-plain-wordmark" aria-hidden="true"></i>
-                        <p class="indexed">jQuery</p>
+                        <p>jQuery</p>
                     </li>
                     <li>
                         <i class="devicon-vscode-plain" aria-hidden="true"></i>
-                        <p class="indexed">VC Code</p>
+                        <p>VC Code</p>
                     </li>
                     <li>
                         <i class="devicon-firebase-plain" aria-hidden="true"></i>
-                        <p class="indexed">Firebase</p>
+                        <p>Firebase</p>
                     </li>
                 </ul>
-            </div> <!-- Wrapper Ends -->
-        </section> <!-- Skills Section Ends -->
-    </main> <!-- Main Ends -->
+            </div>
+            <!-- Wrapper Ends -->
+        </section>
+        <!-- Skills Section Ends -->
+    </main>
+    <!-- Main Ends -->
     <!-- Footer Starts -->
     <footer id="contact">
         <div class="wrapper flexBox footerBody">
             <h2>Contact</h2>
-            <a href="mailto: riley.n.hoffman@gmail.com" class="indexed">riley.n.hoffman@gmail.com</a>
+            <a href="mailto: riley.n.hoffman@gmail.com">riley.n.hoffman@gmail.com</a>
             <div class="flexBox contactIcons">
                 <a href="https://github.com/Riley-Hoffman">
                     <i class="fab fa-github"></i><span class="sr-only">Github</span>
@@ -250,14 +268,14 @@
                     <i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">Linkedin</span>
                 </a>
             </div>
-        </div> <!-- footerBody Wrapper Ends -->
+        </div>
+        <!-- footerBody Wrapper Ends -->
         <div class="wrapper flexBox bottom">
-            <p>
-                <span class="indexed">Riley Hoffman </span>|<span
-                    class="indexed"> Developer</span>
-            </p>
-        </div> <!-- Bottom Wrapper Ends -->
-    </footer> <!-- Footers Ends -->
+            <p><span>Riley Hoffman </span>|<span> Developer</span></p>
+        </div>
+        <!-- Bottom Wrapper Ends -->
+    </footer>
+    <!-- Footers Ends -->
     <script src="./script.js"></script>
 </body>
 
