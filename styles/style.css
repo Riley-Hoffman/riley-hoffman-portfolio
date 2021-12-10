@@ -684,8 +684,14 @@ form {
 
 .imgBox > a:hover > img,
 .imgBox > a:focus > img {
-  border-top: 8px ridge #e5e8ee;
+  border-top: 14px ridge #e5e8ee;
+  -webkit-transition: border-top 0.5s;
+  transition: border-top 0.5s;
   z-index: -2;
+}
+
+.imgBox > a:focus {
+  outline: none;
 }
 
 .imgBox > a:active > img {
@@ -799,12 +805,22 @@ footer .footerBody > a {
 footer .footerBody > a:hover {
   color: #e5e8ee;
 }
+footer .footerBody > a:active {
+  color: #17a2aa;
+}
 footer .footerBody a:focus {
   outline: 2px solid #e5e8ee;
+}
+footer .footerBody a:active {
+  outline: none;
 }
 footer .footerBody .fa-linkedin:hover,
 footer .footerBody .fa-github:hover {
   color: #17a2aa;
+}
+footer .footerBody .fa-linkedin:active,
+footer .footerBody .fa-github:active {
+  color: #e5e8ee;
 }
 footer .footerBody .contactIcons {
   font-size: 2em;

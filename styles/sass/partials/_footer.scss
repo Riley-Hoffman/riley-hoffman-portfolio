@@ -23,13 +23,24 @@ footer {
     > a:hover {
       color: #e5e8ee;
     }
+     > a:active {
+      color: #17a2aa;
+    }
     a:focus {
       outline: 2px solid #e5e8ee;
+    }
+    a:active {
+      outline: none;
     }
 
     .fa-linkedin:hover,
     .fa-github:hover {
       color: #17a2aa;
+    }
+
+    .fa-linkedin:active,
+    .fa-github:active {
+      color: #e5e8ee;
     }
     .contactIcons {
       font-size: 2em;
