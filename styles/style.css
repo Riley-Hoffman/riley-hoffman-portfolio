@@ -294,6 +294,7 @@ time {
 
 html {
   background-color: #00050f;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -880,6 +881,35 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate__backInLeft {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  header .navBox ul a:hover::after,
+header .navBox ul a:focus::after {
+    width: 0%;
+  }
+  header .navBox ul a:hover,
+header .navBox ul a:focus {
+    border-bottom: 2px solid #17a2aa;
+  }
+
+  .imgBox > a:hover > img,
+.imgBox > a:focus > img {
+    border-top: 8px ridge #e5e8ee;
+  }
+
+  .skillsGallery li i:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 1020px) {
   .headerBodyFlexBox a.tealContactButton {

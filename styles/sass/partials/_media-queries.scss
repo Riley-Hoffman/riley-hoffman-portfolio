@@ -1,5 +1,35 @@
 // remove hover effects on mobile
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate__backInLeft {
+    animation: none;
+  }
+  header {
+    .navBox {
+      ul {
+        a:hover::after,
+        a:focus::after {
+          width: 0%;
+        }
+        a:hover,
+        a:focus {
+          border-bottom: 2px solid #17a2aa;
+        }
+      }
+    }
+  }
+  .imgBox > a:hover > img,
+  .imgBox > a:focus > img {
+    border-top: 8px ridge #e5e8ee;
+  }
+  .skillsGallery li i:hover {
+    animation: none;
+  }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 1020px) {
   .headerBodyFlexBox a.tealContactButton {
@@ -193,7 +223,7 @@
         padding: 15px 0;
         i.fa-long-arrow-alt-right {
           line-height: 25px;
-      }
+        }
       }
     }
     .chevronLink {
