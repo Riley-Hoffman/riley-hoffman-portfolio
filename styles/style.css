@@ -343,14 +343,20 @@ header .skip-link:focus {
 }
 
 header h1,
+header h2,
 header p,
 header .navBox a {
   color: #e5e8ee;
 }
 
-header h1 {
+header h1, header h2 {
   line-height: 1.3;
   margin-bottom: 15px;
+}
+
+header .animate__backInLeft {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 header .headerParagraph {
