@@ -558,6 +558,9 @@ form {
   margin: 20px 0 0;
   max-width: 50%;
 }
+.about1 figure img {
+  border-radius: 1px;
+}
 .about1 figure figcaption {
   background: rgba(23, 162, 170, 0.4);
   border: 1px ridge rgba(23, 162, 170, 0.2);
