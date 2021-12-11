@@ -25,10 +25,15 @@
     width: 57px;
   }
 }
-
 .about1 figure {
   margin: 20px 0 0;
   max-width: 50%;
+  figcaption {
+    color: #00050f;
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin-top: 8px;
+  }
 }
 
 .about2 {
