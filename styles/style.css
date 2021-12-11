@@ -357,6 +357,7 @@ header h1, header h2 {
 header .animate__backInLeft {
   font-size: 1.7rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 header .headerParagraph {
@@ -955,14 +956,11 @@ i.fa-grip-lines-vertical {
   .headerFlexWrapper .headerBodyFlexBox .iconContainer {
     display: none;
   }
-  .headerFlexWrapper .headerBodyFlexBox h1 {
+  .headerFlexWrapper .headerBodyFlexBox h2 {
     margin-bottom: 2px;
   }
   .headerFlexWrapper .headerBodyFlexBox p:last-of-type {
     margin-bottom: 2px;
-  }
-  .headerFlexWrapper .headerBodyFlexBox .outlined {
-    display: block;
   }
   .headerBodyFlexBox a.tealContactButton {
     width: 50%;
