@@ -1,9 +1,6 @@
 // remove hover effects on mobile
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
   .animate__backInLeft {
     animation: none;
   }
