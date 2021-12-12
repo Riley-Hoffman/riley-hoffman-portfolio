@@ -5,7 +5,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 // Check if the media query matches or is not available.
 if (!reduceMotion || !reduceMotion.matches) {
-  $(".aboutLink").click(function () {
+  $(".aboutLink, .skip-link, .chevronLink").click(function () {
     $([document.documentElement, document.body]).animate(
       {
         scrollTop: $("#about").offset().top,
