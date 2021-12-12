@@ -1,4 +1,79 @@
-// remove hover effects on mobile
+// to do remove hover effects on mobile
+
+@media (prefers-color-scheme: light) {
+  html {
+    background: $white;
+  }
+  header {
+    background-image: none;
+    .skip-link:focus {
+      outline: 2px solid $black;
+    }
+    h1,
+    h2,
+    p,
+    .navBox a {
+      color: $black;
+    }
+    .fa-chevron-down:hover,
+    .chevronLink:focus .fa-chevron-down {
+      color: $black;
+    }
+  }
+
+  .projects {
+    .wrapper.flexBox {
+      h2 {
+        color: $black;
+      }
+    }
+  }
+
+  .projectInfo {
+    h3,
+    h4,
+    p {
+      color: $black;
+    }
+    a {
+      background: $black;
+      color: #acd6d9;
+    }
+    p,
+    h3,
+    h4 {
+      text-shadow: none;
+    }
+  }
+
+  .imgBox > a:hover > img,
+  .imgBox > a:focus > img {
+    border-top: 14px ridge $black;
+  }
+
+  footer,
+  footer p {
+    color: $black;
+  }
+
+  footer {
+    .footerBody {
+      > a:hover {
+        color: $black;
+      }
+      > a:active {
+        color: $teal;
+      }
+      a:focus {
+        outline-color: $black;
+      }
+      .fa-linkedin:active,
+      .fa-github:active {
+        color: $black;
+      }
+    }
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .animate__backInLeft {
