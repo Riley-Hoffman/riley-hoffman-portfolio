@@ -1,6 +1,6 @@
 footer,
 footer p {
-  color: #e5e8ee;
+  color: $white;
 }
 
 .footerBody h2,
@@ -18,16 +18,16 @@ footer {
       padding: 5px;
     }
     > a {
-      color: #17a2aa;
+      color: $teal;
     }
     > a:hover {
-      color: #e5e8ee;
+      color: $white;
     }
      > a:active {
-      color: #17a2aa;
+      color: $teal;
     }
     a:focus {
-      outline: 2px solid #e5e8ee;
+      outline: 2px solid $white;
     }
     a:active {
       outline: none;
@@ -35,12 +35,12 @@ footer {
 
     .fa-linkedin:hover,
     .fa-github:hover {
-      color: #17a2aa;
+      color: $teal;
     }
 
     .fa-linkedin:active,
     .fa-github:active {
-      color: #e5e8ee;
+      color: $white;
     }
     .contactIcons {
       font-size: 2em;

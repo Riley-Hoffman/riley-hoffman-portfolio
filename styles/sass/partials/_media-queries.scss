@@ -13,14 +13,14 @@
         }
         a:hover,
         a:focus {
-          border-bottom: 2px solid #17a2aa;
+          border-bottom: 2px solid $teal;
         }
       }
     }
   }
   .imgBox > a:hover > img,
   .imgBox > a:focus > img {
-    border-top: 8px ridge #e5e8ee;
+    border-top: 8px ridge $white;
   }
   .skillsGallery li i:hover {
     animation: none;

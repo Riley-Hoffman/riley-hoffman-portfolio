@@ -11,9 +11,9 @@ header {
   height: 100vh;
   width: 100%;
   .skip-link {
-    background: #17a2aa;
+    background: $teal;
     border-radius: 3px;
-    color: #e5e8ee;
+    color: $white;
     left: -1000px;
     margin-left: 7px;
     padding: 15px 15px;
@@ -24,13 +24,13 @@ header {
 
   .skip-link:focus {
     left: 0;
-    outline: 2px solid #e5e8ee;
+    outline: 2px solid $white;
   }
   h1,
   h2,
   p,
   .navBox a {
-    color: #e5e8ee;
+    color: $white;
   }
   h1,
   h2 {
@@ -53,7 +53,7 @@ header {
     transition: all 0.4s;
   }
   .fa-chevron-down {
-    color: #17a2aa;
+    color: $teal;
     font-size: 2.5rem;
     text-align: center;
     transition: all 0.2s;
@@ -61,7 +61,7 @@ header {
   }
   .fa-chevron-down:hover,
   .chevronLink:focus .fa-chevron-down {
-    color: #e5e8ee;
+    color: $white;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
@@ -82,7 +82,7 @@ header {
         outline: none;
       }
       a::after {
-        background-color: #17a2aa;
+        background-color: $teal;
         content: "";
         height: 2px;
         position: absolute;
@@ -131,26 +131,26 @@ form {
       margin-bottom: 5px;
       .fa-water {
         font-size: 2.5rem;
-        color: #17a2aa;
+        color: $teal;
         margin: 0;
         transform: rotate(180deg);
         width: 57px;
       }
     }
     .outlined {
-      color: #00050f;
+      color: $black;
       font-weight: 800;
-      text-shadow: -1px -1px 0 #17a2aa, 1px -1px 0 #17a2aa, -1px 2px 0 #17a2aa,
-        1px 1px 0 #00050f;
+      text-shadow: -1px -1px 0 $teal, 1px -1px 0 $teal, -1px 2px 0 $teal,
+        1px 1px 0 $black;
     }
     p:nth-child(2) {
       margin-bottom: 10px;
     }
     a {
       /* Use .tealContactButton for MEDIA QUERIES => NOT HERE */
-      background: #17a2aa;
+      background: $teal;
       border-radius: 3px;
-      color: #00050f;
+      color: $black;
       display: flex;
       font-size: 0.9rem;
       font-weight: 500;

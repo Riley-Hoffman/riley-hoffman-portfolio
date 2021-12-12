@@ -1,5 +1,5 @@
 .about {
-  background-color: #f6f6f6;
+  background-color: $white;
   padding: 100px 0;
   .wrapper {
     display: flex;
@@ -17,7 +17,7 @@
   overflow: hidden;
   margin-bottom: 5px;
   .fa-water {
-    color: #17a2aa;
+    color: $teal;
     font-size: 2.5rem;
     margin: 0;
     -webkit-transform: rotate(180deg);
@@ -38,7 +38,7 @@
     background: rgba(23, 162, 170, 0.4);
     border: 1px ridge rgba(23, 162, 170, 0.2);
     border-radius: 1px;
-    color: #00050f;
+    color: $black;
     font-size: 0.6rem;
     font-weight: 300;
     margin-top: 8px;
@@ -53,7 +53,7 @@
   }
   p::after {
     content: "";
-    background: #17a2aa;
+    background: $teal;
     position: absolute;
     top: 100%;
     left: 25%;

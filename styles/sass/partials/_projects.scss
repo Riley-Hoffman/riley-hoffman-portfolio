@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     h2 {
-      color: #e5e8ee;
+      color: $white;
     }
   }
 }
@@ -40,8 +40,8 @@
 }
 
 .projectInfo {
-  // border-bottom: 1px solid #17a2aa;
-  border-top: 8px ridge #17a2aa;
+  // border-bottom: 1px solid $teal;
+  border-top: 8px ridge $teal;
   padding: 20px 0;
   h3,
   h4,
@@ -56,11 +56,11 @@
   h3,
   h4,
   p {
-    color: #e5e8ee;
+    color: $white;
   }
   a {
-    background: #e5e8ee;
-    color: #17a2aa;
+    background: $white;
+    color: $teal;
     padding: 5px 15px;
     text-transform: uppercase;
     transition: color 0.5s;
@@ -75,7 +75,7 @@
   p,
   h3,
   h4 {
-    text-shadow: 3px 3px 5px #00050f;
+    text-shadow: 3px 3px 5px $black;
   }
 }
 
@@ -103,7 +103,7 @@
 
 .projectBox .imgBox img {
   filter: grayscale(0%);
-  border-top: 8px ridge #17a2aa;
+  border-top: 8px ridge $teal;
 }
 
 .imgBox:nth-child(odd) .oval {
@@ -116,7 +116,7 @@
 
 .imgBox > a:hover > img,
 .imgBox > a:focus > img {
-  border-top: 14px ridge #e5e8ee;
+  border-top: 14px ridge $white;
   transition: border-top 0.5s;
   z-index: -2;
 }

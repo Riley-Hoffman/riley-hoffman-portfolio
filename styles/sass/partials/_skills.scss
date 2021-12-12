@@ -1,10 +1,10 @@
 .skills {
-  background-color: #e5e8ee;
+  background-color: $white;
   .wrapper.flexBox {
     align-items: center;
     flex-direction: column;
     h2 {
-      color: #00050f;
+      color: $black;
       margin-bottom: 40px;
     }
   }
