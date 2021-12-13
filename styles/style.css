@@ -484,8 +484,7 @@ footer {
   }
 }
 header {
-  background-image: url("/assets/portfolio-background.png");
-  background-size: fill;
+  background-image: url("../assets/portfolio-background.png");
   background-position-x: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1304,12 +1303,18 @@ i.fa-grip-lines-vertical {
   }
 }
 @media (prefers-color-scheme: light) {
+  .galaxy {
+    display: none;
+  }
+
   html {
     background: #e5e8ee;
   }
 
   header {
-    background-image: url("/assets/portfolio-background-light-mode.png");
+    background-image: url("../assets/portfolio-background-light-mode.png");
+    background-size: contain;
+    background-position-x: 100%;
   }
   header .skip-link:focus {
     outline: 2px solid #00050f;
@@ -1325,6 +1330,14 @@ header .chevronLink:focus .fa-chevron-down {
     color: #00050f;
   }
 
+  .about {
+    -webkit-box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+            box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+  }
+
+  .projects {
+    background: #e5e8ee;
+  }
   .projects .wrapper.flexBox h2 {
     color: #00050f;
   }
@@ -1354,6 +1367,9 @@ footer p {
     color: #00050f;
   }
 
+  footer {
+    background: #e5e8ee;
+  }
   footer .footerBody > a:hover {
     color: #00050f;
   }
