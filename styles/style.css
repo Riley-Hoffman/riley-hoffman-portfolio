@@ -887,7 +887,7 @@ i.fa-grip-lines-vertical {
   }
 
   header {
-    background-image: none;
+    background-image: url("/assets/portfolio-background-light-mode.png");
   }
   header .skip-link:focus {
     outline: 2px solid #00050f;

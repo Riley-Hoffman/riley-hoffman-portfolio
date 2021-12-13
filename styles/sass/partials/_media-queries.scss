@@ -1,11 +1,10 @@
-// to do remove hover effects on mobile
-
 @media (prefers-color-scheme: light) {
   html {
     background: $white;
   }
+
   header {
-    background-image: none;
+    background-image: url('/assets/portfolio-background-light-mode.png');
     .skip-link:focus {
       outline: 2px solid $black;
     }
