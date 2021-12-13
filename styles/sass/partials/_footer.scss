@@ -9,6 +9,7 @@ footer p {
 }
 
 footer {
+  background: $black;
   padding: 10px 0;
   .footerBody {
     align-items: center;
@@ -23,7 +24,7 @@ footer {
     > a:hover {
       color: $white;
     }
-     > a:active {
+    > a:active {
       color: $teal;
     }
     a:focus {

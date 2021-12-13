@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
+main {
+  position: relative;
+  z-index: 50;
+}
 
 p {
   color: #525252ff;
@@ -15,4 +19,10 @@ p {
 
 section {
   padding: 40px 0;
+}
+
+section,
+footer {
+  position: relative;
+  z-index: 20;
 }
