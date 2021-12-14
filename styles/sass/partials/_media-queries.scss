@@ -208,10 +208,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .galaxy {
-    background: transparent;
+  header .galaxy {
     display: none;
-    opacity: 0.8;
   }
 
   html {
@@ -220,8 +218,7 @@
 
   header {
     background-image: url("../assets/portfolio-background-light-mode.png");
-    background-size: contain;
-    background-position-x: 100%;
+    background-size: cover;
     .skip-link:focus {
       outline: 2px solid $black;
     }
