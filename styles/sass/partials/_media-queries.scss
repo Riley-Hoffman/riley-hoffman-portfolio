@@ -207,6 +207,7 @@
   }
 }
 
+// When user prefers light mode
 @media (prefers-color-scheme: light) {
   header .galaxy {
     display: none;
@@ -294,6 +295,7 @@
   }
 }
 
+// When user prefers reduced motion
 @media (prefers-reduced-motion: reduce) {
   .animate__backInLeft {
     animation: none;
