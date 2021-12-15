@@ -557,24 +557,30 @@ header .navBox {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 12px;
 }
-header .navBox ul {
+header .navBox nav {
+  width: 50%;
+}
+header .navBox nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-header .navBox ul a {
+header .navBox nav ul a {
   border-bottom: 1px solid transparent;
   line-height: 1;
   margin: 10px;
   position: relative;
 }
-header .navBox ul a:hover,
-header .navBox ul a:focus {
+header .navBox nav ul a:hover,
+header .navBox nav ul a:focus {
   outline: none;
 }
-header .navBox ul a::after {
+header .navBox nav ul a::after {
   background-color: #17a2aa;
   content: "";
   height: 2px;
@@ -588,11 +594,11 @@ header .navBox ul a::after {
   -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-header .navBox ul a:hover::after,
-header .navBox ul a:focus::after {
+header .navBox nav ul a:hover::after,
+header .navBox nav ul a:focus::after {
   width: 100%;
 }
-header .navBox ul a:active::after {
+header .navBox nav ul a:active::after {
   -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   width: 0;
