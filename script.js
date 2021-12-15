@@ -1,6 +1,5 @@
 // prefers reduced media query.
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
 // Controlled smooth scroll on first to sections, no smooth scroll on Skills/Contact to avoid jarring scroll visual.
 const selectiveSmoothScroll = function () {
   // Check user has selected Reduce Motion in their own settings.
