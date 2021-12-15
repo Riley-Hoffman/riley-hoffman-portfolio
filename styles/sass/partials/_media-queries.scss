@@ -1,8 +1,13 @@
 /* Portrait tablet and small desktops */
-@media (max-width: 1020px) {
+@media (max-width: 1030px) {
   .headerBodyFlexBox a.tealContactButton {
     width: 60%;
   }
+header {
+  .navBox nav {
+    width: 75%;
+  }
+}
 }
 
 /* Landscape phone to portrait tablet */
@@ -47,7 +52,8 @@
     }
   }
 
-  header .navBox {
+  header {
+  .navBox {
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
@@ -60,6 +66,7 @@
         grid-row-gap: 20px;
       }
     }
+  }
   }
 
   .searchBox {

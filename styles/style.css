@@ -560,7 +560,7 @@ header .navBox {
   margin-top: 12px;
 }
 header .navBox nav {
-  width: 50%;
+  width: 55%;
 }
 header .navBox nav ul {
   display: -webkit-box;
@@ -1072,9 +1072,13 @@ i.fa-grip-lines-vertical {
 }
 
 /* Portrait tablet and small desktops */
-@media (max-width: 1020px) {
+@media (max-width: 1030px) {
   .headerBodyFlexBox a.tealContactButton {
     width: 60%;
+  }
+
+  header .navBox nav {
+    width: 75%;
   }
 }
 /* Landscape phone to portrait tablet */
