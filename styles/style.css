@@ -841,6 +841,7 @@ form {
 .projectInfo a {
   background: #e5e8ee;
   color: #17a2aa;
+  font-weight: 600;
   padding: 5px 15px;
   text-transform: uppercase;
   -webkit-transition: color 0.5s;
