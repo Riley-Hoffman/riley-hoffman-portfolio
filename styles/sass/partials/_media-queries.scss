@@ -349,7 +349,16 @@
           border-bottom: initial;
         }
       }
+      .fa-chevron-down:hover,
+      .chevronLink:focus .fa-chevron-down {
+        color: initial;
+        -webkit-transform: initial;
+        transform: initial;
+      }
     }
+  }
+  .headerFlexWrapper .headerBodyFlexBox a:hover .target {
+    text-decoration: none;
   }
   .imgBox > a:hover > img {
     border-top: initial;
@@ -366,15 +375,6 @@
   }
   .skillsGallery li:hover .skillsIconBox:hover {
     animation: none;
-  }
-  a:hover .target {
-    text-decoration: none;
-  }
-  .fa-chevron-down:hover,
-  .chevronLink:focus .fa-chevron-down {
-    color: initial;
-    -webkit-transform: initial;
-    transform: initial;
   }
 
   footer {

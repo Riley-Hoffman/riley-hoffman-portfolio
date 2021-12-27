@@ -1421,6 +1421,16 @@ header .navBox ul a:focus {
   header .navBox ul a:hover {
     border-bottom: initial;
   }
+  header .navBox .fa-chevron-down:hover,
+header .navBox .chevronLink:focus .fa-chevron-down {
+    color: initial;
+    -webkit-transform: initial;
+    transform: initial;
+  }
+
+  .headerFlexWrapper .headerBodyFlexBox a:hover .target {
+    text-decoration: none;
+  }
 
   .imgBox > a:hover > img {
     border-top: initial;
@@ -1438,17 +1448,6 @@ header .navBox ul a:focus {
   .skillsGallery li:hover .skillsIconBox:hover {
     -webkit-animation: none;
             animation: none;
-  }
-
-  a:hover .target {
-    text-decoration: none;
-  }
-
-  .fa-chevron-down:hover,
-.chevronLink:focus .fa-chevron-down {
-    color: initial;
-    -webkit-transform: initial;
-    transform: initial;
   }
 
   footer .footerBody > a:hover {
