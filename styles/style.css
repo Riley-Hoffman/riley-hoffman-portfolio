@@ -835,8 +835,12 @@ form {
 }
 .projectInfo h3,
 .projectInfo h4,
+.projectInfo h5,
 .projectInfo p {
   color: #e5e8ee;
+}
+.projectInfo h5 {
+  letter-spacing: 1px;
 }
 .projectInfo a {
   background: #e5e8ee;
@@ -846,6 +850,9 @@ form {
   text-transform: uppercase;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+}
+.projectInfo a:last-of-type {
+  margin-left: 10px;
 }
 .projectInfo a:hover,
 .projectInfo a:focus {
