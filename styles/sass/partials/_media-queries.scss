@@ -373,8 +373,10 @@
     border-top: initial;
     z-index: initial;
   }
-  .skillsGallery li:hover .skillsIconBox:hover {
-    animation: none;
+  .skillsGallery {
+    li:hover .skillsIconBox:hover {
+      animation: none;
+    }
   }
 
   footer {
