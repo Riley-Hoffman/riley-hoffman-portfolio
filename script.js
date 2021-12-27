@@ -1,5 +1,20 @@
 // prefers reduced media query.
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+//  Browser User Agent 
+const browser = window.navigator.userAgent
+
+// Safari specific control
+if (browser.includes('Safari') && !browser.includes('OPR') && !browser.includes('Chrome')) {
+  // Skills
+const skillsListItems = document.querySelectorAll('.skillsGallery li')
+// Turn of rotate animation on skills for Safari user bc it does not render correctly
+  skillsListItems.forEach(function (skill) {
+  skill.addEventListener('mouseover', function (e) {
+  e.target.parentElement.style.animation = 'none'
+  })
+})
+} 
+
 // Controlled smooth scroll on first to sections, no smooth scroll on Skills/Contact to avoid jarring scroll visual.
 const selectiveSmoothScroll = function () {
   // Check user has selected Reduce Motion in their own settings.
