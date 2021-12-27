@@ -1409,8 +1409,53 @@ header .navBox ul a:focus {
     border-top: 8px ridge #e5e8ee;
   }
 
-  .skillsGallery li i:hover {
+  .skillsGallery li:hover div.skillsIconBox:hover {
     -webkit-animation: none;
             animation: none;
+  }
+}
+@media (pointer: none) {
+  header .navBox ul a:hover::after {
+    width: 0%;
+  }
+  header .navBox ul a:hover {
+    border-bottom: initial;
+  }
+
+  .imgBox > a:hover > img {
+    border-top: initial;
+  }
+
+  .projectInfo a:hover {
+    opacity: initial;
+  }
+
+  .imgBox > a:hover > img {
+    border-top: initial;
+    z-index: initial;
+  }
+
+  .skillsGallery li:hover .skillsIconBox:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  a:hover .target {
+    text-decoration: none;
+  }
+
+  .fa-chevron-down:hover,
+.chevronLink:focus .fa-chevron-down {
+    color: initial;
+    -webkit-transform: initial;
+    transform: initial;
+  }
+
+  footer .footerBody > a:hover {
+    color: initial;
+  }
+  footer .footerBody .fa-linkedin:hover,
+footer .footerBody .fa-github:hover {
+    color: initial;
   }
 }
