@@ -289,6 +289,9 @@ header {
   footer {
     background: $white;
     .footerBody {
+      > a {
+        font-weight: 500;
+      }
       > a:hover {
         color: $black;
       }

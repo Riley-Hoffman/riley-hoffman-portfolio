@@ -1372,6 +1372,9 @@ footer p {
   footer {
     background: #e5e8ee;
   }
+  footer .footerBody > a {
+    font-weight: 500;
+  }
   footer .footerBody > a:hover {
     color: #00050f;
   }
