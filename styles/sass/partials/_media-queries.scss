@@ -258,6 +258,7 @@ header {
   .projectInfo {
     h3,
     h4,
+    h5,
     p {
       color: $black;
     }
@@ -275,6 +276,9 @@ header {
   .imgBox > a:hover > img,
   .imgBox > a:focus > img {
     border-top: 14px ridge $black;
+  }
+  .imgBox > a > .oval {
+    opacity: 0.3;
   }
 
   footer,
