@@ -339,9 +339,6 @@
 
 // Touchscreen General Style
 @media (hover: none) {
-  html {
-    background: lime !important;
-  }
   header {
     .navBox {
       ul {
@@ -349,12 +346,12 @@
           width: 0%;
         }
         a:hover {
-          border-bottom: initial;
+          border-bottom: none;
         }
       }
       .fa-chevron-down:hover,
       .chevronLink:focus .fa-chevron-down {
-        color: initial;
+        color: $teal;
         -webkit-transform: initial;
         transform: initial;
       }
@@ -363,17 +360,15 @@
   .headerFlexWrapper .headerBodyFlexBox a:hover .target {
     text-decoration: none;
   }
-  .imgBox > a:hover > img {
-    border-top: initial;
-  }
+
   .projectInfo {
     a:hover {
-      opacity: initial;
+      opacity: 1;
     }
   }
 
   .imgBox > a:hover > img {
-    border-top: initial;
+    border-top: 8px ridge #17a2aa;
     z-index: initial;
   }
   .skillsGallery {
@@ -385,11 +380,11 @@
   footer {
     .footerBody {
       > a:hover {
-        color: initial;
+        color: $teal;
       }
       .fa-linkedin:hover,
       .fa-github:hover {
-        color: initial;
+        color: $white;
       }
     }
   }

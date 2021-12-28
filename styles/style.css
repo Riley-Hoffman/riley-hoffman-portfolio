@@ -1415,19 +1415,15 @@ header .navBox ul a:focus {
   }
 }
 @media (hover: none) {
-  html {
-    background: lime !important;
-  }
-
   header .navBox ul a:hover::after {
     width: 0%;
   }
   header .navBox ul a:hover {
-    border-bottom: initial;
+    border-bottom: none;
   }
   header .navBox .fa-chevron-down:hover,
 header .navBox .chevronLink:focus .fa-chevron-down {
-    color: initial;
+    color: #17a2aa;
     -webkit-transform: initial;
     transform: initial;
   }
@@ -1436,16 +1432,12 @@ header .navBox .chevronLink:focus .fa-chevron-down {
     text-decoration: none;
   }
 
-  .imgBox > a:hover > img {
-    border-top: initial;
-  }
-
   .projectInfo a:hover {
-    opacity: initial;
+    opacity: 1;
   }
 
   .imgBox > a:hover > img {
-    border-top: initial;
+    border-top: 8px ridge #17a2aa;
     z-index: initial;
   }
 
@@ -1455,10 +1447,10 @@ header .navBox .chevronLink:focus .fa-chevron-down {
   }
 
   footer .footerBody > a:hover {
-    color: initial;
+    color: #17a2aa;
   }
   footer .footerBody .fa-linkedin:hover,
 footer .footerBody .fa-github:hover {
-    color: initial;
+    color: #e5e8ee;
   }
 }
