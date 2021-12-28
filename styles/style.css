@@ -541,7 +541,6 @@ header .fa-chevron-down {
   transition: all 0.2s;
   width: 5vw;
 }
-header .fa-chevron-down:hover,
 header .chevronLink:focus .fa-chevron-down {
   color: #e5e8ee;
   -webkit-transform: scale(1.1);
@@ -576,7 +575,6 @@ header .navBox nav ul a {
   margin: 10px;
   position: relative;
 }
-header .navBox nav ul a:hover,
 header .navBox nav ul a:focus {
   outline: none;
 }
@@ -594,7 +592,6 @@ header .navBox nav ul a::after {
   -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-header .navBox nav ul a:hover::after,
 header .navBox nav ul a:focus::after {
   width: 100%;
 }
@@ -680,7 +677,6 @@ form {
 .headerFlexWrapper .headerBodyFlexBox a:focus {
   outline: 2px solid;
 }
-.headerFlexWrapper .headerBodyFlexBox a:hover .target,
 .headerFlexWrapper .headerBodyFlexBox a:focus .target {
   text-decoration: underline;
 }
@@ -856,7 +852,6 @@ form {
 .projectInfo a:last-of-type {
   margin-left: 10px;
 }
-.projectInfo a:hover,
 .projectInfo a:focus {
   opacity: 0.6;
 }
@@ -909,7 +904,6 @@ form {
   left: -100%;
 }
 
-.imgBox > a:hover > img,
 .imgBox > a:focus > img {
   border-top: 14px ridge #e5e8ee;
   -webkit-transition: border-top 0.5s;
@@ -979,37 +973,7 @@ form {
 .skillsGallery li p {
   text-align: center;
 }
-.skillsGallery li:hover .skillsIconBox:hover {
-  animation-name: spin;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 2000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
 
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    transform: rotateY(180);
-    -webkit-transform: rotateY(180);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    transform: rotateY(rotateY(180deg));
-    -webkit-transform: rotateY(180deg);
-  }
-}
 footer,
 footer p {
   color: #e5e8ee;
@@ -1040,9 +1004,6 @@ footer .footerBody > a {
 footer .footerBody > a {
   color: #17a2aa;
 }
-footer .footerBody > a:hover {
-  color: #e5e8ee;
-}
 footer .footerBody > a:active {
   color: #17a2aa;
 }
@@ -1051,10 +1012,6 @@ footer .footerBody a:focus {
 }
 footer .footerBody a:active {
   outline: none;
-}
-footer .footerBody .fa-linkedin:hover,
-footer .footerBody .fa-github:hover {
-  color: #17a2aa;
 }
 footer .footerBody .fa-linkedin:active,
 footer .footerBody .fa-github:active {
@@ -1414,43 +1371,70 @@ header .navBox ul a:focus {
             animation: none;
   }
 }
-@media (hover: none) {
-  header .navBox ul a:hover::after {
-    width: 0%;
+@media (hover: hover) and (pointer: fine) {
+  header .fa-chevron-down:hover {
+    color: #e5e8ee;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
-  header .navBox ul a:hover {
-    border-bottom: none;
+  header .navBox nav ul a:hover {
+    outline: none;
   }
-  header .navBox .fa-chevron-down:hover,
-header .navBox .chevronLink:focus .fa-chevron-down {
-    color: #17a2aa;
-    -webkit-transform: initial;
-    transform: initial;
+  header .navBox nav ul a:hover::after {
+    width: 100%;
   }
 
   .headerFlexWrapper .headerBodyFlexBox a:hover .target {
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   .projectInfo a:hover {
-    opacity: 1;
+    opacity: 0.6;
   }
 
   .imgBox > a:hover > img {
-    border-top: 8px ridge #17a2aa;
-    z-index: initial;
+    border-top: 14px ridge #e5e8ee;
+    -webkit-transition: border-top 0.5s;
+    transition: border-top 0.5s;
+    z-index: -2;
   }
 
   .skillsGallery li:hover .skillsIconBox:hover {
-    -webkit-animation: none;
-            animation: none;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
   }
 
   footer .footerBody > a:hover {
-    color: #17a2aa;
+    color: #e5e8ee;
   }
   footer .footerBody .fa-linkedin:hover,
 footer .footerBody .fa-github:hover {
-    color: #e5e8ee;
+    color: #17a2aa;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotateY(180);
+    -webkit-transform: rotateY(180);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotateY(rotateY(180deg));
+    -webkit-transform: rotateY(180deg);
   }
 }

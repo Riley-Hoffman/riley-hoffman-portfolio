@@ -311,7 +311,6 @@ header {
     transition: all 0.2s;
     width: 5vw;
   }
-  .fa-chevron-down:hover,
   .chevronLink:focus .fa-chevron-down {
     color: $white;
     -webkit-transform: scale(1.1);
@@ -335,7 +334,6 @@ header {
           margin: 10px;
           position: relative;
         }
-        a:hover,
         a:focus {
           outline: none;
         }
@@ -355,7 +353,6 @@ header {
           -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
         }
-        a:hover::after,
         a:focus::after {
           width: 100%;
         }
@@ -428,7 +425,6 @@ form {
     a:focus {
       outline: 2px solid;
     }
-    a:hover .target,
     a:focus .target {
       text-decoration: underline;
     }

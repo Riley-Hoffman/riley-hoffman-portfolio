@@ -21,9 +21,6 @@ footer {
     > a {
       color: $teal;
     }
-    > a:hover {
-      color: $white;
-    }
     > a:active {
       color: $teal;
     }
@@ -32,11 +29,6 @@ footer {
     }
     a:active {
       outline: none;
-    }
-
-    .fa-linkedin:hover,
-    .fa-github:hover {
-      color: $teal;
     }
 
     .fa-linkedin:active,

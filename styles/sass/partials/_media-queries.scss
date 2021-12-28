@@ -337,55 +337,93 @@
   }
 }
 
-// Touchscreen General Style
-@media (hover: none) {
+// Hover Styles only with device is not a touchscreen
+
+@media (hover: hover) and (pointer: fine) {
   header {
+    .fa-chevron-down:hover {
+      color: $white;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
     .navBox {
-      ul {
-        a:hover::after {
-          width: 0%;
+      nav {
+        ul {
+          a:hover {
+            outline: none;
+          }
+          a:hover::after {
+            width: 100%;
+          }
         }
-        a:hover {
-          border-bottom: none;
-        }
-      }
-      .fa-chevron-down:hover,
-      .chevronLink:focus .fa-chevron-down {
-        color: $teal;
-        -webkit-transform: initial;
-        transform: initial;
       }
     }
   }
-  .headerFlexWrapper .headerBodyFlexBox a:hover .target {
-    text-decoration: none;
+
+  .headerFlexWrapper {
+    .headerBodyFlexBox {
+      a:hover .target {
+        text-decoration: underline;
+      }
+    }
   }
 
   .projectInfo {
     a:hover {
-      opacity: 1;
+      opacity: 0.6;
     }
   }
 
   .imgBox > a:hover > img {
-    border-top: 8px ridge #17a2aa;
-    z-index: initial;
+    border-top: 14px ridge $white;
+    transition: border-top 0.5s;
+    z-index: -2;
   }
+
   .skillsGallery {
     li:hover .skillsIconBox:hover {
-      animation: none;
+      animation-name: spin;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 2000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
     }
   }
 
   footer {
     .footerBody {
       > a:hover {
-        color: $teal;
+        color: $white;
       }
       .fa-linkedin:hover,
       .fa-github:hover {
-        color: $white;
+        color: $teal;
       }
     }
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotateY(180);
+    -webkit-transform: rotateY(180);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotateY(rotateY(180deg));
+    -webkit-transform: rotateY(180deg);
   }
 }
