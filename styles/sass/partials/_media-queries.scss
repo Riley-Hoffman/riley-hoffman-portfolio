@@ -337,8 +337,11 @@
   }
 }
 
-// Not mouse/pointer device
-@media (pointer: none) {
+// Touchscreen General Style
+@media (hover: none) {
+  html {
+    background: lime !important;
+  }
   header {
     .navBox {
       ul {

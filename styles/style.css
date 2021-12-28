@@ -1414,7 +1414,11 @@ header .navBox ul a:focus {
             animation: none;
   }
 }
-@media (pointer: none) {
+@media (hover: none) {
+  html {
+    background: lime !important;
+  }
+
   header .navBox ul a:hover::after {
     width: 0%;
   }
