@@ -1,47 +1,26 @@
-// prefers reduced media query.
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-//  Browser User Agent 
-const browser = window.navigator.userAgent
 
-// Safari specific control
-if (browser.includes('Safari') && !browser.includes('OPR') && !browser.includes('Chrome')) {
-  // Skills
-const skillsListItems = document.querySelectorAll('.skillsGallery li')
-// Turn of rotate animation on skills for Safari user bc it does not render correctly
-  skillsListItems.forEach(function (skill) {
-  skill.addEventListener('mouseover', function (e) {
-  e.target.parentElement.style.animation = 'none'
-  })
-})
-} 
+// Check if browser is Safari to remove incompatible animation
+const checkForSafari = function () {
+  //  Browser User Agent 
+  const browser = window.navigator.userAgent
 
-// Controlled smooth scroll on first to sections, no smooth scroll on Skills/Contact to avoid jarring scroll visual.
-const selectiveSmoothScroll = function () {
-  // Check user has selected Reduce Motion in their own settings.
-  if (!reduceMotion || !reduceMotion.matches) {
-    $(".aboutLink, .skip-link, .chevronLink").click(function () {
-      // slower scroll to About section
-      $([document.documentElement, document.body]).animate(
-        {
-          scrollTop: $("#about").offset().top,
-        },
-        1500
-      );
-    });
-    // fast scroll to Projects section
-    $(".projectsLink").click(function () {
-      $([document.documentElement, document.body]).animate(
-        {
-          scrollTop: $("#projects").offset().top,
-        },
-        800
-      );
-    });
+  // Safari specific control
+  if (browser.includes('Safari') && !browser.includes('OPR') && !browser.includes('Chrome')) {
+    // Skills
+    const skillsListItems = document.querySelectorAll('.skillsGallery li')
+    // Turn of rotate animation on skills for Safari user bc it does not render correctly
+    skillsListItems.forEach(function (skill) {
+      skill.addEventListener('mouseover', function (e) {
+        e.target.parentElement.style.animation = 'none'
+      })
+    })
   }
-};
+}
 
 // Random Stars
 const generateStars = function () {
+  // prefers reduced media query.
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   if (!reduceMotion || !reduceMotion.matches) {
     let $galaxy = $(".galaxy");
     let iterator = 0;
@@ -67,5 +46,38 @@ const generateStars = function () {
   }
 };
 
+// Controlled smooth scroll on first to sections, no smooth scroll on Skills/Contact to avoid jarring scroll visual.
+const selectiveSmoothScroll = function () {
+  // prefers reduced media query.
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  // Check user has selected Reduce Motion in their own settings.
+  if (!reduceMotion || !reduceMotion.matches) {
+    $(".aboutLink, .skip-link, .chevronLink").click(function () {
+      // slower scroll to About section
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $("#about").offset().top,
+        },
+        1500
+      );
+    });
+    // fast scroll to Projects section
+    $(".projectsLink").click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $("#projects").offset().top,
+        },
+        800
+      );
+    });
+  }
+};
+
+
+
+checkForSafari();
 generateStars();
 selectiveSmoothScroll();
+
+
+
