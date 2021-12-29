@@ -423,13 +423,10 @@ form {
       }
     }
     a:focus {
-      outline: 2px solid;
-    }
-    a:focus .target {
-      text-decoration: underline;
+      outline: 2px solid $white;
     }
     a:active .target {
-      text-decoration: none;
+      outline: none;
     }
   }
 }

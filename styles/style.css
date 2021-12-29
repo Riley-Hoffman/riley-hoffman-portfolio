@@ -675,13 +675,10 @@ form {
   margin-left: 10px;
 }
 .headerFlexWrapper .headerBodyFlexBox a:focus {
-  outline: 2px solid;
-}
-.headerFlexWrapper .headerBodyFlexBox a:focus .target {
-  text-decoration: underline;
+  outline: 2px solid #e5e8ee;
 }
 .headerFlexWrapper .headerBodyFlexBox a:active .target {
-  text-decoration: none;
+  outline: none;
 }
 
 .about {
