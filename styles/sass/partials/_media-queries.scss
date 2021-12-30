@@ -337,7 +337,7 @@
   }
 }
 
-// Hover Styles only with device is not a touchscreen
+// Hover Styles only when device is not a touchscreen
 
 @media (hover: hover) and (pointer: fine) {
   header {

@@ -7,6 +7,28 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $black $teal;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $teal;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $black;
+  border-radius: 5px;
+  border: 3px solid $teal;
+}
+
 main {
   position: relative;
   z-index: 50;
@@ -26,3 +48,5 @@ footer {
   position: relative;
   z-index: 20;
 }
+
+
