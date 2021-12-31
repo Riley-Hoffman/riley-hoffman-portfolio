@@ -337,7 +337,7 @@
   }
 }
 
-// Hover Styles only when device is not a touchscreen
+// Hover/Active Styles only when device is not a touchscreen
 
 @media (hover: hover) and (pointer: fine) {
   header {
@@ -355,6 +355,12 @@
           a:hover::after {
             width: 100%;
           }
+          a:active::after {
+            -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+            -o-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+            transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+            width: 0;
+          }
         }
       }
     }
@@ -365,6 +371,12 @@
       a:hover .target {
         text-decoration: underline;
       }
+      a:active .target {
+        text-decoration: none;
+      }
+      a:active {
+        outline: none;
+      }
     }
   }
 
@@ -372,12 +384,19 @@
     a:hover {
       opacity: 0.6;
     }
+    a:active {
+      opacity: 1;
+    }
   }
 
   .imgBox > a:hover > img {
     border-top: 14px ridge $white;
     transition: border-top 0.5s;
     z-index: -2;
+  }
+
+  .imgBox > a:active > img {
+    z-index: auto;
   }
 
   .skillsGallery {
@@ -398,9 +417,19 @@
       > a:hover {
         color: $white;
       }
+      > a:active {
+        color: $teal;
+      }
+      a:active {
+        outline: none;
+      }
       .fa-linkedin:hover,
       .fa-github:hover {
         color: $teal;
+      }
+      .fa-linkedin:active,
+      .fa-github:active {
+        color: $white;
       }
     }
   }

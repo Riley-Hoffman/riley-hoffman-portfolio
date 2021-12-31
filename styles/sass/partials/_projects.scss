@@ -77,9 +77,6 @@
   a:focus {
     opacity: 0.6;
   }
-  a:active {
-    opacity: 1;
-  }
   p,
   h3,
   h4 {
@@ -132,6 +129,3 @@
   outline: none;
 }
 
-.imgBox > a:active > img {
-  z-index: auto;
-}

@@ -356,12 +356,6 @@ header {
         a:focus::after {
           width: 100%;
         }
-        a:active::after {
-          -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          -o-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          width: 0;
-        }
       }
     }
   }
@@ -424,9 +418,6 @@ form {
     }
     a:focus {
       outline: 2px solid $white;
-    }
-    a:active .target {
-      outline: none;
     }
   }
 }

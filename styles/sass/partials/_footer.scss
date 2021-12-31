@@ -21,20 +21,11 @@ footer {
     > a {
       color: $teal;
     }
-    > a:active {
-      color: $teal;
-    }
+   
     a:focus {
       outline: 2px solid $white;
     }
-    a:active {
-      outline: none;
-    }
-
-    .fa-linkedin:active,
-    .fa-github:active {
-      color: $white;
-    }
+    
     .contactIcons {
       font-size: 2em;
       width: 135px;
