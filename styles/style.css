@@ -305,7 +305,7 @@ body {
 /* Works on Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #00050f #17a2aa;
+  scrollbar-color: rgba(0, 5, 15, 0.82) #17a2aa;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -318,7 +318,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #00050f;
+  background-color: rgba(0, 5, 15, 0.82);
   border-radius: 5px;
   border: 3px solid #17a2aa;
 }
