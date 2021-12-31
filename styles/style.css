@@ -1365,10 +1365,18 @@ header .navBox ul a:focus {
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  header .fa-chevron-down:hover {
+  header .chevronLink .fa-chevron-down:hover {
     color: #e5e8ee;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+  }
+  header .chevronLink:active .fa-chevron-down {
+    color: #17a2aa;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  header .chevronLink:active {
+    outline: none;
   }
   header .navBox nav ul a:hover {
     outline: none;

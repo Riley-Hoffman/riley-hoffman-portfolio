@@ -341,10 +341,18 @@
 
 @media (hover: hover) and (pointer: fine) {
   header {
-    .fa-chevron-down:hover {
+    .chevronLink .fa-chevron-down:hover {
       color: $white;
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
+    }
+    .chevronLink:active .fa-chevron-down {
+      color: $teal;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .chevronLink:active {
+      outline: none;
     }
     .navBox {
       nav {
