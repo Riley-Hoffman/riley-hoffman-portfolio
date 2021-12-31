@@ -747,8 +747,8 @@ form {
   border-radius: 1px;
 }
 .about1 figure figcaption {
-  background: rgba(23, 162, 170, 0.4);
-  border: 1px ridge rgba(23, 162, 170, 0.2);
+  background: rgba(23, 162, 170, 0.1);
+  border: 1px solid #17a2aa;
   border-radius: 1px;
   color: #00050f;
   font-size: 0.6rem;
