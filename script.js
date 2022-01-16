@@ -1,16 +1,22 @@
+// Namespace Object
+const portfolio = {}
+
+//  Browser User Agent 
+portfolio.browser = window.navigator.userAgent
+
+// Skills
+portfolio.skillsListItems = document.querySelectorAll('.skillsGallery li')
+
+// prefers reduced media query.
+portfolio.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 // Check if browser is Safari to remove incompatible animation
-const checkForSafari = function () {
-  //  Browser User Agent 
-  const browser = window.navigator.userAgent
-
+portfolio.checkForSafari = () => {
   // Safari specific control
-  if (browser.includes('Safari') && !browser.includes('OPR') && !browser.includes('Chrome')) {
-    // Skills
-    const skillsListItems = document.querySelectorAll('.skillsGallery li')
+  if (portfolio.browser.includes('Safari') && !portfolio.browser.includes('OPR') && !portfolio.browser.includes('Chrome')) {
     // Turn of rotate animation on skills for Safari user bc it does not render correctly
-    skillsListItems.forEach(function (skill) {
-      skill.addEventListener('mouseover', function (e) {
+    portfolio.skillsListItems.forEach((skill) => {
+      $(skill).mouseover((e) => {
         e.target.parentElement.style.animation = 'none'
       })
     })
@@ -18,10 +24,9 @@ const checkForSafari = function () {
 }
 
 // Random Stars
-const generateStars = function () {
-  // prefers reduced media query.
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  if (!reduceMotion || !reduceMotion.matches) {
+portfolio.generateStars = () => {
+   
+  if (!portfolio.reduceMotion || !portfolio.reduceMotion.matches) {
     let $galaxy = $(".galaxy");
     let iterator = 0;
 
@@ -47,12 +52,10 @@ const generateStars = function () {
 };
 
 // Controlled smooth scroll on first to sections, no smooth scroll on Skills/Contact to avoid jarring scroll visual.
-const selectiveSmoothScroll = function () {
-  // prefers reduced media query.
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+portfolio.selectiveSmoothScroll = () => {
   // Check user has selected Reduce Motion in their own settings.
-  if (!reduceMotion || !reduceMotion.matches) {
-    $(".aboutLink, .skip-link, .chevronLink").click(function () {
+  if (!portfolio.reduceMotion || !portfolio.reduceMotion.matches) {
+    $(".aboutLink, .skip-link, .chevronLink").click(() => {
       // slower scroll to About section
       $([document.documentElement, document.body]).animate(
         {
@@ -62,7 +65,7 @@ const selectiveSmoothScroll = function () {
       );
     });
     // fast scroll to Projects section
-    $(".projectsLink").click(function () {
+    $(".projectsLink").click(() => {
       $([document.documentElement, document.body]).animate(
         {
           scrollTop: $("#projects").offset().top,
@@ -73,11 +76,15 @@ const selectiveSmoothScroll = function () {
   }
 };
 
+portfolio.init = () => { 
+  portfolio.checkForSafari();
+  portfolio.generateStars();
+  portfolio.selectiveSmoothScroll();
+}
+
+portfolio.init();
 
 
-checkForSafari();
-generateStars();
-selectiveSmoothScroll();
 
 
 
