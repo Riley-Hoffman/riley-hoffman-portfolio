@@ -14,8 +14,8 @@ portfolio.checkForSafari = () => {
   if (portfolio.browser.includes('Safari') && !portfolio.browser.includes('OPR') && !portfolio.browser.includes('Chrome')) {
     // Turn of rotate animation on skills for Safari user bc it does not render correctly
     portfolio.skillsListItems.forEach((skill) => {
-      $(skill).mouseover((e) => {
-        e.target.parentElement.style.animation = 'none'
+      $(skill).mouseover((e) => {    
+        $(e.target).parent('.skillsIconBox').css('animation', 'none');
       })
     })
   }
