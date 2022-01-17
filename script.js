@@ -3,10 +3,8 @@ const portfolio = {}
 
 //  Browser User Agent 
 portfolio.browser = window.navigator.userAgent
-
 // Skills
 portfolio.skillsListItems = document.querySelectorAll('.skillsGallery li')
-
 // prefers reduced media query.
 portfolio.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
