@@ -1424,6 +1424,28 @@ footer p {
 footer .footerBody .fa-github:active {
     color: #00050f;
   }
+
+  .errorHeader {
+    background-image: none;
+  }
+  .errorHeader .background {
+    display: block;
+  }
+
+  .errorSection h2 {
+    color: #00050f;
+  }
+
+  .errorP {
+    color: #00050f;
+  }
+
+  .errorNav ul li a {
+    color: #00050f;
+  }
+  .errorNav ul li a:active {
+    color: #00050f;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .animate__backInLeft {

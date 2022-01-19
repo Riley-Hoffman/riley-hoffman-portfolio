@@ -307,6 +307,34 @@
       }
     }
   }
+  .errorHeader {
+    background-image: none;
+    .background {
+      display: block;
+    }
+  }
+  .errorSection {
+  h2 {
+      color: $black;
+  }
+}
+.errorP {
+  color: $black;
+}
+
+.errorNav {
+  ul {
+    li {
+      a {
+        color: $black;
+      }
+      a:active {
+        color: $black;
+      }
+    }
+  }
+}
+
 }
 
 // When user prefers reduced motion
