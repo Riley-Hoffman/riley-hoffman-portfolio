@@ -1,8 +1,6 @@
 // Namespace Object
 const portfolio = {}
 
-//  Browser User Agent 
-portfolio.browser = window.navigator.userAgent
 // Skills
 portfolio.skillsListItems = document.querySelectorAll('.skillsGallery li')
 // prefers reduced media query.
@@ -11,7 +9,7 @@ portfolio.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 // Check if browser is Safari to remove incompatible animation
 portfolio.checkForSafari = () => {
   // Safari specific control
-  if (portfolio.browser.includes('Safari') && !portfolio.browser.includes('OPR') && !portfolio.browser.includes('Chrome')) {
+  if (navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('OPR') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Android')) {
     // Turn of rotate animation on skills for Safari user bc it does not render correctly
     portfolio.skillsListItems.forEach((skill) => {
       $(skill).mouseover((e) => {    
