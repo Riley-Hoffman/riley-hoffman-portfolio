@@ -1085,7 +1085,8 @@ i.fa-grip-lines-vertical {
 .errorSection .errorContentBox .errorP .ownLine {
   display: block;
 }
-.errorSection .errorContentBox .errorNav {
+
+.errorNav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1093,10 +1094,10 @@ i.fa-grip-lines-vertical {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.errorSection .errorContentBox .errorNav ul {
+.errorNav ul {
   font-size: 1.4rem;
 }
-.errorSection .errorContentBox .errorNav ul li {
+.errorNav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1104,18 +1105,18 @@ i.fa-grip-lines-vertical {
       -ms-flex-align: center;
           align-items: center;
 }
-.errorSection .errorContentBox .errorNav ul li i {
+.errorNav ul li i {
   color: #17a2aa;
   font-size: 1.2rem;
   margin-right: 10px;
 }
-.errorSection .errorContentBox .errorNav ul li a {
+.errorNav ul li a {
   color: #e5e8ee;
 }
-.errorSection .errorContentBox .errorNav ul li a:hover {
+.errorNav ul li a:hover {
   color: #17a2aa;
 }
-.errorSection .errorContentBox .errorNav ul li a:active {
+.errorNav ul li a:active {
   color: #e5e8ee;
 }
 
