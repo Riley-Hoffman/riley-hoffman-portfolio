@@ -23,6 +23,7 @@
 
 .errorContentBox {
   align-items: center;
+  width: 100%;
 }
 
 .errorIcon {
@@ -34,6 +35,9 @@
 .errorP {
   color: $white;
   font-size: 1.5rem;
+  .ownLine {
+      display: block;
+  }
 }
 
 .errorNav {
