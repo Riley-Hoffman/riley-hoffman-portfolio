@@ -1031,6 +1031,92 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
+.errorHeader {
+  height: 30vh;
+  padding-top: 30px;
+}
+.errorHeader .headerBodyFlexBox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.errorHeader .headerBodyFlexBox .tealLine {
+  color: #17a2aa;
+}
+
+.errorSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+}
+.errorSection h2 {
+  color: #e5e8ee;
+}
+
+.errorContentBox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.errorIcon {
+  width: 100%;
+  margin-left: 0;
+  max-width: 30%;
+}
+
+.errorP {
+  color: #e5e8ee;
+  font-size: 1.5rem;
+}
+
+.errorNav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.errorNav ul {
+  font-size: 1.4rem;
+}
+.errorNav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.errorNav ul li i {
+  color: #17a2aa;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.errorNav ul li a {
+  color: #e5e8ee;
+}
+.errorNav ul li a:hover {
+  color: #17a2aa;
+}
+.errorNav ul li a:active {
+  color: #e5e8ee;
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
   .headerBodyFlexBox a.tealContactButton {

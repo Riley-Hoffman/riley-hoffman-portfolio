@@ -1,0 +1,63 @@
+.errorHeader {
+  height: 30vh;
+  padding-top: 30px;
+  .headerBodyFlexBox {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      .tealLine {
+          color: $teal;
+      }
+  }
+}
+
+.errorSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  h2 {
+      color: $white;
+  }
+}
+
+.errorContentBox {
+  align-items: center;
+}
+
+.errorIcon {
+  width: 100%;
+  margin-left: 0;
+  max-width: 30%;
+}
+
+.errorP {
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.errorNav {
+  align-items: center;
+  justify-content: center;
+  ul {
+    font-size: 1.4rem;
+    li {
+      display: flex;
+      align-items: center;
+      i {
+        color: $teal;
+        font-size: 1.2rem;
+        margin-right: 10px;
+      }
+      a {
+        color: $white;
+      }
+      a:hover {
+        color: $teal;
+      }
+      a:active {
+        color: $white;
+      }
+    }
+  }
+}
