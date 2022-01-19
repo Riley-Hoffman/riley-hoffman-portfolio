@@ -1033,7 +1033,7 @@ i.fa-grip-lines-vertical {
 
 .errorHeader {
   height: 25vh;
-  padding-top: 40px;
+  padding: 50px 0;
 }
 .errorHeader .headerBodyFlexBox {
   -webkit-box-orient: horizontal;
@@ -1060,7 +1060,7 @@ i.fa-grip-lines-vertical {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .errorSection h2 {
   color: #e5e8ee;
