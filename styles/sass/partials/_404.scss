@@ -2,12 +2,12 @@
   height: 25vh;
   padding-top: 40px;
   .headerBodyFlexBox {
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      .tealLine {
-          color: $teal;
-      }
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    .tealLine {
+      color: $teal;
+    }
   }
 }
 
@@ -17,50 +17,46 @@
   align-items: center;
   padding-top: 10px;
   h2 {
+    color: $white;
+  }
+  .errorContentBox {
+    align-items: center;
+    width: 100%;
+    .errorIcon {
+      width: 100%;
+      margin-left: 0;
+      max-width: 30%;
+    }
+    .errorP {
       color: $white;
-  }
-}
-
-.errorContentBox {
-  align-items: center;
-  width: 100%;
-}
-
-.errorIcon {
-  width: 100%;
-  margin-left: 0;
-  max-width: 30%;
-}
-
-.errorP {
-  color: $white;
-  font-size: 1.5rem;
-  .ownLine {
-      display: block;
-  }
-}
-
-.errorNav {
-  align-items: center;
-  justify-content: center;
-  ul {
-    font-size: 1.4rem;
-    li {
-      display: flex;
+      font-size: 1.5rem;
+      .ownLine {
+        display: block;
+      }
+    }
+    .errorNav {
       align-items: center;
-      i {
-        color: $teal;
-        font-size: 1.2rem;
-        margin-right: 10px;
-      }
-      a {
-        color: $white;
-      }
-      a:hover {
-        color: $teal;
-      }
-      a:active {
-        color: $white;
+      justify-content: center;
+      ul {
+        font-size: 1.4rem;
+        li {
+          display: flex;
+          align-items: center;
+          i {
+            color: $teal;
+            font-size: 1.2rem;
+            margin-right: 10px;
+          }
+          a {
+            color: $white;
+          }
+          a:hover {
+            color: $teal;
+          }
+          a:active {
+            color: $white;
+          }
+        }
       }
     }
   }

@@ -1065,29 +1065,25 @@ i.fa-grip-lines-vertical {
 .errorSection h2 {
   color: #e5e8ee;
 }
-
-.errorContentBox {
+.errorSection .errorContentBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
 }
-
-.errorIcon {
+.errorSection .errorContentBox .errorIcon {
   width: 100%;
   margin-left: 0;
   max-width: 30%;
 }
-
-.errorP {
+.errorSection .errorContentBox .errorP {
   color: #e5e8ee;
   font-size: 1.5rem;
 }
-.errorP .ownLine {
+.errorSection .errorContentBox .errorP .ownLine {
   display: block;
 }
-
-.errorNav {
+.errorSection .errorContentBox .errorNav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1095,10 +1091,10 @@ i.fa-grip-lines-vertical {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.errorNav ul {
+.errorSection .errorContentBox .errorNav ul {
   font-size: 1.4rem;
 }
-.errorNav ul li {
+.errorSection .errorContentBox .errorNav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1106,18 +1102,18 @@ i.fa-grip-lines-vertical {
       -ms-flex-align: center;
           align-items: center;
 }
-.errorNav ul li i {
+.errorSection .errorContentBox .errorNav ul li i {
   color: #17a2aa;
   font-size: 1.2rem;
   margin-right: 10px;
 }
-.errorNav ul li a {
+.errorSection .errorContentBox .errorNav ul li a {
   color: #e5e8ee;
 }
-.errorNav ul li a:hover {
+.errorSection .errorContentBox .errorNav ul li a:hover {
   color: #17a2aa;
 }
-.errorNav ul li a:active {
+.errorSection .errorContentBox .errorNav ul li a:active {
   color: #e5e8ee;
 }
 
