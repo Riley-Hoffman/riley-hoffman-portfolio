@@ -76,7 +76,6 @@ portfolio.selectiveSmoothScroll = () => {
 portfolio.errorPageExitAnimation = () => {
   $('.homeLink404').click((e) => {
   e.preventDefault();
-  // $('.homeLinkArrow').removeClass('animate__backInLeft');
   $('.homeLinkArrow').addClass('animate__backOutRight');
        
   setTimeout(() => {
