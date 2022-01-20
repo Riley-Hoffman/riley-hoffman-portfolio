@@ -120,6 +120,31 @@
       justify-content: center;
     }
   }
+
+  .headerFlexWrapper .headerBodyFlexBox {
+    margin-top: 0;
+  }
+
+  .errorHeader {
+    height: 21vh;
+    padding: 30px 0;
+  }
+
+  .errorSection {
+    padding: 0;
+    .errorContentBox {
+      flex-direction: column;
+      justify-content: center;
+      margin: 40px auto 0px;
+      .errorIcon {
+        max-width: 40%;
+      }
+      .errorP {
+        margin: 40px auto 50px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 /* Medium phones and down */
@@ -314,27 +339,26 @@
     }
   }
   .errorSection {
-  h2 {
+    h2 {
       color: $black;
+    }
   }
-}
-.errorP {
-  color: $black;
-}
+  .errorP {
+    color: $black;
+  }
 
-.errorNav {
-  ul {
-    li {
-      a {
-        color: $black;
-      }
-      a:active {
-        color: $black;
+  .errorNav {
+    ul {
+      li {
+        a {
+          color: $black;
+        }
+        a:active {
+          color: $black;
+        }
       }
     }
   }
-}
-
 }
 
 // When user prefers reduced motion
