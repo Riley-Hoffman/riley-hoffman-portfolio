@@ -72,10 +72,24 @@ portfolio.selectiveSmoothScroll = () => {
   }
 };
 
+// Show exit animation on 404 page
+portfolio.errorPageExitAnimation = () => {
+  $('.homeLink404').click((e) => {
+  e.preventDefault();
+  // $('.homeLinkArrow').removeClass('animate__backInLeft');
+  $('.homeLinkArrow').addClass('animate__backOutRight');
+       
+  setTimeout(() => {
+    window.location = 'https://rileyhoffman.com/';
+  }, 550);                 
+})
+}
+
 portfolio.init = () => { 
   portfolio.checkForSafari();
   portfolio.generateStars();
   portfolio.selectiveSmoothScroll();
+  portfolio.errorPageExitAnimation();
 }
 
 portfolio.init();
