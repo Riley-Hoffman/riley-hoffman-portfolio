@@ -34,5 +34,8 @@
     p {
       text-align: center;
     }
+    .noAnimation {
+      animation: none !important;
+    }
   }
 }

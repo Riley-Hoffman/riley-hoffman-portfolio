@@ -976,6 +976,10 @@ form {
 .skillsGallery li p {
   text-align: center;
 }
+.skillsGallery li .noAnimation {
+  -webkit-animation: none !important;
+          animation: none !important;
+}
 
 footer,
 footer p {
