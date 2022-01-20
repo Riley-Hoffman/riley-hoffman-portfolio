@@ -493,6 +493,18 @@
       }
     }
   }
+  .errorNav {
+      ul {
+        li {
+          a:hover {
+            color: $teal;
+          }
+          a:hover + i {
+            color: $white;
+          }
+        }
+      }
+    }
 }
 
 @-webkit-keyframes spin {

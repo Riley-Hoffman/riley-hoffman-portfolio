@@ -1117,9 +1117,6 @@ i.fa-grip-lines-vertical {
 .errorNav ul li a {
   color: #e5e8ee;
 }
-.errorNav ul li a:hover {
-  color: #17a2aa;
-}
 .errorNav ul li a:active {
   color: #e5e8ee;
 }
@@ -1589,6 +1586,13 @@ footer .footerBody .fa-github:hover {
   }
   footer .footerBody .fa-linkedin:active,
 footer .footerBody .fa-github:active {
+    color: #e5e8ee;
+  }
+
+  .errorNav ul li a:hover {
+    color: #17a2aa;
+  }
+  .errorNav ul li a:hover + i {
     color: #e5e8ee;
   }
 }
