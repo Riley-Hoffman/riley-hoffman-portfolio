@@ -30,13 +30,16 @@
   .headerFlexWrapper .headerBodyFlexBox {
     margin-top: 20px;
     width: 100%;
+    h1 {
+      margin-top: 30px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
     .iconContainer {
       display: none;
     }
     h2 {
-      margin-bottom: 2px;
-    }
-    p:last-of-type {
       margin-bottom: 2px;
     }
   }
@@ -47,6 +50,7 @@
 
   header .chevronLink {
     top: 90%;
+    left: 77%;
     .fa-chevron-down {
       font-size: 1.8rem;
     }
@@ -64,6 +68,22 @@
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-row-gap: 20px;
+          width: 100%;
+          li {
+            display: flex;
+            .me {
+              display: none;
+            }
+          }
+          .col1 {
+            justify-content: flex-start;
+          }
+          .col2 {
+            justify-content: center;
+          }
+          .col3 {
+            justify-content: flex-end;
+          }
         }
       }
     }
@@ -151,6 +171,9 @@
 @media (max-width: 650px) {
   header {
     padding-bottom: 140px;
+    .contactIcons {
+      display: none;
+    }
     .fa-chevron-down {
       font-size: 1.5rem;
     }
@@ -162,10 +185,6 @@
 
   .line {
     margin: -9px 0 0;
-  }
-  header .chevronLink {
-    left: 73%;
-    top: 81%;
   }
 
   .about1 > p:nth-child(2) {
@@ -227,7 +246,8 @@
       }
     }
     .chevronLink {
-      left: 50%;
+      top: 100%;
+      left: 78%;
     }
   }
 }
@@ -235,7 +255,7 @@
 /* Smallest phones */
 @media (max-width: 365px) {
   header a.chevronLink {
-    left: 65%;
+    left: 70%;
   }
 }
 
@@ -494,17 +514,17 @@
     }
   }
   .errorNav {
-      ul {
-        li {
-          a:hover {
-            color: $teal;
-          }
-          a:hover + i {
-            color: $white;
-          }
+    ul {
+      li {
+        a:hover {
+          color: $teal;
+        }
+        a:hover + i {
+          color: $white;
         }
       }
     }
+  }
 }
 
 @-webkit-keyframes spin {

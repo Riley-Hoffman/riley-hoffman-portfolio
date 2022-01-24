@@ -325,6 +325,9 @@ header {
     margin-top: 12px;
     nav {
       width: 55%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       ul {
         display: flex;
         justify-content: space-between;
@@ -355,6 +358,37 @@ header {
         }
         a:focus::after {
           width: 100%;
+        }
+      }
+      .contactIcons {
+        align-items: center;
+        height: 50vw;
+        flex-direction: column;
+        width: 2vw;
+        justify-content: center;
+        position: absolute;
+        right: -5vw;
+        padding-top: 70px;
+        .headerSocialBox {
+          flex-direction: column;
+          border-radius: 30px;
+          padding: 10px;
+          background-color: #14434870;
+          &:hover {
+            box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
+            background-color: transparent;
+            border: 2px solid #1443487a;
+            padding: 8px;
+            transition: background-color 0.2s;
+            a:hover {
+            color: $teal
+            }
+          }
+
+          a {
+            margin: 10px auto;
+            font-size: 1.3rem;
+          }
         }
       }
     }
