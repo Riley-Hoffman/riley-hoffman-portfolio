@@ -1183,6 +1183,10 @@ i.fa-grip-lines-vertical {
   header .navBox nav {
     width: 75%;
   }
+
+  header .navBox nav .contactIcons {
+    padding-top: 350px;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 780px) {
@@ -1431,6 +1435,12 @@ i.fa-grip-lines-vertical {
   header {
     font-size: 0.8rem;
     background-position-x: -33vw;
+  }
+  header a {
+    font-size: 0.95rem;
+  }
+  header nav {
+    letter-spacing: 1.5px;
   }
   header .headerBodyFlexBox a.tealContactButton {
     font-size: 0.8rem;

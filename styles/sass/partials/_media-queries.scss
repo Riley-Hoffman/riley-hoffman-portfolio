@@ -8,6 +8,17 @@
       width: 75%;
     }
   }
+
+  header {
+  .navBox {
+    nav {
+      .contactIcons {
+        padding-top: 350px
+      }
+    }
+  }
+}
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -236,6 +247,12 @@
   header {
     font-size: 0.8rem;
     background-position-x: -33vw;
+    a {
+      font-size: 0.95rem;
+    }
+    nav {
+      letter-spacing: 1.5px;
+    }
     .headerBodyFlexBox {
       a.tealContactButton {
         font-size: 0.8rem;
