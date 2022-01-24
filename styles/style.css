@@ -1453,6 +1453,11 @@ i.fa-grip-lines-vertical {
     top: 100%;
     left: 10%;
   }
+
+  .projectInfo:nth-child(even),
+.projectInfo:nth-child(odd) {
+    text-align: left;
+  }
 }
 /* Smallest phones */
 @media (max-width: 365px) {

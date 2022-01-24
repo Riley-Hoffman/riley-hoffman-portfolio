@@ -267,6 +267,11 @@
       left: 10%;
     }
   }
+
+  .projectInfo:nth-child(even),
+  .projectInfo:nth-child(odd) {
+    text-align: left;
+  }
 }
 
 /* Smallest phones */
