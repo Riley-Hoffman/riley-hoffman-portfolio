@@ -99,8 +99,13 @@
           width: 100%;
           li {
             display: flex;
-            .me {
-              display: none;
+            .aboutLink { 
+              .me {
+                display: none;
+              }
+              .sr-only {
+                display: inline;
+               }
             }
           }
           .col1 {

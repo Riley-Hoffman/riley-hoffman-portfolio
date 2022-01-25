@@ -627,6 +627,9 @@ header .navBox nav ul a::after {
 header .navBox nav ul a:focus::after {
   width: 100%;
 }
+header .navBox nav ul .aboutLink .sr-only {
+  display: none;
+}
 header .navBox nav .contactIcons {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1298,8 +1301,11 @@ i.fa-grip-lines-vertical {
     display: -ms-flexbox;
     display: flex;
   }
-  header .navBox nav ul li .me {
+  header .navBox nav ul li .aboutLink .me {
     display: none;
+  }
+  header .navBox nav ul li .aboutLink .sr-only {
+    display: inline;
   }
   header .navBox nav ul .col1 {
     -webkit-box-pack: start;

@@ -360,6 +360,9 @@ header {
         a:focus::after {
           width: 100%;
         }
+        .aboutLink .sr-only {
+          display: none;
+        }
       }
       .contactIcons {
         align-items: center;
