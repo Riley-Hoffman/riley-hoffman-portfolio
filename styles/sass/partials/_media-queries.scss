@@ -13,12 +13,29 @@
   .navBox {
     nav {
       .contactIcons {
-        padding-top: 350px
+        .headerSocialBox {
+          min-height: 40vh;
+        }
       }
     }
   }
 }
 
+}
+
+// If using window with reduced height don't collapse header social icons background
+@media (max-height: 500px) {
+  header {
+  .navBox {
+    nav {
+      .contactIcons {
+        .headerSocialBox {
+          min-height: 40vh;
+        }
+      }
+    }
+  }
+}
 }
 
 /* Landscape phone to portrait tablet */

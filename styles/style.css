@@ -635,6 +635,7 @@ header .navBox nav .contactIcons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   width: 2vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -644,13 +645,20 @@ header .navBox nav .contactIcons {
   padding-top: 70px;
 }
 header .navBox nav .contactIcons .headerSocialBox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 30px;
   padding: 10px;
   background-color: #14434870;
+  height: 30%;
 }
 header .navBox nav .contactIcons .headerSocialBox:hover {
   -webkit-box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
@@ -664,13 +672,31 @@ header .navBox nav .contactIcons .headerSocialBox:hover {
 header .navBox nav .contactIcons .headerSocialBox:hover a:hover {
   color: #17a2aa;
 }
-header .navBox nav .contactIcons .headerSocialBox a {
-  margin: 10px auto;
-  font-size: 1.3rem;
+header .navBox nav .contactIcons .headerSocialBox:hover a:hover::after {
+  width: 0;
 }
-
-form {
-  position: relative;
+header .navBox nav .contactIcons .headerSocialBox .headerSocialList {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60%;
+}
+header .navBox nav .contactIcons .headerSocialBox .headerSocialList li {
+  margin: auto;
+}
+header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a {
+  margin: 0 auto;
+  font-size: 1.3rem;
 }
 
 .headerFlexWrapper {
@@ -1184,8 +1210,13 @@ i.fa-grip-lines-vertical {
     width: 75%;
   }
 
-  header .navBox nav .contactIcons {
-    padding-top: 350px;
+  header .navBox nav .contactIcons .headerSocialBox {
+    min-height: 40vh;
+  }
+}
+@media (max-height: 500px) {
+  header .navBox nav .contactIcons .headerSocialBox {
+    min-height: 40vh;
   }
 }
 /* Landscape phone to portrait tablet */

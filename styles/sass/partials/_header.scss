@@ -364,16 +364,20 @@ header {
         align-items: center;
         height: 50vw;
         flex-direction: column;
+        height: 100%;
         width: 2vw;
         justify-content: center;
         position: absolute;
         right: -5vw;
         padding-top: 70px;
         .headerSocialBox {
+          align-items: center;
           flex-direction: column;
+          justify-content: center;
           border-radius: 30px;
           padding: 10px;
           background-color: #14434870;
+          height: 30%; 
           &:hover {
             box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
             background-color: transparent;
@@ -383,12 +387,27 @@ header {
             a:hover {
             color: $teal
             }
+            a:hover::after {
+              width: 0;
+            }
+          }
+          .headerSocialList {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 60%;
+            li {
+              margin: auto;
+            a {
+              margin: 0 auto;
+              font-size: 1.3rem;
+            }
+            }
+            
           }
 
-          a {
-            margin: 10px auto;
-            font-size: 1.3rem;
-          }
+          
         }
       }
     }
