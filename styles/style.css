@@ -599,6 +599,7 @@ header .navBox nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 header .navBox nav ul a {
   border-bottom: 1px solid transparent;
