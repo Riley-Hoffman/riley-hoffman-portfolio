@@ -1599,8 +1599,8 @@ footer p {
     height: 140vh;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
-    -webkit-animation: MoveUpDown 50s linear infinite;
-            animation: MoveUpDown 50s linear infinite;
+    -webkit-animation: MoveUpDown 45s linear infinite;
+            animation: MoveUpDown 45s linear infinite;
     top: initial;
   }
   @-webkit-keyframes MoveUpDown {
