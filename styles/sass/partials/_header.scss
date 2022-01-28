@@ -262,6 +262,10 @@ header {
   height: 100vh;
   width: 100%;
   position: relative;
+  .lightModeHeaderImage {
+    display: none;
+  }
+
   .skip-link {
     background: $teal;
     border-radius: 3px;
@@ -381,20 +385,7 @@ header {
           border-radius: 30px;
           padding: 10px;
           background-color: #14434870;
-          height: 30%; 
-          &:hover {
-            box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
-            background-color: transparent;
-            border: 2px solid #1443487a;
-            padding: 8px;
-            transition: background-color 0.2s;
-            a:hover {
-            color: $teal
-            }
-            a:hover::after {
-              width: 0;
-            }
-          }
+          height: 30%;
           .headerSocialList {
             align-items: center;
             display: flex;
@@ -403,15 +394,12 @@ header {
             height: 60%;
             li {
               margin: auto;
-            a {
-              margin: 0 auto;
-              font-size: 1.3rem;
+              a {
+                margin: 0 auto;
+                font-size: 1.3rem;
+              }
             }
-            }
-            
           }
-
-          
         }
       }
     }

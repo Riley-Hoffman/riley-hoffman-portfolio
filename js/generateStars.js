@@ -1,8 +1,9 @@
 // Random Stars
 generateStars = () => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (!reduceMotion || !reduceMotion.matches) {
+  if (!reduceMotion || !reduceMotion.matches && window.matchMedia || preferDark) {
     let $galaxy = $(".galaxy");
     let iterator = 0;
 
