@@ -1634,10 +1634,11 @@ footer .footerBody .fa-github:active {
 footer .footerBody .fa-github:active {
     color: #00050f;
   }
-  footer .errorNav ul li a {
-    color: #00050f;
+
+  .errorNav ul li a:hover {
+    color: #17a2aa;
   }
-  footer .errorNav ul li a:active {
+  .errorNav ul li a:hover + i {
     color: #00050f;
   }
 }
@@ -1777,6 +1778,13 @@ footer p {
   .errorP {
     color: #00050f;
   }
+
+  .errorNav ul li a {
+    color: #00050f;
+  }
+  .errorNav ul li a:active {
+    color: #00050f;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .animate__backInLeft {
@@ -1784,6 +1792,9 @@ footer p {
             animation: none;
   }
 
+  header {
+    background-attachment: local;
+  }
   header .navBox ul a:hover::after,
 header .navBox ul a:focus::after {
     width: 0%;

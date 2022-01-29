@@ -512,19 +512,20 @@
         color: $black;
       }
     }
-    .errorNav {
+  }
+
+  .errorNav {
       ul {
         li {
-          a {
-            color: $black;
+          a:hover {
+            color: $teal;
           }
-          a:active {
+          a:hover + i {
             color: $black;
           }
         }
       }
     }
-  }
 }
 
 
@@ -687,6 +688,19 @@
   .errorP {
     color: $black;
   }
+
+  .errorNav {
+      ul {
+        li {
+          a {
+            color: $black;
+          }
+          a:active {
+            color: $black;
+          }
+        }
+      }
+    }
 }
 
 // When user prefers reduced motion
@@ -695,6 +709,7 @@
     animation: none;
   }
   header {
+    background-attachment: local;
     .navBox {
       ul {
         a:hover::after,
