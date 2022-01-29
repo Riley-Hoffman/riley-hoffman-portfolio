@@ -1610,12 +1610,6 @@ footer .footerBody .fa-github:active {
   }
 }
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
-  header .navBox nav .contactIcons .headerSocialBox:hover a:hover i:hover {
-    background: #00050fba;
-  }
-  header .navBox nav .contactIcons .headerSocialBox:hover a:hover .fa-github:hover {
-    border-radius: 50%;
-  }
   header .navBox nav .contactIcons .headerSocialBox:hover a:active i:hover {
     background: none;
   }

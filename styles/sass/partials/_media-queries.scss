@@ -478,14 +478,6 @@
         .contactIcons {
           .headerSocialBox {
             &:hover {
-              a:hover {
-                i:hover {
-                  background: #00050fba;
-                }
-                .fa-github:hover {
-                  border-radius: 50%;
-                }
-              }
               a:active {
                 i:hover {
                   background: none;
