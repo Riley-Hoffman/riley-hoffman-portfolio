@@ -321,7 +321,15 @@ header {
     transform: scale(1.1);
   }
   .chevronLink:focus {
-    outline: 2px solid $teal;
+    outline: none;
+    i {
+    border-bottom: 2px solid $teal;
+    }
+  }
+  .chevronLink:active {
+    i {
+    border-bottom: none;
+    }
   }
   .navBox {
     align-items: center;
@@ -345,6 +353,12 @@ header {
         a:focus {
           outline: none;
         }
+        .aboutLink .sr-only {
+          display: none;
+        }
+      }
+
+       ul.mainNavList {
         a::after {
           background-color: $teal;
           content: "";
@@ -363,9 +377,6 @@ header {
         }
         a:focus::after {
           width: 100%;
-        }
-        .aboutLink .sr-only {
-          display: none;
         }
       }
       .contactIcons {
@@ -397,6 +408,10 @@ header {
               a {
                 margin: 0 auto;
                 font-size: 1.3rem;
+              }
+              a:hover,
+              a:focus {
+                border-bottom: none;
               }
             }
           }

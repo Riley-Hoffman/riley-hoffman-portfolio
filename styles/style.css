@@ -571,7 +571,13 @@ header .chevronLink:focus .fa-chevron-down {
   transform: scale(1.1);
 }
 header .chevronLink:focus {
-  outline: 2px solid #17a2aa;
+  outline: none;
+}
+header .chevronLink:focus i {
+  border-bottom: 2px solid #17a2aa;
+}
+header .chevronLink:active i {
+  border-bottom: none;
 }
 header .navBox {
   -webkit-box-align: center;
@@ -613,7 +619,10 @@ header .navBox nav ul a {
 header .navBox nav ul a:focus {
   outline: none;
 }
-header .navBox nav ul a::after {
+header .navBox nav ul .aboutLink .sr-only {
+  display: none;
+}
+header .navBox nav ul.mainNavList a::after {
   background-color: #17a2aa;
   content: "";
   height: 2px;
@@ -627,11 +636,8 @@ header .navBox nav ul a::after {
   -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-header .navBox nav ul a:focus::after {
+header .navBox nav ul.mainNavList a:focus::after {
   width: 100%;
-}
-header .navBox nav ul .aboutLink .sr-only {
-  display: none;
 }
 header .navBox nav .contactIcons {
   -webkit-box-align: center;
@@ -689,6 +695,10 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li {
 header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a {
   margin: 0 auto;
   font-size: 1.3rem;
+}
+header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:hover,
+header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
+  border-bottom: none;
 }
 
 .headerFlexWrapper {
@@ -1503,13 +1513,13 @@ i.fa-grip-lines-vertical {
   header .chevronLink:active {
     outline: none;
   }
-  header .navBox nav ul a:hover {
+  header .navBox nav ul.mainNavList a:hover {
     outline: none;
   }
-  header .navBox nav ul a:hover::after {
+  header .navBox nav ul.mainNavList a:hover::after {
     width: 100%;
   }
-  header .navBox nav ul a:active::after {
+  header .navBox nav ul.mainNavList a:active::after {
     -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
     transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
     width: 0;
@@ -1523,11 +1533,14 @@ i.fa-grip-lines-vertical {
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
   }
-  header .navBox nav .contactIcons .headerSocialBox:hover a:hover {
+  header .navBox nav .contactIcons .headerSocialBox:hover .headerSocialList li a:hover {
     color: #17a2aa;
   }
-  header .navBox nav .contactIcons .headerSocialBox:hover a:hover::after {
+  header .navBox nav .contactIcons .headerSocialBox:hover .headerSocialList li a:hover::after {
     width: 0;
+  }
+  header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
+    color: #17a2aa;
   }
 
   .headerFlexWrapper .headerBodyFlexBox a:hover .target {
@@ -1577,7 +1590,18 @@ footer .footerBody .fa-github:hover {
   }
 }
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-  header .navBox nav .contactIcons .headerSocialBox:hover a:active {
+  header .chevronLink .fa-chevron-down:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  header .chevronLink:active .fa-chevron-down {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  header .chevronLink:active {
+    outline: none;
+  }
+  header .navBox nav .contactIcons .headerSocialBox:hover .headerSocialList li a:active {
     color: #e5e8ee;
   }
   header .chevronLink .fa-chevron-down:hover {
@@ -1610,10 +1634,10 @@ footer .footerBody .fa-github:active {
   }
 }
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
-  header .navBox nav .contactIcons .headerSocialBox:hover a:active i:hover {
-    background: none;
-  }
   header .fa-chevron-down:hover {
+    color: #00050f;
+  }
+  header .navBox nav .contactIcons .headerSocialBox:hover .headerSocialList li a:active {
     color: #00050f;
   }
 
@@ -1643,7 +1667,7 @@ footer .footerBody .fa-github:active {
   }
 }
 @media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
-  header .lightModeHeaderImage {
+  header .lightModeHeaderAnimation {
     height: 140vh;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
@@ -1651,21 +1675,23 @@ footer .footerBody .fa-github:active {
             animation: MoveUpDown 45s linear infinite;
     top: initial;
   }
-  @-webkit-keyframes MoveUpDown {
-    from {
-      bottom: -100px;
-    }
-    to {
-      bottom: 10px;
-    }
+}
+@media (prefers-color-scheme: light) and (prefers-reduced-motion: reduce) {
+  header .lightModeHeaderImage {
+    top: 0;
+    height: 100vh;
   }
-  @keyframes MoveUpDown {
-    from {
-      bottom: -100px;
-    }
-    to {
-      bottom: 10px;
-    }
+  header .skip-link:focus {
+    outline: 2px solid #00050f;
+  }
+  header h1,
+header h2,
+header p,
+header .navBox a {
+    color: #00050f;
+  }
+  header .chevronLink:focus .fa-chevron-down {
+    color: #17a2aa;
   }
 }
 .lightModeHeaderBackgroundTexture {
@@ -1696,9 +1722,7 @@ footer .footerBody .fa-github:active {
   header .lightModeHeaderImage {
     position: absolute;
     margin: 0 auto;
-    top: 0;
     width: 100%;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -1792,26 +1816,30 @@ footer p {
             animation: none;
   }
 
+  .skillsGallery li:hover div.skillsIconBox:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
   header {
     background-attachment: local;
   }
-  header .navBox ul a:hover::after,
-header .navBox ul a:focus::after {
+  header .navBox nav ul.mainNavList a:hover::after,
+header .navBox nav ul.mainNavList a:focus::after {
     width: 0%;
   }
-  header .navBox ul a:hover,
-header .navBox ul a:focus {
+  header .navBox nav ul.mainNavList a:hover,
+header .navBox nav ul.mainNavList a:focus {
     border-bottom: 2px solid #17a2aa;
+  }
+  header .navBox nav ul.mainNavList a:active {
+    border-bottom: none;
   }
 
   .imgBox > a:hover > img,
 .imgBox > a:focus > img {
     border-top: 8px ridge #e5e8ee;
-  }
-
-  .skillsGallery li:hover div.skillsIconBox:hover {
-    -webkit-animation: none;
-            animation: none;
   }
 }
 @-webkit-keyframes spin {
@@ -1832,5 +1860,21 @@ header .navBox ul a:focus {
   100% {
     transform: rotateY(rotateY(180deg));
     -webkit-transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes MoveUpDown {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+@keyframes MoveUpDown {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 10px;
   }
 }

@@ -2,11 +2,12 @@
 
 lightModeTransparency = () => {  
   const preferLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  // const lightModeOverlayBox = document.getElementsByClassName('lightModeHeaderImage')
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     // If user prefers light mode
     if (preferLight) {
-      $('.lightModeHeaderImage').addClass('lightModeTransparency');
+      $('.lightModeHeaderImage').addClass('lightModeTransparency lightModeHeaderAnimation');
+      
       
       // Wait for transparency to load before load background texture
       setTimeout(() => {

@@ -319,7 +319,7 @@
     }
     .navBox {
       nav {
-        ul {
+        ul.mainNavList {
           a:hover {
             outline: none;
           }
@@ -341,11 +341,22 @@
               border: 2px solid #1443487a;
               padding: 8px;
               transition: background-color 0.2s;
-              a:hover {
-                color: $teal;
+              .headerSocialList {
+                li {
+                  a:hover {
+                    color: $teal;
+                  }
+                  a:hover::after {
+                    width: 0;
+                  }
+                }
               }
-              a:hover::after {
-                width: 0;
+            }
+            .headerSocialList {
+              li {
+                a:focus {
+                  color: $teal;
+                }
               }
             }
           }
@@ -415,20 +426,35 @@
 // Dark specific hover styles
 
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          .headerSocialBox {
-            &:hover {
-              a:active {
-                color: $white;
+    header {
+      .chevronLink .fa-chevron-down:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .chevronLink:active .fa-chevron-down {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      .chevronLink:active {
+        outline: none;
+      }
+      .navBox {
+        nav {
+          .contactIcons {
+            .headerSocialBox {
+              &:hover {
+                .headerSocialList {
+                  li {
+                    a:active {
+                      color: $white;
+                    }
+                  }
+                }
               }
             }
           }
         }
       }
-    }
     .chevronLink .fa-chevron-down:hover {
       color: $white;
     }
@@ -473,23 +499,26 @@
 
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
   header {
+    .fa-chevron-down:hover {
+      color: $black;
+    }
+
     .navBox {
       nav {
         .contactIcons {
           .headerSocialBox {
             &:hover {
-              a:active {
-                i:hover {
-                  background: none;
+              .headerSocialList {
+                li {
+                  a:active {
+                    color: $black;
+                  }
                 }
               }
             }
           }
         }
       }
-    }
-    .fa-chevron-down:hover {
-      color: $black;
     }
   }
 
@@ -515,74 +544,61 @@
   }
 
   .errorNav {
-      ul {
-        li {
-          a:hover {
-            color: $teal;
-          }
-          a:hover + i {
-            color: $black;
-          }
+    ul {
+      li {
+        a:hover {
+          color: $teal;
+        }
+        a:hover + i {
+          color: $black;
         }
       }
     }
+  }
 }
-
 
 // When user prefers light mode and allows full motion
 @media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
   header {
-    .lightModeHeaderImage {
+    .lightModeHeaderAnimation {
       height: 140vh;
       animation-timing-function: ease-in-out;
       animation: MoveUpDown 45s linear infinite;
       top: initial;
     }
-    @-webkit-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-    @-moz-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
+  }
+}
 
-    @-o-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
+// When user prefers light mode and and reduced motion
+@media (prefers-color-scheme: light) and (prefers-reduced-motion: reduce) {
+  header {
+    .lightModeHeaderImage {
+      top: 0;
+      height: 100vh;
     }
-    @keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
+    .skip-link:focus {
+      outline: 2px solid $black;
+    }
+    h1,
+    h2,
+    p,
+    .navBox a {
+      color: $black;
+    }
+    .chevronLink:focus .fa-chevron-down {
+      color: $teal;
     }
   }
 }
 
-  .lightModeHeaderBackgroundTexture {
-    background-image: url("../assets/large-leather.png");
-    background-size: cover;
-      background-repeat: no-repeat;
-  }
- .lightModeTransparency {
-    background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
-  }
-
+.lightModeHeaderBackgroundTexture {
+  background-image: url("../assets/large-leather.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightModeTransparency {
+  background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
+}
 
 // When user prefers light mode
 @media (prefers-color-scheme: light) {
@@ -602,9 +618,7 @@
     .lightModeHeaderImage {
       position: absolute;
       margin: 0 auto;
-      top: 0;
       width: 100%;
-      height: 100vh;
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
@@ -690,17 +704,17 @@
   }
 
   .errorNav {
-      ul {
-        li {
-          a {
-            color: $black;
-          }
-          a:active {
-            color: $black;
-          }
+    ul {
+      li {
+        a {
+          color: $black;
+        }
+        a:active {
+          color: $black;
         }
       }
     }
+  }
 }
 
 // When user prefers reduced motion
@@ -708,17 +722,29 @@
   .animate__backInLeft {
     animation: none;
   }
+  .skillsGallery li:hover div.skillsIconBox:hover {
+    animation: none;
+  }
+}
+
+// When user prefers reduced motion and no touchscreen
+@media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
   header {
     background-attachment: local;
     .navBox {
-      ul {
-        a:hover::after,
-        a:focus::after {
-          width: 0%;
-        }
-        a:hover,
-        a:focus {
-          border-bottom: 2px solid $teal;
+      nav {
+        ul.mainNavList {
+          a:hover::after,
+          a:focus::after {
+            width: 0%;
+          }
+          a:hover,
+          a:focus {
+            border-bottom: 2px solid $teal;
+          }
+          a:active {
+            border-bottom: none;
+          }
         }
       }
     }
@@ -727,12 +753,7 @@
   .imgBox > a:focus > img {
     border-top: 8px ridge $white;
   }
-  .skillsGallery li:hover div.skillsIconBox:hover {
-    animation: none;
-  }
 }
-
-
 
 @-webkit-keyframes spin {
   0% {
@@ -755,3 +776,37 @@
     -webkit-transform: rotateY(180deg);
   }
 }
+
+@-webkit-keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+    @-moz-keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+
+    @-o-keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+    @keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
