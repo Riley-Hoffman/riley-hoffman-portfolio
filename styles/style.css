@@ -1736,6 +1736,9 @@ header p,
 header .navBox a {
     color: #00050f;
   }
+  header .headerFlexWrapper .headerBodyFlexBox a:focus {
+    outline: 2px solid #00050f;
+  }
   header .chevronLink:focus .fa-chevron-down {
     color: #17a2aa;
   }

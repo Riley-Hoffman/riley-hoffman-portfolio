@@ -426,28 +426,27 @@
 // Dark specific hover styles
 
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-    header {
-      .chevronLink .fa-chevron-down:hover {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-      .chevronLink:active .fa-chevron-down {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-      }
-      .chevronLink:active {
-        outline: none;
-      }
-      .navBox {
-        nav {
-          .contactIcons {
-            .headerSocialBox {
-              &:hover {
-                .headerSocialList {
-                  li {
-                    a:active {
-                      color: $white;
-                    }
+  header {
+    .chevronLink .fa-chevron-down:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .chevronLink:active .fa-chevron-down {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .chevronLink:active {
+      outline: none;
+    }
+    .navBox {
+      nav {
+        .contactIcons {
+          .headerSocialBox {
+            &:hover {
+              .headerSocialList {
+                li {
+                  a:active {
+                    color: $white;
                   }
                 }
               }
@@ -455,6 +454,7 @@
           }
         }
       }
+    }
     .chevronLink .fa-chevron-down:hover {
       color: $white;
     }
@@ -632,6 +632,14 @@
     .navBox a {
       color: $black;
     }
+
+    .headerFlexWrapper {
+      .headerBodyFlexBox {
+        a:focus {
+          outline: 2px solid $black;
+        }
+      }
+    }
     .chevronLink:focus .fa-chevron-down {
       color: $teal;
     }
@@ -778,35 +786,35 @@
 }
 
 @-webkit-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-    @-moz-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+@-moz-keyframes MoveUpDown {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
 
-    @-o-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-    @keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
+@-o-keyframes MoveUpDown {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+@keyframes MoveUpDown {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
