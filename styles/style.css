@@ -1692,10 +1692,6 @@ header .navBox a {
     border-top: 14px ridge #00050f;
   }
 
-  .imgBox > a > .oval {
-    opacity: 0.3;
-  }
-
   footer,
 footer p {
     color: #00050f;
