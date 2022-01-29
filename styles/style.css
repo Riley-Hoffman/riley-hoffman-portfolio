@@ -1681,7 +1681,7 @@ footer .footerBody .fa-github:active {
   }
 
   header {
-    background-image: url("../assets/large-leather.png");
+    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482801/large-leather_mlsm3u.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1689,7 +1689,7 @@ footer .footerBody .fa-github:active {
     background-repeat: repeat;
   }
   header .lightModeHeaderImage {
-    background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
+    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482599/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency_jebxte.webp");
     position: absolute;
     margin: 0 auto;
     width: 100%;
