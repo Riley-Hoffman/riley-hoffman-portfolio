@@ -557,15 +557,6 @@
   }
 }
 
-// When user prefers light mode and and reduced motion
-@media (prefers-color-scheme: light) and (prefers-reduced-motion: reduce) {
-  header {
-    .skip-link:focus {
-      outline: 2px solid $black;
-    }
-  }
-}
-
 // When user prefers light mode
 @media (prefers-color-scheme: light) {
   header .galaxy {
@@ -578,9 +569,7 @@
 
   header {
     background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482801/large-leather_mlsm3u.webp");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 50% 50%;
     background-repeat: repeat;
     .lightModeHeaderImage {
@@ -613,6 +602,9 @@
     }
     .chevronLink:focus .fa-chevron-down {
       color: $black;
+    }
+    .chevronLink:active .fa-chevron-down {
+      color: $teal;
     }
   }
 
@@ -665,6 +657,9 @@
       > a {
         font-weight: 500;
       }
+      a:focus {
+        outline: 2px solid $black;
+      }
     }
   }
   .errorHeader {
@@ -690,6 +685,113 @@
         }
         a:active {
           color: $black;
+        }
+      }
+    }
+  }
+}
+
+// When user prefers dark mode
+@media (prefers-color-scheme: dark) {
+  html {
+    background: $black;
+  }
+
+  header {
+    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .lightModeHeaderImage {
+      display: none;
+    }
+    .skip-link:focus {
+      left: 0;
+      outline: 2px solid $white;
+    }
+    h1,
+    h2,
+    p,
+    .navBox a {
+      color: $white;
+    }
+
+    .headerFlexWrapper {
+      .headerBodyFlexBox {
+        a:focus {
+          outline: 2px solid $white;
+        }
+      }
+    }
+    .chevronLink:focus .fa-chevron-down {
+      color: $white;
+    }
+    .chevronLink:active .fa-chevron-down {
+      color: $teal;
+    }
+    
+  }
+
+  .projects {
+    background: $black;
+    .wrapper.flexBox {
+      h2 {
+        color: $white;
+      }
+    }
+  }
+
+  .projectInfo {
+    h3,
+    h4,
+    h5,
+    p {
+      color: $white;
+    }
+    a {
+      background: $white;
+      color: $darkTeal;
+    }
+    p,
+    h3,
+    h4 {
+      text-shadow: 3px 3px 5px $black;
+    }
+  }
+
+  .imgBox > a:focus > img {
+    border-top: 14px ridge $white;
+  }
+
+  footer,
+  footer p {
+    color: $black;
+  }
+
+  footer {
+    background: $black;
+    .footerBody {
+      a:focus {
+        outline: 2px solid $white;
+      }
+    }
+  }
+  .errorSection {
+    h2 {
+      color: $white;
+    }
+  }
+  .errorP {
+    color: $white;
+  }
+
+  .errorNav {
+    ul {
+      li {
+        a {
+          color: $white;
+        }
+        a:active {
+          color: $white;
         }
       }
     }

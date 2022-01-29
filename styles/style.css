@@ -292,10 +292,6 @@ time {
   width: 100%;
 }
 
-html {
-  background-color: #00050f;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
@@ -499,21 +495,14 @@ footer {
   }
 }
 header {
-  background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
   background-position-x: 100%;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode: color;
-  background-size: cover;
   background-clip: content;
   overflow: hidden;
   padding-bottom: 50px;
   height: 100vh;
   width: 100%;
   position: relative;
-}
-header .lightModeHeaderImage {
-  display: none;
 }
 header .skip-link {
   background: #17a2aa;
@@ -528,13 +517,6 @@ header .skip-link {
 }
 header .skip-link:focus {
   left: 0;
-  outline: 2px solid #e5e8ee;
-}
-header h1,
-header h2,
-header p,
-header .navBox a {
-  color: #e5e8ee;
 }
 header h1,
 header h2 {
@@ -566,7 +548,6 @@ header .fa-chevron-down {
   width: 5vw;
 }
 header .chevronLink:focus .fa-chevron-down {
-  color: #e5e8ee;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -576,7 +557,7 @@ header .chevronLink:focus {
 header .chevronLink:focus i {
   border-bottom: 2px solid #17a2aa;
 }
-header .chevronLink:active i {
+header a.chevronLink:active .fa-chevron-down {
   border-bottom: none;
 }
 header .navBox {
@@ -770,9 +751,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   line-height: 27px;
   margin-left: 10px;
 }
-.headerFlexWrapper .headerBodyFlexBox a:focus {
-  outline: 2px solid #e5e8ee;
-}
 
 .about {
   background-color: #e5e8ee;
@@ -857,7 +835,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 }
 
 .projects {
-  background: #00050f;
   padding: 85px 0;
 }
 .projects .wrapper.flexBox {
@@ -868,9 +845,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.projects .wrapper.flexBox h2 {
-  color: #e5e8ee;
 }
 
 .projectBox {
@@ -919,20 +893,12 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 .projectInfo h4 {
   margin-bottom: 40px;
 }
-.projectInfo h3,
-.projectInfo h4,
-.projectInfo h5,
-.projectInfo p {
-  color: #e5e8ee;
-}
 .projectInfo h5 {
   letter-spacing: 1px;
 }
 .projectInfo a {
-  background: #e5e8ee;
   -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  color: #245056;
   font-weight: 600;
   padding: 5px 15px;
   text-transform: uppercase;
@@ -944,11 +910,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 }
 .projectInfo a:focus {
   opacity: 0.6;
-}
-.projectInfo p,
-.projectInfo h3,
-.projectInfo h4 {
-  text-shadow: 3px 3px 5px #00050f;
 }
 
 .imgBox {
@@ -992,7 +953,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 }
 
 .imgBox > a:focus > img {
-  border-top: 14px ridge #e5e8ee;
   -webkit-transition: border-top 0.5s;
   transition: border-top 0.5s;
   z-index: -2;
@@ -1072,7 +1032,6 @@ footer p {
 }
 
 footer {
-  background: #00050f;
   padding: 10px 0;
 }
 footer .footerBody {
@@ -1147,9 +1106,6 @@ i.fa-grip-lines-vertical {
   padding-top: 20px;
   overflow: hidden;
 }
-.errorSection h2 {
-  color: #e5e8ee;
-}
 .errorSection .errorContentBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1164,7 +1120,6 @@ i.fa-grip-lines-vertical {
   max-width: 30%;
 }
 .errorSection .errorContentBox .errorP {
-  color: #e5e8ee;
   font-size: 1.5rem;
 }
 .errorSection .errorContentBox .errorP .ownLine {
@@ -1194,12 +1149,6 @@ i.fa-grip-lines-vertical {
   color: #17a2aa;
   font-size: 1.7rem;
   margin-left: 10px;
-}
-.errorNav ul li a {
-  color: #e5e8ee;
-}
-.errorNav ul li a:active {
-  color: #e5e8ee;
 }
 
 /* Portrait tablet and small desktops */
@@ -1666,11 +1615,6 @@ footer .footerBody .fa-github:active {
     color: #00050f;
   }
 }
-@media (prefers-color-scheme: light) and (prefers-reduced-motion: reduce) {
-  header .skip-link:focus {
-    outline: 2px solid #00050f;
-  }
-}
 @media (prefers-color-scheme: light) {
   header .galaxy {
     display: none;
@@ -1682,9 +1626,7 @@ footer .footerBody .fa-github:active {
 
   header {
     background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482801/large-leather_mlsm3u.webp");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 50% 50%;
     background-repeat: repeat;
   }
@@ -1713,6 +1655,9 @@ header .navBox a {
   }
   header .chevronLink:focus .fa-chevron-down {
     color: #00050f;
+  }
+  header .chevronLink:active .fa-chevron-down {
+    color: #17a2aa;
   }
 
   .about {
@@ -1762,6 +1707,9 @@ footer p {
   footer .footerBody > a {
     font-weight: 500;
   }
+  footer .footerBody a:focus {
+    outline: 2px solid #00050f;
+  }
 
   .errorHeader {
     background-image: none;
@@ -1783,6 +1731,93 @@ footer p {
   }
   .errorNav ul li a:active {
     color: #00050f;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #00050f;
+  }
+
+  header {
+    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header .lightModeHeaderImage {
+    display: none;
+  }
+  header .skip-link:focus {
+    left: 0;
+    outline: 2px solid #e5e8ee;
+  }
+  header h1,
+header h2,
+header p,
+header .navBox a {
+    color: #e5e8ee;
+  }
+  header .headerFlexWrapper .headerBodyFlexBox a:focus {
+    outline: 2px solid #e5e8ee;
+  }
+  header .chevronLink:focus .fa-chevron-down {
+    color: #e5e8ee;
+  }
+  header .chevronLink:active .fa-chevron-down {
+    color: #17a2aa;
+  }
+
+  .projects {
+    background: #00050f;
+  }
+  .projects .wrapper.flexBox h2 {
+    color: #e5e8ee;
+  }
+
+  .projectInfo h3,
+.projectInfo h4,
+.projectInfo h5,
+.projectInfo p {
+    color: #e5e8ee;
+  }
+  .projectInfo a {
+    background: #e5e8ee;
+    color: #245056;
+  }
+  .projectInfo p,
+.projectInfo h3,
+.projectInfo h4 {
+    text-shadow: 3px 3px 5px #00050f;
+  }
+
+  .imgBox > a:focus > img {
+    border-top: 14px ridge #e5e8ee;
+  }
+
+  footer,
+footer p {
+    color: #00050f;
+  }
+
+  footer {
+    background: #00050f;
+  }
+  footer .footerBody a:focus {
+    outline: 2px solid #e5e8ee;
+  }
+
+  .errorSection h2 {
+    color: #e5e8ee;
+  }
+
+  .errorP {
+    color: #e5e8ee;
+  }
+
+  .errorNav ul li a {
+    color: #e5e8ee;
+  }
+  .errorNav ul li a:active {
+    color: #e5e8ee;
   }
 }
 @media (prefers-reduced-motion: reduce) {

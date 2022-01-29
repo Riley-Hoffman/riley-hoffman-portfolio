@@ -250,21 +250,14 @@
 }
 
 header {
-  background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
   background-position-x: 100%;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode: color;
-  background-size: cover;
   background-clip: content;
   overflow: hidden;
   padding-bottom: 50px;
   height: 100vh;
   width: 100%;
   position: relative;
-  .lightModeHeaderImage {
-    display: none;
-  }
 
   .skip-link {
     background: $teal;
@@ -280,14 +273,8 @@ header {
 
   .skip-link:focus {
     left: 0;
-    outline: 2px solid $white;
   }
-  h1,
-  h2,
-  p,
-  .navBox a {
-    color: $white;
-  }
+
   h1,
   h2 {
     line-height: 1.3;
@@ -316,21 +303,21 @@ header {
     width: 5vw;
   }
   .chevronLink:focus .fa-chevron-down {
-    color: $white;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
   .chevronLink:focus {
     outline: none;
     i {
-    border-bottom: 2px solid $teal;
+      border-bottom: 2px solid $teal;
     }
   }
-  .chevronLink:active {
-    i {
-    border-bottom: none;
+  a.chevronLink:active {
+    .fa-chevron-down {
+      border-bottom: none;
     }
   }
+
   .navBox {
     align-items: center;
     justify-content: flex-end;
@@ -358,7 +345,7 @@ header {
         }
       }
 
-       ul.mainNavList {
+      ul.mainNavList {
         a::after {
           background-color: $teal;
           content: "";
@@ -471,9 +458,6 @@ header {
         line-height: 27px;
         margin-left: 10px;
       }
-    }
-    a:focus {
-      outline: 2px solid $white;
     }
   }
 }
