@@ -1666,44 +1666,11 @@ footer .footerBody .fa-github:active {
     color: #00050f;
   }
 }
-@media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
-  header .lightModeHeaderAnimation {
-    height: 140vh;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation: MoveUpDown 45s linear infinite;
-            animation: MoveUpDown 45s linear infinite;
-    top: initial;
-  }
-}
 @media (prefers-color-scheme: light) and (prefers-reduced-motion: reduce) {
-  header .lightModeHeaderImage {
-    top: 0;
-    height: 100vh;
-  }
   header .skip-link:focus {
     outline: 2px solid #00050f;
   }
-  header h1,
-header h2,
-header p,
-header .navBox a {
-    color: #00050f;
-  }
-  header .chevronLink:focus .fa-chevron-down {
-    color: #17a2aa;
-  }
 }
-.lightModeHeaderBackgroundTexture {
-  background-image: url("../assets/large-leather.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.lightModeTransparency {
-  background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
-}
-
 @media (prefers-color-scheme: light) {
   header .galaxy {
     display: none;
@@ -1714,18 +1681,23 @@ header .navBox a {
   }
 
   header {
-    background-image: none;
+    background-image: url("../assets/large-leather.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
     background-size: 50% 50%;
     background-repeat: repeat;
   }
   header .lightModeHeaderImage {
+    background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
     position: absolute;
     margin: 0 auto;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
+    top: 0;
+    height: 100vh;
   }
   header .skip-link:focus {
     outline: 2px solid #00050f;
@@ -1740,7 +1712,7 @@ header .navBox a {
     outline: 2px solid #00050f;
   }
   header .chevronLink:focus .fa-chevron-down {
-    color: #17a2aa;
+    color: #00050f;
   }
 
   .about {

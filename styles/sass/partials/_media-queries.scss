@@ -557,47 +557,13 @@
   }
 }
 
-// When user prefers light mode and allows full motion
-@media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
-  header {
-    .lightModeHeaderAnimation {
-      height: 140vh;
-      animation-timing-function: ease-in-out;
-      animation: MoveUpDown 45s linear infinite;
-      top: initial;
-    }
-  }
-}
-
 // When user prefers light mode and and reduced motion
 @media (prefers-color-scheme: light) and (prefers-reduced-motion: reduce) {
   header {
-    .lightModeHeaderImage {
-      top: 0;
-      height: 100vh;
-    }
     .skip-link:focus {
       outline: 2px solid $black;
     }
-    h1,
-    h2,
-    p,
-    .navBox a {
-      color: $black;
-    }
-    .chevronLink:focus .fa-chevron-down {
-      color: $teal;
-    }
   }
-}
-
-.lightModeHeaderBackgroundTexture {
-  background-image: url("../assets/large-leather.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.lightModeTransparency {
-  background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
 }
 
 // When user prefers light mode
@@ -611,17 +577,22 @@
   }
 
   header {
-    background-image: none;
+    background-image: url("../assets/large-leather.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
     background-size: 50% 50%;
     background-repeat: repeat;
     .lightModeHeaderImage {
+      background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
       position: absolute;
       margin: 0 auto;
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
+      top: 0;
+      height: 100vh;
     }
     .skip-link:focus {
       outline: 2px solid $black;
@@ -641,7 +612,7 @@
       }
     }
     .chevronLink:focus .fa-chevron-down {
-      color: $teal;
+      color: $black;
     }
   }
 
