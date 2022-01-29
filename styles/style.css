@@ -1491,160 +1491,6 @@ i.fa-grip-lines-vertical {
     left: 70%;
   }
 }
-@media (prefers-color-scheme: light) {
-  header .galaxy {
-    display: none;
-  }
-
-  html {
-    background: #e5e8ee;
-  }
-
-  header {
-    background-image: none;
-    background-size: cover;
-    background-image: url("../assets/large-leather.png");
-    background-size: 50% 50%;
-    background-repeat: repeat;
-  }
-  header .lightModeHeaderImage {
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-  }
-  header .skip-link:focus {
-    outline: 2px solid #00050f;
-  }
-  header h1,
-header h2,
-header p,
-header .navBox a {
-    color: #00050f;
-  }
-  header .chevronLink:focus .fa-chevron-down {
-    color: #17a2aa;
-  }
-
-  .about {
-    -webkit-box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
-            box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
-  }
-
-  .projects {
-    background: #e5e8ee;
-  }
-  .projects .wrapper.flexBox h2 {
-    color: #00050f;
-  }
-
-  .projectInfo h3,
-.projectInfo h4,
-.projectInfo h5,
-.projectInfo p {
-    color: #00050f;
-  }
-  .projectInfo a {
-    background: #17a2aa;
-    color: #00050f;
-  }
-  .projectInfo p,
-.projectInfo h3,
-.projectInfo h4 {
-    text-shadow: none;
-  }
-
-  .imgBox > a:focus > img {
-    border-top: 14px ridge #00050f;
-  }
-
-  .imgBox > a > .oval {
-    opacity: 0.3;
-  }
-
-  footer,
-footer p {
-    color: #00050f;
-  }
-
-  footer {
-    background: #e5e8ee;
-  }
-  footer .footerBody > a {
-    font-weight: 500;
-  }
-
-  .errorHeader {
-    background-image: none;
-  }
-  .errorHeader .background {
-    display: block;
-  }
-
-  .errorSection h2 {
-    color: #00050f;
-  }
-
-  .errorP {
-    color: #00050f;
-  }
-}
-@media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
-  header .lightModeHeaderImage {
-    height: 140vh;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation: MoveUpDown 45s linear infinite;
-            animation: MoveUpDown 45s linear infinite;
-    top: initial;
-  }
-  @-webkit-keyframes MoveUpDown {
-    from {
-      bottom: -100px;
-    }
-    to {
-      bottom: 10px;
-    }
-  }
-  @keyframes MoveUpDown {
-    from {
-      bottom: -100px;
-    }
-    to {
-      bottom: 10px;
-    }
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .animate__backInLeft {
-    -webkit-animation: none;
-            animation: none;
-  }
-
-  header .navBox ul a:hover::after,
-header .navBox ul a:focus::after {
-    width: 0%;
-  }
-  header .navBox ul a:hover,
-header .navBox ul a:focus {
-    border-bottom: 2px solid #17a2aa;
-  }
-
-  .imgBox > a:hover > img,
-.imgBox > a:focus > img {
-    border-top: 8px ridge #e5e8ee;
-  }
-
-  .skillsGallery li:hover div.skillsIconBox:hover {
-    -webkit-animation: none;
-            animation: none;
-  }
-}
 @media (hover: hover) and (pointer: fine) {
   header .chevronLink .fa-chevron-down:hover {
     -webkit-transform: scale(1.1);
@@ -1799,6 +1645,168 @@ footer .footerBody .fa-github:active {
   }
   footer .errorNav ul li a:active {
     color: #00050f;
+  }
+}
+@media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
+  header .lightModeHeaderImage {
+    height: 140vh;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation: MoveUpDown 45s linear infinite;
+            animation: MoveUpDown 45s linear infinite;
+    top: initial;
+  }
+  @-webkit-keyframes MoveUpDown {
+    from {
+      bottom: -100px;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+  @keyframes MoveUpDown {
+    from {
+      bottom: -100px;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+}
+.lightModeHeaderBackgroundTexture {
+  background-image: url("../assets/large-leather.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lightModeTransparency {
+  background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
+}
+
+@media (prefers-color-scheme: light) {
+  header .galaxy {
+    display: none;
+  }
+
+  html {
+    background: #e5e8ee;
+  }
+
+  header {
+    background-image: none;
+    background-size: cover;
+    background-size: 50% 50%;
+    background-repeat: repeat;
+  }
+  header .lightModeHeaderImage {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  header .skip-link:focus {
+    outline: 2px solid #00050f;
+  }
+  header h1,
+header h2,
+header p,
+header .navBox a {
+    color: #00050f;
+  }
+  header .chevronLink:focus .fa-chevron-down {
+    color: #17a2aa;
+  }
+
+  .about {
+    -webkit-box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+            box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+  }
+
+  .projects {
+    background: #e5e8ee;
+  }
+  .projects .wrapper.flexBox h2 {
+    color: #00050f;
+  }
+
+  .projectInfo h3,
+.projectInfo h4,
+.projectInfo h5,
+.projectInfo p {
+    color: #00050f;
+  }
+  .projectInfo a {
+    background: #17a2aa;
+    color: #00050f;
+  }
+  .projectInfo p,
+.projectInfo h3,
+.projectInfo h4 {
+    text-shadow: none;
+  }
+
+  .imgBox > a:focus > img {
+    border-top: 14px ridge #00050f;
+  }
+
+  .imgBox > a > .oval {
+    opacity: 0.3;
+  }
+
+  footer,
+footer p {
+    color: #00050f;
+  }
+
+  footer {
+    background: #e5e8ee;
+  }
+  footer .footerBody > a {
+    font-weight: 500;
+  }
+
+  .errorHeader {
+    background-image: none;
+  }
+  .errorHeader .background {
+    display: block;
+  }
+
+  .errorSection h2 {
+    color: #00050f;
+  }
+
+  .errorP {
+    color: #00050f;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate__backInLeft {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  header .navBox ul a:hover::after,
+header .navBox ul a:focus::after {
+    width: 0%;
+  }
+  header .navBox ul a:hover,
+header .navBox ul a:focus {
+    border-bottom: 2px solid #17a2aa;
+  }
+
+  .imgBox > a:hover > img,
+.imgBox > a:focus > img {
+    border-top: 8px ridge #e5e8ee;
+  }
+
+  .skillsGallery li:hover div.skillsIconBox:hover {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 @-webkit-keyframes spin {

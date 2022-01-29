@@ -302,187 +302,6 @@
   }
 }
 
-// When user prefers light mode
-@media (prefers-color-scheme: light) {
-  header .galaxy {
-    display: none;
-  }
-
-  html {
-    background: $white;
-  }
-
-  header {
-    background-image: none;
-    background-size: cover;
-    background-image: url("../assets/large-leather.png");
-    background-size: 50% 50%;
-    background-repeat: repeat;
-    .lightModeHeaderImage {
-      position: absolute;
-      margin: 0 auto;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: block;
-    }
-    .skip-link:focus {
-      outline: 2px solid $black;
-    }
-    h1,
-    h2,
-    p,
-    .navBox a {
-      color: $black;
-    }
-    .chevronLink:focus .fa-chevron-down {
-      color: $teal;
-    }
-  }
-
-  .about {
-    box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
-  }
-
-  .projects {
-    background: $white;
-    .wrapper.flexBox {
-      h2 {
-        color: $black;
-      }
-    }
-  }
-
-  .projectInfo {
-    h3,
-    h4,
-    h5,
-    p {
-      color: $black;
-    }
-    a {
-      background: $teal;
-      color: $black;
-    }
-    p,
-    h3,
-    h4 {
-      text-shadow: none;
-    }
-  }
-
-  .imgBox > a:focus > img {
-    border-top: 14px ridge $black;
-  }
-  .imgBox > a > .oval {
-    opacity: 0.3;
-  }
-
-  footer,
-  footer p {
-    color: $black;
-  }
-
-  footer {
-    background: $white;
-    .footerBody {
-      > a {
-        font-weight: 500;
-      }
-    }
-  }
-  .errorHeader {
-    background-image: none;
-    .background {
-      display: block;
-    }
-  }
-  .errorSection {
-    h2 {
-      color: $black;
-    }
-  }
-  .errorP {
-    color: $black;
-  }
-}
-
-// When user prefers light mode and allows full motion
-@media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
-  header {
-    .lightModeHeaderImage {
-      height: 140vh;
-      animation-timing-function: ease-in-out;
-      animation: MoveUpDown 45s linear infinite;
-      top: initial;
-    }
-    @-webkit-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-    @-moz-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-
-    @-o-keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-    @keyframes MoveUpDown {
-      from {
-        bottom: -100px;
-      }
-      to {
-        bottom: 10px;
-      }
-    }
-  }
-}
-
-// When user prefers reduced motion
-@media (prefers-reduced-motion: reduce) {
-  .animate__backInLeft {
-    animation: none;
-  }
-  header {
-    .navBox {
-      ul {
-        a:hover::after,
-        a:focus::after {
-          width: 0%;
-        }
-        a:hover,
-        a:focus {
-          border-bottom: 2px solid $teal;
-        }
-      }
-    }
-  }
-  .imgBox > a:hover > img,
-  .imgBox > a:focus > img {
-    border-top: 8px ridge $white;
-  }
-  .skillsGallery li:hover div.skillsIconBox:hover {
-    animation: none;
-  }
-}
-
 // Hover/Active Styles only when device is not a touchscreen
 
 @media (hover: hover) and (pointer: fine) {
@@ -593,6 +412,8 @@
   }
 }
 
+// Dark specific hover styles
+
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
   header {
     .navBox {
@@ -647,6 +468,8 @@
     }
   }
 }
+
+// Light specific hover styles
 
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
   header {
@@ -711,6 +534,198 @@
     }
   }
 }
+
+
+// When user prefers light mode and allows full motion
+@media (prefers-color-scheme: light) and (prefers-reduced-motion: no-preference) {
+  header {
+    .lightModeHeaderImage {
+      height: 140vh;
+      animation-timing-function: ease-in-out;
+      animation: MoveUpDown 45s linear infinite;
+      top: initial;
+    }
+    @-webkit-keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+    @-moz-keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+
+    @-o-keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+    @keyframes MoveUpDown {
+      from {
+        bottom: -100px;
+      }
+      to {
+        bottom: 10px;
+      }
+    }
+  }
+}
+
+  .lightModeHeaderBackgroundTexture {
+    background-image: url("../assets/large-leather.png");
+    background-size: cover;
+      background-repeat: no-repeat;
+  }
+ .lightModeTransparency {
+    background-image: url("../assets/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency.png");
+  }
+
+
+// When user prefers light mode
+@media (prefers-color-scheme: light) {
+  header .galaxy {
+    display: none;
+  }
+
+  html {
+    background: $white;
+  }
+
+  header {
+    background-image: none;
+    background-size: cover;
+    background-size: 50% 50%;
+    background-repeat: repeat;
+    .lightModeHeaderImage {
+      position: absolute;
+      margin: 0 auto;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+    }
+    .skip-link:focus {
+      outline: 2px solid $black;
+    }
+    h1,
+    h2,
+    p,
+    .navBox a {
+      color: $black;
+    }
+    .chevronLink:focus .fa-chevron-down {
+      color: $teal;
+    }
+  }
+
+  .about {
+    box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+  }
+
+  .projects {
+    background: $white;
+    .wrapper.flexBox {
+      h2 {
+        color: $black;
+      }
+    }
+  }
+
+  .projectInfo {
+    h3,
+    h4,
+    h5,
+    p {
+      color: $black;
+    }
+    a {
+      background: $teal;
+      color: $black;
+    }
+    p,
+    h3,
+    h4 {
+      text-shadow: none;
+    }
+  }
+
+  .imgBox > a:focus > img {
+    border-top: 14px ridge $black;
+  }
+  .imgBox > a > .oval {
+    opacity: 0.3;
+  }
+
+  footer,
+  footer p {
+    color: $black;
+  }
+
+  footer {
+    background: $white;
+    .footerBody {
+      > a {
+        font-weight: 500;
+      }
+    }
+  }
+  .errorHeader {
+    background-image: none;
+    .background {
+      display: block;
+    }
+  }
+  .errorSection {
+    h2 {
+      color: $black;
+    }
+  }
+  .errorP {
+    color: $black;
+  }
+}
+
+// When user prefers reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .animate__backInLeft {
+    animation: none;
+  }
+  header {
+    .navBox {
+      ul {
+        a:hover::after,
+        a:focus::after {
+          width: 0%;
+        }
+        a:hover,
+        a:focus {
+          border-bottom: 2px solid $teal;
+        }
+      }
+    }
+  }
+  .imgBox > a:hover > img,
+  .imgBox > a:focus > img {
+    border-top: 8px ridge $white;
+  }
+  .skillsGallery li:hover div.skillsIconBox:hover {
+    animation: none;
+  }
+}
+
+
 
 @-webkit-keyframes spin {
   0% {
