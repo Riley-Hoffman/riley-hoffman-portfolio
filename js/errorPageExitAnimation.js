@@ -11,9 +11,8 @@ errorPageExitAnimation = () => {
             e.preventDefault();
             $('.homeLinkArrow').removeClass('animate__headShake');
             $('.homeLinkArrow').addClass('animate__backOutRight');
-    
             setTimeout(() => {
-                window.location = 'https://rileyhoffman.com/';
+                window.location.replace("https://rileyhoffman.com/");
             }, 550);
         })
     }
