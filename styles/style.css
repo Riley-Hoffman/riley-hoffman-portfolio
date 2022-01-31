@@ -1458,6 +1458,9 @@ i.fa-grip-lines-vertical {
     display: none;
   }
 
+  header .navBox {
+    margin-top: 0;
+  }
   header .headerBodyFlexBox {
     position: relative;
   }
