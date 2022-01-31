@@ -310,6 +310,13 @@
       }
     }
   }
+  footer {
+    .footerBody {
+      > a {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 // Phone landscape
@@ -347,7 +354,7 @@
   .about {
     padding-top: 115px;
   }
-  .footer {
+  footer {
     .footerBody {
       padding: 65px 0 60px;
     }
