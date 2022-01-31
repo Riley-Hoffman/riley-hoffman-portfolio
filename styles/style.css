@@ -1452,6 +1452,28 @@ i.fa-grip-lines-vertical {
     left: 70%;
   }
 }
+@media screen and (orientation: landscape) and (max-device-width: 800px) and (max-device-height: 600px) {
+  /* Your CSS Here*/
+  header a.chevronLink {
+    display: none;
+  }
+
+  header .headerBodyFlexBox {
+    position: relative;
+  }
+  header .headerBodyFlexBox a.tealContactButton {
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    right: 0;
+  }
+  header .headerBodyFlexBox a.tealContactButton .me {
+    display: none;
+  }
+  header .headerBodyFlexBox a.tealContactButton .fa-long-arrow-alt-right {
+    display: none;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   header .chevronLink .fa-chevron-down:hover {
     -webkit-transform: scale(1.1);

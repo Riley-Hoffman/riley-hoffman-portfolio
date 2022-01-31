@@ -302,6 +302,32 @@
   }
 }
 
+// Small tablet landscape
+@media screen and (orientation: landscape) and (max-device-width: 800px) and (max-device-height: 600px) {
+  /* Your CSS Here*/
+  header a.chevronLink {
+    display: none;
+  }
+  
+  header {
+    .headerBodyFlexBox {
+      position: relative;
+      a.tealContactButton {
+        position: absolute;
+        bottom: 0;
+        width: 25%;
+        right: 0;
+        .me {
+          display: none;
+        }
+        .fa-long-arrow-alt-right {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 // Hover/Active Styles only when device is not a touchscreen
 
 @media (hover: hover) and (pointer: fine) {
@@ -725,7 +751,6 @@
     .chevronLink:active .fa-chevron-down {
       color: $teal;
     }
-    
   }
 
   .projects {
