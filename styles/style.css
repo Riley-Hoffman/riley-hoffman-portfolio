@@ -1549,7 +1549,7 @@ i.fa-grip-lines-vertical {
   }
   header .headerBodyFlexBox a.tealContactButton {
     position: absolute;
-    bottom: 0;
+    bottom: 8%;
     width: 25%;
     right: 0;
   }
