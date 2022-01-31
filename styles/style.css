@@ -1452,7 +1452,7 @@ i.fa-grip-lines-vertical {
     left: 70%;
   }
 }
-@media screen and (orientation: landscape) and (max-device-width: 450px) and (max-device-height: 320px) {
+@media screen and (orientation: landscape) and (max-device-width: 640px) and (max-device-height: 360px) {
   /* Your CSS Here*/
   header a.chevronLink {
     display: none;
