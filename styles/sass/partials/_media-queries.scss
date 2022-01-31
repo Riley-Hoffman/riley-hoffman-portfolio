@@ -308,7 +308,7 @@
   header a.chevronLink {
     display: none;
   }
-  
+
   header {
     .navBox {
       margin-top: 0;
@@ -327,6 +327,14 @@
           display: none;
         }
       }
+    }
+  }
+  .about {
+    padding-top: 115px;
+  }
+  .footer {
+    .footerBody {
+      padding: 65px 0 60px;
     }
   }
 }
@@ -860,7 +868,6 @@
     border-top: 8px ridge $white;
   }
 }
-
 
 @-webkit-keyframes spin {
   0% {

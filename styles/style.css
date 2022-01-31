@@ -1476,6 +1476,14 @@ i.fa-grip-lines-vertical {
   header .headerBodyFlexBox a.tealContactButton .fa-long-arrow-alt-right {
     display: none;
   }
+
+  .about {
+    padding-top: 115px;
+  }
+
+  .footer .footerBody {
+    padding: 65px 0 60px;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   header .chevronLink .fa-chevron-down:hover {
