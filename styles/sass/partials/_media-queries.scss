@@ -34,28 +34,6 @@
   }
 }
 
-// If using window with reduced height don't collapse header social icons background
-@media (max-height: 500px) {
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          .headerSocialBox {
-            min-height: 40vh;
-            .headerSocialList {
-              li {
-                a {
-                  font-size: 1.3rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 800px) {
   header .chevronLink {
@@ -347,7 +325,7 @@
 }
 
 // Tablet landscape
-@media screen and (orientation: landscape) and (max-width: 1040px) and (max-height: 785px) {
+@media screen and (orientation: landscape) and (max-width: 1040px) and (max-height: 800px) {
   header {
     .navBox {
       nav {
@@ -359,6 +337,28 @@
               li {
                 a {
                   font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// If using window with reduced height don't collapse header social icons background
+@media (max-height: 500px) {
+  header {
+    .navBox {
+      nav {
+        .contactIcons {
+          .headerSocialBox {
+            min-height: 40vh;
+            .headerSocialList {
+              li {
+                a {
+                  font-size: 1.3rem;
                 }
               }
             }
