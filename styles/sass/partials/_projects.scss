@@ -69,9 +69,10 @@
 
 .imgBox {
   position: relative;
+  text-align: center; // for alt text in case images don't load.
   cursor: pointer;
   a {
-    color: $white;
+    color: $white; // for alt
   }
   div.oval {
     background: #00f1ff;
