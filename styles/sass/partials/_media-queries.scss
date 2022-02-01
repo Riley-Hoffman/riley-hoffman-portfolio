@@ -13,8 +13,17 @@
     .navBox {
       nav {
         .contactIcons {
+          right: -3.5vw;
           .headerSocialBox {
             min-height: 40vh;
+            padding: 10px 13px;
+            .headerSocialList {
+              li {
+                a {
+                  font-size: 2rem;
+                }
+              }
+            }
           }
         }
       }
@@ -33,6 +42,13 @@
         .contactIcons {
           .headerSocialBox {
             min-height: 40vh;
+            .headerSocialList {
+              li {
+                a {
+                  font-size: 1.3rem;
+                }
+              }
+            }
           }
         }
       }
@@ -99,7 +115,7 @@
       padding-top: 20px;
       nav {
         width: 100%;
-        ul {
+        ul.mainNavList {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-row-gap: 20px;
@@ -124,6 +140,9 @@
           .col3 {
             justify-content: flex-end;
           }
+        }
+        .contactIcons {
+          display: none;
         }
       }
     }
@@ -211,9 +230,6 @@
 @media (max-width: 650px) {
   header {
     padding-bottom: 140px;
-    .contactIcons {
-      display: none;
-    }
     .chevronLink {
       top: 80%;
       .fa-chevron-down {
