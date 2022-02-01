@@ -70,6 +70,9 @@
 .imgBox {
   position: relative;
   cursor: pointer;
+  a {
+    color: $white;
+  }
   div.oval {
     background: #00f1ff;
     border-radius: 50%;
