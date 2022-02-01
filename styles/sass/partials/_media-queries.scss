@@ -20,7 +20,7 @@
       }
     }
     .chevronLink {
-      top: 73%;
+      top: 70%;
     }
   }
 }
@@ -79,7 +79,7 @@
   }
 
   header .chevronLink {
-    top: 82%;
+    top: 70%;
     left: 77%;
     .fa-chevron-down {
       font-size: 1.8rem;
@@ -209,8 +209,11 @@
     .contactIcons {
       display: none;
     }
-    .fa-chevron-down {
-      font-size: 1.5rem;
+    .chevronLink {
+      top: 80%;
+      .fa-chevron-down {
+        font-size: 1.5rem;
+      }
     }
   }
 
