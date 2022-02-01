@@ -41,6 +41,11 @@
 }
 
 /* Landscape phone to portrait tablet */
+@media (max-width: 800px) {
+  header .chevronLink {
+    left: 0;
+  }
+}
 @media (max-width: 780px) {
   .line {
     margin: -9px 0 0;
@@ -79,8 +84,8 @@
   }
 
   header .chevronLink {
-    top: 70%;
     left: 77%;
+    top: 70%;
     .fa-chevron-down {
       font-size: 1.8rem;
     }
@@ -290,8 +295,8 @@
       }
     }
     .chevronLink {
-      top: 100%;
       left: 10%;
+      top: 100%;
     }
   }
 
@@ -302,7 +307,7 @@
 }
 
 /* Smallest phones */
-@media (max-width: 365px) {
+@media (max-width: 365px) and (max-height: 640px) {
   h1 {
     font-size: 1.8rem;
   }
