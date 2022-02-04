@@ -50,6 +50,15 @@
     > .wrapper {
       align-items: center;
       flex-direction: column;
+      .about1 {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        > div {
+          margin-top: 15%;
+        }
+      }
+
       .about2 {
         width: 90%;
       }
@@ -240,13 +249,14 @@
   .about {
     > .wrapper {
       .about1 {
-        width: 100%;
+        flex-direction: column;
+        > div {
+          margin-top: 0;
+        }
+        figure {
+          max-width: 82%;
+        }
       }
-
-      .about1 figure {
-        max-width: 82%;
-      }
-
       .about2 {
         width: 100%;
       }
