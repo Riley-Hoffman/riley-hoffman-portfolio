@@ -57,6 +57,9 @@
         > div {
           margin-top: 15%;
         }
+        figure {
+          align-items: flex-end;
+        }
       }
 
       .about2 {
@@ -255,6 +258,7 @@
         }
         figure {
           max-width: 82%;
+          align-items: flex-start;
         }
       }
       .about2 {
