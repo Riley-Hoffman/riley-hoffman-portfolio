@@ -53,6 +53,9 @@
       .about1 {
         width: 100%;
         align-items: center;
+        > div {
+          width: 75%;
+        }
         figure {
           align-items: center;
           max-width: 55%;
@@ -256,6 +259,7 @@
         align-items: flex-start;
         > div {
           margin-top: 0;
+          width: 100%;
         }
         figure {
           max-width: 82%;
