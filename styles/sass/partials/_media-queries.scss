@@ -52,18 +52,18 @@
       flex-direction: column;
       .about1 {
         width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        > div {
-          margin-top: 15%;
-        }
+        align-items: center;
         figure {
-          align-items: flex-end;
+          align-items: center;
         }
       }
 
       .about2 {
         width: 90%;
+        p {
+           align-self: flex-end;
+           width: 90%;
+        }
       }
     }
   }
@@ -263,6 +263,9 @@
       }
       .about2 {
         width: 100%;
+        p {
+          width: 100%;
+        }
       }
     }
   }
