@@ -1158,7 +1158,7 @@ i.fa-grip-lines-vertical {
     margin-bottom: 2px;
   }
 
-  .splash a.tealContactButton {
+  .relativeColumnBox .smallFlexBox .headerLink {
     width: 50%;
   }
 
@@ -1376,6 +1376,14 @@ i.fa-grip-lines-vertical {
 
   .splash a.chevronLink {
     left: 70%;
+  }
+
+  .splash .footerBody {
+    display: none;
+  }
+
+  .splash + footer {
+    display: none;
   }
 
   .smallFlexBox p.animate__backInLeft {

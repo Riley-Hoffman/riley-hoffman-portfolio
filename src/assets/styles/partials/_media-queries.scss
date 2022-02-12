@@ -90,7 +90,7 @@
     }
   }
 
-  .splash a.tealContactButton {
+  .relativeColumnBox .smallFlexBox .headerLink {
     width: 50%;
   }
 
@@ -181,6 +181,8 @@
   .projectBox:nth-child(even) {
     flex-direction: column-reverse;
   }
+
+  
 
   footer {
     padding: 0 0 20px;
@@ -322,6 +324,15 @@
   }
   .splash a.chevronLink {
     left: 70%;
+  }
+  .splash {
+    .footerBody {
+      display: none;
+    }
+  }
+
+  .splash + footer {
+        display: none
   }
   .smallFlexBox {
     p.animate__backInLeft {
