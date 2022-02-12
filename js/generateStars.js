@@ -8,6 +8,7 @@ generateStars = () => {
     let iterator = 0;
 
     while (iterator <= 100) {
+      
       let xposition = Math.random();
       let yposition = Math.random();
       let star_type = Math.floor(Math.random() * 3 + 1);
@@ -15,7 +16,7 @@ generateStars = () => {
         x: $galaxy.width() * xposition,
         y: $galaxy.height() * yposition,
       };
-
+      console.log(xposition, yposition)
       $('<div class="star star-type' + star_type + '"></div>')
         .appendTo($galaxy)
         .css({
