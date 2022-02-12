@@ -934,6 +934,7 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   grid-row-gap: 60px;
   justify-items: center;
   width: 80vw;
+  margin-top: 50px;
 }
 .skillsGallery li {
   align-items: center;
@@ -1772,7 +1773,7 @@ footer p {
   .projects {
     background: #00050f;
   }
-  .projects .wrapper.flexBox h2 {
+  .projects .wrapper.flexBox h1, .projects .wrapper.flexBox h2 {
     color: #e5e8ee;
   }
 
