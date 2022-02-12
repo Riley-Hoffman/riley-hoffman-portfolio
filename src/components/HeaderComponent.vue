@@ -1,7 +1,7 @@
 <template>
 <!-- Header Starts -->
     <header>
-            <router-link to="/about-me" class="skip-link">Skip To Content</router-link>
+            <router-link to="#main" class="skip-link">Skip To Content</router-link>
             <div class="wrapper relativeColumnBox">
                 <div class="flexBox navBox">
                     <nav>

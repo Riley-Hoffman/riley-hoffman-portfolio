@@ -32,10 +32,6 @@
           </div>
         </div>
       </div>
-      <a href="#about" class="chevronLink" style="display: none">
-        <i class="fas fa-chevron-down" aria-hidden="true"></i>
-        <span class="sr-only">Jump to first section.</span>
-      </a>
     </div>
     <!-- Wrapper Ends -->
     <div class="lightModeHeaderImage">
