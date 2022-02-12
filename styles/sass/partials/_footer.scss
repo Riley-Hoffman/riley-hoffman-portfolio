@@ -1,0 +1,48 @@
+footer,
+footer p {
+  color: $white;
+}
+
+.footerBody h2,
+.footerBody a {
+  margin: 10px auto;
+}
+
+footer {
+  padding: 10px 0;
+  .footerBody {
+    align-items: center;
+    flex-direction: column;
+    padding: 65px 0;
+    > a {
+      padding: 5px;
+    }
+    > a {
+      color: $teal;
+    }
+   
+    a:focus {
+      outline: 2px solid $white;
+    }
+    
+    .contactIcons {
+      font-size: 2em;
+      width: 135px;
+      a {
+        padding: 0 5px;
+      }
+    }
+
+    .bottom {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.nameSeparator {
+  margin: 0 6px;
+}
+
+i.fa-grip-lines-vertical {
+  font-size: 84%;
+}
