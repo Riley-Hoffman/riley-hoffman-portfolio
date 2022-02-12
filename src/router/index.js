@@ -15,8 +15,8 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About,
-    beforeEnter(to, from, next) {
-      window.location.href = "https://trusting-ptolemy-c9e852.netlify.app/about";
+    beforeEnter (to, from, next) {
+      window.location.href = 'https://trusting-ptolemy-c9e852.netlify.app/about'
     }
   },
   {
