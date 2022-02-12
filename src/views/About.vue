@@ -38,9 +38,9 @@
 
 export default {
 
-  created() {
-    window.location.href = "https://trusting-ptolemy-c9e852.netlify.app/about";
-  },
+  created () {
+    window.location.href = 'https://trusting-ptolemy-c9e852.netlify.app/about'
+  }
 
-};
+}
 </script>
