@@ -14,10 +14,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: About,
-    beforeEnter (to, from, next) {
-      window.location.href = 'https://unruffled-hugle-0a039b.netlify.app/about'
-    }
+    component: About
   },
   {
     path: '/projects',

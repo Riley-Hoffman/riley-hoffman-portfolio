@@ -33,14 +33,4 @@
             <!-- Wrapper Ends -->
         </section>
     </main>
-</template>>
-<script>
-
-export default {
-
-  created () {
-    window.location.href = 'https://unruffled-hugle-0a039b.netlify.app/about'
-  }
-
-}
-</script>
+</template>
