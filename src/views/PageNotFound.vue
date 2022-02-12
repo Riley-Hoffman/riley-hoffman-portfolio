@@ -1,7 +1,7 @@
 <template>
 <main id="main">
         <section class="errorSection wrapper">
-            <h2>Page Not Found</h2>
+            <h1>Page Not Found</h1>
             <div class="errorContentBox flexBox">
                 <figure class="errorIcon">
                     <img src="../assets/img/404.svg"

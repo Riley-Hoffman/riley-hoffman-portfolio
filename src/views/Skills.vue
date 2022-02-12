@@ -4,7 +4,7 @@
         <section class="skills" id="skills">
         <div class="wrapper">
             <div class="flexBox">
-                <h2>Skills</h2>
+                <h1>Skills</h1>
                 <ul class="skillsGallery">
                     <li v-on:mouseover="checkForSafari">
                         <div class="skillsIconBox">

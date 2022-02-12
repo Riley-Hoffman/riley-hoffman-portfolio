@@ -9,7 +9,7 @@
                         <div class="flexBox iconContainer">
                             <i class="fas fa-water" aria-hidden="true"></i>
                         </div>
-                        <h2 class="target">About</h2>
+                        <h1 class="target">About</h1>
                     </div>
                     <figure>
                         <img srcset="

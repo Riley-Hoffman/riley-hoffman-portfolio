@@ -3,12 +3,12 @@
     <main id="main">
         <section class="projects" id="projects">
             <div class="wrapper flexBox">
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <ul>
                     <li class="projectBox">
                         <div class="projectInfo">
-                            <h3>Out Of Context</h3>
-                            <h4>React, JSX, AXIOS, SCSS</h4>
+                            <h2>Out Of Context</h2>
+                            <h3>React, JSX, AXIOS, SCSS</h3>
                             <p>
                                 Created with React, this app allows users to search by movie
                                 name and displays GIFs based on themes (keywords) from the
@@ -51,8 +51,8 @@
                             </a>
                         </div>
                         <div class="projectInfo">
-                            <h3>Infinity Corkboard</h3>
-                            <h4>React, JSX, REST API, CSS</h4>
+                            <h2>Infinity Corkboard</h2>
+                            <h3>React, JSX, REST API, CSS</h3>
                             <p>
                                 This React based app presents the user with a 4X4 grid of
                                 photos from NASA APIs' Astronomy Picture of the Day endpoint.
@@ -71,8 +71,8 @@
 
                     <li class="projectBox">
                         <div class="projectInfo">
-                            <h3>Weather Scout</h3>
-                            <h4>HTML, Javascript, REST API, SCSS</h4>
+                            <h2>Weather Scout</h2>
+                            <h3>HTML, Javascript, REST API, SCSS</h3>
                             <p>
                                 With this app, users can search by city and get corresponding
                                 weather data. 'Right Now' or 'Future Forecast' can be
@@ -115,8 +115,8 @@
                             </a>
                         </div>
                         <div class="projectInfo">
-                            <h3>Delicious</h3>
-                            <h4>HTML, SCSS</h4>
+                            <h2>Delicious</h2>
+                            <h3>HTML, SCSS</h3>
                             <p>
                                 A multi-page PSD conversion project for a fictional restaurant
                                 chain.
