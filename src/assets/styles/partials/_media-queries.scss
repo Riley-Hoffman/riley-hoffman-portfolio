@@ -326,7 +326,7 @@
     left: 70%;
   }
   .splash {
-    .footerBody {
+    .contactWrapper {
       display: none;
     }
   }
@@ -340,7 +340,7 @@
     }
   }
   footer {
-    .footerBody {
+    .contactWrapper {
       > a {
         font-size: 0.8rem;
       }
@@ -429,7 +429,7 @@
     padding-top: 115px;
   }
   footer {
-    .footerBody {
+    .contactWrapper {
       padding: 65px 0 60px;
     }
   }
@@ -557,7 +557,7 @@
   }
 
   footer {
-    .footerBody {
+    .contactWrapper {
       a:active {
         outline: none;
       }
@@ -617,7 +617,7 @@
   }
 
   footer {
-    .footerBody {
+    .contactWrapper {
       > a:hover {
         color: $white;
       }
@@ -683,7 +683,7 @@
     border-top: 14px ridge #126368;
   }
   footer {
-    .footerBody {
+    .contactWrapper {
       > a:hover {
         color: $black;
       }
@@ -746,7 +746,7 @@
       top: 0;
       height: 100vh;
     }
-    .footerBody a {
+    .contactWrapper a {
       color: $black;
     }
     h1,
@@ -810,7 +810,7 @@
   footer {
     background: $white;
     border-top: 1px solid $black;
-    .footerBody {
+    .contactWrapper {
       > a {
         font-weight: 500;
       }
@@ -876,7 +876,7 @@
     background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    .footerBody a {
+    .contactWrapper a {
       color: $white;
     }
     h1,
@@ -937,7 +937,7 @@
 
   footer {
     background: $black;
-    .footerBody {
+    .contactWrapper {
       a:focus {
         outline: 2px solid $white;
       }

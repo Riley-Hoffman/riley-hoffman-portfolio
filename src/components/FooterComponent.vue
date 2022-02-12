@@ -1,7 +1,7 @@
 <template>
   <!-- Footer Starts -->
     <footer class="wrapper" id="contact">
-        <div class="flexBox footerBody contactComponent">
+        <div class="flexBox contactWrapper contactComponent">
             <h2>Contact</h2>
             <a href="mailto:riley.n.hoffman@gmail.com">riley.n.hoffman@gmail.com</a>
             <div class="flexBox contactIcons">
@@ -13,7 +13,7 @@
                 </a>
             </div>
         </div>
-        <!-- footerBody Wrapper Ends -->
+        <!-- contactWrapper Wrapper Ends -->
         <div class="wrapper flexBox bottom">
             <p>Riley Hoffman <span aria-hidden="true">| </span>Web Developer</p>
         </div>

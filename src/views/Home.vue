@@ -19,7 +19,7 @@
           ><span class="target">Contact<span class="me"> Me</span> </span
           ><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i
         ></a>
-        <div class="footerBody">
+        <div class="contactWrapper">
           <div class="flexBox contactIcons">
             <a href="https://github.com/Riley-Hoffman">
               <i class="fab fa-github" aria-hidden="true"></i
