@@ -33,14 +33,4 @@
             <!-- Wrapper Ends -->
         </section>
     </main>
-</template>>
-<script>
-
-export default {
-
-  created () {
-    window.location.href = 'https://trusting-ptolemy-c9e852.netlify.app/about'
-  }
-
-}
-</script>
+</template>
