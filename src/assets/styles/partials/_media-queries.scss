@@ -44,9 +44,10 @@
   .line {
     margin: -9px 0 0;
   }
-
+  .about, .skills, .projects, .errorSection {
+    padding-top: 200px !important;
+  }
   .about {
-    padding-top: 145px;
     > .wrapper {
       align-items: center;
       flex-direction: column;

@@ -1114,9 +1114,10 @@ i.fa-grip-lines-vertical {
     margin: -9px 0 0;
   }
 
-  .about {
-    padding-top: 145px;
+  .about, .skills, .projects, .errorSection {
+    padding-top: 200px !important;
   }
+
   .about > .wrapper {
     align-items: center;
     flex-direction: column;
