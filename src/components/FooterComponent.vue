@@ -1,7 +1,11 @@
 <template>
   <!-- Footer Starts -->
     <footer class="wrapper" id="contact">
-        <ContactComponent />
+        <div class="wrapper flexBox contactWrapper contactComponent">
+            <h2>Contact</h2>
+            <a href="mailto:riley.n.hoffman@gmail.com">riley.n.hoffman@gmail.com</a>
+            <SocialComponent />
+        </div>
         <!-- contactWrapper Wrapper Ends -->
         <div class="wrapper flexBox bottom">
             <p>Riley Hoffman <span aria-hidden="true">| </span>Web Developer</p>
@@ -11,10 +15,10 @@
     <!-- Footers Ends -->
 </template>
 <script>
-import ContactComponent from '@/components/ContactComponent.vue'
+import SocialComponent from '@/components/SocialComponent.vue'
 export default {
   components: {
-    ContactComponent
+    SocialComponent
   }
 }
 </script>
