@@ -1,0 +1,41 @@
+.skills {
+  background-color: $white;
+  .wrapper.flexBox {
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      color: $black;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.skillsGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 60px;
+  justify-items: center;
+  width: 80vw;
+  li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .skillsIconBox {
+      display: flex;
+      justify-content: center;
+      padding: 0 10px;
+      width: 100%;
+      i {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+    p {
+      text-align: center;
+    }
+    .noAnimation {
+      animation: none !important;
+    }
+  }
+}
