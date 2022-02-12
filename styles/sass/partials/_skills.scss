@@ -1,20 +1,13 @@
 .skills {
   background-color: $white;
-  padding: 130px 0 115px;
-  .wrapper {
-    .flexBox {
-      align-items: center;
-      flex-direction: column;
-      h2 {
-        color: $black;
-        margin-bottom: 40px;
-      }
+  .wrapper.flexBox {
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      color: $black;
+      margin-bottom: 40px;
     }
   }
-}
-
-.noAnimation {
-  animation: none !important;
 }
 
 .skillsGallery {
@@ -40,6 +33,9 @@
     }
     p {
       text-align: center;
+    }
+    .noAnimation {
+      animation: none !important;
     }
   }
 }

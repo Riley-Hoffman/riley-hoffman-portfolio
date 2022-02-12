@@ -1,6 +1,6 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
-  .smallFlexBox a.tealContactButton {
+  .headerBodyFlexBox a.tealContactButton {
     width: 60%;
   }
   header {
@@ -28,15 +28,15 @@
         }
       }
     }
-  }
-  .splash .chevronLink {
-    top: 70%;
+    .chevronLink {
+      top: 70%;
+    }
   }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 800px) {
-  .splash .chevronLink {
+  header .chevronLink {
     left: 0;
   }
 }
@@ -65,14 +65,14 @@
       .about2 {
         width: 90%;
         p {
-          align-self: flex-end;
-          width: 90%;
+           align-self: flex-end;
+           width: 90%;
         }
       }
     }
   }
 
-  .splash .smallFlexBox {
+  .headerFlexWrapper .headerBodyFlexBox {
     margin-top: 20px;
     width: 100%;
     h1 {
@@ -89,11 +89,11 @@
     }
   }
 
-  .splash a.tealContactButton {
+  .headerBodyFlexBox a.tealContactButton {
     width: 50%;
   }
 
-  .splash .chevronLink {
+  header .chevronLink {
     left: 77%;
     top: 70%;
     .fa-chevron-down {
@@ -141,7 +141,6 @@
       }
     }
   }
-
   .projects {
     padding: 85px 0 40px;
     .projectBox {
@@ -188,7 +187,7 @@
     }
   }
 
-  .splash .smallFlexBox {
+  .headerFlexWrapper .headerBodyFlexBox {
     margin-top: 0;
   }
 
@@ -218,13 +217,16 @@
 @media (max-width: 650px) {
   header {
     padding-bottom: 140px;
+    .chevronLink {
+      top: 80%;
+      .fa-chevron-down {
+        font-size: 1.5rem;
+      }
+    }
   }
 
-  .splash .chevronLink {
-    top: 80%;
-    .fa-chevron-down {
-      font-size: 1.5rem;
-    }
+  .searchBox .rotateButton {
+    right: 4%;
   }
 
   .line {
@@ -272,7 +274,7 @@
       font-size: 18px;
     }
   }
-  .splash .smallFlexBox {
+  .headerFlexWrapper .headerBodyFlexBox {
     height: 45vh;
   }
 
@@ -292,20 +294,19 @@
     nav {
       letter-spacing: 1.5px;
     }
-  }
-
-  .smallFlexBox {
-    a.tealContactButton {
-      font-size: 0.8rem;
-      padding: 15px 0;
-      i.fa-long-arrow-alt-right {
-        line-height: 25px;
+    .headerBodyFlexBox {
+      a.tealContactButton {
+        font-size: 0.8rem;
+        padding: 15px 0;
+        i.fa-long-arrow-alt-right {
+          line-height: 25px;
+        }
       }
     }
-  }
-  .splash .chevronLink {
-    left: 10%;
-    top: 100%;
+    .chevronLink {
+      left: 10%;
+      top: 100%;
+    }
   }
 
   .projectInfo:nth-child(even),
@@ -319,12 +320,14 @@
   h1 {
     font-size: 1.8rem;
   }
-  .splash a.chevronLink {
+  header a.chevronLink {
     left: 70%;
   }
-  .smallFlexBox {
-    p.animate__backInLeft {
-      font-size: 1.5rem;
+  header {
+    .headerBodyFlexBox {
+      p.animate__backInLeft {
+        font-size: 1.5rem;
+      }
     }
   }
   footer {
@@ -386,7 +389,7 @@
   h1 {
     font-size: 1.8rem;
   }
-  .splash a.chevronLink {
+  header a.chevronLink {
     display: none;
   }
 
@@ -394,22 +397,22 @@
     .navBox {
       margin-top: 0;
     }
-  }
-  .smallFlexBox {
-    position: relative;
-    p.animate__backInLeft {
-      font-size: 1.5rem;
-    }
-    a.tealContactButton {
-      position: absolute;
-      bottom: 8%;
-      width: 25%;
-      right: 0;
-      .me {
-        display: none;
+    .headerBodyFlexBox {
+      position: relative;
+      p.animate__backInLeft {
+        font-size: 1.5rem;
       }
-      .fa-long-arrow-alt-right {
-        display: none;
+      a.tealContactButton {
+        position: absolute;
+        bottom: 8%;
+        width: 25%;
+        right: 0;
+        .me {
+          display: none;
+        }
+        .fa-long-arrow-alt-right {
+          display: none;
+        }
       }
     }
   }
@@ -427,6 +430,17 @@
 
 @media (hover: hover) and (pointer: fine) {
   header {
+    .chevronLink .fa-chevron-down:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .chevronLink:active .fa-chevron-down {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .chevronLink:active {
+      outline: none;
+    }
     .navBox {
       nav {
         ul.mainNavList {
@@ -475,41 +489,16 @@
     }
   }
 
-  .splash .chevronLink .fa-chevron-down:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  .splash .chevronLink:active .fa-chevron-down {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  .splash .chevronLink:active {
-    outline: none;
-  }
-
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        a:hover .target {
-          text-decoration: underline;
-        }
-        a:active .target {
-          text-decoration: none;
-        }
-        a:active {
-          outline: none;
-        }
-        .contactIcons {
-          a:hover i {
-            color: $teal;
-          }
-          a:active i {
-            color: $white;
-          }
-          a:active {
-            outline: none;
-          }
-        }
+  .headerFlexWrapper {
+    .headerBodyFlexBox {
+      a:hover .target {
+        text-decoration: underline;
+      }
+      a:active .target {
+        text-decoration: none;
+      }
+      a:active {
+        outline: none;
       }
     }
   }
@@ -525,6 +514,7 @@
 
   .imgBox > a:hover > img {
     transition: border-top 0.5s;
+    z-index: -2;
   }
 
   .imgBox > a:active > img {
@@ -561,6 +551,17 @@
 
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
   header {
+    .chevronLink .fa-chevron-down:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    .chevronLink:active .fa-chevron-down {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .chevronLink:active {
+      outline: none;
+    }
     .navBox {
       nav {
         .contactIcons {
@@ -577,20 +578,6 @@
           }
         }
       }
-    }
-  }
-
-  .splash {
-    .chevronLink .fa-chevron-down:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    .chevronLink:active .fa-chevron-down {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-    .chevronLink:active {
-      outline: none;
     }
     .chevronLink .fa-chevron-down:hover {
       color: $white;
@@ -636,6 +623,10 @@
 
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
   header {
+    .fa-chevron-down:hover {
+      color: $black;
+    }
+
     .navBox {
       nav {
         .contactIcons {
@@ -649,18 +640,6 @@
                 }
               }
             }
-          }
-        }
-      }
-    }
-  }
-
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .contactIcons {
-          a:active i {
-            color: $black;
           }
         }
       }
@@ -704,31 +683,21 @@
 
 // When user prefers light mode
 @media (prefers-color-scheme: light) {
-  .splash .galaxy {
+  header .galaxy {
     display: none;
   }
-  
+
   html {
     background: $white;
   }
 
   header {
-    .skip-link:focus {
-      outline: 2px solid $black;
-    }
-  }
-
-  .contactComponent {
-  color: $black;
-  }
-
-
-  .splash {
-    // background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482801/large-leather_mlsm3u.webp");
-    // background-repeat: no-repeat;
-    // background-size: 50% 50%;
-    // background-repeat: repeat;
+    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482801/large-leather_mlsm3u.webp");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-repeat: repeat;
     .lightModeHeaderImage {
+      background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1643482599/pawel-czerwinski-YuJm-d7k2Jg-unsplash-transparency_jebxte.webp");
       position: absolute;
       margin: 0 auto;
       width: 100%;
@@ -738,17 +707,21 @@
       top: 0;
       height: 100vh;
     }
-    .footerBody a {
-      color: $black;
+    .skip-link:focus {
+      outline: 2px solid $black;
     }
     h1,
     h2,
-    p {
+    p,
+    .navBox a {
       color: $black;
     }
-    .smallFlexBox {
-      a:focus {
-        outline: 2px solid $black;
+
+    .headerFlexWrapper {
+      .headerBodyFlexBox {
+        a:focus {
+          outline: 2px solid $black;
+        }
       }
     }
     .chevronLink:focus .fa-chevron-down {
@@ -801,7 +774,6 @@
 
   footer {
     background: $white;
-    border-top: 1px solid $black;
     .footerBody {
       > a {
         font-weight: 500;
@@ -810,9 +782,6 @@
         outline: 2px solid $black;
       }
     }
-  }
-  .splash + footer {
-    border-top: none;
   }
   .errorHeader {
     background-image: none;
@@ -848,37 +817,27 @@
   html {
     background: $black;
   }
-  .splash .lightModeHeaderImage {
-    display: none;
-  }
+
   header {
+    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .lightModeHeaderImage {
+      display: none;
+    }
     .skip-link:focus {
       left: 0;
       outline: 2px solid $white;
     }
-    .relativeColumnBox {
-      .smallFlexBox {
-        a:focus {
-          outline: 2px solid $white;
-        }
-      }
-    }
-  }
-  .splash {
-    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    .footerBody a {
-      color: $white;
-    }
     h1,
     h2,
-    p {
+    p,
+    .navBox a {
       color: $white;
     }
 
-    .relativeColumnBox {
-      .smallFlexBox {
+    .headerFlexWrapper {
+      .headerBodyFlexBox {
         a:focus {
           outline: 2px solid $white;
         }
@@ -891,6 +850,7 @@
       color: $teal;
     }
   }
+
   .projects {
     background: $black;
     .wrapper.flexBox {
@@ -965,10 +925,6 @@
   }
   .skillsGallery li:hover div.skillsIconBox:hover {
     animation: none;
-  }
-  .galaxy,
-  .stars {
-    animation: none !important;
   }
 }
 
