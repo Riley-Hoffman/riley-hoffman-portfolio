@@ -44,7 +44,10 @@
   .line {
     margin: -9px 0 0;
   }
-  .about, .skills, .projects, .errorSection {
+  .about,
+  .skills,
+  .projects,
+  .errorSection {
     padding-top: 200px !important;
   }
   .about {
@@ -181,8 +184,6 @@
   .projectBox:nth-child(even) {
     flex-direction: column-reverse;
   }
-
-  
 
   footer {
     padding: 0 0 20px;
@@ -332,7 +333,7 @@
   }
 
   .splash + footer {
-        display: none
+    display: none;
   }
   .smallFlexBox {
     p.animate__backInLeft {
@@ -435,17 +436,39 @@
   }
 }
 
-  /* Wide screen tv */
+/* Wide screen tv */
 
-  @media (max-width: 1360px) and (max-height: 605px) {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .iconContainer {
-            margin-bottom: 0;
-        }
+@media (max-width: 1360px) and (max-height: 605px) {
+  .relativeColumnBox {
+    .smallFlexBox {
+      .iconContainer {
+        margin-bottom: 0;
       }
-    } 
+    }
   }
+  .scrollingBackground {
+    background: {
+      image: linear-gradient(
+          to bottom,
+          rgba(23, 162, 170, 0) 0%,
+          rgba(23, 162, 170, 0.2) 100%
+        ),
+        url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+      blend-mode: multiply;
+      size: cover;
+    }
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+  }
+
+  .circle {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
 
 // Hover/Active Styles only when device is not a touchscreen
 
@@ -497,18 +520,6 @@
         }
       }
     }
-  }
-
-  .splash .chevronLink .fa-chevron-down:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  .splash .chevronLink:active .fa-chevron-down {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  .splash .chevronLink:active {
-    outline: none;
   }
 
   .splash {
@@ -627,6 +638,12 @@
   .imgBox > a:hover > img {
     border-top: 14px ridge $white;
   }
+  .imgBox > a:active > img {
+    border-top: 14px ridge $teal;
+  }
+  .imgBox > a:focus > img {
+    border-top: 14px ridge $teal;
+  }
 
   footer {
     .contactWrapper {
@@ -642,6 +659,7 @@
       }
     }
   }
+
   .errorNav {
     ul {
       li {
@@ -694,6 +712,12 @@
   .imgBox > a:hover > img {
     border-top: 14px ridge #126368;
   }
+  .imgBox > a:active > img {
+    border-top: 14px ridge $teal;
+  }
+  .imgBox > a:focus > img {
+    border-top: 14px ridge $teal;
+  }
   footer {
     .contactWrapper {
       > a:hover {
@@ -731,7 +755,7 @@
   .splash .galaxy {
     display: none;
   }
-  
+
   html {
     background: $white;
   }
@@ -743,9 +767,8 @@
   }
 
   .contactComponent {
-  color: $black;
+    color: $black;
   }
-
 
   .splash {
     .lightModeHeaderImage {
@@ -808,10 +831,6 @@
     h4 {
       text-shadow: none;
     }
-  }
-
-  .imgBox > a:focus > img {
-    border-top: 14px ridge $black;
   }
 
   footer,
@@ -914,7 +933,8 @@
   .projects {
     background: $black;
     .wrapper.flexBox {
-      h1, h2 {
+      h1,
+      h2 {
         color: $white;
       }
     }
@@ -936,10 +956,6 @@
     h4 {
       text-shadow: 3px 3px 5px $black;
     }
-  }
-
-  .imgBox > a:focus > img {
-    border-top: 14px ridge $white;
   }
 
   footer,
