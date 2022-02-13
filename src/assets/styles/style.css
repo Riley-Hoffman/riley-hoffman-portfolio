@@ -1344,6 +1344,9 @@ i.fa-grip-lines-vertical {
   header .navBox nav {
     width: 75%;
   }
+  .relativeColumnBox .smallFlexBox .headerLink {
+    width: 45%;
+  }
   header .navBox nav .contactIcons {
     right: -3.5vw;
   }
