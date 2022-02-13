@@ -33,7 +33,9 @@ export default {
   },
   computed: {
     navBarColor () {
-      if (this.$route.path === '/about' || this.$route.path === '/skills' || !this.preferDark) {
+      if (!this.preferDark) {
+        return 'black'
+      } else if ((this.$route.path === '/about' || this.$route.path === '/skills') && (this.preferDark)) {
         return 'black'
       }
       return 'white'
