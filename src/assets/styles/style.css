@@ -249,42 +249,6 @@ time {
   font-weight: bold;
 }
 
-/* Convenient Classes */
-.wrapper {
-  max-width: 1100px;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.sr-only {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  /* future proofing */
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  white-space: nowrap;
-  /* added line */
-}
-
-.flexBox {
-  display: flex;
-}
-
-.button, a {
-  transition: all 0.1s ease-out;
-}
-
-.flexContainer {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
@@ -321,16 +285,16 @@ h1 {
   font-size: 1.8rem;
 }
 
-.splash h1 {
-  font-size: 2rem;
-}
-
 h2 {
   font-size: 1.4rem;
 }
 
 h3 {
   font-size: 1.15rem;
+}
+
+a {
+  transition: all 0.1s;
 }
 
 p {
@@ -346,6 +310,31 @@ section,
 footer {
   position: relative;
   z-index: 20;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* future proofing */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap;
+  /* added line */
+}
+
+.flexBox {
+  display: flex;
 }
 
 .black {
@@ -485,6 +474,9 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 .splash h2 {
   line-height: 1.3;
   margin-bottom: 15px;
+}
+.splash h1 {
+  font-size: 2rem;
 }
 .splash .animate__backInLeft {
   font-size: 1.7rem;
