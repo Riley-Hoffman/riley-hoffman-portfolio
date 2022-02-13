@@ -5,18 +5,18 @@
             <div class="wrapper relativeColumnBox">
                 <div class="flexBox navBox">
                     <nav>
-                        <ul class="mainNavList" :class="navBarColor">
+                        <ul class="mainNavList">
                             <li class="col1">
-                                <router-link class="navLink" to="/">Home</router-link>
+                                <router-link class="navLink" to="/" :class="navBarColor">Home</router-link>
                             </li>
                             <li class="col2">
-                                <router-link class="navLink aboutLink" to="/about">About</router-link>
+                                <router-link class="navLink aboutLink" to="/about" :class="navBarColor">About</router-link>
                             </li>
                             <li class="col3">
-                                <router-link class="navLink projectsLink" to="/projects">Projects</router-link>
+                                <router-link class="navLink projectsLink" to="/projects" :class="navBarColor">Projects</router-link>
                             </li>
                             <li class="col1">
-                                <router-link class="navLink" to="/skills">Skills</router-link>
+                                <router-link class="navLink" to="/skills" :class="navBarColor">Skills</router-link>
                             </li>
                         </ul>
                     </nav>
