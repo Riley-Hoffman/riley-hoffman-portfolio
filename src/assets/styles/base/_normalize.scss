@@ -16,14 +16,3 @@ html {font-size: 125%}
 
 body, ul, h1, h2, h3, p { margin: 0; padding: 0; } ul { list-style: none; } a { color: inherit; text-decoration: none; } img { width: 100%; height: auto; display: block; } time { font-weight: bold; }
 
-/* Convenient Classes */
-
-.wrapper { max-width: 1100px; width: 85%; margin: 0 auto;}
-
-.sr-only /*:not(:focus):not(:active)*/ { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); /* future proofing */ -webkit-clip-path: inset(50%) !important; clip-path: inset(50%) !important; white-space: nowrap; /* added line */ }
-
-.flexBox {display: flex;}
-
-.button, a {transition: all 0.1s ease-out;}
-
-.flexContainer { display: flex; margin: 0 auto; width: 100%;}

@@ -34,16 +34,16 @@ h1 {
   font-size: 1.8rem;
 }
 
-.splash h1 {
-  font-size: 2rem;
-}
-
 h2 {
   font-size: 1.4rem;
 }
 
 h3 {
   font-size: 1.15rem;
+}
+
+a {
+  transition: all 0.1s;
 }
 
 p {
@@ -61,10 +61,3 @@ footer {
   z-index: 20;
 }
 
-.black {
-  color: $black;
-}
-
-.white {
-  color: $white;
-}
