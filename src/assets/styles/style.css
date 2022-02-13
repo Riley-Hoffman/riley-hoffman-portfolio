@@ -1451,6 +1451,12 @@ i.fa-grip-lines-vertical {
     padding: 65px 0 60px;
   }
 }
+/* Wide screen tv */
+@media (max-width: 1360px) and (max-height: 605px) {
+  .relativeColumnBox .smallFlexBox .iconContainer {
+    margin-bottom: 0;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   header .navBox nav ul.mainNavList a:hover {
     outline: none;

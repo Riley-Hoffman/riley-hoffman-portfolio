@@ -435,6 +435,18 @@
   }
 }
 
+  /* Wide screen tv */
+
+  @media (max-width: 1360px) and (max-height: 605px) {
+    .relativeColumnBox {
+      .smallFlexBox {
+        .iconContainer {
+            margin-bottom: 0;
+        }
+      }
+    } 
+  }
+
 // Hover/Active Styles only when device is not a touchscreen
 
 @media (hover: hover) and (pointer: fine) {
