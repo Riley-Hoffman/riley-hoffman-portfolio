@@ -1422,6 +1422,30 @@ i.fa-grip-lines-vertical {
     opacity: 1;
   }
 }
+/* Large Text Resolution Screens */
+@media (max-width: 1024px) and (max-height: 640px) {
+  .splash h1 {
+    font-size: 1.7rem;
+  }
+
+  .splash .animate__backInLeft {
+    font-size: 1.5rem;
+  }
+
+  .splash h1,
+.splash h2 {
+    margin-bottom: 7px;
+  }
+
+  .relativeColumnBox .smallFlexBox .headerLink {
+    font-size: 0.9rem;
+    padding: 18px 5px;
+  }
+
+  .contactWrapper .contactIcons {
+    font-size: 1.8rem;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   header .navBox nav ul.mainNavList a:hover {
     outline: none;
