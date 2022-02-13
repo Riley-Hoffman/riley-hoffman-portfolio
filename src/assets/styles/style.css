@@ -583,32 +583,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 .splash .headerParagraph {
   margin: 20px 0;
 }
-.splash .chevronLink {
-  left: 50%;
-  right: 50%;
-  top: 85%;
-  position: absolute;
-  transition: all 0.4s;
-}
-.splash .fa-chevron-down {
-  color: #17a2aa;
-  font-size: 2.5rem;
-  text-align: center;
-  transition: all 0.2s;
-  width: 5vw;
-}
-.splash .chevronLink:focus .fa-chevron-down {
-  transform: scale(1.1);
-}
-.splash .chevronLink:focus {
-  outline: none;
-}
-.splash .chevronLink:focus i {
-  border-bottom: 2px solid #17a2aa;
-}
-.splash a.chevronLink:active .fa-chevron-down {
-  border-bottom: none;
-}
 
 .relativeColumnBox {
   display: flex;
@@ -1109,17 +1083,8 @@ i.fa-grip-lines-vertical {
   header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a {
     font-size: 2rem;
   }
-
-  .splash .chevronLink {
-    top: 70%;
-  }
 }
 /* Landscape phone to portrait tablet */
-@media (max-width: 800px) {
-  .splash .chevronLink {
-    left: 0;
-  }
-}
 @media (max-width: 780px) {
   .line {
     margin: -9px 0 0;
@@ -1174,14 +1139,6 @@ i.fa-grip-lines-vertical {
 
   .relativeColumnBox .smallFlexBox .headerLink {
     width: 50%;
-  }
-
-  .splash .chevronLink {
-    left: 77%;
-    top: 70%;
-  }
-  .splash .chevronLink .fa-chevron-down {
-    font-size: 1.8rem;
   }
 
   header .navBox {
@@ -1294,13 +1251,6 @@ i.fa-grip-lines-vertical {
     padding-bottom: 140px;
   }
 
-  .splash .chevronLink {
-    top: 80%;
-  }
-  .splash .chevronLink .fa-chevron-down {
-    font-size: 1.5rem;
-  }
-
   .line {
     margin: -9px 0 0;
   }
@@ -1372,11 +1322,6 @@ i.fa-grip-lines-vertical {
     line-height: 25px;
   }
 
-  .splash .chevronLink {
-    left: 10%;
-    top: 100%;
-  }
-
   .projectInfo:nth-child(even),
 .projectInfo:nth-child(odd) {
     text-align: left;
@@ -1386,10 +1331,6 @@ i.fa-grip-lines-vertical {
 @media (max-width: 365px) and (max-height: 640px) {
   h1 {
     font-size: 1.8rem;
-  }
-
-  .splash a.chevronLink {
-    left: 70%;
   }
 
   .splash .contactWrapper {
@@ -1428,10 +1369,6 @@ i.fa-grip-lines-vertical {
 @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
   h1 {
     font-size: 1.8rem;
-  }
-
-  .splash a.chevronLink {
-    display: none;
   }
 
   header .navBox {
@@ -1571,22 +1508,6 @@ footer .contactWrapper .fa-github:hover {
     color: #e5e8ee;
   }
 
-  .splash .chevronLink .fa-chevron-down:hover {
-    transform: scale(1.1);
-  }
-  .splash .chevronLink:active .fa-chevron-down {
-    transform: scale(1);
-  }
-  .splash .chevronLink:active {
-    outline: none;
-  }
-  .splash .chevronLink .fa-chevron-down:hover {
-    color: #e5e8ee;
-  }
-  .splash .chevronLink:active .fa-chevron-down {
-    color: #17a2aa;
-  }
-
   .imgBox > a:hover > img {
     border-top: 14px ridge #e5e8ee;
   }
@@ -1697,12 +1618,6 @@ footer .contactWrapper .fa-github:active {
   .splash .smallFlexBox a:focus {
     outline: 2px solid #00050f;
   }
-  .splash .chevronLink:focus .fa-chevron-down {
-    color: #00050f;
-  }
-  .splash .chevronLink:active .fa-chevron-down {
-    color: #17a2aa;
-  }
 
   .about {
     box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
@@ -1805,12 +1720,6 @@ footer p {
   }
   .splash .relativeColumnBox .smallFlexBox a:focus {
     outline: 2px solid #e5e8ee;
-  }
-  .splash .chevronLink:focus .fa-chevron-down {
-    color: #e5e8ee;
-  }
-  .splash .chevronLink:active .fa-chevron-down {
-    color: #17a2aa;
   }
 
   .projects {
