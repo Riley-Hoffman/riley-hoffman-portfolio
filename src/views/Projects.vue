@@ -17,7 +17,7 @@
                                 user can cycle through all GIFs per keyword, or look at other
                                 keywords associated with the movie, returning new GIFs!
                             </p>
-                            <h5>Out Of Context Links:</h5>
+                            <h4>Out Of Context Links:</h4>
                             <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank">Live</a>
                             <a href="https://github.com/dearJuno/outofContext" target="_blank">Repo</a>
                         </div>
@@ -62,7 +62,7 @@
                                 to pdf. Print output is styled so the grid appears with no
                                 other page elements in the saved file.
                             </p>
-                            <h5>Infinity Corkboard Links:</h5>
+                            <h4>Infinity Corkboard Links:</h4>
                             <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley-hoffman-project-three"
                                 target="_blank">Repo</a>
@@ -81,7 +81,7 @@
                                 returns a grid of dates with forecast temperatures. Created
                                 with Javascript, HTML and CSS.
                             </p>
-                            <h5>Weather Scout Links:</h5>
+                            <h4>Weather Scout Links:</h4>
                             <a href="https://romantic-kowalevski-f7a14c.netlify.app/" title="Weather Scout"
                                 target="_blank">Live</a>
                             <a href="https://github.com/Linda-Columbus-Riley-Hoffman-Developers/weatherScout"
@@ -121,7 +121,7 @@
                                 A multi-page PSD conversion project for a fictional restaurant
                                 chain.
                             </p>
-                            <h5>Delicious Links:</h5>
+                            <h4>Delicious Links:</h4>
                             <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley_hoffman_project_1_delicious"
                                 target="_blank">Repo</a>
