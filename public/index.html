@@ -71,7 +71,10 @@
   <link rel="icon" href="../src/assets/img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="../src/assets/styles/style.css">
+  <link rel="stylesheet" as="style" rel="preload" href="../src/assets/styles/style.css" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="../src/assets/styles/style.css">
+  </noscript>
   <link rel="stylesheet" media="print" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     onload="this.media='all'">
   <noscript>
