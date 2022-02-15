@@ -1641,6 +1641,10 @@ i.fa-grip-lines-vertical {
   .homeMain + footer {
     display: none !important;
   }
+
+  main {
+    padding-top: 50px;
+  }
 }
 @media (max-height: 500px) {
   header .navBox nav .contactIcons .headerSocialBox {

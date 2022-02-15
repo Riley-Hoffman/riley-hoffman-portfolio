@@ -141,7 +141,6 @@
       }
     }
   }
-
   .projects {
     padding: 85px 0 40px;
     .projectBox {
@@ -377,6 +376,9 @@
 @media (max-width: 780px) and (max-height: 575px) {
   .homeMain + footer {
       display: none !important;
+  }
+  main {
+    padding-top: 50px;
   }
 }
 
