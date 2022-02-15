@@ -22,7 +22,12 @@ header {
   .skip-link:focus {
     left: 0;
   }
-
+  .favLink {
+    display: block;
+    max-width: 4%;
+    min-width: 40px;
+    margin: 22px;
+  }
   .navBox {
     align-items: center;
     justify-content: flex-end;
