@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-global-assign
+require = require('esm')(module)
+const { routes } = require('./router/index.js')
 const { GenerateSW } = require('workbox-webpack-plugin')
 
 module.exports = {
@@ -11,7 +14,8 @@ module.exports = {
         'https://rileyhoffman.com/',
         'https://rileyhoffman.com/about',
         'https://rileyhoffman.com/projects',
-        'https://rileyhoffman.com/skills'
+        'https://rileyhoffman.com/skills',
+        routes
       ]
     }
   },
