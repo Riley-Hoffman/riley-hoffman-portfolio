@@ -277,7 +277,6 @@ body {
 
 main {
   position: relative;
-  z-index: 50;
 }
 
 h1 {
@@ -1264,8 +1263,8 @@ i.fa-grip-lines-vertical {
   display: none;
 }
 
-.splash + footer .bottom {
-  width: 100%;
+footer .bottom {
+  width: 100% !important;
 }
 
 .errorHeader {
