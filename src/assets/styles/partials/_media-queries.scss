@@ -102,7 +102,7 @@
   }
 
   .relativeColumnBox .smallFlexBox .headerLink {
-    width: 50%;
+    width: 56%;
   }
 
   header {
@@ -374,8 +374,9 @@
 
 // Phone landscape
 @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  h1 {
-    font-size: 1.8rem;
+  .splash .relativeColumnBox h1 {
+    font-size: 1.6rem;
+    margin: 55px 0 0;
   }
 
   header {
@@ -386,11 +387,10 @@
   .smallFlexBox {
     position: relative;
     p.animate__backInLeft {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
     a.tealContactButton {
       position: absolute;
-      bottom: 8%;
       width: 25%;
       right: 0;
       .me {
@@ -407,6 +407,30 @@
   footer {
     .contactWrapper {
       padding: 65px 0 60px;
+    }
+  }
+
+  .splash + footer {
+    .bottom {
+      margin: 0;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .splash {
+    .relativeColumnBox {
+      .smallFlexBox {
+        .tealContactButton {
+          padding: 15px 0;
+          width: 30%;
+          bottom: 2%;
+        }
+      }
+    }
+    .contactWrapper {
+      display: none;
     }
   }
 }

@@ -5,6 +5,16 @@ module.exports = {
   configureWebpack: {
     plugins: [new GenerateSW()]
   },
+  pluginOptions: {
+    sitemap: {
+      urls: [
+        'https://rileyhoffman.com/',
+        'https://rileyhoffman.com/about',
+        'https://rileyhoffman.com/projects',
+        'https://rileyhoffman.com/skills'
+      ]
+    }
+  },
   pwa: {
     themeColor: '#00050f',
     workboxPluginMode: 'GenerateSW',

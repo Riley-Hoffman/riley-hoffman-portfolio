@@ -1386,7 +1386,7 @@ i.fa-grip-lines-vertical {
   }
 
   .relativeColumnBox .smallFlexBox .headerLink {
-    width: 50%;
+    width: 56%;
   }
 
   header .navBox {
@@ -1606,8 +1606,9 @@ i.fa-grip-lines-vertical {
   }
 }
 @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  h1 {
-    font-size: 1.8rem;
+  .splash .relativeColumnBox h1 {
+    font-size: 1.6rem;
+    margin: 55px 0 0;
   }
 
   header .navBox {
@@ -1618,11 +1619,10 @@ i.fa-grip-lines-vertical {
     position: relative;
   }
   .smallFlexBox p.animate__backInLeft {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .smallFlexBox a.tealContactButton {
     position: absolute;
-    bottom: 8%;
     width: 25%;
     right: 0;
   }
@@ -1639,6 +1639,22 @@ i.fa-grip-lines-vertical {
 
   footer .contactWrapper {
     padding: 65px 0 60px;
+  }
+
+  .splash + footer .bottom {
+    margin: 0;
+  }
+  .splash + footer .bottom p {
+    margin: 0;
+  }
+
+  .splash .relativeColumnBox .smallFlexBox .tealContactButton {
+    padding: 15px 0;
+    width: 30%;
+    bottom: 2%;
+  }
+  .splash .contactWrapper {
+    display: none;
   }
 }
 /* Wide screen tv */
