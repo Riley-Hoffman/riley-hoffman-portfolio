@@ -1557,7 +1557,7 @@ i.fa-grip-lines-vertical {
   }
 
   header .navBox {
-    margin-top: 20px;
+    mrgin-top: 20px;
   }
 }
 /* Small phones */
@@ -1611,8 +1611,19 @@ i.fa-grip-lines-vertical {
     font-size: 1.5rem;
   }
 
+  footer {
+    flex-direction: column;
+  }
+  footer .contactWrapper {
+    align-items: flex-start;
+    margin: 10px 0;
+    width: initial;
+  }
   footer .contactWrapper > a {
     font-size: 0.8rem;
+  }
+  footer .bottom {
+    width: initial;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 1040px) and (max-height: 800px) {

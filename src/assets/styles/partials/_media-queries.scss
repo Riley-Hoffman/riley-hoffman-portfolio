@@ -268,7 +268,7 @@
   }
 
   header .navBox {
-    margin-top: 20px;
+    mrgin-top: 20px;
   }
 }
 
@@ -337,10 +337,17 @@
     }
   }
   footer {
+    flex-direction: column;
     .contactWrapper {
+      align-items: flex-start;
+      margin: 10px 0;
+      width: initial;
       > a {
         font-size: 0.8rem;
       }
+    }
+    .bottom {
+      width: initial;
     }
   }
 }
