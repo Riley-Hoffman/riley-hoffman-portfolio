@@ -1614,6 +1614,9 @@ i.fa-grip-lines-vertical {
   header .navBox {
     margin-top: 0;
   }
+  header .navBox nav ul li a {
+    font-size: 0.8rem;
+  }
 
   .smallFlexBox {
     position: relative;
