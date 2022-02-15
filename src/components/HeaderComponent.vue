@@ -1,7 +1,7 @@
 <template>
 <!-- Header Starts -->
     <header class="flexBox">
-    <router-link class="favLink" to="/home" :class="favLinkHide">
+    <router-link class="favLink" to="/" :class="favLinkHide">
     <img src="../assets/img/android-chrome-512x512.png" alt="A black letter R in a teal circle." title="Favicon" />
     </router-link>
             <router-link to="#main" class="skip-link">Skip To Content</router-link>
