@@ -630,6 +630,9 @@ header .favLink {
   min-width: 40px;
   margin: 22px;
 }
+header .favLink:focus img {
+  outline: 2px solid #e5e8ee;
+}
 header .navBox {
   align-items: center;
   justify-content: flex-end;
