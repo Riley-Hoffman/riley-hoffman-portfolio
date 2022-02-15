@@ -1,6 +1,6 @@
 <template>
   <!-- Main Starts -->
-    <main id="main">
+    <main id="main" class="aboutMain">
         <!-- About Section Starts -->
         <section class="about" id="about">
             <div class="wrapper">

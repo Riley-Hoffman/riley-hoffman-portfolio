@@ -54,17 +54,17 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
-.splashFooter {
+.homeMain + footer {
         height: 8vh;
         background-color: transparent;
         position: absolute;
         bottom: 0;
         right: 20%;
         border: 0;
-        .contactComponent {
+    .contactComponent {
           display: none;
         }
+    .bottom {
+    width: 100%;
   }
-footer .bottom {
-  width: 100% !important;
 }

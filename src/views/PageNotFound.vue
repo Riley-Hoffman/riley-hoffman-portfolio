@@ -1,5 +1,5 @@
 <template>
-<main id="main">
+<main id="main" class="pageNotFoundMain">
         <section class="errorSection wrapper">
             <h1>Page Not Found</h1>
             <div class="errorContentBox flexBox">

@@ -374,6 +374,12 @@
   }
 }
 
+@media (max-width: 780px) and (max-height: 575px) {
+  .homeMain + footer {
+      display: none !important;
+  }
+}
+
 // If using window with reduced height don't collapse header social icons background
 @media (max-height: 500px) {
   header {

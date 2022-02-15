@@ -1,5 +1,5 @@
 <template>
- <main id="main">
+ <main id="main" class="homeMain">
     <section class="splash">
       <div class="galaxy">
         <div class="stars"></div>
