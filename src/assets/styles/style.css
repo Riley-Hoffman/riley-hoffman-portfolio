@@ -1422,7 +1422,7 @@ i.fa-grip-lines-vertical {
   }
   header .navBox nav ul.mainNavList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     width: 100%;
   }
@@ -1435,8 +1435,8 @@ i.fa-grip-lines-vertical {
   header .navBox nav ul.mainNavList li .aboutLink .sr-only {
     display: inline;
   }
-  header .navBox nav ul.mainNavList .col1 {
-    justify-content: flex-start;
+  header .navBox nav ul.mainNavList .col2 {
+    padding-left: 35px;
   }
   header .navBox nav .contactIcons {
     display: none;
