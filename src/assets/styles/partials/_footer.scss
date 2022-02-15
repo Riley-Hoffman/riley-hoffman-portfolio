@@ -65,7 +65,6 @@ i.fa-grip-lines-vertical {
           display: none;
         }
   }
-
-.splash + footer .bottom {
-  width: 100%;
+footer .bottom {
+  width: 100% !important;
 }
