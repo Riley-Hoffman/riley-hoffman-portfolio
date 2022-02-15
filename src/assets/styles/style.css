@@ -344,6 +344,14 @@ footer {
   color: #e5e8ee;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
@@ -615,6 +623,12 @@ header .skip-link {
 }
 header .skip-link:focus {
   left: 0;
+}
+header .favLink {
+  display: block;
+  max-width: 4%;
+  min-width: 40px;
+  margin: 22px;
 }
 header .navBox {
   align-items: center;
@@ -1389,6 +1403,9 @@ i.fa-grip-lines-vertical {
     width: 56%;
   }
 
+  header .favLink {
+    display: none;
+  }
   header .navBox {
     align-items: flex-start;
     flex-direction: column;

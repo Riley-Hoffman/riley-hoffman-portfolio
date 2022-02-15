@@ -106,6 +106,9 @@
   }
 
   header {
+    .favLink {
+      display: none;
+    }
     .navBox {
       align-items: flex-start;
       flex-direction: column;
@@ -303,21 +306,21 @@
   h1 {
     font-size: 1.8rem;
   }
-  
+
   header {
-   .navBox {
-     margin-top: 0;
-     nav {
-       ul {
-         li {
-           a {
-             font-size: 0.8rem;
-           }
-         }
-       }
-     }
-   }
- }
+    .navBox {
+      margin-top: 0;
+      nav {
+        ul {
+          li {
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .splash {
     .contactWrapper {
