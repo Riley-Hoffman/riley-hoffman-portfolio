@@ -43,6 +43,9 @@ footer {
     }
 }
 
+.borderlessFooter {
+    border-top: none;
+  }
 .nameSeparator {
   margin: 0 6px;
 }
@@ -51,15 +54,16 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
-.splash + footer {
+.splashFooter {
         height: 8vh;
         background-color: transparent;
         position: absolute;
         bottom: 0;
         right: 20%;
-    .contactComponent {
-      display: none;
-    }
+        border: 0;
+        .contactComponent {
+          display: none;
+        }
   }
 
 .splash + footer .bottom {

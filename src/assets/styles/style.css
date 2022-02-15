@@ -1240,6 +1240,10 @@ footer .bottom {
   margin: 10px 0 20px;
 }
 
+.borderlessFooter {
+  border-top: none;
+}
+
 .nameSeparator {
   margin: 0 6px;
 }
@@ -1248,14 +1252,15 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
-.splash + footer {
+.splashFooter {
   height: 8vh;
   background-color: transparent;
   position: absolute;
   bottom: 0;
   right: 20%;
+  border: 0;
 }
-.splash + footer .contactComponent {
+.splashFooter .contactComponent {
   display: none;
 }
 
@@ -1972,10 +1977,6 @@ footer p {
   }
   footer .contactWrapper a:focus {
     outline: 2px solid #00050f;
-  }
-
-  .splash + footer {
-    border-top: none;
   }
 
   .errorHeader {
