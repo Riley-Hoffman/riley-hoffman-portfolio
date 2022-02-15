@@ -1,5 +1,5 @@
 <template>
-            <div class="flexBox contactIcons">
+            <div class="flexBox contactIcons" :class="contactCompHide">
                 <a href="https://github.com/Riley-Hoffman">
                     <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Github</span>
                 </a>
@@ -8,3 +8,15 @@
                 </a>
             </div>
 </template>
+<script>
+export default {
+  computed: {
+    contactCompHide () {
+      if (this.$route.path === '/') {
+        return 'hide'
+      }
+      return 'show'
+    }
+  }
+}
+</script>
