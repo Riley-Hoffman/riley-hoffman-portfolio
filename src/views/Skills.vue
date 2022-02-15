@@ -1,5 +1,5 @@
 <template>
-<main id="main">
+<main id="main" class="projectsMain">
   <!-- Skills Section Starts -->
         <section class="skills" id="skills">
         <div class="wrapper">
@@ -95,10 +95,6 @@ export default {
   },
   methods: {
     checkForSafari (e) {
-      // Safari specific control
-
-      // Turn of rotate animation on skills for Safari user bc it does not render correctly
-
       if (this.safari) {
         e.target.classList.add('noAnimation').children.classList.add('noAnimation')
       }

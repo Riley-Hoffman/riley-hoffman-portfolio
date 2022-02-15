@@ -1,6 +1,6 @@
 <template>
    <!-- Projects Section Starts -->
-    <main id="main">
+    <main id="main" class="projectsMain">
         <section class="projects" id="projects">
             <div class="wrapper flexBox">
                 <h1>Projects</h1>

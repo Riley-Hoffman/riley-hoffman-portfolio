@@ -1251,7 +1251,7 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
-.splashFooter {
+.homeMain + footer {
   height: 8vh;
   background-color: transparent;
   position: absolute;
@@ -1259,12 +1259,11 @@ i.fa-grip-lines-vertical {
   right: 20%;
   border: 0;
 }
-.splashFooter .contactComponent {
+.homeMain + footer .contactComponent {
   display: none;
 }
-
-footer .bottom {
-  width: 100% !important;
+.homeMain + footer .bottom {
+  width: 100%;
 }
 
 .errorHeader {
@@ -1636,6 +1635,11 @@ footer .bottom {
   }
   header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a {
     font-size: 2rem;
+  }
+}
+@media (max-width: 780px) and (max-height: 575px) {
+  .homeMain + footer {
+    display: none !important;
   }
 }
 @media (max-height: 500px) {
