@@ -9,16 +9,16 @@
                   <div class="flexBox navBox">
                       <nav>
                           <ul class="mainNavList">
-                              <li class="col1">
+                              <li>
                                   <router-link class="navLink" to="/" :class="navBarColor">Home</router-link>
                               </li>
                               <li class="col2">
                                   <router-link class="navLink aboutLink" to="/about" :class="navBarColor">About</router-link>
                               </li>
-                              <li class="col3">
+                              <li>
                                   <router-link class="navLink projectsLink" to="/projects" :class="navBarColor">Projects</router-link>
                               </li>
-                              <li class="col1">
+                              <li class="col2">
                                   <router-link class="navLink" to="/skills" :class="navBarColor">Skills</router-link>
                               </li>
                           </ul>
