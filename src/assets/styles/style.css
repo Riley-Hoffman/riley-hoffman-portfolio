@@ -1572,6 +1572,13 @@ i.fa-grip-lines-vertical {
     font-size: 1.8rem;
   }
 
+  header .navBox {
+    margin-top: 0;
+  }
+  header .navBox nav ul li a {
+    font-size: 0.8rem;
+  }
+
   .splash .contactWrapper {
     display: none;
   }
@@ -1609,13 +1616,6 @@ i.fa-grip-lines-vertical {
   .splash .relativeColumnBox h1 {
     font-size: 1.6rem;
     margin: 55px 0 0;
-  }
-
-  header .navBox {
-    margin-top: 0;
-  }
-  header .navBox nav ul li a {
-    font-size: 0.8rem;
   }
 
   .smallFlexBox {

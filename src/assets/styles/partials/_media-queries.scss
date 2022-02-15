@@ -303,6 +303,21 @@
   h1 {
     font-size: 1.8rem;
   }
+  
+  header {
+   .navBox {
+     margin-top: 0;
+     nav {
+       ul {
+         li {
+           a {
+             font-size: 0.8rem;
+           }
+         }
+       }
+     }
+   }
+ }
 
   .splash {
     .contactWrapper {
@@ -379,20 +394,6 @@
     margin: 55px 0 0;
   }
 
-  header {
-    .navBox {
-      margin-top: 0;
-      nav {
-        ul {
-          li {
-            a {
-              font-size: 0.8rem;
-            }
-          }
-        }
-      }
-    }
-  }
   .smallFlexBox {
     position: relative;
     p.animate__backInLeft {
