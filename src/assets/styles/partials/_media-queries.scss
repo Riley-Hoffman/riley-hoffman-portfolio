@@ -373,8 +373,10 @@
   .homeMain + footer {
       display: none !important;
   }
-  main {
-    padding-top: 50px;
+  .splash {
+    .smallFlexBox {
+    margin-top: 50px;
+  }
   }
 }
 
@@ -431,17 +433,7 @@
     .contactWrapper {
       padding: 65px 0 60px;
     }
-  }
-
-  .homeMain + footer {
-    .bottom {
-      margin: 0;
-      p {
-        margin: 0;
-      }
-    }
-  }
-
+  } 
   .splash {
     .relativeColumnBox {
       .smallFlexBox {
