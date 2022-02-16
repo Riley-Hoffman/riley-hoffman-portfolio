@@ -325,10 +325,6 @@
       display: none;
     }
   }
-
-  .splash + footer {
-    display: none;
-  }
   .smallFlexBox {
     p.animate__backInLeft {
       font-size: 1.5rem;
@@ -437,7 +433,7 @@
     }
   }
 
-  .splash + footer {
+  .homeMain + footer {
     .bottom {
       margin: 0;
       p {
