@@ -1,7 +1,7 @@
 <template>
   <HeaderComponent />
   <router-view />
-  <FooterComponent />
+  <FooterComponent v-cloak/>
 </template>
 
 <script>
@@ -25,3 +25,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+[v-cloak] {
+  display: none !important;
+}
+</style>

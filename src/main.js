@@ -8,7 +8,6 @@ const app = createApp(App)
 
 app.use(router)
 
-// app({ router, render: h => h(App) })
-
 app.mount('#app')
+
 app.prototype.$workbox = wb
