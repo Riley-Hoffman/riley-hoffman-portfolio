@@ -1,23 +1,11 @@
-// eslint-disable-next-line no-global-assign
-require = require('esm')(module)
-const { routes } = require('./router/index.js')
 const { GenerateSW } = require('workbox-webpack-plugin')
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'development' ? '/vuejs-pwa/' : '',
+  publicPath: process.env.NODE_ENV === 'production' ? '/vuejs-pwa/' : '',
   configureWebpack: {
-    plugins: [new GenerateSW()]
-  },
-  pluginOptions: {
-    sitemap: {
-      urls: [
-        'https://rileyhoffman.com/',
-        'https://rileyhoffman.com/about',
-        'https://rileyhoffman.com/projects',
-        'https://rileyhoffman.com/skills',
-        routes
-      ]
-    }
+    plugins: [
+      new GenerateSW()
+    ]
   },
   pwa: {
     themeColor: '#00050f',
@@ -29,8 +17,9 @@ module.exports = {
     },
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
-      swSrc: 'src/sw.js'
+      swSrc: 'src/sw.js',
       // ...other Workbox options...
+      exclude: [/_redirects/]
     }
   }
 }

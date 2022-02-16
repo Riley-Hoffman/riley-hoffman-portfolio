@@ -1,30 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Projects from '../views/Projects.vue'
+import Skills from '../views/Skills.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
-export const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
-
+    component: Home
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-
+    component: About
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue')
-
+    component: Projects
   },
   {
     path: '/skills',
     name: 'Skills',
-    component: () => import(/* webpackChunkName: "skills" */ '../views/Skills.vue')
-
+    component: Skills
   },
   {
     path: '/page-not-found',
