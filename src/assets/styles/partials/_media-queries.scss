@@ -477,7 +477,7 @@
     opacity: 0.3;
   }
 
-  .circle {
+  .smoke {
     &::before {
       opacity: 1;
     }
@@ -790,7 +790,7 @@
   }
 
   .splash {
-    .lightModeHeaderImage {
+    .lightHeroElements {
       position: absolute;
       margin: 0 auto;
       width: 100%;
@@ -897,7 +897,7 @@
   html {
     background: $black;
   }
-  .splash .lightModeHeaderImage {
+  .splash .lightHeroElements {
     display: none;
   }
   header {

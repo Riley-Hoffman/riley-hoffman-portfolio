@@ -26,11 +26,10 @@
         </div>
       </div>
       <!-- Wrapper Ends -->
-      <div class="lightModeHeaderImage">
-        <div class="bubbleParentContainer">
-          <div class="scrollingBackground">
-            <div class="circle"></div>
-            <div class="circle2"></div>
+      <div class="lightHeroElements">
+        <div class="smokeParentContainer">
+          <div class="lightBackground">
+            <div class="smoke"></div>
             <svg>
               <filter id="wave">
                 <feTurbulence

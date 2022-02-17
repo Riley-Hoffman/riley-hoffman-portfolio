@@ -499,7 +499,7 @@
   }
 }
 
-.bubbleParentContainer {
+.smokeParentContainer {
   position: relative;
   display: flex;
   align-content: center;
@@ -508,7 +508,7 @@
   overflow: hidden;
 }
 
-.scrollingBackground {
+.lightBackground {
   background: {
     image: linear-gradient(
         to bottom,
@@ -525,7 +525,7 @@
   opacity: 0.3;
 }
 
-.circle {
+.smoke {
   position: relative;
   height: 100%;
   width: 99.5%;
