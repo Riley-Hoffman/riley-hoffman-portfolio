@@ -24,14 +24,16 @@ header {
   }
   .favLink {
     display: block;
-    max-width: 4%;
+    max-width: 4.5%;
     min-width: 40px;
     margin: 22px;
+    padding: 1px;
+    img {
+      padding: 4px;
+    }
   }
   .favLink:focus {
-    img {
-      outline: 2px solid #e5e8ee;
-    }
+    outline: none;
   }
   .navBox {
     align-items: center;
