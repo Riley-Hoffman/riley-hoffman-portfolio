@@ -22,6 +22,7 @@ header {
   .skip-link:focus {
     left: 0;
   }
+  
   .favLink {
     display: block;
     max-width: 4.5%;
@@ -34,6 +35,16 @@ header {
   }
   .favLink:focus {
     outline: none;
+  }
+  .blackOutline:focus {
+    img {
+      outline: 2px solid $black;
+    }
+  }
+  .whiteOutline:focus {
+    img {
+      outline: 2px solid $white;
+    }
   }
   .navBox {
     align-items: center;

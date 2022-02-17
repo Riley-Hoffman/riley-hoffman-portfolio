@@ -20,6 +20,14 @@
     display: none !important;
 }
 
+a.whiteOutline:focus {
+    outline: 2px solid $white;
+}
+
+a.blackOutline:focus {
+    outline: 2px solid $black;
+}
+
 //  * animate.css - https://animate.style/
 //  * Version - 4.1.1
 //  * Licensed under the MIT license - http://opensource.org/licenses/MIT
