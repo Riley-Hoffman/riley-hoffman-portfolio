@@ -780,9 +780,6 @@
   }
 
   header {
-    .skip-link:focus {
-      outline: 2px solid $black;
-    }
     .favLink:focus {
       img {
         outline: 2px solid $black;
@@ -906,20 +903,6 @@
     display: none;
   }
   header {
-    .skip-link:focus {
-      left: 0;
-      outline: 2px solid $white;
-    }
-    .blackOutline:focus {
-      img {
-        outline: 2px solid $black;
-      }
-    }
-    .whiteOutline:focus {
-      img {
-        outline: 2px solid $white;
-      }
-    }
     .relativeColumnBox {
       .smallFlexBox {
         a:focus {
