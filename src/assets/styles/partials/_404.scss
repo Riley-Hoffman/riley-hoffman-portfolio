@@ -12,19 +12,19 @@
 }
 
 .errorSection {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 160px;
   overflow: hidden;
+  padding-top: 160px;
   .errorContentBox {
     align-items: center;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
     .errorIcon {
-      width: 100%;
       margin: 0;
       max-width: 30%;
+      width: 100%;
     }
     .errorP {
       font-size: 1.5rem;
@@ -36,18 +36,18 @@
 }
 
 .errorNav {
+  align-items: center;
+  justify-content: center;
+  ul {
+    font-size: 1.4rem;
+    li {
       align-items: center;
-      justify-content: center;
-      ul {
-        font-size: 1.4rem;
-        li {
-          display: flex;
-          align-items: center;
-          i {
-            color: $teal;
-            font-size: 1.7rem;
-            margin-left: 10px;
-          }
-        }
+      display: flex;
+      i {
+        color: $teal;
+        font-size: 1.7rem;
+        margin-left: 10px;
       }
     }
+  }
+}

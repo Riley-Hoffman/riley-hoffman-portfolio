@@ -1,13 +1,10 @@
 .splash {
-  background-position-x: 100%;
   background-attachment: fixed;
-  overflow: hidden;
-  overflow: hidden;
+  background-position-x: 100%;
   padding: 30vh 0 50px;
+  position: absolute;
   height: 100vh;
   width: 100%;
-  position: absolute;
-  overflow: visible;
   .relativeColumnBox {
     .contactWrapper {
       padding: 0;
@@ -48,11 +45,11 @@
     width: 45vw;
     .iconContainer {
       height: 16px;
-      overflow: hidden;
       margin-bottom: 5px;
+      overflow: hidden;
       .fa-water {
-        font-size: 2.5rem;
         color: $teal;
+        font-size: 2.5rem;
         margin: 0;
         transform: rotate(180deg);
         width: 57px;
@@ -147,22 +144,22 @@
 }
 
 .galaxy {
+  opacity: 0.7;
   overflow: visible;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
   -webkit-perspective: 340px;
   perspective: 340px;
-  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
   .stars {
-    position: absolute;
-    top: 50%;
     border-radius: 50%;
+    position: absolute;
     left: 50%;
-    width: 3px;
+    top: 50%;
     height: 3px;
+    width: 3px;
     -webkit-box-shadow: -740px 444px rgba(23, 162, 170, 0.42),
       157px -59px #c1cac9, 36px -3px #c1cac9, -857px -439px #c1cac9,
       -1408px 402px #becfd5, -235px -149px #becfd5,
@@ -476,36 +473,36 @@
 
   .stars:before,
   .stars:after {
-    content: "";
-    position: absolute;
-    width: inherit;
-    height: inherit;
     -webkit-box-shadow: inherit;
     box-shadow: inherit;
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: inherit;
   }
 
   .stars:before {
-    -webkit-transform: translateZ(-300px);
-    transform: translateZ(-300px);
     -webkit-animation: hideme1 10s linear infinite;
     animation: hideme1 10s linear infinite;
+    -webkit-transform: translateZ(-300px);
+    transform: translateZ(-300px);
   }
 
   .stars:after {
-    -webkit-transform: translateZ(-600px);
-    transform: translateZ(-600px);
     -webkit-animation: hideme2 10s linear infinite;
     animation: hideme2 10s linear infinite;
+    -webkit-transform: translateZ(-600px);
+    transform: translateZ(-600px);
   }
 }
 
 .smokeParentContainer {
-  position: relative;
-  display: flex;
   align-content: center;
-  justify-content: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .lightBackground {
@@ -519,32 +516,32 @@
     blend-mode: multiply;
     size: cover;
   }
-  position: relative;
-  width: 100%;
-  height: 100%;
   opacity: 0.3;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .smoke {
-  position: relative;
-  height: 100%;
-  width: 99.5%;
   filter: url(#wave);
+  position: relative;
   top: 0%;
   left: 0%;
+  height: 100%;
+  width: 99.5%;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    animation: anim 10s linear infinite;
     border: 10px solid $teal;
     box-shadow: 0 0 50px $white, inset 0 0 50px $white;
     filter: url(#wave) blur(10px);
-    animation: anim 10s linear infinite;
+    content: "";
+    position: absolute;
     opacity: 0.9;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
   }
 }
 

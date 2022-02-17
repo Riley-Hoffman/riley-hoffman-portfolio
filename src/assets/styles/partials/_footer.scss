@@ -7,45 +7,45 @@ footer p {
   margin: 10px 0;
 }
 .contactWrapper {
-    align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
-    margin: 10px 0 20px;
-    > a {
-      padding: 5px;
-    }
-    > a {
-      color: $teal;
-    }
-   
-    a:focus {
-      outline: 2px solid $white;
-    }
-    
-    .contactIcons {
-      font-size: 2em;
-      width: 135px;
-      a {
-        padding: 0 5px;
-      }
-    }
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px 0 20px;
+  width: 50%;
+  > a {
+    padding: 5px;
+  }
+  > a {
+    color: $teal;
   }
 
+  a:focus {
+    outline: 2px solid $white;
+  }
+
+  .contactIcons {
+    font-size: 2em;
+    width: 135px;
+    a {
+      padding: 0 5px;
+    }
+  }
+}
+
 footer {
+  align-items: flex-end;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
   padding: 30px 0 0;
   .bottom {
-      justify-content: flex-end;
-      width: 50%;
-      margin: 10px 0 20px;
-    }
+    justify-content: flex-end;
+    margin: 10px 0 20px;
+    width: 50%;
+  }
 }
 
 .borderlessFooter {
-    border-top: none;
-  }
+  border-top: none;
+}
 .nameSeparator {
   margin: 0 6px;
 }
@@ -55,16 +55,16 @@ i.fa-grip-lines-vertical {
 }
 
 .homeMain + footer {
-        height: 8vh;
-        background-color: transparent;
-        position: absolute;
-        bottom: 0;
-        right: 20%;
-        border: 0;
-    .contactComponent {
-          display: none;
-        }
-    .bottom {
+  background-color: transparent;
+  border: 0;
+  bottom: 0;
+  height: 8vh;
+  position: absolute;
+  right: 20%;
+  .contactComponent {
+    display: none;
+  }
+  .bottom {
     width: 100%;
   }
 }
