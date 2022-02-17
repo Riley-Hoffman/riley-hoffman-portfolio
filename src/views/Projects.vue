@@ -18,12 +18,12 @@
                                 keywords associated with the movie, returning new GIFs!
                             </p>
                             <h4>Out Of Context Links:</h4>
-                            <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank">Live</a>
-                            <a href="https://github.com/dearJuno/outofContext" target="_blank">Repo</a>
+                            <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank" rel="nofollow">Live</a>
+                            <a href="https://github.com/dearJuno/outofContext" target="_blank" rel="nofollow">Repo</a>
                         </div>
                         <div class="imgBox">
                             <a href="https://focused-varahamihira-abf5da.netlify.app/" title="Visit Out Of Context live site."
-                                target="_blank">
+                                target="_blank" rel="nofollow">
                                 <img srcset="
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782917/out-of-context3x_krpnlk.webp 1280w,
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782917/out-of-context2x_mtbvqx.webp 900w,
@@ -39,7 +39,7 @@
                     <li class="projectBox">
                         <div class="imgBox">
                             <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" title="Visit Infinity Corkboard live site."
-                                target="_blank">
+                                target="_blank" rel="nofollow">
                                 <img srcset="
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783133/infinity-corkboard3x_vnzfw3.webp 1280w,
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783134/infinity-corkboard2x_qc17n0.webp 900w,
@@ -63,9 +63,9 @@
                                 other page elements in the saved file.
                             </p>
                             <h4>Infinity Corkboard Links:</h4>
-                            <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank">Live</a>
+                            <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley-hoffman-project-three"
-                                target="_blank">Repo</a>
+                                target="_blank" rel="nofollow">Repo</a>
                         </div>
                     </li>
 
@@ -83,12 +83,12 @@
                             </p>
                             <h4>Weather Scout Links:</h4>
                             <a href="https://romantic-kowalevski-f7a14c.netlify.app/" title="Weather Scout"
-                                target="_blank">Live</a>
+                                target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/Linda-Columbus-Riley-Hoffman-Developers/weatherScout"
-                                target="_blank">Repo</a>
+                                target="_blank" rel="nofollow">Repo</a>
                         </div>
                         <div class="imgBox">
-                            <a href="https://romantic-kowalevski-f7a14c.netlify.app/" target="_blank" title="Visit Weather Scout live site.">
+                            <a href="https://romantic-kowalevski-f7a14c.netlify.app/" target="_blank" rel="nofollow" title="Visit Weather Scout live site.">
                                 <img srcset="
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782603/weather-scout3x_hihe8q.webp 1280w,
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782602/weather-scout2x_h1wuto.webp 900w,
@@ -103,7 +103,7 @@
 
                     <li class="projectBox">
                         <div class="imgBox">
-                            <a href="https://vigilant-albattani-29bee8.netlify.app/" title="Visit Delicious live site." target="_blank">
+                            <a href="https://vigilant-albattani-29bee8.netlify.app/" title="Visit Delicious live site." target="_blank" rel="nofollow">
                                 <img srcset="
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783284/delicious3x_pgwxjq.webp 1280w,
                                 https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783284/delicious2x_bkve7w.webp 900w,
@@ -122,9 +122,9 @@
                                 chain.
                             </p>
                             <h4>Delicious Links:</h4>
-                            <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank">Live</a>
+                            <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley_hoffman_project_1_delicious"
-                                target="_blank">Repo</a>
+                                target="_blank" rel="nofollow">Repo</a>
                         </div>
                     </li>
                 </ul>
