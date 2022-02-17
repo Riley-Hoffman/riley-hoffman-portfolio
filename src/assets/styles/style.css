@@ -1982,7 +1982,7 @@ footer p {
     display: block;
   }
 
-  .errorSection h2 {
+  .errorSection h1 {
     color: #00050f;
   }
 
@@ -2067,7 +2067,7 @@ footer p {
     outline: 2px solid #e5e8ee;
   }
 
-  .errorSection h2 {
+  .errorSection h1 {
     color: #e5e8ee;
   }
 
