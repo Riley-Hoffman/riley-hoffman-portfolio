@@ -2,7 +2,7 @@
 <!-- Header Starts -->
     <header class="flexBox">
       <router-link to="#main" class="skip-link">Skip To Content</router-link>
-      <router-link class="favLink" to="/" :class="favLinkHide">
+      <router-link class="favLink" to="/" :class="[favLinkHide, favLinkFocus]">
       <img src="../assets/img/android-chrome-512x512.png" alt="A black letter R in a teal circle." title="Favicon" />
       </router-link>
               <div class="wrapper relativeColumnBox">
@@ -48,6 +48,12 @@ export default {
         return 'hide'
       }
       return 'show'
+    },
+    favLinkFocus () {
+      if ((this.$route.path === '/about' || this.$route.path === '/skills') && (this.preferDark)) {
+        return 'blackOutline'
+      }
+      return 'whiteOutline'
     }
   }
 }

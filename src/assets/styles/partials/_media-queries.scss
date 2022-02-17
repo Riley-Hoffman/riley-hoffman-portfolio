@@ -371,12 +371,12 @@
 
 @media (max-width: 780px) and (max-height: 575px) {
   .homeMain + footer {
-      display: none !important;
+    display: none !important;
   }
   .splash {
     .smallFlexBox {
-    margin-top: 50px;
-  }
+      margin-top: 50px;
+    }
   }
 }
 
@@ -433,7 +433,7 @@
     .contactWrapper {
       padding: 65px 0 60px;
     }
-  } 
+  }
   .splash {
     .relativeColumnBox {
       .smallFlexBox {
@@ -783,6 +783,11 @@
     .skip-link:focus {
       outline: 2px solid $black;
     }
+    .favLink:focus {
+      img {
+        outline: 2px solid $black;
+      }
+    }
   }
 
   .contactComponent {
@@ -904,6 +909,16 @@
     .skip-link:focus {
       left: 0;
       outline: 2px solid $white;
+    }
+    .blackOutline:focus {
+      img {
+        outline: 2px solid $black;
+      }
+    }
+    .whiteOutline:focus {
+      img {
+        outline: 2px solid $white;
+      }
     }
     .relativeColumnBox {
       .smallFlexBox {
