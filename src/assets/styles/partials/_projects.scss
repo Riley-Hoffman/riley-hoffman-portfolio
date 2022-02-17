@@ -65,9 +65,9 @@
 }
 
 .imgBox {
+  cursor: pointer;
   position: relative;
   text-align: center; // for alt text in case images don't load.
-  cursor: pointer;
   a {
     color: $white; // for alt
   }
@@ -76,10 +76,10 @@
     border-radius: 50%;
     opacity: 0.1;
     position: absolute;
-    top: 5%;
     bottom: 0;
     left: 0;
     right: 0;
+    top: 5%;
     transition: all 2s;
     z-index: -1;
   }
@@ -110,4 +110,3 @@
 .imgBox > a:focus {
   outline: none;
 }
-

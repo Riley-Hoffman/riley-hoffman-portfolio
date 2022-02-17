@@ -63,8 +63,8 @@
       align-items: center;
       flex-direction: column;
       .about1 {
-        width: 100%;
         align-items: center;
+        width: 100%;
         > div {
           width: 75%;
         }
@@ -117,8 +117,8 @@
         width: 100%;
         ul.mainNavList {
           display: grid;
-          grid-template-columns: 1fr 1fr;
           grid-row-gap: 20px;
+          grid-template-columns: 1fr 1fr;
           width: 100%;
           li {
             display: flex;
@@ -416,8 +416,8 @@
     }
     a.tealContactButton {
       position: absolute;
-      width: 25%;
       right: 0;
+      width: 25%;
       .me {
         display: none;
       }
@@ -438,9 +438,9 @@
     .relativeColumnBox {
       .smallFlexBox {
         .tealContactButton {
+          bottom: 2%;
           padding: 15px 0;
           width: 30%;
-          bottom: 2%;
         }
       }
     }
@@ -471,10 +471,10 @@
       blend-mode: multiply;
       size: cover;
     }
-    position: relative;
-    width: 100%;
-    height: 100%;
     opacity: 0.3;
+    position: relative;
+    height: 100%;
+    width: 100%;
   }
 
   .smoke {
@@ -532,8 +532,8 @@
         .contactIcons {
           .headerSocialBox {
             &:hover {
-              box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
               background-color: transparent;
+              box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
               border: 2px solid #1443487a;
               padding: 8px;
               transition: background-color 0.2s;
@@ -793,14 +793,12 @@
 
   .splash {
     .lightHeroElements {
-      position: absolute;
-      margin: 0 auto;
-      width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
       display: block;
+      margin: 0 auto;
+      position: absolute;
       top: 0;
       height: 100vh;
+      width: 100%;
     }
     .contactWrapper a {
       color: $black;
@@ -913,8 +911,8 @@
   }
   .splash {
     background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     .contactWrapper a {
       color: $white;
     }

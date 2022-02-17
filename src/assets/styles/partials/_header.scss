@@ -1,10 +1,9 @@
 header {
-  background: transparent;
   overflow: visible;
   padding-bottom: 50px;
+  position: absolute;
   height: 10vh;
   width: 100%;
-  position: absolute;
   z-index: 9999;
 
   .skip-link {
@@ -22,12 +21,12 @@ header {
   .skip-link:focus {
     left: 0;
   }
-  
+
   .favLink {
     display: block;
+    margin: 22px;
     max-width: 4.5%;
     min-width: 40px;
-    margin: 22px;
     padding: 1px;
     img {
       padding: 4px;
@@ -53,15 +52,15 @@ header {
     position: relative;
     z-index: 999;
     nav {
-      width: 55%;
+      align-items: flex-end;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      width: 55%;
       ul {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         position: relative;
+        width: 100%;
         a {
           border-bottom: 1px solid transparent;
           line-height: 1;
@@ -78,18 +77,18 @@ header {
         a::after {
           background-color: $teal;
           content: "";
-          height: 2px;
-          position: absolute;
           margin-top: 5px;
-          width: 0;
-          left: 50%;
-          top: 100%;
+          position: absolute;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           transform: translateX(-50%);
           -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+          height: 2px;
+          width: 0;
+          left: 50%;
+          top: 100%;
         }
         a:focus::after {
           width: 100%;
@@ -98,32 +97,32 @@ header {
       .contactIcons {
         align-items: center;
         flex-direction: column;
-        height: 100vh;
-        width: 100vw;
         justify-content: center;
-        position: absolute;
         left: 47%;
         padding-top: 70px;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
         z-index: 25;
         .headerSocialBox {
           align-items: center;
-          flex-direction: column;
-          justify-content: center;
-          border-radius: 30px;
-          padding: 10px;
           background-color: #14434870;
+          border-radius: 30px;
+          flex-direction: column;
           height: 30%;
+          justify-content: center;
+          padding: 10px;
           .headerSocialList {
             align-items: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             height: 60%;
+            justify-content: center;
             li {
               margin: auto;
               a {
-                margin: 0 auto;
                 font-size: 1.3rem;
+                margin: 0 auto;
               }
               a:hover,
               a:focus {
