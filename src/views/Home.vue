@@ -18,7 +18,7 @@
             href="mailto:riley.n.hoffman@gmail.com"
             class="tealContactButton headerLink"
             ><span class="target">Contact<span class="me"> Me</span> </span
-            ><i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i
+            ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
           ></a>
           <div class="contactWrapper">
             <SocialComponent />

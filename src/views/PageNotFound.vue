@@ -15,8 +15,8 @@
                     <nav>
                         <ul>
                             <li>
-                                <a class="homeLink404" href="https://rileyhoffman.com/" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</a>
-                                <i class="fas fa-long-arrow-alt-right homeLinkArrow animate__animated animate__backInLeft"
+                                <router-link class="homeLink404" to="/" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</router-link>
+                                <i class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft"
                                     aria-hidden="true"></i>
                             </li>
                         </ul>

@@ -44,7 +44,7 @@
                     </li>
                     <li v-on:mouseover="checkForSafari">
                         <div class="skillsIconBox">
-                            <i class="fas fa-arrows-alt-h" aria-hidden="true"></i>
+                            <i class="fa-solid fa-left-right" aria-hidden="true"></i>
                         </div>
                         <p>Rest API</p>
                     </li>
