@@ -813,7 +813,7 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   text-align: center;
   width: 35%;
 }
-.relativeColumnBox .smallFlexBox .headerLink i.fa-long-arrow-alt-right {
+.relativeColumnBox .smallFlexBox .headerLink i {
   line-height: 27px;
   margin-left: 10px;
 }
