@@ -9,7 +9,7 @@
         <!-- contactWrapper Wrapper Ends -->
         <div class="wrapper flexBox bottom">
             <p>Riley Hoffman <span aria-hidden="true">| </span>Web Developer</p>
-            <a href="./riley-hoffman-resume.pdf" class="resume">Resume<i class="fa-solid fa-file-arrow-down"></i></a>
+            <a href="./riley-hoffman-resume.pdf" class="resume">Resume<i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i></a>
         </div>
         <!-- Bottom Wrapper Ends -->
     </footer>
