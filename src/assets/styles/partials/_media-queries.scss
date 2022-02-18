@@ -44,13 +44,17 @@
       }
     }
   }
+  .pageNotFoundMain + footer {
+    margin-top: 50px;
+  }
 }
 
 // Footer Control 1
 @media (max-width: 1020px) {
   .aboutMain + footer,
   .projectsMain + footer,
-  .skillsMain + footer {
+  .skillsMain + footer,
+  .pageNotFoundMain + footer {
     .bottom {
       align-items: flex-start;
       flex-direction: column;
@@ -230,7 +234,8 @@
 @media (max-width: 680px) {
   .aboutMain + footer,
   .projectsMain + footer,
-  .skillsMain + footer {
+  .skillsMain + footer,
+  .pageNotFoundMain + footer {
     flex-direction: column;
     align-items: flex-start;
     .bottom {

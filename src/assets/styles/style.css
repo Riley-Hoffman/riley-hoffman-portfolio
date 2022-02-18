@@ -1346,18 +1346,24 @@ i.fa-grip-lines-vertical {
   header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a {
     font-size: 2rem;
   }
+
+  .pageNotFoundMain + footer {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 1020px) {
   .aboutMain + footer .bottom,
 .projectsMain + footer .bottom,
-.skillsMain + footer .bottom {
+.skillsMain + footer .bottom,
+.pageNotFoundMain + footer .bottom {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
   }
   .aboutMain + footer .bottom a,
 .projectsMain + footer .bottom a,
-.skillsMain + footer .bottom a {
+.skillsMain + footer .bottom a,
+.pageNotFoundMain + footer .bottom a {
     margin: 0 20px;
   }
 }
@@ -1518,13 +1524,15 @@ i.fa-grip-lines-vertical {
 @media (max-width: 680px) {
   .aboutMain + footer,
 .projectsMain + footer,
-.skillsMain + footer {
+.skillsMain + footer,
+.pageNotFoundMain + footer {
     flex-direction: column;
     align-items: flex-start;
   }
   .aboutMain + footer .bottom,
 .projectsMain + footer .bottom,
-.skillsMain + footer .bottom {
+.skillsMain + footer .bottom,
+.pageNotFoundMain + footer .bottom {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
@@ -1532,12 +1540,14 @@ i.fa-grip-lines-vertical {
   }
   .aboutMain + footer .bottom p,
 .projectsMain + footer .bottom p,
-.skillsMain + footer .bottom p {
+.skillsMain + footer .bottom p,
+.pageNotFoundMain + footer .bottom p {
     padding: 0;
   }
   .aboutMain + footer .bottom a,
 .projectsMain + footer .bottom a,
-.skillsMain + footer .bottom a {
+.skillsMain + footer .bottom a,
+.pageNotFoundMain + footer .bottom a {
     margin: 0;
   }
 }
