@@ -1167,6 +1167,9 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   text-align: center;
   width: 100%;
 }
+.skillsGallery li .skillsIconBox .fa-universal-access {
+  font-family: "Font Awesome 5 Free";
+}
 .skillsGallery li p {
   text-align: center;
 }

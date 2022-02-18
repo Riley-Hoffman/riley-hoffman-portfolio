@@ -32,7 +32,7 @@
                     </li>
                     <li v-on:mouseover="checkForSafari">
                         <div class="skillsIconBox">
-                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                            <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
                         </div>
                         <p>Accessibility</p>
                     </li>
