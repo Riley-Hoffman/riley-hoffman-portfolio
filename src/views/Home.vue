@@ -32,21 +32,6 @@
             <div class="smoke"></div>
             <svg>
               <filter id="wave">
-                <feTurbulence
-                  x="0"
-                  y="0"
-                  baseFrequency="0.009"
-                  numOctaves="1"
-                  seed="2"
-                  type="fractalNoise"
-                >
-                  <animate
-                    attributeName="baseFrequency"
-                    dur="40s"
-                    values="0.02;0.005;0.02"
-                    repeatCount="indefinite"
-                  />
-                </feTurbulence>
                 <feDisplacementMap in="SourceGraphic" scale="18" />
               </filter>
             </svg>

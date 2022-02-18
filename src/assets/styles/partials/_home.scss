@@ -531,7 +531,6 @@
   width: 99.5%;
 
   &::before {
-    animation: anim 10s linear infinite;
     border: 10px solid $teal;
     box-shadow: 0 0 50px $white, inset 0 0 50px $white;
     filter: url(#wave) blur(10px);
@@ -542,23 +541,5 @@
     left: 0;
     right: 0;
     top: 0;
-  }
-}
-
-@keyframes anim {
-  0% {
-    box-shadow: 0 0 50px $white, inset 0 0 50px $white;
-  }
-  20% {
-    box-shadow: 0 0 50px $teal, inset 0 0 50px $teal;
-  }
-  40% {
-    box-shadow: 0 0 50px $white, inset 0 0 50px $white;
-  }
-  60% {
-    box-shadow: 0 0 50px $teal, inset 0 0 50px $teal;
-  }
-  80% {
-    box-shadow: 0 0 50px $white, inset 0 0 50px $white;
   }
 }
