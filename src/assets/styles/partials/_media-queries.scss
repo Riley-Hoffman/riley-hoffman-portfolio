@@ -8,7 +8,7 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
-  .smallFlexBox a.tealContactButton {
+  .smallFlexBox button.tealContactButton {
     width: 60%;
   }
   header {
@@ -69,7 +69,16 @@
       }
     }
   }
-  .contactWrapper {
+  .modal {
+    max-height: 100%;
+    max-width: 90%;
+    form {
+      .contactFormButton {
+        margin-top: 8px;
+      }
+    }
+  }
+  .contactWrapper, .modal {
     form {
       .inputBox {
         align-items: flex-start;
@@ -85,6 +94,9 @@
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 780px) {
+   .modal {
+    left: 0;
+  }
   .line {
     margin: -9px 0 0;
   }
@@ -351,7 +363,7 @@
   }
 
   .smallFlexBox {
-    a.tealContactButton {
+    button.tealContactButton {
       font-size: 0.8rem;
       padding: 15px 0;
       i.fa-long-arrow-alt-right {
@@ -511,7 +523,7 @@
     p.animate__backInLeft {
       font-size: 1.4rem;
     }
-    a.tealContactButton {
+    button.tealContactButton {
       position: absolute;
       right: 0;
       width: 25%;
@@ -732,6 +744,14 @@
         }
       }
     }
+  }
+
+  button.modalClose:active {
+      transform: translateY(2px);
+      outline: none !important;
+  }
+  button.modalClose:focus {
+      outline: 2px solid $teal;
   }
 }
 
