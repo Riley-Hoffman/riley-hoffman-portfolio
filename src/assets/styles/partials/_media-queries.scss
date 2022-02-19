@@ -693,6 +693,10 @@
             outline: none;
           }
         }
+        .tealContactButton:hover {
+            border: 2px solid $white;
+            padding: 20px 3px;
+        }
       }
     }
   }

@@ -832,10 +832,11 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   margin-bottom: 10px;
 }
 .relativeColumnBox .smallFlexBox .headerLink {
-  /* Use .tealContactButton for MEDIA QUERIES => NOT HERE */
   background: #17a2aa;
+  border: none;
   border-radius: 3px;
   color: #00050f;
+  cursor: pointer;
   display: flex;
   font-size: 0.9rem;
   font-weight: 500;
@@ -844,6 +845,11 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   padding: 22px 5px;
   text-align: center;
   width: 35%;
+}
+.relativeColumnBox .smallFlexBox button.headerLink.tealContactButton:active {
+  border: none;
+  outline: none;
+  padding: 22px 5px;
 }
 
 @-webkit-keyframes zooms {
@@ -2017,6 +2023,10 @@ i.fa-grip-lines-vertical {
   }
   .splash .relativeColumnBox .smallFlexBox .contactIcons a:active {
     outline: none;
+  }
+  .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
+    border: 2px solid #e5e8ee;
+    padding: 20px 3px;
   }
 
   .projectInfo a:hover {
