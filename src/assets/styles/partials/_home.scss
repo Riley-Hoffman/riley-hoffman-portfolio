@@ -65,10 +65,11 @@
       margin-bottom: 10px;
     }
     .headerLink {
-      /* Use .tealContactButton for MEDIA QUERIES => NOT HERE */
       background: $teal;
+      border: none;
       border-radius: 3px;
       color: $black;
+      cursor: pointer;
       display: flex;
       font-size: 0.9rem;
       font-weight: 500;
@@ -77,6 +78,11 @@
       padding: 22px 5px;
       text-align: center;
       width: 35%;
+    }
+    button.headerLink.tealContactButton:active {
+      border: none;
+      outline: none;
+      padding: 22px 5px;
     }
   }
 }
