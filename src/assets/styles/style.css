@@ -1239,23 +1239,24 @@ footer p {
   padding: 0 5px;
   margin: 0 23px 0 0;
 }
-.contactWrapper form {
+
+form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   width: 100%;
 }
-.contactWrapper form .inputBox {
+form .inputBox {
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   width: 100%;
 }
-.contactWrapper form .inputBox input {
+form .inputBox input {
   width: 37%;
 }
-.contactWrapper form .contactFormButton {
+form .contactFormButton {
   align-self: center;
   background: linear-gradient(to bottom, #65a5a8 5%, #17a2aa 100%);
   background-color: #65a5a8;
@@ -1274,22 +1275,22 @@ footer p {
   text-shadow: 0px 1px 0px #469ea3;
   width: 50%;
 }
-.contactWrapper form .contactFormButton:hover {
+form .contactFormButton:hover {
   background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
   background-color: #17a3aa;
 }
-.contactWrapper form .contactFormButton:active {
+form .contactFormButton:active {
   position: relative;
   top: 1px;
 }
-.contactWrapper form label {
+form label {
   margin: 9px 0;
 }
-.contactWrapper form textarea {
+form textarea {
   min-height: 200px !important;
   position: relative;
 }
-.contactWrapper form textarea::-webkit-resizer {
+form textarea::-webkit-resizer {
   border: 1.5px solid #17a2aa;
   background-color: #17a2aa;
   background-image: url("../../assets/img/angles-down-solid.png");
@@ -1347,7 +1348,7 @@ i.fa-grip-lines-vertical {
   position: absolute;
   right: 20%;
 }
-.homeMain + footer .contactComponent {
+.homeMain + footer .contactWrapper {
   display: none;
 }
 .homeMain + footer .bottom {
@@ -1357,6 +1358,35 @@ i.fa-grip-lines-vertical {
 
 .projectsMain + footer {
   padding: 0;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  max-height: 77%;
+  max-width: 55%;
+  padding: 30px;
+  background-color: rgba(23, 162, 170, 0.8);
+  border: 3px solid #00050f;
+}
+.modal .modalButton {
+  color: #c8c3c3;
+  padding-left: 75px;
+  right: initial;
+}
+.modal form {
+  margin-top: 0;
+}
+.modal form .inputBox {
+  margin-bottom: 10px;
+}
+.modal form label {
+  margin: 5px 0;
+}
+.modal form .contactFormButton {
+  margin-top: 13px;
 }
 
 .errorHeader {
