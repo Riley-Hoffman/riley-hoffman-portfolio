@@ -42,6 +42,7 @@ h3 {
 }
 
 a {
+  padding: 2px;
   transition: all 0.1s;
 }
 
@@ -60,3 +61,29 @@ footer {
   z-index: 20;
 }
 
+form, label, button {
+  font-family: 'Rubik', sans-serif;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=text], input[type=email], textarea {
+  border-radius: 5px;
+  background: $white;
+  color: $black;
+  padding: 10px;
+}
+
+input:focus-visible, textarea:focus-visible {
+  outline: 2px solid $teal;
+}
