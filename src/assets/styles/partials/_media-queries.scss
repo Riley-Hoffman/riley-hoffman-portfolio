@@ -78,7 +78,8 @@
       }
     }
   }
-  .contactWrapper, .modal {
+  .contactWrapper,
+  .modal {
     form {
       .inputBox {
         align-items: flex-start;
@@ -94,7 +95,7 @@
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 780px) {
-   .modal {
+  .modal {
     left: 0;
   }
   .line {
@@ -694,8 +695,7 @@
           }
         }
         .tealContactButton:hover {
-            border: 2px solid $white;
-            padding: 20px 3px;
+          padding: 20px 3px;
         }
       }
     }
@@ -751,11 +751,11 @@
   }
 
   button.modalClose:active {
-      transform: translateY(2px);
-      outline: none !important;
+    transform: translateY(2px);
+    outline: none !important;
   }
   button.modalClose:focus {
-      outline: 2px solid $teal;
+    outline: 2px solid $teal;
   }
 }
 
@@ -779,6 +779,12 @@
           }
         }
       }
+    }
+  }
+
+  .splash {
+    .tealContactButton:hover {
+      border: 2px solid $white;
     }
   }
 
@@ -855,6 +861,9 @@
   .splash {
     .relativeColumnBox {
       .smallFlexBox {
+        .tealContactButton:hover {
+          border: 2px solid $black;
+        }
         .contactIcons {
           a:active i {
             color: $black;
@@ -922,7 +931,8 @@
   html {
     background: $white;
   }
-  a:focus, button:focus {
+  a:focus,
+  button:focus {
     outline: 2px solid $black;
   }
 
@@ -1056,7 +1066,8 @@
   .splash .lightHeroElements {
     display: none;
   }
-  a:focus, button:focus {
+  a:focus,
+  button:focus {
     outline: 2px solid $white;
   }
   header {
