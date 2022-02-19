@@ -292,6 +292,7 @@ h3 {
 }
 
 a {
+  padding: 2px;
   transition: all 0.1s;
 }
 
@@ -308,6 +309,33 @@ section,
 footer {
   position: relative;
   z-index: 20;
+}
+
+form, label, button {
+  font-family: "Rubik", sans-serif;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+input, textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=text], input[type=email], textarea {
+  border-radius: 5px;
+  background: #e5e8ee;
+  color: #00050f;
+  padding: 10px;
+}
+
+input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #17a2aa;
 }
 
 .wrapper {
@@ -1085,6 +1113,7 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 }
 .imgBox a {
   color: #e5e8ee;
+  padding: 0;
 }
 .imgBox div.oval {
   background: #00f1ff;
@@ -1179,16 +1208,19 @@ footer p {
   color: #e5e8ee;
 }
 
-.contactWrapper h2,
-.contactWrapper a {
-  margin: 10px 0;
-}
-
 .contactWrapper {
   align-items: flex-start;
   flex-direction: column;
   margin: 10px 0 20px;
-  width: 50%;
+  width: 70%;
+}
+.contactWrapper .contactBox {
+  justify-content: space-between;
+  width: 100%;
+}
+.contactWrapper .contactBox .contactHeading {
+  font-size: 1.5rem;
+  line-height: 2.1;
 }
 .contactWrapper > a {
   padding: 5px;
@@ -1205,22 +1237,81 @@ footer p {
 }
 .contactWrapper .contactIcons a {
   padding: 0 5px;
+  margin: 0 23px 0 0;
+}
+.contactWrapper form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+.contactWrapper form .inputBox {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.contactWrapper form .inputBox input {
+  width: 37%;
+}
+.contactWrapper form .contactFormButton {
+  align-self: center;
+  background: linear-gradient(to bottom, #65a5a8 5%, #17a2aa 100%);
+  background-color: #65a5a8;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 10px 14px -7px #16595c;
+  color: #00050f;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #469ea3;
+  width: 50%;
+}
+.contactWrapper form .contactFormButton:hover {
+  background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
+  background-color: #17a3aa;
+}
+.contactWrapper form .contactFormButton:active {
+  position: relative;
+  top: 1px;
+}
+.contactWrapper form label {
+  margin: 9px 0;
+}
+.contactWrapper form textarea {
+  min-height: 200px !important;
+  position: relative;
+}
+.contactWrapper form textarea::-webkit-resizer {
+  border: 1.5px solid #17a2aa;
+  background-color: #17a2aa;
+  background-image: url("../../assets/img/angles-down-solid.png");
+  background-size: contain;
+  position: relative;
 }
 
 footer {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   padding: 30px 0 0;
 }
 footer .bottom {
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 10px 0 20px;
-  width: 50%;
+  width: 100%;
 }
 footer .bottom p {
-  padding: 0px 20px;
+  padding: 0px 20px 0 0;
 }
 footer .bottom a {
   align-items: center;
@@ -1230,7 +1321,6 @@ footer .bottom a {
   font-weight: 500;
   margin-right: 1px;
   justify-content: space-between;
-  width: 10.5%;
 }
 footer .bottom a i {
   font-size: 1rem;
@@ -1262,6 +1352,11 @@ i.fa-grip-lines-vertical {
 }
 .homeMain + footer .bottom {
   width: 100%;
+  justify-content: flex-end;
+}
+
+.projectsMain + footer {
+  padding: 0;
 }
 
 .errorHeader {
@@ -1363,11 +1458,18 @@ i.fa-grip-lines-vertical {
     flex-direction: column;
     justify-content: center;
   }
-  .aboutMain + footer .bottom a,
-.projectsMain + footer .bottom a,
-.skillsMain + footer .bottom a,
-.pageNotFoundMain + footer .bottom a {
-    margin: 0 20px;
+
+  .homeMain + footer .bottom a {
+    max-width: 12%;
+    padding-top: 2px;
+  }
+
+  .contactWrapper form .inputBox {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .contactWrapper form .inputBox input {
+    width: 100%;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -1530,13 +1632,13 @@ i.fa-grip-lines-vertical {
 .skillsMain + footer,
 .pageNotFoundMain + footer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .aboutMain + footer .bottom,
 .projectsMain + footer .bottom,
 .skillsMain + footer .bottom,
 .pageNotFoundMain + footer .bottom {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -1552,6 +1654,11 @@ i.fa-grip-lines-vertical {
 .skillsMain + footer .bottom a,
 .pageNotFoundMain + footer .bottom a {
     margin: 0;
+  }
+
+  .homeMain + footer .bottom p {
+    padding: 0;
+    margin: 0 20px;
   }
 }
 /* Medium phones and down */
@@ -1683,6 +1790,25 @@ i.fa-grip-lines-vertical {
   }
   footer .bottom {
     width: initial;
+  }
+
+  .aboutMain + footer .bottom p,
+.projectsMain + footer .bottom p,
+.skillsMain + footer .bottom p,
+.pageNotFoundMain + footer .bottom p {
+    padding: 0;
+  }
+  .aboutMain + footer .bottom p span,
+.projectsMain + footer .bottom p span,
+.skillsMain + footer .bottom p span,
+.pageNotFoundMain + footer .bottom p span {
+    display: none;
+  }
+  .aboutMain + footer .bottom p .webDeveloper,
+.projectsMain + footer .bottom p .webDeveloper,
+.skillsMain + footer .bottom p .webDeveloper,
+.pageNotFoundMain + footer .bottom p .webDeveloper {
+    display: block;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 1040px) and (max-height: 800px) {
@@ -1978,6 +2104,10 @@ footer .contactWrapper .fa-github:active {
     background: #e5e8ee;
   }
 
+  a:focus, button:focus {
+    outline: 2px solid #00050f;
+  }
+
   header .favLink:focus img {
     outline: 2px solid #00050f;
   }
@@ -2048,7 +2178,9 @@ footer p {
   footer .contactWrapper a:focus {
     outline: 2px solid #00050f;
   }
-  footer .bottom .resume i, footer .bottom .resume:active i, footer .bottom .resume:hover i {
+  footer .bottom .resume i,
+footer .bottom .resume:active i,
+footer .bottom .resume:hover i {
     color: #00050f;
   }
 
@@ -2081,6 +2213,10 @@ footer p {
 
   .splash .lightHeroElements {
     display: none;
+  }
+
+  a:focus, button:focus {
+    outline: 2px solid #e5e8ee;
   }
 
   header .relativeColumnBox .smallFlexBox a:focus {
@@ -2139,7 +2275,9 @@ footer p {
   footer .contactWrapper a:focus {
     outline: 2px solid #e5e8ee;
   }
-  footer .bottom .resume i, footer .bottom .resume:active i, footer .bottom .resume:hover i {
+  footer .bottom .resume i,
+footer .bottom .resume:active i,
+footer .bottom .resume:hover i {
     color: #e5e8ee;
   }
 

@@ -1,5 +1,5 @@
 <template>
-<main id="main" class="projectsMain">
+<main id="main" class="skillsMain">
   <!-- Skills Section Starts -->
         <section class="skills" id="skills">
         <div class="wrapper">

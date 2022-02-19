@@ -59,8 +59,24 @@
       align-items: flex-start;
       flex-direction: column;
       justify-content: center;
+    }
+  }
+  .homeMain + footer {
+    .bottom {
       a {
-        margin: 0 20px;
+        max-width: 12%;
+        padding-top: 2px;
+      }
+    }
+  }
+  .contactWrapper {
+    form {
+      .inputBox {
+        align-items: flex-start;
+        flex-direction: column;
+        input {
+          width: 100%;
+        }
       }
     }
   }
@@ -237,9 +253,9 @@
   .skillsMain + footer,
   .pageNotFoundMain + footer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     .bottom {
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
       justify-content: center;
       width: 100%;
@@ -248,6 +264,14 @@
       }
       a {
         margin: 0;
+      }
+    }
+  }
+  .homeMain + footer {
+    .bottom {
+      p {
+        padding: 0;
+        margin: 0 20px;
       }
     }
   }
@@ -398,6 +422,23 @@
     }
     .bottom {
       width: initial;
+    }
+  }
+
+  .aboutMain + footer,
+  .projectsMain + footer,
+  .skillsMain + footer,
+  .pageNotFoundMain + footer {
+    .bottom {
+      p {
+        padding: 0;
+        span {
+          display: none;
+        }
+        .webDeveloper {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -857,6 +898,9 @@
   html {
     background: $white;
   }
+  a:focus, button:focus {
+    outline: 2px solid $black;
+  }
 
   header {
     .favLink:focus {
@@ -942,7 +986,9 @@
       }
     }
     .bottom {
-      .resume, .resume:active, .resume:hover {
+      .resume,
+      .resume:active,
+      .resume:hover {
         i {
           color: $black;
         }
@@ -985,6 +1031,9 @@
   }
   .splash .lightHeroElements {
     display: none;
+  }
+  a:focus, button:focus {
+    outline: 2px solid $white;
   }
   header {
     .relativeColumnBox {
@@ -1057,7 +1106,9 @@
       }
     }
     .bottom {
-      .resume, .resume:active, .resume:hover {
+      .resume,
+      .resume:active,
+      .resume:hover {
         i {
           color: $white;
         }
