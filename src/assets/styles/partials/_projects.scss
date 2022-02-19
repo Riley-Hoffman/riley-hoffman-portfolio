@@ -70,6 +70,7 @@
   text-align: center; // for alt text in case images don't load.
   a {
     color: $white; // for alt
+    padding: 0;
   }
   div.oval {
     background: #00f1ff;

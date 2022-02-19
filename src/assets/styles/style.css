@@ -1113,6 +1113,7 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 }
 .imgBox a {
   color: #e5e8ee;
+  padding: 0;
 }
 .imgBox div.oval {
   background: #00f1ff;
