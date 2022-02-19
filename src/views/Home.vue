@@ -20,6 +20,9 @@
             ><span class="target">Contact<span class="me"> Me</span> </span
             ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
           ></a>
+          <div class="modal">
+          <FormComponent />
+          </div>
           <div class="contactWrapper">
             <SocialComponent />
           </div>
@@ -43,9 +46,11 @@
 </template>
 <script>
 import SocialComponent from '@/components/SocialComponent.vue'
+import FormComponent from '@/components/FormComponent.vue'
 export default {
   components: {
-    SocialComponent
+    SocialComponent,
+    FormComponent
   }
 }
 </script>
