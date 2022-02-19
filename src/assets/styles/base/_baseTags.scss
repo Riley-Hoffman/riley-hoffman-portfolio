@@ -65,6 +65,10 @@ form, label, button {
   font-family: 'Rubik', sans-serif;
 }
 
+button:active { 
+  outline: none;
+}
+
 label {
   font-size: 1.1rem;
 }

@@ -315,6 +315,10 @@ form, label, button {
   font-family: "Rubik", sans-serif;
 }
 
+button:active {
+  outline: none;
+}
+
 label {
   font-size: 1.1rem;
 }
@@ -841,10 +845,6 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   text-align: center;
   width: 35%;
 }
-.relativeColumnBox .smallFlexBox .headerLink i {
-  line-height: 27px;
-  margin-left: 10px;
-}
 
 @-webkit-keyframes zooms {
   from {
@@ -1280,6 +1280,7 @@ form .contactFormButton:hover {
   background-color: #17a3aa;
 }
 form .contactFormButton:active {
+  outline: none;
   position: relative;
   top: 1px;
 }
@@ -1361,15 +1362,19 @@ i.fa-grip-lines-vertical {
 }
 
 .modal {
-  display: none;
   position: absolute;
-  top: 25%;
-  left: 25%;
-  max-height: 77%;
-  max-width: 55%;
+  top: -6%;
+  left: 20%;
+  max-height: 80%;
+  max-width: 60%;
   padding: 30px;
-  background-color: rgba(23, 162, 170, 0.8);
+  background-color: rgba(178, 212, 214, 0.918);
   border: 3px solid #00050f;
+}
+.modal .modalClose {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
 }
 .modal .modalButton {
   color: #c8c3c3;
@@ -1379,6 +1384,9 @@ i.fa-grip-lines-vertical {
 .modal form {
   margin-top: 0;
 }
+.modal form .modalClose {
+  background-color: #e5e8ee;
+}
 .modal form .inputBox {
   margin-bottom: 10px;
 }
@@ -1386,7 +1394,7 @@ i.fa-grip-lines-vertical {
   margin: 5px 0;
 }
 .modal form .contactFormButton {
-  margin-top: 13px;
+  margin-top: 18px;
 }
 
 .errorHeader {
@@ -1452,7 +1460,7 @@ i.fa-grip-lines-vertical {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
-  .smallFlexBox a.tealContactButton {
+  .smallFlexBox button.tealContactButton {
     width: 60%;
   }
 
@@ -1494,16 +1502,28 @@ i.fa-grip-lines-vertical {
     padding-top: 2px;
   }
 
-  .contactWrapper form .inputBox {
+  .modal {
+    max-height: 100%;
+    max-width: 90%;
+  }
+  .modal form .contactFormButton {
+    margin-top: 8px;
+  }
+
+  .contactWrapper form .inputBox, .modal form .inputBox {
     align-items: flex-start;
     flex-direction: column;
   }
-  .contactWrapper form .inputBox input {
+  .contactWrapper form .inputBox input, .modal form .inputBox input {
     width: 100%;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 780px) {
+  .modal {
+    left: 0;
+  }
+
   .line {
     margin: -9px 0 0;
   }
@@ -1760,11 +1780,11 @@ i.fa-grip-lines-vertical {
     letter-spacing: 1.5px;
   }
 
-  .smallFlexBox a.tealContactButton {
+  .smallFlexBox button.tealContactButton {
     font-size: 0.8rem;
     padding: 15px 0;
   }
-  .smallFlexBox a.tealContactButton i.fa-long-arrow-alt-right {
+  .smallFlexBox button.tealContactButton i.fa-long-arrow-alt-right {
     line-height: 25px;
   }
 
@@ -1879,15 +1899,15 @@ i.fa-grip-lines-vertical {
   .smallFlexBox p.animate__backInLeft {
     font-size: 1.4rem;
   }
-  .smallFlexBox a.tealContactButton {
+  .smallFlexBox button.tealContactButton {
     position: absolute;
     right: 0;
     width: 25%;
   }
-  .smallFlexBox a.tealContactButton .me {
+  .smallFlexBox button.tealContactButton .me {
     display: none;
   }
-  .smallFlexBox a.tealContactButton .fa-long-arrow-alt-right {
+  .smallFlexBox button.tealContactButton .fa-long-arrow-alt-right {
     display: none;
   }
 
@@ -2034,6 +2054,15 @@ footer .contactWrapper .fa-github:hover {
   }
   footer .bottom .resume:active i {
     transform: translateY(2px);
+  }
+
+  button.modalClose:active {
+    transform: translateY(2px);
+    outline: none !important;
+  }
+
+  button.modalClose:focus {
+    outline: 2px solid #17a2aa;
   }
 }
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
