@@ -311,7 +311,9 @@ footer {
   z-index: 20;
 }
 
-form, label, button {
+form,
+label,
+button {
   font-family: "Rubik", sans-serif;
 }
 
@@ -323,7 +325,8 @@ label {
   font-size: 1.1rem;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: "Roboto", sans-serif;
 }
 
@@ -331,14 +334,17 @@ textarea {
   resize: vertical;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
   border-radius: 5px;
   background: #e5e8ee;
   color: #00050f;
   padding: 10px;
 }
 
-input:focus-visible, textarea:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
   outline: 2px solid #17a2aa;
 }
 
@@ -1516,11 +1522,13 @@ i.fa-grip-lines-vertical {
     margin-top: 8px;
   }
 
-  .contactWrapper form .inputBox, .modal form .inputBox {
+  .contactWrapper form .inputBox,
+.modal form .inputBox {
     align-items: flex-start;
     flex-direction: column;
   }
-  .contactWrapper form .inputBox input, .modal form .inputBox input {
+  .contactWrapper form .inputBox input,
+.modal form .inputBox input {
     width: 100%;
   }
 }
@@ -2025,7 +2033,6 @@ i.fa-grip-lines-vertical {
     outline: none;
   }
   .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
-    border: 2px solid #e5e8ee;
     padding: 20px 3px;
   }
 
@@ -2080,6 +2087,10 @@ footer .contactWrapper .fa-github:hover {
     color: #e5e8ee;
   }
 
+  .splash .tealContactButton:hover {
+    border: 2px solid #e5e8ee;
+  }
+
   .imgBox > a:hover > img {
     border-top: 14px ridge #e5e8ee;
   }
@@ -2121,6 +2132,9 @@ footer .contactWrapper .fa-github:active {
     color: #00050f;
   }
 
+  .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
+    border: 2px solid #00050f;
+  }
   .splash .relativeColumnBox .smallFlexBox .contactIcons a:active i {
     color: #00050f;
   }
@@ -2173,7 +2187,8 @@ footer .contactWrapper .fa-github:active {
     background: #e5e8ee;
   }
 
-  a:focus, button:focus {
+  a:focus,
+button:focus {
     outline: 2px solid #00050f;
   }
 
@@ -2284,7 +2299,8 @@ footer .bottom .resume:hover i {
     display: none;
   }
 
-  a:focus, button:focus {
+  a:focus,
+button:focus {
     outline: 2px solid #e5e8ee;
   }
 

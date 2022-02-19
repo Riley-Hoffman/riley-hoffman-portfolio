@@ -38,66 +38,66 @@ footer p {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+  .inputBox {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
     width: 100%;
-    .inputBox {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      width: 100%;
-      input {
-        width: 37%;
-      }
-    }
-    .contactFormButton {
-      align-self: center;
-      background: linear-gradient(to bottom, #65a5a8 5%, #17a2aa 100%);
-      background-color: #65a5a8;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0px 10px 14px -7px #16595c;
-      color: #00050f;
-      cursor: pointer;
-      display: inline-block;
-      font-family: "Poppins", sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 20px;
-      padding: 13px 32px;
-      text-decoration: none;
-      text-shadow: 0px 1px 0px #469ea3;
-      width: 50%;
-    }
-    .contactFormButton:hover {
-      background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
-      background-color: #17a3aa;
-    }
-    .contactFormButton:active {
-      outline: none;
-      position: relative;
-      top: 1px;
-    }
-
-    label {
-      margin: 9px 0;
-    }
-
-    textarea {
-      min-height: 200px !important;
-      position: relative;
-    }
-
-    textarea::-webkit-resizer {
-      border: 1.5px solid $teal;
-      background-color: $teal;
-      background-image: url('../../assets/img/angles-down-solid.png');
-      background-size: contain;
-      position: relative;
+    input {
+      width: 37%;
     }
   }
+  .contactFormButton {
+    align-self: center;
+    background: linear-gradient(to bottom, #65a5a8 5%, #17a2aa 100%);
+    background-color: #65a5a8;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 10px 14px -7px #16595c;
+    color: #00050f;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #469ea3;
+    width: 50%;
+  }
+  .contactFormButton:hover {
+    background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
+    background-color: #17a3aa;
+  }
+  .contactFormButton:active {
+    outline: none;
+    position: relative;
+    top: 1px;
+  }
+
+  label {
+    margin: 9px 0;
+  }
+
+  textarea {
+    min-height: 200px !important;
+    position: relative;
+  }
+
+  textarea::-webkit-resizer {
+    border: 1.5px solid $teal;
+    background-color: $teal;
+    background-image: url("../../assets/img/angles-down-solid.png");
+    background-size: contain;
+    position: relative;
+  }
+}
 
 footer {
   align-items: center;
@@ -161,37 +161,37 @@ i.fa-grip-lines-vertical {
 }
 
 .modal {
-    position: absolute;
-    top: -6%;
-    left: 20%;
-    max-height: 80%;
-    max-width: 60%;
-    padding: 30px;
-    background-color: rgba(178, 212, 214, 0.918);
-    border: 3px solid $black;
-     .modalClose {
-        position: relative;
-        bottom: 15px;
-        right: 15px;
+  position: absolute;
+  top: -6%;
+  left: 20%;
+  max-height: 80%;
+  max-width: 60%;
+  padding: 30px;
+  background-color: rgba(178, 212, 214, 0.918);
+  border: 3px solid $black;
+  .modalClose {
+    position: relative;
+    bottom: 15px;
+    right: 15px;
+  }
+  .modalButton {
+    color: #c8c3c3;
+    padding-left: 75px;
+    right: initial;
+  }
+  form {
+    margin-top: 0;
+    .modalClose {
+      background-color: $white;
     }
-    .modalButton {
-        color: #c8c3c3;
-        padding-left: 75px;
-        right: initial;
+    .inputBox {
+      margin-bottom: 10px;
     }
-    form {
-      margin-top: 0;
-      .modalClose {
-        background-color: $white;
-      }
-      .inputBox {
-        margin-bottom: 10px;
-      }
-      label {
-        margin: 5px 0;
-      }
-      .contactFormButton {
-        margin-top: 18px;
-      }
+    label {
+      margin: 5px 0;
     }
+    .contactFormButton {
+      margin-top: 18px;
+    }
+  }
 }
