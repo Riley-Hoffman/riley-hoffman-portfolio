@@ -317,6 +317,10 @@ button {
   font-family: "Rubik", sans-serif;
 }
 
+form label {
+  color: #00050f;
+}
+
 button:active {
   outline: none;
 }
@@ -1317,6 +1321,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding: 30px 0 0;
+  z-index: 1;
 }
 footer .bottom {
   align-items: center;
