@@ -1,5 +1,5 @@
 <template>
-<form
+  <form
         action="https://formspree.io/f/xwkyonza"
         method="POST"
       >

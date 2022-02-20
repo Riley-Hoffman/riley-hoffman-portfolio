@@ -1409,6 +1409,12 @@ i.fa-grip-lines-vertical {
   margin-top: 18px;
 }
 
+.formBackground {
+  padding: 30px;
+  background-color: rgba(178, 212, 214, 0.918);
+  border: 3px solid #00050f;
+}
+
 .errorHeader {
   height: 25vh;
   padding: 115px 0;
