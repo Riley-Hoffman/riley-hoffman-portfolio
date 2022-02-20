@@ -1378,6 +1378,7 @@ i.fa-grip-lines-vertical {
   top: -6%;
   left: 20%;
   max-height: 80%;
+  min-height: 445px;
   max-width: 60%;
   padding: 30px;
   background-color: rgba(178, 212, 214, 0.918);
