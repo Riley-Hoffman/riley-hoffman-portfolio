@@ -40,8 +40,10 @@ footer p {
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  width: 100%;
+  .fieldsetBox {
+    flex-direction: column;
+    width: 100%;
+  }
   .inputBox {
     align-items: center;
     display: flex;

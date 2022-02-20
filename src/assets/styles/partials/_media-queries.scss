@@ -49,7 +49,7 @@
   }
 }
 
-// Footer Control 1
+// Footer and Form Control
 @media (max-width: 1020px) {
   .aboutMain + footer,
   .projectsMain + footer,
@@ -72,9 +72,11 @@
   .modal {
     max-height: 100%;
     max-width: 90%;
+    min-height: 565px;
     form {
       .contactFormButton {
         margin-top: 8px;
+        width: 56%;
       }
     }
   }
@@ -259,7 +261,7 @@
   }
 }
 
-// Footer Control 2
+// Footer Control
 @media (max-width: 680px) {
   .aboutMain + footer,
   .projectsMain + footer,
