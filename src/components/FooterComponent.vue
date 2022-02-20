@@ -9,7 +9,9 @@
         >
         <SocialComponent />
       </div>
-      <FormComponent />
+      <div class="formBackground">
+        <FormComponent />
+      </div>
     </div>
     <!-- contactWrapper Wrapper Ends -->
     <div class="wrapper flexBox bottom">
