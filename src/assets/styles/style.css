@@ -1555,7 +1555,7 @@ i.fa-grip-lines-vertical {
 
   .modal {
     max-height: 100%;
-    max-width: 90%;
+    max-width: 100%;
     min-height: 565px;
   }
   .modal form .contactFormButton {
@@ -1563,6 +1563,10 @@ i.fa-grip-lines-vertical {
     width: 56%;
   }
 
+  .contactWrapper,
+.modal {
+    width: 100%;
+  }
   .contactWrapper form .inputBox,
 .modal form .inputBox {
     align-items: flex-start;
