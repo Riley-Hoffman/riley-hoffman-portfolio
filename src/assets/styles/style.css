@@ -862,6 +862,46 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
   padding: 22px 5px;
 }
 
+.modal {
+  position: absolute;
+  top: -6%;
+  left: 20%;
+  max-height: 80%;
+  min-height: 445px;
+  max-width: 60%;
+  padding: 30px;
+  background-color: rgba(178, 212, 214, 0.918);
+  border: 3px solid #00050f;
+}
+.modal .modalClose {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+}
+.modal .modalButton {
+  color: #c8c3c3;
+  padding-left: 75px;
+  right: initial;
+}
+.modal form {
+  margin-top: 0;
+}
+.modal form .modalClose {
+  background-color: #e5e8ee;
+}
+.modal form .inputBox {
+  margin-bottom: 10px;
+}
+.modal form label {
+  margin: 5px 0;
+}
+.modal form .contactFormButton {
+  margin-top: 18px;
+}
+.modal form textarea {
+  resize: none;
+}
+
 @-webkit-keyframes zooms {
   from {
     transform: translateZ(0px);
@@ -1376,43 +1416,6 @@ i.fa-grip-lines-vertical {
 
 .projectsMain + footer {
   padding: 0;
-}
-
-.modal {
-  position: absolute;
-  top: -6%;
-  left: 20%;
-  max-height: 80%;
-  min-height: 445px;
-  max-width: 60%;
-  padding: 30px;
-  background-color: rgba(178, 212, 214, 0.918);
-  border: 3px solid #00050f;
-}
-.modal .modalClose {
-  position: relative;
-  bottom: 15px;
-  right: 15px;
-}
-.modal .modalButton {
-  color: #c8c3c3;
-  padding-left: 75px;
-  right: initial;
-}
-.modal form {
-  margin-top: 0;
-}
-.modal form .modalClose {
-  background-color: #e5e8ee;
-}
-.modal form .inputBox {
-  margin-bottom: 10px;
-}
-.modal form label {
-  margin: 5px 0;
-}
-.modal form .contactFormButton {
-  margin-top: 18px;
 }
 
 .formBackground {
