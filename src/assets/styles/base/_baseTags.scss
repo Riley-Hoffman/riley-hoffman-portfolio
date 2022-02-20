@@ -67,6 +67,12 @@ button {
   font-family: "Rubik", sans-serif;
 }
 
+form {
+  label {
+    color: $black;
+  }
+}
+
 button:active {
   outline: none;
 }
