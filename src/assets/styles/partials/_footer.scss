@@ -161,43 +161,6 @@ i.fa-grip-lines-vertical {
   padding: 0;
 }
 
-.modal {
-  position: absolute;
-  top: -6%;
-  left: 20%;
-  max-height: 80%;
-  min-height: 445px;
-  max-width: 60%;
-  padding: 30px;
-  background-color: rgba(178, 212, 214, 0.918);
-  border: 3px solid $black;
-  .modalClose {
-    position: relative;
-    bottom: 15px;
-    right: 15px;
-  }
-  .modalButton {
-    color: #c8c3c3;
-    padding-left: 75px;
-    right: initial;
-  }
-  form {
-    margin-top: 0;
-    .modalClose {
-      background-color: $white;
-    }
-    .inputBox {
-      margin-bottom: 10px;
-    }
-    label {
-      margin: 5px 0;
-    }
-    .contactFormButton {
-      margin-top: 18px;
-    }
-  }
-}
-
 .formBackground {
   background-color: rgba(178, 212, 214, 0.918);
   border: 3px solid #00050f;
