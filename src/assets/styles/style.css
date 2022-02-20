@@ -1382,7 +1382,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding: 30px 0 0;
-  z-index: 1;
 }
 footer .bottom {
   align-items: center;
