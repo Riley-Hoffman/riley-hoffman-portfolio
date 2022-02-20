@@ -4,9 +4,6 @@
     <div class="wrapper flexBox contactWrapper contactComponent">
       <div class="flexBox contactBox">
         <h2 class="contactHeading">Contact</h2>
-        <a href="mailto:riley.n.hoffman@gmail.com" style="display: none"
-          >riley.n.hoffman@gmail.com</a
-        >
         <SocialComponent />
       </div>
       <div class="formBackground">
