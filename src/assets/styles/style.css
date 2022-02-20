@@ -1555,7 +1555,7 @@ i.fa-grip-lines-vertical {
 
   .modal {
     max-height: 100%;
-    max-width: 90%;
+    max-width: 100%;
     min-height: 565px;
   }
   .modal form .contactFormButton {
@@ -1563,6 +1563,10 @@ i.fa-grip-lines-vertical {
     width: 56%;
   }
 
+  .contactWrapper,
+.modal {
+    width: 100%;
+  }
   .contactWrapper form .inputBox,
 .modal form .inputBox {
     align-items: flex-start;
@@ -1882,13 +1886,20 @@ i.fa-grip-lines-vertical {
     font-size: 1.5rem;
   }
 
+  .formBackground {
+    padding: 30px 0px 30px 11px;
+  }
+  .formBackground form {
+    width: 95%;
+  }
+
   footer {
     flex-direction: column;
   }
   footer .contactWrapper {
     align-items: flex-start;
     margin: 10px 0;
-    width: initial;
+    width: 320px;
   }
   footer .contactWrapper > a {
     font-size: 0.8rem;
