@@ -7,7 +7,7 @@
       <div class="wrapper relativeColumnBox">
         <div class="smallFlexBox">
           <div class="flexBox iconContainer">
-            <i class="fas fa-water" aria-hidden="true"></i>
+            <font-awesome-icon icon="water" class="fas fa-water" aria-hidden="true" />
           </div>
           <h1>Riley Hoffman</h1>
           <p class="animate__animated animate__backInLeft">
@@ -21,7 +21,7 @@
             ></button>
           <div class="modal" v-if="!showModal">
               <button class="modalClose" @click="toggleModal">
-              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+              <font-awesome-icon icon="xmark" class="fa-solid fa-xmark" aria-hidden="true" />
               <span class="sr-only">Close contact form</span>
               </button>
               <FormComponent />

@@ -7,7 +7,7 @@
                 <div class="flexBox about1">
                     <div>
                         <div class="flexBox iconContainer">
-                            <i class="fas fa-water" aria-hidden="true"></i>
+                            <font-awesome-icon icon="water" class="fas fa-water" aria-hidden="true" />
                         </div>
                         <h1 class="target">About</h1>
                     </div>

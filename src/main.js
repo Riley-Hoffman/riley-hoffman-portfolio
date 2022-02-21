@@ -3,12 +3,12 @@ import App from './App.vue'
 import router from './router'
 import './assets/styles/style.css'
 import wb from './registerServiceWorker'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faWater, faXmark, faFileArrowDown, faLeftRight, faUniversalAccess, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faFileArrowDown, faGithub, faLinkedin)
+library.add(faWater, faXmark, faFileArrowDown, faLeftRight, faUniversalAccess, faArrowRightLong, faGithub, faLinkedin)
 
 const app = createApp(App)
 
