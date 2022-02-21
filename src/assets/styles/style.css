@@ -1411,7 +1411,7 @@ footer .bottom a {
   margin-right: 1px;
   justify-content: space-between;
 }
-footer .bottom a i {
+footer .bottom a svg {
   font-size: 1rem;
   padding-left: 8px;
 }
@@ -2159,10 +2159,10 @@ i.fa-grip-lines-vertical {
   .splash .relativeColumnBox .smallFlexBox a:active {
     outline: none;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:hover i {
+  .splash .relativeColumnBox .smallFlexBox .contactIcons a:hover svg {
     color: #17a2aa;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active i {
+  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active svg {
     color: #e5e8ee;
   }
   .splash .relativeColumnBox .smallFlexBox .contactIcons a:active {
@@ -2205,7 +2205,7 @@ i.fa-grip-lines-vertical {
 footer .contactWrapper .fa-github:hover {
     color: #17a2aa;
   }
-  footer .bottom .resume:active i {
+  footer .bottom .resume:active svg {
     transform: translateY(2px);
   }
 
@@ -2271,7 +2271,7 @@ footer .contactWrapper .fa-github:active {
   .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
     border: 2px solid #00050f;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active i {
+  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active svg {
     color: #00050f;
   }
 
@@ -2343,6 +2343,7 @@ button:focus {
     top: 0;
     height: 100vh;
     width: 100%;
+    z-index: -1;
   }
   .splash .contactWrapper a {
     color: #00050f;
@@ -2398,9 +2399,9 @@ footer p {
   footer .contactWrapper a:focus {
     outline: 2px solid #00050f;
   }
-  footer .bottom .resume i,
-footer .bottom .resume:active i,
-footer .bottom .resume:hover i {
+  footer .bottom .resume svg,
+footer .bottom .resume:active svg,
+footer .bottom .resume:hover svg {
     color: #00050f;
   }
 
@@ -2496,9 +2497,9 @@ footer p {
   footer .contactWrapper a:focus {
     outline: 2px solid #e5e8ee;
   }
-  footer .bottom .resume i,
-footer .bottom .resume:active i,
-footer .bottom .resume:hover i {
+  footer .bottom .resume svg,
+footer .bottom .resume:active svg,
+footer .bottom .resume:hover svg {
     color: #e5e8ee;
   }
 
@@ -2558,7 +2559,7 @@ header .navBox nav ul.mainNavList a:focus {
 footer .bottom a:active {
   color: #17a2aa;
 }
-footer .bottom a:active i {
+footer .bottom a:active svg {
   transform: none;
 }
 

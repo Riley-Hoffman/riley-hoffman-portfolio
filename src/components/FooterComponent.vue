@@ -15,7 +15,7 @@
       <p>Riley Hoffman <span aria-hidden="true">| </span><span class="webDeveloper">Web Developer</span></p>
       <a href="./riley-hoffman-resume.pdf" class="resume">
       Resume
-      <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+      <font-awesome-icon icon="file-arrow-down" class="fa-solid fa-file-arrow-down" aria-hidden="true" />
       </a>
     </div>
     <!-- Bottom Wrapper Ends -->
