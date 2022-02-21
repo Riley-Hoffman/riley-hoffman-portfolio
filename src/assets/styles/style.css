@@ -916,8 +916,11 @@ header .navBox nav .contactIcons .headerSocialBox .headerSocialList li a:focus {
 .modal form .inputBox {
   margin-bottom: 10px;
 }
+.modal form input[name=name] {
+  margin-right: 15px;
+}
 .modal form label {
-  margin: 5px 0;
+  margin: 5px 3px 5px 0px;
 }
 .modal form .contactFormButton {
   margin-top: 18px;
@@ -1580,6 +1583,10 @@ i.fa-grip-lines-vertical {
   .contactWrapper form .inputBox input,
 .modal form .inputBox input {
     width: 100%;
+  }
+  .contactWrapper form .inputBox input[name=name],
+.modal form .inputBox input[name=name] {
+    margin-right: 0;
   }
   .contactWrapper form .contactFormButton,
 .modal form .contactFormButton {

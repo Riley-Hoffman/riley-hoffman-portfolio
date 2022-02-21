@@ -7,10 +7,10 @@
         <legend class="sr-only">Send me an email.</legend>
         <div class="flexBox fieldsetBox">
           <div class="flexBox inputBox">
-            <label for="name">Name</label>
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your name.." />
 
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -18,7 +18,7 @@
               placeholder="Your email.."
             />
           </div>
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <textarea
               id="message"
               name="message"
