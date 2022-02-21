@@ -90,7 +90,7 @@
         input {
           width: 100%;
         }
-        input[name=name] {
+        input[name="name"] {
           margin-right: 0;
         }
       }
@@ -774,10 +774,10 @@
           outline: none;
         }
         .contactIcons {
-          a:hover i {
+          a:hover svg {
             color: $teal;
           }
-          a:active i {
+          a:active svg {
             color: $white;
           }
           a:active {
@@ -833,7 +833,7 @@
     }
     .bottom {
       .resume:active {
-        i {
+        svg {
           transform: translateY(2px);
         }
       }
@@ -955,7 +955,7 @@
           border: 2px solid $black;
         }
         .contactIcons {
-          a:active i {
+          a:active svg {
             color: $black;
           }
         }
@@ -1046,6 +1046,7 @@
       top: 0;
       height: 100vh;
       width: 100%;
+      z-index: -1;
     }
     .contactWrapper a {
       color: $black;
@@ -1113,7 +1114,7 @@
       .resume,
       .resume:active,
       .resume:hover {
-        i {
+        svg {
           color: $black;
         }
       }
@@ -1234,7 +1235,7 @@
       .resume,
       .resume:active,
       .resume:hover {
-        i {
+        svg {
           color: $white;
         }
       }
@@ -1309,7 +1310,7 @@ footer {
   .bottom {
     a:active {
       color: $teal;
-      i {
+      svg {
         transform: none;
       }
     }
