@@ -28,26 +28,6 @@
     padding: 20px 12px 9px 20px;
   }
 
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          right: -3.5vw;
-          .headerSocialBox {
-            min-height: 40vh;
-            padding: 10px 13px;
-            .headerSocialList {
-              li {
-                a {
-                  font-size: 2rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .pageNotFoundMain + footer {
     margin-top: 50px;
   }
@@ -393,9 +373,6 @@
     button.tealContactButton {
       font-size: 0.8rem;
       padding: 15px 0;
-      i.fa-long-arrow-alt-right {
-        line-height: 25px;
-      }
     }
   }
 
@@ -522,29 +499,6 @@
   }
 }
 
-// Tablet landscape
-@media screen and (orientation: landscape) and (max-width: 1040px) and (max-height: 800px) {
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          .headerSocialBox {
-            min-height: 40vh;
-            padding: 10px 13px;
-            .headerSocialList {
-              li {
-                a {
-                  font-size: 2rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 // Small tablet landscape (800x600)
 @media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
   .modal {
@@ -563,28 +517,6 @@
   .splash {
     .smallFlexBox {
       margin-top: 50px;
-    }
-  }
-}
-
-// If using window with reduced height don't collapse header social icons background
-@media (max-height: 500px) {
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          .headerSocialBox {
-            min-height: 40vh;
-            .headerSocialList {
-              li {
-                a {
-                  font-size: 1.3rem;
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -729,34 +661,6 @@
             width: 0;
           }
         }
-        .contactIcons {
-          .headerSocialBox {
-            &:hover {
-              background-color: transparent;
-              box-shadow: 0 0.15em 1.25em -0.5em rgba(184, 54, 54, 0.35);
-              border: 2px solid #1443487a;
-              padding: 8px;
-              transition: background-color 0.2s;
-              .headerSocialList {
-                li {
-                  a:hover {
-                    color: $teal;
-                  }
-                  a:hover::after {
-                    width: 0;
-                  }
-                }
-              }
-            }
-            .headerSocialList {
-              li {
-                a:focus {
-                  color: $teal;
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
@@ -852,26 +756,6 @@
 // Dark specific hover styles
 
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          .headerSocialBox {
-            &:hover {
-              .headerSocialList {
-                li {
-                  a:active {
-                    color: $white;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   .splash {
     .tealContactButton:hover {
       border: 2px solid $white;
@@ -928,26 +812,6 @@
 // Light specific hover styles
 
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
-  header {
-    .navBox {
-      nav {
-        .contactIcons {
-          .headerSocialBox {
-            &:hover {
-              .headerSocialList {
-                li {
-                  a:active {
-                    color: $black;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   .splash {
     .relativeColumnBox {
       .smallFlexBox {
@@ -1138,7 +1002,7 @@
   .errorNav {
     ul {
       li {
-        a {
+        a, svg {
           color: $black;
         }
         a:active {
@@ -1253,7 +1117,7 @@
   .errorNav {
     ul {
       li {
-        a {
+        a, svg {
           color: $white;
         }
         a:active {

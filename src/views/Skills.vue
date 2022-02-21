@@ -32,7 +32,7 @@
                     </li>
                     <li v-on:mouseover="checkForSafari">
                         <div class="skillsIconBox">
-                            <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+                            <font-awesome-icon icon="universal-access" class="fa-solid fa-universal-access" aria-hidden="true" />
                         </div>
                         <p>Accessibility</p>
                     </li>
@@ -44,7 +44,7 @@
                     </li>
                     <li v-on:mouseover="checkForSafari">
                         <div class="skillsIconBox">
-                            <i class="fa-solid fa-left-right" aria-hidden="true"></i>
+                            <font-awesome-icon icon="left-right" class="fa-solid fa-left-right" aria-hidden="true" />
                         </div>
                         <p>Rest API</p>
                     </li>

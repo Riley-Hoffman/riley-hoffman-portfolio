@@ -16,8 +16,7 @@
                         <ul>
                             <li>
                                 <router-link class="homeLink404" to="/" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</router-link>
-                                <i class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft"
-                                    aria-hidden="true"></i>
+                                <font-awesome-icon icon="arrow-right-long" class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft" aria-hidden="true" />
                             </li>
                         </ul>
                     </nav>
