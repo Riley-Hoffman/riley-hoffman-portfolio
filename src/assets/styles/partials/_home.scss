@@ -117,8 +117,12 @@
     .inputBox {
       margin-bottom: 10px;
     }
+    input[name=name] {
+      margin-right: 15px;
+    }
+
     label {
-      margin: 5px 0;
+      margin: 5px 3px 5px 0px;
     }
     .contactFormButton {
       margin-top: 18px;

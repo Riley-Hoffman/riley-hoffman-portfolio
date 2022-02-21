@@ -90,6 +90,9 @@
         input {
           width: 100%;
         }
+        input[name=name] {
+          margin-right: 0;
+        }
       }
       .contactFormButton {
         margin-top: 2px;
