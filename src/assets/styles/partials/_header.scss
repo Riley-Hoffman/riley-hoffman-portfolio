@@ -4,7 +4,7 @@ header {
   position: absolute;
   height: 10vh;
   width: 100%;
-  z-index: 9999;
+  z-index: 999;
 
   .skip-link {
     background: $teal;
@@ -73,7 +73,7 @@ header {
       }
 
       ul.mainNavList {
-        z-index: 9999;
+        z-index: 999;
         a::after {
           background-color: $teal;
           content: "";
