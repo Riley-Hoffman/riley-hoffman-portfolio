@@ -24,6 +24,10 @@
     }
   }
 
+  .modal {
+    padding: 20px 12px 9px 20px;
+  }
+
   header {
     .navBox {
       nav {
@@ -69,20 +73,16 @@
       }
     }
   }
-  .modal {
-    max-height: 100%;
-    max-width: 100%;
-    min-height: 565px;
-    form {
-      .contactFormButton {
-        margin-top: 8px;
-        width: 56%;
-      }
-    }
-  }
+
   .contactWrapper,
   .modal {
+    max-height: 100%;
+    padding-top: 2px;
     width: 100%;
+    .modalClose {
+      bottom: 0;
+      top: 5px;
+    }
     form {
       .inputBox {
         align-items: flex-start;
@@ -90,6 +90,9 @@
         input {
           width: 100%;
         }
+      }
+      .contactFormButton {
+        margin-top: 2px;
       }
     }
   }
@@ -100,6 +103,16 @@
 @media (max-width: 780px) {
   .modal {
     left: 0;
+  }
+  .modal {
+    max-width: 100%;
+    min-height: 565px;
+    form {
+      .contactFormButton {
+        margin-top: 8px;
+        width: 56%;
+      }
+    }
   }
   .line {
     margin: -9px 0 0;
@@ -291,6 +304,10 @@
       }
     }
   }
+
+  .modal {
+    bottom: 10%;
+  }
 }
 
 /* Medium phones and down */
@@ -351,6 +368,9 @@
   header .navBox {
     margin-top: 20px;
   }
+  .modal {
+    bottom: 10%;
+  }
 }
 
 /* Small phones */
@@ -391,6 +411,12 @@
       a {
         margin: 0 20px;
       }
+    }
+  }
+
+  .formBackground {
+    .fieldsetBox {
+      padding: 0 11px;
     }
   }
 }
@@ -464,12 +490,27 @@
     }
   }
   .modal {
+    top: 0;
     form {
       .fieldsetBox {
-        width: 70%;
+        width: 87%;
+        padding: 0;
+        margin: 0 0 0 10px;
       }
       .contactFormButton {
         width: 67%;
+      }
+    }
+  }
+}
+
+// Tiny Phone
+@media (max-width: 320px) and (max-height: 480px) {
+  .modal {
+    form {
+      .fieldsetBox {
+        padding-top: 10px;
+        width: 70%;
       }
     }
   }
@@ -498,9 +539,20 @@
   }
 }
 
+// Small tablet landscape (800x600)
+@media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
+  .modal {
+    bottom: 0;
+    min-height: 550px;
+  }
+}
+
 @media (max-width: 780px) and (max-height: 575px) {
   .homeMain + footer {
     display: none !important;
+  }
+  .modal {
+    top: 0;
   }
   .splash {
     .smallFlexBox {
@@ -536,6 +588,13 @@
   .splash .relativeColumnBox h1 {
     font-size: 1.6rem;
     margin: 55px 0 0;
+  }
+
+  .modal {
+    bottom: auto;
+    top: -100px;
+    min-height: 552px;
+    padding: 11px 12px 9px 20px;
   }
 
   .smallFlexBox {
@@ -588,6 +647,9 @@
         margin-bottom: 0;
       }
     }
+    .modal {
+      top: -100px;
+    }
   }
   .scrollingBackground {
     background: {
@@ -635,6 +697,9 @@
 
   .contactWrapper .contactIcons {
     font-size: 1.8rem;
+  }
+  .modal {
+    top: -100px;
   }
 }
 
