@@ -490,6 +490,7 @@
     }
   }
   .modal {
+    min-width: 300px;
     top: 0;
     form {
       .fieldsetBox {
@@ -505,11 +506,13 @@
 }
 
 // Tiny Phone
-@media (max-width: 320px) and (max-height: 480px) {
+@media (max-width: 350px) {
   .modal {
+    min-width: 285px !important;
     form {
       .fieldsetBox {
         padding-top: 10px;
+        margin: 0 15px;
         width: 70%;
       }
     }
