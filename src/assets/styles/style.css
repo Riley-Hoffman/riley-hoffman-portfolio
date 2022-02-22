@@ -363,7 +363,7 @@ textarea {
 input[type=text],
 input[type=email],
 textarea {
-  border-radius: 5px;
+  border-radius: 20px;
   background: #e5e8ee;
   color: #00050f;
   padding: 10px;
@@ -1465,7 +1465,7 @@ i.fa-grip-lines-vertical {
   align-items: center;
   display: flex;
 }
-.errorNav ul li i {
+.errorNav ul li svg {
   color: #17a2aa;
   font-size: 1.7rem;
   margin-left: 10px;
@@ -2327,7 +2327,7 @@ footer .bottom .resume:hover svg {
     color: #00050f;
   }
 
-  .errorNav ul li a, .errorNav ul li svg {
+  .errorNav ul li a {
     color: #00050f;
   }
   .errorNav ul li a:active {
@@ -2418,7 +2418,7 @@ footer .bottom .resume:hover svg {
     color: #e5e8ee;
   }
 
-  .errorNav ul li a, .errorNav ul li svg {
+  .errorNav ul li a {
     color: #e5e8ee;
   }
   .errorNav ul li a:active {
