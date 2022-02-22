@@ -18,7 +18,9 @@
             @click="toggleModal"
             ><span class="target">Contact<span class="me"> Me</span></span
             ></button>
-          <ModalComponent :showModal="showModal" :toggleModal="toggleModal"  v-if="!showModal" />
+          <Transition>
+            <ModalComponent :showModal="showModal" :toggleModal="toggleModal"  v-if="!showModal" />
+          </Transition>
           <div class="contactWrapper">
             <SocialComponent />
           </div>
