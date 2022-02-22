@@ -415,6 +415,16 @@ textarea:focus-visible {
   display: none !important;
 }
 
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 a.whiteOutline:focus {
   outline: 2px solid #e5e8ee;
 }
