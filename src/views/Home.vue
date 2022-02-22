@@ -13,19 +13,12 @@
           <p class="animate__animated animate__backInLeft">
             <span>Web </span><span class="outlined">Developer</span>
           </p>
-          <!-- tealContactButton class is to facilitate media query targetting -->
           <button
             class="tealContactButton headerLink"
             @click="toggleModal"
             ><span class="target">Contact<span class="me"> Me</span></span
             ></button>
-          <div class="modal" v-if="!showModal">
-              <button class="modalClose" @click="toggleModal">
-              <font-awesome-icon icon="xmark" class="fa-solid fa-xmark" aria-hidden="true" />
-              <span class="sr-only">Close contact form</span>
-              </button>
-              <FormComponent />
-          </div>
+          <ModalComponent :showModal="showModal" :toggleModal="toggleModal"  v-if="!showModal" />
           <div class="contactWrapper">
             <SocialComponent />
           </div>
@@ -49,7 +42,7 @@
 </template>
 <script>
 import SocialComponent from '@/components/SocialComponent.vue'
-import FormComponent from '@/components/FormComponent.vue'
+import ModalComponent from '@/components/ModalComponent.vue'
 export default {
   data () {
     return {
@@ -58,7 +51,7 @@ export default {
   },
   components: {
     SocialComponent,
-    FormComponent
+    ModalComponent
   },
   methods: {
     toggleModal () {
