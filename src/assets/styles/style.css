@@ -1180,12 +1180,12 @@ header .navBox nav ul.mainNavList a:focus::after {
   right: 0;
   top: 5%;
   transition: all 2s;
-  z-index: -1;
 }
 
 .projectBox img {
   position: relative;
   transition: filter 1s;
+  z-index: 10;
 }
 
 .projectBox .imgBox img {
