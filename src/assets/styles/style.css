@@ -317,7 +317,7 @@ footer {
 form,
 label,
 button {
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 form label {
@@ -351,13 +351,25 @@ label {
   font-size: 1.1rem;
 }
 
+label[for=email] {
+  margin-left: 18px;
+}
+
 input,
 textarea {
-  font-family: "Roboto", sans-serif;
+  border: none;
+  font-family: "Rubik", sans-serif;
 }
 
 textarea {
+  padding-left: 15px;
+  padding-top: 15px;
   resize: vertical;
+}
+
+input[type=text],
+input[type=email] {
+  padding: 10px;
 }
 
 input[type=text],
@@ -366,7 +378,6 @@ textarea {
   border-radius: 20px;
   background: #e5e8ee;
   color: #00050f;
-  padding: 10px;
 }
 
 input:focus-visible,
@@ -892,7 +903,10 @@ header .navBox nav ul.mainNavList a:focus::after {
   margin-right: 15px;
 }
 .modal form label {
-  margin: 5px 3px 5px 0px;
+  margin: 5px 8px 5px 0px;
+}
+.modal form label[for=email] {
+  margin-left: 12px;
 }
 .modal form .contactFormButton {
   margin-top: 18px;

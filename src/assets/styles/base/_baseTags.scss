@@ -67,7 +67,7 @@ footer {
 form,
 label,
 button {
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 form {
@@ -95,13 +95,25 @@ label {
   font-size: 1.1rem;
 }
 
+label[for=email] {
+      margin-left: 18px;
+}
+
 input,
 textarea {
-  font-family: "Roboto", sans-serif;
+  border: none;
+  font-family: "Rubik", sans-serif;
 }
 
 textarea {
+  padding-left: 15px;
+  padding-top: 15px;
   resize: vertical;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
 }
 
 input[type="text"],
@@ -110,7 +122,6 @@ textarea {
   border-radius: 20px;
   background: $white;
   color: $black;
-  padding: 10px;
 }
 
 input:focus-visible,

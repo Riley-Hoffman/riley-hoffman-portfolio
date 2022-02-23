@@ -122,12 +122,16 @@
     }
 
     label {
-      margin: 5px 3px 5px 0px;
+      margin: 5px 8px 5px 0px;
     }
+
+    label[for=email] {
+      margin-left: 12px;
+}
     .contactFormButton {
       margin-top: 18px;
     }
-    textarea {
+    textarea {  
       resize: none;
     }
   }
