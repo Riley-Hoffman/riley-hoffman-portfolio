@@ -375,7 +375,7 @@ input[type=email] {
 input[type=text],
 input[type=email],
 textarea {
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px 3px 0px 20px;
   background: #e5e8ee;
   color: #00050f;
 }
@@ -883,7 +883,7 @@ header .navBox nav ul.mainNavList a:focus::after {
 .modal .modalClose {
   position: relative;
   bottom: 12px;
-  right: 15px;
+  right: 14px;
 }
 .modal .modalButton {
   color: #c8c3c3;
