@@ -1336,6 +1336,7 @@ header .navBox nav ul.mainNavList a:focus::after {
   border-top: 8px ridge #17a2aa;
   padding: 20px 0;
   position: relative;
+  z-index: 10;
 }
 
 .projectInfo h2,
