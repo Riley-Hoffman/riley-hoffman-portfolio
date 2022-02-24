@@ -39,6 +39,7 @@
 .projectInfo {
   border-top: 8px ridge $teal;
   padding: 20px 0;
+  position: relative;
   h2,
   h3,
   p {
@@ -82,6 +83,7 @@
     right: 0;
     top: 5%;
     transition: all 2s;
+    z-index: 0;
   }
 }
 
