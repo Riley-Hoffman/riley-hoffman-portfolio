@@ -883,7 +883,7 @@ header .navBox nav ul.mainNavList a:focus::after {
 .modal .modalClose {
   position: relative;
   bottom: 12px;
-  right: 15px;
+  right: 14px;
 }
 .modal .modalButton {
   color: #c8c3c3;
