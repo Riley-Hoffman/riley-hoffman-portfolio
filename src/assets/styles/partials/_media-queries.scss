@@ -480,6 +480,19 @@
   }
 }
 
+// Medium Tall Phones
+@media (min-width: 410px) and (min-height: 760px) { 
+
+.relativeColumnBox {
+  .smallFlexBox {
+    .headerLink {
+      font-size: 1.1rem;
+      margin: 20px 0;
+    }
+  }
+} 
+
+}
 /* Smallest phones */
 @media (max-width: 365px) and (max-height: 640px) {
   h1 {
