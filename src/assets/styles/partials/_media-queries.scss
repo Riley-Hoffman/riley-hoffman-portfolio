@@ -258,6 +258,7 @@
   }
 }
 
+
 // Footer Control
 @media (max-width: 680px) {
   .aboutMain + footer,
@@ -386,10 +387,22 @@
     right: auto;
     .bottom {
       align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      max-width: 80%;
+      .webDeveloper {
+        display: block;
+      }
+
+      .verticalLine {
+        display: none;
+      }
+      p {
+        margin: 0;
+      }
       a {
-        margin: 0 20px;
+        align-self: flex-end;
+        margin: 0;
+        max-width: 17%;
       }
     }
   }
@@ -397,6 +410,65 @@
   .formBackground {
     .fieldsetBox {
       padding: 0 11px;
+    }
+  }
+}
+
+// Tall phones
+
+@media (min-width: 412px) and (min-height: 914px) {
+  header {
+    .navBox {
+      nav {
+        ul {
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .relativeColumnBox {
+    .smallFlexBox {
+      .headerLink {
+        font-size: 1.1rem;
+        margin: 40px 0;
+      }
+    }
+  }
+
+  .splash {
+    h1 {
+      font-size: 2rem;
+    }
+    .outlined {
+      font-size: 1.8rem;
+    }
+    .contactWrapper {
+      a {
+        font-size: 2.4rem;
+      }
+      a:nth-child(2) {
+        margin-left: 40px;
+      }
+    }
+  }
+  .homeMain {
+    footer {
+      .bottom {
+        flex-direction: row;
+      }
+    }
+  }
+  footer {
+    .bottom {
+      a {
+        font-size: 1.1rem;
+        svg {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
