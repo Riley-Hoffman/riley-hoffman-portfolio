@@ -258,6 +258,65 @@
   }
 }
 
+// Tall phones
+
+@media (min-width: 720px) and (min-height: 1300px) {
+  header {
+    .navBox {
+      nav {
+        ul {
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .relativeColumnBox {
+    .smallFlexBox {
+      .tealContactButton {
+        font-size: 1.2rem;
+      }
+      .headerLink {
+        margin: 40px 0;
+      }
+    }
+  }
+
+  .splash {
+    h1 {
+      font-size: 2.3rem;
+    }
+    .outlined {
+      font-size: 2rem;
+    }
+    .contactWrapper {
+      a {
+        font-size: 2.4rem;
+      }
+      a:nth-child(2) {
+        margin-left: 40px;
+
+      }
+    }
+  }
+
+  footer {
+    .bottom {
+      p {
+        font-size: 1.2rem;
+      }
+      a {
+        font-size: 1.3rem;
+        svg {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
 // Footer Control
 @media (max-width: 680px) {
   .aboutMain + footer,
