@@ -1888,7 +1888,7 @@ i.fa-grip-lines-vertical {
     padding: 0 11px;
   }
 }
-@media (min-width: 412px) and (min-height: 914px) {
+@media (min-width: 410px) and (min-height: 910px) {
   header .navBox nav ul a {
     font-size: 1.4rem;
   }
