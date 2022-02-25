@@ -1504,6 +1504,17 @@ i.fa-grip-lines-vertical {
     font-size: 1.2rem;
     margin: 10px 0;
   }
+
+  .relativeColumnBox .smallFlexBox .headerLink {
+    font-size: 1.1rem;
+    margin: 40px 0;
+  }
+  .relativeColumnBox .smallFlexBox a {
+    font-size: 2rem;
+  }
+  .relativeColumnBox .smallFlexBox a:nth-child(2) {
+    margin-left: 2rem;
+  }
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
@@ -1895,20 +1906,13 @@ i.fa-grip-lines-vertical {
 
   .relativeColumnBox .smallFlexBox .headerLink {
     font-size: 1.1rem;
-    margin: 40px 0;
   }
 
-  .splash h1 {
-    font-size: 2rem;
-  }
   .splash .outlined {
     font-size: 1.8rem;
   }
   .splash .contactWrapper a {
     font-size: 2.4rem;
-  }
-  .splash .contactWrapper a:nth-child(2) {
-    margin-left: 40px;
   }
 
   .homeMain footer .bottom {
