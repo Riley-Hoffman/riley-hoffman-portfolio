@@ -12,7 +12,7 @@
     </div>
     <!-- contactWrapper Wrapper Ends -->
     <div class="wrapper flexBox bottom">
-      <p>Riley Hoffman <span aria-hidden="true">| </span><span class="webDeveloper">Web Developer</span></p>
+      <p>Riley Hoffman <span class="verticalLine" aria-hidden="true">| </span><span class="webDeveloper">Web Developer</span></p>
       <a href="./riley-hoffman-resume.pdf" class="resume">
       Resume
       <font-awesome-icon icon="file-arrow-down" class="fa-solid fa-file-arrow-down" aria-hidden="true" />
