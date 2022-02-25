@@ -4,6 +4,20 @@
     font-size: 1.2rem;
     margin: 10px 0;
   }
+  .relativeColumnBox {
+    .smallFlexBox {
+      .headerLink {
+  font-size: 1.1rem;
+  margin: 40px 0;
+      }
+      a {
+        font-size: 2rem;
+      }
+      a:nth-child(2) {
+        margin-left: 2rem;
+      }
+    }
+  }
 }
 
 /* Portrait tablet and small desktops */
@@ -433,24 +447,17 @@
     .smallFlexBox {
       .headerLink {
         font-size: 1.1rem;
-        margin: 40px 0;
       }
     }
   }
 
   .splash {
-    h1 {
-      font-size: 2rem;
-    }
     .outlined {
       font-size: 1.8rem;
     }
     .contactWrapper {
       a {
         font-size: 2.4rem;
-      }
-      a:nth-child(2) {
-        margin-left: 40px;
       }
     }
   }
