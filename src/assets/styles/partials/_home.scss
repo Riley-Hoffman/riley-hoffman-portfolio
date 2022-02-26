@@ -63,7 +63,7 @@
     p:nth-child(2) {
       margin-bottom: 10px;
     }
-    .headerLink {
+    .homeButton {
       background: $teal;
       border: none;
       border-radius: 3px;
@@ -78,7 +78,7 @@
       text-align: center;
       width: 35%;
     }
-    button.headerLink.tealContactButton:active {
+    button.homeButton.tealContactButton:active {
       border: none;
       outline: none;
       padding: 22px 5px;

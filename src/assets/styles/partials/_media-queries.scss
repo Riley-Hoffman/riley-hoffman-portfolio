@@ -6,7 +6,7 @@
   }
   .relativeColumnBox {
     .smallFlexBox {
-      .headerLink {
+      .homeButton {
   font-size: 1.1rem;
   margin: 40px 0;
       }
@@ -16,6 +16,49 @@
       a:nth-child(2) {
         margin-left: 2rem;
       }
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .relativeColumnBox .smallFlexBox .homeButton {
+    width: 45%;
+  }
+}
+
+/* Wide screen tv */
+
+@media (max-width: 1360px) and (max-height: 605px) {
+  .relativeColumnBox {
+    .smallFlexBox {
+      .iconContainer {
+        margin-bottom: 0;
+      }
+    }
+    .modal {
+      top: -100px;
+    }
+  }
+  .scrollingBackground {
+    background: {
+      image: linear-gradient(
+          to bottom,
+          rgba(23, 162, 170, 0) 0%,
+          rgba(23, 162, 170, 0.2) 100%
+        ),
+        url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+      blend-mode: multiply;
+      size: cover;
+    }
+    opacity: 0.3;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .smoke {
+    &::before {
+      opacity: 1;
     }
   }
 }
@@ -32,8 +75,8 @@
   }
   .relativeColumnBox {
     .smallFlexBox {
-      .headerLink {
-        width: 45%;
+      .homeButton {
+        width: 50%;
       }
     }
   }
@@ -44,6 +87,34 @@
 
   .pageNotFoundMain + footer {
     margin-top: 50px;
+  }
+}
+
+/* Large Text Resolution Screens */
+@media (max-width: 1024px) and (max-height: 640px) {
+  .splash h1 {
+    font-size: 1.7rem;
+  }
+
+  .splash .animate__backInLeft {
+    font-size: 1.5rem;
+  }
+
+  .splash h1,
+  .splash h2 {
+    margin-bottom: 7px;
+  }
+
+  .relativeColumnBox .smallFlexBox .homeButton {
+    font-size: 0.9rem;
+    padding: 18px 5px;
+  }
+
+  .contactWrapper .contactIcons {
+    font-size: 1.8rem;
+  }
+  .modal {
+    top: -100px;
   }
 }
 
@@ -92,6 +163,14 @@
         margin-top: 2px;
       }
     }
+  }
+}
+
+// Small tablet landscape (800x600)
+@media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
+  .modal {
+    bottom: 0;
+    min-height: 550px;
   }
 }
 
@@ -163,8 +242,8 @@
     }
   }
 
-  .relativeColumnBox .smallFlexBox .headerLink {
-    width: 56%;
+  .relativeColumnBox .smallFlexBox .homeButton {
+    width: 40%;
   }
 
   header {
@@ -272,6 +351,22 @@
   }
 }
 
+// Splash Elements Control
+
+@media (max-width: 780px) and (max-height: 575px) {
+  .homeMain + footer {
+    display: none !important;
+  }
+  .modal {
+    top: 0;
+  }
+  .splash {
+    .smallFlexBox {
+      margin-top: 50px;
+    }
+  }
+}
+
 
 // Footer Control
 @media (max-width: 680px) {
@@ -331,6 +426,10 @@
     padding-top: 20px;
   }
 
+  .relativeColumnBox .smallFlexBox .homeButton {
+    width: 46%;
+  }
+
   .about {
     > .wrapper {
       .about1 {
@@ -368,6 +467,69 @@
   }
   .modal {
     bottom: 10%;
+  }
+}
+
+// Phone landscape
+@media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
+  .splash .relativeColumnBox h1 {
+    font-size: 1.6rem;
+    margin: 55px 0 0;
+  }
+
+  .modal {
+    bottom: auto;
+    top: -100px;
+    min-height: 552px;
+    padding: 11px 12px 9px 20px;
+  }
+
+  .smallFlexBox {
+    position: relative;
+    p.animate__backInLeft {
+      font-size: 1.4rem;
+    }
+    button.tealContactButton {
+      position: absolute;
+      right: 0;
+      width: 25%;
+      .me {
+        display: none;
+      }
+      .fa-long-arrow-alt-right {
+        display: none;
+      }
+    }
+  }
+  .about {
+    padding-top: 115px;
+  }
+  footer {
+    .contactWrapper {
+      padding: 65px 0 60px;
+    }
+  }
+  .splash {
+    .relativeColumnBox {
+      .smallFlexBox {
+        .tealContactButton {
+          top: 30%;
+          padding: 15px 0;
+          width: 30%;
+        }
+      }
+    }
+    .contactWrapper {
+      display: none;
+    }
+  }
+}
+
+// Contact Button Control
+
+@media (max-width: 620px) {
+  .relativeColumnBox .smallFlexBox .homeButton {
+    width: 44%;
   }
 }
 
@@ -445,7 +607,7 @@
 
   .relativeColumnBox {
     .smallFlexBox {
-      .headerLink {
+      .homeButton {
         font-size: 1.1rem;
       }
     }
@@ -485,7 +647,7 @@
 
 .relativeColumnBox {
   .smallFlexBox {
-    .headerLink {
+    .homeButton {
       font-size: 1.1rem;
       margin: 20px 0;
     }
@@ -591,147 +753,9 @@
   }
 }
 
-// Small tablet landscape (800x600)
-@media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
-  .modal {
-    bottom: 0;
-    min-height: 550px;
-  }
-}
 
-@media (max-width: 780px) and (max-height: 575px) {
-  .homeMain + footer {
-    display: none !important;
-  }
-  .modal {
-    top: 0;
-  }
-  .splash {
-    .smallFlexBox {
-      margin-top: 50px;
-    }
-  }
-}
 
-// Phone landscape
-@media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  .splash .relativeColumnBox h1 {
-    font-size: 1.6rem;
-    margin: 55px 0 0;
-  }
 
-  .modal {
-    bottom: auto;
-    top: -100px;
-    min-height: 552px;
-    padding: 11px 12px 9px 20px;
-  }
-
-  .smallFlexBox {
-    position: relative;
-    p.animate__backInLeft {
-      font-size: 1.4rem;
-    }
-    button.tealContactButton {
-      position: absolute;
-      right: 0;
-      width: 25%;
-      .me {
-        display: none;
-      }
-      .fa-long-arrow-alt-right {
-        display: none;
-      }
-    }
-  }
-  .about {
-    padding-top: 115px;
-  }
-  footer {
-    .contactWrapper {
-      padding: 65px 0 60px;
-    }
-  }
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .tealContactButton {
-          bottom: 2%;
-          padding: 15px 0;
-          width: 30%;
-        }
-      }
-    }
-    .contactWrapper {
-      display: none;
-    }
-  }
-}
-
-/* Wide screen tv */
-
-@media (max-width: 1360px) and (max-height: 605px) {
-  .relativeColumnBox {
-    .smallFlexBox {
-      .iconContainer {
-        margin-bottom: 0;
-      }
-    }
-    .modal {
-      top: -100px;
-    }
-  }
-  .scrollingBackground {
-    background: {
-      image: linear-gradient(
-          to bottom,
-          rgba(23, 162, 170, 0) 0%,
-          rgba(23, 162, 170, 0.2) 100%
-        ),
-        url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-      blend-mode: multiply;
-      size: cover;
-    }
-    opacity: 0.3;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-
-  .smoke {
-    &::before {
-      opacity: 1;
-    }
-  }
-}
-
-/* Large Text Resolution Screens */
-@media (max-width: 1024px) and (max-height: 640px) {
-  .splash h1 {
-    font-size: 1.7rem;
-  }
-
-  .splash .animate__backInLeft {
-    font-size: 1.5rem;
-  }
-
-  .splash h1,
-  .splash h2 {
-    margin-bottom: 7px;
-  }
-
-  .relativeColumnBox .smallFlexBox .headerLink {
-    font-size: 0.9rem;
-    padding: 18px 5px;
-  }
-
-  .contactWrapper .contactIcons {
-    font-size: 1.8rem;
-  }
-  .modal {
-    top: -100px;
-  }
-}
 
 // Hover/Active Styles only when device is not a touchscreen
 

@@ -14,7 +14,7 @@
             <span>Web </span><span class="outlined">Developer</span>
           </p>
           <button
-            class="tealContactButton headerLink"
+            class="tealContactButton homeButton"
             @click="toggleModal"
             ><span class="target">Contact<span class="me"> Me</span></span
             ></button>
