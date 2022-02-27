@@ -27,6 +27,6 @@
         </div>
       </fieldset>
 
-        <button value="Submit" class="contactFormButton">Submit</button>
+        <button value="Submit" class="contactFormButton styledButton">Submit</button>
       </form>
 </template>
