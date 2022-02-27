@@ -1422,18 +1422,19 @@ i.fa-grip-lines-vertical {
 }
 
 .homeMain + footer {
+  align-items: flex-end;
   background-color: transparent;
   border: 0;
   bottom: 0;
   height: 8vh;
   position: absolute;
-  right: 20%;
+  width: 85%;
 }
 .homeMain + footer .contactWrapper {
   display: none;
 }
 .homeMain + footer .bottom {
-  width: 100%;
+  width: 85%;
   justify-content: flex-end;
 }
 
@@ -2009,13 +2010,13 @@ i.fa-grip-lines-vertical {
   }
 
   .homeMain + footer {
+    align-items: center;
     left: 0;
     right: auto;
   }
   .homeMain + footer .bottom {
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 80%;
   }
   .homeMain + footer .bottom .webDeveloper {
     display: block;
