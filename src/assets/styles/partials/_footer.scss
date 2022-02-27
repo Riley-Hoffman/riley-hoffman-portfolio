@@ -136,17 +136,18 @@ i.fa-grip-lines-vertical {
 }
 
 .homeMain + footer {
+  align-items: flex-end;
   background-color: transparent;
   border: 0;
   bottom: 0;
   height: 8vh;
   position: absolute;
-  right: 20%;
+  width: 85%;
   .contactWrapper {
     display: none;
   }
   .bottom {
-    width: 100%;
+    width: 85%;
     justify-content: flex-end;
   }
 }

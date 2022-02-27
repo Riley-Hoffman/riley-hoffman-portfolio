@@ -1,6 +1,6 @@
 <template>
   <!-- Footer Starts -->
-  <footer class="wrapper flexBox" :class="splashFooter" id="contact">
+  <footer class="flexBox" :class="splashFooter" id="contact">
     <div class="wrapper flexBox contactWrapper contactComponent">
       <div class="flexBox contactBox">
         <h2 class="contactHeading">Contact</h2>

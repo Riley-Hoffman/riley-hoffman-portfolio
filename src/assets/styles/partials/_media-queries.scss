@@ -7,8 +7,8 @@
   .relativeColumnBox {
     .smallFlexBox {
       .homeButton {
-  font-size: 1.1rem;
-  margin: 40px 0;
+        font-size: 1.1rem;
+        margin: 40px 0;
       }
       a {
         font-size: 2rem;
@@ -367,7 +367,6 @@
   }
 }
 
-
 // Footer Control
 @media (max-width: 680px) {
   .aboutMain + footer,
@@ -560,12 +559,12 @@
   }
 
   .homeMain + footer {
+    align-items: center;
     left: 0;
     right: auto;
     .bottom {
       align-items: flex-start;
       justify-content: space-between;
-      max-width: 80%;
       .webDeveloper {
         display: block;
       }
@@ -644,17 +643,15 @@
 }
 
 // Medium Tall Phones
-@media (min-width: 410px) and (min-height: 760px) { 
-
-.relativeColumnBox {
-  .smallFlexBox {
-    .homeButton {
-      font-size: 1.1rem;
-      margin: 20px 0;
+@media (min-width: 410px) and (min-height: 760px) {
+  .relativeColumnBox {
+    .smallFlexBox {
+      .homeButton {
+        font-size: 1.1rem;
+        margin: 20px 0;
+      }
     }
   }
-} 
-
 }
 /* Smallest phones */
 @media (max-width: 365px) and (max-height: 640px) {
@@ -753,10 +750,6 @@
     }
   }
 }
-
-
-
-
 
 // Hover/Active Styles only when device is not a touchscreen
 
