@@ -58,22 +58,13 @@ form {
   }
   .contactFormButton {
     align-self: center;
-    background: linear-gradient(to bottom, #65a5a8 5%, #17a2aa 100%);
-    background-color: #65a5a8;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 10px 14px -7px #16595c;
-    color: #00050f;
-    cursor: pointer;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
     padding: 13px 32px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #469ea3;
     width: 50%;
+    background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   }
   .contactFormButton:hover {
     background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
