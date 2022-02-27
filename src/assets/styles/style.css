@@ -1787,6 +1787,10 @@ i.fa-grip-lines-vertical {
     flex-direction: column-reverse;
   }
 
+  .homeMain + footer {
+    width: initial;
+  }
+
   footer {
     padding: 0 0 20px;
   }
@@ -1932,6 +1936,12 @@ i.fa-grip-lines-vertical {
     bottom: 10%;
     min-width: 100%;
   }
+
+  .homeMain + footer .bottom a {
+    align-self: flex-end;
+    margin: 0;
+    max-width: 17%;
+  }
 }
 @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
   .splash .relativeColumnBox h1 {
@@ -2026,11 +2036,6 @@ i.fa-grip-lines-vertical {
   }
   .homeMain + footer .bottom p {
     margin: 0;
-  }
-  .homeMain + footer .bottom a {
-    align-self: flex-end;
-    margin: 0;
-    max-width: 17%;
   }
 
   .formBackground .fieldsetBox {

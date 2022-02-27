@@ -321,6 +321,10 @@
     flex-direction: column-reverse;
   }
 
+  .homeMain + footer {
+    width: initial;
+  }
+
   footer {
     padding: 0 0 20px;
   }
@@ -468,6 +472,16 @@
     bottom: 10%;
     min-width: 100%;
   }
+
+  .homeMain + footer {
+    .bottom {
+      a {
+        align-self: flex-end;
+        margin: 0;
+        max-width: 17%;
+      }
+    }
+  }
 }
 
 // Phone landscape
@@ -574,11 +588,6 @@
       }
       p {
         margin: 0;
-      }
-      a {
-        align-self: flex-end;
-        margin: 0;
-        max-width: 17%;
       }
     }
   }
