@@ -15,5 +15,4 @@ const app = createApp(App)
 app.use(router)
 
 app.component('font-awesome-icon', FontAwesomeIcon).mount('#app')
-
-app.prototype.$workbox = wb
+app.provide('$workbox', wb)
