@@ -4,9 +4,7 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'development' ? '/vuejs-pwa/' : '',
   configureWebpack: {
     plugins: [
-      new GenerateSW({
-        exclude: [/swagger-ui/]
-      })
+      new GenerateSW()
     ]
   },
   pwa: {
@@ -21,7 +19,7 @@ module.exports = {
       // swSrc is required in InjectManifest mode.
       swSrc: 'src/sw.js',
       // ...other Workbox options...
-      exclude: [/_redirects/]
+      exclude: [/_redirects/, /swagger-ui/]
     }
   }
 }
