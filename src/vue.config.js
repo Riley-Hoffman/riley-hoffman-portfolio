@@ -4,7 +4,9 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'development' ? '/vuejs-pwa/' : '',
   configureWebpack: {
     plugins: [
-      new GenerateSW()
+      new GenerateSW({
+        exclude: [/swagger-ui/]
+      })
     ]
   },
   pwa: {
