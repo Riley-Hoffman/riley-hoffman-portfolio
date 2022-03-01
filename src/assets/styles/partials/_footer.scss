@@ -135,14 +135,18 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
+* {
+  border: 1px solid lime;
+}
+
 .homeMain + footer {
-  align-items: flex-end;
+  align-items: center;
   background-color: transparent;
   border: 0;
   bottom: 0;
   height: 8vh;
   position: absolute;
-  width: 85%;
+  width: 100%;
   .contactWrapper {
     display: none;
   }
