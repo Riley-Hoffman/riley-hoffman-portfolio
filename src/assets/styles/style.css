@@ -1711,10 +1711,6 @@ i.fa-grip-lines-vertical {
   font-size: 84%;
 }
 
-* {
-  border: 1px solid lime;
-}
-
 .homeMain + footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
