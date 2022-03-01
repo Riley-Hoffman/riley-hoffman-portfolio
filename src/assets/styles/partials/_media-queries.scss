@@ -798,6 +798,7 @@
         }
         .contactIcons {
           a:hover svg {
+            box-shadow: $buttonHoverGlow; 
             color: $teal;
           }
           a:active svg {
@@ -808,7 +809,8 @@
           }
         }
         .tealContactButton:hover {
-          padding: 20px 3px;
+          box-shadow: $buttonHoverGlow;
+          padding: 20px 3px; 
         }
       }
     }
