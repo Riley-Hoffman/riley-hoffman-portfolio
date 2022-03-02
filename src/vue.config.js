@@ -7,7 +7,7 @@ module.exports = {
       new GenerateSW({
         clientsClaim: true,
         skipWaiting: true,
-        exclude: [/swagger-ui/]
+        exclude: [/_redirects/]
       })
     ]
   },
