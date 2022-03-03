@@ -798,7 +798,7 @@
         }
         .contactIcons {
           a:hover svg {
-            box-shadow: $buttonHoverGlow; 
+            box-shadow: $buttonHoverGlow;
             color: $teal;
           }
           a:active svg {
@@ -810,7 +810,7 @@
         }
         .tealContactButton:hover {
           box-shadow: $buttonHoverGlow;
-          padding: 20px 3px; 
+          padding: 20px 3px;
         }
       }
     }
@@ -1141,6 +1141,11 @@
   }
   .splash .lightHeroElements {
     display: none;
+  }
+  .subtleTextGradient {
+    background: linear-gradient(180deg, white 20%, $white 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   a:focus,
   button:focus {

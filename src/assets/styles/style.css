@@ -448,12 +448,6 @@ a.blackOutline:focus {
   outline: 2px solid #00050f;
 }
 
-.subtleTextGradient {
-  background: linear-gradient(180deg, white 20%, #e5e8ee 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .styledButton {
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   background-color: rgba(0, 0, 0, 0);
@@ -2467,6 +2461,12 @@ footer .bottom .resume:hover svg {
 
   .splash .lightHeroElements {
     display: none;
+  }
+
+  .subtleTextGradient {
+    background: linear-gradient(180deg, white 20%, #e5e8ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   a:focus,
