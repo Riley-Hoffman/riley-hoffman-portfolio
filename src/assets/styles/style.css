@@ -2435,6 +2435,9 @@ footer p {
   footer .contactWrapper a:focus {
     outline: 2px solid #00050f;
   }
+  footer .bottom a {
+    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+  }
   footer .bottom .resume svg,
 footer .bottom .resume:active svg,
 footer .bottom .resume:hover svg {
@@ -2546,6 +2549,9 @@ footer p {
   }
   footer .contactWrapper a:focus {
     outline: 2px solid #e5e8ee;
+  }
+  footer .bottom a {
+    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
   }
   footer .bottom .resume svg,
 footer .bottom .resume:active svg,

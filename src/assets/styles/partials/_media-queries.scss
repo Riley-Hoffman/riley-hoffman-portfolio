@@ -1106,6 +1106,9 @@
       }
     }
     .bottom {
+      a {
+        text-shadow: $lightModeTextShadow;
+      }
       .resume,
       .resume:active,
       .resume:hover {
@@ -1241,6 +1244,9 @@
       }
     }
     .bottom {
+      a {
+        text-shadow: $darkModeTextShadow;
+      }
       .resume,
       .resume:active,
       .resume:hover {
