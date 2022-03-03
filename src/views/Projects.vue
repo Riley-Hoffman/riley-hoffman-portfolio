@@ -7,17 +7,17 @@
                 <ul>
                     <li class="projectBox">
                         <div class="projectInfo">
-                            <h2>Out Of Context</h2>
-                            <h3>React, JSX, AXIOS, SCSS</h3>
+                            <h2 translate="no">Out Of Context</h2>
+                            <h3><span translate="no">React</span>, JSX, AXIOS, SCSS</h3>
                             <p>
-                                Created with React, this app allows users to search by movie
+                                Created with <span translate="no">React</span>, this app allows users to search by movie
                                 name and displays GIFs based on themes (keywords) from the
                                 movie (love, war, sports etc). Three GIFs are displayed
                                 initially, with their keywords underneath. By clicking, the
                                 user can cycle through all GIFs per keyword, or look at other
                                 keywords associated with the movie, returning new GIFs!
                             </p>
-                            <h4>Out Of Context Links:</h4>
+                            <h4><span translate="no">Out Of Context</span> Links:</h4>
                             <a href="https://focused-varahamihira-abf5da.netlify.app/" target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/dearJuno/outofContext" target="_blank" rel="nofollow">Repo</a>
                         </div>
@@ -51,18 +51,18 @@
                             </a>
                         </div>
                         <div class="projectInfo">
-                            <h2>Infinity Corkboard</h2>
-                            <h3>React, JSX, REST API, CSS</h3>
+                            <h2 translate="no">Infinity Corkboard</h2>
+                            <h3><span translate="no">React</span>, JSX, <span translate="no">REST</span> API, CSS</h3>
                             <p>
-                                This React based app presents the user with a 4X4 grid of
-                                photos from NASA APIs' Astronomy Picture of the Day endpoint.
+                                This <span translate="no">React</span> based app presents the user with a 4X4 grid of
+                                photos from NASA APIs' <span translate="no">Astronomy Picture of the Day</span> endpoint.
                                 The user can click any images they wish to change, which swaps
                                 it out for a new one in the same position. When the user is
                                 pleased with how the grid looks, they may save it by printing
                                 to pdf. Print output is styled so the grid appears with no
                                 other page elements in the saved file.
                             </p>
-                            <h4>Infinity Corkboard Links:</h4>
+                            <h4><span translate="no">Infinity Corkboard</span> Links:</h4>
                             <a href="https://relaxed-visvesvaraya-8807c8.netlify.app/" target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley-hoffman-project-three"
                                 target="_blank" rel="nofollow">Repo</a>
@@ -71,8 +71,8 @@
 
                     <li class="projectBox">
                         <div class="projectInfo">
-                            <h2>Weather Scout</h2>
-                            <h3>HTML, Javascript, REST API, SCSS</h3>
+                            <h2 translate="no">Weather Scout</h2>
+                            <h3>HTML, Javascript, <span translate="no">REST</span> API, SCSS</h3>
                             <p>
                                 With this app, users can search by city and get corresponding
                                 weather data. 'Right Now' or 'Future Forecast' can be
@@ -81,7 +81,7 @@
                                 returns a grid of dates with forecast temperatures. Created
                                 with Javascript, HTML and CSS.
                             </p>
-                            <h4>Weather Scout Links:</h4>
+                            <h4><span translate="no">Weather Scout</span> Links:</h4>
                             <a href="https://romantic-kowalevski-f7a14c.netlify.app/" title="Weather Scout"
                                 target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/Linda-Columbus-Riley-Hoffman-Developers/weatherScout"
@@ -115,13 +115,13 @@
                             </a>
                         </div>
                         <div class="projectInfo">
-                            <h2>Delicious</h2>
+                            <h2 translate="no">Delicious</h2>
                             <h3>HTML, SCSS</h3>
                             <p>
                                 A multi-page PSD conversion project for a fictional restaurant
                                 chain.
                             </p>
-                            <h4>Delicious Links:</h4>
+                            <h4><span translate="no">Delicious</span> Links:</h4>
                             <a href="https://vigilant-albattani-29bee8.netlify.app/" target="_blank" rel="nofollow">Live</a>
                             <a href="https://github.com/Riley-Hoffman/riley_hoffman_project_1_delicious"
                                 target="_blank" rel="nofollow">Repo</a>
