@@ -1003,6 +1003,12 @@
     display: none;
   }
 
+  .subtleTextGradient {
+    background: linear-gradient(180deg, black 20%, $black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   html {
     background: $white;
   }
