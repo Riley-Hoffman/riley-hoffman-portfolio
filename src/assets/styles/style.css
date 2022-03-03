@@ -448,6 +448,12 @@ a.blackOutline:focus {
   outline: 2px solid #00050f;
 }
 
+.subtleTextGradient {
+  background: linear-gradient(180deg, white 20%, #e5e8ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .styledButton {
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   background-color: rgba(0, 0, 0, 0);
@@ -457,7 +463,7 @@ a.blackOutline:focus {
   box-shadow: 0 10px 14px -7px #16595c;
   color: #00050f;
   cursor: pointer;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   text-shadow: 0 1px 0 #469ea3;
 }
@@ -816,10 +822,14 @@ header .navBox nav ul.mainNavList a:focus::after {
 .splash h1,
 .splash h2 {
   line-height: 1.3;
-  margin-bottom: 15px;
 }
 .splash h1 {
+  color: #e5e8ee;
   font-size: 2rem;
+  margin-bottom: 17.5px;
+}
+.splash h2 {
+  margin-bottom: 15px;
 }
 .splash .animate__backInLeft {
   font-size: 1.7rem;
