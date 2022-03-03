@@ -9,9 +9,9 @@
           <div class="flexBox iconContainer">
             <font-awesome-icon icon="water" class="fas fa-water" aria-hidden="true" />
           </div>
-          <h1>Riley Hoffman</h1>
+          <h1 class="subtleTextGradient">Riley Hoffman</h1>
           <p class="animate__animated animate__backInLeft">
-            <span>Web </span><span class="outlined">Developer</span>
+            <span class="subtleTextGradient">Web </span><span class="outlined">Developer</span>
           </p>
           <button
             class="tealContactButton homeButton styledButton"
