@@ -55,9 +55,9 @@ a.blackOutline:focus {
 }
 
 .styledButton {
-  background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
+  background: linear-gradient(180deg, $grayTeal 5%, #17a2aa);
   background-color: rgba(0, 0, 0, 0);
-  background-color: #65a5a8;
+  background-color: $grayTeal;
   border: none;
   border-radius: 8px;
   box-shadow: 0 10px 14px -7px #16595c;

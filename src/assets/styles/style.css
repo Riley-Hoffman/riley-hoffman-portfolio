@@ -861,7 +861,7 @@ header .navBox nav ul.mainNavList a:focus::after {
 .relativeColumnBox .smallFlexBox .outlined {
   color: #00050f;
   font-weight: 800;
-  text-shadow: -1px -1px 2px #17a2aa, 1px -1px 2px #17a2aa, -1px 2px 2px #17a2aa, 1px 1px 2px #00050f;
+  text-shadow: -1px -1px 2px #17a2aa, 1px -1px 2px #17a2aa, -1px 2px 2px #65a5a8, 1px 1px 2px #00050f;
 }
 .relativeColumnBox .smallFlexBox p {
   margin-top: 0;
