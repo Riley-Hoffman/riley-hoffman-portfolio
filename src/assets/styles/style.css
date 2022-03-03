@@ -813,6 +813,9 @@ header .navBox nav ul.mainNavList a:focus::after {
 .splash .relativeColumnBox .contactWrapper .contactIcons {
   justify-content: space-between;
 }
+.splash .relativeColumnBox .contactWrapper .contactIcons a {
+  opacity: 0.9;
+}
 .splash h1,
 .splash h2 {
   line-height: 1.3;

@@ -10,6 +10,9 @@
       padding: 0;
       .contactIcons {
         justify-content: space-between;
+        a {
+          opacity: 0.9;
+        }
       }
     }
   }
@@ -124,7 +127,7 @@
     .inputBox {
       margin-bottom: 10px;
     }
-    input[name=name] {
+    input[name="name"] {
       margin-right: 15px;
     }
 
@@ -132,13 +135,13 @@
       margin: 5px 8px 5px 0px;
     }
 
-    label[for=email] {
+    label[for="email"] {
       margin-left: 12px;
-}
+    }
     .contactFormButton {
       margin-top: 18px;
     }
-    textarea {  
+    textarea {
       resize: none;
     }
   }
