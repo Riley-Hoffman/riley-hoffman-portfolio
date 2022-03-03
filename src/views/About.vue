@@ -23,7 +23,7 @@
                     </figure>
                 </div>
                 <div class="flexBox about2">
-                    <p contenteditable="true">
+                    <p>
                         I'm a front-end developer focused on building accessible and responsive web applications. My
                         background in technical troubleshooting and customer service gave me experience responding to
                         user experience, and a wide variety of software and communication skills.
