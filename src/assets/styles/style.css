@@ -2342,7 +2342,7 @@ footer .contactWrapper .fa-github:active {
 }
 @media (prefers-color-scheme: light) {
   h1, h2, h3, nav ul, .subtleTextShadow {
-    text-shadow: 0 0 100px rgba(192, 219, 255, 0.45), 0 0 12px rgba(65, 109, 255, 0.17);
+    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
   }
 
   .splash .galaxy {
@@ -2469,11 +2469,11 @@ footer .bottom .resume:hover svg {
   }
 
   h1, h2, h3, nav ul, .subtleTextShadow {
-    text-shadow: 0 0 100px rgba(192, 219, 255, 0.75), 0 0 12px rgba(65, 120, 255, 0.24);
+    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
   }
 
   .aboutMain h1, .aboutMain h2, .aboutMain h3, .aboutMain nav ul, .aboutMain .subtleTextShadow, .skillsMain h1, .skillsMain h2, .skillsMain h3, .skillsMain nav ul, .skillsMain .subtleTextShadow {
-    text-shadow: 0 0 100px rgba(192, 219, 255, 0.45), 0 0 12px rgba(65, 109, 255, 0.17);
+    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
   }
 
   .splash .lightHeroElements {

@@ -1001,7 +1001,7 @@
 @media (prefers-color-scheme: light) {
 
   h1, h2, h3, nav ul, .subtleTextShadow {
-    text-shadow: 0 0 100px rgb(192 219 255 / 45%), 0 0 12px rgb(65 109 255 / 17%);
+    text-shadow: 0 0 1000px rgb(192 219 255 / 38%), 0 0 12px rgb(65 109 255 / 17%);
   }
   .splash .galaxy {
     display: none;
@@ -1150,12 +1150,12 @@
     background: $black;
   }
   h1, h2, h3, nav ul, .subtleTextShadow {
-    text-shadow: 0 0 100px rgb(192 219 255 / 75%), 0 0 12px rgb(65 120 255 / 24%);
+    text-shadow: 0 0 1000px rgb(192 219 255 / 38%), 0 0 12px rgb(65 120 255 / 24%);
   }
 
   .aboutMain, .skillsMain {
       h1, h2, h3, nav ul, .subtleTextShadow {
-      text-shadow: 0 0 100px rgb(192 219 255 / 45%), 0 0 12px rgb(65 109 255 / 17%);
+      text-shadow: 0 0 1000px rgb(192 219 255 / 38%), 0 0 12px rgb(65 109 255 / 17%);
     }
   }
   .splash .lightHeroElements {
