@@ -302,6 +302,11 @@ p {
 }
 
 section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
   padding: 40px 0;
 }
 
@@ -1069,7 +1074,7 @@ header .navBox nav ul.mainNavList a:focus::after {
 
 .about {
   background-color: #e5e8ee;
-  padding: 115px 0 50px;
+  padding: 115px 0;
 }
 .about .wrapper {
   display: flex;
@@ -1473,9 +1478,6 @@ i.fa-grip-lines-vertical {
 }
 
 .errorSection {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
   padding-top: 160px;
 }
@@ -1510,7 +1512,7 @@ i.fa-grip-lines-vertical {
 .errorNav ul li svg {
   color: #17a2aa;
   font-size: 1.7rem;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 /* High Resolution Screens */
