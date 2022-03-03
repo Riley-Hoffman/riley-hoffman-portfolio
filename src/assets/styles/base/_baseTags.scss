@@ -52,6 +52,11 @@ p {
 }
 
 section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
   padding: 40px 0;
 }
 

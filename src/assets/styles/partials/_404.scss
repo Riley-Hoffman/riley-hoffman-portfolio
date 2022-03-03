@@ -12,9 +12,6 @@
 }
 
 .errorSection {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
   padding-top: 160px;
   .errorContentBox {
@@ -46,7 +43,7 @@
       svg {
         color: $teal;
         font-size: 1.7rem;
-        margin-left: 10px;
+        margin-left: 20px;
       }
     }
   }
