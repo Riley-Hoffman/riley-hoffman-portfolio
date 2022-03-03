@@ -826,7 +826,7 @@ header .navBox nav ul.mainNavList a:focus::after {
 .splash h1 {
   color: #e5e8ee;
   font-size: 2rem;
-  margin-bottom: 17.5px;
+  margin: 10px 0 17.5px;
 }
 .splash h2 {
   margin-bottom: 15px;
@@ -869,6 +869,9 @@ header .navBox nav ul.mainNavList a:focus::after {
   color: #00050f;
   font-weight: 800;
   text-shadow: -1px -1px 2px #17a2aa, 1px -1px 2px #17a2aa, -1px 2px 2px #17a2aa, 1px 1px 2px #00050f;
+}
+.relativeColumnBox .smallFlexBox p {
+  margin-top: 0;
 }
 .relativeColumnBox .smallFlexBox p:nth-child(2) {
   margin-bottom: 10px;
