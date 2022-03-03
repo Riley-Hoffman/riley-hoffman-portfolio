@@ -9,10 +9,11 @@
           <div class="flexBox iconContainer">
             <font-awesome-icon icon="water" class="fas fa-water" aria-hidden="true" />
           </div>
-          <h1 class="subtleTextGradient">Riley Hoffman</h1>
-          <p class="animate__animated animate__backInLeft subtleTextShadow">
-            <span class="subtleTextGradient">Web </span><span class="outlined">Developer</span>
-          </p>
+          <h1 class="subtleTextGradient">Riley Hoffman
+            <span class="animate__animated animate__backInLeft subtleTextShadow">
+              <span class="web subtleTextGradient">Web </span><span class="outlined">Developer</span>
+            </span>
+          </h1>
           <button
             class="tealContactButton homeButton styledButton"
             @click="toggleModal"
