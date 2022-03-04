@@ -28,6 +28,7 @@ body {
 *::selection {
   background-color: $lightTeal;
   color: $darkTeal;
+  text-shadow: none;
   -webkit-text-fill-color: initial;
 }
 
