@@ -377,6 +377,7 @@ label[for=email] {
 input,
 textarea {
   border: none;
+  caret-color: #245056;
   font-family: "Rubik", sans-serif;
 }
 
