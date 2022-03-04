@@ -791,6 +791,9 @@
           a:hover::after {
             width: 100%;
           }
+          a:hover::before {
+          width: 95%;
+          }
           a:active::after {
             -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
             -o-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;

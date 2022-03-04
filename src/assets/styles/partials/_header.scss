@@ -74,11 +74,8 @@ header {
 
       ul.mainNavList {
         z-index: 999;
-        a::after {
-          background: linear-gradient(to right bottom, $grayTeal 5%, #17a2aa);
-          border-radius: 50px;
+        a::after, a::before {
           content: "";
-          margin-top: 8px;
           position: absolute;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
@@ -86,13 +83,29 @@ header {
           -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          height: 2.5px;
           width: 0;
           left: 50%;
           top: 100%;
         }
+        a::after {
+          background: linear-gradient(to right bottom, $grayTeal 5%, #17a2aa);
+          border-radius: 50px;
+          margin-top: 8px;
+          height: 2.5px;
+        }
         a:focus::after {
           width: 100%;
+        }
+        a::before {
+          background: linear-gradient(to top, rgba(72, 216, 240, 0.38) 20%, rgba(65, 109, 255, 0.17));
+          box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+          border-radius: 90%;
+          margin-top: 9px;
+          height: 2px;
+          opacity: 0.8;
+        }
+        a:focus::before {
+          width: 95%;
         }
       }
     }
