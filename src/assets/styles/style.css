@@ -789,13 +789,14 @@ header .navBox nav ul.mainNavList {
   z-index: 999;
 }
 header .navBox nav ul.mainNavList a::after {
-  background-color: #17a2aa;
+  background: linear-gradient(to right bottom, #65a5a8 5%, #17a2aa);
+  border-radius: 50px;
   content: "";
-  margin-top: 5px;
+  margin-top: 8px;
   position: absolute;
   transform: translateX(-50%);
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-  height: 2px;
+  height: 2.5px;
   width: 0;
   left: 50%;
   top: 100%;
