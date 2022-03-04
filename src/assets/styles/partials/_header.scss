@@ -75,9 +75,10 @@ header {
       ul.mainNavList {
         z-index: 999;
         a::after {
-          background-color: $teal;
+          background: linear-gradient(to right bottom, $grayTeal 5%, #17a2aa);
+          border-radius: 50px;
           content: "";
-          margin-top: 5px;
+          margin-top: 8px;
           position: absolute;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
@@ -85,7 +86,7 @@ header {
           -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
           transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          height: 2px;
+          height: 2.5px;
           width: 0;
           left: 50%;
           top: 100%;
