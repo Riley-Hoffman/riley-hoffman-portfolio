@@ -25,17 +25,18 @@ body {
   border-radius: 5px;
 }
 
+*::selection {
+  background-color: $lightTeal;
+  color: $darkTeal;
+  -webkit-text-fill-color: initial;
+}
+
 main {
   position: relative;
 }
 
 h1 {
   font-size: 1.8rem;
-}
-
-// Stops headings from being invisible when using accessibility view browser plugin
-h1:not(#ryHekhLTP6BzxJWvqUdqp4uHmU) {
-  -webkit-text-fill-color: initial;
 }
 
 h2 {
