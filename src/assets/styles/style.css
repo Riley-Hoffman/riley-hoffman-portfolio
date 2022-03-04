@@ -1421,6 +1421,9 @@ footer .bottom a svg {
   font-size: 1rem;
   padding-left: 8px;
 }
+footer .bottom a:active {
+  outline: none;
+}
 
 .borderlessFooter {
   border-top: none;
