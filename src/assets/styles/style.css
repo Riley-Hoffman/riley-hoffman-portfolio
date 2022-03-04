@@ -1415,7 +1415,7 @@ footer .bottom a {
   font-size: 1.1rem;
   font-weight: 500;
   margin-right: 1px;
-  padding: 3px;
+  padding: 3px 5px;
   justify-content: space-between;
 }
 footer .bottom a svg {
