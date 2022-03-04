@@ -275,16 +275,24 @@ body {
   border-radius: 5px;
 }
 
+*::-moz-selection {
+  background-color: #7adbe0;
+  color: #245056;
+  -webkit-text-fill-color: initial;
+}
+
+*::selection {
+  background-color: #7adbe0;
+  color: #245056;
+  -webkit-text-fill-color: initial;
+}
+
 main {
   position: relative;
 }
 
 h1 {
   font-size: 1.8rem;
-}
-
-h1:not(#ryHekhLTP6BzxJWvqUdqp4uHmU) {
-  -webkit-text-fill-color: initial;
 }
 
 h2 {
