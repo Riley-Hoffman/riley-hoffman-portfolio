@@ -278,12 +278,14 @@ body {
 *::-moz-selection {
   background-color: #7adbe0;
   color: #245056;
+  text-shadow: none;
   -webkit-text-fill-color: initial;
 }
 
 *::selection {
   background-color: #7adbe0;
   color: #245056;
+  text-shadow: none;
   -webkit-text-fill-color: initial;
 }
 
