@@ -1101,6 +1101,9 @@ header .navBox nav ul.mainNavList a:focus::before {
 .about .wrapper {
   display: flex;
 }
+.about .wrapper h1 {
+  color: #00050f;
+}
 .about .wrapper .about1,
 .about .wrapper .about2 {
   display: flex;
@@ -1284,7 +1287,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   align-items: center;
   flex-direction: column;
 }
-.skills .wrapper .flexBox h2 {
+.skills .wrapper .flexBox h1 {
   color: #00050f;
   margin-bottom: 40px;
 }
