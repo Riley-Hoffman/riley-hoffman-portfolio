@@ -1542,6 +1542,11 @@ i.fa-grip-lines-vertical {
 }
 
 /* High Resolution Screens */
+@media (max-height: 730px) {
+  .modal {
+    bottom: 0%;
+  }
+}
 @media (max-width: 1680px) and (max-height: 1050px) {
   header .navBox nav ul a {
     font-size: 1.2rem;
@@ -1568,9 +1573,6 @@ i.fa-grip-lines-vertical {
 @media (max-width: 1360px) and (max-height: 605px) {
   .relativeColumnBox .smallFlexBox .iconContainer {
     margin-bottom: 0;
-  }
-  .relativeColumnBox .modal {
-    top: -100px;
   }
 
   .scrollingBackground {
@@ -2556,8 +2558,7 @@ button:focus {
     color: #e5e8ee;
   }
   .splash h1,
-.splash h2,
-.splash h1 span {
+.splash h2 {
     color: #e5e8ee;
   }
   .splash .relativeColumnBox .smallFlexBox a:focus {
