@@ -1,4 +1,13 @@
 /* High Resolution Screens */
+
+// Modal position control
+@media (max-height: 730px) {
+.modal {
+      bottom: 0%;
+    }
+  }
+
+// Larget Screens 
 @media (max-width: 1680px) and (max-height: 1050px) {
   header .navBox nav ul a {
     font-size: 1.2rem;
@@ -34,9 +43,6 @@
       .iconContainer {
         margin-bottom: 0;
       }
-    }
-    .modal {
-      top: -100px;
     }
   }
   .scrollingBackground {
@@ -1223,8 +1229,7 @@
       color: $white;
     }
     h1,
-    h2,
-    h1 span {
+    h2 {
       color: $white;
     }
 
