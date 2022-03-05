@@ -3,6 +3,9 @@
   padding: 115px 0;
   .wrapper {
     display: flex;
+    h1 {
+      color: $black;
+    }
     .about1,
     .about2 {
       display: flex;
