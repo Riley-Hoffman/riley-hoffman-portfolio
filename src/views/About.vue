@@ -1,7 +1,5 @@
 <template>
-  <!-- Main Starts -->
     <main id="main" class="aboutMain">
-        <!-- About Section Starts -->
         <section class="about" id="about">
             <div class="wrapper">
                 <div class="flexBox about1">
@@ -30,7 +28,6 @@
                     </p>
                 </div>
             </div>
-            <!-- Wrapper Ends -->
         </section>
     </main>
 </template>
