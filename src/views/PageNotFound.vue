@@ -16,7 +16,7 @@
                         <ul>
                             <li>
                                 <router-link class="homeLink404" :to="errorPageClick" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</router-link>
-                                <font-awesome-icon icon="arrow-right-long" class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft" aria-hidden="true" />
+                                <font-awesome-icon icon="arrow-right-long" class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft" v-bind:class="!this.reduceMotion && { animate__headShake: this.hover, animate__backOutRight: this.click }" aria-hidden="true" />
                             </li>
                         </ul>
                     </nav>
@@ -30,21 +30,18 @@ import router from '../router'
 export default {
   data () {
     return {
-      reduceMotion: window.matchMedia('(prefers-reduced-motion: reduce)')
+      reduceMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+      hover: false,
+      click: false
     }
   },
   methods: {
-    errorPageMouseOver (e) {
-      console.log(e)
-      if (!this.reduceMotion || !this.reduceMotion.matches) {
-        e.target.nextSibling.classList.remove('animate__backInLeft')
-        e.target.nextSibling.classList.add('animate__headShake')
-      }
+    errorPageMouseOver () {
+      this.hover = true
     },
-    errorPageClick (e) {
-      if (!this.reduceMotion || !this.reduceMotion.matches) {
-        e.target.nextSibling.classList.remove('animate__headShake')
-        e.target.nextSibling.classList.add('animate__backOutRight')
+    errorPageClick () {
+      if (!this.reduceMotion) {
+        this.click = true
         setTimeout(() => router.push('/'), 550)
       } else {
         router.push('/')
