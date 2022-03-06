@@ -45,8 +45,10 @@ export default {
       if (!this.reduceMotion || !this.reduceMotion.matches) {
         e.target.nextSibling.classList.remove('animate__headShake')
         e.target.nextSibling.classList.add('animate__backOutRight')
+        setTimeout(() => router.push('/'), 550)
+      } else {
+        router.push('/')
       }
-      setTimeout(() => router.push('/'), 550)
     }
   }
 }
