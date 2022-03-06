@@ -74,7 +74,8 @@ header {
 
       ul.mainNavList {
         z-index: 999;
-        a::after, a::before {
+        a::after,
+        a::before {
           content: "";
           position: absolute;
           -webkit-transform: translateX(-50%);
@@ -97,8 +98,13 @@ header {
           width: 100%;
         }
         a::before {
-          background: linear-gradient(to top, rgba(72, 216, 240, 0.38) 20%, rgba(65, 109, 255, 0.17));
-          box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+          background: linear-gradient(
+            to top,
+            rgba(72, 216, 240, 0.38) 20%,
+            rgba(65, 109, 255, 0.17)
+          );
+          box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38),
+            0 0 12px rgba(65, 109, 255, 0.17);
           border-radius: 90%;
           margin-top: 9px;
           height: 2px;
