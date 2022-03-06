@@ -40,6 +40,9 @@
     li {
       align-items: center;
       display: flex;
+      .homeLink404:active {
+        outline: none;
+      }
       svg {
         color: $teal;
         font-size: 1.7rem;
