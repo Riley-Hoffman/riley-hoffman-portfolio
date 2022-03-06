@@ -29,7 +29,6 @@ export default {
   },
   data () {
     return {
-      safari: navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('OPR') && !navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Android'),
       skills: [
         {
           name: 'HTML5',
