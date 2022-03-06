@@ -89,14 +89,14 @@ form {
 }
 
 fieldset {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-block-start: 0;
-    padding-block-end: 0;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
-    border: none;
-    min-inline-size: min-content;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border: none;
+  min-inline-size: min-content;
 }
 
 button:active {
@@ -107,8 +107,8 @@ label {
   font-size: 1.1rem;
 }
 
-label[for=email] {
-      margin-left: 18px;
+label[for="email"] {
+  margin-left: 18px;
 }
 
 input,
@@ -132,7 +132,7 @@ input[type="email"] {
 input[type="text"],
 input[type="email"],
 textarea {
-  border-radius:20px 3px 0px 20px;
+  border-radius: 20px 3px 0px 20px;
   background: $white;
   color: $black;
 }
