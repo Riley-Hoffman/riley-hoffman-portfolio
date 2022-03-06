@@ -27,7 +27,6 @@
           </div>
         </div>
       </div>
-      <!-- Wrapper Ends -->
       <div class="lightHeroElements">
         <div class="smokeParentContainer">
           <div class="lightBackground">

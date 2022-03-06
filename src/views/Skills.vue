@@ -1,12 +1,11 @@
 <template>
 <main id="main" class="skillsMain">
-  <!-- Skills Section Starts -->
         <section class="skills" id="skills">
         <div class="wrapper">
             <div class="flexBox">
                 <h1>Skills</h1>
                 <ul class="skillsGallery">
-                <SkillsListItem
+                <SkillsLiComponent
                   v-for="(skill, index) in skills"
                   :key="index"
                   :skill="skill.name"
@@ -16,16 +15,14 @@
                 </ul>
             </div>
             </div>
-            <!-- Wrapper Ends -->
         </section>
-        <!-- Skills Section Ends -->
     </main>
 </template>
 <script>
-import SkillsListItem from '@/components/SkillsListItem.vue'
+import SkillsLiComponent from '@/components/SkillsLiComponent.vue'
 export default {
   components: {
-    SkillsListItem
+    SkillsLiComponent
   },
   data () {
     return {
