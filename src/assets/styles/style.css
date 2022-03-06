@@ -1449,6 +1449,9 @@ i.fa-grip-lines-vertical {
   align-items: center;
   display: flex;
 }
+.errorNav ul li .homeLink404:active {
+  outline: none;
+}
 .errorNav ul li svg {
   color: #17a2aa;
   font-size: 1.7rem;
