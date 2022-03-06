@@ -15,7 +15,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <router-link class="homeLink404" to="/" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</router-link>
+                                <router-link class="homeLink404" :to="errorPageClick" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</router-link>
                                 <font-awesome-icon icon="arrow-right-long" class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft" aria-hidden="true" />
                             </li>
                         </ul>
@@ -26,6 +26,7 @@
     </main>
 </template>
 <script>
+import router from '../router'
 export default {
   data () {
     return {
@@ -42,13 +43,10 @@ export default {
     },
     errorPageClick (e) {
       if (!this.reduceMotion || !this.reduceMotion.matches) {
-        e.preventDefault()
         e.target.nextSibling.classList.remove('animate__headShake')
         e.target.nextSibling.classList.add('animate__backOutRight')
-        setTimeout(() => {
-          window.location.replace('https://rileyhoffman.com/')
-        }, 550)
       }
+      setTimeout(() => router.push('/'), 550)
     }
   }
 }
