@@ -1,7 +1,7 @@
 <template>
  <main id="main" class="homeMain">
     <section class="splash">
-      <div class="galaxy">
+      <div class="galaxy" @click="hideModal">
         <div class="stars"></div>
       </div>
       <div class="wrapper relativeColumnBox">
@@ -20,7 +20,11 @@
             ><span class="target">Contact<span class="me"> Me</span></span
             ></button>
           <Transition>
-            <ModalComponent :showModal="showModal" :toggleModal="toggleModal"  v-if="!showModal" />
+            <ModalComponent
+            :showModal="showModal"
+            :toggleModal="toggleModal"
+            v-if="showModal"
+             />
           </Transition>
           <div class="contactWrapper">
             <SocialComponent />
@@ -48,7 +52,7 @@ import ModalComponent from '@/components/ModalComponent.vue'
 export default {
   data () {
     return {
-      showModal: 'false'
+      showModal: false
     }
   },
   components: {
@@ -58,6 +62,11 @@ export default {
   methods: {
     toggleModal () {
       this.showModal = !this.showModal
+    },
+    hideModal () {
+      if (this.showModal) {
+        this.showModal = !this.showModal
+      }
     }
   }
 }
