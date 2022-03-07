@@ -1,17 +1,13 @@
 <template>
 <li class="projectBox">
     <div class="projectInfo">
-        <span translate="no">
-            <h2>
+            <h2 translate="no">
                 {{ title }}
             </h2>
-            <h3>
+            <h3 translate="no">
                 {{ skills }}
             </h3>
-        </span>
-            <p>
-                {{ description }}
-            </p>
+            <p v-html="description"></p>
             <h4><span translate="no">{{ title }}</span> Links:</h4>
             <a :href="liveUrl" target="_blank" rel="nofollow">Live</a>
             <a :href="gitUrl" target="_blank" rel="nofollow">Repo</a>
