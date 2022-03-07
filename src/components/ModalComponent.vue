@@ -1,6 +1,6 @@
 <template>
     <div class="modal">
-        <button class="modalClose" @click="toggleModal">
+        <button class="modalClose" @click="hideModal">
         <font-awesome-icon icon="xmark" class="fa-solid fa-xmark" aria-hidden="true" />
         <span class="sr-only">Close contact form</span>
         </button>
@@ -10,7 +10,7 @@
 <script>
 import FormComponent from '@/components/FormComponent.vue'
 export default {
-  props: ['showModal', 'toggleModal'],
+  props: ['showModal', 'toggleModal', 'hideModal'],
   components: {
     FormComponent
   }

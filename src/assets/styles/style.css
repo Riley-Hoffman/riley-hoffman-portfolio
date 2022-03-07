@@ -644,7 +644,6 @@ header {
   position: absolute;
   height: 10vh;
   width: 100%;
-  z-index: 999;
 }
 header .skip-link {
   background: #17a2aa;
@@ -684,7 +683,6 @@ header .navBox {
   justify-content: flex-end;
   margin-top: 35px;
   position: relative;
-  z-index: 999;
 }
 header .navBox nav {
   align-items: flex-end;
