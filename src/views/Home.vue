@@ -23,6 +23,7 @@
             <ModalComponent
             :showModal="showModal"
             :toggleModal="toggleModal"
+            :hideModal="hideModal"
             v-if="showModal"
              />
           </Transition>
@@ -65,7 +66,7 @@ export default {
     },
     hideModal () {
       if (this.showModal) {
-        this.showModal = !this.showModal
+        this.toggleModal()
       }
     }
   }
