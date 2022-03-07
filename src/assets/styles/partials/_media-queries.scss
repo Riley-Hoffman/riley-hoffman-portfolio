@@ -1034,7 +1034,9 @@
     text-shadow: $lightModeTextShadow;
   }
   .splash .galaxy {
-    display: none;
+    .stars {
+      display: none;
+    }
   }
 
   .subtleTextGradient {

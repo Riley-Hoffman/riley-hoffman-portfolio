@@ -8,7 +8,12 @@
         <div class="flexBox fieldsetBox">
           <div class="flexBox inputBox">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name.." />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
 
             <label for="email">Email:</label>
             <input
@@ -23,6 +28,7 @@
               id="message"
               name="message"
               placeholder="Write something.."
+              spellcheck="true"
             ></textarea>
         </div>
       </fieldset>
