@@ -33,7 +33,7 @@ export default {
         {
           title: 'Out Of Context',
           skills: 'React, JSX, AXIOS, SCSS',
-          description: 'Created with React, this app allows users to search by movie name and displays GIFs based on themes (keywords) from the movie (love, war, sports etc). Three GIFs are displayed initially, with their keywords underneath. By clicking, the user can cycle through all GIFs per keyword, or look at other keywords associated with the movie, returning new GIFs!',
+          description: '<p>Created with <span translate="no">React</span>, this app allows users to search by movie name and displays GIFs based on themes (keywords) from the movie (love, war, sports etc). Three GIFs are displayed initially, with their keywords underneath. By clicking, the user can cycle through all GIFs per keyword, or look at other keywords associated with the movie, returning new GIFs!</p>',
           liveUrl: 'https://focused-varahamihira-abf5da.netlify.app/',
           gitUrl: 'https://github.com/dearJuno/outofContext',
           srcSet: 'https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782917/out-of-context3x_krpnlk.webp 1280w, https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782917/out-of-context2x_mtbvqx.webp 900w, https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782917/out-of-context1x_ojtnhg.webp 550w',
@@ -43,7 +43,7 @@ export default {
         {
           title: 'Infinity Corkboard',
           skills: 'React, JSX, REST API, CSS',
-          description: 'This React based app presents the user with a 4X4 grid of photos from NASA API\'s Astronomy Picture of the Day endpoint. The user can click any images they wish to change, which swaps it out for a new one in the same position. When the user is pleased with how the grid looks, they may save it by printing to pdf. Print output is styled so the grid appears with no other page elements in the saved file.',
+          description: 'This <span translate="no">React</span> based app presents the user with a 4X4 grid of photos from <span translate="no">NASA</span> API\'s <span translate="no">Astronomy Picture of the Day</span> endpoint. The user can click any images they wish to change, which swaps it out for a new one in the same position. When the user is pleased with how the grid looks, they may save it by printing to pdf. Print output is styled so the grid appears with no other page elements in the saved file.',
           liveUrl: 'https://relaxed-visvesvaraya-8807c8.netlify.app/',
           gitUrl: 'https://github.com/Riley-Hoffman/riley-hoffman-project-three',
           srcSet: 'https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783133/infinity-corkboard3x_vnzfw3.webp 1280w, https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783134/infinity-corkboard2x_qc17n0.webp 900w, https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642783133/infinity-corkboard1x_wsb1v7.webp 550w',
