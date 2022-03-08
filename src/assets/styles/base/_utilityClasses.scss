@@ -36,6 +36,10 @@
   display: none !important;
 }
 
+.static {
+  position: static !important;
+}
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.3s ease;

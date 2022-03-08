@@ -1,4 +1,5 @@
 <template>
+    <Transition>
     <div class="modal">
         <button class="modalClose" @click="hideModal">
         <font-awesome-icon icon="xmark" class="fa-solid fa-xmark" aria-hidden="true" />
@@ -6,11 +7,12 @@
         </button>
         <FormComponent />
     </div>
+    </Transition>
 </template>
 <script>
 import FormComponent from '@/components/FormComponent.vue'
 export default {
-  props: ['showModal', 'toggleModal', 'hideModal'],
+  props: ['hideModal'],
   components: {
     FormComponent
   }
