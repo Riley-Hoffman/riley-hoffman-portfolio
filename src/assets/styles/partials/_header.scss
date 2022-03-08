@@ -14,7 +14,7 @@ header {
     padding: 15px 15px;
     position: absolute;
     top: 5px;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .skip-link:focus {
@@ -27,6 +27,7 @@ header {
     max-width: 4.5%;
     min-width: 40px;
     padding: 1px;
+    z-index: 999;
     img {
       padding: 4px;
     }
