@@ -1473,25 +1473,6 @@ i.fa-grip-lines-vertical {
 }
 
 /* High Resolution Screens */
-@media (max-height: 720px) {
-  .modal {
-    bottom: 2%;
-    max-height: 600px;
-    padding-bottom: 20px;
-  }
-  .modal form {
-    padding-bottom: 0;
-  }
-}
-@media (max-height: 543px) {
-  .modal form .inputBox {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .modal form .inputBox label:nth-of-type(2) {
-    margin-left: 20px;
-  }
-}
 @media (max-width: 1680px) and (max-height: 1050px) {
   header .navBox nav ul a {
     font-size: 1.2rem;
@@ -1510,8 +1491,19 @@ i.fa-grip-lines-vertical {
   }
 
   .modal {
-    bottom: 10%;
+    bottom: 5%;
     max-height: 700px;
+  }
+}
+@media (max-width: 1680px) and (max-height: 650px) {
+  .modal.openModal {
+    bottom: 2%;
+  }
+  .modal.openModal form .inputBox {
+    flex-direction: row;
+  }
+  .modal.openModal form .inputBox label:nth-child(2) {
+    margin-left: 0;
   }
 }
 /* Wide screen tv */
@@ -1861,6 +1853,25 @@ i.fa-grip-lines-vertical {
     margin-top: 50px;
   }
 }
+@media (max-height: 720px) {
+  .modal {
+    bottom: 2%;
+    max-height: 600px;
+    padding-bottom: 20px;
+  }
+  .modal form {
+    padding-bottom: 0;
+  }
+}
+@media (max-height: 543px) {
+  .modal form .inputBox {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .modal form .inputBox label:nth-of-type(2) {
+    margin-left: 20px;
+  }
+}
 @media (max-width: 680px) {
   .aboutMain + footer,
 .projectsMain + footer,
@@ -1972,10 +1983,13 @@ i.fa-grip-lines-vertical {
     margin-top: 20px;
   }
 
-  .modal {
+  .modal.openModal {
     bottom: 10%;
     max-width: 100%;
     min-width: 0;
+  }
+  .modal.openModal form .inputBox {
+    flex-direction: column;
   }
 
   .homeMain + footer .bottom a {

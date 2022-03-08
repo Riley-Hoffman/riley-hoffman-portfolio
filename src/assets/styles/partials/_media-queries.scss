@@ -1,32 +1,6 @@
 /* High Resolution Screens */
 
-// Modal position control
-@media (max-height: 720px) {
-  .modal {
-    bottom: 2%;
-    max-height: 600px;
-    padding-bottom: 20px;
-    form {
-      padding-bottom: 0;
-    }
-  }
-}
-
-@media (max-height: 543px) {
-  .modal {
-    form {
-      .inputBox {
-        justify-content: space-between;
-        flex-direction: row;
-        label:nth-of-type(2) {
-          margin-left: 20px;
-        }
-      }
-    }
-  }
-}
-
-// Larget Screens
+// Largest Screens
 @media (max-width: 1680px) and (max-height: 1050px) {
   header .navBox nav ul a {
     font-size: 1.2rem;
@@ -47,8 +21,22 @@
     }
   }
   .modal {
-    bottom: 10%;
+    bottom: 5%;
     max-height: 700px;
+  }
+}
+
+@media (max-width: 1680px) and (max-height: 650px) {
+  .modal.openModal {
+    bottom: 2%;
+    form {
+      .inputBox {
+      flex-direction: row;
+      label:nth-child(2) {
+        margin-left: 0;
+      }
+    }
+    }
   }
 }
 
@@ -451,6 +439,32 @@
   }
 }
 
+// Modal position control
+@media (max-height: 720px) {
+  .modal {
+    bottom: 2%;
+    max-height: 600px;
+    padding-bottom: 20px;
+    form {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-height: 543px) {
+  .modal {
+    form {
+      .inputBox {
+        justify-content: space-between;
+        flex-direction: row;
+        label:nth-of-type(2) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
 // Footer Control
 @media (max-width: 680px) {
   .aboutMain + footer,
@@ -563,10 +577,15 @@
   header .navBox {
     margin-top: 20px;
   }
-  .modal {
+  .modal.openModal {
     bottom: 10%;
     max-width: 100%;
     min-width: 0;
+    form {
+    .inputBox {
+      flex-direction: column;
+    }
+    }
   }
 
   .homeMain + footer {
