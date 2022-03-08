@@ -361,7 +361,7 @@
         .oval {
           display: none;
         }
-        a:hover > img {
+        a:hover > img, a:focus > img {
           border-top: 8px ridge;
         }
       }

@@ -1784,7 +1784,7 @@ i.fa-grip-lines-vertical {
   .projects .projectBox .imgBox .oval {
     display: none;
   }
-  .projects .projectBox .imgBox a:hover > img {
+  .projects .projectBox .imgBox a:hover > img, .projects .projectBox .imgBox a:focus > img {
     border-top: 8px ridge;
   }
   .projects .projectBox .projectInfo a:last-of-type {
