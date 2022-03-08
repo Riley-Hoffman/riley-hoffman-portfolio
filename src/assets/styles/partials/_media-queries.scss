@@ -361,6 +361,9 @@
         .oval {
           display: none;
         }
+        a:hover > img {
+          border-top: 8px ridge;
+        }
       }
 
       .projectInfo a:last-of-type {
@@ -383,10 +386,6 @@
   .projectInfo:nth-child(odd) {
     padding: 0;
     text-align: center;
-  }
-
-  .projectBox:nth-child(even) {
-    flex-direction: column-reverse;
   }
 
   .homeMain + footer {
@@ -1337,6 +1336,7 @@
   h2,
   h3,
   nav ul,
+    h2,
   .subtleTextShadow {
     text-shadow: $darkModeTextShadow;
   }
