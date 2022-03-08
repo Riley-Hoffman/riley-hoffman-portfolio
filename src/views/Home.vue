@@ -4,7 +4,7 @@
       <div class="galaxy" @click="hideModal">
         <div class="stars"></div>
       </div>
-      <div class="wrapper relativeColumnBox">
+      <div class="wrapper relativeColumnBox" v-bind:class="{ static: showModal}">
         <div class="smallFlexBox">
           <div class="flexBox iconContainer">
             <font-awesome-icon icon="water" class="fas fa-water" aria-hidden="true" />
@@ -16,17 +16,14 @@
           </h1>
           <button
             class="tealContactButton homeButton styledButton"
-            @click="toggleModal"
-            ><span class="target">Contact<span class="me"> Me</span></span
-            ></button>
-          <Transition>
-            <ModalComponent
-            :showModal="showModal"
-            :toggleModal="toggleModal"
-            :hideModal="hideModal"
-            v-if="showModal"
-             />
-          </Transition>
+            @click="openModal"
+            ><span class="target">Contact<span class="me"> Me</span></span>
+          </button>
+          <ModalComponent
+          v-bind:class="{ openModal: showModal}"
+          :hideModal="hideModal"
+          v-if="showModal"
+          />
           <div class="contactWrapper">
             <SocialComponent />
           </div>
@@ -61,12 +58,14 @@ export default {
     ModalComponent
   },
   methods: {
-    toggleModal () {
-      this.showModal = !this.showModal
+    openModal () {
+      if (!this.showModal) {
+        this.showModal = !this.showModal
+      }
     },
     hideModal () {
       if (this.showModal) {
-        this.toggleModal()
+        this.showModal = !this.showModal
       }
     }
   }
