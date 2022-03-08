@@ -1784,6 +1784,9 @@ i.fa-grip-lines-vertical {
   .projects .projectBox .imgBox .oval {
     display: none;
   }
+  .projects .projectBox .imgBox a:hover > img {
+    border-top: 8px ridge;
+  }
   .projects .projectBox .projectInfo a:last-of-type {
     margin-left: 30px;
     margin-right: auto;
@@ -1801,10 +1804,6 @@ i.fa-grip-lines-vertical {
 .projectInfo:nth-child(odd) {
     padding: 0;
     text-align: center;
-  }
-
-  .projectBox:nth-child(even) {
-    flex-direction: column-reverse;
   }
 
   .homeMain + footer {
@@ -2576,6 +2575,7 @@ footer .bottom .resume:hover svg {
 h2,
 h3,
 nav ul,
+h2,
 .subtleTextShadow {
     text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
   }
