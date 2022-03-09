@@ -20,7 +20,7 @@ module.exports = {
       swDest: 'sw.js',
       // ...other Workbox options...
       clientsClaim: true,
-      exclude: [/_redirects/]
+      exclude: '_redirects'
     }
   }
 }
