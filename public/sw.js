@@ -4,13 +4,19 @@ workbox.googleAnalytics.initialize()
 
 workbox.routing.registerRoute(
   /.*\.js/,
-  workbox.strategies.networkFirst()
+  workbox.strategies.networkFirst(),
+  new workbox.cacheableResponse.Plugin({
+    statuses: [0, 200]
+  })
 )
 
 workbox.routing.registerRoute(
   /.*\.css/,
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'css-cache'
+  }),
+  new workbox.cacheableResponse.Plugin({
+    statuses: [0, 200]
   })
 )
 
@@ -22,6 +28,9 @@ workbox.routing.registerRoute(
       new workbox.expiration.Plugin({
         maxEntries: 20,
         maxAgeSeconds: 7 * 24 * 60 * 60
+      }),
+      new workbox.cacheableResponse.Plugin({
+        statuses: [0, 200]
       })
     ]
   })
@@ -34,6 +43,9 @@ workbox.routing.registerRoute(
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 30
+      }),
+      new workbox.cacheableResponse.Plugin({
+        statuses: [0, 200]
       })
     ]
   })
