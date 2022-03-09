@@ -1,10 +1,10 @@
 <template>
   <form
-        action="https://formspree.io/f/xwkyonza"
-        method="POST"
-      >
-      <fieldset>
-        <legend class="sr-only">Send me an email.</legend>
+    action="https://formspree.io/f/xwkyonza"
+    method="POST"
+  >
+    <fieldset>
+      <legend class="sr-only">Send me an email.</legend>
         <div class="flexBox fieldsetBox">
           <div class="flexBox inputBox">
             <label for="name">Name:</label>
@@ -31,8 +31,7 @@
               spellcheck="true"
             ></textarea>
         </div>
-      </fieldset>
-
-        <button value="Submit" class="contactFormButton styledButton">Submit</button>
-      </form>
+    </fieldset>
+    <button value="Submit" class="contactFormButton styledButton">Submit</button>
+  </form>
 </template>

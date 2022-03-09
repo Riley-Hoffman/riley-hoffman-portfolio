@@ -8,18 +8,13 @@
           <div class="flexBox navBox">
             <nav>
               <ul class="mainNavList">
-                <li>
-                  <router-link class="navLink" to="/" :class="navBarColor">Home</router-link>
-                </li>
-                <li class="col2">
-                  <router-link class="navLink aboutLink" to="/about" :class="navBarColor">About</router-link>
-                </li>
-                <li>
-                  <router-link class="navLink projectsLink" to="/projects" :class="navBarColor">Projects</router-link>
-                </li>
-                <li class="col2">
-                  <router-link class="navLink" to="/skills" :class="navBarColor">Skills</router-link>
-                  </li>
+                <NavLiComponent
+                v-for="(navRoute, index) in navRoutes"
+                :key="index"
+                :path="navRoute.path"
+                :name="navRoute.name"
+                :navBarColor="navBarColor"
+                />
               </ul>
             </nav>
           </div>
@@ -27,11 +22,17 @@
     </header>
 </template>
 <script>
+import routes from '../router'
+import NavLiComponent from './NavLiComponent.vue'
 export default {
   data () {
     return {
-      preferDark: window.matchMedia('(prefers-color-scheme: dark)').matches
+      preferDark: window.matchMedia('(prefers-color-scheme: dark)').matches,
+      navRoutes: routes.options.routes
     }
+  },
+  components: {
+    NavLiComponent
   },
   computed: {
     navBarColor () {

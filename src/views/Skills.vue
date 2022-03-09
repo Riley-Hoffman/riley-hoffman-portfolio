@@ -1,22 +1,22 @@
 <template>
-<main id="main" class="skillsMain">
-        <section class="skills" id="skills">
+  <main id="main" class="skillsMain">
+    <section class="skills" id="skills">
         <div class="wrapper">
-            <div class="flexBox">
-                <h1>Skills</h1>
-                <ul class="skillsGallery">
-                <SkillsLiComponent
-                  v-for="(skill, index) in skills"
-                  :key="index"
-                  :skill="skill.name"
-                  :icon="skill.icon"
-                  :devicon="skill.devicon"
-                />
-                </ul>
-            </div>
-            </div>
-        </section>
-    </main>
+          <div class="flexBox">
+            <h1>Skills</h1>
+            <ul class="skillsGallery">
+              <SkillsLiComponent
+                v-for="(skill, index) in skills"
+                :key="index"
+                :skill="skill.name"
+                :icon="skill.icon"
+                :devicon="skill.devicon"
+              />
+            </ul>
+          </div>
+      </div>
+    </section>
+  </main>
 </template>
 <script>
 import SkillsLiComponent from '@/components/SkillsLiComponent.vue'

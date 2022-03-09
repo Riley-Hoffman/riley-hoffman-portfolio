@@ -1,25 +1,25 @@
 <template>
-    <main id="main" class="projectsMain">
-        <section class="projects" id="projects">
-            <div class="wrapper flexBox">
-                <h1>Projects</h1>
-                <ul>
-                    <ProjectLiComponent
-                    v-for="(project, index) in projects"
-                    :key="index"
-                    :title="project.title"
-                    :skills="project.skills"
-                    :description="project.description"
-                    :liveUrl="project.liveUrl"
-                    :gitUrl="project.gitUrl"
-                    :srcSet="project.srcSet"
-                    :imgUrl="project.imgUrl"
-                    :imgAlt="project.imgAlt"
-                    />
-                </ul>
-            </div>
-        </section>
-    </main>
+  <main id="main" class="projectsMain">
+    <section class="projects" id="projects">
+      <div class="wrapper flexBox">
+        <h1>Projects</h1>
+        <ul>
+          <ProjectLiComponent
+            v-for="(project, index) in projects"
+            :key="index"
+            :title="project.title"
+            :skills="project.skills"
+            :description="project.description"
+            :liveUrl="project.liveUrl"
+            :gitUrl="project.gitUrl"
+            :srcSet="project.srcSet"
+            :imgUrl="project.imgUrl"
+            :imgAlt="project.imgAlt"
+          />
+        </ul>
+      </div>
+    </section>
+  </main>
 </template>
 <script>
 import ProjectLiComponent from '@/components/ProjectLiComponent.vue'
