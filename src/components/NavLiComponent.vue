@@ -5,6 +5,6 @@
 </template>
 <script>
 export default {
-  props: ['key', 'path', 'name', 'navBarColor']
+  props: ['path', 'name', 'navBarColor']
 }
 </script>
