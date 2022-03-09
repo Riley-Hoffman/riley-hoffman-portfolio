@@ -4,10 +4,7 @@ workbox.googleAnalytics.initialize()
 
 workbox.routing.registerRoute(
   /.*\.js/,
-  workbox.strategies.networkFirst(),
-  new workbox.cacheableResponse.Plugin({
-    statuses: [0, 200]
-  })
+  workbox.strategies.networkFirst()
 )
 
 workbox.routing.registerRoute(

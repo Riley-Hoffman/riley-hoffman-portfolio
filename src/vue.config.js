@@ -6,7 +6,7 @@ module.exports = {
     plugins: [
       new GenerateSW({
         clientsClaim: true,
-        exclude: [/\.map$/, /_redirects/]
+        exclude: ['_redirects']
       })
     ]
   },
@@ -22,7 +22,7 @@ module.exports = {
       // swSrc is required in InjectManifest mode.
       swDest: 'sw.js',
       // ...other Workbox options...
-      exclude: [/\.map$/, /_redirects/]
+      exclude: ['_redirects']
     }
   }
 }
