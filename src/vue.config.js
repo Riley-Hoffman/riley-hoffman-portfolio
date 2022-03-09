@@ -5,9 +5,7 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true,
-        exclude: [/_redirects/]
+        clientsClaim: true
       })
     ]
   },
