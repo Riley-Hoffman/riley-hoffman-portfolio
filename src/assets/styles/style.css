@@ -472,6 +472,14 @@ a.blackOutline:focus {
   outline: 2px solid #00050f;
 }
 
+.relativeColumnBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
 .styledButton {
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   background-color: rgba(0, 0, 0, 0);
@@ -781,13 +789,6 @@ header .navBox nav ul.mainNavList a:focus::before {
   white-space: nowrap;
 }
 
-.relativeColumnBox {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  position: relative;
-}
 .relativeColumnBox .smallFlexBox {
   display: flex;
   flex-direction: column;
@@ -883,54 +884,6 @@ header .navBox nav ul.mainNavList a:focus::before {
   resize: none;
 }
 
-@-webkit-keyframes zooms {
-  from {
-    transform: translateZ(0px);
-  }
-  to {
-    transform: translateZ(300px);
-  }
-}
-@keyframes zooms {
-  from {
-    transform: translateZ(0px);
-  }
-  to {
-    transform: translateZ(300px);
-  }
-}
-@-webkit-keyframes hideme1 {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes hideme1 {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes hideme2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-@keyframes hideme2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
 .galaxy {
   opacity: 0.7;
   overflow: visible;
@@ -980,8 +933,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   overflow: hidden;
   position: relative;
 }
-
-.lightBackground {
+.smokeParentContainer .lightBackground {
   background-image: linear-gradient(to bottom, rgba(23, 162, 170, 0) 0%, rgba(23, 162, 170, 0.2) 100%), url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
   background-blend-mode: multiply;
   background-size: cover;
@@ -990,8 +942,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   height: 100%;
   width: 100%;
 }
-
-.smoke {
+.smokeParentContainer .lightBackground .smoke {
   filter: url(#wave);
   position: relative;
   top: 0%;
@@ -999,7 +950,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   height: 100%;
   width: 99.5%;
 }
-.smoke::before {
+.smokeParentContainer .lightBackground .smoke::before {
   border: 10px solid #17a2aa;
   box-shadow: 0 0 50px #e5e8ee, inset 0 0 50px #e5e8ee;
   filter: url(#wave) blur(10px);
@@ -1012,6 +963,54 @@ header .navBox nav ul.mainNavList a:focus::before {
   top: 0;
 }
 
+@-webkit-keyframes zooms {
+  from {
+    transform: translateZ(0px);
+  }
+  to {
+    transform: translateZ(300px);
+  }
+}
+@keyframes zooms {
+  from {
+    transform: translateZ(0px);
+  }
+  to {
+    transform: translateZ(300px);
+  }
+}
+@-webkit-keyframes hideme1 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hideme1 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hideme2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes hideme2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 .about {
   background-color: #e5e8ee;
   padding: 115px 0;
@@ -1247,9 +1246,38 @@ header .navBox nav ul.mainNavList a:focus::before {
   text-align: center;
 }
 
-footer,
-footer p {
-  color: #e5e8ee;
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0 0;
+}
+footer .bottom {
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 20px;
+  width: 100%;
+}
+footer .bottom p {
+  padding: 0px 20px 0 0;
+}
+footer .bottom a {
+  align-items: center;
+  color: #17a2aa;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 1px;
+  padding: 3px 5px;
+  justify-content: space-between;
+}
+footer .bottom a svg {
+  font-size: 1rem;
+  padding-left: 8px;
+}
+footer .bottom a:active {
+  outline: none;
 }
 
 .contactWrapper {
@@ -1343,48 +1371,6 @@ form textarea::-webkit-resizer {
   background-image: url("../../assets/img/angles-down-solid.png");
   background-size: contain;
   position: relative;
-}
-
-footer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 0 0;
-}
-footer .bottom {
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0 20px;
-  width: 100%;
-}
-footer .bottom p {
-  padding: 0px 20px 0 0;
-}
-footer .bottom a {
-  align-items: center;
-  color: #17a2aa;
-  display: flex;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-right: 1px;
-  padding: 3px 5px;
-  justify-content: space-between;
-}
-footer .bottom a svg {
-  font-size: 1rem;
-  padding-left: 8px;
-}
-footer .bottom a:active {
-  outline: none;
-}
-
-.borderlessFooter {
-  border-top: none;
-}
-
-.nameSeparator {
-  margin: 0 6px;
 }
 
 i.fa-grip-lines-vertical {
@@ -1523,7 +1509,7 @@ i.fa-grip-lines-vertical {
     width: 100%;
   }
 
-  .smoke::before {
+  .smokeParentContainer .lightBackground .smoke::before {
     opacity: 1;
   }
 
@@ -1785,7 +1771,8 @@ i.fa-grip-lines-vertical {
   .projects .projectBox .imgBox .oval {
     display: none;
   }
-  .projects .projectBox .imgBox a:hover > img, .projects .projectBox .imgBox a:focus > img {
+  .projects .projectBox .imgBox a:hover > img,
+.projects .projectBox .imgBox a:focus > img {
     border-top: 8px ridge;
   }
   .projects .projectBox .projectInfo a:last-of-type {
@@ -2521,14 +2508,10 @@ button:focus {
     text-shadow: none;
   }
 
-  footer,
-footer p {
-    color: #00050f;
-  }
-
   footer {
     background: #e5e8ee;
     border-top: 1px solid #00050f;
+    color: #00050f;
   }
   footer .contactWrapper > a {
     font-weight: 500;
@@ -2542,6 +2525,9 @@ footer p {
   footer .bottom .resume svg,
 footer .bottom .resume:active svg,
 footer .bottom .resume:hover svg {
+    color: #00050f;
+  }
+  footer p {
     color: #00050f;
   }
 
@@ -2653,13 +2639,9 @@ button:focus {
     text-shadow: 3px 3px 5px #00050f;
   }
 
-  footer,
-footer p {
-    color: #e5e8ee;
-  }
-
   footer {
     background: #00050f;
+    color: #e5e8ee;
   }
   footer .contactWrapper a:focus {
     outline: 2px solid #e5e8ee;
@@ -2670,6 +2652,9 @@ footer p {
   footer .bottom .resume svg,
 footer .bottom .resume:active svg,
 footer .bottom .resume:hover svg {
+    color: #e5e8ee;
+  }
+  footer p {
     color: #e5e8ee;
   }
 
