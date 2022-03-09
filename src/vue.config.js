@@ -19,8 +19,7 @@ module.exports = {
       // swSrc is required in InjectManifest mode.
       swDest: 'sw.js',
       // ...other Workbox options...
-      clientsClaim: true,
-      exclude: '_redirects'
+      exclude: [/_redirects/]
     }
   }
 }
