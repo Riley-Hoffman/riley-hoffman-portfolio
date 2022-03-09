@@ -4,11 +4,7 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'development' ? '/vuejs-pwa/' : '',
   configureWebpack: {
     plugins: [
-      new GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true,
-        exclude: [/_redirects/]
-      })
+      new GenerateSW()
     ]
   },
   pwa: {
@@ -21,7 +17,7 @@ module.exports = {
     },
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
-      swSrc: 'src/sw.js',
+      swDest: 'sw.js',
       // ...other Workbox options...
       exclude: [/_redirects/]
     }
