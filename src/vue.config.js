@@ -13,8 +13,7 @@ module.exports = {
     msTileColor: '#b91d47',
     appleMobileWebAppCache: 'yes',
     manifestOptions: {
-      background_color: '#42b983',
-      start_url: ''
+      background_color: '#42b983'
     },
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
