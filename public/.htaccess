@@ -5,6 +5,6 @@ ErrorDocument 404 /404.html
 <filesMatch ".(css|js)$">
  Header set Cache-Control "max-age=86400, public"
 </filesMatch>
-<FilesMatch "serviceworker.js">
+<FilesMatch "service-worker.js">
   ExpiresDefault "now"
 </FilesMatch>
