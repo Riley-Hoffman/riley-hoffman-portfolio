@@ -1,7 +1,7 @@
 const { GenerateSW } = require('workbox-webpack-plugin')
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'development' ? '/vuejs-pwa/' : '',
+  publicPath: process.env.NODE_ENV === 'production' ? '/vuejs-pwa/' : '',
   configureWebpack: {
     plugins: [
       new GenerateSW()
@@ -9,7 +9,7 @@ module.exports = {
   },
   pwa: {
     themeColor: '#00050f',
-    workboxPluginMode: 'GenerateSW',
+    workboxPluginMode: 'InjectManifest',
     msTileColor: '#b91d47',
     appleMobileWebAppCache: 'yes',
     manifestOptions: {
@@ -17,7 +17,7 @@ module.exports = {
     },
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
-      swDest: 'sw.js',
+      swSrc: './src/service-worker.js',
       // ...other Workbox options...
       exclude: [/_redirects/]
     }
