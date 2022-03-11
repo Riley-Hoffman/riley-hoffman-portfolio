@@ -681,6 +681,9 @@ header .favLink {
   max-width: 4.5%;
   min-width: 40px;
   padding: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
   z-index: 999;
 }
 header .favLink img {
