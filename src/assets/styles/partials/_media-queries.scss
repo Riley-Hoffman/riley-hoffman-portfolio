@@ -1543,6 +1543,11 @@
     .navBox {
       nav {
         ul.mainNavList {
+          a {
+            padding-bottom: 8px;
+          }
+          a:hover::before,
+          a:focus::before,
           a:hover::after,
           a:focus::after {
             width: 0%;
