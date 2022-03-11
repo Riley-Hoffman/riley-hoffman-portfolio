@@ -2721,7 +2721,12 @@ footer .bottom .resume:hover svg {
   header {
     background-attachment: local;
   }
-  header .navBox nav ul.mainNavList a:hover::after,
+  header .navBox nav ul.mainNavList a {
+    padding-bottom: 8px;
+  }
+  header .navBox nav ul.mainNavList a:hover::before,
+header .navBox nav ul.mainNavList a:focus::before,
+header .navBox nav ul.mainNavList a:hover::after,
 header .navBox nav ul.mainNavList a:focus::after {
     width: 0%;
   }
