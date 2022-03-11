@@ -1053,6 +1053,24 @@
 // Dark specific hover styles
 
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
+  .navBox {
+    nav {
+      ul.mainNavList {
+        a:hover {
+          text-shadow: $dModeNavHoverShadow;
+        }
+      }
+    }
+  }
+  .navBox {
+    .aboutNav, .skillsNav {
+      ul.mainNavList {
+        a:hover {
+          text-shadow: $lModeNavHoverShadow;
+        }
+      }
+    }
+  }
   .splash {
     .tealContactButton:hover {
       border: 2px solid $white;
@@ -1109,6 +1127,15 @@
 // Light specific hover styles
 
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
+  .navBox {
+    nav {
+      ul.mainNavList {
+        a:hover {
+          text-shadow: $lModeNavHoverShadow;
+        }
+      }
+    }
+  }
   .splash {
     .relativeColumnBox {
       .smallFlexBox {
@@ -1206,6 +1233,16 @@
     .favLink:focus {
       img {
         outline: 2px solid $black;
+      }
+    }
+  }
+
+  .navBox {
+    nav {
+      ul.mainNavList {
+        a:focus {
+          text-shadow: $lModeNavHoverShadow;
+        }
       }
     }
   }
@@ -1362,6 +1399,24 @@
   a:focus,
   button:focus {
     outline: 2px solid $white;
+  }
+  .navBox {
+    nav {
+      ul.mainNavList {
+        a:focus {
+          text-shadow: $dModeNavHoverShadow;
+        }
+      }
+    }
+  }
+  .navBox {
+    .aboutNav, .skillsNav {
+      ul.mainNavList {
+        a:focus {
+          text-shadow: $lModeNavHoverShadow;
+        }
+      }
+    }
   }
   header {
     .relativeColumnBox {

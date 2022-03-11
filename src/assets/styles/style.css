@@ -2337,6 +2337,14 @@ footer .contactWrapper .fa-github:hover {
   }
 }
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
+  .navBox nav ul.mainNavList a:hover {
+    text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
+  }
+
+  .navBox .aboutNav ul.mainNavList a:hover, .navBox .skillsNav ul.mainNavList a:hover {
+    text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
+  }
+
   .splash .tealContactButton:hover {
     border: 2px solid #e5e8ee;
   }
@@ -2378,6 +2386,10 @@ footer .contactWrapper .fa-github:active {
   }
 }
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
+  .navBox nav ul.mainNavList a:hover {
+    text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
+  }
+
   .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
     border: 2px solid #00050f;
   }
@@ -2454,6 +2466,10 @@ button:focus {
 
   header .favLink:focus img {
     outline: 2px solid #00050f;
+  }
+
+  .navBox nav ul.mainNavList a:focus {
+    text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
   }
 
   .contactComponent {
@@ -2593,6 +2609,14 @@ h2,
   a:focus,
 button:focus {
     outline: 2px solid #e5e8ee;
+  }
+
+  .navBox nav ul.mainNavList a:focus {
+    text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
+  }
+
+  .navBox .aboutNav ul.mainNavList a:focus, .navBox .skillsNav ul.mainNavList a:focus {
+    text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
   }
 
   header .relativeColumnBox .smallFlexBox a:focus {
