@@ -6,7 +6,7 @@
       </router-link>
         <div class="wrapper relativeColumnBox">
           <div class="flexBox navBox">
-            <nav>
+            <nav v-bind:class="{ aboutNav: $route.path === '/about', skillsNav: $route.path === '/skills' }">
               <ul class="mainNavList">
                 <NavLiComponent
                 v-for="(navRoute, index) in navRoutes"
