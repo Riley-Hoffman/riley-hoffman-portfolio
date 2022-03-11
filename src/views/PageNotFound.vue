@@ -13,8 +13,20 @@
           <nav>
             <ul>
               <li>
-                <router-link class="homeLink404" :to="errorPageClick" v-on:mouseover="errorPageMouseOver" v-on:click="errorPageClick">Back to Home</router-link>
-                <font-awesome-icon icon="arrow-right-long" class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft" v-bind:class="!this.reduceMotion && { animate__headShake: this.hover, animate__backOutRight: this.click }" aria-hidden="true" />
+                <router-link class="homeLink404"
+                  :to="errorPageClick"
+                  v-on="{
+                  mouseover: errorPageMouseOver,
+                  focus: errorPageMouseOver,
+                  click: errorPageClick
+                  }"
+                >Back to Home</router-link>
+                <font-awesome-icon
+                  icon="arrow-right-long"
+                  class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft"
+                  v-bind:class="!this.reduceMotion && { animate__headShake: this.hover, animate__backOutRight: this.click }"
+                  aria-hidden="true"
+                />
               </li>
             </ul>
           </nav>
