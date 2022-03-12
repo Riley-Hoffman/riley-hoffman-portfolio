@@ -1308,7 +1308,6 @@
 
   footer {
     background: $white;
-    border-top: 1.5px dashed $black;
     color: $black;
     .contactWrapper {
       > a {
@@ -1476,6 +1475,7 @@
 
   footer {
     background: $black;
+    border-color: $whiteTeal;
     color: $white;
     .contactWrapper {
       a:focus {

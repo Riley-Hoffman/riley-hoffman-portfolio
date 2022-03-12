@@ -1251,6 +1251,7 @@ header .navBox nav ul.mainNavList a:focus::before {
 
 footer {
   align-items: center;
+  border-top: 2px dashed #00050f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2533,7 +2534,6 @@ button:focus {
 
   footer {
     background: #e5e8ee;
-    border-top: 1.5px dashed #00050f;
     color: #00050f;
   }
   footer .contactWrapper > a {
@@ -2672,6 +2672,7 @@ button:focus {
 
   footer {
     background: #00050f;
+    border-color: #d7edee;
     color: #e5e8ee;
   }
   footer .contactWrapper a:focus {
