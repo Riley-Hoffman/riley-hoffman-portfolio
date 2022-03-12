@@ -1308,7 +1308,7 @@
 
   footer {
     background: $white;
-    border-top: 1px solid $black;
+    border-top: 1.5px dashed $black;
     color: $black;
     .contactWrapper {
       > a {
