@@ -1260,6 +1260,7 @@ footer .bottom {
   align-items: center;
   justify-content: center;
   margin: 10px 0 20px;
+  padding-bottom: 15px;
   width: 100%;
 }
 footer .bottom p {
