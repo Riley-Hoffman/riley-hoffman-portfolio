@@ -60,10 +60,12 @@ footer {
   .contactIcons {
     align-items: center;
     font-size: 2em;
-    justify-content: center;
+    justify-content: flex-end;
     width: 135px;
     a {
       padding: 0 5px;
+    }
+    a:first-child {
       margin: 0 23px 0 0;
     }
   }
