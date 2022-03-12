@@ -1310,11 +1310,13 @@ footer .bottom a:active {
 .contactWrapper .contactIcons {
   align-items: center;
   font-size: 2em;
-  justify-content: center;
+  justify-content: flex-end;
   width: 135px;
 }
 .contactWrapper .contactIcons a {
   padding: 0 5px;
+}
+.contactWrapper .contactIcons a:first-child {
   margin: 0 23px 0 0;
 }
 
