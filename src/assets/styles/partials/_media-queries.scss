@@ -1062,7 +1062,8 @@
     }
   }
   .navBox {
-    .aboutNav, .skillsNav {
+    .aboutNav,
+    .skillsNav {
       ul.mainNavList {
         a:hover {
           text-shadow: $lModeNavHoverShadow;
@@ -1308,7 +1309,7 @@
 
   footer {
     background: $white;
-    border-top: 1px solid $black;
+    background: rgba(215, 237, 238, 0.3);
     color: $black;
     .contactWrapper {
       > a {
@@ -1334,6 +1335,30 @@
       color: $black;
     }
   }
+  footer::before {
+      background: linear-gradient(
+          -45deg,
+          rgba(215, 237, 238, 0.3) 14px,
+          #dddddd 15px,
+          #bbbbbb 16px,
+          transparent 19px,
+          $white 0
+        ),
+        linear-gradient(
+          45deg,
+          $white 16px,
+          #dddddd 15px,
+          #bbbbbb 14px,
+          transparent 0
+        );
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: 32px 32px;
+      height: 36px;
+      margin-bottom: 40px;
+      position: relative;
+      top: -5px;
+    }
   .errorHeader {
     background-image: none;
     .background {
@@ -1409,7 +1434,8 @@
     }
   }
   .navBox {
-    .aboutNav, .skillsNav {
+    .aboutNav,
+    .skillsNav {
       ul.mainNavList {
         a:focus {
           text-shadow: $lModeNavHoverShadow;
@@ -1477,6 +1503,8 @@
   footer {
     background: $black;
     color: $white;
+    overflow: hidden;
+    position: relative;
     .contactWrapper {
       a:focus {
         outline: 2px solid $white;
@@ -1497,6 +1525,53 @@
     p {
       color: $white;
     }
+  }
+  .projectsMain + footer::before,
+  .projectsMain + footer::after,
+  .homeMain + footer::before,
+  .homeMain + footer::after,
+  .pageNotFoundMain + footer::before,
+  .pageNotFoundMain + footer::after {
+    display: none;
+  }
+  .skillsMain + footer,
+  .aboutMain + footer {
+    box-shadow: inset 0px 28px 7px 0px $white;
+  }
+
+  footer::before {
+    background: radial-gradient(
+      ellipse,
+      $black,
+      $black 7px,
+      $black 7px,
+      $black 10px,
+      transparent 11px
+    );
+    background-repeat: repeat-x;
+    background-size: 36px 40px;
+    margin-bottom: 60px;
+    position: relative;
+    height: 20px;
+    top: 0;
+  }
+  footer::after {
+    background: radial-gradient(
+      ellipse,
+      transparent,
+      transparent 7.3px,
+      $black 7px,
+      $black 10px,
+      $black 11px
+    );
+    background-position: -18px -20px;
+    background-size: 36px 40px;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+    height: 20px;
   }
   .errorSection {
     h1 {
