@@ -1251,11 +1251,9 @@ header .navBox nav ul.mainNavList a:focus::before {
 
 footer {
   align-items: center;
-  border-top: 2px dashed #00050f;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 0 0;
 }
 footer .bottom {
   align-items: center;
@@ -1283,6 +1281,13 @@ footer .bottom a svg {
 }
 footer .bottom a:active {
   outline: none;
+}
+
+footer::before {
+  content: " ";
+  display: block;
+  left: 0px;
+  width: 100%;
 }
 
 .contactWrapper {
@@ -2349,7 +2354,8 @@ footer .contactWrapper .fa-github:hover {
     text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
   }
 
-  .navBox .aboutNav ul.mainNavList a:hover, .navBox .skillsNav ul.mainNavList a:hover {
+  .navBox .aboutNav ul.mainNavList a:hover,
+.navBox .skillsNav ul.mainNavList a:hover {
     text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
   }
 
@@ -2534,6 +2540,7 @@ button:focus {
 
   footer {
     background: #e5e8ee;
+    background: rgba(215, 237, 238, 0.3);
     color: #00050f;
   }
   footer .contactWrapper > a {
@@ -2552,6 +2559,17 @@ footer .bottom .resume:hover svg {
   }
   footer p {
     color: #00050f;
+  }
+
+  footer::before {
+    background: linear-gradient(-45deg, rgba(215, 237, 238, 0.3) 14px, #dddddd 15px, #bbbbbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 16px, #dddddd 15px, #bbbbbb 14px, transparent 0);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    height: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    top: -5px;
   }
 
   .errorHeader {
@@ -2622,7 +2640,8 @@ button:focus {
     text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
   }
 
-  .navBox .aboutNav ul.mainNavList a:focus, .navBox .skillsNav ul.mainNavList a:focus {
+  .navBox .aboutNav ul.mainNavList a:focus,
+.navBox .skillsNav ul.mainNavList a:focus {
     text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
   }
 
@@ -2672,8 +2691,9 @@ button:focus {
 
   footer {
     background: #00050f;
-    border-color: #e5e8ee;
     color: #e5e8ee;
+    overflow: hidden;
+    position: relative;
   }
   footer .contactWrapper a:focus {
     outline: 2px solid #e5e8ee;
@@ -2688,6 +2708,42 @@ footer .bottom .resume:hover svg {
   }
   footer p {
     color: #e5e8ee;
+  }
+
+  .projectsMain + footer::before,
+.projectsMain + footer::after,
+.homeMain + footer::before,
+.homeMain + footer::after,
+.pageNotFoundMain + footer::before,
+.pageNotFoundMain + footer::after {
+    display: none;
+  }
+
+  .skillsMain + footer,
+.aboutMain + footer {
+    box-shadow: inset 0px 28px 7px 0px #e5e8ee;
+  }
+
+  footer::before {
+    background: radial-gradient(ellipse, #00050f, #00050f 7px, #00050f 7px, #00050f 10px, transparent 11px);
+    background-repeat: repeat-x;
+    background-size: 36px 40px;
+    margin-bottom: 60px;
+    position: relative;
+    height: 20px;
+    top: 0;
+  }
+
+  footer::after {
+    background: radial-gradient(ellipse, transparent, transparent 7.3px, #00050f 7px, #00050f 10px, #00050f 11px);
+    background-position: -18px -20px;
+    background-size: 36px 40px;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+    height: 20px;
   }
 
   .errorSection h1 {
