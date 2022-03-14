@@ -1,5 +1,5 @@
 <template>
-  <footer class="flexBox" id="contact">
+  <footer class="flexBox transitionBorder" id="contact">
     <div class="wrapper flexBox contactWrapper contactComponent">
       <div class="flexBox contactBox">
         <h2 class="contactHeading">Contact</h2>

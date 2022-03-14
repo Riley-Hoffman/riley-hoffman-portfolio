@@ -3,6 +3,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: box-shadow 2s;
+  box-shadow: inset 0px 0px 0px 0px $white;
   .bottom {
     align-items: center;
     justify-content: center;
@@ -37,6 +39,10 @@ footer::before {
   display: block;
   left: 0px;
   width: 100%;
+}
+footer::before,
+footer::after {
+  transition: background-size 2s;
 }
 
 .contactWrapper {

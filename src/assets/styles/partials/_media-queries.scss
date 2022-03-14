@@ -1534,11 +1534,6 @@
   .pageNotFoundMain + footer::after {
     display: none;
   }
-  .skillsMain + footer,
-  .aboutMain + footer {
-    box-shadow: inset 0px 28px 7px 0px $white;
-  }
-
   footer::before {
     background: radial-gradient(
       ellipse,
@@ -1549,10 +1544,9 @@
       transparent 11px
     );
     background-repeat: repeat-x;
-    background-size: 36px 40px;
     margin-bottom: 60px;
     position: relative;
-    height: 20px;
+    
     top: 0;
   }
   footer::after {
@@ -1565,13 +1559,24 @@
       $black 11px
     );
     background-position: -18px -20px;
-    background-size: 36px 40px;
     content: "";
     position: absolute;
     left: 0px;
     top: 20px;
     width: 100%;
-    height: 20px;
+  }
+  footer::before,
+  footer::after {
+    height: 25px;
+    background-size: 36px 0px;
+  }
+  .transitionBorder::before,
+  .transitionBorder::after {
+    background-size: 36px 40px;
+  }
+  .skillsMain + .transitionBorder,
+  .aboutMain + .transitionBorder {
+    box-shadow: inset 0px 50px 3px -22px $white;
   }
   .errorSection {
     h1 {
