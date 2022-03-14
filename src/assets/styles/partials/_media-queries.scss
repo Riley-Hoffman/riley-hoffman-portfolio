@@ -1546,7 +1546,6 @@
     background-repeat: repeat-x;
     margin-bottom: 60px;
     position: relative;
-    
     top: 0;
   }
   footer::after {
@@ -1613,6 +1612,9 @@
   .galaxy,
   .stars {
     animation: none !important;
+  }
+  footer {
+    transition: initial !important;
   }
 }
 

@@ -2791,6 +2791,10 @@ footer::after {
     -webkit-animation: none !important;
             animation: none !important;
   }
+
+  footer {
+    transition: initial !important;
+  }
 }
 @media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
   header {
