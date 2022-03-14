@@ -1254,7 +1254,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: box-shadow 2s;
   box-shadow: inset 0px 0px 0px 0px #e5e8ee;
 }
 footer .bottom {
@@ -2758,6 +2757,7 @@ footer::after {
   .skillsMain + .transitionBorder,
 .aboutMain + .transitionBorder {
     box-shadow: inset 0px 50px 3px -22px #e5e8ee;
+    transition: box-shadow 2s;
   }
 
   .errorSection h1 {

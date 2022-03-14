@@ -1577,6 +1577,7 @@
   .skillsMain + .transitionBorder,
   .aboutMain + .transitionBorder {
     box-shadow: inset 0px 50px 3px -22px $white;
+    transition: box-shadow 2s;
   }
   .errorSection {
     h1 {
