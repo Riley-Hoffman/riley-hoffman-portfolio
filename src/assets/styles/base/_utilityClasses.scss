@@ -40,6 +40,25 @@
     position: static !important;
 }
 
+.iconContainer.contactJump {
+    align-items: center;
+    color: $white;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    button {
+        padding: 10px 20px;
+    }
+    button:active {
+        padding: 10px 20px;
+    }
+    svg {
+        color: $black;
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+}
+
 .v-enter-active,
 .v-leave-active {
     transition: opacity 0.3s ease;
@@ -78,6 +97,10 @@ a.blackOutline:focus {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-shadow: 0 1px 0 #469ea3;
+}
+.styledButton:active {
+    border: none;
+    outline: none;
 }
 
 //  * animate.css - https://animate.style/

@@ -949,10 +949,8 @@
                         width: 95%;
                     }
                     a:active::after {
-                        -webkit-transition: 0.1s
-                            $navLinkTransition;
-                        -o-transition: 0.1s
-                            $navLinkTransition;
+                        -webkit-transition: 0.1s $navLinkTransition;
+                        -o-transition: 0.1s $navLinkTransition;
                         transition: 0.1s $navLinkTransition;
                         width: 0;
                     }
@@ -1013,7 +1011,7 @@
     .skillsGallery {
         li:hover .skillsIconBox:hover {
             animation: spin $skillAnimationTime;
-            -webkit-animation: spin $skillAnimationTime;;
+            -webkit-animation: spin $skillAnimationTime;
         }
     }
 
@@ -1646,7 +1644,11 @@
         border-top: 8px ridge $white;
     }
 }
-
+.contactFormButton:hover,
+.contactJump .styledButton:hover {
+    background: linear-gradient(to bottom, #17a3aa 5%, $grayTeal 100%);
+    background-color: #17a3aa;
+}
 footer {
     .bottom {
         a:active {

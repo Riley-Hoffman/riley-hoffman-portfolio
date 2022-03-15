@@ -77,8 +77,6 @@
             width: 35%;
         }
         button.homeButton.tealContactButton:active {
-            border: none;
-            outline: none;
             padding: 22px 5px;
         }
     }
@@ -88,7 +86,7 @@
     background-color: rgba(199, 231, 233, 0.8);
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
-    border: 3px solid rgba(178,212,214,0.45);
+    border: 3px solid rgba(178, 212, 214, 0.45);
     bottom: 20%;
     box-shadow: -2px 2px 3px 0 $black;
     left: 30.5%;

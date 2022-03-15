@@ -15,14 +15,17 @@
                     </ul>
                 </div>
             </div>
+            <ContactJumpComponent />
         </section>
     </main>
 </template>
 <script>
 import SkillsLiComponent from '@/components/SkillsLiComponent.vue'
+import ContactJumpComponent from '@/components/ContactJumpComponent.vue'
 export default {
   components: {
-    SkillsLiComponent
+    SkillsLiComponent,
+    ContactJumpComponent
   },
   data () {
     return {

@@ -454,6 +454,25 @@ textarea:focus-visible {
   position: static !important;
 }
 
+.iconContainer.contactJump {
+  align-items: center;
+  color: #e5e8ee;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.iconContainer.contactJump button {
+  padding: 10px 20px;
+}
+.iconContainer.contactJump button:active {
+  padding: 10px 20px;
+}
+.iconContainer.contactJump svg {
+  color: #00050f;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.3s ease;
@@ -492,6 +511,11 @@ a.blackOutline:focus {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   text-shadow: 0 1px 0 #469ea3;
+}
+
+.styledButton:active {
+  border: none;
+  outline: none;
 }
 
 :root {
@@ -834,8 +858,6 @@ header .navBox nav ul.mainNavList a:focus::before {
   width: 35%;
 }
 .relativeColumnBox .smallFlexBox button.homeButton.tealContactButton:active {
-  border: none;
-  outline: none;
   padding: 22px 5px;
 }
 
@@ -1019,7 +1041,7 @@ header .navBox nav ul.mainNavList a:focus::before {
 }
 .about {
   background-color: #e5e8ee;
-  padding: 115px 0;
+  padding: 115px 0 0;
   min-height: 97vh;
 }
 .about .wrapper {
@@ -1033,6 +1055,9 @@ header .navBox nav ul.mainNavList a:focus::before {
   display: flex;
   flex-direction: column;
   width: 50vw;
+}
+.about .iconContainer.contactJump {
+  margin-top: 120px;
 }
 
 .about1 .iconContainer {
@@ -1205,7 +1230,7 @@ header .navBox nav ul.mainNavList a:focus::before {
 
 .skills {
   background-color: #e5e8ee;
-  padding: 125px 0 100px;
+  padding: 125px 0 75px;
 }
 .skills .wrapper .flexBox {
   align-items: center;
@@ -1213,7 +1238,10 @@ header .navBox nav ul.mainNavList a:focus::before {
 }
 .skills .wrapper .flexBox h1 {
   color: #00050f;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.skills .iconContainer.contactJump {
+  margin-top: 60px;
 }
 
 .noAnimation {
@@ -1223,7 +1251,7 @@ header .navBox nav ul.mainNavList a:focus::before {
 
 .skillsGallery {
   display: grid;
-  grid-row-gap: 50px;
+  grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin-top: 35px;
@@ -1365,10 +1393,6 @@ form .contactFormButton {
   padding: 13px 32px;
   width: 50%;
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
-}
-form .contactFormButton:hover {
-  background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
-  background-color: #17a3aa;
 }
 form .contactFormButton:active {
   outline: none;
@@ -2820,6 +2844,12 @@ header .navBox nav ul.mainNavList a:focus {
     border-top: 8px ridge #e5e8ee;
   }
 }
+.contactFormButton:hover,
+.contactJump .styledButton:hover {
+  background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
+  background-color: #17a3aa;
+}
+
 footer .bottom a:active {
   color: #17a2aa;
 }
