@@ -1,7 +1,7 @@
 <template>
-  <HeaderComponent />
-  <router-view />
-  <FooterComponent />
+    <HeaderComponent />
+    <router-view />
+    <FooterComponent />
 </template>
 
 <script>

@@ -1254,6 +1254,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: inset 0px 0px 0px 0px #e5e8ee;
 }
 footer .bottom {
   align-items: center;
@@ -1288,6 +1289,11 @@ footer::before {
   display: block;
   left: 0px;
   width: 100%;
+}
+
+footer::before,
+footer::after {
+  transition: background-size 2s;
 }
 
 .contactWrapper {
@@ -2719,31 +2725,39 @@ footer .bottom .resume:hover svg {
     display: none;
   }
 
-  .skillsMain + footer,
-.aboutMain + footer {
-    box-shadow: inset 0px 28px 7px 0px #e5e8ee;
-  }
-
   footer::before {
     background: radial-gradient(ellipse, #00050f, #00050f 7px, #00050f 7px, #00050f 10px, transparent 11px);
     background-repeat: repeat-x;
-    background-size: 36px 40px;
     margin-bottom: 60px;
     position: relative;
-    height: 20px;
     top: 0;
   }
 
   footer::after {
     background: radial-gradient(ellipse, transparent, transparent 7.3px, #00050f 7px, #00050f 10px, #00050f 11px);
     background-position: -18px -20px;
-    background-size: 36px 40px;
     content: "";
     position: absolute;
     left: 0px;
     top: 20px;
     width: 100%;
-    height: 20px;
+  }
+
+  footer::before,
+footer::after {
+    height: 25px;
+    background-size: 36px 0px;
+  }
+
+  .transitionBorder::before,
+.transitionBorder::after {
+    background-size: 36px 40px;
+  }
+
+  .skillsMain + .transitionBorder,
+.aboutMain + .transitionBorder {
+    box-shadow: inset 0px 50px 3px -22px #e5e8ee;
+    transition: box-shadow 2s;
   }
 
   .errorSection h1 {
@@ -2776,6 +2790,10 @@ footer .bottom .resume:hover svg {
 .stars {
     -webkit-animation: none !important;
             animation: none !important;
+  }
+
+  footer {
+    transition: initial !important;
   }
 }
 @media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {

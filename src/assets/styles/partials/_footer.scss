@@ -1,174 +1,179 @@
 footer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .bottom {
     align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 10px 0 20px;
-    padding-bottom: 15px;
-    width: 100%;
-    p {
-      padding: 0px 20px 0 0;
+    box-shadow: inset 0px 0px 0px 0px $white;
+    .bottom {
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 20px;
+        padding-bottom: 15px;
+        width: 100%;
+        p {
+            padding: 0px 20px 0 0;
+        }
+        a {
+            align-items: center;
+            color: $teal;
+            display: flex;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-right: 1px;
+            padding: 3px 5px;
+            justify-content: space-between;
+            svg {
+                font-size: 1rem;
+                padding-left: 8px;
+            }
+        }
+        a:active {
+            outline: none;
+        }
     }
-    a {
-      align-items: center;
-      color: $teal;
-      display: flex;
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-right: 1px;
-      padding: 3px 5px;
-      justify-content: space-between;
-      svg {
-        font-size: 1rem;
-        padding-left: 8px;
-      }
-    }
-    a:active {
-      outline: none;
-    }
-  }
 }
 
 footer::before {
-  content: " ";
-  display: block;
-  left: 0px;
-  width: 100%;
+    content: ' ';
+    display: block;
+    left: 0px;
+    width: 100%;
+}
+footer::before,
+footer::after {
+    transition: background-size 2s;
 }
 
 .contactWrapper {
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 10px 0 20px;
-  width: 60%;
-  .contactBox {
-    justify-content: space-between;
-    width: 100%;
-    .contactHeading {
-      font-size: 1.8rem;
-      line-height: 2.1;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0 20px;
+    width: 60%;
+    .contactBox {
+        justify-content: space-between;
+        width: 100%;
+        .contactHeading {
+            font-size: 1.8rem;
+            line-height: 2.1;
+        }
     }
-  }
-  > a {
-    padding: 5px;
-  }
-  > a {
-    color: $teal;
-  }
+    > a {
+        padding: 5px;
+    }
+    > a {
+        color: $teal;
+    }
 
-  a:focus {
-    outline: 2px solid $white;
-  }
+    a:focus {
+        outline: 2px solid $white;
+    }
 
-  .contactIcons {
-    align-items: center;
-    font-size: 2em;
-    justify-content: flex-end;
-    width: 135px;
-    a {
-      padding: 0 5px;
+    .contactIcons {
+        align-items: center;
+        font-size: 2em;
+        justify-content: flex-end;
+        width: 135px;
+        a {
+            padding: 0 5px;
+        }
+        a:first-child {
+            margin: 0 60px 0 0;
+        }
     }
-    a:first-child {
-      margin: 0 60px 0 0;
-    }
-  }
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  .fieldsetBox {
-    flex-direction: column;
-    margin: 0 auto 10px;
-    padding: 0 30px;
-    width: 100%;
-  }
-  .inputBox {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    width: 100%;
-    input {
-      width: 100%;
+    flex-direction: column;
+    .fieldsetBox {
+        flex-direction: column;
+        margin: 0 auto 10px;
+        padding: 0 30px;
+        width: 100%;
     }
-  }
-  .contactFormButton {
-    align-self: center;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
-    padding: 13px 32px;
-    width: 50%;
-    background: $buttonGradient;
-  }
-  .contactFormButton:hover {
-    background: linear-gradient(to bottom, #17a3aa 5%, $grayTeal 100%);
-    background-color: #17a3aa;
-  }
-  .contactFormButton:active {
-    outline: none;
-    position: relative;
-    top: 1px;
-  }
+    .inputBox {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+    .contactFormButton {
+        align-self: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+        padding: 13px 32px;
+        width: 50%;
+        background: $buttonGradient;
+    }
+    .contactFormButton:hover {
+        background: linear-gradient(to bottom, #17a3aa 5%, $grayTeal 100%);
+        background-color: #17a3aa;
+    }
+    .contactFormButton:active {
+        outline: none;
+        position: relative;
+        top: 1px;
+    }
 
-  label {
-    margin: 9px 10px 9px 0;
-  }
-  label[for="email"] {
-    margin-top: 12px;
-  }
-  .fieldsetBox > label:nth-child(2) {
-    font-size: 1.085rem;
-    margin-bottom: 15px;
-  }
+    label {
+        margin: 9px 10px 9px 0;
+    }
+    label[for='email'] {
+        margin-top: 12px;
+    }
+    .fieldsetBox > label:nth-child(2) {
+        font-size: 1.085rem;
+        margin-bottom: 15px;
+    }
 
-  textarea {
-    min-height: 200px !important;
-    position: relative;
-  }
+    textarea {
+        min-height: 200px !important;
+        position: relative;
+    }
 
-  textarea::-webkit-resizer {
-    border: 1.5px solid $teal;
-    background-color: $teal;
-    background-image: url("../../assets/img/angles-down-solid.png");
-    background-size: contain;
-    position: relative;
-  }
+    textarea::-webkit-resizer {
+        border: 1.5px solid $teal;
+        background-color: $teal;
+        background-image: url('../../assets/img/angles-down-solid.png');
+        background-size: contain;
+        position: relative;
+    }
 }
 
 i.fa-grip-lines-vertical {
-  font-size: 84%;
+    font-size: 84%;
 }
 
 .homeMain + footer {
-  align-items: center;
-  background-color: transparent;
-  border: 0;
-  bottom: 0;
-  height: 8vh;
-  position: absolute;
-  width: 100%;
-  .contactWrapper {
-    display: none;
-  }
-  .bottom {
-    width: 85%;
-    justify-content: flex-end;
-  }
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    bottom: 0;
+    height: 8vh;
+    position: absolute;
+    width: 100%;
+    .contactWrapper {
+        display: none;
+    }
+    .bottom {
+        width: 85%;
+        justify-content: flex-end;
+    }
 }
 
 .projectsMain + footer {
-  padding: 0;
+    padding: 0;
 }
 
 .formBackground {
-  background-color: rgba(178, 212, 214, 0.918);
-  border: 3px solid #00050f;
-  padding: 45px 30px;
-  width: 100%;
+    background-color: rgba(178, 212, 214, 0.918);
+    border: 3px solid #00050f;
+    padding: 45px 30px;
+    width: 100%;
 }

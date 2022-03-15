@@ -55,5 +55,11 @@
     "last 2 versions",
     "not dead"
   ],
-  "scss": "vue-style-loader!css-loader?minimize!style-loader"
+  "scss": "vue-style-loader!css-loader?minimize!style-loader",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  }
 }
