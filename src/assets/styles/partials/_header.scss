@@ -1,121 +1,127 @@
 header {
-  overflow: visible;
-  padding-bottom: 50px;
-  position: absolute;
-  height: 10vh;
-  width: 100%;
-
-  .skip-link {
-    background: $teal;
-    border-radius: 3px;
-    color: $black;
-    left: -1000px;
-    margin-left: 7px;
-    padding: 15px 15px;
+    overflow: visible;
+    padding-bottom: 50px;
     position: absolute;
-    top: 5px;
-    z-index: 9999;
-  }
+    height: 10vh;
+    width: 100%;
 
-  .skip-link:focus {
-    left: 0;
-  }
+    .skip-link {
+        background: $teal;
+        border-radius: 3px;
+        color: $black;
+        left: -1000px;
+        margin-left: 7px;
+        padding: 15px 15px;
+        position: absolute;
+        top: 5px;
+        z-index: 9999;
+    }
 
-  .favLink {
-    display: block;
-    margin: 22px;
-    max-width: 4.5%;
-    min-width: 50px;
-    padding: 1px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    img {
-      padding: 4px;
+    .skip-link:focus {
+        left: 0;
     }
-  }
-  .favLink:focus {
-    outline: none;
-  }
-  .blackOutline:focus {
-    img {
-      outline: 2px solid $black;
-    }
-  }
-  .whiteOutline:focus {
-    img {
-      outline: 2px solid $white;
-    }
-  }
-  .navBox {
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 35px;
-    position: relative;
-    nav {
-      align-items: flex-end;
-      display: flex;
-      flex-direction: column;
-      width: 55%;
-      ul {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        width: 100%;
-        a {
-          border-bottom: 1px solid transparent;
-          line-height: 1;
-          margin: 10px;
-          position: relative;
-        }
-        a:focus {
-          outline: none;
-        }
-      }
 
-      ul.mainNavList {
+    .favLink {
+        display: block;
+        margin: 22px;
+        max-width: 4.5%;
+        min-width: 50px;
+        padding: 1px;
+        position: absolute;
+        left: 0;
+        top: 0;
         z-index: 999;
-        a::after,
-        a::before {
-          content: "";
-          position: absolute;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-          width: 0;
-          left: 50%;
-          top: 100%;
+        img {
+            padding: 4px;
         }
-        a::after {
-          background: linear-gradient(to right bottom, $grayTeal 5%, #17a2aa);
-          border-radius: 50px;
-          margin-top: 8px;
-          height: 2.5px;
-        }
-        a:focus::after {
-          width: 100%;
-        }
-        a::before {
-          background: linear-gradient(
-            to top,
-            rgba(72, 216, 240, 0.38) 20%,
-            rgba(65, 109, 255, 0.17)
-          );
-          box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38),
-            0 0 12px rgba(65, 109, 255, 0.17);
-          border-radius: 90%;
-          margin-top: 9px;
-          height: 2px;
-          opacity: 0.8;
-        }
-        a:focus::before {
-          width: 95%;
-        }
-      }
     }
-  }
+    .favLink:focus {
+        outline: none;
+    }
+    .blackOutline:focus {
+        img {
+            outline: 2px solid $black;
+        }
+    }
+    .whiteOutline:focus {
+        img {
+            outline: 2px solid $white;
+        }
+    }
+    .navBox {
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 35px;
+        position: relative;
+        nav {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                width: 100%;
+                a {
+                    border-bottom: 1px solid transparent;
+                    line-height: 1;
+                    margin: 10px;
+                    position: relative;
+                }
+                a:focus {
+                    outline: none;
+                }
+            }
+
+            ul.mainNavList {
+                z-index: 999;
+                a::after,
+                a::before {
+                    content: '';
+                    position: absolute;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    -webkit-transition: 0.5s
+                        cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                    -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+                        all;
+                    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                    width: 0;
+                    left: 50%;
+                    top: 100%;
+                }
+                a::after {
+                    background: linear-gradient(
+                        to right bottom,
+                        $grayTeal 5%,
+                        #17a2aa
+                    );
+                    border-radius: 50px;
+                    margin-top: 8px;
+                    height: 2.5px;
+                }
+                a:focus::after {
+                    width: 100%;
+                }
+                a::before {
+                    background: linear-gradient(
+                        to top,
+                        rgba(72, 216, 240, 0.38) 20%,
+                        rgba(65, 109, 255, 0.17)
+                    );
+                    box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38),
+                        0 0 12px rgba(65, 109, 255, 0.17);
+                    border-radius: 90%;
+                    margin-top: 9px;
+                    height: 2px;
+                    opacity: 0.8;
+                }
+                a:focus::before {
+                    width: 95%;
+                }
+            }
+        }
+    }
 }

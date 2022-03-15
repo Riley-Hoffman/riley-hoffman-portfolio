@@ -1,50 +1,50 @@
 .skills {
-  background-color: $white;
-  padding: 130px 0 115px;
-  .wrapper {
-    .flexBox {
-      align-items: center;
-      flex-direction: column;
-      h1 {
-        color: $black;
-        margin-bottom: 40px;
-      }
+    background-color: $white;
+    padding: 130px 0 115px;
+    .wrapper {
+        .flexBox {
+            align-items: center;
+            flex-direction: column;
+            h1 {
+                color: $black;
+                margin-bottom: 40px;
+            }
+        }
     }
-  }
 }
 
 .noAnimation {
-  animation: none !important;
+    animation: none !important;
 }
 
 .skillsGallery {
-  display: grid;
-  grid-row-gap: 60px;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  margin-top: 50px;
-  width: 80vw;
-  li {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    .skillsIconBox {
-      display: flex;
-      justify-content: center;
-      padding: 0 10px;
-      width: 100%;
-      i,
-      svg {
-        font-size: 2.5rem;
-        text-align: center;
-        width: 100%;
-      }
-      .fa-universal-access {
-        font-family: "Font Awesome 5 Free";
-      }
+    display: grid;
+    grid-row-gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 50px;
+    width: 80vw;
+    li {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .skillsIconBox {
+            display: flex;
+            justify-content: center;
+            padding: 0 10px;
+            width: 100%;
+            i,
+            svg {
+                font-size: 2.5rem;
+                text-align: center;
+                width: 100%;
+            }
+            .fa-universal-access {
+                font-family: 'Font Awesome 5 Free';
+            }
+        }
+        p {
+            text-align: center;
+        }
     }
-    p {
-      text-align: center;
-    }
-  }
 }

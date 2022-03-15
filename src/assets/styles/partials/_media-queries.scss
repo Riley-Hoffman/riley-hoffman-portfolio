@@ -2,1718 +2,1721 @@
 
 // Largest Screens
 @media (max-width: 1680px) and (max-height: 1050px) {
-  header .navBox nav ul a {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  .relativeColumnBox {
-    .smallFlexBox {
-      .homeButton {
-        font-size: 1.1rem;
-        margin: 25px 0;
-      }
-      a {
-        font-size: 2rem;
-      }
-      a:nth-child(2) {
-        margin-left: 2rem;
-      }
+    header .navBox nav ul a {
+        font-size: 1.2rem;
+        margin: 10px 0;
     }
-  }
-  .modal {
-    bottom: 15%;
-    max-height: 700px;
-  }
+    .relativeColumnBox {
+        .smallFlexBox {
+            .homeButton {
+                font-size: 1.1rem;
+                margin: 25px 0;
+            }
+            a {
+                font-size: 2rem;
+            }
+            a:nth-child(2) {
+                margin-left: 2rem;
+            }
+        }
+    }
+    .modal {
+        bottom: 15%;
+        max-height: 700px;
+    }
 }
 
 @media (max-width: 1680px) and (max-height: 650px) {
-  .modal.openModal {
-    bottom: 2%;
-    form {
-      .inputBox {
-        flex-direction: row;
-        label:nth-child(2) {
-          margin-left: 0;
+    .modal.openModal {
+        bottom: 2%;
+        form {
+            .inputBox {
+                flex-direction: row;
+                label:nth-child(2) {
+                    margin-left: 0;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 /* Wide screen tv */
 
 @media (max-width: 1360px) and (max-height: 605px) {
-  .relativeColumnBox {
-    .smallFlexBox {
-      .iconContainer {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .scrollingBackground {
-    background: {
-      image: linear-gradient(
-          to bottom,
-          rgba(23, 162, 170, 0) 0%,
-          rgba(23, 162, 170, 0.2) 100%
-        ),
-        url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-      blend-mode: multiply;
-      size: cover;
-    }
-    opacity: 0.3;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  .smokeParentContainer {
-    .lightBackground {
-      .smoke {
-        &::before {
-          opacity: 1;
+    .relativeColumnBox {
+        .smallFlexBox {
+            .iconContainer {
+                margin-bottom: 0;
+            }
         }
-      }
     }
-  }
-  .modal {
-    bottom: 5%;
-    max-height: 80%;
-    max-width: 50%;
-    form {
-      .inputBox {
-        flex-direction: row;
-        label:nth-of-type(2) {
-          margin-left: 20px;
+    .scrollingBackground {
+        background: {
+            image: linear-gradient(
+                    to bottom,
+                    rgba(23, 162, 170, 0) 0%,
+                    rgba(23, 162, 170, 0.2) 100%
+                ),
+                url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+            blend-mode: multiply;
+            size: cover;
         }
-      }
+        opacity: 0.3;
+        position: relative;
+        height: 100%;
+        width: 100%;
     }
-  }
+    .smokeParentContainer {
+        .lightBackground {
+            .smoke {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .modal {
+        bottom: 5%;
+        max-height: 80%;
+        max-width: 50%;
+        form {
+            .inputBox {
+                flex-direction: row;
+                label:nth-of-type(2) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 
-  .homeMain + footer {
-    padding-bottom: 25px;
-  }
+    .homeMain + footer {
+        padding-bottom: 25px;
+    }
 }
 
 @media (max-width: 1160px) {
-  .relativeColumnBox .smallFlexBox .homeButton {
-    width: 45%;
-  }
+    .relativeColumnBox .smallFlexBox .homeButton {
+        width: 45%;
+    }
 }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
-  .smallFlexBox button.tealContactButton {
-    width: 60%;
-  }
-  header {
-    .navBox nav {
-      width: 75%;
+    .smallFlexBox button.tealContactButton {
+        width: 60%;
     }
-  }
-  .relativeColumnBox {
-    .smallFlexBox {
-      .homeButton {
-        width: 50%;
-      }
+    header {
+        .navBox nav {
+            width: 75%;
+        }
     }
-  }
+    .relativeColumnBox {
+        .smallFlexBox {
+            .homeButton {
+                width: 50%;
+            }
+        }
+    }
 
-  .modal {
-    left: 18%;
-    padding: 20px 12px 20px 20px;
-  }
+    .modal {
+        left: 18%;
+        padding: 20px 12px 20px 20px;
+    }
 
-  .pageNotFoundMain + footer {
-    margin-top: 50px;
-  }
+    .pageNotFoundMain + footer {
+        margin-top: 50px;
+    }
 }
 
 // Large Text Resolution Screens hover style
 @media (hover: hover) and (pointer: fine) and (max-width: 1024px) and (max-height: 640px) {
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .tealContactButton.homeButton:hover {
-          padding: 16px 3px !important;
+    .splash {
+        .relativeColumnBox {
+            .smallFlexBox {
+                .tealContactButton.homeButton:hover {
+                    padding: 16px 3px !important;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 /* Large Text Resolution Screens */
 @media (max-width: 1024px) and (max-height: 640px) {
-  .splash h1 {
-    font-size: 1.7rem;
-  }
-
-  .splash .animate__backInLeft {
-    font-size: 1.5rem;
-  }
-
-  .splash h1 {
-    margin-bottom: 7px;
-  }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
-    font-size: 0.9rem;
-    padding: 18px 5px;
-  }
-
-  .contactWrapper .contactIcons {
-    font-size: 1.8rem;
-  }
-  .modal {
-    bottom: 20px;
-    max-width: 58%;
-    form {
-      .inputBox {
-        justify-content: space-between;
-        flex-direction: row;
-        label:nth-of-type(2) {
-          margin-left: 20px;
-        }
-      }
+    .splash h1 {
+        font-size: 1.7rem;
     }
-  }
+
+    .splash .animate__backInLeft {
+        font-size: 1.5rem;
+    }
+
+    .splash h1 {
+        margin-bottom: 7px;
+    }
+
+    .relativeColumnBox .smallFlexBox .homeButton {
+        font-size: 0.9rem;
+        padding: 18px 5px;
+    }
+
+    .contactWrapper .contactIcons {
+        font-size: 1.8rem;
+    }
+    .modal {
+        bottom: 20px;
+        max-width: 58%;
+        form {
+            .inputBox {
+                justify-content: space-between;
+                flex-direction: row;
+                label:nth-of-type(2) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 }
 
 // Footer and Form Control
 @media (max-width: 1020px) {
-  .aboutMain + footer,
-  .projectsMain + footer,
-  .skillsMain + footer,
-  .pageNotFoundMain + footer {
-    .bottom {
-      flex-direction: column;
-      justify-content: center;
+    .aboutMain + footer,
+    .projectsMain + footer,
+    .skillsMain + footer,
+    .pageNotFoundMain + footer {
+        .bottom {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
-  }
-  .homeMain + footer {
-    .bottom {
-      a {
-        max-width: 12%;
-        padding-top: 2px;
-      }
-    }
-  }
-  form {
-    .inputBox {
-      align-items: flex-start;
-      flex-direction: column;
-      label {
-        text-align: left;
-      }
-      input {
-        width: 89%;
-      }
-    }
-  }
-  .contactWrapper {
-    width: 90%;
-  }
-  label[for="email"] {
-    margin-left: 0;
-  }
-  .contactWrapper,
-  .modal {
-    max-height: 100%;
-    padding-top: 2px;
-    .modalClose {
-      margin-left: 2px;
-      top: 8.5px;
+    .homeMain + footer {
+        .bottom {
+            a {
+                max-width: 12%;
+                padding-top: 2px;
+            }
+        }
     }
     form {
-      padding: 15px 0 25px;
-      .inputBox {
-        input {
-          width: 100%;
+        .inputBox {
+            align-items: flex-start;
+            flex-direction: column;
+            label {
+                text-align: left;
+            }
+            input {
+                width: 89%;
+            }
         }
-        input[name="name"] {
-          margin-right: 0;
-        }
-      }
     }
-  }
+    .contactWrapper {
+        width: 90%;
+    }
+    label[for='email'] {
+        margin-left: 0;
+    }
+    .contactWrapper,
+    .modal {
+        max-height: 100%;
+        padding-top: 2px;
+        .modalClose {
+            margin-left: 2px;
+            top: 8.5px;
+        }
+        form {
+            padding: 15px 0 25px;
+            .inputBox {
+                input {
+                    width: 100%;
+                }
+                input[name='name'] {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
 
 // Small tablet landscape (800x600)
 @media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
-  .modal {
-    bottom: 2%;
-    min-height: initial;
-    max-height: 590px;
-    padding-bottom: 15px;
-    form {
-      padding-bottom: 0;
+    .modal {
+        bottom: 2%;
+        min-height: initial;
+        max-height: 590px;
+        padding-bottom: 15px;
+        form {
+            padding-bottom: 0;
+        }
     }
-  }
 }
 
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 780px) {
-  .modal {
-    left: 25px;
-  }
-  .modal {
-    max-width: 100%;
-    min-height: 565px;
-    form {
-      .contactFormButton {
-        margin-top: 8px;
-        width: 56%;
-      }
+    .modal {
+        left: 25px;
     }
-  }
-  .line {
-    margin: -9px 0 0;
-  }
-  .about,
-  .skills,
-  .projects,
-  .errorSection {
-    padding-top: 200px !important;
-  }
-  .about {
-    > .wrapper {
-      align-items: center;
-      flex-direction: column;
-      .about1 {
-        align-items: center;
-        width: 100%;
-        > div {
-          width: 75%;
-        }
-        figure {
-          align-items: center;
-          max-width: 55%;
-        }
-      }
-
-      .about2 {
-        width: 90%;
-        p {
-          align-self: flex-end;
-          width: 90%;
-        }
-      }
-    }
-  }
-
-  .splash .smallFlexBox {
-    margin-top: 20px;
-    width: 100%;
-
-    .iconContainer {
-      display: none;
-    }
-  }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
-    width: 40%;
-  }
-
-  header {
-    .favLink {
-      display: none;
-    }
-    .navBox {
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: space-between;
-      nav {
-        width: 100%;
-        ul.mainNavList {
-          display: grid;
-          grid-row-gap: 20px;
-          grid-template-columns: 1fr 1fr;
-          width: 100%;
-          li {
-            display: flex;
-            .aboutLink {
-              .me {
-                display: none;
-              }
-              .sr-only {
-                display: inline;
-              }
+    .modal {
+        max-width: 100%;
+        min-height: 565px;
+        form {
+            .contactFormButton {
+                margin-top: 8px;
+                width: 56%;
             }
-          }
-          .col2 {
-            padding-left: 35px;
-          }
         }
-        .contactIcons {
-          display: none;
-        }
-      }
     }
-  }
-  .projects {
-    padding: 85px 0 40px;
-    .projectBox {
-      flex-direction: column;
-      .imgBox {
-        img {
-          margin-top: 50px;
-        }
-        .oval {
-          display: none;
-        }
-        a:hover > img,
-        a:focus > img {
-          border-top: 8px ridge;
-        }
-      }
-
-      .projectInfo a:last-of-type {
-        margin-left: 30px;
-        margin-right: auto;
-      }
-
-      .projectInfo a:first-of-type {
-        margin-left: auto;
-        margin-right: 30px;
-      }
+    .line {
+        margin: -9px 0 0;
     }
-  }
+    .about,
+    .skills,
+    .projects,
+    .errorSection {
+        padding-top: 200px !important;
+    }
+    .about {
+        > .wrapper {
+            align-items: center;
+            flex-direction: column;
+            .about1 {
+                align-items: center;
+                width: 100%;
+                > div {
+                    width: 75%;
+                }
+                figure {
+                    align-items: center;
+                    max-width: 55%;
+                }
+            }
 
-  .projectInfo p {
-    margin-bottom: 50px;
-  }
+            .about2 {
+                width: 90%;
+                p {
+                    align-self: flex-end;
+                    width: 90%;
+                }
+            }
+        }
+    }
 
-  .projectInfo:nth-child(even),
-  .projectInfo:nth-child(odd) {
-    padding: 0;
-    text-align: center;
-  }
+    .splash .smallFlexBox {
+        margin-top: 20px;
+        width: 100%;
 
-  .homeMain + footer {
-    width: initial;
-  }
+        .iconContainer {
+            display: none;
+        }
+    }
 
-  footer {
-    padding: 0 0 20px;
-  }
+    .relativeColumnBox .smallFlexBox .homeButton {
+        width: 40%;
+    }
 
-  .splash .smallFlexBox {
-    margin-top: 0;
-  }
+    header {
+        .favLink {
+            display: none;
+        }
+        .navBox {
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            nav {
+                width: 100%;
+                ul.mainNavList {
+                    display: grid;
+                    grid-row-gap: 20px;
+                    grid-template-columns: 1fr 1fr;
+                    width: 100%;
+                    li {
+                        display: flex;
+                        .aboutLink {
+                            .me {
+                                display: none;
+                            }
+                            .sr-only {
+                                display: inline;
+                            }
+                        }
+                    }
+                    .col2 {
+                        padding-left: 35px;
+                    }
+                }
+                .contactIcons {
+                    display: none;
+                }
+            }
+        }
+    }
+    .projects {
+        padding: 85px 0 40px;
+        .projectBox {
+            flex-direction: column;
+            .imgBox {
+                img {
+                    margin-top: 50px;
+                }
+                .oval {
+                    display: none;
+                }
+                a:hover > img,
+                a:focus > img {
+                    border-top: 8px ridge;
+                }
+            }
 
-  .errorHeader {
-    height: 21vh;
-    padding: 30px 0;
-  }
+            .projectInfo a:last-of-type {
+                margin-left: 30px;
+                margin-right: auto;
+            }
 
-  .errorSection {
-    padding: 0;
-    .errorContentBox {
-      flex-direction: column;
-      justify-content: center;
-      margin: 40px auto 0px;
-      .errorIcon {
-        max-width: 40%;
-      }
-      .errorP {
-        margin: 40px auto 50px;
+            .projectInfo a:first-of-type {
+                margin-left: auto;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .projectInfo p {
+        margin-bottom: 50px;
+    }
+
+    .projectInfo:nth-child(even),
+    .projectInfo:nth-child(odd) {
+        padding: 0;
         text-align: center;
-      }
     }
-  }
+
+    .homeMain + footer {
+        width: initial;
+    }
+
+    footer {
+        padding: 0 0 20px;
+    }
+
+    .splash .smallFlexBox {
+        margin-top: 0;
+    }
+
+    .errorHeader {
+        height: 21vh;
+        padding: 30px 0;
+    }
+
+    .errorSection {
+        padding: 0;
+        .errorContentBox {
+            flex-direction: column;
+            justify-content: center;
+            margin: 40px auto 0px;
+            .errorIcon {
+                max-width: 40%;
+            }
+            .errorP {
+                margin: 40px auto 50px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 // Splash Elements Control
 
 @media (max-width: 780px) and (max-height: 575px) {
-  .homeMain + footer {
-    display: none !important;
-  }
-  .modal {
-    top: 0;
-  }
-  .splash {
-    .smallFlexBox {
-      margin-top: 50px;
+    .homeMain + footer {
+        display: none !important;
     }
-  }
+    .modal {
+        top: 0;
+    }
+    .splash {
+        .smallFlexBox {
+            margin-top: 50px;
+        }
+    }
 }
 
 // Modal position control
 @media (max-height: 720px) {
-  .modal {
-    bottom: 2%;
-    max-height: 600px;
-    padding-bottom: 20px;
-    form {
-      padding-bottom: 0;
+    .modal {
+        bottom: 2%;
+        max-height: 600px;
+        padding-bottom: 20px;
+        form {
+            padding-bottom: 0;
+        }
     }
-  }
 }
 
 @media (max-height: 543px) {
-  .modal {
-    form {
-      .inputBox {
-        justify-content: space-between;
-        flex-direction: row;
-        label:nth-of-type(2) {
-          margin-left: 20px;
+    .modal {
+        form {
+            .inputBox {
+                justify-content: space-between;
+                flex-direction: row;
+                label:nth-of-type(2) {
+                    margin-left: 20px;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 // Footer Control
 @media (max-width: 680px) {
-  .aboutMain + footer,
-  .projectsMain + footer,
-  .skillsMain + footer,
-  .pageNotFoundMain + footer {
-    flex-direction: column;
-    align-items: center;
-    .bottom {
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      p {
-        padding: 0;
-      }
-      a {
-        margin: 0;
-      }
+    .aboutMain + footer,
+    .projectsMain + footer,
+    .skillsMain + footer,
+    .pageNotFoundMain + footer {
+        flex-direction: column;
+        align-items: center;
+        .bottom {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            p {
+                padding: 0;
+            }
+            a {
+                margin: 0;
+            }
+        }
     }
-  }
-  .homeMain + footer {
-    .bottom {
-      p {
-        padding: 0;
-        margin: 0 20px;
-      }
+    .homeMain + footer {
+        .bottom {
+            p {
+                padding: 0;
+                margin: 0 20px;
+            }
+        }
     }
-  }
 
-  .modal {
-    bottom: 10%;
-  }
-  form {
-    .contactFormButton {
-      margin-top: 40px;
+    .modal {
+        bottom: 10%;
     }
-  }
+    form {
+        .contactFormButton {
+            margin-top: 40px;
+        }
+    }
 }
 
 @media (max-width: 769px) and (max-height: 639px) {
-  .modal {
-    bottom: 13%;
-    min-height: initial;
-    max-height: 80%;
-    max-width: 50%;
-  }
+    .modal {
+        bottom: 13%;
+        min-height: initial;
+        max-height: 80%;
+        max-width: 50%;
+    }
 }
 
 /* Medium phones and down */
 @media (max-width: 650px) {
-  header {
-    padding-bottom: 140px;
-  }
+    header {
+        padding-bottom: 140px;
+    }
 
-  .line {
-    margin: -9px 0 0;
-  }
+    .line {
+        margin: -9px 0 0;
+    }
 
-  .about1 > p:nth-child(2) {
-    font-size: 2rem;
-  }
+    .about1 > p:nth-child(2) {
+        font-size: 2rem;
+    }
 
-  h2.target:nth-child(3) {
-    font-size: 2rem;
-  }
+    h2.target:nth-child(3) {
+        font-size: 2rem;
+    }
 
-  p.target:nth-child(1) {
-    font-size: 1.2rem;
-    padding-top: 20px;
-  }
+    p.target:nth-child(1) {
+        font-size: 1.2rem;
+        padding-top: 20px;
+    }
 
-  .relativeColumnBox .smallFlexBox .homeButton {
-    width: 46%;
-  }
+    .relativeColumnBox .smallFlexBox .homeButton {
+        width: 46%;
+    }
 
-  .about {
-    > .wrapper {
-      .about1 {
-        align-items: flex-start;
-        > div {
-          margin-top: 0;
-          width: 100%;
+    .about {
+        > .wrapper {
+            .about1 {
+                align-items: flex-start;
+                > div {
+                    margin-top: 0;
+                    width: 100%;
+                }
+                figure {
+                    max-width: 82%;
+                    align-items: flex-start;
+                }
+            }
+            .about2 {
+                width: 100%;
+                p {
+                    width: 100%;
+                }
+            }
         }
-        figure {
-          max-width: 82%;
-          align-items: flex-start;
-        }
-      }
-      .about2 {
-        width: 100%;
+    }
+
+    .skillsGallery {
+        grid-template-columns: 1fr 1fr;
         p {
-          width: 100%;
+            font-size: 18px;
         }
-      }
     }
-  }
+    .splash .smallFlexBox {
+        height: 45vh;
+    }
 
-  .skillsGallery {
-    grid-template-columns: 1fr 1fr;
-    p {
-      font-size: 18px;
+    header .navBox {
+        margin-top: 20px;
     }
-  }
-  .splash .smallFlexBox {
-    height: 45vh;
-  }
+    .modal.openModal {
+        bottom: 10%;
+        max-width: 100%;
+        min-width: 0;
+        form {
+            .inputBox {
+                flex-direction: column;
+            }
+        }
+    }
 
-  header .navBox {
-    margin-top: 20px;
-  }
-  .modal.openModal {
-    bottom: 10%;
-    max-width: 100%;
-    min-width: 0;
-    form {
-      .inputBox {
-        flex-direction: column;
-      }
+    .homeMain + footer {
+        .bottom {
+            a {
+                align-self: flex-end;
+                margin: 0;
+                max-width: 17%;
+            }
+        }
     }
-  }
-
-  .homeMain + footer {
-    .bottom {
-      a {
-        align-self: flex-end;
-        margin: 0;
-        max-width: 17%;
-      }
-    }
-  }
 }
 
 // Phone landscape
 @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  .splash .relativeColumnBox h1 {
-    font-size: 1.6rem;
-    margin: 55px 0 0;
-  }
+    .splash .relativeColumnBox h1 {
+        font-size: 1.6rem;
+        margin: 55px 0 0;
+    }
 
-  .modal {
-    bottom: -100;
-    top: auto;
-    min-height: 400px;
-    padding: 11px 12px 9px 20px;
-    bottom: -100px;
-    left: 0;
-    right: 20px;
-    form {
-      padding: 15px 0 20px;
-    }
-  }
-
-  .smallFlexBox {
-    position: relative;
-    p.animate__backInLeft {
-      font-size: 1.4rem;
-    }
-    button.tealContactButton {
-      position: absolute;
-      right: 0;
-      width: 25%;
-      .me {
-        display: none;
-      }
-      .fa-long-arrow-alt-right {
-        display: none;
-      }
-    }
-  }
-  .about {
-    padding-top: 115px;
-  }
-  footer {
-    .contactWrapper {
-      padding: 65px 0 60px;
-    }
-  }
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .tealContactButton {
-          left: 75%;
-          top: 55%;
-          padding: 15px 0;
-          width: 30%;
+    .modal {
+        bottom: -100;
+        top: auto;
+        min-height: 400px;
+        padding: 11px 12px 9px 20px;
+        bottom: -100px;
+        left: 0;
+        right: 20px;
+        form {
+            padding: 15px 0 20px;
         }
-      }
     }
-    .contactWrapper {
-      display: none;
+
+    .smallFlexBox {
+        position: relative;
+        p.animate__backInLeft {
+            font-size: 1.4rem;
+        }
+        button.tealContactButton {
+            position: absolute;
+            right: 0;
+            width: 25%;
+            .me {
+                display: none;
+            }
+            .fa-long-arrow-alt-right {
+                display: none;
+            }
+        }
     }
-  }
+    .about {
+        padding-top: 115px;
+    }
+    footer {
+        .contactWrapper {
+            padding: 65px 0 60px;
+        }
+    }
+    .splash {
+        .relativeColumnBox {
+            .smallFlexBox {
+                .tealContactButton {
+                    left: 75%;
+                    top: 55%;
+                    padding: 15px 0;
+                    width: 30%;
+                }
+            }
+        }
+        .contactWrapper {
+            display: none;
+        }
+    }
 }
 
 // Phone Landscape window size hover styles
 @media screen and (hover: hover) and (pointer: fine) and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .tealContactButton.homeButton:hover {
-          padding: 14px 0 !important;
+    .splash {
+        .relativeColumnBox {
+            .smallFlexBox {
+                .tealContactButton.homeButton:hover {
+                    padding: 14px 0 !important;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 // Contact Button Control
 
 @media (max-width: 620px) {
-  .relativeColumnBox .smallFlexBox .homeButton {
-    width: 44%;
-  }
+    .relativeColumnBox .smallFlexBox .homeButton {
+        width: 44%;
+    }
 }
 
 // Modal control
 
 @media (max-width: 680px) {
-  .modal {
-    top: 37px;
-    max-height: 609px;
-    min-height: 609px;
-    form {
-      .inputBox {
-        flex-direction: column;
-        label:nth-of-type(2) {
-          margin-left: 0;
+    .modal {
+        top: 37px;
+        max-height: 609px;
+        min-height: 609px;
+        form {
+            .inputBox {
+                flex-direction: column;
+                label:nth-of-type(2) {
+                    margin-left: 0;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 /* Small phones */
 @media (max-width: 500px) {
-  header {
-    font-size: 0.8rem;
-    background-position-x: -33vw;
-    a {
-      font-size: 0.95rem;
+    header {
+        font-size: 0.8rem;
+        background-position-x: -33vw;
+        a {
+            font-size: 0.95rem;
+        }
+        nav {
+            letter-spacing: 1.5px;
+        }
     }
-    nav {
-      letter-spacing: 1.5px;
+
+    .smallFlexBox {
+        button.tealContactButton {
+            font-size: 0.8rem;
+            padding: 15px 0;
+        }
     }
-  }
 
-  .smallFlexBox {
-    button.tealContactButton {
-      font-size: 0.8rem;
-      padding: 15px 0;
+    .projectInfo:nth-child(even),
+    .projectInfo:nth-child(odd) {
+        text-align: left;
     }
-  }
 
-  .projectInfo:nth-child(even),
-  .projectInfo:nth-child(odd) {
-    text-align: left;
-  }
+    .homeMain + footer {
+        align-items: center;
+        left: 0;
+        right: auto;
+        .bottom {
+            align-items: flex-start;
+            justify-content: space-between;
+            .webDeveloper {
+                display: block;
+            }
 
-  .homeMain + footer {
-    align-items: center;
-    left: 0;
-    right: auto;
-    .bottom {
-      align-items: flex-start;
-      justify-content: space-between;
-      .webDeveloper {
-        display: block;
-      }
-
-      .verticalLine {
-        display: none;
-      }
-      p {
-        margin: 0;
-      }
+            .verticalLine {
+                display: none;
+            }
+            p {
+                margin: 0;
+            }
+        }
     }
-  }
 
-  .formBackground {
-    .fieldsetBox {
-      padding: 0 11px;
+    .formBackground {
+        .fieldsetBox {
+            padding: 0 11px;
+        }
     }
-  }
 }
 
 // Tall phones
 
 @media (min-width: 410px) and (min-height: 875px) {
-  header {
-    .navBox {
-      nav {
-        ul {
-          a {
-            font-size: 1.4rem;
-          }
+    header {
+        .navBox {
+            nav {
+                ul {
+                    a {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  .relativeColumnBox {
-    .smallFlexBox {
-      .homeButton {
-        font-size: 1.1rem;
-      }
+    .relativeColumnBox {
+        .smallFlexBox {
+            .homeButton {
+                font-size: 1.1rem;
+            }
+        }
     }
-  }
 
-  .splash {
-    .outlined {
-      font-size: 1.8rem;
+    .splash {
+        .outlined {
+            font-size: 1.8rem;
+        }
+        .contactWrapper {
+            a {
+                font-size: 2.4rem;
+            }
+        }
     }
-    .contactWrapper {
-      a {
-        font-size: 2.4rem;
-      }
+    .homeMain {
+        footer {
+            .bottom {
+                flex-direction: row;
+            }
+        }
     }
-  }
-  .homeMain {
     footer {
-      .bottom {
-        flex-direction: row;
-      }
-    }
-  }
-  footer {
-    .bottom {
-      a {
-        font-size: 1.1rem;
-        svg {
-          font-size: 0.9rem;
+        .bottom {
+            a {
+                font-size: 1.1rem;
+                svg {
+                    font-size: 0.9rem;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 // Medium Tall Phones
 @media (min-width: 410px) and (min-height: 760px) {
-  .relativeColumnBox {
-    .smallFlexBox {
-      .homeButton {
-        font-size: 1.1rem;
-        margin: 20px 0;
-      }
+    .relativeColumnBox {
+        .smallFlexBox {
+            .homeButton {
+                font-size: 1.1rem;
+                margin: 20px 0;
+            }
+        }
     }
-  }
 }
 /* Smallest phones */
 @media (max-width: 365px) and (max-height: 640px) {
-  h1 {
-    font-size: 1.8rem;
-  }
+    h1 {
+        font-size: 1.8rem;
+    }
 
-  header {
-    .navBox {
-      margin-top: 10px;
-      nav {
-        ul {
-          li {
-            a {
-              font-size: 0.8rem;
+    header {
+        .navBox {
+            margin-top: 10px;
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 
-  .splash {
-    .contactWrapper {
-      display: none;
-    }
-  }
-  .smallFlexBox {
-    span.animate__backInLeft {
-      font-size: 1.5rem;
-    }
-  }
-  .formBackground {
-    padding: 30px 0px 30px 11px;
-    form {
-      width: 95%;
-    }
-  }
-  footer {
-    flex-direction: column;
-    .contactWrapper {
-      align-items: flex-start;
-      margin: 10px 0;
-      width: 320px;
-      > a {
-        font-size: 0.8rem;
-      }
-    }
-    .bottom {
-      width: initial;
-    }
-  }
-
-  .aboutMain + footer,
-  .projectsMain + footer,
-  .skillsMain + footer,
-  .pageNotFoundMain + footer {
-    .bottom {
-      p {
-        padding: 0;
-        span {
-          display: none;
+    .splash {
+        .contactWrapper {
+            display: none;
         }
-        .webDeveloper {
-          display: block;
-        }
-      }
     }
-  }
-  .modal {
-    min-width: 300px;
-    padding-bottom: 0;
-    top: 10%;
-    form {
-      padding-bottom: 0;
-      .inputBox {
+    .smallFlexBox {
+        span.animate__backInLeft {
+            font-size: 1.5rem;
+        }
+    }
+    .formBackground {
+        padding: 30px 0px 30px 11px;
+        form {
+            width: 95%;
+        }
+    }
+    footer {
         flex-direction: column;
-        label:nth-of-type(2) {
-          margin-left: 0;
+        .contactWrapper {
+            align-items: flex-start;
+            margin: 10px 0;
+            width: 320px;
+            > a {
+                font-size: 0.8rem;
+            }
         }
-      }
-      .fieldsetBox {
-        width: 87%;
-        padding: 0;
-        margin: 0 0 0 10px;
-      }
-      .contactFormButton {
-        width: 67%;
-      }
+        .bottom {
+            width: initial;
+        }
     }
-  }
+
+    .aboutMain + footer,
+    .projectsMain + footer,
+    .skillsMain + footer,
+    .pageNotFoundMain + footer {
+        .bottom {
+            p {
+                padding: 0;
+                span {
+                    display: none;
+                }
+                .webDeveloper {
+                    display: block;
+                }
+            }
+        }
+    }
+    .modal {
+        min-width: 300px;
+        padding-bottom: 0;
+        top: 10%;
+        form {
+            padding-bottom: 0;
+            .inputBox {
+                flex-direction: column;
+                label:nth-of-type(2) {
+                    margin-left: 0;
+                }
+            }
+            .fieldsetBox {
+                width: 87%;
+                padding: 0;
+                margin: 0 0 0 10px;
+            }
+            .contactFormButton {
+                width: 67%;
+            }
+        }
+    }
 }
 
 // Tiny Phone
 @media (max-width: 350px) {
-  .modal {
-    min-width: 2px !important;
-    width: 84%;
-    min-height: 575px;
-    padding-bottom: 0;
-    padding-left: 5px;
-    top: 9%;
-    .modalClose {
-      margin-left: 18px;
+    .modal {
+        min-width: 2px !important;
+        width: 84%;
+        min-height: 575px;
+        padding-bottom: 0;
+        padding-left: 5px;
+        top: 9%;
+        .modalClose {
+            margin-left: 18px;
+        }
+        form {
+            padding-bottom: 0;
+            .fieldsetBox {
+                padding-top: 10px;
+                margin: 0 15px;
+                width: 70%;
+            }
+            .inputBox {
+                width: 100%;
+            }
+        }
     }
-    form {
-      padding-bottom: 0;
-      .fieldsetBox {
-        padding-top: 10px;
-        margin: 0 15px;
-        width: 70%;
-      }
-      .inputBox {
-        width: 100%;
-      }
-    }
-  }
 }
 
 // Hover/Active Styles only when device is not a touchscreen
 
 @media (hover: hover) and (pointer: fine) {
-  header {
-    .navBox {
-      nav {
-        ul.mainNavList {
-          a:hover {
-            outline: none;
-          }
-          a:hover::after {
-            width: 100%;
-          }
-          a:hover::before {
-            width: 95%;
-          }
-          a:active::after {
-            -webkit-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-            -o-transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-            transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-            width: 0;
-          }
+    header {
+        .navBox {
+            nav {
+                ul.mainNavList {
+                    a:hover {
+                        outline: none;
+                    }
+                    a:hover::after {
+                        width: 100%;
+                    }
+                    a:hover::before {
+                        width: 95%;
+                    }
+                    a:active::after {
+                        -webkit-transition: 0.1s
+                            cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                        -o-transition: 0.1s
+                            cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+                        transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+                            all;
+                        width: 0;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        a:hover .target {
-          text-decoration: underline;
+    .splash {
+        .relativeColumnBox {
+            .smallFlexBox {
+                a:hover .target {
+                    text-decoration: underline;
+                }
+                a:active .target {
+                    text-decoration: none;
+                }
+                a:active {
+                    outline: none;
+                }
+                .contactIcons {
+                    a:hover svg {
+                        box-shadow: $buttonHoverGlow;
+                        color: $teal;
+                    }
+                    a:active svg {
+                        color: $white;
+                    }
+                    a:active {
+                        outline: none;
+                    }
+                }
+                .tealContactButton:hover {
+                    box-shadow: $buttonHoverGlow;
+                    padding: 20px 3px;
+                }
+            }
         }
-        a:active .target {
-          text-decoration: none;
+    }
+
+    .projectInfo {
+        a:hover {
+            opacity: 0.6;
         }
         a:active {
-          outline: none;
+            opacity: 1;
         }
-        .contactIcons {
-          a:hover svg {
-            box-shadow: $buttonHoverGlow;
-            color: $teal;
-          }
-          a:active svg {
-            color: $white;
-          }
-          a:active {
-            outline: none;
-          }
+    }
+
+    .imgBox > a:hover > img {
+        transition: border-top 0.5s;
+    }
+
+    .imgBox > a:active > img {
+        z-index: auto;
+    }
+
+    .skillsGallery {
+        li:hover .skillsIconBox:hover {
+            animation-name: spin;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            -webkit-animation-name: spin;
+            -webkit-animation-duration: 2000ms;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
         }
-        .tealContactButton:hover {
-          box-shadow: $buttonHoverGlow;
-          padding: 20px 3px;
+    }
+
+    footer {
+        .contactWrapper {
+            a:active {
+                outline: none;
+            }
+            .fa-linkedin:hover,
+            .fa-github:hover {
+                color: $teal;
+            }
         }
-      }
-    }
-  }
-
-  .projectInfo {
-    a:hover {
-      opacity: 0.6;
-    }
-    a:active {
-      opacity: 1;
-    }
-  }
-
-  .imgBox > a:hover > img {
-    transition: border-top 0.5s;
-  }
-
-  .imgBox > a:active > img {
-    z-index: auto;
-  }
-
-  .skillsGallery {
-    li:hover .skillsIconBox:hover {
-      animation-name: spin;
-      animation-duration: 2000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      -webkit-animation-name: spin;
-      -webkit-animation-duration: 2000ms;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-    }
-  }
-
-  footer {
-    .contactWrapper {
-      a:active {
-        outline: none;
-      }
-      .fa-linkedin:hover,
-      .fa-github:hover {
-        color: $teal;
-      }
-    }
-    .bottom {
-      .resume:active {
-        svg {
-          transform: translateY(2px);
+        .bottom {
+            .resume:active {
+                svg {
+                    transform: translateY(2px);
+                }
+            }
         }
-      }
     }
-  }
 
-  button.modalClose:active {
-    transform: translateY(2px);
-    outline: none !important;
-  }
-  button.modalClose:focus {
-    outline: 2px solid $teal;
-  }
+    button.modalClose:active {
+        transform: translateY(2px);
+        outline: none !important;
+    }
+    button.modalClose:focus {
+        outline: 2px solid $teal;
+    }
 }
 
 // Dark specific hover styles
 
 @media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-  .navBox {
-    nav {
-      ul.mainNavList {
-        a:hover {
-          text-shadow: $dModeNavHoverShadow;
+    .navBox {
+        nav {
+            ul.mainNavList {
+                a:hover {
+                    text-shadow: $dModeNavHoverShadow;
+                }
+            }
         }
-      }
     }
-  }
-  .navBox {
-    .aboutNav,
-    .skillsNav {
-      ul.mainNavList {
-        a:hover {
-          text-shadow: $lModeNavHoverShadow;
+    .navBox {
+        .aboutNav,
+        .skillsNav {
+            ul.mainNavList {
+                a:hover {
+                    text-shadow: $lModeNavHoverShadow;
+                }
+            }
         }
-      }
     }
-  }
-  .splash {
-    .tealContactButton:hover {
-      border: 2px solid $white;
+    .splash {
+        .tealContactButton:hover {
+            border: 2px solid $white;
+        }
     }
-  }
 
-  .imgBox > a:hover > img {
-    border-top: 14px ridge $white;
-  }
-  .imgBox > a:active > img {
-    border-top: 14px ridge $teal;
-  }
-  .imgBox > a:focus > img {
-    border-top: 14px ridge $teal;
-  }
+    .imgBox > a:hover > img {
+        border-top: 14px ridge $white;
+    }
+    .imgBox > a:active > img {
+        border-top: 14px ridge $teal;
+    }
+    .imgBox > a:focus > img {
+        border-top: 14px ridge $teal;
+    }
 
-  footer {
-    .contactWrapper {
-      > a:hover {
-        color: $white;
-      }
-      > a:active {
-        color: $teal;
-      }
-      .fa-linkedin:active,
-      .fa-github:active {
-        color: $white;
-      }
+    footer {
+        .contactWrapper {
+            > a:hover {
+                color: $white;
+            }
+            > a:active {
+                color: $teal;
+            }
+            .fa-linkedin:active,
+            .fa-github:active {
+                color: $white;
+            }
+        }
+        .bottom {
+            a:hover {
+                color: $white;
+            }
+            .resume:active {
+                color: $white;
+            }
+        }
     }
-    .bottom {
-      a:hover {
-        color: $white;
-      }
-      .resume:active {
-        color: $white;
-      }
-    }
-  }
 
-  .errorNav {
-    ul {
-      li {
-        a:hover {
-          color: $teal;
+    .errorNav {
+        ul {
+            li {
+                a:hover {
+                    color: $teal;
+                }
+                a:hover + i {
+                    color: $white;
+                }
+            }
         }
-        a:hover + i {
-          color: $white;
-        }
-      }
     }
-  }
 }
 
 // Light specific hover styles
 
 @media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
-  .navBox {
-    nav {
-      ul.mainNavList {
-        a:hover {
-          text-shadow: $lModeNavHoverShadow;
+    .navBox {
+        nav {
+            ul.mainNavList {
+                a:hover {
+                    text-shadow: $lModeNavHoverShadow;
+                }
+            }
         }
-      }
     }
-  }
-  .splash {
-    .relativeColumnBox {
-      .smallFlexBox {
-        .tealContactButton:hover {
-          border: 2px solid $black;
+    .splash {
+        .relativeColumnBox {
+            .smallFlexBox {
+                .tealContactButton:hover {
+                    border: 2px solid $black;
+                }
+                .contactIcons {
+                    a:active svg {
+                        color: $black;
+                    }
+                }
+            }
         }
-        .contactIcons {
-          a:active svg {
-            color: $black;
-          }
-        }
-      }
     }
-  }
 
-  .imgBox > a:hover > img {
-    border-top: 14px ridge #126368;
-  }
-  .imgBox > a:active > img {
-    border-top: 14px ridge $teal;
-  }
-  .imgBox > a:focus > img {
-    border-top: 14px ridge $teal;
-  }
-  footer {
-    .contactWrapper {
-      > a:hover {
-        color: $black;
-      }
-      > a:active {
-        color: $teal;
-      }
-      a:focus {
-        outline-color: $black;
-      }
-      .fa-linkedin:active,
-      .fa-github:active {
-        color: $black;
-      }
+    .imgBox > a:hover > img {
+        border-top: 14px ridge #126368;
     }
-    .bottom {
-      a:hover {
-        color: $black;
-      }
-      .resume:active {
-        color: $black;
-      }
+    .imgBox > a:active > img {
+        border-top: 14px ridge $teal;
     }
-  }
+    .imgBox > a:focus > img {
+        border-top: 14px ridge $teal;
+    }
+    footer {
+        .contactWrapper {
+            > a:hover {
+                color: $black;
+            }
+            > a:active {
+                color: $teal;
+            }
+            a:focus {
+                outline-color: $black;
+            }
+            .fa-linkedin:active,
+            .fa-github:active {
+                color: $black;
+            }
+        }
+        .bottom {
+            a:hover {
+                color: $black;
+            }
+            .resume:active {
+                color: $black;
+            }
+        }
+    }
 
-  .errorNav {
-    ul {
-      li {
-        a:hover {
-          color: $teal;
+    .errorNav {
+        ul {
+            li {
+                a:hover {
+                    color: $teal;
+                }
+                a:hover + i {
+                    color: $black;
+                }
+            }
         }
-        a:hover + i {
-          color: $black;
-        }
-      }
     }
-  }
 }
 
 // When user prefers light mode
 @media (prefers-color-scheme: light) {
-  h1,
-  h2,
-  h3,
-  nav ul,
-  .subtleTextShadow {
-    text-shadow: $lightModeTextShadow;
-  }
-  .splash .galaxy {
-    .stars {
-      display: none;
-    }
-  }
-
-  .subtleTextGradient {
-    background: linear-gradient(180deg, black 20%, $black 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  html {
-    background: $white;
-  }
-  a:focus,
-  button:focus {
-    outline: 2px solid $black;
-  }
-
-  header {
-    .favLink:focus {
-      img {
-        outline: 2px solid $black;
-      }
-    }
-  }
-
-  .navBox {
-    nav {
-      ul.mainNavList {
-        a:focus {
-          text-shadow: $lModeNavHoverShadow;
-        }
-      }
-    }
-  }
-
-  .contactComponent {
-    color: $black;
-  }
-
-  .splash {
-    .lightHeroElements {
-      display: block;
-      margin: 0 auto;
-      position: absolute;
-      top: 0;
-      height: 100vh;
-      width: 100%;
-      z-index: -1;
-    }
-    .contactWrapper a {
-      color: $black;
-    }
-    h1,
-    h2,
-    p {
-      color: $black;
-    }
-    .smallFlexBox {
-      a:focus {
-        outline: 2px solid $black;
-      }
-    }
-  }
-
-  .about {
-    box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
-  }
-
-  .projects {
-    background: $white;
-    .wrapper.flexBox {
-      h2 {
-        color: $black;
-      }
-    }
-  }
-
-  .projectInfo {
-    h3,
-    h4,
-    h5,
-    p {
-      color: $black;
-    }
-    a {
-      background: $teal;
-      color: $black;
-    }
-    p,
-    h3,
-    h4 {
-      text-shadow: none;
-    }
-  }
-
-  footer {
-    background: $white;
-    background: rgba(215, 237, 238, 0.3);
-    color: $black;
-    .contactWrapper {
-      > a {
-        font-weight: 500;
-      }
-      a:focus {
-        outline: 2px solid $black;
-      }
-    }
-    .bottom {
-      a {
-        text-shadow: $lightModeTextShadow;
-      }
-      .resume,
-      .resume:active,
-      .resume:hover {
-        svg {
-          color: $black;
-        }
-      }
-    }
-    p {
-      color: $black;
-    }
-  }
-  footer::before {
-      background: linear-gradient(
-          -45deg,
-          rgba(215, 237, 238, 0.3) 14px,
-          #dddddd 15px,
-          #bbbbbb 16px,
-          transparent 19px,
-          $white 0
-        ),
-        linear-gradient(
-          45deg,
-          $white 16px,
-          #dddddd 15px,
-          #bbbbbb 14px,
-          transparent 0
-        );
-      background-position: bottom;
-      background-repeat: repeat-x;
-      background-size: 32px 32px;
-      height: 36px;
-      margin-bottom: 40px;
-      position: relative;
-      top: -5px;
-    }
-  .errorHeader {
-    background-image: none;
-    .background {
-      display: block;
-    }
-  }
-  .errorSection {
-    h1 {
-      color: $black;
-    }
-  }
-  .errorP {
-    color: $black;
-  }
-
-  .errorNav {
-    ul {
-      li {
-        a {
-          color: $black;
-        }
-        a:active {
-          color: $black;
-        }
-      }
-    }
-  }
-}
-
-// When user prefers dark mode
-@media (prefers-color-scheme: dark) {
-  html {
-    background: $black;
-  }
-  h1,
-  h2,
-  h3,
-  nav ul,
-  h2,
-  .subtleTextShadow {
-    text-shadow: $darkModeTextShadow;
-  }
-
-  .aboutMain,
-  .skillsMain {
     h1,
     h2,
     h3,
     nav ul,
     .subtleTextShadow {
-      text-shadow: $lightModeTextShadow;
+        text-shadow: $lightModeTextShadow;
     }
-  }
-  .splash .lightHeroElements {
-    display: none;
-  }
-  .subtleTextGradient {
-    background: linear-gradient(180deg, white 20%, $white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  a:focus,
-  button:focus {
-    outline: 2px solid $white;
-  }
-  .navBox {
-    nav {
-      ul.mainNavList {
-        a:focus {
-          text-shadow: $dModeNavHoverShadow;
+    .splash .galaxy {
+        .stars {
+            display: none;
         }
-      }
     }
-  }
-  .navBox {
-    .aboutNav,
-    .skillsNav {
-      ul.mainNavList {
-        a:focus {
-          text-shadow: $lModeNavHoverShadow;
+
+    .subtleTextGradient {
+        background: linear-gradient(180deg, black 20%, $black 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    html {
+        background: $white;
+    }
+    a:focus,
+    button:focus {
+        outline: 2px solid $black;
+    }
+
+    header {
+        .favLink:focus {
+            img {
+                outline: 2px solid $black;
+            }
         }
-      }
     }
-  }
-  header {
-    .relativeColumnBox {
-      .smallFlexBox {
-        a:focus {
-          outline: 2px solid $white;
+
+    .navBox {
+        nav {
+            ul.mainNavList {
+                a:focus {
+                    text-shadow: $lModeNavHoverShadow;
+                }
+            }
         }
-      }
     }
-  }
-  .splash {
-    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    .contactWrapper a {
-      color: $white;
+
+    .contactComponent {
+        color: $black;
+    }
+
+    .splash {
+        .lightHeroElements {
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            z-index: -1;
+        }
+        .contactWrapper a {
+            color: $black;
+        }
+        h1,
+        h2,
+        p {
+            color: $black;
+        }
+        .smallFlexBox {
+            a:focus {
+                outline: 2px solid $black;
+            }
+        }
+    }
+
+    .about {
+        box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+    }
+
+    .projects {
+        background: $white;
+        .wrapper.flexBox {
+            h2 {
+                color: $black;
+            }
+        }
+    }
+
+    .projectInfo {
+        h3,
+        h4,
+        h5,
+        p {
+            color: $black;
+        }
+        a {
+            background: $teal;
+            color: $black;
+        }
+        p,
+        h3,
+        h4 {
+            text-shadow: none;
+        }
+    }
+
+    footer {
+        background: $white;
+        background: rgba(215, 237, 238, 0.3);
+        color: $black;
+        .contactWrapper {
+            > a {
+                font-weight: 500;
+            }
+            a:focus {
+                outline: 2px solid $black;
+            }
+        }
+        .bottom {
+            a {
+                text-shadow: $lightModeTextShadow;
+            }
+            .resume,
+            .resume:active,
+            .resume:hover {
+                svg {
+                    color: $black;
+                }
+            }
+        }
+        p {
+            color: $black;
+        }
+    }
+    footer::before {
+        background: linear-gradient(
+                -45deg,
+                rgba(215, 237, 238, 0.3) 14px,
+                #dddddd 15px,
+                #bbbbbb 16px,
+                transparent 19px,
+                $white 0
+            ),
+            linear-gradient(
+                45deg,
+                $white 16px,
+                #dddddd 15px,
+                #bbbbbb 14px,
+                transparent 0
+            );
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: 32px 32px;
+        height: 36px;
+        margin-bottom: 40px;
+        position: relative;
+        top: -5px;
+    }
+    .errorHeader {
+        background-image: none;
+        .background {
+            display: block;
+        }
+    }
+    .errorSection {
+        h1 {
+            color: $black;
+        }
+    }
+    .errorP {
+        color: $black;
+    }
+
+    .errorNav {
+        ul {
+            li {
+                a {
+                    color: $black;
+                }
+                a:active {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+// When user prefers dark mode
+@media (prefers-color-scheme: dark) {
+    html {
+        background: $black;
     }
     h1,
-    h2 {
-      color: $white;
-    }
-
-    .relativeColumnBox {
-      .smallFlexBox {
-        a:focus {
-          outline: 2px solid $white;
-        }
-      }
-    }
-  }
-  .projects {
-    background: $black;
-    .wrapper.flexBox {
-      h1,
-      h2 {
-        color: $white;
-      }
-    }
-  }
-
-  .projectInfo {
+    h2,
     h3,
-    h4,
-    h5,
-    p {
-      color: $white;
-    }
-    a {
-      background: $white;
-      color: $darkTeal;
-    }
-    p,
-    h3,
-    h4 {
-      text-shadow: 3px 3px 5px $black;
-    }
-  }
-
-  footer {
-    background: $black;
-    color: $white;
-    overflow: hidden;
-    position: relative;
-    .contactWrapper {
-      a:focus {
-        outline: 2px solid $white;
-      }
-    }
-    .bottom {
-      a {
+    nav ul,
+    h2,
+    .subtleTextShadow {
         text-shadow: $darkModeTextShadow;
-      }
-      .resume,
-      .resume:active,
-      .resume:hover {
-        svg {
-          color: $white;
-        }
-      }
     }
-    p {
-      color: $white;
-    }
-  }
-  .projectsMain + footer::before,
-  .projectsMain + footer::after,
-  .homeMain + footer::before,
-  .homeMain + footer::after,
-  .pageNotFoundMain + footer::before,
-  .pageNotFoundMain + footer::after {
-    display: none;
-  }
-  footer::before {
-    background: radial-gradient(
-      ellipse,
-      $black,
-      $black 7px,
-      $black 7px,
-      $black 10px,
-      transparent 11px
-    );
-    background-repeat: repeat-x;
-    margin-bottom: 60px;
-    position: relative;
-    top: 0;
-  }
-  footer::after {
-    background: radial-gradient(
-      ellipse,
-      transparent,
-      transparent 7.3px,
-      $black 7px,
-      $black 10px,
-      $black 11px
-    );
-    background-position: -18px -20px;
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 20px;
-    width: 100%;
-  }
-  footer::before,
-  footer::after {
-    height: 25px;
-    background-size: 36px 0px;
-  }
-  .transitionBorder::before,
-  .transitionBorder::after {
-    background-size: 36px 40px;
-  }
-  .skillsMain + .transitionBorder,
-  .aboutMain + .transitionBorder {
-    box-shadow: inset 0px 50px 3px -22px $white;
-    transition: box-shadow 2s;
-  }
-  .errorSection {
-    h1 {
-      color: $white;
-    }
-  }
-  .errorP {
-    color: $white;
-  }
 
-  .errorNav {
-    ul {
-      li {
-        a {
-          color: $white;
+    .aboutMain,
+    .skillsMain {
+        h1,
+        h2,
+        h3,
+        nav ul,
+        .subtleTextShadow {
+            text-shadow: $lightModeTextShadow;
         }
-        a:active {
-          color: $white;
-        }
-      }
     }
-  }
+    .splash .lightHeroElements {
+        display: none;
+    }
+    .subtleTextGradient {
+        background: linear-gradient(180deg, white 20%, $white 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    a:focus,
+    button:focus {
+        outline: 2px solid $white;
+    }
+    .navBox {
+        nav {
+            ul.mainNavList {
+                a:focus {
+                    text-shadow: $dModeNavHoverShadow;
+                }
+            }
+        }
+    }
+    .navBox {
+        .aboutNav,
+        .skillsNav {
+            ul.mainNavList {
+                a:focus {
+                    text-shadow: $lModeNavHoverShadow;
+                }
+            }
+        }
+    }
+    header {
+        .relativeColumnBox {
+            .smallFlexBox {
+                a:focus {
+                    outline: 2px solid $white;
+                }
+            }
+        }
+    }
+    .splash {
+        background-image: url('https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .contactWrapper a {
+            color: $white;
+        }
+        h1,
+        h2 {
+            color: $white;
+        }
+
+        .relativeColumnBox {
+            .smallFlexBox {
+                a:focus {
+                    outline: 2px solid $white;
+                }
+            }
+        }
+    }
+    .projects {
+        background: $black;
+        .wrapper.flexBox {
+            h1,
+            h2 {
+                color: $white;
+            }
+        }
+    }
+
+    .projectInfo {
+        h3,
+        h4,
+        h5,
+        p {
+            color: $white;
+        }
+        a {
+            background: $white;
+            color: $darkTeal;
+        }
+        p,
+        h3,
+        h4 {
+            text-shadow: 3px 3px 5px $black;
+        }
+    }
+
+    footer {
+        background: $black;
+        color: $white;
+        overflow: hidden;
+        position: relative;
+        .contactWrapper {
+            a:focus {
+                outline: 2px solid $white;
+            }
+        }
+        .bottom {
+            a {
+                text-shadow: $darkModeTextShadow;
+            }
+            .resume,
+            .resume:active,
+            .resume:hover {
+                svg {
+                    color: $white;
+                }
+            }
+        }
+        p {
+            color: $white;
+        }
+    }
+    .projectsMain + footer::before,
+    .projectsMain + footer::after,
+    .homeMain + footer::before,
+    .homeMain + footer::after,
+    .pageNotFoundMain + footer::before,
+    .pageNotFoundMain + footer::after {
+        display: none;
+    }
+    footer::before {
+        background: radial-gradient(
+            ellipse,
+            $black,
+            $black 7px,
+            $black 7px,
+            $black 10px,
+            transparent 11px
+        );
+        background-repeat: repeat-x;
+        margin-bottom: 60px;
+        position: relative;
+        top: 0;
+    }
+    footer::after {
+        background: radial-gradient(
+            ellipse,
+            transparent,
+            transparent 7.3px,
+            $black 7px,
+            $black 10px,
+            $black 11px
+        );
+        background-position: -18px -20px;
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        width: 100%;
+    }
+    footer::before,
+    footer::after {
+        height: 25px;
+        background-size: 36px 0px;
+    }
+    .transitionBorder::before,
+    .transitionBorder::after {
+        background-size: 36px 40px;
+    }
+    .skillsMain + .transitionBorder,
+    .aboutMain + .transitionBorder {
+        box-shadow: inset 0px 50px 3px -22px $white;
+        transition: box-shadow 2s;
+    }
+    .errorSection {
+        h1 {
+            color: $white;
+        }
+    }
+    .errorP {
+        color: $white;
+    }
+
+    .errorNav {
+        ul {
+            li {
+                a {
+                    color: $white;
+                }
+                a:active {
+                    color: $white;
+                }
+            }
+        }
+    }
 }
 
 // When user prefers reduced motion
 @media (prefers-reduced-motion: reduce) {
-  .animate__backInLeft {
-    animation: none;
-  }
-  .skillsGallery li:hover div.skillsIconBox:hover {
-    animation: none;
-  }
-  .galaxy,
-  .stars {
-    animation: none !important;
-  }
-  footer {
-    transition: initial !important;
-  }
+    .animate__backInLeft {
+        animation: none;
+    }
+    .skillsGallery li:hover div.skillsIconBox:hover {
+        animation: none;
+    }
+    .galaxy,
+    .stars {
+        animation: none !important;
+    }
+    footer {
+        transition: initial !important;
+    }
 }
 
 // When user prefers reduced motion and no touchscreen
 @media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
-  header {
-    background-attachment: local;
-    .navBox {
-      nav {
-        ul.mainNavList {
-          a {
-            padding-bottom: 8px;
-          }
-          a:hover::before,
-          a:focus::before,
-          a:hover::after,
-          a:focus::after {
-            width: 0%;
-          }
-          a:hover,
-          a:focus {
-            border-bottom: 2px solid $teal;
-          }
-          a:active {
-            border-bottom: none;
-          }
+    header {
+        background-attachment: local;
+        .navBox {
+            nav {
+                ul.mainNavList {
+                    a {
+                        padding-bottom: 8px;
+                    }
+                    a:hover::before,
+                    a:focus::before,
+                    a:hover::after,
+                    a:focus::after {
+                        width: 0%;
+                    }
+                    a:hover,
+                    a:focus {
+                        border-bottom: 2px solid $teal;
+                    }
+                    a:active {
+                        border-bottom: none;
+                    }
+                }
+            }
         }
-      }
     }
-  }
-  .imgBox > a:hover > img,
-  .imgBox > a:focus > img {
-    border-top: 8px ridge $white;
-  }
+    .imgBox > a:hover > img,
+    .imgBox > a:focus > img {
+        border-top: 8px ridge $white;
+    }
 }
 
 footer {
-  .bottom {
-    a:active {
-      color: $teal;
-      svg {
-        transform: none;
-      }
+    .bottom {
+        a:active {
+            color: $teal;
+            svg {
+                transform: none;
+            }
+        }
     }
-  }
 }
 
 @-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    transform: rotateY(180);
-    -webkit-transform: rotateY(180);
-  }
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotateY(180);
+        -webkit-transform: rotateY(180);
+    }
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-  }
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
 }
 
 @-webkit-keyframes MoveUpDown {
-  from {
-    bottom: -100px;
-  }
-  to {
-    bottom: 10px;
-  }
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 10px;
+    }
 }
 @-moz-keyframes MoveUpDown {
-  from {
-    bottom: -100px;
-  }
-  to {
-    bottom: 10px;
-  }
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 10px;
+    }
 }
 
 @-o-keyframes MoveUpDown {
-  from {
-    bottom: -100px;
-  }
-  to {
-    bottom: 10px;
-  }
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 10px;
+    }
 }
 @keyframes MoveUpDown {
-  from {
-    bottom: -100px;
-  }
-  to {
-    bottom: 10px;
-  }
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 10px;
+    }
 }
