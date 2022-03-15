@@ -1,6 +1,6 @@
 <template>
     <header class="flexBox">
-        <router-link to="#main" class="skip-link" :class="focusOutline"
+        <router-link :to="$route.path + '#main'" class="skip-link" :class="focusOutline"
             >Skip To Content</router-link
         >
         <router-link

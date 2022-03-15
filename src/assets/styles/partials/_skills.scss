@@ -1,15 +1,18 @@
 .skills {
     background-color: $white;
-    padding: 125px 0 100px;
+    padding: 125px 0 75px;
     .wrapper {
         .flexBox {
             align-items: center;
             flex-direction: column;
             h1 {
                 color: $black;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
         }
+    }
+    .iconContainer.contactJump {
+        margin-top: 60px;
     }
 }
 
@@ -19,7 +22,7 @@
 
 .skillsGallery {
     display: grid;
-    grid-row-gap: 50px;
+    grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 35px;

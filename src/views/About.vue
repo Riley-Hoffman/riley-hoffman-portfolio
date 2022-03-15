@@ -40,6 +40,15 @@
                     </p>
                 </div>
             </div>
+            <ContactJumpComponent />
         </section>
     </main>
 </template>
+<script>
+import ContactJumpComponent from '@/components/ContactJumpComponent.vue'
+export default {
+  components: {
+    ContactJumpComponent
+  }
+}
+</script>

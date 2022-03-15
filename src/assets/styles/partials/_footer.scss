@@ -111,10 +111,6 @@ form {
         width: 50%;
         background: $buttonGradient;
     }
-    .contactFormButton:hover {
-        background: linear-gradient(to bottom, #17a3aa 5%, $grayTeal 100%);
-        background-color: #17a3aa;
-    }
     .contactFormButton:active {
         outline: none;
         position: relative;
