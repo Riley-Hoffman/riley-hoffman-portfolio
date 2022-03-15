@@ -1,53 +1,53 @@
 .errorHeader {
-  height: 25vh;
-  padding: 115px 0;
-  .smallFlexBox {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    .tealLine {
-      color: $teal;
+    height: 25vh;
+    padding: 115px 0;
+    .smallFlexBox {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        .tealLine {
+            color: $teal;
+        }
     }
-  }
 }
 
 .errorSection {
-  overflow: hidden;
-  padding-top: 160px;
-  .errorContentBox {
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    .errorIcon {
-      margin: 0;
-      max-width: 30%;
-      width: 100%;
+    overflow: hidden;
+    padding-top: 160px;
+    .errorContentBox {
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        .errorIcon {
+            margin: 0;
+            max-width: 30%;
+            width: 100%;
+        }
+        .errorP {
+            font-size: 1.5rem;
+            .ownLine {
+                display: block;
+            }
+        }
     }
-    .errorP {
-      font-size: 1.5rem;
-      .ownLine {
-        display: block;
-      }
-    }
-  }
 }
 
 .errorNav {
-  align-items: center;
-  justify-content: center;
-  ul {
-    font-size: 1.4rem;
-    li {
-      align-items: center;
-      display: flex;
-      .homeLink404:active {
-        outline: none;
-      }
-      svg {
-        color: $teal;
-        font-size: 1.7rem;
-        margin-left: 20px;
-      }
+    align-items: center;
+    justify-content: center;
+    ul {
+        font-size: 1.4rem;
+        li {
+            align-items: center;
+            display: flex;
+            .homeLink404:active {
+                outline: none;
+            }
+            svg {
+                color: $teal;
+                font-size: 1.7rem;
+                margin-left: 20px;
+            }
+        }
     }
-  }
 }

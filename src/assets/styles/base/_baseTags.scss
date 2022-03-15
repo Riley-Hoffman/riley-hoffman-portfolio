@@ -1,147 +1,147 @@
 body {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
 
 /* Works on Firefox */
 * {
-  scrollbar-color: rgba(0, 5, 15, 0.82) rgba(23, 162, 170, 0.82);
-  scrollbar-width: auto;
+    scrollbar-color: $scrollBarBlack $scrollBarTeal;
+    scrollbar-width: auto;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+    width: 16px;
 }
 
 *::-webkit-scrollbar-track {
-  background: $teal;
+    background: $teal;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 5, 15, 0.82);
-  border: 3px solid rgba(23, 162, 170, 0.82);
-  border-radius: 5px;
+    background-color: $scrollBarBlack;
+    border: 3px solid $scrollBarTeal;
+    border-radius: 5px;
 }
 
 *::selection {
-  background-color: $lightTeal;
-  color: $darkTeal;
-  text-shadow: none;
-  -webkit-text-fill-color: initial;
+    background-color: $lightTeal;
+    color: $darkTeal;
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
 }
 
 main {
-  position: relative;
+    position: relative;
 }
 
 h1 {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.15rem;
+    font-size: 1.15rem;
 }
 
 a {
-  padding: 2px;
-  transition: all 0.1s;
+    padding: 2px;
+    transition: all 0.1s;
 }
 
 p {
-  color: $grayPText;
-  margin: 10px 0;
+    color: $grayPText;
+    margin: 10px 0;
 }
 
 section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 80vh;
-  padding: 40px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 40px 0;
 }
 
 section,
 footer {
-  position: relative;
+    position: relative;
 }
 
 footer {
-  z-index: 20;
+    z-index: 20;
 }
 
 form,
 label,
 button {
-  font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 form {
-  label {
-    color: $black;
-  }
+    label {
+        color: $black;
+    }
 }
 
 fieldset {
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
-  padding-inline-start: 0;
-  padding-inline-end: 0;
-  border: none;
-  min-inline-size: min-content;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
 }
 
 button:active {
-  outline: none;
+    outline: none;
 }
 
 label {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
-label[for="email"] {
-  margin-left: 18px;
+label[for='email'] {
+    margin-left: 18px;
 }
 
 input,
 textarea {
-  border: none;
-  caret-color: $darkTeal;
-  font-family: "Rubik", sans-serif;
+    border: none;
+    caret-color: $darkTeal;
+    font-family: 'Rubik', sans-serif;
 }
 
 textarea {
-  padding-left: 15px;
-  padding-top: 15px;
-  resize: vertical;
+    padding-left: 15px;
+    padding-top: 15px;
+    resize: vertical;
 }
 
-input[type="text"],
-input[type="email"] {
-  padding: 10px;
+input[type='text'],
+input[type='email'] {
+    padding: 10px;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea {
-  border-radius: 20px 3px 0px 20px;
-  background: $white;
-  color: $black;
+    border-radius: 20px 3px 0px 20px;
+    background: $white;
+    color: $black;
 }
 
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid $teal;
+    outline: 2px solid $teal;
 }
 
 [v-cloak] {
-  display: none;
+    display: none;
 }
