@@ -840,9 +840,12 @@ header .navBox nav ul.mainNavList a:focus::before {
 }
 
 .modal {
-  background-color: rgba(178, 212, 214, 0.918);
-  border: 3px solid #00050f;
+  background-color: rgba(199, 231, 233, 0.8);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border: 3px solid rgba(178, 212, 214, 0.45);
   bottom: 20%;
+  box-shadow: -2px 2px 3px 0 #00050f;
   left: 30.5%;
   max-height: 80%;
   min-height: 460px;
