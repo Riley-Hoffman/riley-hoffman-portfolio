@@ -1,6 +1,6 @@
 .skills {
     background-color: $white;
-    padding: 130px 0 115px;
+    padding: 125px 0 100px;
     .wrapper {
         .flexBox {
             align-items: center;
@@ -19,10 +19,10 @@
 
 .skillsGallery {
     display: grid;
-    grid-row-gap: 60px;
+    grid-row-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin-top: 50px;
+    margin-top: 35px;
     width: 80vw;
     li {
         align-items: center;

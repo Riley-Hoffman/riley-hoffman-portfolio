@@ -1201,7 +1201,7 @@ header .navBox nav ul.mainNavList a:focus::before {
 
 .skills {
   background-color: #e5e8ee;
-  padding: 130px 0 115px;
+  padding: 125px 0 100px;
 }
 .skills .wrapper .flexBox {
   align-items: center;
@@ -1219,10 +1219,10 @@ header .navBox nav ul.mainNavList a:focus::before {
 
 .skillsGallery {
   display: grid;
-  grid-row-gap: 60px;
+  grid-row-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  margin-top: 50px;
+  margin-top: 35px;
   width: 80vw;
 }
 .skillsGallery li {
