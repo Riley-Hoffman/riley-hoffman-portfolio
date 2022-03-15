@@ -1017,6 +1017,7 @@ header .navBox nav ul.mainNavList a:focus::before {
 .about {
   background-color: #e5e8ee;
   padding: 115px 0;
+  min-height: 97vh;
 }
 .about .wrapper {
   display: flex;
