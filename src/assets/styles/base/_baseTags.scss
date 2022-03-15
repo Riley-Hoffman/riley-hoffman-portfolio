@@ -6,7 +6,7 @@ body {
 
 /* Works on Firefox */
 * {
-    scrollbar-color: rgba(0, 5, 15, 0.82) rgba(23, 162, 170, 0.82);
+    scrollbar-color: $scrollBarBlack $scrollBarTeal;
     scrollbar-width: auto;
 }
 
@@ -20,8 +20,8 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 5, 15, 0.82);
-    border: 3px solid rgba(23, 162, 170, 0.82);
+    background-color: $scrollBarBlack;
+    border: 3px solid $scrollBarTeal;
     border-radius: 5px;
 }
 
