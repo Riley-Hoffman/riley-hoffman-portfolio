@@ -1,11 +1,8 @@
 <template>
     <header class="flexBox">
-        <router-link
-            :to="$route.path + '#main'"
-            class="skip-link"
-            :class="focusOutline"
-            >Skip To Content</router-link
-        >
+        <button class="skip-link" :class="focusOutline" @click="main.focus()">
+            Skip To Content
+        </button>
         <router-link
             class="favLink"
             to="/"
@@ -52,6 +49,7 @@
 import routes from '../router'
 import NavLiComponent from './NavLiComponent.vue'
 export default {
+  props: ['main'],
   data () {
     return {
       preferDark: window.matchMedia('(prefers-color-scheme: dark)')

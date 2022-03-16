@@ -1,7 +1,9 @@
 <template>
-    <HeaderComponent />
+    <HeaderComponent :main="this.$refs.main"/>
     <main
         id="main"
+        ref="main"
+        tabindex="0"
         :class="{
             mainH: $route.path === '/',
             mainA: $route.path === '/about',
