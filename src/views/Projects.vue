@@ -1,5 +1,5 @@
 <template>
-    <main id="main" class="projectsMain">
+    <div class="projectsMain mainDiv">
         <section class="projects" id="projects">
             <div class="wrapper flexBox">
                 <h1>Projects</h1>
@@ -19,7 +19,7 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </div>
 </template>
 <script>
 import ProjectLiComponent from '@/components/ProjectLiComponent.vue'

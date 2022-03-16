@@ -1,6 +1,9 @@
+.mainS {
+    height: 96vh;
+}
 .skills {
     background-color: $white;
-    padding: 125px 0 75px;
+    padding: 120px 0 75px;
     .wrapper {
         .flexBox {
             align-items: center;
@@ -12,7 +15,7 @@
         }
     }
     .iconContainer.contactJump {
-        margin-top: 60px;
+        margin-top: 32px;
     }
 }
 
@@ -25,7 +28,7 @@
     grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin-top: 35px;
+    margin-top: 20px;
     width: 80vw;
     li {
         align-items: center;

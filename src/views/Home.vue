@@ -1,11 +1,11 @@
 <template>
-    <main id="main" class="homeMain">
+    <div class="homeMain mainDiv">
         <section class="splash">
             <div class="galaxy" @click="hideModal">
                 <div class="stars"></div>
             </div>
             <div
-                class="wrapper relativeColumnBox"
+                class="wrapper relativeColumnBox homeBodyRelColBox"
                 v-bind:class="{ static: showModal }"
             >
                 <div class="smallFlexBox">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 </template>
 <script>
 import SocialComponent from '@/components/SocialComponent.vue'

@@ -24,16 +24,15 @@ body {
     border: 3px solid $scrollBarTeal;
     border-radius: 5px;
 }
+main::-webkit-scrollbar {
+    display: none;
+}
 
 *::selection {
     background-color: $lightTeal;
     color: $darkTeal;
     text-shadow: none;
     -webkit-text-fill-color: initial;
-}
-
-main {
-    position: relative;
 }
 
 h1 {
@@ -58,12 +57,20 @@ p {
     margin: 10px 0;
 }
 
+main {
+    position: relative;
+}
+
+main:not(.mainH) {
+        overflow: scroll;
+}
+
 section {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 97vh;
     padding: 40px 0;
 }
 

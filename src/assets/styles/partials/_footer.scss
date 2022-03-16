@@ -1,9 +1,9 @@
 footer {
     align-items: center;
+    box-shadow: inset 0px 0px 0px 0px $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: inset 0px 0px 0px 0px $white;
     .bottom {
         align-items: center;
         justify-content: center;
@@ -146,24 +146,21 @@ i.fa-grip-lines-vertical {
     font-size: 84%;
 }
 
-.homeMain + footer {
+.mainH + footer {
     align-items: center;
     background-color: transparent;
     border: 0;
     bottom: 0;
-    height: 8vh;
+    height: 10vh;
     position: absolute;
     width: 100%;
-    .contactWrapper {
-        display: none;
-    }
     .bottom {
         width: 85%;
         justify-content: flex-end;
     }
 }
 
-.projectsMain + footer {
+.mainP + footer {
     padding: 0;
 }
 

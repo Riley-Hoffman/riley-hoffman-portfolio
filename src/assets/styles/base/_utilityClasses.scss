@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+.mainDiv {
+    display: block;
+    height: 96vh;
+    position: relative;
+}
+
 .sr-only /*:not(:focus):not(:active)*/ {
     position: absolute !important;
     height: 1px;
@@ -83,6 +89,17 @@ a.blackOutline:focus {
     height: 100%;
     justify-content: space-between;
     position: relative;
+}
+.relativeColumnBox:not(.projectsRelColBox, .homeRelColBox, .homeBodyRelColBox, .errorRelColBox, .errorNavRelColBox) {
+    background: rgb(229, 232, 238);
+    background: $columnBoxGradient;
+    z-index: 20;
+}
+
+.skillsRelColBox {
+    background: rgb(229, 232, 238);
+    background: $columnBoxGradient;
+    z-index: 20;
 }
 
 .styledButton {

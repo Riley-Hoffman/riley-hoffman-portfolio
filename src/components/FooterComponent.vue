@@ -1,6 +1,11 @@
 <template>
     <footer class="flexBox transitionBorder" id="contact">
-        <div class="wrapper flexBox contactWrapper contactComponent">
+        <div
+            class="wrapper flexBox contactWrapper contactComponent"
+            v-bind:class="{
+                hide: $route.path === '/',
+            }"
+        >
             <div class="flexBox contactBox">
                 <h2 class="contactHeading">Contact</h2>
                 <SocialComponent />

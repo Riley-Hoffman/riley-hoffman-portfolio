@@ -1,6 +1,17 @@
 <template>
     <HeaderComponent />
-    <router-view />
+    <main
+        id="main"
+        :class="{
+            mainH: $route.path === '/',
+            mainA: $route.path === '/about',
+            mainP: $route.path === '/projects',
+            mainS: $route.path === '/skills',
+            mainE: $route.path === '/page-not-found',
+        }"
+    >
+        <router-view />
+    </main>
     <FooterComponent />
 </template>
 

@@ -1,3 +1,6 @@
+.mainA {
+    height: 96vh;
+}
 .about {
     background-color: $white;
     padding: 115px 0 0;
@@ -15,7 +18,13 @@
         }
     }
     .iconContainer.contactJump {
-        margin-top: 120px;
+        margin-top: 100px;
+    }
+}
+
+.about1 {
+    .aboutH1box {
+        margin-bottom: 50px;
     }
 }
 

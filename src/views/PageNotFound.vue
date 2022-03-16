@@ -1,5 +1,5 @@
 <template>
-    <main id="main" class="pageNotFoundMain">
+    <div class="pageNotFoundMain mainDiv">
         <section class="errorSection wrapper">
             <h1>Page Not Found</h1>
             <div class="errorContentBox flexBox">
@@ -16,7 +16,7 @@
                     >
                 </p>
             </div>
-            <div class="wrapper relativeColumnBox">
+            <div class="wrapper relativeColumnBox errorNavRelColBox">
                 <div class="flexBox navBox errorNav">
                     <nav>
                         <ul>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 </template>
 <script>
 import router from '../router'
