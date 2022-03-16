@@ -1,5 +1,5 @@
 <template>
-    <main id="main" class="skillsMain">
+    <div class="skillsMain mainDiv">
         <section class="skills" id="skills">
             <div class="wrapper">
                 <div class="flexBox">
@@ -17,7 +17,7 @@
             </div>
             <ContactJumpComponent />
         </section>
-    </main>
+    </div>
 </template>
 <script>
 import SkillsLiComponent from '@/components/SkillsLiComponent.vue'

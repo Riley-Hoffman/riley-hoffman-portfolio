@@ -1,10 +1,9 @@
 header {
-    overflow: visible;
-    padding-bottom: 50px;
+    overflow: hidden;
     position: absolute;
+    min-height: 100px;
     height: 10vh;
     width: 100%;
-
     .skip-link {
         background: $teal;
         border-radius: 3px;

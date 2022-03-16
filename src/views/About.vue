@@ -1,9 +1,9 @@
 <template>
-    <main id="main" class="aboutMain">
+    <div class="aboutMain mainDiv">
         <section class="about" id="about">
             <div class="wrapper">
                 <div class="flexBox about1">
-                    <div>
+                    <div class="aboutH1box">
                         <div class="flexBox iconContainer">
                             <font-awesome-icon
                                 icon="water"
@@ -42,7 +42,7 @@
             </div>
             <ContactJumpComponent />
         </section>
-    </main>
+    </div>
 </template>
 <script>
 import ContactJumpComponent from '@/components/ContactJumpComponent.vue'

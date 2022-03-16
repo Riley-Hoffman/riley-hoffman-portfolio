@@ -1,6 +1,9 @@
 <template>
     <header class="flexBox">
-        <router-link :to="$route.path + '#main'" class="skip-link" :class="focusOutline"
+        <router-link
+            :to="$route.path + '#main'"
+            class="skip-link"
+            :class="focusOutline"
             >Skip To Content</router-link
         >
         <router-link
@@ -14,7 +17,16 @@
                 title="Favicon"
             />
         </router-link>
-        <div class="wrapper relativeColumnBox">
+        <div
+            class="wrapper relativeColumnBox"
+            v-bind:class="{
+                homeRelColBox: $route.path === '/',
+                aboutRelColBox: $route.path === '/about',
+                projectsRelColBox: $route.path === '/projects',
+                skillsRelColBox: $route.path === '/skills',
+                errorRelColBox: $route.path === '/page-not-found',
+            }"
+        >
             <div class="flexBox navBox">
                 <nav
                     v-bind:class="{

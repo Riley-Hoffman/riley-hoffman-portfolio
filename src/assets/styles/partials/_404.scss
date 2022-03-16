@@ -1,3 +1,6 @@
+.mainE {
+    height: 100%;
+}
 .errorHeader {
     height: 25vh;
     padding: 115px 0;
@@ -12,8 +15,9 @@
 }
 
 .errorSection {
+    justify-content: space-around;
     overflow: hidden;
-    padding-top: 160px;
+    padding: 160px 0 0;
     .errorContentBox {
         align-items: center;
         justify-content: space-around;
