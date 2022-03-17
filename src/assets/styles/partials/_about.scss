@@ -1,10 +1,12 @@
 .mainA {
-    height: 96vh;
+    height: 97vh;
+}
+.aboutMain {
+    min-height: initial;
 }
 .about {
     background-color: $white;
     padding: 115px 0 0;
-    min-height: 97vh;
     .wrapper {
         display: flex;
         h1 {
