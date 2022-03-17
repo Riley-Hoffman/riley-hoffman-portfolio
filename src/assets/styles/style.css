@@ -2712,7 +2712,7 @@ h3,
 nav ul,
 h2,
 .subtleTextShadow {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
+    text-shadow: 0 0 40px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
   }
 
   .mainA h1,
@@ -2809,7 +2809,7 @@ button:focus {
     outline: 2px solid #e5e8ee;
   }
   footer .bottom a {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
+    text-shadow: 0 0 40px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
   }
   footer .bottom .resume svg,
 footer .bottom .resume:active svg,
