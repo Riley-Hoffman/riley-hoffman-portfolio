@@ -1192,7 +1192,8 @@ header .navBox nav ul.mainNavList a:focus::before {
   position: relative;
 }
 .about2 p::after {
-  background: #17a2aa;
+  background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
+  border-radius: 15px;
   content: "";
   margin-top: 30px;
   position: absolute;
