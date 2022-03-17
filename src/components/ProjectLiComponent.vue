@@ -11,7 +11,10 @@
             <h4>
                 <span translate="no">{{ title }}</span> Links:
             </h4>
-            <a :href="liveUrl" target="_blank" rel="nofollow">Live</a>
+            <a :href="liveUrl" target="_blank" rel="nofollow"
+                ><span aria-hidden="true">Live</span
+                ><span class="sr-only">Lyve</span></a
+            >
             <a :href="gitUrl" target="_blank" rel="nofollow">Repo</a>
         </div>
         <div class="imgBox">
