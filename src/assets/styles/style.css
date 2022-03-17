@@ -704,6 +704,61 @@ a.blackOutline:focus {
   animation-name: backOutRight;
 }
 
+.animate__bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 53%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0) scaleY(0.95);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0) scaleY(0.95);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
 header {
   overflow: hidden;
   position: absolute;
@@ -1064,13 +1119,16 @@ header .navBox nav ul.mainNavList a:focus::before {
   }
 }
 .mainA {
-  height: 96vh;
+  height: 97vh;
+}
+
+.aboutMain {
+  min-height: initial;
 }
 
 .about {
   background-color: #e5e8ee;
   padding: 115px 0 0;
-  min-height: 97vh;
 }
 .about .wrapper {
   display: flex;
@@ -1265,7 +1323,11 @@ header .navBox nav ul.mainNavList a:focus::before {
 }
 
 .mainS {
-  height: 96vh;
+  height: 97vh;
+}
+
+.skillsMain {
+  min-height: initial;
 }
 
 .skills {
@@ -1281,7 +1343,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   margin-bottom: 30px;
 }
 .skills .iconContainer.contactJump {
-  margin-top: 32px;
+  margin-top: 75px;
 }
 
 .noAnimation {
@@ -2712,7 +2774,7 @@ h3,
 nav ul,
 h2,
 .subtleTextShadow {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
+    text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
   }
 
   .mainA h1,
@@ -2809,7 +2871,7 @@ button:focus {
     outline: 2px solid #e5e8ee;
   }
   footer .bottom a {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.24);
+    text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
   }
   footer .bottom .resume svg,
 footer .bottom .resume:active svg,
