@@ -21,6 +21,7 @@
             <a
                 :href="liveUrl"
                 title="Visit live site."
+                class="projImgLink"
                 target="_blank"
                 rel="nofollow"
             >

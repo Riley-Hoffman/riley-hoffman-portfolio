@@ -1,56 +1,58 @@
-.mainE {
-    height: 100%;
-}
-.errorHeader {
-    height: 25vh;
-    padding: 115px 0;
-    .smallFlexBox {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        .tealLine {
-            color: $teal;
-        }
+.colorContainer {
+    .mainE {
+        height: 100%;
     }
-}
-
-.errorSection {
-    justify-content: space-around;
-    overflow: hidden;
-    padding: 160px 0 0;
-    .errorContentBox {
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        .errorIcon {
-            margin: 0;
-            max-width: 30%;
+    .errorHeader {
+        height: 25vh;
+        padding: 115px 0;
+        .smallFlexBox {
+            flex-direction: row;
+            justify-content: center;
             width: 100%;
-        }
-        .errorP {
-            font-size: 1.5rem;
-            .ownLine {
-                display: block;
+            .tealLine {
+                color: $teal;
             }
         }
     }
-}
 
-.errorNav {
-    align-items: center;
-    justify-content: center;
-    ul {
-        font-size: 1.4rem;
-        li {
+    .errorSection {
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 160px 0 0;
+        .errorContentBox {
             align-items: center;
-            display: flex;
-            .homeLink404:active {
-                outline: none;
+            justify-content: space-around;
+            width: 100%;
+            .errorIcon {
+                margin: 0;
+                max-width: 30%;
+                width: 100%;
             }
-            svg {
-                color: $teal;
-                font-size: 1.7rem;
-                margin-left: 20px;
+            .errorP {
+                font-size: 1.5rem;
+                .ownLine {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .errorNav {
+        align-items: center;
+        justify-content: center;
+        ul {
+            font-size: 1.4rem;
+            li {
+                align-items: center;
+                display: flex;
+                .homeLink404:active {
+                    outline: none;
+                }
+                svg {
+                    color: $teal;
+                    font-size: 1.7rem;
+                    margin-left: 20px;
+                }
             }
         }
     }
