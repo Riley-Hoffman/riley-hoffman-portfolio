@@ -1,4 +1,4 @@
-header {
+.colorContainer header {
     overflow: hidden;
     position: absolute;
     min-height: 100px;
@@ -48,7 +48,7 @@ header {
         }
     }
     .navBox {
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-end;
         margin-top: 35px;
         position: relative;
@@ -108,17 +108,166 @@ header {
                         rgba(72, 216, 240, 0.38) 20%,
                         rgba(65, 109, 255, 0.17)
                     );
+                    border-radius: 90%;
                     box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38),
                         0 0 12px rgba(65, 109, 255, 0.17);
-                    border-radius: 90%;
-                    margin-top: 9px;
                     height: 2px;
+                    margin-top: 9px;
                     opacity: 0.8;
                 }
                 a:focus::before {
                     width: 95%;
                 }
             }
+        }
+        .toggle-wrapper {
+            bottom: 12px;
+            margin-left: 85px;
+            padding: 0 4px 10px 10px;
+            position: relative;
+        }
+        .themeToggleWrapper {
+            display: block;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            .mode {
+                font-size: 0.57rem;
+                letter-spacing: 0.5px;
+                justify-content: center;
+                margin-bottom: 5px;
+                opacity: 0.9;
+                text-align: left;
+                width: 100%;
+                + span.flexBox {
+                    justify-content: center;
+                    position: relative;
+                    width: 100%;
+                    .show {
+                        display: inline-block;
+                        position: absolute;
+                        z-index: 30;
+                        svg:first-of-type {
+                            backdrop-filter: opacity(0%);
+                            opacity: 0.9;
+                            font-size: 1.2em;
+                        }
+                    }
+                    .show.lightsOn {
+                        right: 27%;
+                        top: 32%;
+                    }
+                    .show.lightsOff {
+                        left: 29%;
+                        top: 33%;
+                    }
+                    svg {
+                        background-color: transparent;
+                        color: $white;
+                        font-size: 0.62rem;
+                        padding: 0;
+                    }
+                    svg.fa-toggle-on:last-child {
+                        color: $white;
+                        font-size: 2rem;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .themeToggleBox {
+            background: $black;
+            border: 1px solid rgba(229, 232, 238, 0.6);
+            border-radius: 40px;
+            padding: 12px;
+            position: relative;
+            margin: auto;
+            height: 100%;
+            width: 79%;
+            cursor: pointer;
+            span.flexBox {
+                position: relative;
+                .show {
+                    display: inline-block;
+                    line-height: 1;
+                    position: absolute;
+                    z-index: 30;
+                    svg {
+                        backdrop-filter: opacity(0%);
+                        background-color: transparent;
+                        color: $white;
+                        font-size: 0.72rem;
+                        opacity: 0.9;
+                        padding: 0;
+                    }
+                }
+                .show.lightsOn,
+                .show.lightsOff {
+                    bottom: -9px;
+                }
+                .show.lightsOn {
+                    left: 63%;
+                }
+                .show.lightsOff {
+                    right: 63%;
+                }
+            }
+        }
+        .themeToggleBox::before {
+            background: $white;
+            border-radius: 30px;
+            bottom: 20%;
+            left: 14%;
+            content: '';
+            display: block;
+            opacity: 0.95;
+            position: absolute;
+            transform: translate(0);
+            transition: transform 0.5s ease;
+            height: 61%;
+            width: 30%;
+            z-index: 2;
+        }
+        .themeToggleBox.enabled::before {
+            transform: translateX(21px);
+        }
+        .themeToggleBox.disabled::before {
+            left: 12%;
+        }
+        .themeToggleBox input {
+            opacity: 0;
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            z-index: 20;
+        }
+        .themeToggleBox input:focus {
+            + span.flexBox.target {
+                outline: 2px solid rgba(216, 228, 230, 0.28);
+            }
+            + span.flexBox::before {
+                border: 1px solid $teal;
+                bottom: -22px;
+                content: '';
+                left: -28px;
+                min-height: 57px;
+                position: absolute;
+                height: 7vh;
+                width: 80px;
+            }
+        }
+        .themeToggleBox input:active {
+            + span.flexBox.target {
+                outline: 2px solid rgba(216, 228, 230, 0.28);
+            }
+            + span.flexBox::before {
+                border: none;
+            }
+        }
+
+        button.lightDarkButton.secondButton {
+            display: none;
         }
     }
 }

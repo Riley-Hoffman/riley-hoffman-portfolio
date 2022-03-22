@@ -24,9 +24,6 @@ body {
     border: 3px solid $scrollBarTeal;
     border-radius: 5px;
 }
-main::-webkit-scrollbar {
-    display: none;
-}
 
 *::selection {
     background-color: $lightTeal;
@@ -35,119 +32,125 @@ main::-webkit-scrollbar {
     -webkit-text-fill-color: initial;
 }
 
-h1 {
-    font-size: 1.8rem;
-}
+.colorContainer {
+    main::-webkit-scrollbar {
+        display: none;
+    }
 
-h2 {
-    font-size: 1.4rem;
-}
+    h1 {
+        font-size: 1.8rem;
+    }
 
-h3 {
-    font-size: 1.15rem;
-}
+    h2 {
+        font-size: 1.4rem;
+    }
 
-a {
-    padding: 2px;
-    transition: all 0.1s;
-}
+    h3 {
+        font-size: 1.15rem;
+    }
 
-p {
-    color: $grayPText;
-    margin: 10px 0;
-}
+    a {
+        padding: 2px;
+        transition: all 0.1s;
+    }
 
-main {
-    position: relative;
-}
+    p {
+        color: $grayPText;
+        margin: 10px 0;
+    }
 
-main:not(.mainH) {
-    overflow: scroll;
-}
-section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 97vh;
-    padding: 40px 0;
-}
+    main {
+        position: relative;
+    }
 
-section,
-footer {
-    position: relative;
-}
+    main:not(.mainH) {
+        overflow: scroll;
+    }
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 97vh;
+        padding: 40px 0;
+    }
 
-footer {
-    z-index: 20;
-}
+    section,
+    footer {
+        position: relative;
+    }
 
-form,
-label,
-button {
-    font-family: 'Poppins', sans-serif;
-}
+    footer {
+        z-index: 20;
+    }
 
-form {
+    form,
+    label,
+    button {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    form {
+        label {
+            color: $black;
+        }
+    }
+
+    fieldset {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-block-start: 0;
+        padding-block-end: 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        border: none;
+        min-inline-size: min-content;
+    }
+
+    button:active {
+        outline: none;
+    }
+
     label {
+        font-size: 1.1rem;
+    }
+
+    label[for='email'] {
+        margin-left: 18px;
+    }
+
+    input,
+    textarea {
+        border: none;
+        caret-color: $darkTeal;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    textarea {
+        padding-left: 15px;
+        padding-top: 15px;
+        resize: vertical;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        padding: 10px;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        border-radius: 20px 3px 0px 20px;
+        background: $white;
         color: $black;
     }
-}
 
-fieldset {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-block-start: 0;
-    padding-block-end: 0;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
-    border: none;
-    min-inline-size: min-content;
-}
+    input:focus-visible,
+    textarea:focus-visible {
+        outline: 2px solid $teal;
+    }
 
-button:active {
-    outline: none;
-}
-
-label {
-    font-size: 1.1rem;
-}
-
-label[for='email'] {
-    margin-left: 18px;
-}
-
-input,
-textarea {
-    border: none;
-    caret-color: $darkTeal;
-    font-family: 'Rubik', sans-serif;
-}
-
-textarea {
-    padding-left: 15px;
-    padding-top: 15px;
-    resize: vertical;
-}
-
-input[type='text'],
-input[type='email'] {
-    padding: 10px;
-}
-
-input[type='text'],
-input[type='email'],
-textarea {
-    border-radius: 20px 3px 0px 20px;
-    background: $white;
-    color: $black;
-}
-
-input:focus-visible,
-textarea:focus-visible {
-    outline: 2px solid $teal;
-}
-
-[v-cloak] {
-    display: none;
+    [v-cloak] {
+        display: none;
+    }
 }

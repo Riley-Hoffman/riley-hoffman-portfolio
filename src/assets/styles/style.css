@@ -275,10 +275,6 @@ body {
   border-radius: 5px;
 }
 
-main::-webkit-scrollbar {
-  display: none;
-}
-
 *::-moz-selection {
   background-color: #7adbe0;
   color: #245056;
@@ -293,37 +289,33 @@ main::-webkit-scrollbar {
   -webkit-text-fill-color: initial;
 }
 
-h1 {
+.colorContainer main::-webkit-scrollbar {
+  display: none;
+}
+.colorContainer h1 {
   font-size: 1.8rem;
 }
-
-h2 {
+.colorContainer h2 {
   font-size: 1.4rem;
 }
-
-h3 {
+.colorContainer h3 {
   font-size: 1.15rem;
 }
-
-a {
+.colorContainer a {
   padding: 2px;
   transition: all 0.1s;
 }
-
-p {
+.colorContainer p {
   color: #525252;
   margin: 10px 0;
 }
-
-main {
+.colorContainer main {
   position: relative;
 }
-
-main:not(.mainH) {
+.colorContainer main:not(.mainH) {
   overflow: scroll;
 }
-
-section {
+.colorContainer section {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -331,27 +323,22 @@ section {
   min-height: 97vh;
   padding: 40px 0;
 }
-
-section,
-footer {
+.colorContainer section,
+.colorContainer footer {
   position: relative;
 }
-
-footer {
+.colorContainer footer {
   z-index: 20;
 }
-
-form,
-label,
-button {
+.colorContainer form,
+.colorContainer label,
+.colorContainer button {
   font-family: "Poppins", sans-serif;
 }
-
-form label {
+.colorContainer form label {
   color: #00050f;
 }
-
-fieldset {
+.colorContainer fieldset {
   -webkit-margin-start: 0;
           margin-inline-start: 0;
   -webkit-margin-end: 0;
@@ -369,67 +356,56 @@ fieldset {
   min-inline-size: -moz-min-content;
   min-inline-size: min-content;
 }
-
-button:active {
+.colorContainer button:active {
   outline: none;
 }
-
-label {
+.colorContainer label {
   font-size: 1.1rem;
 }
-
-label[for=email] {
+.colorContainer label[for=email] {
   margin-left: 18px;
 }
-
-input,
-textarea {
+.colorContainer input,
+.colorContainer textarea {
   border: none;
   caret-color: #245056;
   font-family: "Rubik", sans-serif;
 }
-
-textarea {
+.colorContainer textarea {
   padding-left: 15px;
   padding-top: 15px;
   resize: vertical;
 }
-
-input[type=text],
-input[type=email] {
+.colorContainer input[type=text],
+.colorContainer input[type=email] {
   padding: 10px;
 }
-
-input[type=text],
-input[type=email],
-textarea {
+.colorContainer input[type=text],
+.colorContainer input[type=email],
+.colorContainer textarea {
   border-radius: 20px 3px 0px 20px;
   background: #e5e8ee;
   color: #00050f;
 }
-
-input:focus-visible,
-textarea:focus-visible {
+.colorContainer input:focus-visible,
+.colorContainer textarea:focus-visible {
   outline: 2px solid #17a2aa;
 }
-
-[v-cloak] {
+.colorContainer [v-cloak] {
   display: none;
 }
 
-.wrapper {
+.colorContainer .wrapper {
   max-width: 1100px;
   width: 85%;
   margin: 0 auto;
 }
-
-.mainDiv {
+.colorContainer .mainDiv {
   display: block;
   height: 96vh;
   position: relative;
 }
-
-.sr-only {
+.colorContainer .sr-only {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -443,89 +419,77 @@ textarea:focus-visible {
   white-space: nowrap;
   /* added line */
 }
-
-.flexBox {
+.colorContainer .flexBox {
   display: flex;
 }
-
-.black {
-  color: #00050f;
+.colorContainer .black {
+  color: #00050f !important;
 }
-
-.white {
-  color: #e5e8ee;
+.colorContainer .white {
+  color: #e5e8ee !important;
 }
-
-.show {
+.colorContainer .show {
   display: block;
 }
-
-.hide {
+.colorContainer .hide {
   display: none !important;
 }
-
-.static {
+.colorContainer .static {
   position: static !important;
 }
-
-.iconContainer.contactJump {
+.colorContainer .rotate180 {
+  transform: rotate(180deg);
+}
+.colorContainer .iconContainer.contactJump {
   align-items: center;
   color: #e5e8ee;
   justify-content: center;
   position: relative;
   z-index: 10;
 }
-.iconContainer.contactJump button {
+.colorContainer .iconContainer.contactJump button {
   padding: 10px 20px;
 }
-.iconContainer.contactJump button:active {
+.colorContainer .iconContainer.contactJump button:active {
   padding: 10px 20px;
 }
-.iconContainer.contactJump svg {
+.colorContainer .iconContainer.contactJump svg {
   color: #00050f;
   font-size: 1.2rem;
   margin-left: 20px;
 }
-
-.v-enter-active,
-.v-leave-active {
+.colorContainer .v-enter-active,
+.colorContainer .v-leave-active {
   transition: opacity 0.3s ease;
 }
-
-.v-enter-from,
-.v-leave-to {
+.colorContainer .v-enter-from,
+.colorContainer .v-leave-to {
   opacity: 0;
 }
-
-a.whiteOutline:focus {
+.colorContainer a.whiteOutline:focus {
   outline: 2px solid #e5e8ee;
 }
-
-a.blackOutline:focus {
+.colorContainer a.blackOutline:focus {
   outline: 2px solid #00050f;
 }
-
-.relativeColumnBox {
+.colorContainer .relativeColumnBox {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
   position: relative;
 }
-
-.relativeColumnBox:not(.projectsRelColBox, .homeRelColBox, .homeBodyRelColBox, .errorRelColBox, .errorNavRelColBox) {
+.colorContainer .relativeColumnBox:not(.projectsRelColBox, .homeRelColBox, .homeBodyRelColBox, .errorRelColBox, .errorNavRelColBox) {
   background: #e5e8ee;
   background: linear-gradient(0deg, rgba(229, 238, 238, 0.16) 0%, #e5e8ee 5%);
   z-index: 20;
 }
-
-.skillsRelColBox {
+.colorContainer .skillsRelColBox {
   background: #e5e8ee;
   background: linear-gradient(0deg, rgba(229, 238, 238, 0.16) 0%, #e5e8ee 5%);
   z-index: 20;
 }
-
-.styledButton {
+.colorContainer .styledButton {
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   background-color: rgba(0, 0, 0, 0);
   background-color: #65a5a8;
@@ -538,8 +502,7 @@ a.blackOutline:focus {
   text-decoration: none;
   text-shadow: 0 1px 0 #469ea3;
 }
-
-.styledButton:active {
+.colorContainer .styledButton:active {
   border: none;
   outline: none;
 }
@@ -759,14 +722,14 @@ a.blackOutline:focus {
     transform: translate3d(0, -4px, 0) scaleY(1.02);
   }
 }
-header {
+.colorContainer header {
   overflow: hidden;
   position: absolute;
   min-height: 100px;
   height: 10vh;
   width: 100%;
 }
-header .skip-link {
+.colorContainer header .skip-link {
   background: #17a2aa;
   border-radius: 3px;
   color: #00050f;
@@ -777,10 +740,10 @@ header .skip-link {
   top: 5px;
   z-index: 9999;
 }
-header .skip-link:focus {
+.colorContainer header .skip-link:focus {
   left: 0;
 }
-header .favLink {
+.colorContainer header .favLink {
   display: block;
   margin: 22px;
   max-width: 4.5%;
@@ -791,50 +754,50 @@ header .favLink {
   top: 0;
   z-index: 999;
 }
-header .favLink img {
+.colorContainer header .favLink img {
   padding: 4px;
 }
-header .favLink:focus {
+.colorContainer header .favLink:focus {
   outline: none;
 }
-header .blackOutline:focus img {
+.colorContainer header .blackOutline:focus img {
   outline: 2px solid #00050f;
 }
-header .whiteOutline:focus img {
+.colorContainer header .whiteOutline:focus img {
   outline: 2px solid #e5e8ee;
 }
-header .navBox {
-  align-items: center;
+.colorContainer header .navBox {
+  align-items: flex-start;
   justify-content: flex-end;
   margin-top: 35px;
   position: relative;
 }
-header .navBox nav {
+.colorContainer header .navBox nav {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
   width: 55%;
 }
-header .navBox nav ul {
+.colorContainer header .navBox nav ul {
   display: flex;
   justify-content: space-between;
   position: relative;
   width: 100%;
 }
-header .navBox nav ul a {
+.colorContainer header .navBox nav ul a {
   border-bottom: 1px solid transparent;
   line-height: 1;
   margin: 10px;
   position: relative;
 }
-header .navBox nav ul a:focus {
+.colorContainer header .navBox nav ul a:focus {
   outline: none;
 }
-header .navBox nav ul.mainNavList {
+.colorContainer header .navBox nav ul.mainNavList {
   z-index: 999;
 }
-header .navBox nav ul.mainNavList a::after,
-header .navBox nav ul.mainNavList a::before {
+.colorContainer header .navBox nav ul.mainNavList a::after,
+.colorContainer header .navBox nav ul.mainNavList a::before {
   content: "";
   position: absolute;
   transform: translateX(-50%);
@@ -843,32 +806,177 @@ header .navBox nav ul.mainNavList a::before {
   left: 50%;
   top: 100%;
 }
-header .navBox nav ul.mainNavList a::after {
+.colorContainer header .navBox nav ul.mainNavList a::after {
   background: linear-gradient(to right bottom, #65a5a8 5%, #17a2aa);
   border-radius: 50px;
   margin-top: 8px;
   height: 2.5px;
 }
-header .navBox nav ul.mainNavList a:focus::after {
+.colorContainer header .navBox nav ul.mainNavList a:focus::after {
   width: 100%;
 }
-header .navBox nav ul.mainNavList a::before {
+.colorContainer header .navBox nav ul.mainNavList a::before {
   background: linear-gradient(to top, rgba(72, 216, 240, 0.38) 20%, rgba(65, 109, 255, 0.17));
-  box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
   border-radius: 90%;
-  margin-top: 9px;
+  box-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
   height: 2px;
+  margin-top: 9px;
   opacity: 0.8;
 }
-header .navBox nav ul.mainNavList a:focus::before {
+.colorContainer header .navBox nav ul.mainNavList a:focus::before {
   width: 95%;
 }
-
-.mainH {
-  height: 90vh;
+.colorContainer header .navBox .toggle-wrapper {
+  bottom: 12px;
+  margin-left: 85px;
+  padding: 0 4px 10px 10px;
+  position: relative;
+}
+.colorContainer header .navBox .themeToggleWrapper {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode {
+  font-size: 0.57rem;
+  letter-spacing: 0.5px;
+  justify-content: center;
+  margin-bottom: 5px;
+  opacity: 0.9;
+  text-align: left;
+  width: 100%;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox {
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox .show {
+  display: inline-block;
+  position: absolute;
+  z-index: 30;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox .show svg:first-of-type {
+  -webkit-backdrop-filter: opacity(0%);
+          backdrop-filter: opacity(0%);
+  opacity: 0.9;
+  font-size: 1.2em;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox .show.lightsOn {
+  right: 27%;
+  top: 32%;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox .show.lightsOff {
+  left: 29%;
+  top: 33%;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox svg {
+  background-color: transparent;
+  color: #e5e8ee;
+  font-size: 0.62rem;
+  padding: 0;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox svg.fa-toggle-on:last-child {
+  color: #e5e8ee;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+.colorContainer header .navBox .themeToggleBox {
+  background: #00050f;
+  border: 1px solid rgba(229, 232, 238, 0.6);
+  border-radius: 40px;
+  padding: 12px;
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 79%;
+  cursor: pointer;
+}
+.colorContainer header .navBox .themeToggleBox span.flexBox {
+  position: relative;
+}
+.colorContainer header .navBox .themeToggleBox span.flexBox .show {
+  display: inline-block;
+  line-height: 1;
+  position: absolute;
+  z-index: 30;
+}
+.colorContainer header .navBox .themeToggleBox span.flexBox .show svg {
+  -webkit-backdrop-filter: opacity(0%);
+          backdrop-filter: opacity(0%);
+  background-color: transparent;
+  color: #e5e8ee;
+  font-size: 0.72rem;
+  opacity: 0.9;
+  padding: 0;
+}
+.colorContainer header .navBox .themeToggleBox span.flexBox .show.lightsOn,
+.colorContainer header .navBox .themeToggleBox span.flexBox .show.lightsOff {
+  bottom: -9px;
+}
+.colorContainer header .navBox .themeToggleBox span.flexBox .show.lightsOn {
+  left: 63%;
+}
+.colorContainer header .navBox .themeToggleBox span.flexBox .show.lightsOff {
+  right: 63%;
+}
+.colorContainer header .navBox .themeToggleBox::before {
+  background: #e5e8ee;
+  border-radius: 30px;
+  bottom: 20%;
+  left: 14%;
+  content: "";
+  display: block;
+  opacity: 0.95;
+  position: absolute;
+  transform: translate(0);
+  transition: transform 0.5s ease;
+  height: 61%;
+  width: 30%;
+  z-index: 2;
+}
+.colorContainer header .navBox .themeToggleBox.enabled::before {
+  transform: translateX(21px);
+}
+.colorContainer header .navBox .themeToggleBox.disabled::before {
+  left: 12%;
+}
+.colorContainer header .navBox .themeToggleBox input {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  z-index: 20;
+}
+.colorContainer header .navBox .themeToggleBox input:focus + span.flexBox.target {
+  outline: 2px solid rgba(216, 228, 230, 0.28);
+}
+.colorContainer header .navBox .themeToggleBox input:focus + span.flexBox::before {
+  border: 1px solid #17a2aa;
+  bottom: -22px;
+  content: "";
+  left: -28px;
+  min-height: 57px;
+  position: absolute;
+  height: 7vh;
+  width: 80px;
+}
+.colorContainer header .navBox .themeToggleBox input:active + span.flexBox.target {
+  outline: 2px solid rgba(216, 228, 230, 0.28);
+}
+.colorContainer header .navBox .themeToggleBox input:active + span.flexBox::before {
+  border: none;
+}
+.colorContainer header .navBox button.lightDarkButton.secondButton {
+  display: none;
 }
 
-.splash {
+.colorContainer .mainH {
+  height: 90vh;
+}
+.colorContainer .splash {
   background-attachment: fixed;
   background-position-x: 100%;
   padding: 30vh 0 50px;
@@ -876,59 +984,58 @@ header .navBox nav ul.mainNavList a:focus::before {
   height: 100vh;
   width: 100%;
 }
-.splash .relativeColumnBox .contactWrapper {
+.colorContainer .splash .relativeColumnBox .contactWrapper {
   padding: 0;
 }
-.splash .relativeColumnBox .contactWrapper .contactIcons {
+.colorContainer .splash .relativeColumnBox .contactWrapper .contactIcons {
   justify-content: space-between;
 }
-.splash .relativeColumnBox .contactWrapper .contactIcons a {
+.colorContainer .splash .relativeColumnBox .contactWrapper .contactIcons a {
   opacity: 0.9;
 }
-.splash h1 {
+.colorContainer .splash h1 {
   color: #e5e8ee;
   font-size: 2rem;
   line-height: 1.3;
   margin: 10px 0;
 }
-.splash h1 > span {
+.colorContainer .splash h1 > span {
   display: block;
   margin: 21px 0 4px;
 }
-.splash h1 .animate__backInLeft {
+.colorContainer .splash h1 .animate__backInLeft {
   font-size: 1.7rem;
   font-weight: 700;
   white-space: nowrap;
 }
-
-.relativeColumnBox .smallFlexBox {
+.colorContainer .relativeColumnBox .smallFlexBox {
   display: flex;
   flex-direction: column;
   height: 60vh;
   width: 45vw;
 }
-.relativeColumnBox .smallFlexBox .iconContainer {
+.colorContainer .relativeColumnBox .smallFlexBox .iconContainer {
   height: 16px;
   margin-bottom: 5px;
   overflow: hidden;
 }
-.relativeColumnBox .smallFlexBox .iconContainer .fa-water {
+.colorContainer .relativeColumnBox .smallFlexBox .iconContainer .fa-water {
   color: #17a2aa;
   font-size: 2.5rem;
   margin: 0;
   transform: rotate(180deg);
   width: 57px;
 }
-.relativeColumnBox .smallFlexBox .outlined {
+.colorContainer .relativeColumnBox .smallFlexBox .outlined {
   color: #00050f;
   font-weight: 800;
   text-shadow: -1px -1px 2px #17a2aa, 1px -1px 2px #17a2aa, -1px 2px 2px #65a5a8, 1px 1px 2px #00050f;
   -webkit-text-fill-color: initial;
 }
-.relativeColumnBox .smallFlexBox .web {
+.colorContainer .relativeColumnBox .smallFlexBox .web {
   margin-top: 0;
 }
-.relativeColumnBox .smallFlexBox .homeButton {
+.colorContainer .relativeColumnBox .smallFlexBox .homeButton {
   border: none;
   border-radius: 3px;
   color: #00050f;
@@ -942,12 +1049,10 @@ header .navBox nav ul.mainNavList a:focus::before {
   text-align: center;
   width: 35%;
 }
-.relativeColumnBox .smallFlexBox button.homeButton.tealContactButton:active {
+.colorContainer .relativeColumnBox .smallFlexBox button.homeButton.tealContactButton:active {
   padding: 22px 5px;
 }
-
-.modal {
-  background-color: rgba(199, 231, 233, 0.8);
+.colorContainer .modal {
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   border: 3px solid rgba(178, 212, 214, 0.45);
@@ -962,36 +1067,35 @@ header .navBox nav ul.mainNavList a:focus::before {
   position: absolute;
   z-index: 9999;
 }
-.modal .modalClose {
+.colorContainer .modal .modalClose {
   position: relative;
   bottom: 12px;
   right: 14px;
 }
-.modal form {
+.colorContainer .modal form {
   margin-top: 0;
 }
-.modal form .modalClose {
+.colorContainer .modal form .modalClose {
   background-color: #e5e8ee;
 }
-.modal form .inputBox {
+.colorContainer .modal form .inputBox {
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal form label {
+.colorContainer .modal form label {
   margin: 5px 8px 5px 0px;
 }
-.modal form label[for=email] {
+.colorContainer .modal form label[for=email] {
   margin-top: 12px;
 }
-.modal form .contactFormButton {
+.colorContainer .modal form .contactFormButton {
   margin-top: 18px;
 }
-.modal form textarea {
+.colorContainer .modal form textarea {
   resize: none;
 }
-
-.galaxy {
+.colorContainer .galaxy {
   opacity: 0.7;
   overflow: visible;
   perspective: 340px;
@@ -1001,7 +1105,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   width: 100%;
   z-index: 0;
 }
-.galaxy .stars {
+.colorContainer .galaxy .stars {
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -1013,26 +1117,25 @@ header .navBox nav ul.mainNavList a:focus::before {
   animation: zooms 10s linear infinite;
   transform-style: preserve-3d;
 }
-.galaxy .stars:before,
-.galaxy .stars:after {
+.colorContainer .galaxy .stars:before,
+.colorContainer .galaxy .stars:after {
   box-shadow: inherit;
   content: "";
   position: absolute;
   height: inherit;
   width: inherit;
 }
-.galaxy .stars:before {
+.colorContainer .galaxy .stars:before {
   -webkit-animation: hideme1 10s linear infinite;
   animation: hideme1 10s linear infinite;
   transform: translateZ(-300px);
 }
-.galaxy .stars:after {
+.colorContainer .galaxy .stars:after {
   -webkit-animation: hideme2 10s linear infinite;
   animation: hideme2 10s linear infinite;
   transform: translateZ(-600px);
 }
-
-.smokeParentContainer {
+.colorContainer .smokeParentContainer {
   align-content: center;
   display: flex;
   height: 100%;
@@ -1040,7 +1143,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   overflow: hidden;
   position: relative;
 }
-.smokeParentContainer .lightBackground {
+.colorContainer .smokeParentContainer .lightBackground {
   background-image: linear-gradient(to bottom, rgba(23, 162, 170, 0) 0%, rgba(23, 162, 170, 0.2) 100%), url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
   background-blend-mode: multiply;
   background-size: cover;
@@ -1049,7 +1152,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   height: 100%;
   width: 100%;
 }
-.smokeParentContainer .lightBackground .smoke {
+.colorContainer .smokeParentContainer .lightBackground .smoke {
   filter: url(#wave);
   position: relative;
   top: 0%;
@@ -1057,7 +1160,7 @@ header .navBox nav ul.mainNavList a:focus::before {
   height: 100%;
   width: 99.5%;
 }
-.smokeParentContainer .lightBackground .smoke::before {
+.colorContainer .smokeParentContainer .lightBackground .smoke::before {
   border: 10px solid #17a2aa;
   box-shadow: 0 0 50px #e5e8ee, inset 0 0 50px #e5e8ee;
   filter: url(#wave) blur(10px);
@@ -1118,52 +1221,48 @@ header .navBox nav ul.mainNavList a:focus::before {
     opacity: 0.5;
   }
 }
-.mainA {
+.colorContainer .mainA {
   height: 97vh;
 }
-
-.aboutMain {
+.colorContainer .aboutMain {
   min-height: initial;
 }
-
-.about {
+.colorContainer .about {
   background-color: #e5e8ee;
   padding: 115px 0 0;
 }
-.about .wrapper {
+.colorContainer .about .wrapper {
   display: flex;
 }
-.about .wrapper h1 {
+.colorContainer .about .wrapper h1 {
   color: #00050f;
 }
-.about .wrapper .about1,
-.about .wrapper .about2 {
+.colorContainer .about .wrapper .about1,
+.colorContainer .about .wrapper .about2 {
   display: flex;
   flex-direction: column;
   width: 50vw;
 }
-.about .iconContainer.contactJump {
-  margin-top: 100px;
+.colorContainer .about .iconContainer.contactJump {
+  margin-top: 75px;
+  margin-bottom: 10px;
 }
-
-.about1 .aboutH1box {
+.colorContainer .about1 .aboutH1box {
   margin-bottom: 50px;
 }
-
-.about1 .iconContainer {
+.colorContainer .about1 .iconContainer {
   height: 16px;
   margin-bottom: 5px;
   overflow: hidden;
 }
-.about1 .iconContainer .fa-water {
+.colorContainer .about1 .iconContainer .fa-water {
   color: #17a2aa;
   font-size: 2.5rem;
   margin: 0;
   transform: rotate(180deg);
   width: 57px;
 }
-
-.about1 figure {
+.colorContainer .about1 figure {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -1171,10 +1270,10 @@ header .navBox nav ul.mainNavList a:focus::before {
   max-width: 50%;
   min-width: 275px;
 }
-.about1 figure img {
+.colorContainer .about1 figure img {
   border-radius: 1px;
 }
-.about1 figure figcaption {
+.colorContainer .about1 figure figcaption {
   background: rgba(23, 162, 170, 0.1);
   border: 1px solid #17a2aa;
   border-radius: 1px;
@@ -1184,14 +1283,13 @@ header .navBox nav ul.mainNavList a:focus::before {
   margin-top: 8px;
   padding: 2px 6px;
 }
-
-.about2 {
+.colorContainer .about2 {
   justify-content: center;
 }
-.about2 p {
+.colorContainer .about2 p {
   position: relative;
 }
-.about2 p::after {
+.colorContainer .about2 p::after {
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   border-radius: 15px;
   content: "";
@@ -1203,87 +1301,80 @@ header .navBox nav ul.mainNavList a:focus::before {
   width: 50%;
 }
 
-.projectsMain {
+.colorContainer .projectsMain {
   height: 100%;
 }
-
-.projects {
+.colorContainer .projects {
   padding: 115px 0;
 }
-.projects .wrapper.flexBox {
+.colorContainer .projects .wrapper.flexBox {
   align-items: flex-start;
   flex-direction: column;
 }
-
-.projectBox {
+.colorContainer .projectBox {
   display: flex;
   margin: 100px 0;
 }
-.projectBox .imgBox,
-.projectBox .projectInfo {
+.colorContainer .projectBox .imgBox,
+.colorContainer .projectBox .projectInfo {
   flex-basis: 50%;
 }
-
-.projectBox:first-of-type {
+.colorContainer .projectBox:first-of-type {
   margin-top: 50px;
 }
-
-.projectInfo:nth-child(even) {
+.colorContainer .projectInfo:nth-child(even) {
   border-radius: 0 5px;
   padding-left: 60px;
   text-align: right;
 }
-.projectInfo:nth-child(even) a {
+.colorContainer .projectInfo:nth-child(even) a {
   padding-left: 15px;
 }
-
-.projectInfo:nth-child(odd) {
+.colorContainer .projectInfo:nth-child(odd) {
   border-radius: 5px 0;
   padding-right: 60px;
 }
-.projectInfo:nth-child(odd) a {
+.colorContainer .projectInfo:nth-child(odd) a {
   padding-right: 15px;
 }
-
-.projectInfo {
+.colorContainer .projectInfo {
   border-top: 8px ridge #17a2aa;
   padding: 20px 0;
   position: relative;
   z-index: 10;
 }
-.projectInfo h2,
-.projectInfo h3,
-.projectInfo p {
+.colorContainer .projectInfo h2,
+.colorContainer .projectInfo h3,
+.colorContainer .projectInfo p {
   padding-bottom: 15px;
 }
-.projectInfo h3,
-.projectInfo h4 {
+.colorContainer .projectInfo h3,
+.colorContainer .projectInfo h4 {
   margin-bottom: 30px;
 }
-.projectInfo a {
+.colorContainer .projectInfo a {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   font-weight: 600;
   padding: 5px 15px;
   text-transform: uppercase;
   transition: color 0.5s;
 }
-.projectInfo a:last-of-type {
+.colorContainer .projectInfo a:last-of-type {
   margin-left: 10px;
 }
-.projectInfo a:focus {
+.colorContainer .projectInfo a:focus {
   opacity: 0.6;
 }
-
-.imgBox {
+.colorContainer .imgBox {
   cursor: pointer;
   position: relative;
   text-align: center;
 }
-.imgBox a {
+.colorContainer .imgBox .projImgLink {
   color: #e5e8ee;
   padding: 0;
 }
-.imgBox div.oval {
+.colorContainer .imgBox div.oval {
   background: #00f1ff;
   border-radius: 50%;
   opacity: 0.1;
@@ -1295,64 +1386,54 @@ header .navBox nav ul.mainNavList a:focus::before {
   transition: all 2s;
   z-index: 0;
 }
-
-.projectBox img {
+.colorContainer .projectBox img {
   position: relative;
   transition: filter 1s;
   z-index: 10;
 }
-
-.projectBox .imgBox img {
+.colorContainer .projectBox .imgBox img {
   filter: grayscale(0%);
   border-top: 8px ridge #17a2aa;
 }
-
-.imgBox:nth-child(odd) .oval {
+.colorContainer .imgBox:nth-child(odd) .oval {
   right: -100%;
 }
-
-.imgBox:nth-child(even) .oval {
+.colorContainer .imgBox:nth-child(even) .oval {
   left: -100%;
 }
-
-.imgBox > a:focus > img {
+.colorContainer .imgBox > .projImgLink:focus > img {
   transition: border-top 0.5s;
 }
-
-.imgBox > a:focus {
+.colorContainer .imgBox > .projImgLink[title="Visit live site."]:focus {
   outline: none;
 }
 
-.mainS {
+.colorContainer .mainS {
   height: 97vh;
 }
-
-.skillsMain {
+.colorContainer .skillsMain {
   min-height: initial;
 }
-
-.skills {
+.colorContainer .skills {
   background-color: #e5e8ee;
   padding: 120px 0 75px;
 }
-.skills .wrapper .flexBox {
+.colorContainer .skills .wrapper .flexBox {
   align-items: center;
   flex-direction: column;
 }
-.skills .wrapper .flexBox h1 {
+.colorContainer .skills .wrapper .flexBox h1 {
   color: #00050f;
   margin-bottom: 30px;
 }
-.skills .iconContainer.contactJump {
-  margin-top: 75px;
+.colorContainer .skills .iconContainer.contactJump {
+  margin-top: 45px;
 }
-
-.noAnimation {
+.colorContainer .noAnimation {
   -webkit-animation: none !important;
           animation: none !important;
 }
-
-.skillsGallery {
+.colorContainer .skillsGallery {
   display: grid;
   grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1360,48 +1441,48 @@ header .navBox nav ul.mainNavList a:focus::before {
   margin-top: 20px;
   width: 80vw;
 }
-.skillsGallery li {
+.colorContainer .skillsGallery li {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.skillsGallery li .skillsIconBox {
+.colorContainer .skillsGallery li .skillsIconBox {
   display: flex;
   justify-content: center;
   padding: 0 10px;
   width: 100%;
 }
-.skillsGallery li .skillsIconBox i,
-.skillsGallery li .skillsIconBox svg {
+.colorContainer .skillsGallery li .skillsIconBox i,
+.colorContainer .skillsGallery li .skillsIconBox svg {
   font-size: 2.5rem;
   text-align: center;
   width: 100%;
 }
-.skillsGallery li .skillsIconBox .fa-universal-access {
+.colorContainer .skillsGallery li .skillsIconBox .fa-universal-access {
   font-family: "Font Awesome 5 Free";
 }
-.skillsGallery li p {
+.colorContainer .skillsGallery li p {
   text-align: center;
 }
 
-footer {
+.colorContainer footer {
   align-items: center;
   box-shadow: inset 0px 0px 0px 0px #e5e8ee;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-footer .bottom {
+.colorContainer footer .bottom {
   align-items: center;
   justify-content: center;
   margin: 10px 0 20px;
   padding-bottom: 15px;
   width: 100%;
 }
-footer .bottom p {
+.colorContainer footer .bottom p {
   padding: 0px 20px 0 0;
 }
-footer .bottom a {
+.colorContainer footer .bottom a {
   align-items: center;
   color: #17a2aa;
   display: flex;
@@ -1411,83 +1492,79 @@ footer .bottom a {
   padding: 3px 5px;
   justify-content: space-between;
 }
-footer .bottom a svg {
+.colorContainer footer .bottom a svg {
   font-size: 1rem;
   padding-left: 8px;
 }
-footer .bottom a:active {
+.colorContainer footer .bottom a.resume:active {
   outline: none;
 }
-
-footer::before {
+.colorContainer footer::before {
   content: " ";
   display: block;
   left: 0px;
   width: 100%;
 }
-
-footer::before,
-footer::after {
+.colorContainer footer::before,
+.colorContainer footer::after {
   transition: background-size 2s;
 }
-
-.contactWrapper {
+.colorContainer .contactWrapper {
   align-items: flex-start;
   flex-direction: column;
   margin: 10px 0 20px;
   width: 60%;
 }
-.contactWrapper .contactBox {
+.colorContainer .contactWrapper .contactBox {
   justify-content: space-between;
   width: 100%;
 }
-.contactWrapper .contactBox .contactHeading {
+.colorContainer .contactWrapper .contactBox .contactHeading {
   font-size: 1.8rem;
   line-height: 2.1;
 }
-.contactWrapper > a {
+.colorContainer .contactWrapper > a {
   padding: 5px;
 }
-.contactWrapper > a {
+.colorContainer .contactWrapper > a {
   color: #17a2aa;
 }
-.contactWrapper a:focus {
+.colorContainer .contactWrapper a:focus {
   outline: 2px solid #e5e8ee;
 }
-.contactWrapper .contactIcons {
+.colorContainer .contactWrapper .contactIcons {
   align-items: center;
   font-size: 2em;
   justify-content: flex-end;
   width: 135px;
 }
-.contactWrapper .contactIcons a {
+.colorContainer .contactWrapper .contactIcons a {
   padding: 0 5px;
 }
-.contactWrapper .contactIcons a:first-child {
+.colorContainer .contactWrapper .contactIcons a:first-child {
   margin: 0 60px 0 0;
 }
-
-form {
+.colorContainer form {
   display: flex;
   flex-direction: column;
 }
-form .fieldsetBox {
+.colorContainer form .fieldsetBox {
   flex-direction: column;
   margin: 0 auto 10px;
   padding: 0 30px;
   width: 100%;
 }
-form .inputBox {
+.colorContainer form .inputBox {
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   width: 100%;
 }
-form .inputBox input {
+.colorContainer form .inputBox input {
   width: 100%;
 }
-form .contactFormButton {
+.colorContainer form .contactFormButton {
   align-self: center;
   display: inline-block;
   font-size: 20px;
@@ -1497,38 +1574,36 @@ form .contactFormButton {
   width: 50%;
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
 }
-form .contactFormButton:active {
+.colorContainer form .contactFormButton:active {
   outline: none;
   position: relative;
   top: 1px;
 }
-form label {
+.colorContainer form label {
   margin: 9px 10px 9px 0;
 }
-form label[for=email] {
+.colorContainer form label[for=email] {
   margin-top: 12px;
 }
-form .fieldsetBox > label:nth-child(2) {
+.colorContainer form .fieldsetBox > label:nth-child(2) {
   font-size: 1.085rem;
   margin-bottom: 15px;
 }
-form textarea {
+.colorContainer form textarea {
   min-height: 200px !important;
   position: relative;
 }
-form textarea::-webkit-resizer {
+.colorContainer form textarea::-webkit-resizer {
   border: 1.5px solid #17a2aa;
   background-color: #17a2aa;
   background-image: url("../../assets/img/angles-down-solid.png");
   background-size: contain;
   position: relative;
 }
-
-i.fa-grip-lines-vertical {
+.colorContainer i.fa-grip-lines-vertical {
   font-size: 84%;
 }
-
-.mainH + footer {
+.colorContainer .mainH + footer {
   align-items: center;
   background-color: transparent;
   border: 0;
@@ -1537,122 +1612,122 @@ i.fa-grip-lines-vertical {
   position: absolute;
   width: 100%;
 }
-.mainH + footer .bottom {
+.colorContainer .mainH + footer .bottom {
   width: 85%;
   justify-content: flex-end;
 }
-
-.mainP + footer {
+.colorContainer .mainP + footer {
   padding: 0;
 }
-
-.formBackground {
+.colorContainer .formBackground {
   background-color: rgba(178, 212, 214, 0.918);
   border: 3px solid #00050f;
   padding: 45px 30px;
   width: 100%;
 }
 
-.mainE {
+.colorContainer .mainE {
   height: 100%;
 }
-
-.errorHeader {
+.colorContainer .errorHeader {
   height: 25vh;
   padding: 115px 0;
 }
-.errorHeader .smallFlexBox {
+.colorContainer .errorHeader .smallFlexBox {
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
-.errorHeader .smallFlexBox .tealLine {
+.colorContainer .errorHeader .smallFlexBox .tealLine {
   color: #17a2aa;
 }
-
-.errorSection {
+.colorContainer .errorSection {
   justify-content: space-around;
   overflow: hidden;
   padding: 160px 0 0;
 }
-.errorSection .errorContentBox {
+.colorContainer .errorSection .errorContentBox {
   align-items: center;
   justify-content: space-around;
   width: 100%;
 }
-.errorSection .errorContentBox .errorIcon {
+.colorContainer .errorSection .errorContentBox .errorIcon {
   margin: 0;
   max-width: 30%;
   width: 100%;
 }
-.errorSection .errorContentBox .errorP {
+.colorContainer .errorSection .errorContentBox .errorP {
   font-size: 1.5rem;
 }
-.errorSection .errorContentBox .errorP .ownLine {
+.colorContainer .errorSection .errorContentBox .errorP .ownLine {
   display: block;
 }
-
-.errorNav {
+.colorContainer .errorNav {
   align-items: center;
   justify-content: center;
 }
-.errorNav ul {
+.colorContainer .errorNav ul {
   font-size: 1.4rem;
 }
-.errorNav ul li {
+.colorContainer .errorNav ul li {
   align-items: center;
   display: flex;
 }
-.errorNav ul li .homeLink404:active {
+.colorContainer .errorNav ul li .homeLink404:active {
   outline: none;
 }
-.errorNav ul li svg {
+.colorContainer .errorNav ul li svg {
   color: #17a2aa;
   font-size: 1.7rem;
   margin-left: 20px;
 }
 
 /* High Resolution Screens */
+.colorContainer {
+  /* Wide screen tv */
+  /* Portrait tablet and small desktops */
+  /* Large Text Resolution Screens */
+  /* Landscape phone to portrait tablet */
+  /* Medium phones and down */
+  /* Small phones */
+  /* Smallest phones */
+}
 @media (max-width: 1680px) and (max-height: 1050px) {
-  header .navBox nav ul a {
+  .colorContainer header .navBox nav ul a {
     font-size: 1.2rem;
     margin: 10px 0;
   }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     font-size: 1.1rem;
     margin: 25px 0;
   }
-  .relativeColumnBox .smallFlexBox a {
+  .colorContainer .relativeColumnBox .smallFlexBox a {
     font-size: 2rem;
   }
-  .relativeColumnBox .smallFlexBox a:nth-child(2) {
+  .colorContainer .relativeColumnBox .smallFlexBox a:nth-child(2) {
     margin-left: 2rem;
   }
-
-  .modal {
+  .colorContainer .modal {
     bottom: 15%;
     max-height: 700px;
   }
 }
 @media (max-width: 1680px) and (max-height: 650px) {
-  .modal.openModal {
+  .colorContainer .modal.openModal {
     bottom: 2%;
   }
-  .modal.openModal form .inputBox {
+  .colorContainer .modal.openModal form .inputBox {
     flex-direction: row;
   }
-  .modal.openModal form .inputBox label:nth-child(2) {
+  .colorContainer .modal.openModal form .inputBox label:nth-child(2) {
     margin-left: 0;
   }
 }
-/* Wide screen tv */
 @media (max-width: 1360px) and (max-height: 605px) {
-  .relativeColumnBox .smallFlexBox .iconContainer {
+  .colorContainer .relativeColumnBox .smallFlexBox .iconContainer {
     margin-bottom: 0;
   }
-
-  .scrollingBackground {
+  .colorContainer .scrollingBackground {
     background-image: linear-gradient(to bottom, rgba(23, 162, 170, 0) 0%, rgba(23, 162, 170, 0.2) 100%), url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
     background-blend-mode: multiply;
     background-size: cover;
@@ -1661,522 +1736,497 @@ i.fa-grip-lines-vertical {
     height: 100%;
     width: 100%;
   }
-
-  .smokeParentContainer .lightBackground .smoke::before {
+  .colorContainer .smokeParentContainer .lightBackground .smoke::before {
     opacity: 1;
   }
-
-  .modal {
+  .colorContainer .modal {
     bottom: 5%;
     max-height: 80%;
     max-width: 50%;
   }
-  .modal form .inputBox {
+  .colorContainer .modal form .inputBox {
     flex-direction: row;
   }
-  .modal form .inputBox label:nth-of-type(2) {
+  .colorContainer .modal form .inputBox label:nth-of-type(2) {
     margin-left: 20px;
   }
-
-  .mainH + footer {
+  .colorContainer .mainH + footer {
     padding-bottom: 25px;
   }
 }
 @media (max-width: 1160px) {
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 45%;
   }
 }
-/* Portrait tablet and small desktops */
 @media (max-width: 1030px) {
-  .smallFlexBox button.tealContactButton {
+  .colorContainer .smallFlexBox button.tealContactButton {
     width: 60%;
   }
-
-  header .navBox nav {
+  .colorContainer header .navBox nav {
     width: 75%;
   }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 50%;
   }
-
-  .modal {
+  .colorContainer .modal {
     left: 18%;
     padding: 20px 12px 20px 20px;
   }
-
-  .mainE + footer {
+  .colorContainer .mainE + footer {
     margin-top: 50px;
   }
 }
 @media (hover: hover) and (pointer: fine) and (max-width: 1024px) and (max-height: 640px) {
-  .splash .relativeColumnBox .smallFlexBox .tealContactButton.homeButton:hover {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .tealContactButton.homeButton:hover {
     padding: 16px 3px !important;
   }
 }
-/* Large Text Resolution Screens */
 @media (max-width: 1024px) and (max-height: 640px) {
-  .splash h1 {
+  .colorContainer .splash h1 {
     font-size: 1.7rem;
   }
-
-  .splash .animate__backInLeft {
+  .colorContainer .splash .animate__backInLeft {
     font-size: 1.5rem;
   }
-
-  .splash h1 {
+  .colorContainer .splash h1 {
     margin-bottom: 7px;
   }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     font-size: 0.9rem;
     padding: 18px 5px;
   }
-
-  .contactWrapper .contactIcons {
+  .colorContainer .contactWrapper .contactIcons {
     font-size: 1.8rem;
   }
-
-  .modal {
+  .colorContainer .modal {
     bottom: 20px;
     max-width: 58%;
   }
-  .modal form .inputBox {
+  .colorContainer .modal form .inputBox {
     justify-content: space-between;
     flex-direction: row;
   }
-  .modal form .inputBox label:nth-of-type(2) {
+  .colorContainer .modal form .inputBox label:nth-of-type(2) {
     margin-left: 20px;
   }
 }
 @media (max-width: 1020px) {
-  .mainA + footer .bottom,
-.mainP + footer .bottom,
-.mainS + footer .bottom,
-.mainE + footer .bottom {
+  .colorContainer .mainA + footer .bottom,
+.colorContainer .mainP + footer .bottom,
+.colorContainer .mainS + footer .bottom,
+.colorContainer .mainE + footer .bottom {
     flex-direction: column;
     justify-content: center;
   }
-
-  .mainH + footer .bottom a {
+  .colorContainer .mainH + footer .bottom a {
     max-width: 12%;
     padding-top: 2px;
   }
-
-  form .inputBox {
+  .colorContainer form .inputBox {
     align-items: flex-start;
     flex-direction: column;
   }
-  form .inputBox label {
+  .colorContainer form .inputBox label {
     text-align: left;
   }
-  form .inputBox input {
+  .colorContainer form .inputBox input {
     width: 89%;
   }
-
-  .contactWrapper {
+  .colorContainer .contactWrapper {
     width: 90%;
   }
-
-  label[for=email] {
+  .colorContainer label[for=email] {
     margin-left: 0;
   }
-
-  .modal {
+  .colorContainer .modal {
     background-color: rgba(199, 231, 233, 0.95);
   }
-
-  .contactWrapper,
-.modal {
+  .colorContainer .contactWrapper,
+.colorContainer .modal {
     max-height: 100%;
     padding-top: 2px;
   }
-  .contactWrapper .modalClose,
-.modal .modalClose {
+  .colorContainer .contactWrapper .modalClose,
+.colorContainer .modal .modalClose {
     margin-left: 2px;
     top: 8.5px;
   }
-  .contactWrapper form,
-.modal form {
+  .colorContainer .contactWrapper form,
+.colorContainer .modal form {
     padding: 15px 0 25px;
   }
-  .contactWrapper form .inputBox input,
-.modal form .inputBox input {
+  .colorContainer .contactWrapper form .inputBox input,
+.colorContainer .modal form .inputBox input {
     width: 100%;
   }
-  .contactWrapper form .inputBox input[name=name],
-.modal form .inputBox input[name=name] {
+  .colorContainer .contactWrapper form .inputBox input[name=name],
+.colorContainer .modal form .inputBox input[name=name] {
     margin-right: 0;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
-  .modal {
+  .colorContainer .modal {
     bottom: 2%;
     min-height: initial;
     max-height: 590px;
     padding-bottom: 15px;
   }
-  .modal form {
+  .colorContainer .modal form {
     padding-bottom: 0;
   }
 }
-/* Landscape phone to portrait tablet */
 @media (max-width: 780px) {
-  .mainDiv {
+  .colorContainer .mainDiv {
     height: initial;
   }
-
-  section {
+  .colorContainer section {
     height: 100%;
   }
-
-  .modal {
+  .colorContainer .modal {
     left: 25px;
   }
-
-  .modal {
+  .colorContainer .modal {
     max-width: 100%;
     min-height: 565px;
   }
-  .modal form .contactFormButton {
+  .colorContainer .modal form .contactFormButton {
     margin-top: 8px;
     width: 56%;
   }
-
-  .line {
+  .colorContainer .line {
     margin: -9px 0 0;
   }
-
-  .about,
-.skills,
-.projects,
-.errorSection {
+  .colorContainer .about,
+.colorContainer .skills,
+.colorContainer .projects,
+.colorContainer .errorSection {
     padding-top: 232px !important;
   }
-
-  .about {
+  .colorContainer .about {
     padding-bottom: 83px;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) {
     align-items: center;
     flex-direction: column;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about1 {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about1 {
     align-items: center;
     width: 100%;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about1 > div {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about1 > div {
     width: 75%;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about1 figure {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about1 figure {
     align-items: center;
     max-width: 55%;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about1 .aboutH1box {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about1 .aboutH1box {
     margin-bottom: 30px;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about2 {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about2 {
     width: 90%;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about2 p {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about2 p {
     align-self: flex-end;
     width: 90%;
   }
-  .about > .wrapper:not(.iconContainer.contactJump) .about2 p::after {
+  .colorContainer .about > .wrapper:not(.iconContainer.contactJump) .about2 p::after {
     left: 14%;
   }
-  .about .iconContainer.contactJump {
+  .colorContainer .about .iconContainer.contactJump {
     margin-top: 48px;
   }
-
-  .splash .smallFlexBox {
+  .colorContainer .splash .smallFlexBox {
     margin-top: 20px;
     width: 100%;
   }
-  .splash .smallFlexBox .iconContainer {
+  .colorContainer .splash .smallFlexBox .iconContainer {
     display: none;
   }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 40%;
   }
-
-  header {
+  .colorContainer header {
     height: 20vh;
     min-height: 130px;
   }
-  header .favLink {
+  .colorContainer header a.favLink.show[href="/"] {
     display: none;
   }
-  header .relativeColumnBox {
+  .colorContainer header .relativeColumnBox {
     justify-content: center;
   }
-  header .navBox {
+  .colorContainer header .navBox {
     align-items: flex-start;
-    flex-direction: column;
     justify-content: space-between;
     margin: 0;
   }
-  header .navBox nav {
+  .colorContainer header .navBox nav {
     width: 100%;
   }
-  header .navBox nav ul.mainNavList {
+  .colorContainer header .navBox nav ul.mainNavList {
     display: grid;
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr;
     width: 100%;
   }
-  header .navBox nav ul.mainNavList li {
+  .colorContainer header .navBox nav ul.mainNavList li {
     display: flex;
   }
-  header .navBox nav ul.mainNavList li .aboutLink .me {
+  .colorContainer header .navBox nav ul.mainNavList li .aboutLink .me {
     display: none;
   }
-  header .navBox nav ul.mainNavList li .aboutLink .sr-only {
+  .colorContainer header .navBox nav ul.mainNavList li .aboutLink .sr-only {
     display: inline;
   }
-  header .navBox nav ul.mainNavList .col2 {
+  .colorContainer header .navBox nav ul.mainNavList .col2 {
     padding-left: 35px;
   }
-  header .navBox nav .contactIcons {
+  .colorContainer header .navBox nav .contactIcons {
     display: none;
   }
-
-  .projects {
+  .colorContainer header .navBox .toggle-wrapper {
+    right: 50px;
+    top: 7px;
+  }
+  .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper {
+    margin-left: 0;
+  }
+  .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper svg {
+    margin: none;
+  }
+  .colorContainer .projects {
     padding: 85px 0 40px;
   }
-  .projects .projectBox {
+  .colorContainer .projects .projectBox {
     flex-direction: column;
   }
-  .projects .projectBox .imgBox img {
+  .colorContainer .projects .projectBox .imgBox img {
     margin-top: 50px;
   }
-  .projects .projectBox .imgBox .oval {
+  .colorContainer .projects .projectBox .imgBox .oval {
     display: none;
   }
-  .projects .projectBox .imgBox a:hover > img,
-.projects .projectBox .imgBox a:focus > img {
+  .colorContainer .projects .projectBox .imgBox a:hover > img,
+.colorContainer .projects .projectBox .imgBox a:focus > img {
     border-top: 8px ridge;
   }
-  .projects .projectBox .projectInfo a:last-of-type {
+  .colorContainer .projects .projectBox .projectInfo a:last-of-type {
     margin-left: 30px;
     margin-right: auto;
   }
-  .projects .projectBox .projectInfo a:first-of-type {
+  .colorContainer .projects .projectBox .projectInfo a:first-of-type {
     margin-left: auto;
     margin-right: 30px;
   }
-
-  .projectInfo p {
+  .colorContainer .projectInfo p {
     margin-bottom: 50px;
   }
-
-  .projectInfo:nth-child(even),
-.projectInfo:nth-child(odd) {
+  .colorContainer .projectInfo:nth-child(even),
+.colorContainer .projectInfo:nth-child(odd) {
     padding: 0;
     text-align: center;
   }
-
-  .skills .wrapper .flexBox h1 {
+  .colorContainer .skills .wrapper .flexBox h1 {
     align-self: flex-start;
     margin-left: 40px;
   }
-
-  .mainH + footer {
+  .colorContainer .mainH + footer {
     width: initial;
   }
-
-  footer {
+  .colorContainer footer {
     padding: 0 0 20px;
   }
-
-  .splash .smallFlexBox {
+  .colorContainer .splash .smallFlexBox {
     margin-top: 0;
   }
-
-  .errorHeader {
+  .colorContainer .errorHeader {
     height: 21vh;
     padding: 30px 0;
   }
-
-  .errorSection {
+  .colorContainer .errorSection {
     padding: 0;
   }
-  .errorSection .errorContentBox {
+  .colorContainer .errorSection .errorContentBox {
     flex-direction: column;
     justify-content: center;
     margin: 40px auto 0px;
   }
-  .errorSection .errorContentBox .errorIcon {
+  .colorContainer .errorSection .errorContentBox .errorIcon {
     max-width: 40%;
   }
-  .errorSection .errorContentBox .errorP {
+  .colorContainer .errorSection .errorContentBox .errorP {
     margin: 40px auto 50px;
     text-align: center;
   }
 }
 @media (max-width: 780px) and (max-height: 575px) {
-  .mainH + footer {
+  .colorContainer .mainH + footer {
     display: none !important;
   }
-
-  .modal {
+  .colorContainer .modal {
     top: 0;
   }
-
-  .splash .smallFlexBox {
+  .colorContainer .splash .smallFlexBox {
     margin-top: 50px;
   }
 }
 @media (max-height: 720px) {
-  .modal {
+  .colorContainer .modal {
     bottom: 2%;
     max-height: 600px;
     padding-bottom: 20px;
   }
-  .modal form {
+  .colorContainer .modal form {
     padding-bottom: 0;
   }
 }
 @media (max-height: 543px) {
-  .modal form .inputBox {
+  .colorContainer .modal form .inputBox {
     justify-content: space-between;
     flex-direction: row;
   }
-  .modal form .inputBox label:nth-of-type(2) {
+  .colorContainer .modal form .inputBox label:nth-of-type(2) {
     margin-left: 20px;
   }
 }
 @media (max-width: 680px) {
-  .mainA + footer,
-.mainP + footer,
-.mainS + footer,
-.mainE + footer {
+  .colorContainer .mainA + footer,
+.colorContainer .mainP + footer,
+.colorContainer .mainS + footer,
+.colorContainer .mainE + footer {
     flex-direction: column;
     align-items: center;
   }
-  .mainA + footer .bottom,
-.mainP + footer .bottom,
-.mainS + footer .bottom,
-.mainE + footer .bottom {
+  .colorContainer .mainA + footer .bottom,
+.colorContainer .mainP + footer .bottom,
+.colorContainer .mainS + footer .bottom,
+.colorContainer .mainE + footer .bottom {
     align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
-  .mainA + footer .bottom p,
-.mainP + footer .bottom p,
-.mainS + footer .bottom p,
-.mainE + footer .bottom p {
+  .colorContainer .mainA + footer .bottom p,
+.colorContainer .mainP + footer .bottom p,
+.colorContainer .mainS + footer .bottom p,
+.colorContainer .mainE + footer .bottom p {
     padding: 0;
   }
-  .mainA + footer .bottom a,
-.mainP + footer .bottom a,
-.mainS + footer .bottom a,
-.mainE + footer .bottom a {
+  .colorContainer .mainA + footer .bottom a,
+.colorContainer .mainP + footer .bottom a,
+.colorContainer .mainS + footer .bottom a,
+.colorContainer .mainE + footer .bottom a {
     margin: 0;
   }
-
-  .mainH + footer .bottom p {
+  .colorContainer .mainH + footer .bottom p {
     padding: 0;
     margin: 0 20px;
   }
-
-  .modal {
+  .colorContainer .modal {
     bottom: 10%;
   }
-
-  form .contactFormButton {
+  .colorContainer form .contactFormButton {
     margin-top: 40px;
   }
 }
 @media (max-width: 769px) and (max-height: 639px) {
-  .modal {
+  .colorContainer .modal {
     bottom: 13%;
     min-height: initial;
     max-height: 80%;
     max-width: 50%;
   }
 }
-/* Medium phones and down */
 @media (max-width: 650px) {
-  .line {
+  .colorContainer .line {
     margin: -9px 0 0;
   }
-
-  .about1 > p:nth-child(2) {
+  .colorContainer .about1 > p:nth-child(2) {
     font-size: 2rem;
   }
-
-  h2.target:nth-child(3) {
+  .colorContainer h2.target:nth-child(3) {
     font-size: 2rem;
   }
-
-  p.target:nth-child(1) {
+  .colorContainer p.target:nth-child(1) {
     font-size: 1.2rem;
     padding-top: 20px;
   }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 46%;
   }
-
-  .about > .wrapper .about1 {
+  .colorContainer .about > .wrapper .about1 {
     align-items: flex-start;
   }
-  .about > .wrapper .about1 > div {
+  .colorContainer .about > .wrapper .about1 > div {
     margin-top: 0;
     width: 100%;
   }
-  .about > .wrapper .about1 figure {
+  .colorContainer .about > .wrapper .about1 figure {
     max-width: 82%;
     align-items: flex-start;
   }
-  .about > .wrapper .about2 {
+  .colorContainer .about > .wrapper .about2 {
     width: 100%;
   }
-  .about > .wrapper .about2 p {
+  .colorContainer .about > .wrapper .about2 p {
     width: 100%;
   }
-
-  .skillsGallery {
+  .colorContainer .skillsGallery {
     grid-template-columns: 1fr 1fr;
   }
-  .skillsGallery p {
+  .colorContainer .skillsGallery p {
     font-size: 18px;
   }
-
-  .splash .smallFlexBox {
+  .colorContainer .splash .smallFlexBox {
     height: 45vh;
   }
-
-  header .navBox {
+  .colorContainer header .navBox {
     margin-top: 20px;
   }
-
-  .modal.openModal {
+  .colorContainer header .navBox button.styledButton.lightDarkButton {
+    min-height: 50px;
+    min-width: 27px;
+  }
+  .colorContainer header .navBox button.styledButton.lightDarkButton span.mode:first-of-type,
+.colorContainer header .navBox button.styledButton.lightDarkButton span.flexBox:nth-of-type(2) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .colorContainer header .navBox button.styledButton.lightDarkButton .mode span {
+    display: none !important;
+  }
+  .colorContainer header .navBox button.styledButton.lightDarkButton span.flexBox > span.show.lightsOff {
+    left: initial;
+    right: 75%;
+  }
+  .colorContainer header .navBox button.styledButton.lightDarkButton span.flexBox > span.show.lightsOn {
+    right: initial;
+    left: 100%;
+  }
+  .colorContainer .modal.openModal {
     bottom: 10%;
     max-width: 100%;
     min-width: 0;
   }
-  .modal.openModal form .inputBox {
+  .colorContainer .modal.openModal form .inputBox {
     flex-direction: column;
   }
-
-  .mainH + footer .bottom a {
+  .colorContainer .mainH + footer .bottom a {
     align-self: flex-end;
     margin: 0;
     max-width: 17%;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  .splash .relativeColumnBox h1 {
+  .colorContainer .splash .relativeColumnBox h1 {
     font-size: 1.6rem;
     margin: 55px 0 0;
   }
-
-  .modal {
+  .colorContainer .modal {
     bottom: -100;
     top: auto;
     min-height: 400px;
@@ -2185,235 +2235,214 @@ i.fa-grip-lines-vertical {
     left: 0;
     right: 20px;
   }
-  .modal form {
+  .colorContainer .modal form {
     padding: 15px 0 20px;
   }
-
-  .smallFlexBox {
+  .colorContainer .smallFlexBox {
     position: relative;
   }
-  .smallFlexBox p.animate__backInLeft {
+  .colorContainer .smallFlexBox p.animate__backInLeft {
     font-size: 1.4rem;
   }
-  .smallFlexBox button.tealContactButton {
+  .colorContainer .smallFlexBox button.tealContactButton {
     position: absolute;
     right: 0;
     width: 25%;
   }
-  .smallFlexBox button.tealContactButton .me {
+  .colorContainer .smallFlexBox button.tealContactButton .me {
     display: none;
   }
-  .smallFlexBox button.tealContactButton .fa-long-arrow-alt-right {
+  .colorContainer .smallFlexBox button.tealContactButton .fa-long-arrow-alt-right {
     display: none;
   }
-
-  .about {
+  .colorContainer .about {
     padding-top: 115px;
   }
-
-  footer .contactWrapper {
+  .colorContainer footer .contactWrapper {
     padding: 65px 0 60px;
   }
-
-  .splash .relativeColumnBox .smallFlexBox .tealContactButton {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .tealContactButton {
     left: 75%;
     top: 55%;
     padding: 15px 0;
     width: 30%;
   }
-  .splash .contactWrapper {
+  .colorContainer .splash .contactWrapper {
     display: none;
   }
 }
 @media screen and (hover: hover) and (pointer: fine) and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-  .splash .relativeColumnBox .smallFlexBox .tealContactButton.homeButton:hover {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .tealContactButton.homeButton:hover {
     padding: 14px 0 !important;
   }
 }
 @media (max-width: 620px) {
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 44%;
   }
 }
 @media (max-width: 680px) {
-  .modal {
+  .colorContainer .modal {
     top: 37px;
     max-height: 609px;
     min-height: 609px;
   }
-  .modal form .inputBox {
+  .colorContainer .modal form .inputBox {
     flex-direction: column;
   }
-  .modal form .inputBox label:nth-of-type(2) {
+  .colorContainer .modal form .inputBox label:nth-of-type(2) {
     margin-left: 0;
   }
 }
-/* Small phones */
 @media (max-width: 500px) {
-  header {
+  .colorContainer header {
     font-size: 0.8rem;
     background-position-x: -33vw;
   }
-  header a {
+  .colorContainer header a {
     font-size: 0.95rem;
   }
-  header nav {
+  .colorContainer header nav {
     letter-spacing: 1.5px;
   }
-
-  .smallFlexBox button.tealContactButton {
+  .colorContainer .smallFlexBox button.tealContactButton {
     font-size: 0.8rem;
     padding: 15px 0;
   }
-
-  .projectInfo:nth-child(even),
-.projectInfo:nth-child(odd) {
+  .colorContainer .projectInfo:nth-child(even),
+.colorContainer .projectInfo:nth-child(odd) {
     text-align: left;
   }
-
-  .mainH + footer {
+  .colorContainer .mainH + footer {
     align-items: center;
     left: 0;
     right: auto;
   }
-  .mainH + footer .bottom {
+  .colorContainer .mainH + footer .bottom {
     align-items: flex-start;
     justify-content: space-between;
   }
-  .mainH + footer .bottom .webDeveloper {
+  .colorContainer .mainH + footer .bottom .webDeveloper {
     display: block;
   }
-  .mainH + footer .bottom .verticalLine {
+  .colorContainer .mainH + footer .bottom .verticalLine {
     display: none;
   }
-  .mainH + footer .bottom p {
+  .colorContainer .mainH + footer .bottom p {
     margin: 0;
   }
-
-  .formBackground .fieldsetBox {
+  .colorContainer .formBackground .fieldsetBox {
     padding: 0 11px;
   }
 }
 @media (min-width: 410px) and (min-height: 875px) {
-  header .navBox nav ul a {
+  .colorContainer header .navBox nav ul a {
     font-size: 1.4rem;
   }
-
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     font-size: 1.1rem;
   }
-
-  .splash .outlined {
+  .colorContainer .splash .outlined {
     font-size: 1.8rem;
   }
-  .splash .contactWrapper a {
+  .colorContainer .splash .contactWrapper a {
     font-size: 2.4rem;
   }
-
-  .mainH + footer .bottom {
+  .colorContainer .mainH + footer .bottom {
     flex-direction: row;
   }
-
-  footer .bottom a {
+  .colorContainer footer .bottom a {
     font-size: 1.1rem;
   }
-  footer .bottom a svg {
+  .colorContainer footer .bottom a svg {
     font-size: 0.9rem;
   }
 }
 @media (min-width: 410px) and (min-height: 760px) {
-  .relativeColumnBox .smallFlexBox .homeButton {
+  .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     font-size: 1.1rem;
     margin: 20px 0;
   }
 }
-/* Smallest phones */
 @media (max-width: 365px) and (max-height: 640px) {
-  h1 {
+  .colorContainer h1 {
     font-size: 1.8rem;
   }
-
-  header .navBox {
+  .colorContainer header .navBox {
     margin-top: 10px;
   }
-  header .navBox nav ul li a {
+  .colorContainer header .navBox nav ul li a {
     font-size: 0.8rem;
   }
-
-  .splash .contactWrapper {
+  .colorContainer .splash .contactWrapper {
     display: none;
   }
-
-  .smallFlexBox span.animate__backInLeft {
+  .colorContainer .smallFlexBox span.animate__backInLeft {
     font-size: 1.5rem;
   }
-
-  .formBackground {
+  .colorContainer .formBackground {
     padding: 30px 0px 30px 11px;
   }
-  .formBackground form {
+  .colorContainer .formBackground form {
     width: 95%;
   }
-
-  footer {
+  .colorContainer footer {
     flex-direction: column;
   }
-  footer .contactWrapper {
+  .colorContainer footer .contactWrapper {
     align-items: flex-start;
     margin: 10px 0;
     width: 320px;
   }
-  footer .contactWrapper > a {
+  .colorContainer footer .contactWrapper > a {
     font-size: 0.8rem;
   }
-  footer .bottom {
+  .colorContainer footer .bottom {
     width: initial;
   }
-
-  .mainA + footer .bottom p,
-.mainP + footer .bottom p,
-.mainS + footer .bottom p,
-.mainE + footer .bottom p {
+  .colorContainer .mainA + footer .bottom p,
+.colorContainer .mainP + footer .bottom p,
+.colorContainer .mainS + footer .bottom p,
+.colorContainer .mainE + footer .bottom p {
     padding: 0;
   }
-  .mainA + footer .bottom p span,
-.mainP + footer .bottom p span,
-.mainS + footer .bottom p span,
-.mainE + footer .bottom p span {
+  .colorContainer .mainA + footer .bottom p span,
+.colorContainer .mainP + footer .bottom p span,
+.colorContainer .mainS + footer .bottom p span,
+.colorContainer .mainE + footer .bottom p span {
     display: none;
   }
-  .mainA + footer .bottom p .webDeveloper,
-.mainP + footer .bottom p .webDeveloper,
-.mainS + footer .bottom p .webDeveloper,
-.mainE + footer .bottom p .webDeveloper {
+  .colorContainer .mainA + footer .bottom p .webDeveloper,
+.colorContainer .mainP + footer .bottom p .webDeveloper,
+.colorContainer .mainS + footer .bottom p .webDeveloper,
+.colorContainer .mainE + footer .bottom p .webDeveloper {
     display: block;
   }
-
-  .modal {
+  .colorContainer .modal {
     min-width: 300px;
     padding-bottom: 0;
     top: 10%;
   }
-  .modal form {
+  .colorContainer .modal form {
     padding-bottom: 0;
   }
-  .modal form .inputBox {
+  .colorContainer .modal form .inputBox {
     flex-direction: column;
   }
-  .modal form .inputBox label:nth-of-type(2) {
+  .colorContainer .modal form .inputBox label:nth-of-type(2) {
     margin-left: 0;
   }
-  .modal form .fieldsetBox {
+  .colorContainer .modal form .fieldsetBox {
     width: 87%;
     padding: 0;
     margin: 0 0 0 10px;
   }
-  .modal form .contactFormButton {
+  .colorContainer .modal form .contactFormButton {
     width: 67%;
   }
 }
 @media (max-width: 350px) {
-  .modal {
+  .colorContainer .modal {
     min-width: 2px !important;
     width: 84%;
     min-height: 575px;
@@ -2421,593 +2450,568 @@ i.fa-grip-lines-vertical {
     padding-left: 5px;
     top: 9%;
   }
-  .modal .modalClose {
+  .colorContainer .modal .modalClose {
     margin-left: 18px;
   }
-  .modal form {
+  .colorContainer .modal form {
     padding-bottom: 0;
   }
-  .modal form .fieldsetBox {
+  .colorContainer .modal form .fieldsetBox {
     padding-top: 10px;
     margin: 0 15px;
     width: 70%;
   }
-  .modal form .inputBox {
+  .colorContainer .modal form .inputBox {
     width: 100%;
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  header .navBox nav ul.mainNavList a:hover {
+  .colorContainer header .navBox nav ul.mainNavList a:hover {
     outline: none;
   }
-  header .navBox nav ul.mainNavList a:hover::after {
+  .colorContainer header .navBox nav ul.mainNavList a:hover::after {
     width: 100%;
   }
-  header .navBox nav ul.mainNavList a:hover::before {
+  .colorContainer header .navBox nav ul.mainNavList a:hover::before {
     width: 95%;
   }
-  header .navBox nav ul.mainNavList a:active::after {
+  .colorContainer header .navBox nav ul.mainNavList a:active::after {
     transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
     width: 0;
   }
-
-  .splash .relativeColumnBox .smallFlexBox a:hover .target {
+  .colorContainer header .navBox .themeToggleBox:hover::before {
+    box-shadow: inset 5px 5px 22px 5px rgba(0, 5, 15, 0.52);
+  }
+  .colorContainer header .styledButton:active {
+    border: 1px solid #17a2aa;
+  }
+  .colorContainer .splash .relativeColumnBox .smallFlexBox a:hover .target {
     text-decoration: underline;
   }
-  .splash .relativeColumnBox .smallFlexBox a:active .target {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox a:active .target {
     text-decoration: none;
   }
-  .splash .relativeColumnBox .smallFlexBox a:active {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox a:active {
     outline: none;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:hover svg {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:hover svg {
     box-shadow: rgba(23, 162, 170, 0.5) 0px 0px 20px 0px;
     color: #17a2aa;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active svg {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:active svg {
     color: #e5e8ee;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:active {
     outline: none;
   }
-  .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
     box-shadow: rgba(23, 162, 170, 0.5) 0px 0px 20px 0px;
     padding: 20px 3px;
   }
-
-  .projectInfo a:hover {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .tealContactButton:active {
+    outline: none;
+  }
+  .colorContainer .projectInfo a:hover {
     opacity: 0.6;
   }
-  .projectInfo a:active {
+  .colorContainer .projectInfo a:active {
     opacity: 1;
   }
-
-  .imgBox > a:hover > img {
+  .colorContainer .imgBox > a:hover > img {
     transition: border-top 0.5s;
   }
-
-  .imgBox > a:active > img {
-    z-index: auto;
-  }
-
-  .skillsGallery li:hover .skillsIconBox:hover {
+  .colorContainer .skillsGallery li:hover .skillsIconBox:hover {
     animation: spin 2000ms linear infinite;
     -webkit-animation: spin 2000ms linear infinite;
   }
-
-  footer .contactWrapper a:active {
+  .colorContainer footer .contactWrapper .contactIcons .contactIcon:active {
     outline: none;
   }
-  footer .contactWrapper .fa-linkedin:hover,
-footer .contactWrapper .fa-github:hover {
+  .colorContainer footer .contactWrapper .contactIcons .contactIcon:active svg.fa-linkedin,
+.colorContainer footer .contactWrapper .contactIcons .contactIcon:active svg.fa-github {
+    color: #e5e8ee;
+  }
+  .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover {
+    outline: none;
+  }
+  .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover .fa-linkedin,
+.colorContainer footer .contactWrapper .contactIcons .contactIcon:hover .fa-github {
     color: #17a2aa;
   }
-  footer .bottom .resume:active svg {
+  .colorContainer footer .bottom .resume:active svg {
     transform: translateY(2px);
   }
-
-  button.modalClose:active {
+  .colorContainer button.modalClose:active {
     transform: translateY(2px);
     outline: none !important;
   }
-
-  button.modalClose:focus {
+  .colorContainer button.modalClose:focus {
     outline: 2px solid #17a2aa;
   }
 }
-@media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-  .navBox nav ul.mainNavList a:hover {
+
+@media (pointer: fine) {
+  .colorContainer.darkModeOn .navBox nav ul.mainNavList a:hover {
     text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
   }
-
-  .navBox .aboutNav ul.mainNavList a:hover,
-.navBox .skillsNav ul.mainNavList a:hover {
+  .colorContainer.darkModeOn .navBox .aboutNav ul.mainNavList a:hover,
+.colorContainer.darkModeOn .navBox .skillsNav ul.mainNavList a:hover {
     text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
   }
-
-  .splash .tealContactButton:hover {
+  .colorContainer.darkModeOn .splash .tealContactButton:hover {
     border: 2px solid #e5e8ee;
   }
-
-  .imgBox > a:hover > img {
+  .colorContainer.darkModeOn .imgBox > a:hover > img {
     border-top: 14px ridge #e5e8ee;
   }
-
-  .imgBox > a:active > img {
+  .colorContainer.darkModeOn .imgBox > a.projImgLink:active > img {
     border-top: 14px ridge #17a2aa;
   }
-
-  .imgBox > a:focus > img {
-    border-top: 14px ridge #17a2aa;
+  .colorContainer.darkModeOn .imgBox > a:focus > img {
+    border-top: 14px ridge #e5e8ee;
   }
-
-  footer .contactWrapper > a:hover {
+  .colorContainer.darkModeOn footer .contactWrapper > a:hover {
     color: #e5e8ee;
   }
-  footer .contactWrapper > a:active {
+  .colorContainer.darkModeOn footer .contactWrapper > a:active {
     color: #17a2aa;
   }
-  footer .contactWrapper .fa-linkedin:active,
-footer .contactWrapper .fa-github:active {
+  .colorContainer.darkModeOn footer .contactWrapper .fa-linkedin:active,
+.colorContainer.darkModeOn footer .contactWrapper .fa-github:active {
     color: #e5e8ee;
   }
-  footer .bottom a:hover {
+  .colorContainer.darkModeOn footer .bottom a:hover {
     color: #e5e8ee;
   }
-  footer .bottom .resume:active {
+  .colorContainer.darkModeOn footer .bottom .resume:active {
+    color: #e5e8ee;
+  }
+  .colorContainer.darkModeOn .errorNav ul li a:hover {
+    color: #17a2aa;
+  }
+  .colorContainer.darkModeOn .errorNav ul li a:hover + i {
     color: #e5e8ee;
   }
 
-  .errorNav ul li a:hover {
-    color: #17a2aa;
-  }
-  .errorNav ul li a:hover + i {
-    color: #e5e8ee;
-  }
-}
-@media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
-  .navBox nav ul.mainNavList a:hover {
+  .colorContainer:not(.darkModeOn) .navBox nav ul.mainNavList a:hover {
     text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
   }
-
-  .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
+  .colorContainer:not(.darkModeOn) .splash .relativeColumnBox .smallFlexBox .tealContactButton:hover {
     border: 2px solid #00050f;
   }
-  .splash .relativeColumnBox .smallFlexBox .contactIcons a:active svg {
+  .colorContainer:not(.darkModeOn) .splash .relativeColumnBox .smallFlexBox .contactIcons a:active svg {
     color: #00050f;
   }
-
-  .imgBox > a:hover > img {
+  .colorContainer:not(.darkModeOn) .imgBox > a:hover > img {
     border-top: 14px ridge #126368;
   }
-
-  .imgBox > a:active > img {
+  .colorContainer:not(.darkModeOn) .imgBox > a.projImgLink:active > img {
     border-top: 14px ridge #17a2aa;
   }
-
-  .imgBox > a:focus > img {
-    border-top: 14px ridge #17a2aa;
+  .colorContainer:not(.darkModeOn) .imgBox > a:focus > img {
+    border-top: 14px ridge #126368;
   }
-
-  footer .contactWrapper > a:hover {
+  .colorContainer:not(.darkModeOn) footer .contactWrapper > a:hover {
     color: #00050f;
   }
-  footer .contactWrapper > a:active {
+  .colorContainer:not(.darkModeOn) footer .contactWrapper > a:active {
     color: #17a2aa;
   }
-  footer .contactWrapper a:focus {
+  .colorContainer:not(.darkModeOn) footer .contactWrapper a:focus {
     outline-color: #00050f;
   }
-  footer .contactWrapper .fa-linkedin:active,
-footer .contactWrapper .fa-github:active {
+  .colorContainer:not(.darkModeOn) footer .contactWrapper .fa-linkedin:active,
+.colorContainer:not(.darkModeOn) footer .contactWrapper .fa-github:active {
     color: #00050f;
   }
-  footer .bottom a:hover {
+  .colorContainer:not(.darkModeOn) footer .bottom a:hover {
     color: #00050f;
   }
-  footer .bottom .resume:active {
+  .colorContainer:not(.darkModeOn) footer .bottom .resume:active {
     color: #00050f;
   }
-
-  .errorNav ul li a:hover {
+  .colorContainer:not(.darkModeOn) .errorNav ul li a:hover {
     color: #17a2aa;
   }
-  .errorNav ul li a:hover + i {
+  .colorContainer:not(.darkModeOn) .errorNav ul li a:hover + i {
     color: #00050f;
   }
 }
-@media (prefers-color-scheme: light) {
-  h1,
-h2,
-h3,
-nav ul,
-.subtleTextShadow {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
-  }
-
-  .splash .galaxy .stars {
-    display: none;
-  }
-
-  .subtleTextGradient {
-    background: linear-gradient(180deg, black 20%, #00050f 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  html {
-    background: #e5e8ee;
-  }
-
-  a:focus,
-button:focus {
-    outline: 2px solid #00050f;
-  }
-
-  header .favLink:focus img {
-    outline: 2px solid #00050f;
-  }
-
-  .navBox nav ul.mainNavList a:focus {
-    text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
-  }
-
-  .contactComponent {
-    color: #00050f;
-  }
-
-  .modal {
-    box-shadow: -2px 2px 3px 0 rgba(0, 5, 15, 0.31);
-  }
-
-  .splash .lightHeroElements {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-  }
-  .splash .contactWrapper a {
-    color: #00050f;
-  }
-  .splash h1,
-.splash h2,
-.splash p {
-    color: #00050f;
-  }
-  .splash .smallFlexBox a:focus {
-    outline: 2px solid #00050f;
-  }
-
-  .about {
-    box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
-  }
-
-  .projects {
-    background: #e5e8ee;
-  }
-  .projects .wrapper.flexBox h2 {
-    color: #00050f;
-  }
-
-  .projectInfo h3,
-.projectInfo h4,
-.projectInfo h5,
-.projectInfo p {
-    color: #00050f;
-  }
-  .projectInfo a {
-    background: #17a2aa;
-    color: #00050f;
-  }
-  .projectInfo p,
-.projectInfo h3,
-.projectInfo h4 {
-    text-shadow: none;
-  }
-
-  footer {
-    background: #e5e8ee;
-    background: rgba(215, 237, 238, 0.3);
-    color: #00050f;
-  }
-  footer .contactWrapper > a {
-    font-weight: 500;
-  }
-  footer .contactWrapper a:focus {
-    outline: 2px solid #00050f;
-  }
-  footer .bottom a {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
-  }
-  footer .bottom .resume svg,
-footer .bottom .resume:active svg,
-footer .bottom .resume:hover svg {
-    color: #00050f;
-  }
-  footer p {
-    color: #00050f;
-  }
-
-  footer::before {
-    background: linear-gradient(-45deg, rgba(215, 237, 238, 0.3) 14px, #dddddd 15px, #bbbbbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 16px, #dddddd 15px, #bbbbbb 14px, transparent 0);
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
-    height: 36px;
-    margin-bottom: 40px;
-    position: relative;
-    top: -5px;
-  }
-
-  .errorHeader {
-    background-image: none;
-  }
-  .errorHeader .background {
-    display: block;
-  }
-
-  .errorSection h1 {
-    color: #00050f;
-  }
-
-  .errorP {
-    color: #00050f;
-  }
-
-  .errorNav ul li a {
-    color: #00050f;
-  }
-  .errorNav ul li a:active {
-    color: #00050f;
+.colorContainer:not(.darkModeOn) h1,
+.colorContainer:not(.darkModeOn) h2,
+.colorContainer:not(.darkModeOn) h3,
+.colorContainer:not(.darkModeOn) nav ul,
+.colorContainer:not(.darkModeOn) .subtleTextShadow {
+  text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+}
+.colorContainer:not(.darkModeOn) .splash .galaxy .stars {
+  display: none;
+}
+.colorContainer:not(.darkModeOn) .subtleTextGradient {
+  background: linear-gradient(180deg, black 20%, #00050f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.colorContainer:not(.darkModeOn) html {
+  background: #e5e8ee;
+}
+.colorContainer:not(.darkModeOn) a:focus,
+.colorContainer:not(.darkModeOn) button:focus {
+  outline: 2px solid #00050f;
+}
+.colorContainer:not(.darkModeOn) header .favLink:focus img {
+  outline: 2px solid #00050f;
+}
+.colorContainer:not(.darkModeOn) header .themeToggleWrapper {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .navBox nav ul.mainNavList a:focus {
+  text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
+}
+.colorContainer:not(.darkModeOn) .contactComponent {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .modal {
+  background-color: rgba(166, 199, 201, 0.8);
+  box-shadow: -2px 2px 3px 0 rgba(0, 5, 15, 0.31);
+}
+@media (max-width: 780px) {
+  .colorContainer:not(.darkModeOn) .modal {
+    background-color: rgba(166, 199, 201, 0.96);
   }
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    background: #00050f;
-  }
+.colorContainer:not(.darkModeOn) .splash .lightHeroElements {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+.colorContainer:not(.darkModeOn) .splash .contactWrapper a {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .splash h1,
+.colorContainer:not(.darkModeOn) .splash h2,
+.colorContainer:not(.darkModeOn) .splash p {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .splash .smallFlexBox a:focus {
+  outline: 2px solid #00050f;
+}
+.colorContainer:not(.darkModeOn) .about {
+  box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
+}
+.colorContainer:not(.darkModeOn) .projects {
+  background: #e5e8ee;
+}
+.colorContainer:not(.darkModeOn) .projects .wrapper.flexBox h2 {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .projectInfo h3,
+.colorContainer:not(.darkModeOn) .projectInfo h4,
+.colorContainer:not(.darkModeOn) .projectInfo h5,
+.colorContainer:not(.darkModeOn) .projectInfo p {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .projectInfo a {
+  background: #17a2aa;
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .projectInfo p,
+.colorContainer:not(.darkModeOn) .projectInfo h3,
+.colorContainer:not(.darkModeOn) .projectInfo h4 {
+  text-shadow: none;
+}
+.colorContainer:not(.darkModeOn) footer {
+  background: #e5e8ee;
+  background: rgba(215, 237, 238, 0.5);
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) footer .contactWrapper > a {
+  font-weight: 500;
+}
+.colorContainer:not(.darkModeOn) footer .contactWrapper a:focus {
+  outline: 2px solid #00050f;
+}
+.colorContainer:not(.darkModeOn) footer .bottom {
+  padding-bottom: 45px;
+}
+.colorContainer:not(.darkModeOn) footer .bottom a {
+  text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+}
+.colorContainer:not(.darkModeOn) footer .bottom .resume svg,
+.colorContainer:not(.darkModeOn) footer .bottom .resume:active svg,
+.colorContainer:not(.darkModeOn) footer .bottom .resume:hover svg {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) footer p {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) footer::before {
+  background: linear-gradient(-45deg, rgba(215, 237, 238, 0.3) 14px, #dddddd 15px, #bbbbbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  height: 36px;
+  margin-bottom: 40px;
+  position: relative;
+  top: -5px;
+}
+.colorContainer:not(.darkModeOn) .errorHeader {
+  background-image: none;
+}
+.colorContainer:not(.darkModeOn) .errorHeader .background {
+  display: block;
+}
+.colorContainer:not(.darkModeOn) .errorSection h1 {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .errorP {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .errorNav ul li a {
+  color: #00050f;
+}
+.colorContainer:not(.darkModeOn) .errorNav ul li a:active {
+  color: #00050f;
+}
 
-  h1,
-h2,
-h3,
-nav ul,
-h2,
-.subtleTextShadow {
-    text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
-  }
-
-  .mainA h1,
-.mainA h2,
-.mainA h3,
-.mainA nav ul,
-.mainA .subtleTextShadow,
-.mainS h1,
-.mainS h2,
-.mainS h3,
-.mainS nav ul,
-.mainS .subtleTextShadow {
-    text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
-  }
-
-  .splash .lightHeroElements {
-    display: none;
-  }
-
-  .subtleTextGradient {
-    background: linear-gradient(180deg, white 20%, #e5e8ee 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  a:focus,
-button:focus {
-    outline: 2px solid #e5e8ee;
-  }
-
-  .navBox nav ul.mainNavList a:focus {
-    text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
-  }
-
-  .navBox .aboutNav ul.mainNavList a:focus,
-.navBox .skillsNav ul.mainNavList a:focus {
-    text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
-  }
-
-  header .relativeColumnBox .smallFlexBox a:focus {
-    outline: 2px solid #e5e8ee;
-  }
-
-  .modal {
-    box-shadow: -2px 2px 3px 0 #00050f;
-  }
-
-  .splash {
-    background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .splash .contactWrapper a {
-    color: #e5e8ee;
-  }
-  .splash h1,
-.splash h2 {
-    color: #e5e8ee;
-  }
-  .splash .relativeColumnBox .smallFlexBox a:focus {
-    outline: 2px solid #e5e8ee;
-  }
-
-  .projects {
-    background: #00050f;
-  }
-  .projects .wrapper.flexBox h1,
-.projects .wrapper.flexBox h2 {
-    color: #e5e8ee;
-  }
-
-  .projectInfo h3,
-.projectInfo h4,
-.projectInfo h5,
-.projectInfo p {
-    color: #e5e8ee;
-  }
-  .projectInfo a {
-    background: #e5e8ee;
-    color: #245056;
-  }
-  .projectInfo p,
-.projectInfo h3,
-.projectInfo h4 {
-    text-shadow: 3px 3px 5px #00050f;
-  }
-
-  footer {
-    background: #00050f;
-    color: #e5e8ee;
-    position: relative;
-  }
-  footer .contactWrapper a:focus {
-    outline: 2px solid #e5e8ee;
-  }
-  footer .bottom a {
-    text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
-  }
-  footer .bottom .resume svg,
-footer .bottom .resume:active svg,
-footer .bottom .resume:hover svg {
-    color: #e5e8ee;
-  }
-  footer p {
-    color: #e5e8ee;
-  }
-
-  .mainP + footer::before,
-.mainP + footer::after,
-.mainH + footer::before,
-.mainH + footer::after,
-.mainE + footer::before,
-.mainE + footer::after {
-    display: none;
-  }
-
-  footer::before {
-    background: radial-gradient(ellipse, #00050f, #00050f 7px, #00050f 7px, #00050f 10px, transparent 11px);
-    background-repeat: repeat-x;
-    margin-bottom: 60px;
-    position: relative;
-    top: 0;
-  }
-
-  footer::after {
-    background: radial-gradient(ellipse, transparent, transparent 7.3px, #00050f 7px, #00050f 10px, #00050f 11px);
-    background-position: -18px -20px;
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 20px;
-    width: 100%;
-  }
-
-  footer::before,
-footer::after {
-    height: 25px;
-    background-size: 36px 0px;
-  }
-
-  .transitionBorder::before,
-.transitionBorder::after {
-    background-size: 36px 40px;
-  }
-
-  .mainS + .transitionBorder,
-.mainA + .transitionBorder {
-    box-shadow: inset 0px 50px 3px -22px #e5e8ee;
-    transition: box-shadow 2s;
-  }
-
-  .errorSection h1 {
-    color: #e5e8ee;
-  }
-
-  .errorP {
-    color: #e5e8ee;
-  }
-
-  .errorNav ul li a {
-    color: #e5e8ee;
-  }
-  .errorNav ul li a:active {
-    color: #e5e8ee;
+.colorContainer.darkModeOn {
+  background: #00050f;
+  letter-spacing: 0.65px;
+}
+.colorContainer.darkModeOn h1,
+.colorContainer.darkModeOn h2,
+.colorContainer.darkModeOn h3,
+.colorContainer.darkModeOn nav ul,
+.colorContainer.darkModeOn h2,
+.colorContainer.darkModeOn .subtleTextShadow {
+  text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
+}
+.colorContainer.darkModeOn .mainA h1,
+.colorContainer.darkModeOn .mainA h2,
+.colorContainer.darkModeOn .mainA h3,
+.colorContainer.darkModeOn .mainA nav ul,
+.colorContainer.darkModeOn .mainA .subtleTextShadow,
+.colorContainer.darkModeOn .mainS h1,
+.colorContainer.darkModeOn .mainS h2,
+.colorContainer.darkModeOn .mainS h3,
+.colorContainer.darkModeOn .mainS nav ul,
+.colorContainer.darkModeOn .mainS .subtleTextShadow {
+  text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+}
+.colorContainer.darkModeOn .splash .lightHeroElements {
+  display: none;
+}
+.colorContainer.darkModeOn .subtleTextGradient {
+  background: linear-gradient(180deg, white 20%, #e5e8ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.colorContainer.darkModeOn a:focus,
+.colorContainer.darkModeOn button:focus {
+  outline: 2px solid #e5e8ee;
+}
+.colorContainer.darkModeOn .navBox nav ul.mainNavList a:focus {
+  text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
+}
+.colorContainer.darkModeOn .navBox .aboutNav ul.mainNavList a:focus,
+.colorContainer.darkModeOn .navBox .skillsNav ul.mainNavList a:focus {
+  text-shadow: -1px -5px 20px rgba(132, 215, 219, 0.6);
+}
+.colorContainer.darkModeOn header .relativeColumnBox .smallFlexBox a:focus {
+  outline: 2px solid #e5e8ee;
+}
+.colorContainer.darkModeOn header .themeToggleWrapper {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .modal {
+  background-color: rgba(199, 231, 233, 0.8);
+  box-shadow: -2px 2px 3px 0 #00050f;
+}
+@media (max-width: 780px) {
+  .colorContainer.darkModeOn .modal {
+    background-color: rgba(182, 213, 215, 0.96);
   }
 }
-@media (max-height: 450px) and (prefers-color-scheme: dark) {
-  footer {
+.colorContainer.darkModeOn .splash {
+  background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.colorContainer.darkModeOn .splash .contactWrapper a {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .splash h1,
+.colorContainer.darkModeOn .splash h2 {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .splash .relativeColumnBox .smallFlexBox a:focus {
+  outline: 2px solid #e5e8ee;
+}
+.colorContainer.darkModeOn .projects {
+  background: #00050f;
+}
+.colorContainer.darkModeOn .projects .wrapper.flexBox h1,
+.colorContainer.darkModeOn .projects .wrapper.flexBox h2 {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .projectInfo h3,
+.colorContainer.darkModeOn .projectInfo h4,
+.colorContainer.darkModeOn .projectInfo h5,
+.colorContainer.darkModeOn .projectInfo p {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .projectInfo a {
+  background: #e5e8ee;
+  color: #245056;
+}
+.colorContainer.darkModeOn .projectInfo p,
+.colorContainer.darkModeOn .projectInfo h3,
+.colorContainer.darkModeOn .projectInfo h4 {
+  text-shadow: 3px 3px 5px #00050f;
+}
+.colorContainer.darkModeOn .mainH + footer {
+  background-color: transparent;
+}
+.colorContainer.darkModeOn footer {
+  background: #00050f;
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn footer .contactWrapper a:focus {
+  outline: 2px solid #e5e8ee;
+}
+.colorContainer.darkModeOn footer .bottom a {
+  text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
+}
+.colorContainer.darkModeOn footer .bottom .resume svg,
+.colorContainer.darkModeOn footer .bottom .resume:active svg,
+.colorContainer.darkModeOn footer .bottom .resume:hover svg {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn footer p {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .mainP + footer::before,
+.colorContainer.darkModeOn .mainP + footer::after,
+.colorContainer.darkModeOn .mainH + footer::before,
+.colorContainer.darkModeOn .mainH + footer::after,
+.colorContainer.darkModeOn .mainE + footer::before,
+.colorContainer.darkModeOn .mainE + footer::after {
+  display: none;
+}
+.colorContainer.darkModeOn footer::before {
+  background: radial-gradient(ellipse, #00050f, #00050f 7px, #00050f 7px, #00050f 10px, transparent 11px);
+  background-repeat: repeat-x;
+  margin-bottom: 60px;
+  position: relative;
+  top: 0;
+}
+.colorContainer.darkModeOn footer::after {
+  background: radial-gradient(ellipse, transparent, transparent 7.3px, #00050f 7px, #00050f 10px, #00050f 11px);
+  background-position: -18px -20px;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 100%;
+}
+.colorContainer.darkModeOn footer::before,
+.colorContainer.darkModeOn footer::after {
+  height: 25px;
+  background-size: 36px 0px;
+}
+.colorContainer.darkModeOn .transitionBorder::before,
+.colorContainer.darkModeOn .transitionBorder::after {
+  background-size: 36px 40px;
+}
+.colorContainer.darkModeOn .mainS + .transitionBorder,
+.colorContainer.darkModeOn .mainA + .transitionBorder {
+  box-shadow: inset 0px 50px 3px -22px #e5e8ee;
+  transition: box-shadow 2s;
+}
+.colorContainer.darkModeOn .errorSection h1 {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .errorP {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .errorNav ul li a {
+  color: #e5e8ee;
+}
+.colorContainer.darkModeOn .errorNav ul li a:active {
+  color: #e5e8ee;
+}
+@media (max-height: 450px) {
+  .colorContainer.darkModeOn footer {
     padding-top: 5px;
   }
-
-  footer::after {
+  .colorContainer.darkModeOn footer::after {
     top: 25px;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .animate__backInLeft {
+  .colorContainer .animate__backInLeft {
     -webkit-animation: none;
             animation: none;
   }
-
-  .skillsGallery li:hover div.skillsIconBox:hover {
+  .colorContainer .skillsGallery li:hover div.skillsIconBox:hover {
     -webkit-animation: none;
             animation: none;
   }
-
-  .galaxy,
-.stars {
+  .colorContainer .galaxy,
+.colorContainer .stars {
     -webkit-animation: none !important;
             animation: none !important;
   }
-
-  footer {
+  .colorContainer .imgBox a:hover img {
+    transition: none;
+  }
+  .colorContainer footer {
     transition: initial !important;
+  }
+  .colorContainer footer::before,
+.colorContainer footer::after {
+    transition: none;
   }
 }
 @media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
-  header {
+  .colorContainer header {
     background-attachment: local;
   }
-  header .navBox nav ul.mainNavList a {
+  .colorContainer header .navBox nav ul.mainNavList a {
     padding-bottom: 8px;
   }
-  header .navBox nav ul.mainNavList a:hover::before,
-header .navBox nav ul.mainNavList a:focus::before,
-header .navBox nav ul.mainNavList a:hover::after,
-header .navBox nav ul.mainNavList a:focus::after {
+  .colorContainer header .navBox nav ul.mainNavList a:hover::before,
+.colorContainer header .navBox nav ul.mainNavList a:focus::before,
+.colorContainer header .navBox nav ul.mainNavList a:hover::after,
+.colorContainer header .navBox nav ul.mainNavList a:focus::after {
     width: 0%;
   }
-  header .navBox nav ul.mainNavList a:hover,
-header .navBox nav ul.mainNavList a:focus {
+  .colorContainer header .navBox nav ul.mainNavList a:hover,
+.colorContainer header .navBox nav ul.mainNavList a:focus {
     border-bottom: 2px solid #17a2aa;
   }
-  header .navBox nav ul.mainNavList a:active {
+  .colorContainer header .navBox nav ul.mainNavList a:active {
     border-bottom: none;
   }
-
-  .imgBox > a:hover > img,
-.imgBox > a:focus > img {
-    border-top: 8px ridge #e5e8ee;
+  .colorContainer .imgBox > a:hover > img,
+.colorContainer .imgBox > a:focus > img {
+    border-top: 8px;
   }
 }
-.contactFormButton:hover,
-.contactJump .styledButton:hover {
+.colorContainer .contactFormButton:hover,
+.colorContainer .contactJump .styledButton:hover {
   background: linear-gradient(to bottom, #17a3aa 5%, #65a5a8 100%);
   background-color: #17a3aa;
 }
-
-footer .bottom a:active {
+.colorContainer footer .bottom a:active {
   color: #17a2aa;
 }
-footer .bottom a:active svg {
+.colorContainer footer .bottom a:active svg {
   transform: none;
 }
 

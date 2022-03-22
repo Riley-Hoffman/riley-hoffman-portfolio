@@ -1,125 +1,129 @@
-.wrapper {
-    max-width: 1100px;
-    width: 85%;
-    margin: 0 auto;
-}
-
-.mainDiv {
-    display: block;
-    height: 96vh;
-    position: relative;
-}
-
-.sr-only /*:not(:focus):not(:active)*/ {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px); /* future proofing */
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    white-space: nowrap; /* added line */
-}
-
-.flexBox {
-    display: flex;
-}
-
-.black {
-    color: $black;
-}
-
-.white {
-    color: $white;
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none !important;
-}
-
-.static {
-    position: static !important;
-}
-
-.iconContainer.contactJump {
-    align-items: center;
-    color: $white;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
-    button {
-        padding: 10px 20px;
+.colorContainer {
+    .wrapper {
+        max-width: 1100px;
+        width: 85%;
+        margin: 0 auto;
     }
-    button:active {
-        padding: 10px 20px;
+
+    .mainDiv {
+        display: block;
+        height: 96vh;
+        position: relative;
     }
-    svg {
+
+    .sr-only /*:not(:focus):not(:active)*/ {
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px); /* future proofing */
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+        white-space: nowrap; /* added line */
+    }
+
+    .flexBox {
+        display: flex;
+    }
+
+    .black {
+        color: $black !important;
+    }
+
+    .white {
+        color: $white !important;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none !important;
+    }
+
+    .static {
+        position: static !important;
+    }
+    .rotate180 {
+        transform: rotate(180deg);
+    }
+
+    .iconContainer.contactJump {
+        align-items: center;
+        color: $white;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+        button {
+            padding: 10px 20px;
+        }
+        button:active {
+            padding: 10px 20px;
+        }
+        svg {
+            color: $black;
+            font-size: 1.2rem;
+            margin-left: 20px;
+        }
+    }
+
+    .v-enter-active,
+    .v-leave-active {
+        transition: opacity 0.3s ease;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+        opacity: 0;
+    }
+
+    a.whiteOutline:focus {
+        outline: 2px solid $white;
+    }
+
+    a.blackOutline:focus {
+        outline: 2px solid $black;
+    }
+
+    .relativeColumnBox {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+    .relativeColumnBox:not(.projectsRelColBox, .homeRelColBox, .homeBodyRelColBox, .errorRelColBox, .errorNavRelColBox) {
+        background: rgb(229, 232, 238);
+        background: $columnBoxGradient;
+        z-index: 20;
+    }
+
+    .skillsRelColBox {
+        background: rgb(229, 232, 238);
+        background: $columnBoxGradient;
+        z-index: 20;
+    }
+
+    .styledButton {
+        background: $buttonGradient;
+        background-color: rgba(0, 0, 0, 0);
+        background-color: $grayTeal;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 10px 14px -7px #16595c;
         color: $black;
-        font-size: 1.2rem;
-        margin-left: 20px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #469ea3;
+    }
+    .styledButton:active {
+        border: none;
+        outline: none;
     }
 }
-
-.v-enter-active,
-.v-leave-active {
-    transition: opacity 0.3s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 0;
-}
-
-a.whiteOutline:focus {
-    outline: 2px solid $white;
-}
-
-a.blackOutline:focus {
-    outline: 2px solid $black;
-}
-
-.relativeColumnBox {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    position: relative;
-}
-.relativeColumnBox:not(.projectsRelColBox, .homeRelColBox, .homeBodyRelColBox, .errorRelColBox, .errorNavRelColBox) {
-    background: rgb(229, 232, 238);
-    background: $columnBoxGradient;
-    z-index: 20;
-}
-
-.skillsRelColBox {
-    background: rgb(229, 232, 238);
-    background: $columnBoxGradient;
-    z-index: 20;
-}
-
-.styledButton {
-    background: $buttonGradient;
-    background-color: rgba(0, 0, 0, 0);
-    background-color: $grayTeal;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 10px 14px -7px #16595c;
-    color: $black;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #469ea3;
-}
-.styledButton:active {
-    border: none;
-    outline: none;
-}
-
 //  * animate.css - https://animate.style/
 //  * Version - 4.1.1
 //  * Licensed under the MIT license - http://opensource.org/licenses/MIT

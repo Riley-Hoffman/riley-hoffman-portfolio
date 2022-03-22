@@ -1,59 +1,61 @@
-.mainS {
-    height: 97vh;
-}
-.skillsMain {
-    min-height: initial;
-}
-.skills {
-    background-color: $white;
-    padding: 120px 0 75px;
-    .wrapper {
-        .flexBox {
+.colorContainer {
+    .mainS {
+        height: 97vh;
+    }
+    .skillsMain {
+        min-height: initial;
+    }
+    .skills {
+        background-color: $white;
+        padding: 120px 0 75px;
+        .wrapper {
+            .flexBox {
+                align-items: center;
+                flex-direction: column;
+                h1 {
+                    color: $black;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .iconContainer.contactJump {
+            margin-top: 45px;
+        }
+    }
+
+    .noAnimation {
+        animation: none !important;
+    }
+
+    .skillsGallery {
+        display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-top: 20px;
+        width: 80vw;
+        li {
             align-items: center;
-            flex-direction: column;
-            h1 {
-                color: $black;
-                margin-bottom: 30px;
-            }
-        }
-    }
-    .iconContainer.contactJump {
-        margin-top: 75px;
-    }
-}
-
-.noAnimation {
-    animation: none !important;
-}
-
-.skillsGallery {
-    display: grid;
-    grid-row-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    margin-top: 20px;
-    width: 80vw;
-    li {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        .skillsIconBox {
             display: flex;
-            justify-content: center;
-            padding: 0 10px;
-            width: 100%;
-            i,
-            svg {
-                font-size: 2.5rem;
-                text-align: center;
+            flex-direction: column;
+            .skillsIconBox {
+                display: flex;
+                justify-content: center;
+                padding: 0 10px;
                 width: 100%;
+                i,
+                svg {
+                    font-size: 2.5rem;
+                    text-align: center;
+                    width: 100%;
+                }
+                .fa-universal-access {
+                    font-family: 'Font Awesome 5 Free';
+                }
             }
-            .fa-universal-access {
-                font-family: 'Font Awesome 5 Free';
+            p {
+                text-align: center;
             }
-        }
-        p {
-            text-align: center;
         }
     }
 }

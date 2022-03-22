@@ -41,6 +41,43 @@
                         />
                     </ul>
                 </nav>
+                <label class="toggle-wrapper" for="themeInput">
+                    <div class="themeToggleWrapper">
+                        <span class="mode flexBox">
+                            <span
+                                v-bind:class="{
+                                    black:
+                                        $route.path === '/about' ||
+                                        $route.path === '/skills',
+                                }"
+                                aria-hidden="true"
+                                >Light/Dark</span
+                            >
+                            <span class="sr-only">Choose Color Theme.</span>
+                        </span>
+                        <div class="themeToggleBox" :class="enableDisable">
+                            <input
+                                id="themeInput"
+                                name="themeInput"
+                                type="checkbox"
+                                :checked="darkOn"
+                                @click="toggleColor"
+                                @keydown="enterToggle"
+                            />
+                            <span class="flexBox target">
+                                <span class="show" :class="lightsOnOff"
+                                    ><span class="sr-only">{{
+                                        lightDarkLabel
+                                    }}</span>
+                                    <font-awesome-icon
+                                        v-bind:icon="['fa-solid', `${toggle}`]"
+                                        aria-hidden="true"
+                                    />
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
     </header>
@@ -49,11 +86,17 @@
 import routes from '../router'
 import NavLiComponent from './NavLiComponent.vue'
 export default {
-  props: ['main'],
+  props: [
+    'main',
+    'toggleColor',
+    'darkOn',
+    'toggle',
+    'lightsOnOff',
+    'enableDisable',
+    'lightDarkLabel'
+  ],
   data () {
     return {
-      preferDark: window.matchMedia('(prefers-color-scheme: dark)')
-        .matches,
       navRoutes: routes.options.routes
     }
   },
@@ -62,12 +105,12 @@ export default {
   },
   computed: {
     navBarColor () {
-      if (!this.preferDark) {
+      if (!this.darkOn) {
         return 'black'
       } else if (
         (this.$route.path === '/about' ||
                     this.$route.path === '/skills') &&
-                this.preferDark
+                this.darkOn
       ) {
         return 'black'
       }
@@ -83,18 +126,27 @@ export default {
       if (
         (this.$route.path === '/about' ||
                     this.$route.path === '/skills') &&
-                this.preferDark
+                this.darkOn
       ) {
         return 'blackOutline'
       } else if (
         (this.$route.path === '/' ||
                     this.$route.path === '/projects' ||
                     this.$route.path === '/page-not-found') &&
-                this.preferDark
+                this.darkOn
       ) {
         return 'whiteOutline'
       }
       return 'blackOutline'
+    }
+  },
+  methods: {
+    enterToggle (e) {
+      if (e.keyCode === 13) {
+        e.preventDefault()
+        e.stopImmediatePropagation()
+        this.toggleColor()
+      }
     }
   }
 }

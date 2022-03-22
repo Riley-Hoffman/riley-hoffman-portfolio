@@ -1,1216 +1,1269 @@
 /* High Resolution Screens */
-
-// Largest Screens
-@media (max-width: 1680px) and (max-height: 1050px) {
-    header .navBox nav ul a {
-        font-size: 1.2rem;
-        margin: 10px 0;
-    }
-    .relativeColumnBox {
-        .smallFlexBox {
-            .homeButton {
-                font-size: 1.1rem;
-                margin: 25px 0;
-            }
-            a {
-                font-size: 2rem;
-            }
-            a:nth-child(2) {
-                margin-left: 2rem;
-            }
+.colorContainer {
+    // Largest Screens
+    @media (max-width: 1680px) and (max-height: 1050px) {
+        header .navBox nav ul a {
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
-    }
-    .modal {
-        bottom: 15%;
-        max-height: 700px;
-    }
-}
-
-@media (max-width: 1680px) and (max-height: 650px) {
-    .modal.openModal {
-        bottom: 2%;
-        form {
-            .inputBox {
-                flex-direction: row;
-                label:nth-child(2) {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
-}
-
-/* Wide screen tv */
-
-@media (max-width: 1360px) and (max-height: 605px) {
-    .relativeColumnBox {
-        .smallFlexBox {
-            .iconContainer {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .scrollingBackground {
-        background: {
-            image: linear-gradient(
-                    to bottom,
-                    rgba(23, 162, 170, 0) 0%,
-                    rgba(23, 162, 170, 0.2) 100%
-                ),
-                url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-            blend-mode: multiply;
-            size: cover;
-        }
-        opacity: 0.3;
-        position: relative;
-        height: 100%;
-        width: 100%;
-    }
-    .smokeParentContainer {
-        .lightBackground {
-            .smoke {
-                &::before {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-    .modal {
-        bottom: 5%;
-        max-height: 80%;
-        max-width: 50%;
-        form {
-            .inputBox {
-                flex-direction: row;
-                label:nth-of-type(2) {
-                    margin-left: 20px;
-                }
-            }
-        }
-    }
-
-    .mainH + footer {
-        padding-bottom: 25px;
-    }
-}
-
-@media (max-width: 1160px) {
-    .relativeColumnBox .smallFlexBox .homeButton {
-        width: 45%;
-    }
-}
-
-/* Portrait tablet and small desktops */
-@media (max-width: 1030px) {
-    .smallFlexBox button.tealContactButton {
-        width: 60%;
-    }
-    header {
-        .navBox nav {
-            width: 75%;
-        }
-    }
-    .relativeColumnBox {
-        .smallFlexBox {
-            .homeButton {
-                width: 50%;
-            }
-        }
-    }
-
-    .modal {
-        left: 18%;
-        padding: 20px 12px 20px 20px;
-    }
-
-    .mainE + footer {
-        margin-top: 50px;
-    }
-}
-
-// Large Text Resolution Screens hover style
-@media (hover: hover) and (pointer: fine) and (max-width: 1024px) and (max-height: 640px) {
-    .splash {
         .relativeColumnBox {
             .smallFlexBox {
-                .tealContactButton.homeButton:hover {
-                    padding: 16px 3px !important;
+                .homeButton {
+                    font-size: 1.1rem;
+                    margin: 25px 0;
+                }
+                a {
+                    font-size: 2rem;
+                }
+                a:nth-child(2) {
+                    margin-left: 2rem;
+                }
+            }
+        }
+        .modal {
+            bottom: 15%;
+            max-height: 700px;
+        }
+    }
+
+    @media (max-width: 1680px) and (max-height: 650px) {
+        .modal.openModal {
+            bottom: 2%;
+            form {
+                .inputBox {
+                    flex-direction: row;
+                    label:nth-child(2) {
+                        margin-left: 0;
+                    }
                 }
             }
         }
     }
-}
 
-/* Large Text Resolution Screens */
-@media (max-width: 1024px) and (max-height: 640px) {
-    .splash h1 {
-        font-size: 1.7rem;
-    }
+    /* Wide screen tv */
 
-    .splash .animate__backInLeft {
-        font-size: 1.5rem;
-    }
-
-    .splash h1 {
-        margin-bottom: 7px;
-    }
-
-    .relativeColumnBox .smallFlexBox .homeButton {
-        font-size: 0.9rem;
-        padding: 18px 5px;
-    }
-
-    .contactWrapper .contactIcons {
-        font-size: 1.8rem;
-    }
-    .modal {
-        bottom: 20px;
-        max-width: 58%;
-        form {
-            .inputBox {
-                justify-content: space-between;
-                flex-direction: row;
-                label:nth-of-type(2) {
-                    margin-left: 20px;
+    @media (max-width: 1360px) and (max-height: 605px) {
+        .relativeColumnBox {
+            .smallFlexBox {
+                .iconContainer {
+                    margin-bottom: 0;
                 }
             }
         }
-    }
-}
-
-// Footer and Form Control
-@media (max-width: 1020px) {
-    .mainA + footer,
-    .mainP + footer,
-    .mainS + footer,
-    .mainE + footer {
-        .bottom {
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-    .mainH + footer {
-        .bottom {
-            a {
-                max-width: 12%;
-                padding-top: 2px;
+        .scrollingBackground {
+            background: {
+                image: linear-gradient(
+                        to bottom,
+                        rgba(23, 162, 170, 0) 0%,
+                        rgba(23, 162, 170, 0.2) 100%
+                    ),
+                    url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+                blend-mode: multiply;
+                size: cover;
             }
+            opacity: 0.3;
+            position: relative;
+            height: 100%;
+            width: 100%;
         }
-    }
-    form {
-        .inputBox {
-            align-items: flex-start;
-            flex-direction: column;
-            label {
-                text-align: left;
-            }
-            input {
-                width: 89%;
-            }
-        }
-    }
-    .contactWrapper {
-        width: 90%;
-    }
-    label[for='email'] {
-        margin-left: 0;
-    }
-    .modal {
-        background-color: rgba(199, 231, 233, 0.95);
-    }
-    .contactWrapper,
-    .modal {
-        max-height: 100%;
-        padding-top: 2px;
-        .modalClose {
-            margin-left: 2px;
-            top: 8.5px;
-        }
-        form {
-            padding: 15px 0 25px;
-            .inputBox {
-                input {
-                    width: 100%;
-                }
-                input[name='name'] {
-                    margin-right: 0;
+        .smokeParentContainer {
+            .lightBackground {
+                .smoke {
+                    &::before {
+                        opacity: 1;
+                    }
                 }
             }
         }
-    }
-}
-
-// Small tablet landscape (800x600)
-@media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
-    .modal {
-        bottom: 2%;
-        min-height: initial;
-        max-height: 590px;
-        padding-bottom: 15px;
-        form {
-            padding-bottom: 0;
-        }
-    }
-}
-
-/* Landscape phone to portrait tablet */
-
-@media (max-width: 780px) {
-    .mainDiv {
-        height: initial;
-    }
-    section {
-        height: 100%;
-    }
-    .modal {
-        left: 25px;
-    }
-    .modal {
-        max-width: 100%;
-        min-height: 565px;
-        form {
-            .contactFormButton {
-                margin-top: 8px;
-                width: 56%;
-            }
-        }
-    }
-    .line {
-        margin: -9px 0 0;
-    }
-    .about,
-    .skills,
-    .projects,
-    .errorSection {
-        padding-top: 232px !important;
-    }
-    .about {
-        padding-bottom: 83px;
-        > .wrapper:not(.iconContainer.contactJump) {
-            align-items: center;
-            flex-direction: column;
-            .about1 {
-                align-items: center;
-                width: 100%;
-                > div {
-                    width: 75%;
-                }
-                figure {
-                    align-items: center;
-                    max-width: 55%;
-                }
-                .aboutH1box {
-                    margin-bottom: 30px;
-                }
-            }
-
-            .about2 {
-                width: 90%;
-                p {
-                    align-self: flex-end;
-                    width: 90%;
-                }
-                p::after {
-                    left: 14%;
+        .modal {
+            bottom: 5%;
+            max-height: 80%;
+            max-width: 50%;
+            form {
+                .inputBox {
+                    flex-direction: row;
+                    label:nth-of-type(2) {
+                        margin-left: 20px;
+                    }
                 }
             }
         }
-        .iconContainer.contactJump {
-            margin-top: 48px;
+
+        .mainH + footer {
+            padding-bottom: 25px;
         }
     }
 
-    .splash .smallFlexBox {
-        margin-top: 20px;
-        width: 100%;
-
-        .iconContainer {
-            display: none;
+    @media (max-width: 1160px) {
+        .relativeColumnBox .smallFlexBox .homeButton {
+            width: 45%;
         }
     }
 
-    .relativeColumnBox .smallFlexBox .homeButton {
-        width: 40%;
-    }
-
-    header {
-        height: 20vh;
-        min-height: 130px;
-        .favLink {
-            display: none;
+    /* Portrait tablet and small desktops */
+    @media (max-width: 1030px) {
+        .smallFlexBox button.tealContactButton {
+            width: 60%;
+        }
+        header {
+            .navBox nav {
+                width: 75%;
+            }
         }
         .relativeColumnBox {
-            justify-content: center;
-        }
-        .navBox {
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: space-between;
-            margin: 0;
-            nav {
-                width: 100%;
-                ul.mainNavList {
-                    display: grid;
-                    grid-row-gap: 20px;
-                    grid-template-columns: 1fr 1fr;
-                    width: 100%;
-                    li {
-                        display: flex;
-                        .aboutLink {
-                            .me {
-                                display: none;
-                            }
-                            .sr-only {
-                                display: inline;
-                            }
-                        }
-                    }
-                    .col2 {
-                        padding-left: 35px;
-                    }
-                }
-                .contactIcons {
-                    display: none;
+            .smallFlexBox {
+                .homeButton {
+                    width: 50%;
                 }
             }
         }
-    }
-    .projects {
-        padding: 85px 0 40px;
-        .projectBox {
-            flex-direction: column;
-            .imgBox {
-                img {
-                    margin-top: 50px;
-                }
-                .oval {
-                    display: none;
-                }
-                a:hover > img,
-                a:focus > img {
-                    border-top: 8px ridge;
-                }
-            }
 
-            .projectInfo a:last-of-type {
-                margin-left: 30px;
-                margin-right: auto;
-            }
-
-            .projectInfo a:first-of-type {
-                margin-left: auto;
-                margin-right: 30px;
-            }
+        .modal {
+            left: 18%;
+            padding: 20px 12px 20px 20px;
         }
-    }
 
-    .projectInfo p {
-        margin-bottom: 50px;
-    }
-
-    .projectInfo:nth-child(even),
-    .projectInfo:nth-child(odd) {
-        padding: 0;
-        text-align: center;
-    }
-    .skills .wrapper .flexBox h1 {
-        align-self: flex-start;
-        margin-left: 40px;
-    }
-
-    .mainH + footer {
-        width: initial;
-    }
-
-    footer {
-        padding: 0 0 20px;
-    }
-
-    .splash .smallFlexBox {
-        margin-top: 0;
-    }
-
-    .errorHeader {
-        height: 21vh;
-        padding: 30px 0;
-    }
-
-    .errorSection {
-        padding: 0;
-        .errorContentBox {
-            flex-direction: column;
-            justify-content: center;
-            margin: 40px auto 0px;
-            .errorIcon {
-                max-width: 40%;
-            }
-            .errorP {
-                margin: 40px auto 50px;
-                text-align: center;
-            }
-        }
-    }
-}
-
-// Splash Elements Control
-
-@media (max-width: 780px) and (max-height: 575px) {
-    .mainH + footer {
-        display: none !important;
-    }
-    .modal {
-        top: 0;
-    }
-    .splash {
-        .smallFlexBox {
+        .mainE + footer {
             margin-top: 50px;
         }
     }
-}
 
-// Modal position control
-@media (max-height: 720px) {
-    .modal {
-        bottom: 2%;
-        max-height: 600px;
-        padding-bottom: 20px;
-        form {
-            padding-bottom: 0;
-        }
-    }
-}
-
-@media (max-height: 543px) {
-    .modal {
-        form {
-            .inputBox {
-                justify-content: space-between;
-                flex-direction: row;
-                label:nth-of-type(2) {
-                    margin-left: 20px;
-                }
-            }
-        }
-    }
-}
-
-// Footer Control
-@media (max-width: 680px) {
-    .mainA + footer,
-    .mainP + footer,
-    .mainS + footer,
-    .mainE + footer {
-        flex-direction: column;
-        align-items: center;
-        .bottom {
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            p {
-                padding: 0;
-            }
-            a {
-                margin: 0;
-            }
-        }
-    }
-    .mainH + footer {
-        .bottom {
-            p {
-                padding: 0;
-                margin: 0 20px;
-            }
-        }
-    }
-
-    .modal {
-        bottom: 10%;
-    }
-    form {
-        .contactFormButton {
-            margin-top: 40px;
-        }
-    }
-}
-
-@media (max-width: 769px) and (max-height: 639px) {
-    .modal {
-        bottom: 13%;
-        min-height: initial;
-        max-height: 80%;
-        max-width: 50%;
-    }
-}
-
-/* Medium phones and down */
-@media (max-width: 650px) {
-    .line {
-        margin: -9px 0 0;
-    }
-
-    .about1 > p:nth-child(2) {
-        font-size: 2rem;
-    }
-
-    h2.target:nth-child(3) {
-        font-size: 2rem;
-    }
-
-    p.target:nth-child(1) {
-        font-size: 1.2rem;
-        padding-top: 20px;
-    }
-
-    .relativeColumnBox .smallFlexBox .homeButton {
-        width: 46%;
-    }
-
-    .about {
-        > .wrapper {
-            .about1 {
-                align-items: flex-start;
-                > div {
-                    margin-top: 0;
-                    width: 100%;
-                }
-                figure {
-                    max-width: 82%;
-                    align-items: flex-start;
-                }
-            }
-            .about2 {
-                width: 100%;
-                p {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    .skillsGallery {
-        grid-template-columns: 1fr 1fr;
-        p {
-            font-size: 18px;
-        }
-    }
-    .splash .smallFlexBox {
-        height: 45vh;
-    }
-
-    header .navBox {
-        margin-top: 20px;
-    }
-    .modal.openModal {
-        bottom: 10%;
-        max-width: 100%;
-        min-width: 0;
-        form {
-            .inputBox {
-                flex-direction: column;
-            }
-        }
-    }
-
-    .mainH + footer {
-        .bottom {
-            a {
-                align-self: flex-end;
-                margin: 0;
-                max-width: 17%;
-            }
-        }
-    }
-}
-
-// Phone landscape
-@media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-    .splash .relativeColumnBox h1 {
-        font-size: 1.6rem;
-        margin: 55px 0 0;
-    }
-
-    .modal {
-        bottom: -100;
-        top: auto;
-        min-height: 400px;
-        padding: 11px 12px 9px 20px;
-        bottom: -100px;
-        left: 0;
-        right: 20px;
-        form {
-            padding: 15px 0 20px;
-        }
-    }
-
-    .smallFlexBox {
-        position: relative;
-        p.animate__backInLeft {
-            font-size: 1.4rem;
-        }
-        button.tealContactButton {
-            position: absolute;
-            right: 0;
-            width: 25%;
-            .me {
-                display: none;
-            }
-            .fa-long-arrow-alt-right {
-                display: none;
-            }
-        }
-    }
-    .about {
-        padding-top: 115px;
-    }
-    footer {
-        .contactWrapper {
-            padding: 65px 0 60px;
-        }
-    }
-    .splash {
-        .relativeColumnBox {
-            .smallFlexBox {
-                .tealContactButton {
-                    left: 75%;
-                    top: 55%;
-                    padding: 15px 0;
-                    width: 30%;
-                }
-            }
-        }
-        .contactWrapper {
-            display: none;
-        }
-    }
-}
-
-// Phone Landscape window size hover styles
-@media screen and (hover: hover) and (pointer: fine) and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
-    .splash {
-        .relativeColumnBox {
-            .smallFlexBox {
-                .tealContactButton.homeButton:hover {
-                    padding: 14px 0 !important;
-                }
-            }
-        }
-    }
-}
-
-// Contact Button Control
-
-@media (max-width: 620px) {
-    .relativeColumnBox .smallFlexBox .homeButton {
-        width: 44%;
-    }
-}
-
-// Modal control
-
-@media (max-width: 680px) {
-    .modal {
-        top: 37px;
-        max-height: 609px;
-        min-height: 609px;
-        form {
-            .inputBox {
-                flex-direction: column;
-                label:nth-of-type(2) {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
-}
-
-/* Small phones */
-@media (max-width: 500px) {
-    header {
-        font-size: 0.8rem;
-        background-position-x: -33vw;
-        a {
-            font-size: 0.95rem;
-        }
-        nav {
-            letter-spacing: 1.5px;
-        }
-    }
-
-    .smallFlexBox {
-        button.tealContactButton {
-            font-size: 0.8rem;
-            padding: 15px 0;
-        }
-    }
-
-    .projectInfo:nth-child(even),
-    .projectInfo:nth-child(odd) {
-        text-align: left;
-    }
-
-    .mainH + footer {
-        align-items: center;
-        left: 0;
-        right: auto;
-        .bottom {
-            align-items: flex-start;
-            justify-content: space-between;
-            .webDeveloper {
-                display: block;
-            }
-
-            .verticalLine {
-                display: none;
-            }
-            p {
-                margin: 0;
-            }
-        }
-    }
-
-    .formBackground {
-        .fieldsetBox {
-            padding: 0 11px;
-        }
-    }
-}
-
-// Tall phones
-
-@media (min-width: 410px) and (min-height: 875px) {
-    header {
-        .navBox {
-            nav {
-                ul {
-                    a {
-                        font-size: 1.4rem;
+    // Large Text Resolution Screens hover style
+    @media (hover: hover) and (pointer: fine) and (max-width: 1024px) and (max-height: 640px) {
+        .splash {
+            .relativeColumnBox {
+                .smallFlexBox {
+                    .tealContactButton.homeButton:hover {
+                        padding: 16px 3px !important;
                     }
                 }
             }
         }
     }
 
-    .relativeColumnBox {
-        .smallFlexBox {
-            .homeButton {
-                font-size: 1.1rem;
-            }
+    /* Large Text Resolution Screens */
+    @media (max-width: 1024px) and (max-height: 640px) {
+        .splash h1 {
+            font-size: 1.7rem;
         }
-    }
 
-    .splash {
-        .outlined {
+        .splash .animate__backInLeft {
+            font-size: 1.5rem;
+        }
+
+        .splash h1 {
+            margin-bottom: 7px;
+        }
+
+        .relativeColumnBox .smallFlexBox .homeButton {
+            font-size: 0.9rem;
+            padding: 18px 5px;
+        }
+
+        .contactWrapper .contactIcons {
             font-size: 1.8rem;
         }
-        .contactWrapper {
-            a {
-                font-size: 2.4rem;
-            }
-        }
-    }
-    .mainH + footer {
-        .bottom {
-            flex-direction: row;
-        }
-    }
-    footer {
-        .bottom {
-            a {
-                font-size: 1.1rem;
-                svg {
-                    font-size: 0.9rem;
+        .modal {
+            bottom: 20px;
+            max-width: 58%;
+            form {
+                .inputBox {
+                    justify-content: space-between;
+                    flex-direction: row;
+                    label:nth-of-type(2) {
+                        margin-left: 20px;
+                    }
                 }
             }
         }
     }
-}
 
-// Medium Tall Phones
-@media (min-width: 410px) and (min-height: 760px) {
-    .relativeColumnBox {
-        .smallFlexBox {
-            .homeButton {
-                font-size: 1.1rem;
-                margin: 20px 0;
+    // Footer and Form Control
+    @media (max-width: 1020px) {
+        .mainA + footer,
+        .mainP + footer,
+        .mainS + footer,
+        .mainE + footer {
+            .bottom {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        .mainH + footer {
+            .bottom {
+                a {
+                    max-width: 12%;
+                    padding-top: 2px;
+                }
+            }
+        }
+        form {
+            .inputBox {
+                align-items: flex-start;
+                flex-direction: column;
+                label {
+                    text-align: left;
+                }
+                input {
+                    width: 89%;
+                }
+            }
+        }
+        .contactWrapper {
+            width: 90%;
+        }
+        label[for='email'] {
+            margin-left: 0;
+        }
+        .modal {
+            background-color: rgba(199, 231, 233, 0.95);
+        }
+        .contactWrapper,
+        .modal {
+            max-height: 100%;
+            padding-top: 2px;
+            .modalClose {
+                margin-left: 2px;
+                top: 8.5px;
+            }
+            form {
+                padding: 15px 0 25px;
+                .inputBox {
+                    input {
+                        width: 100%;
+                    }
+                    input[name='name'] {
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
-}
-/* Smallest phones */
-@media (max-width: 365px) and (max-height: 640px) {
-    h1 {
-        font-size: 1.8rem;
+
+    // Small tablet landscape (800x600)
+    @media screen and (orientation: landscape) and (max-width: 900px) and (max-height: 700px) {
+        .modal {
+            bottom: 2%;
+            min-height: initial;
+            max-height: 590px;
+            padding-bottom: 15px;
+            form {
+                padding-bottom: 0;
+            }
+        }
     }
 
-    header {
-        .navBox {
-            margin-top: 10px;
-            nav {
-                ul {
-                    li {
-                        a {
-                            font-size: 0.8rem;
+    /* Landscape phone to portrait tablet */
+
+    @media (max-width: 780px) {
+        .mainDiv {
+            height: initial;
+        }
+        section {
+            height: 100%;
+        }
+        .modal {
+            left: 25px;
+        }
+        .modal {
+            max-width: 100%;
+            min-height: 565px;
+            form {
+                .contactFormButton {
+                    margin-top: 8px;
+                    width: 56%;
+                }
+            }
+        }
+        .line {
+            margin: -9px 0 0;
+        }
+        .about,
+        .skills,
+        .projects,
+        .errorSection {
+            padding-top: 232px !important;
+        }
+        .about {
+            padding-bottom: 83px;
+            > .wrapper:not(.iconContainer.contactJump) {
+                align-items: center;
+                flex-direction: column;
+                .about1 {
+                    align-items: center;
+                    width: 100%;
+                    > div {
+                        width: 75%;
+                    }
+                    figure {
+                        align-items: center;
+                        max-width: 55%;
+                    }
+                    .aboutH1box {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .about2 {
+                    width: 90%;
+                    p {
+                        align-self: flex-end;
+                        width: 90%;
+                    }
+                    p::after {
+                        left: 14%;
+                    }
+                }
+            }
+            .iconContainer.contactJump {
+                margin-top: 48px;
+            }
+        }
+
+        .splash .smallFlexBox {
+            margin-top: 20px;
+            width: 100%;
+
+            .iconContainer {
+                display: none;
+            }
+        }
+
+        .relativeColumnBox .smallFlexBox .homeButton {
+            width: 40%;
+        }
+
+        header {
+            height: 20vh;
+            min-height: 130px;
+            a.favLink.show[href='/'] {
+                display: none;
+            }
+            .relativeColumnBox {
+                justify-content: center;
+            }
+            .navBox {
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 0;
+                nav {
+                    width: 100%;
+                    ul.mainNavList {
+                        display: grid;
+                        grid-row-gap: 20px;
+                        grid-template-columns: 1fr 1fr;
+                        width: 100%;
+                        li {
+                            display: flex;
+                            .aboutLink {
+                                .me {
+                                    display: none;
+                                }
+                                .sr-only {
+                                    display: inline;
+                                }
+                            }
+                        }
+                        .col2 {
+                            padding-left: 35px;
+                        }
+                    }
+                    .contactIcons {
+                        display: none;
+                    }
+                }
+                .toggle-wrapper {
+                    right: 50px;
+                    top: 7px;
+                    .themeToggleWrapper {
+                        margin-left: 0;
+                        svg {
+                            margin: none;
                         }
                     }
                 }
             }
         }
-    }
+        .projects {
+            padding: 85px 0 40px;
+            .projectBox {
+                flex-direction: column;
+                .imgBox {
+                    img {
+                        margin-top: 50px;
+                    }
+                    .oval {
+                        display: none;
+                    }
+                    a:hover > img,
+                    a:focus > img {
+                        border-top: 8px ridge;
+                    }
+                }
 
-    .splash {
-        .contactWrapper {
-            display: none;
-        }
-    }
-    .smallFlexBox {
-        span.animate__backInLeft {
-            font-size: 1.5rem;
-        }
-    }
-    .formBackground {
-        padding: 30px 0px 30px 11px;
-        form {
-            width: 95%;
-        }
-    }
-    footer {
-        flex-direction: column;
-        .contactWrapper {
-            align-items: flex-start;
-            margin: 10px 0;
-            width: 320px;
-            > a {
-                font-size: 0.8rem;
+                .projectInfo a:last-of-type {
+                    margin-left: 30px;
+                    margin-right: auto;
+                }
+
+                .projectInfo a:first-of-type {
+                    margin-left: auto;
+                    margin-right: 30px;
+                }
             }
         }
-        .bottom {
+
+        .projectInfo p {
+            margin-bottom: 50px;
+        }
+
+        .projectInfo:nth-child(even),
+        .projectInfo:nth-child(odd) {
+            padding: 0;
+            text-align: center;
+        }
+        .skills .wrapper .flexBox h1 {
+            align-self: flex-start;
+            margin-left: 40px;
+        }
+
+        .mainH + footer {
             width: initial;
+        }
+
+        footer {
+            padding: 0 0 20px;
+        }
+
+        .splash .smallFlexBox {
+            margin-top: 0;
+        }
+
+        .errorHeader {
+            height: 21vh;
+            padding: 30px 0;
+        }
+
+        .errorSection {
+            padding: 0;
+            .errorContentBox {
+                flex-direction: column;
+                justify-content: center;
+                margin: 40px auto 0px;
+                .errorIcon {
+                    max-width: 40%;
+                }
+                .errorP {
+                    margin: 40px auto 50px;
+                    text-align: center;
+                }
+            }
         }
     }
 
-    .mainA + footer,
-    .mainP + footer,
-    .mainS + footer,
-    .mainE + footer {
-        .bottom {
+    // Splash Elements Control
+
+    @media (max-width: 780px) and (max-height: 575px) {
+        .mainH + footer {
+            display: none !important;
+        }
+        .modal {
+            top: 0;
+        }
+        .splash {
+            .smallFlexBox {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    // Modal position control
+    @media (max-height: 720px) {
+        .modal {
+            bottom: 2%;
+            max-height: 600px;
+            padding-bottom: 20px;
+            form {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    @media (max-height: 543px) {
+        .modal {
+            form {
+                .inputBox {
+                    justify-content: space-between;
+                    flex-direction: row;
+                    label:nth-of-type(2) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Footer Control
+    @media (max-width: 680px) {
+        .mainA + footer,
+        .mainP + footer,
+        .mainS + footer,
+        .mainE + footer {
+            flex-direction: column;
+            align-items: center;
+            .bottom {
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                p {
+                    padding: 0;
+                }
+                a {
+                    margin: 0;
+                }
+            }
+        }
+        .mainH + footer {
+            .bottom {
+                p {
+                    padding: 0;
+                    margin: 0 20px;
+                }
+            }
+        }
+
+        .modal {
+            bottom: 10%;
+        }
+        form {
+            .contactFormButton {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 769px) and (max-height: 639px) {
+        .modal {
+            bottom: 13%;
+            min-height: initial;
+            max-height: 80%;
+            max-width: 50%;
+        }
+    }
+
+    /* Medium phones and down */
+    @media (max-width: 650px) {
+        .line {
+            margin: -9px 0 0;
+        }
+
+        .about1 > p:nth-child(2) {
+            font-size: 2rem;
+        }
+
+        h2.target:nth-child(3) {
+            font-size: 2rem;
+        }
+
+        p.target:nth-child(1) {
+            font-size: 1.2rem;
+            padding-top: 20px;
+        }
+
+        .relativeColumnBox .smallFlexBox .homeButton {
+            width: 46%;
+        }
+
+        .about {
+            > .wrapper {
+                .about1 {
+                    align-items: flex-start;
+                    > div {
+                        margin-top: 0;
+                        width: 100%;
+                    }
+                    figure {
+                        max-width: 82%;
+                        align-items: flex-start;
+                    }
+                }
+                .about2 {
+                    width: 100%;
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .skillsGallery {
+            grid-template-columns: 1fr 1fr;
             p {
-                padding: 0;
-                span {
+                font-size: 18px;
+            }
+        }
+        .splash .smallFlexBox {
+            height: 45vh;
+        }
+
+        header {
+            .navBox {
+                margin-top: 20px;
+                button.styledButton.lightDarkButton {
+                    min-height: 50px;
+                    min-width: 27px;
+                    span.mode:first-of-type,
+                    span.flexBox:nth-of-type(2) {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    .mode {
+                        span {
+                            display: none !important;
+                        }
+                    }
+                    span.flexBox {
+                        > span.show.lightsOff {
+                            left: initial;
+                            right: 75%;
+                        }
+                        > span.show.lightsOn {
+                            right: initial;
+                            left: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal.openModal {
+            bottom: 10%;
+            max-width: 100%;
+            min-width: 0;
+            form {
+                .inputBox {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .mainH + footer {
+            .bottom {
+                a {
+                    align-self: flex-end;
+                    margin: 0;
+                    max-width: 17%;
+                }
+            }
+        }
+    }
+
+    // Phone landscape
+    @media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
+        .splash .relativeColumnBox h1 {
+            font-size: 1.6rem;
+            margin: 55px 0 0;
+        }
+
+        .modal {
+            bottom: -100;
+            top: auto;
+            min-height: 400px;
+            padding: 11px 12px 9px 20px;
+            bottom: -100px;
+            left: 0;
+            right: 20px;
+            form {
+                padding: 15px 0 20px;
+            }
+        }
+
+        .smallFlexBox {
+            position: relative;
+            p.animate__backInLeft {
+                font-size: 1.4rem;
+            }
+            button.tealContactButton {
+                position: absolute;
+                right: 0;
+                width: 25%;
+                .me {
                     display: none;
                 }
+                .fa-long-arrow-alt-right {
+                    display: none;
+                }
+            }
+        }
+        .about {
+            padding-top: 115px;
+        }
+        footer {
+            .contactWrapper {
+                padding: 65px 0 60px;
+            }
+        }
+        .splash {
+            .relativeColumnBox {
+                .smallFlexBox {
+                    .tealContactButton {
+                        left: 75%;
+                        top: 55%;
+                        padding: 15px 0;
+                        width: 30%;
+                    }
+                }
+            }
+            .contactWrapper {
+                display: none;
+            }
+        }
+    }
+
+    // Phone Landscape window size hover styles
+    @media screen and (hover: hover) and (pointer: fine) and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
+        .splash {
+            .relativeColumnBox {
+                .smallFlexBox {
+                    .tealContactButton.homeButton:hover {
+                        padding: 14px 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contact Button Control
+
+    @media (max-width: 620px) {
+        .relativeColumnBox .smallFlexBox .homeButton {
+            width: 44%;
+        }
+    }
+
+    // Modal control
+
+    @media (max-width: 680px) {
+        .modal {
+            top: 37px;
+            max-height: 609px;
+            min-height: 609px;
+            form {
+                .inputBox {
+                    flex-direction: column;
+                    label:nth-of-type(2) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Small phones */
+    @media (max-width: 500px) {
+        header {
+            font-size: 0.8rem;
+            background-position-x: -33vw;
+            a {
+                font-size: 0.95rem;
+            }
+            nav {
+                letter-spacing: 1.5px;
+            }
+        }
+
+        .smallFlexBox {
+            button.tealContactButton {
+                font-size: 0.8rem;
+                padding: 15px 0;
+            }
+        }
+
+        .projectInfo:nth-child(even),
+        .projectInfo:nth-child(odd) {
+            text-align: left;
+        }
+
+        .mainH + footer {
+            align-items: center;
+            left: 0;
+            right: auto;
+            .bottom {
+                align-items: flex-start;
+                justify-content: space-between;
                 .webDeveloper {
                     display: block;
                 }
-            }
-        }
-    }
-    .modal {
-        min-width: 300px;
-        padding-bottom: 0;
-        top: 10%;
-        form {
-            padding-bottom: 0;
-            .inputBox {
-                flex-direction: column;
-                label:nth-of-type(2) {
-                    margin-left: 0;
+
+                .verticalLine {
+                    display: none;
+                }
+                p {
+                    margin: 0;
                 }
             }
+        }
+
+        .formBackground {
             .fieldsetBox {
-                width: 87%;
-                padding: 0;
-                margin: 0 0 0 10px;
-            }
-            .contactFormButton {
-                width: 67%;
+                padding: 0 11px;
             }
         }
     }
-}
 
-// Tiny Phone
-@media (max-width: 350px) {
-    .modal {
-        min-width: 2px !important;
-        width: 84%;
-        min-height: 575px;
-        padding-bottom: 0;
-        padding-left: 5px;
-        top: 9%;
-        .modalClose {
-            margin-left: 18px;
-        }
-        form {
-            padding-bottom: 0;
-            .fieldsetBox {
-                padding-top: 10px;
-                margin: 0 15px;
-                width: 70%;
-            }
-            .inputBox {
-                width: 100%;
-            }
-        }
-    }
-}
+    // Tall phones
 
-// Hover/Active Styles only when device is not a touchscreen
-
-@media (hover: hover) and (pointer: fine) {
-    header {
-        .navBox {
-            nav {
-                ul.mainNavList {
-                    a:hover {
-                        outline: none;
-                    }
-                    a:hover::after {
-                        width: 100%;
-                    }
-                    a:hover::before {
-                        width: 95%;
-                    }
-                    a:active::after {
-                        -webkit-transition: 0.1s $navLinkTransition;
-                        -o-transition: 0.1s $navLinkTransition;
-                        transition: 0.1s $navLinkTransition;
-                        width: 0;
+    @media (min-width: 410px) and (min-height: 875px) {
+        header {
+            .navBox {
+                nav {
+                    ul {
+                        a {
+                            font-size: 1.4rem;
+                        }
                     }
                 }
             }
         }
-    }
 
-    .splash {
         .relativeColumnBox {
             .smallFlexBox {
-                a:hover .target {
-                    text-decoration: underline;
+                .homeButton {
+                    font-size: 1.1rem;
                 }
-                a:active .target {
-                    text-decoration: none;
+            }
+        }
+
+        .splash {
+            .outlined {
+                font-size: 1.8rem;
+            }
+            .contactWrapper {
+                a {
+                    font-size: 2.4rem;
                 }
-                a:active {
-                    outline: none;
-                }
-                .contactIcons {
-                    a:hover svg {
-                        box-shadow: $buttonHoverGlow;
-                        color: $teal;
+            }
+        }
+        .mainH + footer {
+            .bottom {
+                flex-direction: row;
+            }
+        }
+        footer {
+            .bottom {
+                a {
+                    font-size: 1.1rem;
+                    svg {
+                        font-size: 0.9rem;
                     }
-                    a:active svg {
-                        color: $white;
+                }
+            }
+        }
+    }
+
+    // Medium Tall Phones
+    @media (min-width: 410px) and (min-height: 760px) {
+        .relativeColumnBox {
+            .smallFlexBox {
+                .homeButton {
+                    font-size: 1.1rem;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+    /* Smallest phones */
+    @media (max-width: 365px) and (max-height: 640px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        header {
+            .navBox {
+                margin-top: 10px;
+                nav {
+                    ul {
+                        li {
+                            a {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .splash {
+            .contactWrapper {
+                display: none;
+            }
+        }
+        .smallFlexBox {
+            span.animate__backInLeft {
+                font-size: 1.5rem;
+            }
+        }
+        .formBackground {
+            padding: 30px 0px 30px 11px;
+            form {
+                width: 95%;
+            }
+        }
+        footer {
+            flex-direction: column;
+            .contactWrapper {
+                align-items: flex-start;
+                margin: 10px 0;
+                width: 320px;
+                > a {
+                    font-size: 0.8rem;
+                }
+            }
+            .bottom {
+                width: initial;
+            }
+        }
+
+        .mainA + footer,
+        .mainP + footer,
+        .mainS + footer,
+        .mainE + footer {
+            .bottom {
+                p {
+                    padding: 0;
+                    span {
+                        display: none;
+                    }
+                    .webDeveloper {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .modal {
+            min-width: 300px;
+            padding-bottom: 0;
+            top: 10%;
+            form {
+                padding-bottom: 0;
+                .inputBox {
+                    flex-direction: column;
+                    label:nth-of-type(2) {
+                        margin-left: 0;
+                    }
+                }
+                .fieldsetBox {
+                    width: 87%;
+                    padding: 0;
+                    margin: 0 0 0 10px;
+                }
+                .contactFormButton {
+                    width: 67%;
+                }
+            }
+        }
+    }
+
+    // Tiny Phone
+    @media (max-width: 350px) {
+        .modal {
+            min-width: 2px !important;
+            width: 84%;
+            min-height: 575px;
+            padding-bottom: 0;
+            padding-left: 5px;
+            top: 9%;
+            .modalClose {
+                margin-left: 18px;
+            }
+            form {
+                padding-bottom: 0;
+                .fieldsetBox {
+                    padding-top: 10px;
+                    margin: 0 15px;
+                    width: 70%;
+                }
+                .inputBox {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Hover/Active Styles only when device is not a touchscreen
+
+    @media (hover: hover) and (pointer: fine) {
+        header {
+            .navBox {
+                nav {
+                    ul.mainNavList {
+                        a:hover {
+                            outline: none;
+                        }
+                        a:hover::after {
+                            width: 100%;
+                        }
+                        a:hover::before {
+                            width: 95%;
+                        }
+                        a:active::after {
+                            -webkit-transition: 0.1s $navLinkTransition;
+                            -o-transition: 0.1s $navLinkTransition;
+                            transition: 0.1s $navLinkTransition;
+                            width: 0;
+                        }
+                    }
+                }
+                .themeToggleBox:hover::before {
+                    box-shadow: inset 5px 5px 22px 5px rgba(0, 5, 15, 0.52);
+                }
+            }
+            .styledButton:active {
+                border: 1px solid $teal;
+            }
+        }
+
+        .splash {
+            .relativeColumnBox {
+                .smallFlexBox {
+                    a:hover .target {
+                        text-decoration: underline;
+                    }
+                    a:active .target {
+                        text-decoration: none;
                     }
                     a:active {
                         outline: none;
                     }
-                }
-                .tealContactButton:hover {
-                    box-shadow: $buttonHoverGlow;
-                    padding: 20px 3px;
+                    .contactIcons {
+                        .contactIcon:hover svg {
+                            box-shadow: $buttonHoverGlow;
+                            color: $teal;
+                        }
+                        .contactIcon:active svg {
+                            color: $white;
+                        }
+                        .contactIcon:active {
+                            outline: none;
+                        }
+                    }
+                    .tealContactButton:hover {
+                        box-shadow: $buttonHoverGlow;
+                        padding: 20px 3px;
+                    }
+                    .tealContactButton:active {
+                        outline: none;
+                    }
                 }
             }
         }
-    }
 
-    .projectInfo {
-        a:hover {
-            opacity: 0.6;
-        }
-        a:active {
-            opacity: 1;
-        }
-    }
-
-    .imgBox > a:hover > img {
-        transition: border-top 0.5s;
-    }
-
-    .imgBox > a:active > img {
-        z-index: auto;
-    }
-
-    .skillsGallery {
-        li:hover .skillsIconBox:hover {
-            animation: spin $skillAnimationTime;
-            -webkit-animation: spin $skillAnimationTime;
-        }
-    }
-
-    footer {
-        .contactWrapper {
+        .projectInfo {
+            a:hover {
+                opacity: 0.6;
+            }
             a:active {
-                outline: none;
-            }
-            .fa-linkedin:hover,
-            .fa-github:hover {
-                color: $teal;
+                opacity: 1;
             }
         }
-        .bottom {
-            .resume:active {
-                svg {
-                    transform: translateY(2px);
+
+        .imgBox > a:hover > img {
+            transition: border-top 0.5s;
+        }
+
+        .skillsGallery {
+            li:hover .skillsIconBox:hover {
+                animation: spin $skillAnimationTime;
+                -webkit-animation: spin $skillAnimationTime;
+            }
+        }
+
+        footer {
+            .contactWrapper {
+                .contactIcons {
+                    .contactIcon:active {
+                        outline: none;
+                        svg.fa-linkedin,
+                        svg.fa-github {
+                            color: $white;
+                        }
+                    }
+                    .contactIcon:hover {
+                        outline: none;
+                        .fa-linkedin,
+                        .fa-github {
+                            color: $teal;
+                        }
+                    }
+                }
+            }
+            .bottom {
+                .resume:active {
+                    svg {
+                        transform: translateY(2px);
+                    }
                 }
             }
         }
-    }
 
-    button.modalClose:active {
-        transform: translateY(2px);
-        outline: none !important;
-    }
-    button.modalClose:focus {
-        outline: 2px solid $teal;
+        button.modalClose:active {
+            transform: translateY(2px);
+            outline: none !important;
+        }
+        button.modalClose:focus {
+            outline: 2px solid $teal;
+        }
     }
 }
 
-// Dark specific hover styles
+// Light/Dark specific hover styles
 
-@media (prefers-color-scheme: dark) and (hover: hover) and (pointer: fine) {
-    .navBox {
-        nav {
-            ul.mainNavList {
-                a:hover {
-                    text-shadow: $dModeNavHoverShadow;
+@media (pointer: fine) {
+    .colorContainer.darkModeOn {
+        .navBox {
+            nav {
+                ul.mainNavList {
+                    a:hover {
+                        text-shadow: $dModeNavHoverShadow;
+                    }
                 }
             }
         }
-    }
-    .navBox {
-        .aboutNav,
-        .skillsNav {
-            ul.mainNavList {
-                a:hover {
-                    text-shadow: $lModeNavHoverShadow;
+        .navBox {
+            .aboutNav,
+            .skillsNav {
+                ul.mainNavList {
+                    a:hover {
+                        text-shadow: $lModeNavHoverShadow;
+                    }
                 }
             }
         }
-    }
-    .splash {
-        .tealContactButton:hover {
-            border: 2px solid $white;
-        }
-    }
-
-    .imgBox > a:hover > img {
-        border-top: 14px ridge $white;
-    }
-    .imgBox > a:active > img {
-        border-top: 14px ridge $teal;
-    }
-    .imgBox > a:focus > img {
-        border-top: 14px ridge $teal;
-    }
-
-    footer {
-        .contactWrapper {
-            > a:hover {
-                color: $white;
-            }
-            > a:active {
-                color: $teal;
-            }
-            .fa-linkedin:active,
-            .fa-github:active {
-                color: $white;
+        .splash {
+            .tealContactButton:hover {
+                border: 2px solid $white;
             }
         }
-        .bottom {
-            a:hover {
-                color: $white;
-            }
-            .resume:active {
-                color: $white;
-            }
-        }
-    }
 
-    .errorNav {
-        ul {
-            li {
-                a:hover {
+        .imgBox > a:hover > img {
+            border-top: 14px ridge $white;
+        }
+        .imgBox > a.projImgLink:active > img {
+            border-top: 14px ridge $teal;
+        }
+        .imgBox > a:focus > img {
+            border-top: 14px ridge $white;
+        }
+
+        footer {
+            .contactWrapper {
+                > a:hover {
+                    color: $white;
+                }
+                > a:active {
                     color: $teal;
                 }
-                a:hover + i {
+                .fa-linkedin:active,
+                .fa-github:active {
+                    color: $white;
+                }
+            }
+            .bottom {
+                a:hover {
+                    color: $white;
+                }
+                .resume:active {
                     color: $white;
                 }
             }
         }
-    }
-}
 
-// Light specific hover styles
-
-@media (prefers-color-scheme: light) and (hover: hover) and (pointer: fine) {
-    .navBox {
-        nav {
-            ul.mainNavList {
-                a:hover {
-                    text-shadow: $lModeNavHoverShadow;
-                }
-            }
-        }
-    }
-    .splash {
-        .relativeColumnBox {
-            .smallFlexBox {
-                .tealContactButton:hover {
-                    border: 2px solid $black;
-                }
-                .contactIcons {
-                    a:active svg {
-                        color: $black;
+        .errorNav {
+            ul {
+                li {
+                    a:hover {
+                        color: $teal;
+                    }
+                    a:hover + i {
+                        color: $white;
                     }
                 }
             }
         }
     }
-
-    .imgBox > a:hover > img {
-        border-top: 14px ridge #126368;
-    }
-    .imgBox > a:active > img {
-        border-top: 14px ridge $teal;
-    }
-    .imgBox > a:focus > img {
-        border-top: 14px ridge $teal;
-    }
-    footer {
-        .contactWrapper {
-            > a:hover {
-                color: $black;
-            }
-            > a:active {
-                color: $teal;
-            }
-            a:focus {
-                outline-color: $black;
-            }
-            .fa-linkedin:active,
-            .fa-github:active {
-                color: $black;
+    .colorContainer:not(.darkModeOn) {
+        .navBox {
+            nav {
+                ul.mainNavList {
+                    a:hover {
+                        text-shadow: $lModeNavHoverShadow;
+                    }
+                }
             }
         }
-        .bottom {
-            a:hover {
-                color: $black;
-            }
-            .resume:active {
-                color: $black;
+        .splash {
+            .relativeColumnBox {
+                .smallFlexBox {
+                    .tealContactButton:hover {
+                        border: 2px solid $black;
+                    }
+                    .contactIcons {
+                        a:active svg {
+                            color: $black;
+                        }
+                    }
+                }
             }
         }
-    }
 
-    .errorNav {
-        ul {
-            li {
-                a:hover {
+        .imgBox > a:hover > img {
+            border-top: 14px ridge #126368;
+        }
+        .imgBox > a.projImgLink:active > img {
+            border-top: 14px ridge $teal;
+        }
+        .imgBox > a:focus > img {
+            border-top: 14px ridge #126368;
+        }
+        footer {
+            .contactWrapper {
+                > a:hover {
+                    color: $black;
+                }
+                > a:active {
                     color: $teal;
                 }
-                a:hover + i {
+                a:focus {
+                    outline-color: $black;
+                }
+                .fa-linkedin:active,
+                .fa-github:active {
                     color: $black;
+                }
+            }
+            .bottom {
+                a:hover {
+                    color: $black;
+                }
+                .resume:active {
+                    color: $black;
+                }
+            }
+        }
+
+        .errorNav {
+            ul {
+                li {
+                    a:hover {
+                        color: $teal;
+                    }
+                    a:hover + i {
+                        color: $black;
+                    }
                 }
             }
         }
@@ -1218,7 +1271,7 @@
 }
 
 // When user prefers light mode
-@media (prefers-color-scheme: light) {
+.colorContainer:not(.darkModeOn) {
     h1,
     h2,
     h3,
@@ -1252,6 +1305,9 @@
                 outline: 2px solid $black;
             }
         }
+        .themeToggleWrapper {
+            color: $black;
+        }
     }
 
     .navBox {
@@ -1269,7 +1325,13 @@
     }
 
     .modal {
+        background-color: rgba(166, 199, 201, 0.8);
         box-shadow: -2px 2px 3px 0 rgba(0, 5, 15, 0.31);
+    }
+    @media (max-width: 780px) {
+        .modal {
+            background-color: rgba(166, 199, 201, 0.96);
+        }
     }
 
     .splash {
@@ -1330,7 +1392,7 @@
 
     footer {
         background: $white;
-        background: rgba(215, 237, 238, 0.3);
+        background: rgba(215, 237, 238, 0.5);
         color: $black;
         .contactWrapper {
             > a {
@@ -1341,6 +1403,7 @@
             }
         }
         .bottom {
+            padding-bottom: 45px;
             a {
                 text-shadow: $lightModeTextShadow;
             }
@@ -1367,9 +1430,9 @@
             ),
             linear-gradient(
                 45deg,
-                $white 16px,
-                #dddddd 15px,
-                #bbbbbb 14px,
+                $white 2px,
+                transparent 15px,
+                #b8b8b8 14px,
                 transparent 0
             );
         background-position: bottom;
@@ -1410,10 +1473,10 @@
 }
 
 // When user prefers dark mode
-@media (prefers-color-scheme: dark) {
-    html {
-        background: $black;
-    }
+.colorContainer.darkModeOn {
+    background: $black;
+    letter-spacing: 0.65px;
+
     h1,
     h2,
     h3,
@@ -1472,9 +1535,18 @@
                 }
             }
         }
+        .themeToggleWrapper {
+            color: $white;
+        }
     }
     .modal {
+        background-color: rgba(199, 231, 233, 0.8);
         box-shadow: -2px 2px 3px 0 $black;
+    }
+    @media (max-width: 780px) {
+        .modal {
+            background-color: rgba(182, 213, 215, 0.96);
+        }
     }
     .splash {
         background-image: url('https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp');
@@ -1524,10 +1596,13 @@
         }
     }
 
+    .mainH + footer {
+        background-color: transparent;
+    }
+
     footer {
         background: $black;
         color: $white;
-        position: relative;
         .contactWrapper {
             a:focus {
                 outline: 2px solid $white;
@@ -1622,81 +1697,94 @@
             }
         }
     }
-}
-@media (max-height: 450px) and (prefers-color-scheme: dark) {
-    footer {
-        padding-top: 5px;
-    }
-    footer::after {
-        top: 25px;
+
+    @media (max-height: 450px) {
+        footer {
+            padding-top: 5px;
+        }
+        footer::after {
+            top: 25px;
+        }
     }
 }
 
 // When user prefers reduced motion
-@media (prefers-reduced-motion: reduce) {
-    .animate__backInLeft {
-        animation: none;
+.colorContainer {
+    @media (prefers-reduced-motion: reduce) {
+        .animate__backInLeft {
+            animation: none;
+        }
+        .skillsGallery li:hover div.skillsIconBox:hover {
+            animation: none;
+        }
+        .galaxy,
+        .stars {
+            animation: none !important;
+        }
+        .imgBox {
+            a:hover {
+                img {
+                    transition: none;
+                }
+            }
+        }
+        footer {
+            transition: initial !important;
+        }
+        footer::before,
+        footer::after {
+            transition: none;
+        }
     }
-    .skillsGallery li:hover div.skillsIconBox:hover {
-        animation: none;
-    }
-    .galaxy,
-    .stars {
-        animation: none !important;
-    }
-    footer {
-        transition: initial !important;
-    }
-}
 
-// When user prefers reduced motion and no touchscreen
-@media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
-    header {
-        background-attachment: local;
-        .navBox {
-            nav {
-                ul.mainNavList {
-                    a {
-                        padding-bottom: 8px;
-                    }
-                    a:hover::before,
-                    a:focus::before,
-                    a:hover::after,
-                    a:focus::after {
-                        width: 0%;
-                    }
-                    a:hover,
-                    a:focus {
-                        border-bottom: 2px solid $teal;
-                    }
-                    a:active {
-                        border-bottom: none;
+    // When user prefers reduced motion and no touchscreen
+    @media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
+        header {
+            background-attachment: local;
+            .navBox {
+                nav {
+                    ul.mainNavList {
+                        a {
+                            padding-bottom: 8px;
+                        }
+                        a:hover::before,
+                        a:focus::before,
+                        a:hover::after,
+                        a:focus::after {
+                            width: 0%;
+                        }
+                        a:hover,
+                        a:focus {
+                            border-bottom: 2px solid $teal;
+                        }
+                        a:active {
+                            border-bottom: none;
+                        }
                     }
                 }
             }
         }
+        .imgBox > a:hover > img,
+        .imgBox > a:focus > img {
+            border-top: 8px;
+        }
     }
-    .imgBox > a:hover > img,
-    .imgBox > a:focus > img {
-        border-top: 8px ridge $white;
+    .contactFormButton:hover,
+    .contactJump .styledButton:hover {
+        background: linear-gradient(to bottom, #17a3aa 5%, $grayTeal 100%);
+        background-color: #17a3aa;
     }
-}
-.contactFormButton:hover,
-.contactJump .styledButton:hover {
-    background: linear-gradient(to bottom, #17a3aa 5%, $grayTeal 100%);
-    background-color: #17a3aa;
-}
-footer {
-    .bottom {
-        a:active {
-            color: $teal;
-            svg {
-                transform: none;
+    footer {
+        .bottom {
+            a:active {
+                color: $teal;
+                svg {
+                    transform: none;
+                }
             }
         }
     }
 }
-
 @-webkit-keyframes spin {
     0% {
         transform: rotate(0deg);

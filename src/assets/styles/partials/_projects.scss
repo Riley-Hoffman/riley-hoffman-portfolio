@@ -1,119 +1,121 @@
-.projectsMain {
-    height: 100%;
-}
-.projects {
-    padding: 115px 0;
-    .wrapper.flexBox {
-        align-items: flex-start;
-        flex-direction: column;
+.colorContainer {
+    .projectsMain {
+        height: 100%;
     }
-}
+    .projects {
+        padding: 115px 0;
+        .wrapper.flexBox {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
 
-.projectBox {
-    display: flex;
-    margin: 100px 0;
-    .imgBox,
+    .projectBox {
+        display: flex;
+        margin: 100px 0;
+        .imgBox,
+        .projectInfo {
+            flex-basis: 50%;
+        }
+    }
+
+    .projectBox:first-of-type {
+        margin-top: 50px;
+    }
+
+    .projectInfo:nth-child(even) {
+        border-radius: 0 5px;
+        padding-left: 60px;
+        text-align: right;
+        a {
+            padding-left: 15px;
+        }
+    }
+
+    .projectInfo:nth-child(odd) {
+        border-radius: 5px 0;
+        padding-right: 60px;
+        a {
+            padding-right: 15px;
+        }
+    }
+
     .projectInfo {
-        flex-basis: 50%;
-    }
-}
+        border-top: 8px ridge $teal;
+        padding: 20px 0;
+        position: relative;
+        z-index: 10;
+        h2,
+        h3,
+        p {
+            padding-bottom: 15px;
+        }
+        h3,
+        h4 {
+            margin-bottom: 30px;
+        }
 
-.projectBox:first-of-type {
-    margin-top: 50px;
-}
-
-.projectInfo:nth-child(even) {
-    border-radius: 0 5px;
-    padding-left: 60px;
-    text-align: right;
-    a {
-        padding-left: 15px;
-    }
-}
-
-.projectInfo:nth-child(odd) {
-    border-radius: 5px 0;
-    padding-right: 60px;
-    a {
-        padding-right: 15px;
-    }
-}
-
-.projectInfo {
-    border-top: 8px ridge $teal;
-    padding: 20px 0;
-    position: relative;
-    z-index: 10;
-    h2,
-    h3,
-    p {
-        padding-bottom: 15px;
-    }
-    h3,
-    h4 {
-        margin-bottom: 30px;
+        a {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+            padding: 5px 15px;
+            text-transform: uppercase;
+            transition: color 0.5s;
+        }
+        a:last-of-type {
+            margin-left: 10px;
+        }
+        a:focus {
+            opacity: 0.6;
+        }
     }
 
-    a {
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        font-weight: 600;
-        padding: 5px 15px;
-        text-transform: uppercase;
-        transition: color 0.5s;
+    .imgBox {
+        cursor: pointer;
+        position: relative;
+        text-align: center; // for alt text in case images don't load.
+        .projImgLink {
+            color: $white; // for alt
+            padding: 0;
+        }
+        div.oval {
+            background: #00f1ff;
+            border-radius: 50%;
+            opacity: 0.1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 5%;
+            transition: all 2s;
+            z-index: 0;
+        }
     }
-    a:last-of-type {
-        margin-left: 10px;
+
+    .projectBox img {
+        position: relative;
+        transition: filter 1s;
+        z-index: 10;
     }
-    a:focus {
-        opacity: 0.6;
+
+    .projectBox .imgBox img {
+        filter: grayscale(0%);
+        border-top: 8px ridge $teal;
     }
-}
 
-.imgBox {
-    cursor: pointer;
-    position: relative;
-    text-align: center; // for alt text in case images don't load.
-    a {
-        color: $white; // for alt
-        padding: 0;
+    .imgBox:nth-child(odd) .oval {
+        right: -100%;
     }
-    div.oval {
-        background: #00f1ff;
-        border-radius: 50%;
-        opacity: 0.1;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 5%;
-        transition: all 2s;
-        z-index: 0;
+
+    .imgBox:nth-child(even) .oval {
+        left: -100%;
     }
-}
 
-.projectBox img {
-    position: relative;
-    transition: filter 1s;
-    z-index: 10;
-}
+    .imgBox > .projImgLink:focus > img {
+        transition: border-top 0.5s;
+    }
 
-.projectBox .imgBox img {
-    filter: grayscale(0%);
-    border-top: 8px ridge $teal;
-}
-
-.imgBox:nth-child(odd) .oval {
-    right: -100%;
-}
-
-.imgBox:nth-child(even) .oval {
-    left: -100%;
-}
-
-.imgBox > a:focus > img {
-    transition: border-top 0.5s;
-}
-
-.imgBox > a:focus {
-    outline: none;
+    .imgBox > .projImgLink[title='Visit live site.']:focus {
+        outline: none;
+    }
 }
