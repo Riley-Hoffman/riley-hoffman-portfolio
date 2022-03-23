@@ -972,6 +972,19 @@ body {
 .colorContainer header .navBox button.lightDarkButton.secondButton {
   display: none;
 }
+.colorContainer header .navBox:focus {
+  outline: none;
+  z-index: 10;
+}
+.colorContainer header .navBox:focus::after {
+  border-bottom: 2px solid #17a2aa;
+  border-radius: 15px;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 70%;
+}
 
 .colorContainer .mainH {
   height: 90vh;
