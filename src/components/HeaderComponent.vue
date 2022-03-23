@@ -24,7 +24,12 @@
                 errorRelColBox: $route.path === '/page-not-found',
             }"
         >
-            <div class="flexBox navBox">
+            <div
+                class="flexBox navBox"
+                role="toolbar"
+                aria-label="Navigation and Colors."
+                tabindex="0"
+            >
                 <nav
                     v-bind:class="{
                         aboutNav: $route.path === '/about',
@@ -66,8 +71,7 @@
                                 @keydown="enterToggle"
                             />
                             <span class="flexBox target">
-                                <span class="show" :class="lightsOnOff"
-                                    >
+                                <span class="show" :class="lightsOnOff">
                                     <font-awesome-icon
                                         v-bind:icon="['fa-solid', `${toggle}`]"
                                         aria-hidden="true"

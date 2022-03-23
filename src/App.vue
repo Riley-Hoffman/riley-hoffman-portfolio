@@ -72,7 +72,6 @@ export default {
       this.lightDarkLabel = 'Light Mode Selected'
       localStorage.setItem('toggle', 'sun')
     }
-
   },
   created () {
     if (this.$workbox) {
