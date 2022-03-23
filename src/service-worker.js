@@ -13,10 +13,7 @@ self.addEventListener('message', (event) => {
 
 workbox.googleAnalytics.initialize()
 
-workbox.routing.registerRoute(
-  /.*\.js/,
-  workbox.strategies.networkFirst()
-)
+workbox.routing.registerRoute(/.*\.js/, workbox.strategies.networkFirst())
 
 workbox.routing.registerRoute(
   /.*\.css/,
