@@ -50,7 +50,11 @@
                                         $route.path === '/about' ||
                                         $route.path === '/skills',
                                 }"
-                                >Light/Dark</span
+                                >Light<span class="sr-only"> or </span
+                                ><span aria-hidden="true">/</span>Dark<span
+                                    class="sr-only"
+                                    >.</span
+                                ></span
                             >
                             <span class="sr-only">Choose Color Theme.</span>
                         </span>
