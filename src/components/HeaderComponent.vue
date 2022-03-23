@@ -50,7 +50,6 @@
                                         $route.path === '/about' ||
                                         $route.path === '/skills',
                                 }"
-                                aria-hidden="true"
                                 >Light/Dark</span
                             >
                             <span class="sr-only">Choose Color Theme.</span>
@@ -97,7 +96,8 @@ export default {
   ],
   data () {
     return {
-      navRoutes: routes.options.routes
+      navRoutes: routes.options.routes,
+      accessibilityMode: document.querySelector('.accessibility-mode')
     }
   },
   components: {
