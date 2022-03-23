@@ -50,11 +50,7 @@
                                         $route.path === '/about' ||
                                         $route.path === '/skills',
                                 }"
-                                >Light<span class="sr-only"> or </span
-                                ><span aria-hidden="true">/</span>Dark<span
-                                    class="sr-only"
-                                    >.</span
-                                ></span
+                                >Light/Dark</span
                             >
                             <span class="sr-only">Choose Color Theme.</span>
                         </span>
@@ -63,15 +59,15 @@
                                 id="themeInput"
                                 name="themeInput"
                                 type="checkbox"
+                                :aria-label="lightDarkLabel"
+                                aria-live="polite"
                                 :checked="darkOn"
                                 @click="toggleColor"
                                 @keydown="enterToggle"
                             />
                             <span class="flexBox target">
                                 <span class="show" :class="lightsOnOff"
-                                    ><span class="sr-only">{{
-                                        lightDarkLabel
-                                    }}</span>
+                                    >
                                     <font-awesome-icon
                                         v-bind:icon="['fa-solid', `${toggle}`]"
                                         aria-hidden="true"

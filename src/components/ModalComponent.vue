@@ -1,6 +1,6 @@
 <template>
     <Transition>
-        <div class="modal">
+        <div class="modal" role="dialog" aria-label="Contact Form Dialog Box">
             <button class="modalClose" @click="hideModal">
                 <font-awesome-icon
                     icon="xmark"
