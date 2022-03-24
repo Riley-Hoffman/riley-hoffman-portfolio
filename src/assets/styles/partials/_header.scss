@@ -270,17 +270,4 @@
             display: none;
         }
     }
-    .navBox:focus {
-        outline: none;
-        z-index: 10;
-        &::after {
-            border-bottom: 2px solid #17a2aa;
-            border-radius: 15px;
-            bottom: 0;
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 70%
-        }
-    }
 }
