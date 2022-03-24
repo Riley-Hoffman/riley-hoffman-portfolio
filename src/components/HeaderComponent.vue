@@ -28,8 +28,6 @@
                 class="flexBox navBox"
                 role="toolbar"
                 aria-label="Navigation and Colors."
-                tabindex="0"
-                @keydown="enterToolbar"
             >
                 <nav
                     v-bind:class="{
@@ -151,11 +149,6 @@ export default {
         e.preventDefault()
         e.stopImmediatePropagation()
         this.toggleColor()
-      }
-    },
-    enterToolbar (e) {
-      if (e.keyCode === 13 || e.keyCode === 32) {
-        e.target.firstChild.firstChild.firstElementChild.firstChild.focus()
       }
     }
   }
