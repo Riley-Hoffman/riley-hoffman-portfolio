@@ -1,6 +1,9 @@
 .colorContainer {
     .mainH {
         height: 90vh;
+        + footer.transitionBorder {
+            background-color: transparent;
+        }
     }
     .splash {
         background-attachment: fixed;

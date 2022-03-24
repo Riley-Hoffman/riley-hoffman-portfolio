@@ -976,6 +976,9 @@ body {
 .colorContainer .mainH {
   height: 90vh;
 }
+.colorContainer .mainH + footer.transitionBorder {
+  background-color: transparent;
+}
 .colorContainer .splash {
   background-attachment: fixed;
   background-position-x: 100%;
@@ -2872,9 +2875,6 @@ body {
 .colorContainer.darkModeOn .projectInfo h3,
 .colorContainer.darkModeOn .projectInfo h4 {
   text-shadow: 3px 3px 5px #00050f;
-}
-.colorContainer.darkModeOn .mainH + footer {
-  background-color: transparent;
 }
 .colorContainer.darkModeOn footer {
   background: #00050f;
