@@ -10,6 +10,7 @@
                         id="name"
                         name="name"
                         placeholder="Your name.."
+                        enterkeyhint="next"
                     />
 
                     <label for="email">Email:</label>
@@ -18,6 +19,7 @@
                         id="email"
                         name="email"
                         placeholder="Your email.."
+                        enterkeyhint="next"
                     />
                 </div>
                 <label for="message">Message:</label>
