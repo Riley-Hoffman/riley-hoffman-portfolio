@@ -1715,15 +1715,15 @@ body {
     max-height: 700px;
   }
 }
-@media (max-width: 1680px) and (max-height: 650px) {
+@media (max-height: 650px) {
   .colorContainer .modal.openModal {
     bottom: 2%;
   }
   .colorContainer .modal.openModal form .inputBox {
     flex-direction: row;
   }
-  .colorContainer .modal.openModal form .inputBox label:nth-child(2) {
-    margin-left: 0;
+  .colorContainer .modal.openModal form .inputBox label[for=email] {
+    margin-left: 20px;
   }
 }
 @media (max-width: 1360px) and (max-height: 605px) {
@@ -2085,12 +2085,12 @@ body {
     padding-bottom: 0;
   }
 }
-@media (max-height: 543px) {
+@media (max-width: 650px) and (max-height: 543px) {
   .colorContainer .modal form .inputBox {
     justify-content: space-between;
     flex-direction: row;
   }
-  .colorContainer .modal form .inputBox label:nth-of-type(2) {
+  .colorContainer .modal form .inputBox label[type=email] {
     margin-left: 20px;
   }
 }
@@ -2217,6 +2217,9 @@ body {
   }
   .colorContainer .modal.openModal form .inputBox {
     flex-direction: column;
+  }
+  .colorContainer .modal.openModal form .inputBox label[for=email] {
+    margin-left: 0;
   }
   .colorContainer .mainH + footer .bottom a {
     align-self: flex-end;
