@@ -370,6 +370,7 @@ body {
   border: none;
   caret-color: #245056;
   font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
 }
 .colorContainer textarea {
   padding-left: 15px;
@@ -1566,6 +1567,7 @@ body {
 }
 .colorContainer form .inputBox input {
   width: 100%;
+  height: 45px;
 }
 .colorContainer form .contactFormButton {
   align-self: center;
