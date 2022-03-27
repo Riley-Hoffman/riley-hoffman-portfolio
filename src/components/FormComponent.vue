@@ -11,6 +11,7 @@
                         name="name"
                         placeholder="Your name.."
                         enterkeyhint="next"
+                        required
                     />
 
                     <label for="email">Email:</label>
@@ -20,6 +21,7 @@
                         name="email"
                         placeholder="Your email.."
                         enterkeyhint="next"
+                        required
                     />
                 </div>
                 <label for="message">Message:</label>
@@ -28,6 +30,7 @@
                     name="message"
                     placeholder="Write something.."
                     spellcheck="true"
+                    required
                 ></textarea>
             </div>
         </fieldset>
