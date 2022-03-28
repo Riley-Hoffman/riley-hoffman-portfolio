@@ -47,9 +47,9 @@ export default {
   },
   methods: {
     toggleColor () {
-      if (this.darkOn === false) {
+      if (!this.darkOn) {
         this.toggleDark()
-      } else if (this.darkOn === true) {
+      } else if (this.darkOn) {
         this.toggleLight()
       } else {
         this.toggleDark()
