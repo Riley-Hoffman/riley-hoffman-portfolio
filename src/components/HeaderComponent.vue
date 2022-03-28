@@ -61,10 +61,8 @@
                         <div
                             class="themeToggleBox"
                             v-bind:class="{
-                                on: darkOn,
-                                off: !darkOn,
                                 enabled: darkOn,
-                                disabled: darkOff,
+                                disabled: !darkOn,
                             }"
                         >
                             <input
@@ -102,7 +100,6 @@ export default {
     'darkOn',
     'toggle',
     'lightsOnOff',
-    'enableDisable',
     'lightDarkLabel'
   ],
   data () {
