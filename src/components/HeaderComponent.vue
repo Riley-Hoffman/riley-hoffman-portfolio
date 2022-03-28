@@ -58,7 +58,15 @@
                             >
                             <span class="sr-only">Choose Color Theme.</span>
                         </span>
-                        <div class="themeToggleBox" :class="enableDisable">
+                        <div
+                            class="themeToggleBox"
+                            v-bind:class="{
+                                on: darkOn,
+                                off: !darkOn,
+                                enabled: darkOn,
+                                disabled: darkOff,
+                            }"
+                        >
                             <input
                                 id="themeInput"
                                 name="themeInput"
