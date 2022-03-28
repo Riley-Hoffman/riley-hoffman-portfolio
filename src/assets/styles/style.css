@@ -924,7 +924,6 @@ body {
   right: 63%;
 }
 .colorContainer header .navBox .themeToggleBox::before {
-  background: #e5e8ee;
   border-radius: 30px;
   bottom: 20%;
   left: 14%;
@@ -937,6 +936,12 @@ body {
   height: 61%;
   width: 30%;
   z-index: 2;
+}
+.colorContainer header .navBox .themeToggleBox.on::before {
+  background: #158827;
+}
+.colorContainer header .navBox .themeToggleBox.off::before {
+  background: #932520;
 }
 .colorContainer header .navBox .themeToggleBox.enabled::before {
   transform: translateX(21px);
@@ -2488,7 +2493,7 @@ body {
     width: 0;
   }
   .colorContainer header .navBox .themeToggleBox:hover::before {
-    box-shadow: inset 5px 5px 22px 5px rgba(0, 5, 15, 0.52);
+    box-shadow: inset 5px 5px 22px 5px rgba(0, 5, 15, 0.2);
   }
   .colorContainer header .styledButton:active {
     border: 1px solid #17a2aa;

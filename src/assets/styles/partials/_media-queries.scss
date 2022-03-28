@@ -32,7 +32,7 @@
             form {
                 .inputBox {
                     flex-direction: row;
-                    label[for="email"] {
+                    label[for='email'] {
                         margin-left: 20px;
                     }
                 }
@@ -495,7 +495,7 @@
                 .inputBox {
                     justify-content: space-between;
                     flex-direction: row;
-                    label[type=email] {
+                    label[type='email'] {
                         margin-left: 20px;
                     }
                 }
@@ -647,7 +647,7 @@
             form {
                 .inputBox {
                     flex-direction: column;
-                    label[for="email"] {
+                    label[for='email'] {
                         margin-left: 0;
                     }
                 }
@@ -1022,7 +1022,7 @@
                     }
                 }
                 .themeToggleBox:hover::before {
-                    box-shadow: inset 5px 5px 22px 5px rgba(0, 5, 15, 0.52);
+                    box-shadow: inset 5px 5px 22px 5px rgba(0, 5, 15, 0.2);
                 }
             }
             .styledButton:active {

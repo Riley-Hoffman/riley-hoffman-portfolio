@@ -215,7 +215,6 @@
             }
         }
         .themeToggleBox::before {
-            background: $white;
             border-radius: 30px;
             bottom: 20%;
             left: 14%;
@@ -228,6 +227,12 @@
             height: 61%;
             width: 30%;
             z-index: 2;
+        }
+        .themeToggleBox.on::before {
+            background: #158827;
+        }
+        .themeToggleBox.off::before {
+            background: #932520;
         }
         .themeToggleBox.enabled::before {
             transform: translateX(21px);
