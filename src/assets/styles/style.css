@@ -937,10 +937,10 @@ body {
   width: 30%;
   z-index: 2;
 }
-.colorContainer header .navBox .themeToggleBox.on::before {
+.colorContainer header .navBox .themeToggleBox.enabled::before {
   background: #158827;
 }
-.colorContainer header .navBox .themeToggleBox.off::before {
+.colorContainer header .navBox .themeToggleBox.disabled::before {
   background: #932520;
 }
 .colorContainer header .navBox .themeToggleBox.enabled::before {

@@ -228,10 +228,10 @@
             width: 30%;
             z-index: 2;
         }
-        .themeToggleBox.on::before {
+        .themeToggleBox.enabled::before {
             background: #158827;
         }
-        .themeToggleBox.off::before {
+        .themeToggleBox.disabled::before {
             background: #932520;
         }
         .themeToggleBox.enabled::before {
