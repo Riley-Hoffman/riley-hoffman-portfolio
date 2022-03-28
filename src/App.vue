@@ -9,7 +9,6 @@
             :toggleColor="toggleColor"
             :darkOn="darkOn"
             :toggle="toggle"
-            :lightsOnOff="lightsOnOff"
             :lightDarkLabel="lightDarkLabel"
         />
         <main
@@ -37,7 +36,6 @@ export default {
     return {
       darkOn: true,
       toggle: '',
-      lightsOnOff: '',
       lightDarkLabel: ''
     }
   },
@@ -58,13 +56,11 @@ export default {
     toggleDark () {
       this.darkOn = true
       this.toggle = 'moon'
-      this.lightsOnOff = 'lightsOff'
       this.lightDarkLabel = 'Dark Mode Selected'
     },
     toggleLight () {
       this.darkOn = false
       this.toggle = 'sun'
-      this.lightsOnOff = 'lightsOn'
       this.lightDarkLabel = 'Light Mode Selected'
       localStorage.setItem('toggle', 'sun')
     }

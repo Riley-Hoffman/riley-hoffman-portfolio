@@ -76,7 +76,13 @@
                                 @keydown="enterToggle"
                             />
                             <span class="flexBox target">
-                                <span class="show" :class="lightsOnOff">
+                                <span
+                                    class="show"
+                                    v-bind:class="{
+                                        lightsOff: darkOn,
+                                        lightsOn: !darkOn,
+                                    }"
+                                >
                                     <font-awesome-icon
                                         v-bind:icon="['fa-solid', `${toggle}`]"
                                         aria-hidden="true"
@@ -99,7 +105,6 @@ export default {
     'toggleColor',
     'darkOn',
     'toggle',
-    'lightsOnOff',
     'lightDarkLabel'
   ],
   data () {
