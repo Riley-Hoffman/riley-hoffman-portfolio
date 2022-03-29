@@ -75,8 +75,6 @@ export default {
   mounted () {
     if (localStorage.toggle) {
       this.toggle = localStorage.toggle
-    } else {
-      return this.toggle
     }
   },
   watch: {
