@@ -966,9 +966,6 @@ body {
   height: 7vh;
   width: 80px;
 }
-.colorContainer header .navBox .themeToggleBox input:active + span.flexBox.target {
-  outline: 2px solid rgba(216, 228, 230, 0.28);
-}
 .colorContainer header .navBox .themeToggleBox input:active + span.flexBox::before {
   border: none;
 }
