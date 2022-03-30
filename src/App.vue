@@ -10,6 +10,7 @@
             :darkOn="darkOn"
             :toggle="toggle"
             :lightDarkLabel="lightDarkLabel"
+            :safari="safari"
         />
         <main
             id="main"
@@ -36,7 +37,12 @@ export default {
     return {
       darkOn: true,
       toggle: '',
-      lightDarkLabel: ''
+      lightDarkLabel: '',
+      safari:
+                navigator.userAgent.includes('Safari') &&
+                !navigator.userAgent.includes('OPR') &&
+                !navigator.userAgent.includes('Chrome') &&
+                !navigator.userAgent.includes('Android')
     }
   },
   components: {

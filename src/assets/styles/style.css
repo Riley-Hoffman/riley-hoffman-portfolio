@@ -937,6 +937,15 @@ body {
   width: 30%;
   z-index: 2;
 }
+.colorContainer header .navBox div.themeToggleBox.safariToggle::before {
+  width: 20%;
+}
+.colorContainer header .navBox div.themeToggleBox.safariToggle.enabled::before {
+  left: 30%;
+}
+.colorContainer header .navBox div.themeToggleBox.safariToggle.disabled::before {
+  left: 20%;
+}
 .colorContainer header .navBox .themeToggleBox.enabled::before {
   background: #158827;
 }
