@@ -248,9 +248,6 @@
             z-index: 20;
         }
         .themeToggleBox input:focus {
-            + span.flexBox.target {
-                outline: 2px solid rgba(216, 228, 230, 0.28);
-            }
             + span.flexBox::before {
                 border: 1px solid $teal;
                 bottom: -22px;
