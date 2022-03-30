@@ -228,6 +228,15 @@
             width: 30%;
             z-index: 2;
         }
+        div.themeToggleBox.safariToggle::before {
+            width: 20%;
+        }
+        div.themeToggleBox.safariToggle.enabled::before {
+            left: 30%;
+        }
+        div.themeToggleBox.safariToggle.disabled::before {
+            left: 20%;
+        }
         .themeToggleBox.enabled::before {
             background: #158827;
         }

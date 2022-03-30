@@ -63,6 +63,7 @@
                             v-bind:class="{
                                 enabled: darkOn,
                                 disabled: !darkOn,
+                                safariToggle: safari
                             }"
                         >
                             <input
@@ -105,12 +106,12 @@ export default {
     'toggleColor',
     'darkOn',
     'toggle',
-    'lightDarkLabel'
+    'lightDarkLabel',
+    'safari'
   ],
   data () {
     return {
-      navRoutes: routes.options.routes,
-      accessibilityMode: document.querySelector('.accessibility-mode')
+      navRoutes: routes.options.routes
     }
   },
   components: {
