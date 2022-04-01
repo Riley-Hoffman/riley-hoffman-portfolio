@@ -2527,6 +2527,7 @@ body {
   }
   .colorContainer .splash .relativeColumnBox .smallFlexBox .tealContactButton:active {
     outline: none;
+    border: none;
   }
   .colorContainer .projectInfo a:hover {
     opacity: 0.6;
