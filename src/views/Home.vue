@@ -65,14 +65,14 @@
 import SocialComponent from '@/components/SocialComponent.vue'
 import ModalComponent from '@/components/ModalComponent.vue'
 export default {
+  components: {
+    SocialComponent,
+    ModalComponent
+  },
   data () {
     return {
       showModal: false
     }
-  },
-  components: {
-    SocialComponent,
-    ModalComponent
   },
   methods: {
     openModal () {

@@ -16,9 +16,9 @@
 <script>
 import FormComponent from '@/components/FormComponent.vue'
 export default {
-  props: ['hideModal'],
   components: {
     FormComponent
-  }
+  },
+  props: ['hideModal']
 }
 </script>

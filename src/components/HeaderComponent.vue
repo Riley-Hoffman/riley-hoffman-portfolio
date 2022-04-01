@@ -63,7 +63,7 @@
                             v-bind:class="{
                                 enabled: darkOn,
                                 disabled: !darkOn,
-                                safariToggle: safari
+                                safariToggle: safari,
                             }"
                         >
                             <input
@@ -101,21 +101,15 @@
 import routes from '../router'
 import NavLiComponent from './NavLiComponent.vue'
 export default {
-  props: [
-    'main',
-    'toggleColor',
-    'darkOn',
-    'toggle',
-    'lightDarkLabel',
-    'safari'
-  ],
+  components: {
+    NavLiComponent
+  },
+  inject: ['safari'],
+  props: ['main', 'toggleColor', 'darkOn', 'toggle', 'lightDarkLabel'],
   data () {
     return {
       navRoutes: routes.options.routes
     }
-  },
-  components: {
-    NavLiComponent
   },
   computed: {
     navBarColor () {
