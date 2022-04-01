@@ -31,7 +31,6 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
-import { computed } from 'vue'
 export default {
   components: {
     HeaderComponent,
@@ -51,7 +50,7 @@ export default {
   },
   provide () {
     return {
-      safari: computed(() => this.safariCheck)
+      safari: this.safariCheck
     }
   },
   methods: {
