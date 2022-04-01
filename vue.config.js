@@ -21,10 +21,8 @@ module.exports = {
           // add workbox to webpack config.
           new InjectManifest({
             swSrc: './src/service-worker.js',
-            swDest: 'service-worker.js',
+            swDest: 'service-worker.js'
             // other workbox options..
-            clientsClaim: true,
-            skipWaiting: true
           })
         ]
       }
