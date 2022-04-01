@@ -18,7 +18,10 @@ module.exports = {
     },
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
-      swSrc: './src/service-worker.js'
+      swSrc: './src/service-worker.js',
+      // ...other Workbox options...
+      clientsClaim: true,
+      skipWaiting: true
     }
   }
 }
