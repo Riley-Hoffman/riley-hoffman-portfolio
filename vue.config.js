@@ -4,7 +4,6 @@ module.exports = {
   chainWebpack: config => {
     config.plugins.delete('workbox')
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/vuejs-pwa/' : '',
   pwa: {
     name: 'Riley Hoffman | Web Developer',
     themeColor: '#00050f',
