@@ -11,6 +11,8 @@ self.addEventListener('message', (event) => {
   }
 })
 
+workbox.core.clientsClaim()
+
 workbox.googleAnalytics.initialize()
 
 workbox.routing.registerRoute(/.*\.js/, workbox.strategies.networkFirst())
