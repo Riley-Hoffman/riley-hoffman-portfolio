@@ -8,6 +8,7 @@ module.exports = {
     ]
   },
   pwa: {
+    name: 'Riley Hoffman | Web Developer',
     themeColor: '#00050f',
     workboxPluginMode: 'InjectManifest',
     msTileColor: '#b91d47',
