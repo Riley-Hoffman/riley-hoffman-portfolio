@@ -1013,7 +1013,8 @@
                         a:hover::before {
                             width: 95%;
                         }
-                        a:active::after {
+                        a:active::after,
+                        a::before {
                             -webkit-transition: 0.1s $navLinkTransition;
                             -o-transition: 0.1s $navLinkTransition;
                             transition: 0.1s $navLinkTransition;
