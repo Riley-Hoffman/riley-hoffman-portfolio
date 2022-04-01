@@ -2492,7 +2492,7 @@ body {
     width: 95%;
   }
   .colorContainer header .navBox nav ul.mainNavList a:active::after,
-.colorContainer header .navBox nav ul.mainNavList a::before {
+.colorContainer header .navBox nav ul.mainNavList a:active::before {
     transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
     width: 0;
   }
