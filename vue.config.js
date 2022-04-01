@@ -6,6 +6,20 @@ module.exports = {
   },
   pwa: {
     name: 'Riley Hoffman | Web Developer',
+    start_url: '/',
+    icons: [
+      {
+        src: './public/img/icons/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      },
+      {
+        src: './public/img/icons/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png'
+      }
+    ],
+    display: 'standalone',
     themeColor: '#00050f',
     workboxPluginMode: 'InjectManifest',
     msTileColor: '#b91d47',
