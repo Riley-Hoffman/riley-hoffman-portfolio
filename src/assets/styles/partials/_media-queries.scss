@@ -1014,7 +1014,7 @@
                             width: 95%;
                         }
                         a:active::after,
-                        a::before {
+                        a:active::before {
                             -webkit-transition: 0.1s $navLinkTransition;
                             -o-transition: 0.1s $navLinkTransition;
                             transition: 0.1s $navLinkTransition;
