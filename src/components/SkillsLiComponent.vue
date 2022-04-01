@@ -14,15 +14,7 @@
 </template>
 <script>
 export default {
-  props: ['icon', 'skill', 'devicon'],
-  data () {
-    return {
-      safari:
-                navigator.userAgent.includes('Safari') &&
-                !navigator.userAgent.includes('OPR') &&
-                !navigator.userAgent.includes('Chrome') &&
-                !navigator.userAgent.includes('Android')
-    }
-  }
+  inject: ['safari'],
+  props: ['icon', 'skill', 'devicon']
 }
 </script>

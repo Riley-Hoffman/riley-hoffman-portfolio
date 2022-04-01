@@ -10,7 +10,6 @@
             :darkOn="darkOn"
             :toggle="toggle"
             :lightDarkLabel="lightDarkLabel"
-            :safari="safari"
         />
         <main
             id="main"
@@ -32,22 +31,28 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { computed } from 'vue'
 export default {
+  components: {
+    HeaderComponent,
+    FooterComponent
+  },
   data () {
     return {
       darkOn: true,
       toggle: '',
       lightDarkLabel: '',
-      safari:
+      safariCheck:
                 navigator.userAgent.includes('Safari') &&
                 !navigator.userAgent.includes('OPR') &&
                 !navigator.userAgent.includes('Chrome') &&
                 !navigator.userAgent.includes('Android')
     }
   },
-  components: {
-    HeaderComponent,
-    FooterComponent
+  provide () {
+    return {
+      safari: computed(() => this.safariCheck)
+    }
   },
   methods: {
     toggleColor () {
