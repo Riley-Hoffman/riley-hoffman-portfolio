@@ -459,6 +459,9 @@ body {
   font-size: 1.2rem;
   margin-left: 20px;
 }
+.colorContainer .noTransition {
+  transition: all 0s;
+}
 .colorContainer .v-enter-active,
 .colorContainer .v-leave-active {
   transition: opacity 0.3s ease;

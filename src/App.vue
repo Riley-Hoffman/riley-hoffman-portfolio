@@ -10,6 +10,9 @@
             :darkOn="darkOn"
             :toggle="toggle"
             :lightDarkLabel="lightDarkLabel"
+            @toggling="themeSwitching()"
+            @blur="handleToggleBlur()"
+            :noTransition="noTransition"
         />
         <main
             id="main"
@@ -23,9 +26,9 @@
                 mainE: $route.path === '/page-not-found',
             }"
         >
-            <router-view />
+            <router-view :noTransition="noTransition" />
         </main>
-        <FooterComponent />
+        <FooterComponent :noTransition="noTransition" />
     </div>
 </template>
 <script>
@@ -45,7 +48,8 @@ export default {
                 navigator.userAgent.includes('Safari') &&
                 !navigator.userAgent.includes('OPR') &&
                 !navigator.userAgent.includes('Chrome') &&
-                !navigator.userAgent.includes('Android')
+                !navigator.userAgent.includes('Android'),
+      noTransition: false
     }
   },
   provide () {
@@ -73,6 +77,16 @@ export default {
       this.toggle = 'sun'
       this.lightDarkLabel = 'Light Mode Selected'
       localStorage.setItem('toggle', 'sun')
+    },
+    themeSwitching () {
+      this.noTransition = true
+      console.log('theme switching motherfuckers')
+      setTimeout(() => {
+        this.noTransition = false
+      }, 1000)
+    },
+    handleToggleBlur () {
+      this.noTransition = false
     }
   },
   created () {

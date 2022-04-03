@@ -17,7 +17,7 @@
             v-bind:class="
                 !this.reduceMotion && {
                     animate__animated: this.hover,
-                    animate__bounce: this.hover
+                    animate__bounce: this.hover,
                 }
             "
         />

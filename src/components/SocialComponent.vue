@@ -2,6 +2,7 @@
     <div class="flexBox contactIcons">
         <a
             class="contactIcon"
+            :class="{ noTransition: noTransition }"
             href="https://github.com/Riley-Hoffman"
             rel="nofollow"
         >
@@ -14,6 +15,7 @@
         </a>
         <a
             class="contactIcon"
+            :class="{ noTransition: noTransition }"
             href="https://www.linkedin.com/in/riley-hoffman-014623213"
             rel="nofollow"
         >
@@ -26,3 +28,8 @@
         </a>
     </div>
 </template>
+<script>
+export default {
+  props: ['noTransition']
+}
+</script>
