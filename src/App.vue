@@ -80,7 +80,6 @@ export default {
     },
     themeSwitching () {
       this.noTransition = true
-      console.log('theme switching motherfuckers')
       setTimeout(() => {
         this.noTransition = false
       }, 1000)
