@@ -69,6 +69,10 @@
         }
     }
 
+    .noTransition {
+        transition: all 0s;
+    }
+
     .v-enter-active,
     .v-leave-active {
         transition: opacity 0.3s ease;
@@ -123,6 +127,7 @@
         border: none;
         outline: none;
     }
+    
 }
 //  * animate.css - https://animate.style/
 //  * Version - 4.1.1

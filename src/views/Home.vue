@@ -39,7 +39,7 @@
                         v-if="showModal"
                     />
                     <div class="contactWrapper">
-                        <SocialComponent />
+                        <SocialComponent :noTransition="noTransition" />
                     </div>
                 </div>
             </div>
@@ -69,6 +69,7 @@ export default {
     SocialComponent,
     ModalComponent
   },
+  props: ['noTransition'],
   data () {
     return {
       showModal: false

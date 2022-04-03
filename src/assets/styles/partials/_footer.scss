@@ -35,7 +35,7 @@
     }
 
     footer::before {
-        content: ' ';
+        content: " ";
         display: block;
         left: 0px;
         width: 100%;
@@ -122,7 +122,7 @@
         label {
             margin: 9px 10px 9px 0;
         }
-        label[for='email'] {
+        label[for="email"] {
             margin-top: 12px;
         }
         .fieldsetBox > label:nth-child(2) {
@@ -138,7 +138,7 @@
         textarea::-webkit-resizer {
             border: 1.5px solid $teal;
             background-color: $teal;
-            background-image: url('../../assets/img/angles-down-solid.png');
+            background-image: url("../../assets/img/angles-down-solid.png");
             background-size: contain;
             position: relative;
         }

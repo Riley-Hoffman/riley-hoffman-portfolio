@@ -32,7 +32,7 @@
             form {
                 .inputBox {
                     flex-direction: row;
-                    label[for='email'] {
+                    label[for="email"] {
                         margin-left: 20px;
                     }
                 }
@@ -52,11 +52,7 @@
         }
         .scrollingBackground {
             background: {
-                image: linear-gradient(
-                        to bottom,
-                        rgba(23, 162, 170, 0) 0%,
-                        rgba(23, 162, 170, 0.2) 100%
-                    ),
+                image: linear-gradient(to bottom, rgba(23, 162, 170, 0) 0%, rgba(23, 162, 170, 0.2) 100%),
                     url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
                 blend-mode: multiply;
                 size: cover;
@@ -212,7 +208,7 @@
         .contactWrapper {
             width: 90%;
         }
-        label[for='email'] {
+        label[for="email"] {
             margin-left: 0;
         }
         .modal {
@@ -232,7 +228,7 @@
                     input {
                         width: 100%;
                     }
-                    input[name='name'] {
+                    input[name="name"] {
                         margin-right: 0;
                     }
                 }
@@ -336,7 +332,7 @@
         header {
             height: 20vh;
             min-height: 130px;
-            a.favLink.show[href='/'] {
+            a.favLink.show[href="/"] {
                 display: none;
             }
             .relativeColumnBox {
@@ -495,7 +491,7 @@
                 .inputBox {
                     justify-content: space-between;
                     flex-direction: row;
-                    label[type='email'] {
+                    label[type="email"] {
                         margin-left: 20px;
                     }
                 }
@@ -647,7 +643,7 @@
             form {
                 .inputBox {
                     flex-direction: column;
-                    label[for='email'] {
+                    label[for="email"] {
                         margin-left: 0;
                     }
                 }
@@ -1433,13 +1429,7 @@
                 transparent 19px,
                 $white 0
             ),
-            linear-gradient(
-                45deg,
-                $white 2px,
-                transparent 15px,
-                #b8b8b8 14px,
-                transparent 0
-            );
+            linear-gradient(45deg, $white 2px, transparent 15px, #b8b8b8 14px, transparent 0);
         background-position: bottom;
         background-repeat: repeat-x;
         background-size: 32px 32px;
@@ -1554,7 +1544,7 @@
         }
     }
     .splash {
-        background-image: url('https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp');
+        background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
         background-repeat: no-repeat;
         background-size: cover;
         .contactWrapper a {
@@ -1634,30 +1624,16 @@
         display: none;
     }
     footer::before {
-        background: radial-gradient(
-            ellipse,
-            $black,
-            $black 7px,
-            $black 7px,
-            $black 10px,
-            transparent 11px
-        );
+        background: radial-gradient(ellipse, $black, $black 7px, $black 7px, $black 10px, transparent 11px);
         background-repeat: repeat-x;
         margin-bottom: 60px;
         position: relative;
         top: 0;
     }
     footer::after {
-        background: radial-gradient(
-            ellipse,
-            transparent,
-            transparent 7.3px,
-            $black 7px,
-            $black 10px,
-            $black 11px
-        );
+        background: radial-gradient(ellipse, transparent, transparent 7.3px, $black 7px, $black 10px, $black 11px);
         background-position: -18px -20px;
-        content: '';
+        content: "";
         position: absolute;
         left: 0px;
         top: 20px;

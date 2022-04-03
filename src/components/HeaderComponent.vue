@@ -42,6 +42,7 @@
                             :path="navRoute.path"
                             :name="navRoute.name"
                             :navBarColor="navBarColor"
+                            :noTransition="noTransition"
                         />
                     </ul>
                 </nav>
@@ -73,7 +74,8 @@
                                 :aria-label="lightDarkLabel"
                                 aria-live="polite"
                                 :checked="darkOn"
-                                @click="toggleColor"
+                                @click="toggleColor(), emitToggle()"
+                                @blur="handleBlur()"
                                 @keydown="enterToggle"
                             />
                             <span class="flexBox target">
@@ -105,7 +107,14 @@ export default {
     NavLiComponent
   },
   inject: ['safari'],
-  props: ['main', 'toggleColor', 'darkOn', 'toggle', 'lightDarkLabel'],
+  props: [
+    'main',
+    'toggleColor',
+    'darkOn',
+    'toggle',
+    'lightDarkLabel',
+    'noTransition'
+  ],
   data () {
     return {
       navRoutes: routes.options.routes
@@ -155,6 +164,12 @@ export default {
         e.stopImmediatePropagation()
         this.toggleColor()
       }
+    },
+    handleBlur () {
+      this.$emit('blur')
+    },
+    emitToggle () {
+      this.$emit('toggling')
     }
   }
 }

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.5;
 }
@@ -87,7 +87,7 @@ body {
     form,
     label,
     button {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 
     form {
@@ -115,7 +115,7 @@ body {
         font-size: 1.1rem;
     }
 
-    label[for='email'] {
+    label[for="email"] {
         margin-left: 18px;
     }
 
@@ -123,7 +123,7 @@ body {
     textarea {
         border: none;
         caret-color: $darkTeal;
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         font-size: 0.8rem;
     }
 
@@ -133,13 +133,13 @@ body {
         resize: vertical;
     }
 
-    input[type='text'],
-    input[type='email'] {
+    input[type="text"],
+    input[type="email"] {
         padding: 10px;
     }
 
-    input[type='text'],
-    input[type='email'],
+    input[type="text"],
+    input[type="email"],
     textarea {
         border-radius: 20px 3px 0px 20px;
         background: $white;

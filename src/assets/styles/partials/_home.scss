@@ -61,8 +61,7 @@
             .outlined {
                 color: $black;
                 font-weight: 800;
-                text-shadow: -1px -1px 2px $teal, 1px -1px 2px $teal,
-                    -1px 2px 2px $grayTeal, 1px 1px 2px $black;
+                text-shadow: -1px -1px 2px $teal, 1px -1px 2px $teal, -1px 2px 2px $grayTeal, 1px 1px 2px $black;
                 -webkit-text-fill-color: initial;
             }
             .web {
@@ -121,7 +120,7 @@
             label {
                 margin: 5px 8px 5px 0px;
             }
-            label[for='email'] {
+            label[for="email"] {
                 margin-top: 12px;
             }
             .contactFormButton {
@@ -162,7 +161,7 @@
         .stars:after {
             -webkit-box-shadow: inherit;
             box-shadow: inherit;
-            content: '';
+            content: "";
             position: absolute;
             height: inherit;
             width: inherit;
@@ -192,11 +191,7 @@
         position: relative;
         .lightBackground {
             background: {
-                image: linear-gradient(
-                        to bottom,
-                        rgba(23, 162, 170, 0) 0%,
-                        rgba(23, 162, 170, 0.2) 100%
-                    ),
+                image: linear-gradient(to bottom, rgba(23, 162, 170, 0) 0%, rgba(23, 162, 170, 0.2) 100%),
                     url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
                 blend-mode: multiply;
                 size: cover;
@@ -217,7 +212,7 @@
                     border: 10px solid $teal;
                     box-shadow: 0 0 50px $white, inset 0 0 50px $white;
                     filter: url(#wave) blur(10px);
-                    content: '';
+                    content: "";
                     position: absolute;
                     opacity: 0.9;
                     bottom: 0;

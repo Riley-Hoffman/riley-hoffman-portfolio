@@ -11,6 +11,7 @@
                 {
                     aboutLink: path === '/about',
                     projectsLink: path === '/projects',
+                    noTransition: noTransition,
                 },
             ]"
             >{{ name }}</router-link
@@ -19,6 +20,6 @@
 </template>
 <script>
 export default {
-  props: ['path', 'name', 'navBarColor']
+  props: ['path', 'name', 'navBarColor', 'noTransition']
 }
 </script>

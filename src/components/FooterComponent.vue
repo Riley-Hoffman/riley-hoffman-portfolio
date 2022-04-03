@@ -8,7 +8,7 @@
         >
             <div class="flexBox contactBox">
                 <h2 class="contactHeading">Contact</h2>
-                <SocialComponent />
+                <SocialComponent :noTransition="noTransition" />
             </div>
             <div class="formBackground">
                 <FormComponent />
@@ -43,6 +43,12 @@ export default {
   components: {
     SocialComponent,
     FormComponent
+  },
+  props: ['noTransition'],
+  methods: {
+    consoleLogNoColorTransition () {
+      console.log(this.noTransition)
+    }
   }
 }
 </script>
