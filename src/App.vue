@@ -10,7 +10,6 @@
             :darkOn="darkOn"
             :toggle="toggle"
             :lightDarkLabel="lightDarkLabel"
-            @blur="handleToggleBlur()"
             :noTransition="noTransition"
         />
         <main
@@ -68,7 +67,7 @@ export default {
       }
       setTimeout(() => {
         this.noTransition = false
-      }, 1000)
+      }, 500)
     },
     toggleDark () {
       this.darkOn = true
@@ -80,9 +79,6 @@ export default {
       this.toggle = 'sun'
       this.lightDarkLabel = 'Light Mode Selected'
       localStorage.setItem('toggle', 'sun')
-    },
-    handleToggleBlur () {
-      this.noTransition = false
     }
   },
   created () {

@@ -75,7 +75,6 @@
                                 aria-live="polite"
                                 :checked="darkOn"
                                 @click="toggleColor()"
-                                @blur="handleBlur()"
                                 @keydown="enterToggle"
                             />
                             <span class="flexBox target">
@@ -164,9 +163,6 @@ export default {
         e.stopImmediatePropagation()
         this.toggleColor()
       }
-    },
-    handleBlur () {
-      this.$emit('blur')
     }
   }
 }
