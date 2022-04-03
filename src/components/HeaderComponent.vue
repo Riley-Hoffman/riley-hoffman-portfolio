@@ -74,7 +74,7 @@
                                 :aria-label="lightDarkLabel"
                                 aria-live="polite"
                                 :checked="darkOn"
-                                @click="toggleColor(), emitToggle()"
+                                @click="toggleColor()"
                                 @blur="handleBlur()"
                                 @keydown="enterToggle"
                             />
@@ -167,9 +167,6 @@ export default {
     },
     handleBlur () {
       this.$emit('blur')
-    },
-    emitToggle () {
-      this.$emit('toggling')
     }
   }
 }
