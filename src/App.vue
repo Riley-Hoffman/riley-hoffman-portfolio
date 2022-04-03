@@ -10,7 +10,6 @@
             :darkOn="darkOn"
             :toggle="toggle"
             :lightDarkLabel="lightDarkLabel"
-            @toggling="themeSwitching()"
             @blur="handleToggleBlur()"
             :noTransition="noTransition"
         />
@@ -59,6 +58,7 @@ export default {
   },
   methods: {
     toggleColor () {
+      this.noTransition = true
       if (!this.darkOn) {
         this.toggleDark()
       } else if (this.darkOn) {
@@ -66,6 +66,9 @@ export default {
       } else {
         this.toggleDark()
       }
+      setTimeout(() => {
+        this.noTransition = false
+      }, 1000)
     },
     toggleDark () {
       this.darkOn = true
@@ -77,12 +80,6 @@ export default {
       this.toggle = 'sun'
       this.lightDarkLabel = 'Light Mode Selected'
       localStorage.setItem('toggle', 'sun')
-    },
-    themeSwitching () {
-      this.noTransition = true
-      setTimeout(() => {
-        this.noTransition = false
-      }, 1000)
     },
     handleToggleBlur () {
       this.noTransition = false
