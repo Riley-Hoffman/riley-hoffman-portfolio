@@ -8,10 +8,10 @@
             :darkOn="darkOn"
             :main="this.$refs.main"
             :noTransition="noTransition"
-            :toggleColor="toggleColor"
-            :toggleIcon="toggleIcon"
             :themeLabel="themeLabel"
             :themeSwitchAria="themeSwitchAria"
+            :toggleColor="toggleColor"
+            :toggleIcon="toggleIcon"
         />
         <main
             id="main"
