@@ -9,8 +9,8 @@
             :class="[favLinkHide, focusOutline]"
         >
             <img
-                src="../assets/img/android-chrome-512x512.png"
                 alt="A black letter R in a teal circle."
+                src="../assets/img/android-chrome-512x512.png"
                 title="Favicon"
             />
         </router-link>
@@ -25,9 +25,9 @@
             }"
         >
             <div
+                aria-label="Navigation and Colors."
                 class="flexBox navBox"
                 role="toolbar"
-                aria-label="Navigation and Colors."
             >
                 <nav
                     v-bind:class="{
