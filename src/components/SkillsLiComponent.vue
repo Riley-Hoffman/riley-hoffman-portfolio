@@ -3,9 +3,9 @@
         <div class="skillsIconBox" v-bind:class="{ noAnimation: safari }">
             <i :class="icon" aria-hidden="true" v-if="devicon"></i>
             <font-awesome-icon
-                :icon="icon"
-                class="fa-solid"
                 aria-hidden="true"
+                class="fa-solid"
+                :icon="icon"
                 v-else-if="!devicon"
             />
         </div>
@@ -15,6 +15,6 @@
 <script>
 export default {
   inject: ['safari'],
-  props: ['icon', 'skill', 'devicon']
+  props: ['devicon', 'icon', 'skill']
 }
 </script>

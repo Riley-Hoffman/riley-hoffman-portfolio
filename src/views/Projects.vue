@@ -5,16 +5,16 @@
                 <h1>Projects</h1>
                 <ul>
                     <ProjectLiComponent
-                        v-for="(project, index) in projects"
-                        :key="index"
-                        :title="project.title"
-                        :skills="project.skills"
                         :description="project.description"
-                        :liveUrl="project.liveUrl"
                         :gitUrl="project.gitUrl"
-                        :srcSet="project.srcSet"
-                        :imgUrl="project.imgUrl"
                         :imgAlt="project.imgAlt"
+                        :imgUrl="project.imgUrl"
+                        :key="index"
+                        :liveUrl="project.liveUrl"
+                        :skills="project.skills"
+                        :srcSet="project.srcSet"
+                        :title="project.title"
+                        v-for="(project, index) in projects"
                     />
                 </ul>
             </div>

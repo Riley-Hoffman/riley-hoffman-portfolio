@@ -5,8 +5,8 @@
             <div class="errorContentBox flexBox">
                 <figure class="errorIcon">
                     <img
-                        src="../assets/img/404.svg"
                         alt="An open empty folder with a sad face and speech bubble contain an X."
+                        src="../assets/img/404.svg"
                     />
                 </figure>
                 <p class="errorP">
@@ -32,15 +32,15 @@
                                     >Back to Home</router-link
                                 >
                                 <font-awesome-icon
-                                    icon="arrow-right-long"
+                                    aria-hidden="true"
                                     class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft"
+                                    icon="arrow-right-long"
                                     v-bind:class="
                                         !this.reduceMotion && {
                                             animate__headShake: this.hover,
                                             animate__backOutRight: this.click,
                                         }
                                     "
-                                    aria-hidden="true"
                                 />
                             </li>
                         </ul>

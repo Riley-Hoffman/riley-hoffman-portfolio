@@ -5,12 +5,13 @@
         ref="colorContainer"
     >
         <HeaderComponent
-            :main="this.$refs.main"
-            :toggleColor="toggleColor"
             :darkOn="darkOn"
-            :toggle="toggle"
-            :lightDarkLabel="lightDarkLabel"
+            :main="this.$refs.main"
             :noTransition="noTransition"
+            :toggleColor="toggleColor"
+            :toggleIcon="toggleIcon"
+            :themeLabel="themeLabel"
+            :themeSwitchAria="themeSwitchAria"
         />
         <main
             id="main"
@@ -40,8 +41,9 @@ export default {
   data () {
     return {
       darkOn: true,
-      toggle: '',
-      lightDarkLabel: '',
+      toggleIcon: '',
+      themeLabel: '',
+      themeSwitchAria: '',
       safariCheck:
                 navigator.userAgent.includes('Safari') &&
                 !navigator.userAgent.includes('OPR') &&
@@ -71,13 +73,15 @@ export default {
     },
     toggleDark () {
       this.darkOn = true
-      this.toggle = 'moon'
-      this.lightDarkLabel = 'Dark Mode Selected'
+      this.toggleIcon = 'moon'
+      this.themeLabel = 'Dark On'
+      this.themeSwitchAria = 'Dark Mode On'
     },
     toggleLight () {
       this.darkOn = false
-      this.toggle = 'sun'
-      this.lightDarkLabel = 'Light Mode Selected'
+      this.toggleIcon = 'sun'
+      this.themeLabel = 'Dark Off'
+      this.themeSwitchAria = 'Dark Mode Off'
       localStorage.setItem('toggle', 'sun')
     }
   },
@@ -89,16 +93,18 @@ export default {
     }
   },
   mounted () {
-    if (localStorage.toggle) {
-      this.toggle = localStorage.toggle
+    if (localStorage.toggleIcon) {
+      this.toggleIcon = localStorage.toggleIcon
+    } else {
+      this.toggleIcon = 'moon'
     }
   },
   watch: {
-    toggle (toggleIcon) {
-      localStorage.toggle = toggleIcon
-      if (this.toggle === 'moon') {
+    toggleIcon (faIcon) {
+      localStorage.toggleIcon = faIcon
+      if (this.toggleIcon === 'moon') {
         this.toggleDark()
-      } else if (this.toggle === 'sun') {
+      } else if (this.toggleIcon === 'sun') {
         this.toggleLight()
       }
     }

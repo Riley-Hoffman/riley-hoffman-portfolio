@@ -116,6 +116,17 @@
             margin-left: 85px;
             padding: 0 4px 10px 10px;
             position: relative;
+            width: 78px;
+        }
+
+        .toggle-wrapper.safariToggle {
+            div.themeToggleBox::before {
+                width: 30%;
+            }
+            
+            div.themeToggleBox.enabled::before, div.themeToggleBox.disabled::before {
+                left: 13%;
+            }
         }
         .themeToggleWrapper {
             display: block;
@@ -131,6 +142,9 @@
                 opacity: 0.9;
                 text-align: left;
                 width: 100%;
+                span:first-child {
+                    white-space: nowrap;
+                }
                 + span.flexBox {
                     justify-content: center;
                     position: relative;

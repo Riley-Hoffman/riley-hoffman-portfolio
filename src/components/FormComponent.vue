@@ -6,21 +6,21 @@
                 <div class="flexBox inputBox">
                     <label for="name">Name:</label>
                     <input
-                        type="text"
+                        enterkeyhint="next"
                         id="name"
                         name="name"
                         placeholder="Your name.."
-                        enterkeyhint="next"
+                        type="text"
                         required
                     />
 
                     <label for="email">Email:</label>
                     <input
-                        type="email"
+                        enterkeyhint="next"
                         id="email"
                         name="email"
                         placeholder="Your email.."
-                        enterkeyhint="next"
+                        type="email"
                         required
                     />
                 </div>

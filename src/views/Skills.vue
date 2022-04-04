@@ -6,11 +6,11 @@
                     <h1>Skills</h1>
                     <ul class="skillsGallery">
                         <SkillsLiComponent
-                            v-for="(skill, index) in skills"
+                            :devicon="skill.devicon"
+                            :icon="skill.icon"
                             :key="index"
                             :skill="skill.name"
-                            :icon="skill.icon"
-                            :devicon="skill.devicon"
+                            v-for="(skill, index) in skills"
                         />
                     </ul>
                 </div>

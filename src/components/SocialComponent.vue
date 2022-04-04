@@ -2,27 +2,27 @@
     <div class="flexBox contactIcons">
         <a
             class="contactIcon"
-            :class="{ noTransition: noTransition }"
             href="https://github.com/Riley-Hoffman"
             rel="nofollow"
+            :class="{ noTransition: noTransition }"
         >
             <font-awesome-icon
-                :icon="['fab', 'github']"
-                class="fab fa-github"
                 aria-hidden="true"
+                class="fab fa-github"
+                :icon="['fab', 'github']"
             />
             <span class="sr-only">Github</span>
         </a>
         <a
             class="contactIcon"
-            :class="{ noTransition: noTransition }"
             href="https://www.linkedin.com/in/riley-hoffman-014623213"
             rel="nofollow"
+            :class="{ noTransition: noTransition }"
         >
             <font-awesome-icon
-                :icon="['fab', 'linkedin']"
-                class="fab fa-linkedin"
                 aria-hidden="true"
+                class="fab fa-linkedin"
+                :icon="['fab', 'linkedin']"
             />
             <span class="sr-only">Linkedin</span>
         </a>
