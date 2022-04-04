@@ -483,12 +483,7 @@ body {
   justify-content: space-between;
   position: relative;
 }
-.colorContainer .relativeColumnBox:not(.projectsRelColBox, .homeRelColBox, .homeBodyRelColBox, .errorRelColBox, .errorNavRelColBox) {
-  background: rgb(229, 232, 238);
-  background: linear-gradient(0deg, rgba(229, 238, 238, 0.16) 0%, rgb(229, 232, 238) 5%);
-  z-index: 20;
-}
-.colorContainer .skillsRelColBox {
+.colorContainer .relativeColumnBox:not(.homeRelColBox, .homeBodyRelColBox, .projectsRelColBox, .errorRelColBox, .errorNavRelColBox) {
   background: rgb(229, 232, 238);
   background: linear-gradient(0deg, rgba(229, 238, 238, 0.16) 0%, rgb(229, 232, 238) 5%);
   z-index: 20;
