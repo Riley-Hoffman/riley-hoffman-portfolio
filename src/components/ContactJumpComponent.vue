@@ -3,9 +3,9 @@
         <button
             class="styledButton"
             v-on="{
-                mouseover: contactJumpMoveOver,
-                focus: contactJumpMoveOver,
                 click: jumpScroll,
+                focus: contactJumpMoveOver,
+                mouseover: contactJumpMoveOver,
             }"
         >
             Contact Me
@@ -40,8 +40,8 @@ export default {
       const top = this.$el.offsetTop
       if (!this.reduceMotion) {
         window.scrollTo({
-          top: top,
-          behavior: 'smooth'
+          behavior: 'smooth',
+          top: top
         })
       } else {
         window.scrollTo({

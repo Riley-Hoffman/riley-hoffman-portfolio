@@ -6,32 +6,32 @@ import wb from './registerServiceWorker'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
-  faWater,
-  faXmark,
+  faArrowDown,
+  faArrowRightLong,
+  faCircleHalfStroke,
   faFileArrowDown,
   faLeftRight,
-  faUniversalAccess,
-  faArrowRightLong,
-  faArrowDown,
-  faCircleHalfStroke,
+  faMoon,
   faSun,
-  faMoon
+  faUniversalAccess,
+  faWater,
+  faXmark
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
-  faWater,
-  faXmark,
-  faFileArrowDown,
-  faLeftRight,
-  faUniversalAccess,
-  faArrowRightLong,
-  faGithub,
-  faLinkedin,
   faArrowDown,
+  faArrowRightLong,
   faCircleHalfStroke,
+  faFileArrowDown,
+  faGithub,
+  faLeftRight,
+  faLinkedin,
+  faMoon,
   faSun,
-  faMoon
+  faUniversalAccess,
+  faWater,
+  faXmark
 )
 
 const app = createApp(App)

@@ -21,16 +21,16 @@
                 ><span class="webDeveloper">Web Developer</span>
             </p>
             <a
-                href="./riley-hoffman-resume.pdf"
-                class="resume"
                 aria-label="Download my resumay"
+                class="resume"
+                href="./riley-hoffman-resume.pdf"
                 download
             >
                 Resume
                 <font-awesome-icon
-                    icon="file-arrow-down"
-                    class="fa-solid fa-file-arrow-down"
                     aria-hidden="true"
+                    class="fa-solid fa-file-arrow-down"
+                    icon="file-arrow-down"
                 />
             </a>
         </div>

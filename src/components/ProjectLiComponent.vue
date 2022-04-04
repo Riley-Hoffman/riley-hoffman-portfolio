@@ -19,20 +19,20 @@
         </div>
         <div class="imgBox">
             <a
-                :href="liveUrl"
-                title="Visit live site."
                 class="projImgLink"
-                target="_blank"
                 rel="nofollow"
+                target="_blank"
+                title="Visit live site."
+                :href="liveUrl"
             >
                 <img
-                    :srcset="srcSet"
-                    sizes="(max-width: 900px) 100vw, 900px"
-                    width="887"
-                    height="887"
-                    :href="imgUrl"
                     :alt="imgAlt"
+                    :href="imgUrl"
+                    :srcset="srcSet"
                     :title="title"
+                    sizes="(max-width: 900px) 100vw, 900px"
+                    height="887"
+                    width="887"
                 />
                 <div class="oval"></div>
             </a>
@@ -42,14 +42,14 @@
 <script>
 export default {
   props: [
-    'title',
-    'skills',
     'description',
-    'liveUrl',
     'gitUrl',
-    'srcSet',
+    'imgAlt',
     'imgUrl',
-    'imgAlt'
+    'liveUrl',
+    'skills',
+    'srcSet',
+    'title'
   ]
 }
 </script>

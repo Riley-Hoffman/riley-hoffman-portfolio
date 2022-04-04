@@ -835,6 +835,13 @@ body {
   margin-left: 85px;
   padding: 0 4px 10px 10px;
   position: relative;
+  width: 78px;
+}
+.colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox::before {
+  width: 30%;
+}
+.colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox.enabled::before, .colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox.disabled::before {
+  left: 13%;
 }
 .colorContainer header .navBox .themeToggleWrapper {
   display: block;
@@ -851,6 +858,9 @@ body {
   opacity: 0.9;
   text-align: left;
   width: 100%;
+}
+.colorContainer header .navBox .themeToggleWrapper .mode span:first-child {
+  white-space: nowrap;
 }
 .colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox {
   justify-content: center;

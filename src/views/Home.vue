@@ -11,9 +11,9 @@
                 <div class="smallFlexBox">
                     <div class="flexBox iconContainer">
                         <font-awesome-icon
-                            icon="water"
-                            class="fas fa-water"
                             aria-hidden="true"
+                            class="fas fa-water"
+                            icon="water"
                         />
                     </div>
                     <h1 class="subtleTextGradient">
@@ -34,8 +34,8 @@
                         >
                     </button>
                     <ModalComponent
-                        v-bind:class="{ openModal: showModal }"
                         :hideModal="hideModal"
+                        v-bind:class="{ openModal: showModal }"
                         v-if="showModal"
                     />
                     <div class="contactWrapper">

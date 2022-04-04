@@ -20,6 +20,6 @@
 </template>
 <script>
 export default {
-  props: ['path', 'name', 'navBarColor', 'noTransition']
+  props: ['name', 'navBarColor', 'noTransition', 'path']
 }
 </script>

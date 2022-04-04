@@ -37,16 +37,16 @@
                 >
                     <ul class="mainNavList">
                         <NavLiComponent
-                            v-for="(navRoute, index) in navRoutes"
                             :key="index"
-                            :path="navRoute.path"
                             :name="navRoute.name"
                             :navBarColor="navBarColor"
                             :noTransition="noTransition"
+                            :path="navRoute.path"
+                            v-for="(navRoute, index) in navRoutes"
                         />
                     </ul>
                 </nav>
-                <label class="toggle-wrapper" for="themeInput">
+                <label class="toggle-wrapper" v-bind:class="{safariToggle: safari}" for="themeInput">
                     <div class="themeToggleWrapper">
                         <span class="mode flexBox">
                             <span
@@ -55,7 +55,8 @@
                                         $route.path === '/about' ||
                                         $route.path === '/skills',
                                 }"
-                                >Light/Dark</span
+                                aria-hidden="true"
+                                >{{ themeLabel }}</span
                             >
                             <span class="sr-only">Choose Color Theme.</span>
                         </span>
@@ -64,15 +65,14 @@
                             v-bind:class="{
                                 enabled: darkOn,
                                 disabled: !darkOn,
-                                safariToggle: safari,
                             }"
                         >
                             <input
+                                aria-live="polite"
                                 id="themeInput"
                                 name="themeInput"
                                 type="checkbox"
-                                :aria-label="lightDarkLabel"
-                                aria-live="polite"
+                                :aria-label="themeSwitchAria"
                                 :checked="darkOn"
                                 @click="toggleColor()"
                                 @keydown="enterToggle"
@@ -86,7 +86,7 @@
                                     }"
                                 >
                                     <font-awesome-icon
-                                        v-bind:icon="['fa-solid', `${toggle}`]"
+                                        v-bind:icon="['fa-solid', `${toggleIcon}`]"
                                         aria-hidden="true"
                                     />
                                 </span>
@@ -107,12 +107,13 @@ export default {
   },
   inject: ['safari'],
   props: [
-    'main',
-    'toggleColor',
     'darkOn',
-    'toggle',
-    'lightDarkLabel',
-    'noTransition'
+    'main',
+    'noTransition',
+    'toggleColor',
+    'toggleIcon',
+    'themeLabel',
+    'themeSwitchAria'
   ],
   data () {
     return {
