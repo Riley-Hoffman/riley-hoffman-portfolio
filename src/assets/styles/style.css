@@ -1099,6 +1099,13 @@ body {
   bottom: 12px;
   right: 14px;
 }
+.colorContainer .modal .modalClose:focus,
+.colorContainer .modal .modalClose:active {
+  border-radius: 6px;
+}
+.colorContainer .modal .modalClose:focus {
+  outline: 2px solid #17a2aa;
+}
 .colorContainer .modal form {
   margin-top: 0;
 }
