@@ -112,6 +112,13 @@
             bottom: 12px;
             right: 14px;
         }
+        .modalClose:focus,
+        .modalClose:active {
+            border-radius: 6px;
+        }
+        .modalClose:focus {
+            outline: 2px solid $teal;
+        }
         form {
             margin-top: 0;
             .modalClose {
