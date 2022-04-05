@@ -249,7 +249,6 @@
         }
     }
 
-
     /* Landscape phone to portrait tablet */
 
     @media (max-width: 780px) {
@@ -374,6 +373,9 @@
                     top: 7px;
                     .themeToggleWrapper {
                         margin-left: 0;
+                        .themeToggleBox {
+                            width: 100%;
+                        }
                         svg {
                             margin: none;
                         }
@@ -387,16 +389,16 @@
                 flex-direction: column;
                 .imgBox {
                     img,
-                    a.projImgLink:active>img,
-                    a.projImgLink:hover>img,
-                    a.projImgLink:focus>img {
+                    a.projImgLink:active > img,
+                    a.projImgLink:hover > img,
+                    a.projImgLink:focus > img {
                         margin-top: 50px;
                     }
                     img,
-                    a.projImgLink:active>img {
+                    a.projImgLink:active > img {
                         border: none;
                     }
-                    a.projImgLink:focus>img {
+                    a.projImgLink:focus > img {
                         border-top: 5px solid $teal;
                         margin-top: 45px;
                         transition: all 0.1s;
@@ -467,19 +469,19 @@
     }
 
     /* Landscape phone to portrait tablet Hover Styles */
-    
+
     @media (max-width: 780px) and (hover: hover) and (pointer: fine) {
         .projects {
             .projectBox {
                 .imgBox {
-                    a.projImgLink:hover>img {
+                    a.projImgLink:hover > img {
                         border-top: 1px solid $teal;
                         margin-top: 49px;
                         opacity: 0.8;
                         transition: all 0.1s;
                     }
-    
-                    a.projImgLink:active>img {
+
+                    a.projImgLink:active > img {
                         opacity: 1;
                     }
                 }

@@ -123,8 +123,9 @@
             div.themeToggleBox::before {
                 width: 30%;
             }
-            
-            div.themeToggleBox.enabled::before, div.themeToggleBox.disabled::before {
+
+            div.themeToggleBox.enabled::before,
+            div.themeToggleBox.disabled::before {
                 left: 13%;
             }
         }

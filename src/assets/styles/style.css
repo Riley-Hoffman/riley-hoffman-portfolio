@@ -836,7 +836,8 @@ body {
 .colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox::before {
   width: 30%;
 }
-.colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox.enabled::before, .colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox.disabled::before {
+.colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox.enabled::before,
+.colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox.disabled::before {
   left: 13%;
 }
 .colorContainer header .navBox .themeToggleWrapper {
@@ -2020,6 +2021,9 @@ body {
   }
   .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper {
     margin-left: 0;
+  }
+  .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper .themeToggleBox {
+    width: 100%;
   }
   .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper svg {
     margin: none;
