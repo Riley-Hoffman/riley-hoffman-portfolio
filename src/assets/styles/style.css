@@ -477,6 +477,7 @@ body {
   outline: 2px solid #00050f;
 }
 .colorContainer .relativeColumnBox {
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -996,10 +997,15 @@ body {
 .colorContainer .mainH + footer.transitionBorder {
   background-color: transparent;
 }
+.colorContainer .mainH .relativeColumnBox {
+  height: 80%;
+  padding-top: 20px;
+}
 .colorContainer .splash {
   background-attachment: fixed;
   background-position-x: 100%;
   padding: 30vh 0 50px;
+  padding: 20vh 0 30px;
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -1709,6 +1715,7 @@ body {
   /* Portrait tablet and small desktops */
   /* Large Text Resolution Screens */
   /* Landscape phone to portrait tablet */
+  /* Landscape phone to portrait tablet Hover Styles */
   /* Medium phones and down */
   /* Small phones */
   /* Smallest phones */
@@ -2023,15 +2030,23 @@ body {
   .colorContainer .projects .projectBox {
     flex-direction: column;
   }
-  .colorContainer .projects .projectBox .imgBox img {
+  .colorContainer .projects .projectBox .imgBox img,
+.colorContainer .projects .projectBox .imgBox a.projImgLink:active > img,
+.colorContainer .projects .projectBox .imgBox a.projImgLink:hover > img,
+.colorContainer .projects .projectBox .imgBox a.projImgLink:focus > img {
     margin-top: 50px;
+  }
+  .colorContainer .projects .projectBox .imgBox img,
+.colorContainer .projects .projectBox .imgBox a.projImgLink:active > img {
+    border: none;
+  }
+  .colorContainer .projects .projectBox .imgBox a.projImgLink:focus > img {
+    border-top: 5px solid #17a2aa;
+    margin-top: 45px;
+    transition: all 0.1s;
   }
   .colorContainer .projects .projectBox .imgBox .oval {
     display: none;
-  }
-  .colorContainer .projects .projectBox .imgBox a:hover > img,
-.colorContainer .projects .projectBox .imgBox a:focus > img {
-    border-top: 8px ridge;
   }
   .colorContainer .projects .projectBox .projectInfo a:last-of-type {
     margin-left: 30px;
@@ -2080,6 +2095,17 @@ body {
   .colorContainer .errorSection .errorContentBox .errorP {
     margin: 40px auto 50px;
     text-align: center;
+  }
+}
+@media (max-width: 780px) and (hover: hover) and (pointer: fine) {
+  .colorContainer .projects .projectBox .imgBox a.projImgLink:hover > img {
+    border-top: 1px solid #17a2aa;
+    margin-top: 49px;
+    opacity: 0.8;
+    transition: all 0.1s;
+  }
+  .colorContainer .projects .projectBox .imgBox a.projImgLink:active > img {
+    opacity: 1;
   }
 }
 @media (max-width: 780px) and (max-height: 575px) {

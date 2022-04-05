@@ -4,11 +4,16 @@
         + footer.transitionBorder {
             background-color: transparent;
         }
+        .relativeColumnBox {
+            height: 80%;
+            padding-top: 20px;
+        }
     }
     .splash {
         background-attachment: fixed;
         background-position-x: 100%;
         padding: 30vh 0 50px;
+        padding: 20vh 0 30px;
         position: absolute;
         height: 100vh;
         width: 100%;
