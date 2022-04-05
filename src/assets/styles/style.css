@@ -396,6 +396,11 @@ body {
   display: none;
 }
 
+.colorContainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
 .colorContainer .wrapper {
   max-width: 1100px;
   width: 85%;
@@ -1524,11 +1529,24 @@ body {
   font-weight: 500;
   margin-right: 1px;
   padding: 3px 5px;
+  position: relative;
   justify-content: space-between;
 }
 .colorContainer footer .bottom a svg {
   font-size: 1rem;
   padding-left: 8px;
+}
+.colorContainer footer .bottom a:focus {
+  outline: none;
+}
+.colorContainer footer .bottom a:focus::before {
+  border: 1px solid #e5e8ee;
+  bottom: 0;
+  content: "";
+  left: 0;
+  min-height: 39px;
+  position: absolute;
+  width: 129px;
 }
 .colorContainer footer .bottom a.resume:active {
   outline: none;
@@ -2079,11 +2097,11 @@ body {
     align-self: flex-start;
     margin-left: 40px;
   }
-  .colorContainer .mainH + footer {
-    width: initial;
-  }
   .colorContainer footer {
     padding: 0 0 20px;
+  }
+  .colorContainer .mainH + footer .bottom {
+    justify-content: space-around;
   }
   .colorContainer .splash .smallFlexBox {
     margin-top: 0;
@@ -2381,7 +2399,7 @@ body {
   }
   .colorContainer .mainH + footer .bottom {
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .colorContainer .mainH + footer .bottom .webDeveloper {
     display: block;
@@ -2390,7 +2408,7 @@ body {
     display: none;
   }
   .colorContainer .mainH + footer .bottom p {
-    margin: 0;
+    margin: 0 30px 0 0;
   }
   .colorContainer .formBackground .fieldsetBox {
     padding: 0 11px;
