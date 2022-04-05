@@ -22,11 +22,24 @@
                 font-weight: 500;
                 margin-right: 1px;
                 padding: 3px 5px;
+                position: relative;
                 justify-content: space-between;
                 svg {
                     font-size: 1rem;
                     padding-left: 8px;
                 }
+            }
+            a:focus {
+                outline: none;
+            }
+            a:focus::before {
+                border: 1px solid $white;
+                bottom: 0;
+                content: "";
+                left: 0;
+                min-height: 39px;
+                position: absolute;
+                width: 129px;
             }
             a.resume:active {
                 outline: none;
