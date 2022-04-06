@@ -2831,7 +2831,7 @@ body {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) footer::before {
-  background: linear-gradient(-45deg, rgba(215, 237, 238, 0.3) 14px, #dddddd 15px, #bbbbbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+  background: linear-gradient(-45deg, rgb(235, 246, 246) 14px, #dddddd 15px, #bbbbbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
