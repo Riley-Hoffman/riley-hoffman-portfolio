@@ -1,7 +1,11 @@
 <template>
     <div
         class="colorContainer"
-        v-bind:class="{ darkModeOn: darkOn, heightVh: $route.path === '/', noBackground:  $route.path === '/' && !darkOn }"
+        v-bind:class="{
+            darkModeOn: darkOn,
+            heightVh: $route.path === '/',
+            noBackground: $route.path === '/' && !darkOn,
+        }"
         ref="colorContainer"
     >
         <HeaderComponent
