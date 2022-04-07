@@ -1306,6 +1306,9 @@
 }
 
 // When user prefers light mode
+.colorContainer:not(.darkModeOn).noBackground {
+    background-color: transparent;
+}
 .colorContainer:not(.darkModeOn) {
     background-color: $white;
     h1,
@@ -1327,9 +1330,6 @@
         -webkit-text-fill-color: transparent;
     }
 
-    html {
-        background: $white;
-    }
     a:focus,
     button:focus {
         outline: 2px solid $black;
