@@ -3106,6 +3106,22 @@ body {
   transform: none;
 }
 
+@media (prefers-contrast: more) {
+  .colorContainer .imgBox div.oval {
+    display: none;
+  }
+  .colorContainer input::-moz-placeholder, .colorContainer textarea::-moz-placeholder {
+    color: rgba(0, 5, 15, 0.75);
+  }
+  .colorContainer input:-ms-input-placeholder, .colorContainer textarea:-ms-input-placeholder {
+    color: rgba(0, 5, 15, 0.75);
+  }
+  .colorContainer input::placeholder,
+.colorContainer textarea::placeholder,
+.colorContainer p {
+    color: rgba(0, 5, 15, 0.75);
+  }
+}
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);

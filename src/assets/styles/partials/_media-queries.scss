@@ -1792,6 +1792,23 @@
         }
     }
 }
+
+// When user prefers increased contrast
+@media (prefers-contrast: more) {
+    .colorContainer {
+        .imgBox {
+            div.oval {
+                display: none;
+            }
+        }
+        input::placeholder,
+        textarea::placeholder,
+        p {
+            color: rgba(0, 5, 15, 0.75);
+        }
+    }
+}
+
 @-webkit-keyframes spin {
     0% {
         transform: rotate(0deg);
