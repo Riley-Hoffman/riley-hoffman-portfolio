@@ -249,7 +249,7 @@ time {
 }
 
 html {
-  background-color: #00050f;
+  background-color: #e5e8ee;
 }
 
 body {
@@ -2727,6 +2727,10 @@ body {
     color: #00050f;
   }
 }
+.colorContainer:not(.darkModeOn).noBackground {
+  background-color: transparent;
+}
+
 .colorContainer:not(.darkModeOn) {
   background-color: #e5e8ee;
 }
@@ -2744,9 +2748,6 @@ body {
   background: linear-gradient(180deg, black 20%, #00050f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.colorContainer:not(.darkModeOn) html {
-  background: #e5e8ee;
 }
 .colorContainer:not(.darkModeOn) a:focus,
 .colorContainer:not(.darkModeOn) button:focus {
