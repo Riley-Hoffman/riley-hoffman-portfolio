@@ -2832,12 +2832,12 @@ body {
 .colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom {
   margin-bottom: 60px;
 }
-.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom a {
+.colorContainer:not(.darkModeOn) footer .bottom a {
   text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
 }
-.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom .resume svg,
-.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom .resume:active svg,
-.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom .resume:hover svg {
+.colorContainer:not(.darkModeOn) footer .bottom .resume svg,
+.colorContainer:not(.darkModeOn) footer .bottom .resume:active svg,
+.colorContainer:not(.darkModeOn) footer .bottom .resume:hover svg {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) footer p {
