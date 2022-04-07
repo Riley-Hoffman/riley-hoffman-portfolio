@@ -2393,6 +2393,12 @@ body {
   .colorContainer header nav {
     letter-spacing: 1.5px;
   }
+  .colorContainer .about .about1 figure {
+    margin-bottom: 20px;
+  }
+  .colorContainer .about .iconContainer.contactJump {
+    margin-top: 55px;
+  }
   .colorContainer .smallFlexBox button.tealContactButton {
     font-size: 0.8rem;
     padding: 15px 0;
