@@ -1,7 +1,7 @@
 <template>
     <div
         class="colorContainer"
-        v-bind:class="{ darkModeOn: darkOn }"
+        v-bind:class="{ darkModeOn: darkOn, heightVh: $route.path === '/' }"
         ref="colorContainer"
     >
         <HeaderComponent
@@ -27,7 +27,7 @@
         >
             <router-view :noTransition="noTransition" />
         </main>
-        <FooterComponent :noTransition="noTransition" />
+        <FooterComponent :noTransition="noTransition" :darkOn="darkOn" />
     </div>
 </template>
 <script>

@@ -14,7 +14,10 @@
                 <FormComponent />
             </div>
         </div>
-        <div class="wrapper flexBox bottom">
+        <div
+            class="wrapper flexBox bottom"
+            v-bind:class="{ homeBottomMargin: $route.path === '/' && !darkOn }"
+        >
             <p>
                 Riley Hoffman
                 <span class="verticalLine" aria-hidden="true">| </span
@@ -44,7 +47,7 @@ export default {
     SocialComponent,
     FormComponent
   },
-  props: ['noTransition'],
+  props: ['darkOn', 'noTransition'],
   methods: {
     consoleLogNoColorTransition () {
       console.log(this.noTransition)

@@ -248,6 +248,10 @@ time {
   font-weight: bold;
 }
 
+html {
+  background-color: #00050f;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
@@ -396,9 +400,13 @@ body {
   display: none;
 }
 
+.colorContainer.heightVh {
+  height: 100vh;
+}
+
 .colorContainer {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 .colorContainer .wrapper {
@@ -2718,6 +2726,9 @@ body {
     color: #00050f;
   }
 }
+.colorContainer:not(.darkModeOn) {
+  background-color: #e5e8ee;
+}
 .colorContainer:not(.darkModeOn) h1,
 .colorContainer:not(.darkModeOn) h2,
 .colorContainer:not(.darkModeOn) h3,
@@ -2816,22 +2827,22 @@ body {
 .colorContainer:not(.darkModeOn) footer .contactWrapper a:focus {
   outline: 2px solid #00050f;
 }
-.colorContainer:not(.darkModeOn) footer .bottom {
+.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom {
   margin-bottom: 60px;
 }
-.colorContainer:not(.darkModeOn) footer .bottom a {
+.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom a {
   text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
 }
-.colorContainer:not(.darkModeOn) footer .bottom .resume svg,
-.colorContainer:not(.darkModeOn) footer .bottom .resume:active svg,
-.colorContainer:not(.darkModeOn) footer .bottom .resume:hover svg {
+.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom .resume svg,
+.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom .resume:active svg,
+.colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom .resume:hover svg {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) footer p {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) footer::before {
-  background: linear-gradient(-45deg, rgb(235, 246, 246) 14px, #dddddd 15px, #bbbbbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+  background: linear-gradient(-45deg, rgb(222, 234, 237) 14px, #ddd 15px, #bbb 16px, transparent 19px, #e5e8ee 0), linear-gradient(45deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
