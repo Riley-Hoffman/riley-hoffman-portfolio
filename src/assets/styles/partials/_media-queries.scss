@@ -1803,7 +1803,7 @@
     }
 }
 
-// When user prefers increased contrast
+// When user prefers increased contrast (works on Safari)
 @media (prefers-contrast: more) {
     .colorContainer {
         .imgBox {
