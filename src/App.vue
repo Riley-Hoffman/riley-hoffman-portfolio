@@ -5,6 +5,7 @@
             darkModeOn: darkOn,
             heightVh: $route.path === '/',
             noBackground: $route.path === '/' && !darkOn,
+            sideNav: scrolledToMain,
         }"
         ref="colorContainer"
     >
@@ -45,6 +46,7 @@ export default {
   data () {
     return {
       darkOn: true,
+      scrolledToMain: false,
       toggleIcon: '',
       themeLabel: '',
       themeSwitchAria: '',
@@ -62,6 +64,14 @@ export default {
     }
   },
   methods: {
+    handleScroll () {
+      console.log(window.scrollY)
+      if (window.scrollY > 60) {
+        this.scrolledToMain = true
+      } else if (window.scrollY < 100) {
+        this.scrolledToMain = false
+      }
+    },
     toggleColor () {
       this.noTransition = true
       if (!this.darkOn) {
@@ -90,6 +100,7 @@ export default {
     }
   },
   created () {
+    window.addEventListener('scroll', this.handleScroll)
     if (this.$workbox) {
       this.$workbox.addEventListener('waiting', () => {
         this.showUpdateUI = true
@@ -102,6 +113,9 @@ export default {
     } else {
       this.toggleIcon = 'moon'
     }
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   watch: {
     toggleIcon (faIcon) {

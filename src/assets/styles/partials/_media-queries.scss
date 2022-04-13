@@ -1438,7 +1438,7 @@
 
     footer {
         background: $white;
-        background: rgba(215, 237, 238, 0.5);
+        background: rgb(214, 229, 233);
         color: $black;
         .contactWrapper {
             > a {
@@ -1468,15 +1468,15 @@
         }
     }
     footer::before {
-        background: linear-gradient(-28deg, rgb(222, 234, 237) 14px, #ddd 15px, #bbb 16px, transparent 19px, #e5e8ee 0),
-            linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+        background: linear-gradient(-28deg, rgb(214, 229, 233) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0),
+        linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
         background-position: bottom;
         background-repeat: repeat-x;
         background-size: 32px 32px;
         height: 36px;
         margin-bottom: 40px;
         position: relative;
-        top: -5px;
+        top: -36px;
     }
     .errorHeader {
         background-image: none;
@@ -1873,4 +1873,64 @@
     to {
         bottom: 10px;
     }
+}
+
+.colorContainer.sideNav header {
+    transition: all 1s;
+    width: 100vw;
+    overflow: visible;
+   
+
+}
+
+
+
+.colorContainer.sideNav header .navBox {
+    transition: all 1s;
+    width: 75%;
+    flex-direction: row-reverse;
+}
+
+.colorContainer.sideNav header .navBox nav {
+    transition: all 1s;
+    width: 71%;
+    margin-bottom: 5px
+}
+
+.colorContainer.sideNav .relativeColumnBox:not(.homeBodyRelColBox) {
+    transition: all 1s;
+    transform: rotate(90deg);
+    height: 165px;
+    position: relative;
+    right: -42%;
+    bottom: -160px;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
+}
+
+
+.colorContainer.sideNav header .navBox nav ul.mainNavList {
+    transition: all 1s;
+    z-index: initial;
+
+}
+
+.colorContainer.sideNav header .navBox nav ul.mainNavList li,
+.colorContainer.sideNav header .navBox label {
+    transition: all 1s;
+    transform: rotate(-90deg);
+
+}
+
+
+.colorContainer.sideNav .relativeColumnBox {
+    transition: all 1s;
+    border-radius: 0px;
+    height: 80%;
+}
+
+.colorContainer.sideNav footer {
+    z-index: 999;
 }

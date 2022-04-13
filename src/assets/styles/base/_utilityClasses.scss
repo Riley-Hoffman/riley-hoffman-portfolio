@@ -107,11 +107,11 @@
         position: relative;
     }
 
-    .relativeColumnBox:not(.homeRelColBox, .homeBodyRelColBox, .projectsRelColBox, .errorRelColBox, .errorNavRelColBox) {
-        background: rgb(229, 232, 238);
-        background: $columnBoxGradient;
-        z-index: 20;
-    }
+    // .relativeColumnBox:not(.homeRelColBox, .homeBodyRelColBox, .projectsRelColBox, .errorRelColBox, .errorNavRelColBox) {
+    //     background: rgb(229, 232, 238);
+    //     background: $columnBoxGradient;
+    //     z-index: 20;
+    // }
 
     .styledButton {
         background: $buttonGradient;

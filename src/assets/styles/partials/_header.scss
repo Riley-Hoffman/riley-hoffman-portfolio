@@ -1,10 +1,17 @@
 .colorContainer header {
     align-items: center;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     min-height: 100px;
     height: 10vh;
     width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 0.5s;
+    * {
+        transition: all 0.5s;
+    }
     .skip-link {
         background: $teal;
         border-radius: 3px;
