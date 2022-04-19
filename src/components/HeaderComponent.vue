@@ -110,10 +110,10 @@ export default {
     'darkOn',
     'main',
     'noTransition',
-    'toggleColor',
-    'toggleIcon',
     'themeLabel',
-    'themeSwitchAria'
+    'themeSwitchAria',
+    'toggleColor',
+    'toggleIcon'
   ],
   data () {
     return {
