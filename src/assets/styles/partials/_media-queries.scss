@@ -1876,54 +1876,47 @@
 }
 
 .colorContainer.sideNav header {
-    transition: all 1s;
-    width: 100vw;
+    transition: width 1s;
     overflow: visible;
-   
-
+    width: 100vw;
 }
 
-
-
 .colorContainer.sideNav header .navBox {
+    background: linear-gradient(180deg, rgba(229, 232, 238, 0) 0%, rgba(229, 232, 238, 0.6166667351) 25%, rgb(229, 232, 238) 50%, rgba(229, 232, 238, 0.5886555306) 75%, rgba(229, 232, 238, 0) 100%);
+    background-color: $white;
     transition: all 1s;
-    width: 75%;
+    border-radius: 20px;
     flex-direction: row-reverse;
+    width: 75%;
 }
 
 .colorContainer.sideNav header .navBox nav {
     transition: all 1s;
+    margin-bottom: 5px;
     width: 71%;
-    margin-bottom: 5px
 }
 
 .colorContainer.sideNav .relativeColumnBox:not(.homeBodyRelColBox) {
     transition: all 1s;
-    transform: rotate(90deg);
+    align-items: flex-end;
+    bottom: -160px;
     height: 165px;
+    justify-content: flex-start;
     position: relative;
     right: -42%;
-    bottom: -160px;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-
+    transform: rotate(90deg);
 }
-
 
 .colorContainer.sideNav header .navBox nav ul.mainNavList {
     transition: all 1s;
     z-index: initial;
-
 }
 
 .colorContainer.sideNav header .navBox nav ul.mainNavList li,
 .colorContainer.sideNav header .navBox label {
     transition: all 1s;
     transform: rotate(-90deg);
-
 }
-
 
 .colorContainer.sideNav .relativeColumnBox {
     transition: all 1s;

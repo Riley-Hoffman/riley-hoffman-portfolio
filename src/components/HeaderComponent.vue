@@ -1,5 +1,17 @@
 <template>
-    <header class="flexBox">
+    <header
+        class="flexBox"
+        v-bind:class="{
+            absoluteHeader: scrolledToFooter,
+            sideNavLongPageBottom:
+                scrolledToFooter && $route.path === '/projects',
+            sideNavShortPageBottom:
+                scrolledToFooter &&
+                ($route.path === '/about' ||
+                    $route.path === '/skills' ||
+                    $route.path === '/page-not-found'),
+        }"
+    >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
             Skip To Content
         </button>
@@ -46,7 +58,11 @@
                         />
                     </ul>
                 </nav>
-                <label class="toggle-wrapper" v-bind:class="{safariToggle: safari}" for="themeInput">
+                <label
+                    class="toggle-wrapper"
+                    v-bind:class="{ safariToggle: safari }"
+                    for="themeInput"
+                >
                     <div class="themeToggleWrapper">
                         <span class="mode flexBox">
                             <span
@@ -86,7 +102,10 @@
                                     }"
                                 >
                                     <font-awesome-icon
-                                        v-bind:icon="['fa-solid', `${toggleIcon}`]"
+                                        v-bind:icon="[
+                                            'fa-solid',
+                                            `${toggleIcon}`,
+                                        ]"
                                         aria-hidden="true"
                                     />
                                 </span>
@@ -110,10 +129,11 @@ export default {
     'darkOn',
     'main',
     'noTransition',
-    'toggleColor',
-    'toggleIcon',
+    'scrolledToFooter',
     'themeLabel',
-    'themeSwitchAria'
+    'themeSwitchAria',
+    'toggleColor',
+    'toggleIcon'
   ],
   data () {
     return {

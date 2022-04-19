@@ -8,16 +8,20 @@
             sideNav: scrolledToMain,
         }"
         ref="colorContainer"
+        @mousemove="handleMouseMove"
     >
+    <Transition>
         <HeaderComponent
             :darkOn="darkOn"
             :main="this.$refs.main"
             :noTransition="noTransition"
+            :scrolledToFooter="scrolledToFooter"
             :themeLabel="themeLabel"
             :themeSwitchAria="themeSwitchAria"
             :toggleColor="toggleColor"
             :toggleIcon="toggleIcon"
         />
+    </Transition>
         <main
             id="main"
             ref="main"
@@ -32,7 +36,7 @@
         >
             <router-view :noTransition="noTransition" />
         </main>
-        <FooterComponent :noTransition="noTransition" :darkOn="darkOn" />
+        <FooterComponent :noTransition="noTransition" :darkOn="darkOn" ref="footer" />
     </div>
 </template>
 <script>
@@ -46,16 +50,17 @@ export default {
   data () {
     return {
       darkOn: true,
-      scrolledToMain: false,
-      toggleIcon: '',
-      themeLabel: '',
-      themeSwitchAria: '',
+      noTransition: false,
       safariCheck:
                 navigator.userAgent.includes('Safari') &&
                 !navigator.userAgent.includes('OPR') &&
                 !navigator.userAgent.includes('Chrome') &&
                 !navigator.userAgent.includes('Android'),
-      noTransition: false
+      scrolledToFooter: false,
+      scrolledToMain: false,
+      themeLabel: '',
+      themeSwitchAria: '',
+      toggleIcon: ''
     }
   },
   provide () {
@@ -64,12 +69,20 @@ export default {
     }
   },
   methods: {
+    handleMouseMove (e) {
+      console.log('mouse location:', e.clientX, e.clientY)
+    },
     handleScroll () {
-      console.log(window.scrollY)
+      const scrollWithFooter = window.scrollY + this.$refs.footer.$el.scrollHeight
       if (window.scrollY > 60) {
         this.scrolledToMain = true
       } else if (window.scrollY < 100) {
         this.scrolledToMain = false
+      }
+      if (scrollWithFooter >= this.$refs.footer.$el.offsetTop) {
+        this.scrolledToFooter = true
+      } else {
+        this.scrolledToFooter = false
       }
     },
     toggleColor () {
