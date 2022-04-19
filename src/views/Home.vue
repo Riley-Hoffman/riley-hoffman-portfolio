@@ -27,6 +27,7 @@
                     </h1>
                     <button
                         class="tealContactButton homeButton styledButton"
+                        ref="contactButton"
                         @click="openModal"
                     >
                         <span class="target"
@@ -84,6 +85,7 @@ export default {
     hideModal () {
       if (this.showModal) {
         this.showModal = !this.showModal
+        this.$refs.contactButton.focus()
       }
     }
   }
