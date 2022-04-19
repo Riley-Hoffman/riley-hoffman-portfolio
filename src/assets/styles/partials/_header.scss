@@ -55,6 +55,9 @@
             outline: 2px solid $white;
         }
     }
+    .relativeColumnBox {
+        transition: all 1s, transform 0.1s;
+    }
     .navBox {
         align-items: center;
         border-radius: calc(50px + 12%);
@@ -63,6 +66,7 @@
         position: relative;
         transition: flex-direction 1s, width 1s, background 0.2;
         nav {
+            transition: margin 0.3s, width 0.6s;
             align-items: flex-end;
             display: flex;
             flex-direction: column;
@@ -71,10 +75,13 @@
                 display: flex;
                 justify-content: space-between;
                 position: relative;
-                transition: all 1s;
+                transition: all 0s;
                 width: 100%;
-                li {
-                    transition: all 1s;
+                li:first-child, li:nth-child(2) {
+                    transition: transform 0.7s;
+                }
+                li:nth-child(3), li:nth-child(3) {
+                    transition: transform 0.5s;
                 }
                 a {
                     border-bottom: 1px solid transparent;
@@ -131,7 +138,7 @@
             padding: 0 4px 0px 10px;
             position: relative;
             right: 15px;
-            transition: all 1s;
+            transition: all 1s, transform 0.6s;
             width: 78px;
         }
 

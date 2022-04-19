@@ -405,6 +405,7 @@ body {
 }
 
 .colorContainer {
+  overflow: hidden;
   position: relative;
   height: 100%;
   width: 100vw;
@@ -792,6 +793,9 @@ body {
 .colorContainer header .whiteOutline:focus img {
   outline: 2px solid #e5e8ee;
 }
+.colorContainer header .relativeColumnBox {
+  transition: all 1s, transform 0.1s;
+}
 .colorContainer header .navBox {
   align-items: center;
   border-radius: calc(50px + 12%);
@@ -801,6 +805,7 @@ body {
   transition: flex-direction 1s, width 1s, background 0.2;
 }
 .colorContainer header .navBox nav {
+  transition: margin 0.3s, width 0.6s;
   align-items: flex-end;
   display: flex;
   flex-direction: column;
@@ -810,11 +815,14 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  transition: all 1s;
+  transition: all 0s;
   width: 100%;
 }
-.colorContainer header .navBox nav ul li {
-  transition: all 1s;
+.colorContainer header .navBox nav ul li:first-child, .colorContainer header .navBox nav ul li:nth-child(2) {
+  transition: transform 0.7s;
+}
+.colorContainer header .navBox nav ul li:nth-child(3), .colorContainer header .navBox nav ul li:nth-child(3) {
+  transition: transform 0.5s;
 }
 .colorContainer header .navBox nav ul a {
   border-bottom: 1px solid transparent;
@@ -864,7 +872,7 @@ body {
   padding: 0 4px 0px 10px;
   position: relative;
   right: 15px;
-  transition: all 1s;
+  transition: all 1s, transform 0.6s;
   width: 78px;
 }
 .colorContainer header .navBox .toggle-wrapper.safariToggle div.themeToggleBox::before {
@@ -3186,7 +3194,7 @@ body {
   }
 }
 .colorContainer.sideNav header {
-  transition: overflow 1s, width 1s;
+  transition: width 1s;
   overflow: visible;
   width: 100vw;
 }
@@ -3201,13 +3209,13 @@ body {
 }
 
 .colorContainer.sideNav header .navBox nav {
-  transition: all 1s;
+  transition: margin 0.3s, width 0.6s;
   margin-bottom: 5px;
   width: 71%;
 }
 
 .colorContainer.sideNav .relativeColumnBox:not(.homeBodyRelColBox) {
-  transition: all 1s;
+  transition: all 1s, transform 0.6s;
   align-items: flex-end;
   bottom: -160px;
   height: 165px;
@@ -3223,8 +3231,8 @@ body {
 }
 
 .colorContainer.sideNav header .navBox nav ul.mainNavList li,
-.colorContainer.sideNav header .navBox label {
-  transition: all 1s;
+.colorContainer.sideNav header .navBox .toggle-wrapper {
+  transition: all 0.7s;
   transform: rotate(-90deg);
 }
 

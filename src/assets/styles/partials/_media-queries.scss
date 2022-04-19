@@ -1891,13 +1891,13 @@
 }
 
 .colorContainer.sideNav header .navBox nav {
-    transition: all 1s;
+    transition: margin 0.3s, width 0.6s;
     margin-bottom: 5px;
     width: 71%;
 }
 
 .colorContainer.sideNav .relativeColumnBox:not(.homeBodyRelColBox) {
-    transition: all 1s;
+    transition: all 1s, transform 0.6s;
     align-items: flex-end;
     bottom: -160px;
     height: 165px;
@@ -1913,8 +1913,8 @@
 }
 
 .colorContainer.sideNav header .navBox nav ul.mainNavList li,
-.colorContainer.sideNav header .navBox label {
-    transition: all 1s;
+.colorContainer.sideNav header .navBox .toggle-wrapper {
+    transition: all 0.7s;
     transform: rotate(-90deg);
 }
 
