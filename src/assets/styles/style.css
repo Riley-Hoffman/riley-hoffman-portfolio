@@ -836,6 +836,7 @@ body {
   border-bottom: 1px solid transparent;
   line-height: 1;
   margin: 10px;
+  position: relative;
 }
 .colorContainer header .navBox nav ul a:focus {
   outline: none;
