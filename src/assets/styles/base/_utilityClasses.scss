@@ -43,9 +43,12 @@
     .sideNavLongPageBottom {
         top: 59%;
     }
-    
+
     .sideNavShortPageBottom {
         top: 5%;
+        .favLink {
+            top: -25%;
+        }
     }
 
     .black {
