@@ -10,18 +10,19 @@
         ref="colorContainer"
         @mousemove="handleMouseMove"
     >
-    <Transition>
-        <HeaderComponent
-            :darkOn="darkOn"
-            :main="this.$refs.main"
-            :noTransition="noTransition"
-            :scrolledToFooter="scrolledToFooter"
-            :themeLabel="themeLabel"
-            :themeSwitchAria="themeSwitchAria"
-            :toggleColor="toggleColor"
-            :toggleIcon="toggleIcon"
-        />
-    </Transition>
+        <Transition>
+            <HeaderComponent
+                :darkOn="darkOn"
+                :main="this.$refs.main"
+                :noTransition="noTransition"
+                :scrolledToFooter="scrolledToFooter"
+                :scrolledToMain="scrolledToMain"
+                :themeLabel="themeLabel"
+                :themeSwitchAria="themeSwitchAria"
+                :toggleColor="toggleColor"
+                :toggleIcon="toggleIcon"
+            />
+        </Transition>
         <main
             id="main"
             ref="main"
@@ -36,7 +37,11 @@
         >
             <router-view :noTransition="noTransition" />
         </main>
-        <FooterComponent :noTransition="noTransition" :darkOn="darkOn" ref="footer" />
+        <FooterComponent
+            :noTransition="noTransition"
+            :darkOn="darkOn"
+            ref="footer"
+        />
     </div>
 </template>
 <script>
@@ -73,7 +78,8 @@ export default {
       console.log('mouse location:', e.clientX, e.clientY)
     },
     handleScroll () {
-      const scrollWithFooter = window.scrollY + this.$refs.footer.$el.scrollHeight
+      const scrollWithFooter =
+                window.scrollY + this.$refs.footer.$el.scrollHeight
       if (window.scrollY > 60) {
         this.scrolledToMain = true
       } else if (window.scrollY < 100) {

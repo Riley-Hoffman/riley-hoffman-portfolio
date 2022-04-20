@@ -2,14 +2,19 @@
     <header
         class="flexBox"
         v-bind:class="{
-            absoluteHeader: scrolledToFooter,
             sideNavLongPageBottom:
                 scrolledToFooter && $route.path === '/projects',
             sideNavShortPageBottom:
-                scrolledToFooter &&
+                scrolledToMain &&
                 ($route.path === '/about' ||
                     $route.path === '/skills' ||
                     $route.path === '/page-not-found'),
+                    absoluteHeader:
+                (scrolledToFooter && $route.path === '/projects') ||
+                (scrolledToMain &&
+                    ($route.path === '/about' ||
+                        $route.path === '/skills' ||
+                        $route.path === '/page-not-found')),
         }"
     >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
@@ -130,6 +135,7 @@ export default {
     'main',
     'noTransition',
     'scrolledToFooter',
+    'scrolledToMain',
     'themeLabel',
     'themeSwitchAria',
     'toggleColor',
