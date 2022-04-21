@@ -49,10 +49,10 @@ export default {
       themeLabel: '',
       themeSwitchAria: '',
       safariCheck:
-                navigator.userAgent.includes('Safari') &&
-                !navigator.userAgent.includes('OPR') &&
-                !navigator.userAgent.includes('Chrome') &&
-                !navigator.userAgent.includes('Android'),
+        navigator.userAgent.includes('Safari') &&
+        !navigator.userAgent.includes('OPR') &&
+        !navigator.userAgent.includes('Chrome') &&
+        !navigator.userAgent.includes('Android'),
       noTransition: false
     }
   },
@@ -115,7 +115,9 @@ export default {
   },
   async accept () {
     this.showUpdateUI = false
-    await this.$workbox.messageSW({ type: 'SKIP_WAITING' })
+    await this.$workbox.messageSW({
+      type: 'SKIP_WAITING'
+    })
   }
 }
 </script>
