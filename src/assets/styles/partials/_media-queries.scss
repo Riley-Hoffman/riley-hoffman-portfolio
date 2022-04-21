@@ -250,7 +250,6 @@
     }
 
     /* Landscape phone to portrait tablet */
-
     @media (max-width: 780px) {
         .mainDiv {
             height: initial;
@@ -327,61 +326,6 @@
 
         .relativeColumnBox .smallFlexBox .homeButton {
             width: 40%;
-        }
-
-        header {
-            height: 20vh;
-            min-height: 130px;
-            a.favLink.show[href="/"] {
-                display: none;
-            }
-            .relativeColumnBox {
-                justify-content: center;
-            }
-            .navBox {
-                align-items: flex-start;
-                justify-content: space-between;
-                margin: 0;
-                nav {
-                    width: 100%;
-                    ul.mainNavList {
-                        display: grid;
-                        grid-row-gap: 20px;
-                        grid-template-columns: 1fr 1fr;
-                        width: 100%;
-                        li {
-                            display: flex;
-                            .aboutLink {
-                                .me {
-                                    display: none;
-                                }
-                                .sr-only {
-                                    display: inline;
-                                }
-                            }
-                        }
-                        .col2 {
-                            padding-left: 35px;
-                        }
-                    }
-                    .contactIcons {
-                        display: none;
-                    }
-                }
-                .toggle-wrapper {
-                    right: 50px;
-                    top: 7px;
-                    .themeToggleWrapper {
-                        margin-left: 0;
-                        .themeToggleBox {
-                            width: 100%;
-                        }
-                        svg {
-                            margin: none;
-                        }
-                    }
-                }
-            }
         }
         .projects {
             padding: 85px 0 40px;
@@ -1165,6 +1109,78 @@
     }
 }
 
+.colorContainer:not(.sideNav) {
+    @media (max-width: 780px) {
+        header {
+            height: 20vh;
+            min-height: 130px;
+
+            a.favLink.show[href="/"] {
+                display: none;
+            }
+
+            .relativeColumnBox {
+                justify-content: center;
+            }
+            .navBox {
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 0;
+
+                nav {
+                    width: 100%;
+
+                    ul.mainNavList {
+                        display: grid;
+                        grid-row-gap: 20px;
+                        grid-template-columns: 1fr 1fr;
+                        width: 100%;
+
+                        li {
+                            display: flex;
+
+                            .aboutLink {
+                                .me {
+                                    display: none;
+                                }
+
+                                .sr-only {
+                                    display: inline;
+                                }
+                            }
+                        }
+
+                        .col2 {
+                            padding-left: 35px;
+                        }
+                    }
+
+                    .contactIcons {
+                        display: none;
+                    }
+                }
+
+                .toggle-wrapper {
+                    right: 50px;
+                    top: 7px;
+
+                    .themeToggleWrapper {
+                        margin-left: 0;
+
+                        .themeToggleBox {
+                            width: 100%;
+                        }
+
+                        svg {
+                            margin: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Light/Dark specific hover styles
 
 @media (pointer: fine) {
@@ -1468,8 +1484,15 @@
         }
     }
     footer::before {
-        background: linear-gradient(-28deg, rgb(214, 229, 233) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0),
-        linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+        background: linear-gradient(
+                -28deg,
+                rgb(214, 229, 233) 14px,
+                #ddd 15px,
+                #bbb 16px,
+                transparent 19px,
+                transparent 0
+            ),
+            linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
         background-position: bottom;
         background-repeat: repeat-x;
         background-size: 32px 32px;
@@ -1882,12 +1905,34 @@
 }
 
 .colorContainer.sideNav header .navBox {
-    background: linear-gradient(180deg, rgba(229, 232, 238, 0) 0%, rgba(229, 232, 238, 0.6166667351) 25%, rgb(229, 232, 238) 50%, rgba(229, 232, 238, 0.5886555306) 75%, rgba(229, 232, 238, 0) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(229, 232, 238, 0) 0%,
+        rgba(229, 232, 238, 0.6166667351) 25%,
+        rgb(229, 232, 238) 50%,
+        rgba(229, 232, 238, 0.5886555306) 75%,
+        rgba(229, 232, 238, 0) 100%
+    );
     background-color: $white;
     transition: all 1s;
     border-radius: 20px;
     flex-direction: row-reverse;
     width: 75%;
+}
+
+.colorContainer.sideNav {
+    @media (max-width: 780px) {
+        header {
+            .relativeColumnBox:not(.homeBodyRelColBox) {
+                right: -23%;
+                width: 600px;
+            }
+
+            .navBox {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .colorContainer.sideNav header .navBox nav {

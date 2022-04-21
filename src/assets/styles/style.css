@@ -2047,58 +2047,6 @@ body {
   .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 40%;
   }
-  .colorContainer header {
-    height: 20vh;
-    min-height: 130px;
-  }
-  .colorContainer header a.favLink.show[href="/"] {
-    display: none;
-  }
-  .colorContainer header .relativeColumnBox {
-    justify-content: center;
-  }
-  .colorContainer header .navBox {
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0;
-  }
-  .colorContainer header .navBox nav {
-    width: 100%;
-  }
-  .colorContainer header .navBox nav ul.mainNavList {
-    display: grid;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-  }
-  .colorContainer header .navBox nav ul.mainNavList li {
-    display: flex;
-  }
-  .colorContainer header .navBox nav ul.mainNavList li .aboutLink .me {
-    display: none;
-  }
-  .colorContainer header .navBox nav ul.mainNavList li .aboutLink .sr-only {
-    display: inline;
-  }
-  .colorContainer header .navBox nav ul.mainNavList .col2 {
-    padding-left: 35px;
-  }
-  .colorContainer header .navBox nav .contactIcons {
-    display: none;
-  }
-  .colorContainer header .navBox .toggle-wrapper {
-    right: 50px;
-    top: 7px;
-  }
-  .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper {
-    margin-left: 0;
-  }
-  .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper .themeToggleBox {
-    width: 100%;
-  }
-  .colorContainer header .navBox .toggle-wrapper .themeToggleWrapper svg {
-    margin: none;
-  }
   .colorContainer .projects {
     padding: 85px 0 40px;
   }
@@ -2683,6 +2631,61 @@ body {
   }
 }
 
+@media (max-width: 780px) {
+  .colorContainer:not(.sideNav) header {
+    height: 20vh;
+    min-height: 130px;
+  }
+  .colorContainer:not(.sideNav) header a.favLink.show[href="/"] {
+    display: none;
+  }
+  .colorContainer:not(.sideNav) header .relativeColumnBox {
+    justify-content: center;
+  }
+  .colorContainer:not(.sideNav) header .navBox {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav {
+    width: 100%;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList li {
+    display: flex;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList li .aboutLink .me {
+    display: none;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList li .aboutLink .sr-only {
+    display: inline;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList .col2 {
+    padding-left: 35px;
+  }
+  .colorContainer:not(.sideNav) header .navBox nav .contactIcons {
+    display: none;
+  }
+  .colorContainer:not(.sideNav) header .navBox .toggle-wrapper {
+    right: 50px;
+    top: 7px;
+  }
+  .colorContainer:not(.sideNav) header .navBox .toggle-wrapper .themeToggleWrapper {
+    margin-left: 0;
+  }
+  .colorContainer:not(.sideNav) header .navBox .toggle-wrapper .themeToggleWrapper .themeToggleBox {
+    width: 100%;
+  }
+  .colorContainer:not(.sideNav) header .navBox .toggle-wrapper .themeToggleWrapper svg {
+    margin: none;
+  }
+}
+
 @media (pointer: fine) {
   .colorContainer.darkModeOn .navBox nav ul.mainNavList a:hover {
     text-shadow: -1px -5px 20px rgba(32, 69, 74, 0.8);
@@ -3214,6 +3217,16 @@ body {
   border-radius: 20px;
   flex-direction: row-reverse;
   width: 75%;
+}
+
+@media (max-width: 780px) {
+  .colorContainer.sideNav header .relativeColumnBox:not(.homeBodyRelColBox) {
+    right: -23%;
+    width: 600px;
+  }
+  .colorContainer.sideNav header .navBox {
+    width: 100%;
+  }
 }
 
 .colorContainer.sideNav header .navBox nav {
