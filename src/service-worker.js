@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
-
-workbox.core.setCacheNameDetails({ prefix: 'vue-pwa' })
+workbox.core.setCacheNameDetails({
+  prefix: 'vue-pwa'
+})
 
 self.__precacheManifest = [].concat(self.__precacheManifest || [])
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {})
