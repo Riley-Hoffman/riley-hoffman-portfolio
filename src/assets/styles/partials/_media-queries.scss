@@ -1898,77 +1898,138 @@
     }
 }
 
+// .colorContainer.sideNav header {
+//     transition: width 1s;
+//     overflow: visible;
+//     width: 100vw;
+// }
+
+// .colorContainer.sideNav header .navBox {
+//     background: linear-gradient(
+//         180deg,
+//         rgba(229, 232, 238, 0) 0%,
+//         rgba(229, 232, 238, 0.6166667351) 25%,
+//         rgb(229, 232, 238) 50%,
+//         rgba(229, 232, 238, 0.5886555306) 75%,
+//         rgba(229, 232, 238, 0) 100%
+//     );
+//     background-color: $white;
+//     transition: all 1s;
+//     border-radius: 20px;
+//     flex-direction: row-reverse;
+//     width: 75%;
+// }
+
+// .colorContainer.sideNav {
+//     @media (max-width: 780px) {
+//         header {
+//             .relativeColumnBox:not(.homeBodyRelColBox) {
+//                 right: -23%;
+//                 width: 600px;
+//             }
+
+//             .navBox {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
+
+// .colorContainer.sideNav header .navBox nav {
+//     transition: margin 0.3s, width 0.6s;
+//     margin-bottom: 5px;
+//     width: 71%;
+// }
+
+// .colorContainer.sideNav .relativeColumnBox:not(.homeBodyRelColBox) {
+//     transition: all 1s, transform 0s;
+//     align-items: flex-end;
+//     bottom: -160px;
+//     height: 165px;
+//     justify-content: flex-start;
+//     position: relative;
+//     right: -42%;
+//     transform: rotate(90deg);
+// }
+
+// .colorContainer.sideNav header .navBox nav ul.mainNavList {
+//     transition: all 1s;
+//     z-index: initial;
+// }
+
+// .colorContainer.sideNav header .navBox nav ul.mainNavList li,
+// .colorContainer.sideNav header .navBox .toggle-wrapper {
+//     transition: all 0.7s;
+//     transform: rotate(-90deg);
+// }
+
+// .colorContainer.sideNav .relativeColumnBox {
+//     transition: all 1s;
+//     border-radius: 0px;
+//     height: 80%;
+// }
+
+// .colorContainer.sideNav footer {
+//     z-index: 999;
+// }
 .colorContainer.sideNav header {
-    transition: width 1s;
-    overflow: visible;
-    width: 100vw;
-}
-
-.colorContainer.sideNav header .navBox {
-    background: linear-gradient(
-        180deg,
-        rgba(229, 232, 238, 0) 0%,
-        rgba(229, 232, 238, 0.6166667351) 25%,
-        rgb(229, 232, 238) 50%,
-        rgba(229, 232, 238, 0.5886555306) 75%,
-        rgba(229, 232, 238, 0) 100%
-    );
-    background-color: $white;
-    transition: all 1s;
-    border-radius: 20px;
-    flex-direction: row-reverse;
-    width: 75%;
-}
-
-.colorContainer.sideNav {
-    @media (max-width: 780px) {
-        header {
-            .relativeColumnBox:not(.homeBodyRelColBox) {
-                right: -23%;
-                width: 600px;
-            }
-
-            .navBox {
-                width: 100%;
+    .bm-burger-button {
+        left: initial;
+        right: -7%;
+    }
+    .navBox div .whiteBackground {
+        .bm-menu {
+            background-color: #9bd0d2;
+        
+            .bm-cross {
+                background-color: $black;
             }
         }
+        .bm-burger-button {
+            .bm-burger-bars {
+                background-color: $black;
+            }
+        
+        }
     }
+    
+    .navBox div .blackBackground {
+        .bm-menu {
+            background-color: #07262a;
+        
+            .bm-cross {
+                background-color: $white;
+            }
+        }
+        .bm-burger-button {
+            .bm-burger-bars {
+                background-color: $white;
+            }
+
+        }
+    }
+.navBox .bm-item-list {
+    flex-direction: column-reverse;
 }
 
-.colorContainer.sideNav header .navBox nav {
-    transition: margin 0.3s, width 0.6s;
-    margin-bottom: 5px;
-    width: 71%;
+.navBox .bm-item-list ul.mainNavList {
+    flex-direction: column;
 }
 
-.colorContainer.sideNav .relativeColumnBox:not(.homeBodyRelColBox) {
-    transition: all 1s, transform 0s;
-    align-items: flex-end;
-    bottom: -160px;
-    height: 165px;
-    justify-content: flex-start;
-    position: relative;
-    right: -42%;
-    transform: rotate(90deg);
+.navBox .bm-item-list ul.mainNavList {
+    height: 50vh;
 }
 
-.colorContainer.sideNav header .navBox nav ul.mainNavList {
-    transition: all 1s;
-    z-index: initial;
+.navBox nav.bm-item-list {
+    align-items: flex-start;
+    height: initial;
+    width: initial;
 }
 
-.colorContainer.sideNav header .navBox nav ul.mainNavList li,
-.colorContainer.sideNav header .navBox .toggle-wrapper {
-    transition: all 0.7s;
-    transform: rotate(-90deg);
+.navBox nav.bm-item-list .toggle-wrapper {
+    margin-bottom: 30px;
+    margin-left: 0;
+    right: initial;
 }
 
-.colorContainer.sideNav .relativeColumnBox {
-    transition: all 1s;
-    border-radius: 0px;
-    height: 80%;
-}
-
-.colorContainer.sideNav footer {
-    z-index: 999;
 }

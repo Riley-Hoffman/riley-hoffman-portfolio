@@ -68,9 +68,9 @@
         transition: flex-direction 1s, width 1s, background 0.2;
         nav {
             transition: margin 0.3s, width 0.6s;
-            align-items: flex-end;
+            align-items: center;
             display: flex;
-            flex-direction: column;
+            justify-content: flex-end;
             width: 55%;
             height: 32%;
             ul {

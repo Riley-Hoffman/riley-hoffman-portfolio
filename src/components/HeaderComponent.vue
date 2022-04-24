@@ -9,7 +9,7 @@
                 ($route.path === '/about' ||
                     $route.path === '/skills' ||
                     $route.path === '/page-not-found'),
-                    absoluteHeader:
+            absoluteHeader:
                 (scrolledToFooter && $route.path === '/projects') ||
                 (scrolledToMain &&
                     ($route.path === '/about' ||
@@ -46,88 +46,65 @@
                 class="flexBox navBox"
                 role="toolbar"
             >
+                <Transition>
+                    <Slide
+                        right
+                        v-bind:class="{
+                            aboutNav: $route.path === '/about',
+                            skillsNav: $route.path === '/skills',
+                            blackBackground:
+                                darkOn &&
+                                $route.path != '/about' &&
+                                $route.path != '/skills',
+                            whiteBackground:
+                                !darkOn ||
+                                $route.path === '/about' ||
+                                $route.path === '/skills',
+                            hide: scrolledToFooter,
+                        }"
+                        v-if="scrolledToMain"
+                    >
+                        <NavContentComponent
+                            :darkOn="darkOn"
+                            :noTransition="noTransition"
+                            :scrolledToFooter="scrolledToFooter"
+                            :scrolledToMain="scrolledToMain"
+                            :themeLabel="themeLabel"
+                            :themeSwitchAria="themeSwitchAria"
+                            :toggleColor="toggleColor"
+                            :toggleIcon="toggleIcon"
+                        />
+                    </Slide>
+                </Transition>
                 <nav
                     v-bind:class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                     }"
+                    v-if="!scrolledToMain"
                 >
-                    <ul class="mainNavList">
-                        <NavLiComponent
-                            :key="index"
-                            :name="navRoute.name"
-                            :navBarColor="navBarColor"
-                            :noTransition="noTransition"
-                            :path="navRoute.path"
-                            v-for="(navRoute, index) in navRoutes"
-                        />
-                    </ul>
+                    <NavContentComponent
+                        :darkOn="darkOn"
+                        :noTransition="noTransition"
+                        :scrolledToFooter="scrolledToFooter"
+                        :scrolledToMain="scrolledToMain"
+                        :themeLabel="themeLabel"
+                        :themeSwitchAria="themeSwitchAria"
+                        :toggleColor="toggleColor"
+                        :toggleIcon="toggleIcon"
+                    />
                 </nav>
-                <label
-                    class="toggle-wrapper"
-                    v-bind:class="{ safariToggle: safari }"
-                    for="themeInput"
-                >
-                    <div class="themeToggleWrapper">
-                        <span class="mode flexBox">
-                            <span
-                                v-bind:class="{
-                                    black:
-                                        $route.path === '/about' ||
-                                        $route.path === '/skills',
-                                }"
-                                aria-hidden="true"
-                                >{{ themeLabel }}</span
-                            >
-                            <span class="sr-only">Choose Color Theme.</span>
-                        </span>
-                        <div
-                            class="themeToggleBox"
-                            v-bind:class="{
-                                enabled: darkOn,
-                                disabled: !darkOn,
-                            }"
-                        >
-                            <input
-                                aria-live="polite"
-                                id="themeInput"
-                                name="themeInput"
-                                type="checkbox"
-                                :aria-label="themeSwitchAria"
-                                :checked="darkOn"
-                                @click="toggleColor()"
-                                @keydown="enterToggle"
-                            />
-                            <span class="flexBox target">
-                                <span
-                                    class="show"
-                                    v-bind:class="{
-                                        lightsOff: darkOn,
-                                        lightsOn: !darkOn,
-                                    }"
-                                >
-                                    <font-awesome-icon
-                                        v-bind:icon="[
-                                            'fa-solid',
-                                            `${toggleIcon}`,
-                                        ]"
-                                        aria-hidden="true"
-                                    />
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                </label>
             </div>
         </div>
     </header>
 </template>
 <script>
-import routes from '../router'
-import NavLiComponent from './NavLiComponent.vue'
+import { Slide } from 'vue3-burger-menu'
+import NavContentComponent from './NavContentComponent.vue'
 export default {
   components: {
-    NavLiComponent
+    Slide,
+    NavContentComponent
   },
   inject: ['safari'],
   props: [
@@ -141,24 +118,7 @@ export default {
     'toggleColor',
     'toggleIcon'
   ],
-  data () {
-    return {
-      navRoutes: routes.options.routes
-    }
-  },
   computed: {
-    navBarColor () {
-      if (!this.darkOn) {
-        return 'black'
-      } else if (
-        (this.$route.path === '/about' ||
-                    this.$route.path === '/skills') &&
-                this.darkOn
-      ) {
-        return 'black'
-      }
-      return 'white'
-    },
     favLinkHide () {
       if (this.$route.path === '/') {
         return 'hide'
@@ -181,15 +141,6 @@ export default {
         return 'whiteOutline'
       }
       return 'blackOutline'
-    }
-  },
-  methods: {
-    enterToggle (e) {
-      if (e.keyCode === 13) {
-        e.preventDefault()
-        e.stopImmediatePropagation()
-        this.toggleColor()
-      }
     }
   }
 }
