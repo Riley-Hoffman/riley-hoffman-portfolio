@@ -2,16 +2,9 @@
     <header
         class="flexBox"
         v-bind:class="{
-            sideNavLongPageBottom:
-                scrolledToFooter && $route.path === '/projects',
-            sideNavShortPageBottom:
-                scrolledToMain &&
-                ($route.path === '/about' ||
-                    $route.path === '/skills' ||
-                    $route.path === '/page-not-found'),
             absoluteHeader:
                 (scrolledToFooter && $route.path === '/projects') ||
-                (scrolledToMain &&
+                (scrolledToFooter &&
                     ($route.path === '/about' ||
                         $route.path === '/skills' ||
                         $route.path === '/page-not-found')),
@@ -24,6 +17,7 @@
             class="favLink"
             to="/"
             :class="[favLinkHide, focusOutline]"
+            v-if="!scrolledToMain"
         >
             <img
                 alt="A black letter R in a teal circle."
@@ -46,7 +40,6 @@
                 class="flexBox navBox"
                 role="toolbar"
             >
-                <Transition>
                     <Slide
                         right
                         v-bind:class="{
@@ -60,7 +53,6 @@
                                 !darkOn ||
                                 $route.path === '/about' ||
                                 $route.path === '/skills',
-                            hide: scrolledToFooter,
                         }"
                         v-if="scrolledToMain"
                     >
@@ -75,13 +67,12 @@
                             :toggleIcon="toggleIcon"
                         />
                     </Slide>
-                </Transition>
                 <nav
                     v-bind:class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                     }"
-                    v-if="!scrolledToMain"
+                    v-if="!scrolledToMain && !scrolledToFooter"
                 >
                     <NavContentComponent
                         :darkOn="darkOn"
@@ -100,7 +91,7 @@
 </template>
 <script>
 import { Slide } from 'vue3-burger-menu'
-import NavContentComponent from './NavContentComponent.vue'
+import NavContentComponent from './NavContentComponent'
 export default {
   components: {
     Slide,

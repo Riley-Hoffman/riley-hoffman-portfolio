@@ -8,6 +8,10 @@ body {
     line-height: 1.5;
 }
 
+body.bm-overlay {
+    background: transparent;
+}
+
 /* Works on Firefox */
 * {
     scrollbar-color: $scrollBarBlack $scrollBarTeal;

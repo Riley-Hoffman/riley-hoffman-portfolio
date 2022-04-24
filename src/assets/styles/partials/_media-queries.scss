@@ -256,6 +256,10 @@
         }
         section {
             height: 100%;
+            > .wrapper {
+                width: 80%;
+                margin-left: 5%;
+            }
         }
         .modal {
             left: 25px;
@@ -1969,13 +1973,24 @@
 //     height: 80%;
 // }
 
-// .colorContainer.sideNav footer {
-//     z-index: 999;
-// }
+.colorContainer.sideNav footer {
+    z-index: 999;
+}
 .colorContainer.sideNav header {
     .bm-burger-button {
+        margin-right: 10px;
         left: initial;
         right: -7%;
+    }
+    .navBox div div {
+        .bm-menu {
+            .bm-cross-button {
+                margin-right: 10px;
+                .bm-cross {
+                    height: 20px !important;
+                }
+            }
+        }
     }
     .navBox div .whiteBackground {
         .bm-menu {
@@ -1999,6 +2014,7 @@
         
             .bm-cross {
                 background-color: $white;
+                height: 20px;
             }
         }
         .bm-burger-button {

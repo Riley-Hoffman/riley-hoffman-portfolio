@@ -8,7 +8,6 @@
             sideNav: scrolledToMain,
         }"
         ref="colorContainer"
-        @mousemove="handleMouseMove"
     >
         <Transition>
             <HeaderComponent
@@ -74,18 +73,15 @@ export default {
     }
   },
   methods: {
-    handleMouseMove (e) {
-      console.log('mouse location:', e.clientX, e.clientY)
-    },
     handleScroll () {
       const scrollWithFooter =
                 window.scrollY + this.$refs.footer.$el.scrollHeight
       if (window.scrollY > 60) {
         this.scrolledToMain = true
-      } else if (window.scrollY < 100) {
+      } else if (window.scrollY < 60) {
         this.scrolledToMain = false
       }
-      if (scrollWithFooter >= this.$refs.footer.$el.offsetTop) {
+      if (scrollWithFooter >= this.$refs.footer.$el.offsetTop + 750) {
         this.scrolledToFooter = true
       } else {
         this.scrolledToFooter = false
