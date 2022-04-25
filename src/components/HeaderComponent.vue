@@ -3,6 +3,7 @@
         class="flexBox"
         v-bind:class="{
             absoluteHeader: scrolledToFooter,
+            transparent: scrolledToFooter
         }"
     >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
@@ -47,7 +48,7 @@
                         lightBackground:
                             !darkOn ||
                             $route.path === '/about' ||
-                            $route.path === '/skills',
+                            $route.path === '/skills'
                     }"
                     v-if="scrolledToMain && !scrolledToTop"
                 >
@@ -67,7 +68,7 @@
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                     }"
-                    v-if="!scrolledToMain && !scrolledToFooter"
+                    v-if="!scrolledToMain || scrolledToFooter"
                 >
                     <NavContentComponent
                         :darkOn="darkOn"

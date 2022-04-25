@@ -442,7 +442,7 @@ body.bm-overlay {
   display: flex;
 }
 .colorContainer .absoluteHeader {
-  transition: all 0s !important;
+  transition: all 0s, opacity 0.1s !important;
   position: absolute;
 }
 .colorContainer .black {
@@ -456,6 +456,9 @@ body.bm-overlay {
 }
 .colorContainer .hide {
   display: none !important;
+}
+.colorContainer .transparent {
+  opacity: 0;
 }
 .colorContainer .static {
   position: static !important;

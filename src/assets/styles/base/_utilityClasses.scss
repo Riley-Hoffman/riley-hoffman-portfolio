@@ -36,7 +36,7 @@
     }
 
     .absoluteHeader {
-        transition: all 0s !important;
+        transition: all 0s, opacity 0.1s !important;
         position: absolute;
     }
 
@@ -55,6 +55,9 @@
     .hide {
         display: none !important;
     }
+    .transparent {
+        opacity: 0;
+    }
 
     .static {
         position: static !important;
@@ -62,7 +65,7 @@
     .rotate180 {
         transform: rotate(180deg);
     }
-    
+
     .iconContainer.contactJump {
         align-items: center;
         color: $white;

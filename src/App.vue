@@ -83,7 +83,7 @@ export default {
       } else if (window.scrollY < 60) {
         this.scrolledToMain = false
       }
-      if (scrollWithFooter >= this.$refs.footer.$el.offsetTop + 750) {
+      if (scrollWithFooter >= this.$refs.footer.$el.offsetTop + 400) {
         this.scrolledToFooter = true
       } else {
         this.scrolledToFooter = false
