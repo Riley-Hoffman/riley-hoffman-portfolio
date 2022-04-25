@@ -743,8 +743,8 @@ body.bm-overlay {
   align-items: center;
   overflow: hidden;
   position: fixed;
-  min-height: 100px;
-  height: 10vh;
+  height: 20vh;
+  min-height: 130px;
   width: 100%;
   left: 0;
   top: 0;
@@ -808,10 +808,11 @@ body.bm-overlay {
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  width: 55%;
+  width: 75%;
   height: 32%;
 }
 .colorContainer header .navBox nav ul {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -1859,7 +1860,7 @@ body.bm-overlay {
     width: 60%;
   }
   .colorContainer header .navBox nav {
-    width: 75%;
+    width: 85%;
   }
   .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 50%;
@@ -2000,7 +2001,7 @@ body.bm-overlay {
 .colorContainer .skills,
 .colorContainer .projects,
 .colorContainer .errorSection {
-    padding-top: 232px !important;
+    padding-top: 190px !important;
   }
   .colorContainer .about {
     padding-bottom: 83px;
@@ -2095,6 +2096,9 @@ body.bm-overlay {
   }
   .colorContainer .mainH + footer .bottom {
     justify-content: space-around;
+  }
+  .colorContainer .mainA, .colorContainer .mainS {
+    height: 100%;
   }
   .colorContainer .splash .smallFlexBox {
     margin-top: 0;
@@ -2631,10 +2635,6 @@ body.bm-overlay {
 }
 
 @media (max-width: 780px) {
-  .colorContainer:not(.sideNav) header {
-    height: 20vh;
-    min-height: 130px;
-  }
   .colorContainer:not(.sideNav) header a.favLink.show[href="/"] {
     display: none;
   }
@@ -3218,23 +3218,23 @@ body.bm-overlay {
 .colorContainer.sideNav header .navBox div div .bm-menu .bm-cross-button .bm-cross {
   height: 20px !important;
 }
-.colorContainer.sideNav header .navBox div .whiteBackground .bm-menu {
+.colorContainer.sideNav header .navBox div .lightBackground .bm-menu {
   background-color: #9bd0d2;
 }
-.colorContainer.sideNav header .navBox div .whiteBackground .bm-menu .bm-cross {
+.colorContainer.sideNav header .navBox div .lightBackground .bm-menu .bm-cross {
   background-color: #00050f;
 }
-.colorContainer.sideNav header .navBox div .whiteBackground .bm-burger-button .bm-burger-bars {
+.colorContainer.sideNav header .navBox div .lightBackground .bm-burger-button .bm-burger-bars {
   background-color: #00050f;
 }
-.colorContainer.sideNav header .navBox div .blackBackground .bm-menu {
+.colorContainer.sideNav header .navBox div .darkBackground .bm-menu {
   background-color: #07262a;
 }
-.colorContainer.sideNav header .navBox div .blackBackground .bm-menu .bm-cross {
+.colorContainer.sideNav header .navBox div .darkBackground .bm-menu .bm-cross {
   background-color: #e5e8ee;
   height: 20px;
 }
-.colorContainer.sideNav header .navBox div .blackBackground .bm-burger-button .bm-burger-bars {
+.colorContainer.sideNav header .navBox div .darkBackground .bm-burger-button .bm-burger-bars {
   background-color: #e5e8ee;
 }
 .colorContainer.sideNav header .navBox .bm-item-list {

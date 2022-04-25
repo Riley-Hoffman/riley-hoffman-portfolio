@@ -103,7 +103,7 @@
         }
         header {
             .navBox nav {
-                width: 75%;
+                width: 85%;
             }
         }
         .relativeColumnBox {
@@ -281,7 +281,7 @@
         .skills,
         .projects,
         .errorSection {
-            padding-top: 232px !important;
+            padding-top: 190px !important;
         }
         .about {
             padding-bottom: 83px;
@@ -390,6 +390,10 @@
             .bottom {
                 justify-content: space-around;
             }
+        }
+
+        .mainA, .mainS {
+            height: 100%;
         }
 
         .splash .smallFlexBox {
@@ -1116,9 +1120,6 @@
 .colorContainer:not(.sideNav) {
     @media (max-width: 780px) {
         header {
-            height: 20vh;
-            min-height: 130px;
-
             a.favLink.show[href="/"] {
                 display: none;
             }
@@ -1992,7 +1993,7 @@
             }
         }
     }
-    .navBox div .whiteBackground {
+    .navBox div .lightBackground {
         .bm-menu {
             background-color: #9bd0d2;
         
@@ -2008,7 +2009,7 @@
         }
     }
     
-    .navBox div .blackBackground {
+    .navBox div .darkBackground {
         .bm-menu {
             background-color: #07262a;
         

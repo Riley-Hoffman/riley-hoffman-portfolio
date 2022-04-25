@@ -16,6 +16,7 @@
                 :noTransition="noTransition"
                 :scrolledToFooter="scrolledToFooter"
                 :scrolledToMain="scrolledToMain"
+                :scrolledToTop="scrolledToTop"
                 :themeLabel="themeLabel"
                 :themeSwitchAria="themeSwitchAria"
                 :toggleColor="toggleColor"
@@ -62,6 +63,7 @@ export default {
         !navigator.userAgent.includes('Android'),
       scrolledToFooter: false,
       scrolledToMain: false,
+      scrolledToTop: true,
       themeLabel: '',
       themeSwitchAria: '',
       toggleIcon: ''
@@ -85,6 +87,11 @@ export default {
         this.scrolledToFooter = true
       } else {
         this.scrolledToFooter = false
+      }
+      if (window.scrollY === 0) {
+        this.scrolledToTop = true
+      } else {
+        this.scrolledToTop = false
       }
     },
     toggleColor () {

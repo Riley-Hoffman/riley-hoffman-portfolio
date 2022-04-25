@@ -2,12 +2,7 @@
     <header
         class="flexBox"
         v-bind:class="{
-            absoluteHeader:
-                (scrolledToFooter && $route.path === '/projects') ||
-                (scrolledToFooter &&
-                    ($route.path === '/about' ||
-                        $route.path === '/skills' ||
-                        $route.path === '/page-not-found')),
+            absoluteHeader: scrolledToFooter,
         }"
     >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
@@ -40,33 +35,33 @@
                 class="flexBox navBox"
                 role="toolbar"
             >
-                    <Slide
-                        right
-                        v-bind:class="{
-                            aboutNav: $route.path === '/about',
-                            skillsNav: $route.path === '/skills',
-                            blackBackground:
-                                darkOn &&
-                                $route.path != '/about' &&
-                                $route.path != '/skills',
-                            whiteBackground:
-                                !darkOn ||
-                                $route.path === '/about' ||
-                                $route.path === '/skills',
-                        }"
-                        v-if="scrolledToMain"
-                    >
-                        <NavContentComponent
-                            :darkOn="darkOn"
-                            :noTransition="noTransition"
-                            :scrolledToFooter="scrolledToFooter"
-                            :scrolledToMain="scrolledToMain"
-                            :themeLabel="themeLabel"
-                            :themeSwitchAria="themeSwitchAria"
-                            :toggleColor="toggleColor"
-                            :toggleIcon="toggleIcon"
-                        />
-                    </Slide>
+                <Slide
+                    right
+                    v-bind:class="{
+                        aboutNav: $route.path === '/about',
+                        skillsNav: $route.path === '/skills',
+                        darkBackground:
+                            darkOn &&
+                            $route.path != '/about' &&
+                            $route.path != '/skills',
+                        lightBackground:
+                            !darkOn ||
+                            $route.path === '/about' ||
+                            $route.path === '/skills',
+                    }"
+                    v-if="scrolledToMain && !scrolledToTop"
+                >
+                    <NavContentComponent
+                        :darkOn="darkOn"
+                        :noTransition="noTransition"
+                        :scrolledToFooter="scrolledToFooter"
+                        :scrolledToMain="scrolledToMain"
+                        :themeLabel="themeLabel"
+                        :themeSwitchAria="themeSwitchAria"
+                        :toggleColor="toggleColor"
+                        :toggleIcon="toggleIcon"
+                    />
+                </Slide>
                 <nav
                     v-bind:class="{
                         aboutNav: $route.path === '/about',
@@ -104,6 +99,7 @@ export default {
     'noTransition',
     'scrolledToFooter',
     'scrolledToMain',
+    'scrolledToTop',
     'themeLabel',
     'themeSwitchAria',
     'toggleColor',

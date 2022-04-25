@@ -2,8 +2,8 @@
     align-items: center;
     overflow: hidden;
     position: fixed;
-    min-height: 100px;
-    height: 10vh;
+    height: 20vh;
+    min-height: 130px;
     width: 100%;
     left: 0;
     top: 0;
@@ -71,9 +71,10 @@
             align-items: center;
             display: flex;
             justify-content: flex-end;
-            width: 55%;
+            width: 75%;
             height: 32%;
             ul {
+                align-items: center;
                 display: flex;
                 justify-content: space-between;
                 position: relative;
