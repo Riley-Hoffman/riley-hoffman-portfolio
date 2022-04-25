@@ -463,6 +463,9 @@ body.bm-overlay {
 .colorContainer .rotate180 {
   transform: rotate(180deg);
 }
+.colorContainer .sideNavSectionMargin {
+  margin-left: 5%;
+}
 .colorContainer .iconContainer.contactJump {
   align-items: center;
   color: #e5e8ee;
@@ -743,7 +746,7 @@ body.bm-overlay {
   align-items: center;
   overflow: hidden;
   position: fixed;
-  height: 20vh;
+  height: 18vh;
   min-height: 130px;
   width: 100%;
   left: 0;
@@ -776,8 +779,8 @@ body.bm-overlay {
   padding: 1px;
   position: absolute;
   left: -5px;
-  transition: top 0s;
   top: 0;
+  transition: top 0s;
   z-index: 999;
 }
 .colorContainer header .favLink img {
@@ -796,10 +799,11 @@ body.bm-overlay {
   transition: all 1s, transform 0.1s;
 }
 .colorContainer header .navBox {
-  align-items: center;
+  align-items: flex-start;
   border-radius: calc(50px + 12%);
   height: 100%;
   justify-content: flex-end;
+  padding: 28px 0px;
   position: relative;
   transition: flex-direction 1s, width 1s, background 0.2;
 }
@@ -948,7 +952,7 @@ body.bm-overlay {
   position: relative;
   margin: auto;
   height: 100%;
-  width: 79%;
+  width: 90%;
   cursor: pointer;
 }
 .colorContainer header .navBox .themeToggleBox span.flexBox {
@@ -1981,7 +1985,7 @@ body.bm-overlay {
   }
   .colorContainer section > .wrapper {
     width: 80%;
-    margin-left: 5%;
+    margin-left: 3%;
   }
   .colorContainer .modal {
     left: 25px;
@@ -3210,7 +3214,7 @@ body.bm-overlay {
 .colorContainer.sideNav header .bm-burger-button {
   margin-right: 10px;
   left: initial;
-  right: -7%;
+  right: -6%;
 }
 .colorContainer.sideNav header .navBox div div .bm-menu .bm-cross-button {
   margin-right: 10px;
@@ -3247,7 +3251,7 @@ body.bm-overlay {
   height: 50vh;
 }
 .colorContainer.sideNav header .navBox nav.bm-item-list {
-  align-items: flex-start;
+  align-items: center;
   height: initial;
   width: initial;
 }
