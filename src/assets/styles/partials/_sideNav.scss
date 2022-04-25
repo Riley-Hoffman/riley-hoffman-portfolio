@@ -1,0 +1,76 @@
+.colorContainer.sideNav header {
+    .bm-burger-button {
+        margin-right: 10px;
+        left: initial;
+        right: -6%;
+    }
+
+    .navBox div div {
+        .bm-menu {
+            .bm-cross-button {
+                margin-right: 10px;
+
+                .bm-cross {
+                    height: 20px !important;
+                }
+            }
+
+            nav.bm-item-list {
+                align-items: center;
+                flex-direction: column-reverse;
+                height: initial;
+                width: initial;
+
+                ul.mainNavList {
+                    flex-direction: column;
+                    height: 50vh;
+                }
+
+                .toggle-wrapper {
+                    margin-bottom: 30px;
+                    margin-left: 0;
+                    right: initial;
+                }
+            }
+        }
+    }
+
+    .navBox div .lightBackground {
+        .bm-menu {
+            background-color: #9bd0d2;
+
+            .bm-cross {
+                background-color: $black;
+            }
+        }
+
+        .bm-burger-button {
+            .bm-burger-bars {
+                background-color: $black;
+            }
+
+        }
+    }
+
+    .navBox div .darkBackground {
+        .bm-menu {
+            background-color: #07262a;
+
+            .bm-cross {
+                background-color: $white;
+                height: 20px;
+            }
+        }
+
+        .bm-burger-button {
+            .bm-burger-bars {
+                background-color: $white;
+            }
+
+        }
+    }
+}
+
+.colorContainer.sideNav footer {
+    z-index: 999;
+}
