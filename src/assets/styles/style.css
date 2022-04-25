@@ -463,9 +463,6 @@ body.bm-overlay {
 .colorContainer .rotate180 {
   transform: rotate(180deg);
 }
-.colorContainer .sideNavSectionMargin {
-  margin-left: 5%;
-}
 .colorContainer .iconContainer.contactJump {
   align-items: center;
   color: #e5e8ee;
