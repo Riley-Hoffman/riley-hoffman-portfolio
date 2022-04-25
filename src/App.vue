@@ -21,6 +21,7 @@
                 :themeSwitchAria="themeSwitchAria"
                 :toggleColor="toggleColor"
                 :toggleIcon="toggleIcon"
+                :customProps="customProps"
             />
         </Transition>
         <main

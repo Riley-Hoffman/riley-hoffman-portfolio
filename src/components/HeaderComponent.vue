@@ -53,14 +53,7 @@
                     v-if="scrolledToMain && !scrolledToTop"
                 >
                     <NavContentComponent
-                        :darkOn="darkOn"
-                        :noTransition="noTransition"
-                        :scrolledToFooter="scrolledToFooter"
-                        :scrolledToMain="scrolledToMain"
-                        :themeLabel="themeLabel"
-                        :themeSwitchAria="themeSwitchAria"
-                        :toggleColor="toggleColor"
-                        :toggleIcon="toggleIcon"
+                        v-bind="this.$props"
                     />
                 </Slide>
                 <nav
@@ -71,14 +64,7 @@
                     v-if="!scrolledToMain || scrolledToFooter"
                 >
                     <NavContentComponent
-                        :darkOn="darkOn"
-                        :noTransition="noTransition"
-                        :scrolledToFooter="scrolledToFooter"
-                        :scrolledToMain="scrolledToMain"
-                        :themeLabel="themeLabel"
-                        :themeSwitchAria="themeSwitchAria"
-                        :toggleColor="toggleColor"
-                        :toggleIcon="toggleIcon"
+                        v-bind="this.$props"
                     />
                 </nav>
             </div>
