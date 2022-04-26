@@ -99,7 +99,6 @@ export default {
   },
   methods: {
     enterToggle (e) {
-      console.log(this.darkOn)
       if (e.keyCode === 13) {
         e.preventDefault()
         e.stopImmediatePropagation()
