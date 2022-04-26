@@ -251,6 +251,11 @@
 
     /* Landscape phone to portrait tablet */
     @media (max-width: 780px) {
+        header {
+            .favLink {
+                display: none;
+            }
+        }
         .mainDiv {
             height: initial;
         }
