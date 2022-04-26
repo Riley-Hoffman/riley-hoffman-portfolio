@@ -1613,6 +1613,7 @@ body.bm-overlay {
 .colorContainer .backToTop {
   background: #65a5a8;
   padding: 8px;
+  text-transform: capitalize;
 }
 .colorContainer .contactWrapper {
   align-items: flex-start;
