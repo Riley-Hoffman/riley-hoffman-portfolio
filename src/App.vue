@@ -1,22 +1,29 @@
 <template>
     <div
         class="colorContainer"
-        v-bind:class="{
+        :class="{
             darkModeOn: darkOn,
             heightVh: $route.path === '/',
             noBackground: $route.path === '/' && !darkOn,
+            sideNav: scrolledToMain,
         }"
         ref="colorContainer"
     >
-        <HeaderComponent
-            :darkOn="darkOn"
-            :main="this.$refs.main"
-            :noTransition="noTransition"
-            :themeLabel="themeLabel"
-            :themeSwitchAria="themeSwitchAria"
-            :toggleColor="toggleColor"
-            :toggleIcon="toggleIcon"
-        />
+        <Transition>
+            <HeaderComponent
+                :darkOn="darkOn"
+                :main="this.$refs.main"
+                :noTransition="noTransition"
+                :scrolledToFooter="scrolledToFooter"
+                :scrolledToMain="scrolledToMain"
+                :scrolledToTop="scrolledToTop"
+                :themeLabel="themeLabel"
+                :themeSwitchAria="themeSwitchAria"
+                :toggleColor="toggleColor"
+                :toggleIcon="toggleIcon"
+                :customProps="customProps"
+            />
+        </Transition>
         <main
             id="main"
             ref="main"
@@ -31,7 +38,11 @@
         >
             <router-view :noTransition="noTransition" />
         </main>
-        <FooterComponent :noTransition="noTransition" :darkOn="darkOn" />
+        <FooterComponent
+            :noTransition="noTransition"
+            :darkOn="darkOn"
+            ref="footer"
+        />
     </div>
 </template>
 <script>
@@ -45,15 +56,18 @@ export default {
   data () {
     return {
       darkOn: true,
-      toggleIcon: '',
+      noTransition: false,
+      safariCheck:
+                navigator.userAgent.includes('Safari') &&
+                !navigator.userAgent.includes('OPR') &&
+                !navigator.userAgent.includes('Chrome') &&
+                !navigator.userAgent.includes('Android'),
+      scrolledToFooter: false,
+      scrolledToMain: false,
+      scrolledToTop: true,
       themeLabel: '',
       themeSwitchAria: '',
-      safariCheck:
-        navigator.userAgent.includes('Safari') &&
-        !navigator.userAgent.includes('OPR') &&
-        !navigator.userAgent.includes('Chrome') &&
-        !navigator.userAgent.includes('Android'),
-      noTransition: false
+      toggleIcon: ''
     }
   },
   provide () {
@@ -62,6 +76,25 @@ export default {
     }
   },
   methods: {
+    handleScroll () {
+      const scrollWithFooter =
+                window.scrollY + this.$refs.footer.$el.scrollHeight
+      if (window.scrollY > 60) {
+        this.scrolledToMain = true
+      } else if (window.scrollY < 60) {
+        this.scrolledToMain = false
+      }
+      if (scrollWithFooter >= this.$refs.footer.$el.offsetTop + 400) {
+        this.scrolledToFooter = true
+      } else {
+        this.scrolledToFooter = false
+      }
+      if (window.scrollY === 0) {
+        this.scrolledToTop = true
+      } else {
+        this.scrolledToTop = false
+      }
+    },
     toggleColor () {
       this.noTransition = true
       if (!this.darkOn) {
@@ -90,6 +123,7 @@ export default {
     }
   },
   created () {
+    window.addEventListener('scroll', this.handleScroll)
     if (this.$workbox) {
       this.$workbox.addEventListener('waiting', () => {
         this.showUpdateUI = true
@@ -102,6 +136,9 @@ export default {
     } else {
       this.toggleIcon = 'moon'
     }
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   watch: {
     toggleIcon (faIcon) {

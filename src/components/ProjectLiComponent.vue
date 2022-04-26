@@ -20,10 +20,12 @@
         <div class="imgBox">
             <a
                 class="projImgLink"
+                ref="projImgLink"
                 rel="nofollow"
                 target="_blank"
                 title="Visit live site."
                 :href="liveUrl"
+                @focus="focusScroll"
             >
                 <img
                     :alt="imgAlt"
@@ -50,6 +52,11 @@ export default {
     'skills',
     'srcSet',
     'title'
-  ]
+  ],
+  methods: {
+    focusScroll () {
+      this.$refs.projImgLink.scrollIntoView()
+    }
+  }
 }
 </script>

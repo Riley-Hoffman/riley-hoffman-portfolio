@@ -2,9 +2,7 @@
     <footer class="flexBox transitionBorder" id="contact">
         <div
             class="wrapper flexBox contactWrapper contactComponent"
-            v-bind:class="{
-                hide: $route.path === '/',
-            }"
+            v-if="$route.path != '/'"
         >
             <div class="flexBox contactBox">
                 <h2 class="contactHeading">Contact</h2>
@@ -14,9 +12,16 @@
                 <FormComponent />
             </div>
         </div>
+        <button
+            class="styledButton backToTop"
+            @click="backToTop"
+            v-if="$route.path != '/'"
+        >
+            Back to top <span class="heavy">↥</span>
+        </button>
         <div
             class="wrapper flexBox bottom"
-            v-bind:class="{ homeBottomMargin: $route.path === '/' && !darkOn }"
+            :class="{ homeBottomMargin: $route.path === '/' && !darkOn }"
         >
             <p>
                 Riley Hoffman
@@ -51,6 +56,12 @@ export default {
   methods: {
     consoleLogNoColorTransition () {
       console.log(this.noTransition)
+    },
+    backToTop () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     }
   }
 }
