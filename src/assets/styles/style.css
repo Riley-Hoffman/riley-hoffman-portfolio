@@ -451,9 +451,6 @@ body.bm-overlay {
 .colorContainer .white {
   color: #e5e8ee !important;
 }
-.colorContainer .heavy {
-  font-weight: 900;
-}
 .colorContainer .show {
   display: block;
 }
