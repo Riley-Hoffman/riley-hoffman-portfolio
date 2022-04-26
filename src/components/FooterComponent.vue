@@ -17,7 +17,7 @@
             @click="backToTop"
             v-if="$route.path != '/'"
         >
-            Back to Top <span class="heavy">↥</span>
+            Back To Top <span class="heavy">↥</span>
         </button>
         <div
             class="wrapper flexBox bottom"
