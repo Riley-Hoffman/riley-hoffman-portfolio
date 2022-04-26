@@ -14,7 +14,7 @@
             icon="arrow-down"
             class="fa-solid arrow-down"
             aria-hidden="true"
-            v-bind:class="
+            :class="
                 !this.reduceMotion && {
                     animate__animated: this.hover,
                     animate__bounce: this.hover,

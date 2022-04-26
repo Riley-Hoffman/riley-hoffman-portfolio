@@ -1,7 +1,7 @@
 <template>
     <div
         class="colorContainer"
-        v-bind:class="{
+        :class="{
             darkModeOn: darkOn,
             heightVh: $route.path === '/',
             noBackground: $route.path === '/' && !darkOn,

@@ -35,7 +35,7 @@
                                     aria-hidden="true"
                                     class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft"
                                     icon="arrow-right-long"
-                                    v-bind:class="
+                                    :class="
                                         !this.reduceMotion && {
                                             animate__headShake: this.hover,
                                             animate__backOutRight: this.click,

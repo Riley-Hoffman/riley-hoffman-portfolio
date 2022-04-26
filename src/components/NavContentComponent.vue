@@ -11,7 +11,7 @@
                     </ul>
                 <label
                     class="toggle-wrapper"
-                    v-bind:class="{ safariToggle: safari }"
+                    :class="{ safariToggle: safari }"
                     for="themeInput"
                 >
                     <div class="themeToggleWrapper">
@@ -47,13 +47,13 @@
                             <span class="flexBox target">
                                 <span
                                     class="show"
-                                    v-bind:class="{
+                                    :class="{
                                         lightsOff: darkOn,
                                         lightsOn: !darkOn,
                                     }"
                                 >
                                     <font-awesome-icon
-                                        v-bind:icon="[
+                                        :icon="[
                                             'fa-solid',
                                             `${toggleIcon}`,
                                         ]"

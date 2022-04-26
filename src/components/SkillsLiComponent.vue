@@ -1,6 +1,6 @@
 <template>
     <li v-cloak>
-        <div class="skillsIconBox" v-bind:class="{ noAnimation: safari }">
+        <div class="skillsIconBox" :class="{ noAnimation: safari }">
             <i :class="icon" aria-hidden="true" v-if="devicon"></i>
             <font-awesome-icon
                 aria-hidden="true"

@@ -1,9 +1,9 @@
 <template>
     <header
         class="flexBox"
-        v-bind:class="{
+        :class="{
             absoluteHeader: scrolledToFooter,
-            transparent: scrolledToFooter
+            transparent: scrolledToFooter,
         }"
     >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
@@ -13,7 +13,7 @@
             class="favLink"
             to="/"
             :class="[favLinkHide, focusOutline]"
-            v-if="!scrolledToMain"
+            v-if="!scrolledToMain && $route.path != '/'"
         >
             <img
                 alt="A black letter R in a teal circle."
@@ -23,7 +23,7 @@
         </router-link>
         <div
             class="wrapper relativeColumnBox"
-            v-bind:class="{
+            :class="{
                 homeRelColBox: $route.path === '/',
                 aboutRelColBox: $route.path === '/about',
                 projectsRelColBox: $route.path === '/projects',
@@ -38,7 +38,7 @@
             >
                 <Slide
                     right
-                    v-bind:class="{
+                    :class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                         darkBackground:
@@ -48,24 +48,20 @@
                         lightBackground:
                             !darkOn ||
                             $route.path === '/about' ||
-                            $route.path === '/skills'
+                            $route.path === '/skills',
                     }"
                     v-if="scrolledToMain && !scrolledToTop"
                 >
-                    <NavContentComponent
-                        v-bind="this.$props"
-                    />
+                    <NavContentComponent v-bind="this.$props" />
                 </Slide>
                 <nav
-                    v-bind:class="{
+                    :class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                     }"
                     v-if="!scrolledToMain || scrolledToFooter"
                 >
-                    <NavContentComponent
-                        v-bind="this.$props"
-                    />
+                    <NavContentComponent v-bind="this.$props" />
                 </nav>
             </div>
         </div>
@@ -93,12 +89,6 @@ export default {
     'toggleIcon'
   ],
   computed: {
-    favLinkHide () {
-      if (this.$route.path === '/') {
-        return 'hide'
-      }
-      return 'show'
-    },
     focusOutline () {
       if (
         (this.$route.path === '/about' ||
