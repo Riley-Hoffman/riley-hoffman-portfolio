@@ -17,7 +17,7 @@
         <div class="themeToggleWrapper">
             <span class="mode flexBox">
                 <span
-                    v-bind:class="{
+                    :class="{
                         black:
                             $route.path === '/about' ||
                             $route.path === '/skills',
@@ -29,7 +29,7 @@
             </span>
             <div
                 class="themeToggleBox"
-                v-bind:class="{
+                :class="{
                     enabled: darkOn,
                     disabled: !darkOn,
                 }"
