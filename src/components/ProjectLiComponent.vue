@@ -20,7 +20,6 @@
         <div class="imgBox">
             <a
                 class="projImgLink"
-                ref="projImgLink"
                 rel="nofollow"
                 target="_blank"
                 title="Visit live site."
@@ -54,8 +53,8 @@ export default {
     'title'
   ],
   methods: {
-    focusScroll () {
-      this.$refs.projImgLink.scrollIntoView()
+    focusScroll (e) {
+      e.target.scrollIntoView()
     }
   }
 }
