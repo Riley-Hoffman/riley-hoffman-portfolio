@@ -2114,20 +2114,18 @@ body.bm-overlay {
   .colorContainer .projects .projectBox {
     flex-direction: column;
   }
-  .colorContainer .projects .projectBox .imgBox img,
-.colorContainer .projects .projectBox .imgBox a.projImgLink:active > img,
-.colorContainer .projects .projectBox .imgBox a.projImgLink:hover > img,
-.colorContainer .projects .projectBox .imgBox a.projImgLink:focus > img {
+  .colorContainer .projects .projectBox .imgBox img {
+    transition: border 0.1s;
     margin-top: 50px;
   }
-  .colorContainer .projects .projectBox .imgBox img,
-.colorContainer .projects .projectBox .imgBox a.projImgLink:active > img {
-    border: none;
-  }
   .colorContainer .projects .projectBox .imgBox a.projImgLink:focus > img {
-    border-top: 5px solid #17a2aa;
-    margin-top: 45px;
-    transition: all 0.1s;
+    border: 7px solid #17a2aa;
+  }
+  .colorContainer .projects .projectBox .imgBox a.projImgLink:active:focus > img,
+.colorContainer .projects .projectBox .imgBox a.projImgLink:active > img,
+.colorContainer .projects .projectBox .imgBox a.projImgLink:hover > img {
+    border: 0;
+    border-top: 0;
   }
   .colorContainer .projects .projectBox .imgBox .oval {
     display: none;
@@ -2158,7 +2156,8 @@ body.bm-overlay {
   .colorContainer .mainH + footer .bottom {
     justify-content: space-around;
   }
-  .colorContainer .mainA, .colorContainer .mainS {
+  .colorContainer .mainA,
+.colorContainer .mainS {
     height: 100%;
   }
   .colorContainer .splash .smallFlexBox {

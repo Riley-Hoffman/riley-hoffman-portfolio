@@ -14,14 +14,14 @@
         </div>
         <button
             class="styledButton backToTop"
-            @click="backToTop()"
+            @click="backToTop"
             v-if="$route.path != '/'"
         >
             Back to top <span class="heavy">↥</span>
         </button>
         <div
             class="wrapper flexBox bottom"
-            v-bind:class="{ homeBottomMargin: $route.path === '/' && !darkOn }"
+            :class="{ homeBottomMargin: $route.path === '/' && !darkOn }"
         >
             <p>
                 Riley Hoffman

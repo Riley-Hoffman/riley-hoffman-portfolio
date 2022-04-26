@@ -24,7 +24,7 @@
                                 <router-link
                                     class="homeLink404"
                                     :to="errorPageClick"
-                                    v-on="{
+                                    @="{
                                         mouseover: errorPageMouseOver,
                                         focus: errorPageMouseOver,
                                         click: errorPageClick,

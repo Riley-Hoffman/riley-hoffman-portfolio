@@ -58,10 +58,10 @@ export default {
       darkOn: true,
       noTransition: false,
       safariCheck:
-        navigator.userAgent.includes('Safari') &&
-        !navigator.userAgent.includes('OPR') &&
-        !navigator.userAgent.includes('Chrome') &&
-        !navigator.userAgent.includes('Android'),
+                navigator.userAgent.includes('Safari') &&
+                !navigator.userAgent.includes('OPR') &&
+                !navigator.userAgent.includes('Chrome') &&
+                !navigator.userAgent.includes('Android'),
       scrolledToFooter: false,
       scrolledToMain: false,
       scrolledToTop: true,

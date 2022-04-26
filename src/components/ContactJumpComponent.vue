@@ -2,7 +2,7 @@
     <div class="iconContainer wrapper flexBox contactJump">
         <button
             class="styledButton"
-            v-on="{
+            @="{
                 click: jumpScroll,
                 focus: contactJumpMoveOver,
                 mouseover: contactJumpMoveOver,

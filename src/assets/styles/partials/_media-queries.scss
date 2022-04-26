@@ -336,20 +336,18 @@
             .projectBox {
                 flex-direction: column;
                 .imgBox {
-                    img,
-                    a.projImgLink:active > img,
-                    a.projImgLink:hover > img,
-                    a.projImgLink:focus > img {
+                    img {
+                        transition: border 0.1s;
                         margin-top: 50px;
                     }
-                    img,
-                    a.projImgLink:active > img {
-                        border: none;
-                    }
                     a.projImgLink:focus > img {
-                        border-top: 5px solid $teal;
-                        margin-top: 45px;
-                        transition: all 0.1s;
+                        border: 7px solid $teal;
+                    }
+                    a.projImgLink:active:focus > img,
+                    a.projImgLink:active > img,
+                    a.projImgLink:hover > img {
+                        border: 0;
+                        border-top: 0;
                     }
                     .oval {
                         display: none;
@@ -392,7 +390,8 @@
             }
         }
 
-        .mainA, .mainS {
+        .mainA,
+        .mainS {
             height: 100%;
         }
 

@@ -52,7 +52,7 @@
                     }"
                     v-if="scrolledToMain && !scrolledToTop"
                 >
-                    <NavContentComponent v-bind="this.$props" />
+                    <NavContentComponent :="this.$props" />
                 </Slide>
                 <nav
                     :class="{
@@ -61,7 +61,7 @@
                     }"
                     v-if="!scrolledToMain || scrolledToFooter"
                 >
-                    <NavContentComponent v-bind="this.$props" />
+                    <NavContentComponent :="this.$props" />
                 </nav>
             </div>
         </div>
