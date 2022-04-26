@@ -1026,22 +1026,13 @@
         .splash {
             .relativeColumnBox {
                 .smallFlexBox {
-                    a:hover .target {
-                        text-decoration: underline;
-                    }
-                    a:active .target {
-                        text-decoration: none;
-                    }
                     a:active {
                         outline: none;
                     }
                     .contactIcons {
-                        .contactIcon:hover svg {
+                        .contactIcon:hover:not(:active) svg {
                             box-shadow: $buttonHoverGlow;
                             color: $teal;
-                        }
-                        .contactIcon:active svg {
-                            color: $white;
                         }
                         .contactIcon:active {
                             outline: none;
@@ -1080,6 +1071,15 @@
         }
 
         footer {
+            .backToTop:hover:not(:active) {
+                background-color: #4b7c7e;
+                box-shadow: $buttonHoverGlow;
+                color: #01143a;
+                font-weight: 500;
+                span {
+                    font-weight: 900;
+                }
+            }
             .contactWrapper {
                 .contactIcons {
                     .contactIcon:active {
@@ -1089,7 +1089,7 @@
                             color: $white;
                         }
                     }
-                    .contactIcon:hover {
+                    .contactIcon:hover:not(:active) {
                         outline: none;
                         .fa-linkedin,
                         .fa-github {
@@ -1239,10 +1239,7 @@
                 }
             }
             .bottom {
-                a:hover {
-                    color: $white;
-                }
-                .resume:active {
+                .resume:hover:not(:active) {
                     color: $white;
                 }
             }
@@ -1254,7 +1251,7 @@
                     a:hover {
                         color: $teal;
                     }
-                    a:hover + i {
+                    a:hover + svg {
                         color: $white;
                     }
                 }
@@ -1286,11 +1283,8 @@
             }
         }
 
-        .imgBox > a:hover > img {
+        .imgBox > a:hover:not(:active) > img {
             border-top: 14px ridge #126368;
-        }
-        .imgBox > a.projImgLink:active > img {
-            border-top: 14px ridge $teal;
         }
         .imgBox > a:focus > img {
             border-top: 14px ridge #126368;
@@ -1312,10 +1306,7 @@
                 }
             }
             .bottom {
-                a:hover {
-                    color: $black;
-                }
-                .resume:active {
+                .resume:hover:not(:active) {
                     color: $black;
                 }
             }

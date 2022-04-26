@@ -451,6 +451,9 @@ body.bm-overlay {
 .colorContainer .white {
   color: #e5e8ee !important;
 }
+.colorContainer .heavy {
+  font-weight: 900;
+}
 .colorContainer .show {
   display: block;
 }
@@ -1607,6 +1610,10 @@ body.bm-overlay {
 .colorContainer footer::after {
   transition: background-size 2s;
 }
+.colorContainer .backToTop {
+  background: #65a5a8;
+  padding: 8px;
+}
 .colorContainer .contactWrapper {
   align-items: flex-start;
   flex-direction: column;
@@ -2622,21 +2629,12 @@ body.bm-overlay {
   .colorContainer header .styledButton:active {
     border: 1px solid #17a2aa;
   }
-  .colorContainer .splash .relativeColumnBox .smallFlexBox a:hover .target {
-    text-decoration: underline;
-  }
-  .colorContainer .splash .relativeColumnBox .smallFlexBox a:active .target {
-    text-decoration: none;
-  }
   .colorContainer .splash .relativeColumnBox .smallFlexBox a:active {
     outline: none;
   }
-  .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:hover svg {
+  .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:hover:not(:active) svg {
     box-shadow: rgba(23, 162, 170, 0.5) 0px 0px 20px 0px;
     color: #17a2aa;
-  }
-  .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:active svg {
-    color: #e5e8ee;
   }
   .colorContainer .splash .relativeColumnBox .smallFlexBox .contactIcons .contactIcon:active {
     outline: none;
@@ -2662,6 +2660,15 @@ body.bm-overlay {
     animation: spin 2000ms linear infinite;
     -webkit-animation: spin 2000ms linear infinite;
   }
+  .colorContainer footer .backToTop:hover:not(:active) {
+    background-color: #4b7c7e;
+    box-shadow: rgba(23, 162, 170, 0.5) 0px 0px 20px 0px;
+    color: #01143a;
+    font-weight: 500;
+  }
+  .colorContainer footer .backToTop:hover:not(:active) span {
+    font-weight: 900;
+  }
   .colorContainer footer .contactWrapper .contactIcons .contactIcon:active {
     outline: none;
   }
@@ -2669,11 +2676,11 @@ body.bm-overlay {
 .colorContainer footer .contactWrapper .contactIcons .contactIcon:active svg.fa-github {
     color: #e5e8ee;
   }
-  .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover {
+  .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover:not(:active) {
     outline: none;
   }
-  .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover .fa-linkedin,
-.colorContainer footer .contactWrapper .contactIcons .contactIcon:hover .fa-github {
+  .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover:not(:active) .fa-linkedin,
+.colorContainer footer .contactWrapper .contactIcons .contactIcon:hover:not(:active) .fa-github {
     color: #17a2aa;
   }
   .colorContainer footer .bottom .resume:active svg {
@@ -2769,16 +2776,13 @@ body.bm-overlay {
 .colorContainer.darkModeOn footer .contactWrapper .fa-github:active {
     color: #e5e8ee;
   }
-  .colorContainer.darkModeOn footer .bottom a:hover {
-    color: #e5e8ee;
-  }
-  .colorContainer.darkModeOn footer .bottom .resume:active {
+  .colorContainer.darkModeOn footer .bottom .resume:hover:not(:active) {
     color: #e5e8ee;
   }
   .colorContainer.darkModeOn .errorNav ul li a:hover {
     color: #17a2aa;
   }
-  .colorContainer.darkModeOn .errorNav ul li a:hover + i {
+  .colorContainer.darkModeOn .errorNav ul li a:hover + svg {
     color: #e5e8ee;
   }
 
@@ -2791,11 +2795,8 @@ body.bm-overlay {
   .colorContainer:not(.darkModeOn) .splash .relativeColumnBox .smallFlexBox .contactIcons a:active svg {
     color: #00050f;
   }
-  .colorContainer:not(.darkModeOn) .imgBox > a:hover > img {
+  .colorContainer:not(.darkModeOn) .imgBox > a:hover:not(:active) > img {
     border-top: 14px ridge #126368;
-  }
-  .colorContainer:not(.darkModeOn) .imgBox > a.projImgLink:active > img {
-    border-top: 14px ridge #17a2aa;
   }
   .colorContainer:not(.darkModeOn) .imgBox > a:focus > img {
     border-top: 14px ridge #126368;
@@ -2813,10 +2814,7 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) footer .contactWrapper .fa-github:active {
     color: #00050f;
   }
-  .colorContainer:not(.darkModeOn) footer .bottom a:hover {
-    color: #00050f;
-  }
-  .colorContainer:not(.darkModeOn) footer .bottom .resume:active {
+  .colorContainer:not(.darkModeOn) footer .bottom .resume:hover:not(:active) {
     color: #00050f;
   }
   .colorContainer:not(.darkModeOn) .errorNav ul li a:hover {

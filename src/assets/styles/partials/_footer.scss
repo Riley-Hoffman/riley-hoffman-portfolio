@@ -58,6 +58,11 @@
         transition: background-size 2s;
     }
 
+    .backToTop {
+        background: $grayTeal;
+        padding: 8px;
+    }
+
     .contactWrapper {
         align-items: flex-start;
         flex-direction: column;
