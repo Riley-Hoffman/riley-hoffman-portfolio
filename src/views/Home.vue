@@ -6,7 +6,7 @@
             </div>
             <div
                 class="wrapper relativeColumnBox homeBodyRelColBox"
-                v-bind:class="{ static: showModal }"
+                :class="{ static: showModal }"
             >
                 <div class="smallFlexBox">
                     <div class="flexBox iconContainer">
@@ -36,7 +36,7 @@
                     </button>
                     <ModalComponent
                         :hideModal="hideModal"
-                        v-bind:class="{ openModal: showModal }"
+                        :class="{ openModal: showModal }"
                         v-if="showModal"
                     />
                     <div class="contactWrapper">

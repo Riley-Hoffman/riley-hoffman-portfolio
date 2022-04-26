@@ -2,7 +2,7 @@
     <div class="iconContainer wrapper flexBox contactJump">
         <button
             class="styledButton"
-            v-on="{
+            @="{
                 click: jumpScroll,
                 focus: contactJumpMoveOver,
                 mouseover: contactJumpMoveOver,
@@ -14,7 +14,7 @@
             icon="arrow-down"
             class="fa-solid arrow-down"
             aria-hidden="true"
-            v-bind:class="
+            :class="
                 !this.reduceMotion && {
                     animate__animated: this.hover,
                     animate__bounce: this.hover,

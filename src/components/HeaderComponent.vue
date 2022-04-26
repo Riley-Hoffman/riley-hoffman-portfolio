@@ -1,5 +1,11 @@
 <template>
-    <header class="flexBox">
+    <header
+        class="flexBox"
+        :class="{
+            absoluteHeader: scrolledToFooter,
+            transparent: scrolledToFooter,
+        }"
+    >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
             Skip To Content
         </button>
@@ -7,6 +13,7 @@
             class="favLink"
             to="/"
             :class="[favLinkHide, focusOutline]"
+            v-if="!scrolledToMain && $route.path != '/'"
         >
             <img
                 alt="A black letter R in a teal circle."
@@ -16,7 +23,7 @@
         </router-link>
         <div
             class="wrapper relativeColumnBox"
-            v-bind:class="{
+            :class="{
                 homeRelColBox: $route.path === '/',
                 aboutRelColBox: $route.path === '/about',
                 projectsRelColBox: $route.path === '/projects',
@@ -29,116 +36,59 @@
                 class="flexBox navBox"
                 role="toolbar"
             >
+                <Slide
+                    right
+                    :class="{
+                        aboutNav: $route.path === '/about',
+                        skillsNav: $route.path === '/skills',
+                        darkBackground:
+                            darkOn &&
+                            $route.path != '/about' &&
+                            $route.path != '/skills',
+                        lightBackground:
+                            !darkOn ||
+                            $route.path === '/about' ||
+                            $route.path === '/skills',
+                    }"
+                    v-if="scrolledToMain && !scrolledToTop"
+                >
+                    <NavContentComponent :="this.$props" />
+                </Slide>
                 <nav
-                    v-bind:class="{
+                    :class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                     }"
+                    v-if="!scrolledToMain || scrolledToFooter"
                 >
-                    <ul class="mainNavList">
-                        <NavLiComponent
-                            :key="index"
-                            :name="navRoute.name"
-                            :navBarColor="navBarColor"
-                            :noTransition="noTransition"
-                            :path="navRoute.path"
-                            v-for="(navRoute, index) in navRoutes"
-                        />
-                    </ul>
+                    <NavContentComponent :="this.$props" />
                 </nav>
-                <label class="toggle-wrapper" v-bind:class="{safariToggle: safari}" for="themeInput">
-                    <div class="themeToggleWrapper">
-                        <span class="mode flexBox">
-                            <span
-                                v-bind:class="{
-                                    black:
-                                        $route.path === '/about' ||
-                                        $route.path === '/skills',
-                                }"
-                                aria-hidden="true"
-                                >{{ themeLabel }}</span
-                            >
-                            <span class="sr-only">Choose Color Theme.</span>
-                        </span>
-                        <div
-                            class="themeToggleBox"
-                            v-bind:class="{
-                                enabled: darkOn,
-                                disabled: !darkOn,
-                            }"
-                        >
-                            <input
-                                aria-live="polite"
-                                id="themeInput"
-                                name="themeInput"
-                                type="checkbox"
-                                :aria-label="themeSwitchAria"
-                                :checked="darkOn"
-                                @click="toggleColor()"
-                                @keydown="enterToggle"
-                            />
-                            <span class="flexBox target">
-                                <span
-                                    class="show"
-                                    v-bind:class="{
-                                        lightsOff: darkOn,
-                                        lightsOn: !darkOn,
-                                    }"
-                                >
-                                    <font-awesome-icon
-                                        v-bind:icon="['fa-solid', `${toggleIcon}`]"
-                                        aria-hidden="true"
-                                    />
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                </label>
             </div>
         </div>
     </header>
 </template>
 <script>
-import routes from '../router'
-import NavLiComponent from './NavLiComponent.vue'
+import { Slide } from 'vue3-burger-menu'
+import NavContentComponent from './NavContentComponent'
 export default {
   components: {
-    NavLiComponent
+    Slide,
+    NavContentComponent
   },
   inject: ['safari'],
   props: [
     'darkOn',
     'main',
     'noTransition',
+    'scrolledToFooter',
+    'scrolledToMain',
+    'scrolledToTop',
     'themeLabel',
     'themeSwitchAria',
     'toggleColor',
     'toggleIcon'
   ],
-  data () {
-    return {
-      navRoutes: routes.options.routes
-    }
-  },
   computed: {
-    navBarColor () {
-      if (!this.darkOn) {
-        return 'black'
-      } else if (
-        (this.$route.path === '/about' ||
-                    this.$route.path === '/skills') &&
-                this.darkOn
-      ) {
-        return 'black'
-      }
-      return 'white'
-    },
-    favLinkHide () {
-      if (this.$route.path === '/') {
-        return 'hide'
-      }
-      return 'show'
-    },
     focusOutline () {
       if (
         (this.$route.path === '/about' ||
@@ -155,15 +105,6 @@ export default {
         return 'whiteOutline'
       }
       return 'blackOutline'
-    }
-  },
-  methods: {
-    enterToggle (e) {
-      if (e.keyCode === 13) {
-        e.preventDefault()
-        e.stopImmediatePropagation()
-        this.toggleColor()
-      }
     }
   }
 }
