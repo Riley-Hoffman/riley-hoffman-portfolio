@@ -2716,7 +2716,7 @@ body.bm-overlay {
     display: grid;
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    width: 66%;
+    width: 63%;
   }
   .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList li {
     display: flex;
