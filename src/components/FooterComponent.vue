@@ -12,7 +12,11 @@
                 <FormComponent />
             </div>
         </div>
-        <button class="styledButton backToTop" @click="backToTop()">
+        <button
+            class="styledButton backToTop"
+            @click="backToTop()"
+            v-if="$route.path != '/'"
+        >
             Back to top <span class="heavy">↥</span>
         </button>
         <div
