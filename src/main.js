@@ -8,6 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faArrowDown,
   faArrowRightLong,
+  faArrowUp,
   faCircleHalfStroke,
   faFileArrowDown,
   faLeftRight,
@@ -25,6 +26,7 @@ import {
 library.add(
   faArrowDown,
   faArrowRightLong,
+  faArrowUp,
   faCircleHalfStroke,
   faFileArrowDown,
   faGithub,
