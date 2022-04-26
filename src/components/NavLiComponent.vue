@@ -1,7 +1,7 @@
 <template>
     <li
         v-if="path != '/page-not-found' && path != '/:catchAll(.*)'"
-        v-bind:class="{ col2: path === '/about' || path === '/skills' }"
+        :class="{ col2: path === '/about' || path === '/skills' }"
     >
         <router-link
             class="navLink"

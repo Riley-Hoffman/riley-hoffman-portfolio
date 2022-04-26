@@ -3,6 +3,7 @@
 }
 
 .colorContainer {
+    overflow: hidden;
     position: relative;
     height: 100%;
     width: 100vw;
@@ -34,6 +35,11 @@
         display: flex;
     }
 
+    .absoluteHeader {
+        transition: all 0s, opacity 0.1s !important;
+        position: absolute;
+    }
+
     .black {
         color: $black !important;
     }
@@ -42,12 +48,19 @@
         color: $white !important;
     }
 
+    .heavy {
+        font-weight: 900;
+    }
+
     .show {
         display: block;
     }
 
     .hide {
         display: none !important;
+    }
+    .transparent {
+        opacity: 0;
     }
 
     .static {
@@ -105,12 +118,6 @@
         height: 100%;
         justify-content: space-between;
         position: relative;
-    }
-
-    .relativeColumnBox:not(.homeRelColBox, .homeBodyRelColBox, .projectsRelColBox, .errorRelColBox, .errorNavRelColBox) {
-        background: rgb(229, 232, 238);
-        background: $columnBoxGradient;
-        z-index: 20;
     }
 
     .styledButton {
