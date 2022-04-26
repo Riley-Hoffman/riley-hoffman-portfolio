@@ -2034,6 +2034,9 @@ body.bm-overlay {
   }
 }
 @media (max-width: 780px) {
+  .colorContainer header .favLink {
+    display: none;
+  }
   .colorContainer .mainDiv {
     height: initial;
   }
