@@ -1,3 +1,21 @@
+.colorContainer header.whiteBackground {
+    &::after {
+        background-color: $white;
+    }
+}
+
+.colorContainer header.blackBackground {
+    &::after {
+        background-color: $black;
+    }
+}
+
+.colorContainer header.transparentBackground {
+    &::after {
+        background-color: transparent;
+    }
+}
+
 .colorContainer header {
     align-items: center;
     overflow: hidden;
@@ -9,6 +27,13 @@
     top: 0;
     z-index: 999;
     transition: all 0.5s, top 0s;
+    &::after {
+        content: "";
+        width: 100vw;
+        height: 20vh;
+        position: absolute;
+        top: 0;
+    }
     * {
         transition: all 0.5s;
     }

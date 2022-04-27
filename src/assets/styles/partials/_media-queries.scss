@@ -42,7 +42,7 @@
 
     /* Wide screen tv */
 
-    @media (max-width: 1360px) and (max-height: 605px) {
+    @media (max-width: 1370px) and (max-height: 770px) {
         .relativeColumnBox {
             .smallFlexBox {
                 .iconContainer {
@@ -389,7 +389,7 @@
             padding: 0 0 20px;
             .backToTop {
                 margin: 10px auto;
-            } 
+            }
         }
 
         .mainH + footer {
@@ -425,6 +425,26 @@
                     margin: 40px auto 50px;
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    /* Small page length contol */
+    @media (max-height: 850px) {
+        .about1 .aboutH1box {
+            margin-bottom: 50px;
+        }
+        .about {
+            padding: 100px 0 0;
+            .iconContainer.contactJump {
+                margin-top: 20px;
+            }
+        }
+
+        .skills {
+            padding-top: 85px;
+            .wrapper .flexBox h1 {
+                margin-bottom: 20px;
             }
         }
     }
