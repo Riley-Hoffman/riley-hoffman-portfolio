@@ -29,10 +29,11 @@
     transition: all 0.5s, top 0s;
     &::after {
         content: "";
-        width: 100vw;
-        height: 20vh;
         position: absolute;
         top: 0;
+        height: 20vh;
+        width: 100vw;
+        z-index: -1;
     }
     * {
         transition: all 0.5s;
