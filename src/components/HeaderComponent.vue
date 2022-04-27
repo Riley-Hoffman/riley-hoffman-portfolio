@@ -3,7 +3,14 @@
         class="flexBox"
         :class="{
             absoluteHeader: scrolledToFooter,
+            blackBackground: darkOn && $route.path === '/page-not-found',
             transparent: scrolledToFooter,
+            transparentBackground:
+                $route.path === '/' || $route.path === '/projects',
+            whiteBackground:
+                (!darkOn && $route.path != '/') ||
+                $route.path != '/about' ||
+                $route.path != '/skills',
         }"
     >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
