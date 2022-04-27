@@ -768,10 +768,11 @@ body.bm-overlay {
 }
 .colorContainer header::after {
   content: "";
-  width: 100vw;
-  height: 20vh;
   position: absolute;
   top: 0;
+  height: 20vh;
+  width: 100vw;
+  z-index: -1;
 }
 .colorContainer header * {
   transition: all 0.5s;
