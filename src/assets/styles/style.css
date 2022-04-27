@@ -2154,6 +2154,9 @@ body.bm-overlay {
   .colorContainer footer {
     padding: 0 0 20px;
   }
+  .colorContainer footer .backToTop {
+    margin: 10px auto;
+  }
   .colorContainer .mainH + footer .bottom {
     justify-content: space-around;
   }
