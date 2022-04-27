@@ -1721,6 +1721,7 @@ body.bm-overlay {
   justify-content: flex-end;
 }
 .colorContainer .mainP + footer {
+  box-shadow: 0px 11px 20px #e5e8ee;
   padding: 0;
 }
 .colorContainer .formBackground {
