@@ -27,9 +27,6 @@
     }
 
     @media (max-height: 650px) {
-        header::after {
-            height: 21vh;
-        }
         .modal.openModal {
             bottom: 2%;
             form {
@@ -1212,6 +1209,15 @@
                     }
                 }
             }
+        }
+    }
+    @media (max-height: 580px) {
+        header {
+            height: 30vh;
+            min-height: 70px;
+        }
+        header::after {
+            height: 50vh;
         }
     }
 }
