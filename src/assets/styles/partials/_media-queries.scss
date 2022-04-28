@@ -1386,6 +1386,7 @@
 
     .subtleTextGradient {
         background: linear-gradient(180deg, black 20%, $black 100%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -1593,6 +1594,7 @@
     }
     .subtleTextGradient {
         background: linear-gradient(180deg, white 20%, $white 100%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
