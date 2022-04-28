@@ -2894,6 +2894,7 @@ body.bm-overlay {
 }
 .colorContainer:not(.darkModeOn) .subtleTextGradient {
   background: linear-gradient(180deg, black 20%, #00050f 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3049,6 +3050,7 @@ body.bm-overlay {
 }
 .colorContainer.darkModeOn .subtleTextGradient {
   background: linear-gradient(180deg, white 20%, #e5e8ee 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
