@@ -1890,9 +1890,6 @@ body.bm-overlay {
   }
 }
 @media (max-height: 650px) {
-  .colorContainer header::after {
-    height: 21vh;
-  }
   .colorContainer .modal.openModal {
     bottom: 2%;
   }
@@ -2788,6 +2785,15 @@ body.bm-overlay {
   }
   .colorContainer:not(.sideNav) header .navBox .toggle-wrapper .themeToggleWrapper svg {
     margin: none;
+  }
+}
+@media (max-height: 580px) {
+  .colorContainer:not(.sideNav) header {
+    height: 30vh;
+    min-height: 70px;
+  }
+  .colorContainer:not(.sideNav) header::after {
+    height: 50vh;
   }
 }
 
