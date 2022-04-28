@@ -833,7 +833,7 @@ body.bm-overlay {
   display: flex;
   justify-content: flex-end;
   width: 75%;
-  height: 32%;
+  height: 100%;
 }
 .colorContainer header .navBox nav ul {
   align-items: center;
@@ -1890,6 +1890,9 @@ body.bm-overlay {
   }
 }
 @media (max-height: 650px) {
+  .colorContainer header::after {
+    height: 21vh;
+  }
   .colorContainer .modal.openModal {
     bottom: 2%;
   }
@@ -2785,6 +2788,12 @@ body.bm-overlay {
   }
   .colorContainer:not(.sideNav) header .navBox .toggle-wrapper .themeToggleWrapper svg {
     margin: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .colorContainer:not(.sideNav) header .navBox nav ul.mainNavList {
+    width: 100%;
   }
 }
 
