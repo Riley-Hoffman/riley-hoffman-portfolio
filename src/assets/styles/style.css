@@ -2788,12 +2788,14 @@ body.bm-overlay {
   }
 }
 @media (max-height: 580px) {
+  .colorContainer:not(.sideNav) header::after {
+    height: 50vh;
+  }
+}
+@media (max-height: 580px) and (min-width: 780px) {
   .colorContainer:not(.sideNav) header {
     height: 30vh;
     min-height: 70px;
-  }
-  .colorContainer:not(.sideNav) header::after {
-    height: 50vh;
   }
 }
 
