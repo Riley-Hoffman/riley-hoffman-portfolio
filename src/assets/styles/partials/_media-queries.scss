@@ -27,6 +27,9 @@
     }
 
     @media (max-height: 650px) {
+        header::after {
+            height: 21vh;
+        }
         .modal.openModal {
             bottom: 2%;
             form {
@@ -1209,6 +1212,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.colorContainer:not(.sideNav) {
+    @media (max-width: 500px) {
+        header .navBox nav ul.mainNavList {
+            width: 100%;
         }
     }
 }

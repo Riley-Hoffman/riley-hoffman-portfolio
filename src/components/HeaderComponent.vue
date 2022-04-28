@@ -66,7 +66,7 @@
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
                     }"
-                    v-if="!scrolledToMain || scrolledToFooter"
+                    v-if="scrolledToTop || scrolledToFooter"
                 >
                     <NavContentComponent :="this.$props" />
                 </nav>
