@@ -1212,12 +1212,14 @@
         }
     }
     @media (max-height: 580px) {
+        header::after {
+            height: 50vh;
+        }
+    }
+    @media (max-height: 580px) and (min-width: 780px) {
         header {
             height: 30vh;
             min-height: 70px;
-        }
-        header::after {
-            height: 50vh;
         }
     }
 }
