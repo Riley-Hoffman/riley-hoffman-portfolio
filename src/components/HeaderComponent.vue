@@ -4,7 +4,7 @@
         :class="{
             absoluteHeader: scrolledToFooter,
             blackBackground: darkOn && $route.path === '/page-not-found',
-            transparent: scrolledToFooter,
+            transparent: scrolledToFooter && !scrolledToTop,
             transparentBackground:
                 $route.path === '/' || $route.path === '/projects',
             whiteBackground:
