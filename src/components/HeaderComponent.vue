@@ -9,8 +9,7 @@
             relativeHeader: $route.path != '/',
             scrolledToMain: scrolledToMain && $route.path != '/projects',
             transparent: scrolledToFooter && !scrolledToTop,
-            transparentBackground:
-                $route.path === '/' || $route.path === '/projects',
+            transparentBackground: $route.path === '/',
             whiteBackground: !darkOn && $route.path != '/',
         }"
     >

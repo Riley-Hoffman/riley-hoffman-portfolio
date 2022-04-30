@@ -769,16 +769,20 @@ body.bm-overlay {
 
 .colorContainer header.whiteBackground:not(.transparentBackground) {
   background-color: #e5e8ee;
+  background-image: url("../img/egg-shell.png");
 }
 .colorContainer header.whiteBackground:not(.transparentBackground)::after {
   background-color: #e5e8ee;
+  background-image: url("../img/egg-shell.png");
 }
 
 .colorContainer header.blackBackground:not(.transparentBackground) {
   background-color: #00050f;
+  background-image: url("../img/egg-shell-inverted.png");
 }
 .colorContainer header.blackBackground:not(.transparentBackground)::after {
   background-color: #00050f;
+  background-image: url("../img/egg-shell-inverted.png");
 }
 
 .colorContainer header.transparentBackground {
