@@ -761,7 +761,6 @@ body.bm-overlay {
 }
 
 .colorContainer header.relativeHeader + main .about,
-.colorContainer header.relativeHeader + main .projects,
 .colorContainer header.relativeHeader + main .skills,
 .colorContainer header.relativeHeader + main .errorSection {
   transition: padding 0.5s;
@@ -2063,9 +2062,6 @@ body.bm-overlay {
   }
 }
 @media (max-width: 780px) {
-  .colorContainer header {
-    padding-left: 40px;
-  }
   .colorContainer header .favLink {
     display: none;
   }
@@ -2096,7 +2092,6 @@ body.bm-overlay {
   }
   .colorContainer .about,
 .colorContainer .skills,
-.colorContainer .projects,
 .colorContainer .errorSection {
     padding-top: 190px;
   }
@@ -2148,7 +2143,7 @@ body.bm-overlay {
     padding: 100px 0 200px;
   }
   .colorContainer .projects {
-    padding: 85px 0 40px;
+    padding: 120px 0 40px;
   }
   .colorContainer .projects .projectBox {
     flex-direction: column;
@@ -2659,6 +2654,9 @@ body.bm-overlay {
   }
 }
 @media (max-width: 350px) {
+  .colorContainer header {
+    padding-left: 40px;
+  }
   .colorContainer .modal {
     min-width: 2px !important;
     width: 84%;

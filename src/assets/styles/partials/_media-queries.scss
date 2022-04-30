@@ -226,7 +226,6 @@
     /* Landscape phone to portrait tablet */
     @media (max-width: 780px) {
         header {
-            padding-left: 40px;
             .favLink {
                 display: none;
             }
@@ -261,7 +260,6 @@
         }
         .about,
         .skills,
-        .projects,
         .errorSection {
             padding-top: 190px;
         }
@@ -320,7 +318,7 @@
             }
         }
         .projects {
-            padding: 85px 0 40px;
+            padding: 120px 0 40px;
             .projectBox {
                 flex-direction: column;
                 .imgBox {
@@ -1003,6 +1001,9 @@
 
     // Tiny Phone
     @media (max-width: 350px) {
+        header {
+            padding-left: 40px;
+        }
         .modal {
             min-width: 2px !important;
             width: 84%;
