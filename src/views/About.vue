@@ -47,8 +47,8 @@
 <script>
 import ContactJumpComponent from '@/components/ContactJumpComponent.vue'
 export default {
-  components: {
-    ContactJumpComponent
-  }
+    components: {
+        ContactJumpComponent,
+    },
 }
 </script>

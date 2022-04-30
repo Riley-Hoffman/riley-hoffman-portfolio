@@ -77,11 +77,11 @@ body.bm-overlay {
         width: 100%;
         z-index: 999;
     }
-    
+
     main:not(.mainH)::after {
         transition: background-size 2s;
     }
-    
+
     section {
         align-items: center;
         display: flex;

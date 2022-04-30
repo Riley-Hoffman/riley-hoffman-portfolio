@@ -74,41 +74,41 @@
 import { Slide } from 'vue3-burger-menu'
 import NavContentComponent from './NavContentComponent'
 export default {
-  components: {
-    Slide,
-    NavContentComponent
-  },
-  inject: ['safari'],
-  props: [
-    'darkOn',
-    'main',
-    'noTransition',
-    'scrolledToFooter',
-    'scrolledToMain',
-    'scrolledToTop',
-    'themeLabel',
-    'themeSwitchAria',
-    'toggleColor',
-    'toggleIcon'
-  ],
-  computed: {
-    focusOutline () {
-      if (
-        (this.$route.path === '/about' ||
+    components: {
+        Slide,
+        NavContentComponent,
+    },
+    inject: ['safari'],
+    props: [
+        'darkOn',
+        'main',
+        'noTransition',
+        'scrolledToFooter',
+        'scrolledToMain',
+        'scrolledToTop',
+        'themeLabel',
+        'themeSwitchAria',
+        'toggleColor',
+        'toggleIcon',
+    ],
+    computed: {
+        focusOutline() {
+            if (
+                (this.$route.path === '/about' ||
                     this.$route.path === '/skills') &&
                 this.darkOn
-      ) {
-        return 'blackOutline'
-      } else if (
-        (this.$route.path === '/' ||
+            ) {
+                return 'blackOutline'
+            } else if (
+                (this.$route.path === '/' ||
                     this.$route.path === '/projects' ||
                     this.$route.path === '/page-not-found') &&
                 this.darkOn
-      ) {
-        return 'whiteOutline'
-      }
-      return 'blackOutline'
-    }
-  }
+            ) {
+                return 'whiteOutline'
+            }
+            return 'blackOutline'
+        },
+    },
 }
 </script>

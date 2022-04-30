@@ -42,20 +42,20 @@
 </template>
 <script>
 export default {
-  props: [
-    'description',
-    'gitUrl',
-    'imgAlt',
-    'imgUrl',
-    'liveUrl',
-    'skills',
-    'srcSet',
-    'title'
-  ],
-  methods: {
-    focusScroll (e) {
-      e.target.scrollIntoView()
-    }
-  }
+    props: [
+        'description',
+        'gitUrl',
+        'imgAlt',
+        'imgUrl',
+        'liveUrl',
+        'skills',
+        'srcSet',
+        'title',
+    ],
+    methods: {
+        focusScroll(e) {
+            e.target.scrollIntoView()
+        },
+    },
 }
 </script>

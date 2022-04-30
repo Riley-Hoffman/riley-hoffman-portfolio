@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  inject: ['safari'],
-  props: ['devicon', 'icon', 'skill']
+    inject: ['safari'],
+    props: ['devicon', 'icon', 'skill'],
 }
 </script>

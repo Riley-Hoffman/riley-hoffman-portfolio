@@ -2,8 +2,11 @@
     box-shadow: -9px 29px 16px 32px $black;
 }
 .colorContainer header.relativeHeader {
-   + main .about, + main .projects, + main .skills, + main .errorSection {
-       transition: padding 0.5s;
+    + main .about,
+    + main .projects,
+    + main .skills,
+    + main .errorSection {
+        transition: padding 0.5s;
         padding: 40px 0 160px;
     }
 }
