@@ -320,6 +320,16 @@ body.bm-overlay {
   height: 100%;
   position: relative;
 }
+.colorContainer main:not(.mainH)::after {
+  content: " ";
+  display: block;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+}
+.colorContainer main:not(.mainH)::after {
+  transition: background-size 2s;
+}
 .colorContainer section {
   align-items: center;
   display: flex;
@@ -1629,23 +1639,6 @@ body.bm-overlay {
 .colorContainer footer .bottom a.resume:active {
   outline: none;
 }
-.colorContainer footer::before {
-  content: " ";
-  display: block;
-  left: 0px;
-  width: 100%;
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 32px 32px;
-  height: 36px;
-  margin-bottom: 40px;
-  position: relative;
-  top: -36px;
-}
-.colorContainer footer::before,
-.colorContainer footer::after {
-  transition: background-size 2s;
-}
 .colorContainer .backToTop {
   background: #65a5a8;
   padding: 8px;
@@ -2939,6 +2932,16 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) p {
   color: #00050f;
 }
+.colorContainer:not(.darkModeOn) main:not(.mainH)::after {
+  background: linear-gradient(-28deg, rgb(214, 229, 233) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0), linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  height: 36px;
+  margin-bottom: 40px;
+  position: relative;
+  top: 41px;
+}
 .colorContainer:not(.darkModeOn) .splash .galaxy .stars {
   display: none;
 }
@@ -3038,16 +3041,6 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) footer .bottom .resume:hover svg {
   color: #00050f;
 }
-.colorContainer:not(.darkModeOn) footer::before {
-  background: linear-gradient(-28deg, rgb(214, 229, 233) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0), linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 32px 32px;
-  height: 36px;
-  margin-bottom: 40px;
-  position: relative;
-  top: -36px;
-}
 .colorContainer:not(.darkModeOn) .errorHeader {
   background-image: none;
 }
@@ -3086,6 +3079,16 @@ body.bm-overlay {
 }
 .colorContainer.darkModeOn p {
   color: #e5e8ee;
+}
+.colorContainer.darkModeOn main:not(.mainH)::after {
+  background: linear-gradient(-28deg, rgb(0, 5, 15) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0), linear-gradient(28deg, #00050f 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  height: 36px;
+  margin-bottom: 40px;
+  position: relative;
+  top: 41px;
 }
 .colorContainer.darkModeOn .mainA h1,
 .colorContainer.darkModeOn .mainA h2,
@@ -3177,16 +3180,6 @@ body.bm-overlay {
 .colorContainer.darkModeOn .iconContainer.contactJump svg {
   color: #e5e8ee;
 }
-.colorContainer.darkModeOn footer::before {
-  background: linear-gradient(-28deg, rgb(0, 5, 15) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0), linear-gradient(28deg, #00050f 2px, transparent 15px, #b8b8b8 14px, transparent 0);
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 32px 32px;
-  height: 36px;
-  margin-bottom: 40px;
-  position: relative;
-  top: -36px;
-}
 .colorContainer.darkModeOn footer {
   background: #00050f;
 }
@@ -3200,10 +3193,6 @@ body.bm-overlay {
 .colorContainer.darkModeOn footer .bottom .resume:active svg,
 .colorContainer.darkModeOn footer .bottom .resume:hover svg {
   color: #e5e8ee;
-}
-.colorContainer.darkModeOn .mainH + footer::before,
-.colorContainer.darkModeOn .mainH + footer::after {
-  display: none;
 }
 .colorContainer.darkModeOn .errorSection h1 {
   color: #e5e8ee;
