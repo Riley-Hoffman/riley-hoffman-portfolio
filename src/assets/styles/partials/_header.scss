@@ -1,37 +1,52 @@
-.colorContainer header.whiteBackground {
+.colorContainer header.scrolledToMain {
+    box-shadow: -9px 29px 16px 32px $black;
+}
+.colorContainer header.relativeHeader {
+   + main .about, + main .projects, + main .skills, + main .errorSection {
+       transition: padding 0.5s;
+        padding: 40px 0 160px;
+    }
+}
+
+.colorContainer header.whiteBackground:not(.transparentBackground) {
+    background-color: $white;
     &::after {
         background-color: $white;
     }
 }
 
-.colorContainer header.blackBackground {
+.colorContainer header.blackBackground:not(.transparentBackground) {
+    background-color: $black;
     &::after {
         background-color: $black;
     }
 }
 
 .colorContainer header.transparentBackground {
+    background-color: transparent;
     &::after {
         background-color: transparent;
     }
 }
 
 .colorContainer header {
+    transition: all 0, padding 0.5s;
     align-items: center;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     height: 18vh;
     min-height: 130px;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 999;
-    transition: all 0.5s, top 0s;
     &::after {
+        transition: all 0s;
         content: "";
+        min-height: 75px;
         position: absolute;
         top: 0;
-        height: 10vh;
+        height: 9vh;
         width: 100vw;
         z-index: -1;
     }

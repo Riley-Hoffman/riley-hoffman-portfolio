@@ -63,17 +63,14 @@ body.bm-overlay {
     }
 
     p {
-        color: $grayPText;
         margin: 10px 0;
     }
 
     main {
+        height: 100%;
         position: relative;
     }
-
-    main:not(.mainH) {
-        overflow: scroll;
-    }
+    
     section {
         align-items: center;
         display: flex;

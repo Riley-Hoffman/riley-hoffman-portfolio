@@ -52,6 +52,13 @@
         display: block;
         left: 0px;
         width: 100%;
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: 32px 32px;
+        height: 36px;
+        margin-bottom: 40px;
+        position: relative;
+        top: -36px;
     }
     footer::before,
     footer::after {
@@ -179,11 +186,6 @@
             width: 85%;
             justify-content: flex-end;
         }
-    }
-
-    .mainP + footer {
-        box-shadow: 0px 11px 20px $white;
-        padding: 0;
     }
 
     .formBackground {

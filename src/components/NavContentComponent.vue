@@ -1,6 +1,7 @@
 <template>
     <ul class="mainNavList">
         <NavLiComponent
+            :darkOn="darkOn"
             :key="index"
             :name="navRoute.name"
             :navBarColor="navBarColor"
@@ -18,9 +19,8 @@
             <span class="mode flexBox">
                 <span
                     :class="{
-                        black:
-                            $route.path === '/about' ||
-                            $route.path === '/skills',
+                        black: !darkOn,
+                        white: darkOn,
                     }"
                     aria-hidden="true"
                     >{{ themeLabel }}</span

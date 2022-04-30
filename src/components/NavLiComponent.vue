@@ -6,20 +6,13 @@
         <router-link
             class="navLink"
             :to="path"
-            :class="[
-                navBarColor,
-                {
-                    aboutLink: path === '/about',
-                    projectsLink: path === '/projects',
-                    noTransition: noTransition,
-                },
-            ]"
+            :class="{ white: darkOn, black: !darkOn }"
             >{{ name }}</router-link
         >
     </li>
 </template>
 <script>
 export default {
-  props: ['name', 'navBarColor', 'noTransition', 'path']
+  props: ['darkOn', 'name', 'navBarColor', 'noTransition', 'path']
 }
 </script>
