@@ -461,9 +461,6 @@ body.bm-overlay {
   transition: all 0s;
   padding-bottom: 53px;
 }
-.colorContainer .headerShadow {
-  box-shadow: -9px 29px 16px -38px #00050f;
-}
 .colorContainer .static {
   position: static !important;
 }
@@ -1822,13 +1819,18 @@ body.bm-overlay {
   margin-left: 20px;
 }
 
+.colorContainer.sideNav:not(.darkModeOn) header:not(.transparentBackground)::after {
+  box-shadow: -9px 29px 16px -36px #00050f;
+}
+
+.colorContainer.sideNav.darkModeOn header:not(.transparentBackground)::after {
+  box-shadow: -9px 29px 16px -36px #e5e8ee;
+}
+
 .colorContainer.sideNav header {
   background: transparent;
   box-shadow: none;
   position: fixed;
-}
-.colorContainer.sideNav header:not(.transparentBackground)::after {
-  box-shadow: -9px 29px 16px -36px #00050f;
 }
 .colorContainer.sideNav header .bm-burger-button {
   margin-right: 10px;
@@ -2921,6 +2923,9 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) {
   background-color: #e5e8ee;
 }
+.colorContainer:not(.darkModeOn) .headerShadow {
+  box-shadow: -9px 29px 16px -38px #00050f;
+}
 .colorContainer:not(.darkModeOn) h1,
 .colorContainer:not(.darkModeOn) h2,
 .colorContainer:not(.darkModeOn) h3,
@@ -3065,6 +3070,9 @@ body.bm-overlay {
 .colorContainer.darkModeOn {
   background: #00050f;
   letter-spacing: 0.65px;
+}
+.colorContainer.darkModeOn .headerShadow {
+  box-shadow: -9px 29px 16px -38px #e5e8ee;
 }
 .colorContainer.darkModeOn h1,
 .colorContainer.darkModeOn h2,
