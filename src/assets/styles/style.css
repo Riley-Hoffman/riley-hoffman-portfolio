@@ -760,7 +760,10 @@ body.bm-overlay {
   box-shadow: -9px 29px 16px 32px #00050f;
 }
 
-.colorContainer header.relativeHeader + main .about, .colorContainer header.relativeHeader + main .projects, .colorContainer header.relativeHeader + main .skills, .colorContainer header.relativeHeader + main .errorSection {
+.colorContainer header.relativeHeader + main .about,
+.colorContainer header.relativeHeader + main .projects,
+.colorContainer header.relativeHeader + main .skills,
+.colorContainer header.relativeHeader + main .errorSection {
   transition: padding 0.5s;
   padding: 40px 0 160px;
 }

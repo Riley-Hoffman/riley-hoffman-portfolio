@@ -1613,12 +1613,14 @@
     }
 
     main:not(.mainH)::after {
-        background: linear-gradient(-28deg,
+        background: linear-gradient(
+                -28deg,
                 rgba(0, 5, 15, 1) 14px,
                 #ddd 15px,
                 #bbb 16px,
                 transparent 19px,
-                transparent 0),
+                transparent 0
+            ),
             linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0);
         @include mainAfterProps;
     }

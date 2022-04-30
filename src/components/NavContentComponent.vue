@@ -66,45 +66,45 @@
 import routes from '../router'
 import NavLiComponent from './NavLiComponent.vue'
 export default {
-  components: {
-    NavLiComponent
-  },
-  inject: ['safari'],
-  props: [
-    'darkOn',
-    'noTransition',
-    'themeLabel',
-    'themeSwitchAria',
-    'toggleColor',
-    'toggleIcon'
-  ],
-  data () {
-    return {
-      navRoutes: routes.options.routes
-    }
-  },
-  computed: {
-    navBarColor () {
-      if (!this.darkOn) {
-        return 'black'
-      } else if (
-        (this.$route.path === '/about' ||
+    components: {
+        NavLiComponent,
+    },
+    inject: ['safari'],
+    props: [
+        'darkOn',
+        'noTransition',
+        'themeLabel',
+        'themeSwitchAria',
+        'toggleColor',
+        'toggleIcon',
+    ],
+    data() {
+        return {
+            navRoutes: routes.options.routes,
+        }
+    },
+    computed: {
+        navBarColor() {
+            if (!this.darkOn) {
+                return 'black'
+            } else if (
+                (this.$route.path === '/about' ||
                     this.$route.path === '/skills') &&
                 this.darkOn
-      ) {
-        return 'black'
-      }
-      return 'white'
-    }
-  },
-  methods: {
-    enterToggle (e) {
-      if (e.keyCode === 13) {
-        e.preventDefault()
-        e.stopImmediatePropagation()
-        this.toggleColor()
-      }
-    }
-  }
+            ) {
+                return 'black'
+            }
+            return 'white'
+        },
+    },
+    methods: {
+        enterToggle(e) {
+            if (e.keyCode === 13) {
+                e.preventDefault()
+                e.stopImmediatePropagation()
+                this.toggleColor()
+            }
+        },
+    },
 }
 </script>
