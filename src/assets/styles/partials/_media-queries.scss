@@ -1349,6 +1349,7 @@
         .imgBox > a:focus > img {
             border-top: 14px ridge #126368;
         }
+
         footer {
             .contactWrapper {
                 > a:hover {
@@ -1409,6 +1410,11 @@
     p {
         color: $black;
     }
+
+    main:not(.mainH) {
+        background-image: url('../img/egg-shell.png');
+    }
+
     main:not(.mainH)::after {
         background: linear-gradient(
                 -28deg,
@@ -1418,7 +1424,8 @@
                 transparent 19px,
                 transparent 0
             ),
-            linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+            linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0),
+            url('../img/egg-shell.png');
         @include mainAfterProps;
     }
     .splash .galaxy {
@@ -1496,7 +1503,6 @@
     }
 
     .about {
-        background-color: $white;
         box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
 
         .wrapper {
@@ -1507,17 +1513,12 @@
     }
 
     .skills {
-        background-color: $white;
         .skillsGallery {
             i,
             svg {
                 color: $black;
             }
         }
-    }
-
-    .projects {
-        background: $white;
     }
 
     .projectInfo {
@@ -1614,6 +1615,10 @@
         color: $white;
     }
 
+    main:not(.mainH) {
+        background-image: url('../img/egg-shell-inverted.png');
+    }
+
     main:not(.mainH)::after {
         background: linear-gradient(
                 -28deg,
@@ -1623,7 +1628,8 @@
                 transparent 19px,
                 transparent 0
             ),
-            linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+            linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0),
+            url('../img/egg-shell-inverted.png');
         @include mainAfterProps;
     }
 
@@ -1642,6 +1648,7 @@
     .splash .lightHeroElements {
         display: none;
     }
+
     .subtleTextGradient {
         background: linear-gradient(180deg, white 20%, $white 100%);
         background-clip: text;
@@ -1709,7 +1716,6 @@
         }
     }
     .about {
-        background-color: $black;
         .wrapper {
             .about1 figure figcaption {
                 color: $white;
@@ -1718,16 +1724,12 @@
     }
 
     .skills {
-        background-color: $black;
         .skillsGallery {
             i,
             svg {
                 color: $white;
             }
         }
-    }
-    .projects {
-        background: $black;
     }
 
     .projectInfo {
