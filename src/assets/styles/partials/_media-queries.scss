@@ -1757,12 +1757,8 @@
             }
         }
     }
-    .mainP + footer::before,
-    .mainP + footer::after,
     .mainH + footer::before,
-    .mainH + footer::after,
-    .mainE + footer::before,
-    .mainE + footer::after {
+    .mainH + footer::after {
         display: none;
     }
     .errorSection {
