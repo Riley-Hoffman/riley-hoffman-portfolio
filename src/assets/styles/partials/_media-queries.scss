@@ -1407,6 +1407,18 @@
     p {
         color: $black;
     }
+    main:not(.mainH)::after {
+        background: linear-gradient(
+                -28deg,
+                rgb(214, 229, 233) 14px,
+                #ddd 15px,
+                #bbb 16px,
+                transparent 19px,
+                transparent 0
+            ),
+            linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+        @include mainAfterProps;
+    }
     .splash .galaxy {
         .stars {
             display: none;
@@ -1550,18 +1562,6 @@
             }
         }
     }
-    footer::before {
-        background: linear-gradient(
-                -28deg,
-                rgb(214, 229, 233) 14px,
-                #ddd 15px,
-                #bbb 16px,
-                transparent 19px,
-                transparent 0
-            ),
-            linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
-        @include footerBeforeProps;
-    }
     .errorHeader {
         background-image: none;
         .background {
@@ -1610,6 +1610,17 @@
     }
     p {
         color: $white;
+    }
+
+    main:not(.mainH)::after {
+        background: linear-gradient(-28deg,
+                rgba(0, 5, 15, 1) 14px,
+                #ddd 15px,
+                #bbb 16px,
+                transparent 19px,
+                transparent 0),
+            linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+        @include mainAfterProps;
     }
 
     .mainA,
@@ -1729,18 +1740,6 @@
     .iconContainer.contactJump svg {
         color: $white;
     }
-    footer::before {
-        background: linear-gradient(
-                -28deg,
-                rgba(0, 5, 15, 1) 14px,
-                #ddd 15px,
-                #bbb 16px,
-                transparent 19px,
-                transparent 0
-            ),
-            linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0);
-        @include footerBeforeProps;
-    }
 
     footer {
         background: $black;
@@ -1762,10 +1761,7 @@
             }
         }
     }
-    .mainH + footer::before,
-    .mainH + footer::after {
-        display: none;
-    }
+
     .errorSection {
         h1 {
             color: $white;
