@@ -1,19 +1,14 @@
 .colorContainer {
-    .mainS {
-        height: 97vh;
-    }
     .skillsMain {
         min-height: initial;
     }
     .skills {
-        background-color: $white;
         padding: 120px 0 75px;
         .wrapper {
             .flexBox {
                 align-items: center;
                 flex-direction: column;
                 h1 {
-                    color: $black;
                     margin-bottom: 30px;
                 }
             }

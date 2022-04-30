@@ -1,22 +1,16 @@
 .colorContainer {
-    .mainA {
-        height: 97vh;
-    }
     .aboutMain {
         min-height: initial;
     }
     .about {
-        background-color: $white;
         padding: 115px 0 0;
         .wrapper {
             display: flex;
-            h1 {
-                color: $black;
-            }
             .about1,
             .about2 {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 25px;
                 width: 50vw;
             }
         }
@@ -59,7 +53,6 @@
             background: rgba(23, 162, 170, 0.1);
             border: 1px solid rgba(23, 162, 170, 1);
             border-radius: 1px;
-            color: $black;
             font-size: 0.6rem;
             font-weight: 300;
             margin-top: 8px;

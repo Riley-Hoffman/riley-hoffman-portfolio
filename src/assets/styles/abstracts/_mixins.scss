@@ -1,0 +1,9 @@
+@mixin footerBeforeProps {
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    height: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    top: -36px;
+}

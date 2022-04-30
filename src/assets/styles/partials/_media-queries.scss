@@ -26,41 +26,15 @@
         }
     }
 
-    @media (max-height: 650px) {
-        .modal.openModal {
-            bottom: 2%;
-            form {
-                .inputBox {
-                    flex-direction: row;
-                    label[for="email"] {
-                        margin-left: 20px;
-                    }
-                }
-            }
-        }
-    }
-
     /* Wide screen tv */
 
-    @media (max-width: 1370px) and (max-height: 770px) {
+    @media (max-width: 1370px) and (max-height: 770px) and (min-width: 650px) {
         .relativeColumnBox {
             .smallFlexBox {
                 .iconContainer {
                     margin-bottom: 0;
                 }
             }
-        }
-        .scrollingBackground {
-            background: {
-                image: linear-gradient(to bottom, rgba(23, 162, 170, 0) 0%, rgba(23, 162, 170, 0.2) 100%),
-                    url(https://images.unsplash.com/photo-1612344801383-ee65e6e5e4a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
-                blend-mode: multiply;
-                size: cover;
-            }
-            opacity: 0.3;
-            position: relative;
-            height: 100%;
-            width: 100%;
         }
         .smokeParentContainer {
             .lightBackground {
@@ -256,9 +230,11 @@
                 display: none;
             }
         }
-        .mainDiv {
-            height: initial;
+        .relativeHeader {
+            min-height: 160px;
+            max-height: 180px;
         }
+
         section {
             height: 100%;
             > .wrapper {
@@ -271,7 +247,7 @@
         }
         .modal {
             max-width: 100%;
-            min-height: 565px;
+            min-height: 490px;
             form {
                 .contactFormButton {
                     margin-top: 8px;
@@ -286,7 +262,7 @@
         .skills,
         .projects,
         .errorSection {
-            padding-top: 190px !important;
+            padding-top: 190px;
         }
         .about {
             padding-bottom: 83px;
@@ -335,6 +311,12 @@
 
         .relativeColumnBox .smallFlexBox .homeButton {
             width: 40%;
+        }
+
+        .mainDiv:not(.projectsMain) {
+            section {
+                padding: 100px 0 200px;
+            }
         }
         .projects {
             padding: 85px 0 40px;
@@ -398,11 +380,6 @@
             }
         }
 
-        .mainA,
-        .mainS {
-            height: 100%;
-        }
-
         .splash .smallFlexBox {
             margin-top: 0;
         }
@@ -449,6 +426,19 @@
         }
     }
 
+    // Modal position control
+    @media (max-height: 720px) {
+        .modal {
+            bottom: 2%;
+            max-height: 600px;
+            padding-bottom: 20px;
+
+            form {
+                padding-bottom: 0;
+            }
+        }
+    }
+
     /* Landscape phone to portrait tablet Hover Styles */
 
     @media (max-width: 780px) and (hover: hover) and (pointer: fine) {
@@ -486,33 +476,23 @@
         }
     }
 
-    // Modal position control
-    @media (max-height: 720px) {
+    @media (max-width: 769px) and (max-height: 639px) {
         .modal {
-            bottom: 2%;
-            max-height: 600px;
-            padding-bottom: 20px;
-            form {
-                padding-bottom: 0;
-            }
+            bottom: 13%;
+            min-height: initial;
+            max-height: 80%;
+            max-width: 50%;
         }
     }
 
-    @media (max-width: 650px) and (max-height: 543px) {
-        .modal {
-            form {
-                .inputBox {
-                    justify-content: space-between;
-                    flex-direction: row;
-                    label[type="email"] {
-                        margin-left: 20px;
-                    }
-                }
-            }
+    @media (max-width: 780px) and (max-height: 600px) and (min-width: 600px) {
+        .projectsMain {
+            transition: all 0s;
+            height: 5200px;
         }
     }
 
-    // Footer Control
+    // Footer & Modal Control
     @media (max-width: 680px) {
         .mainA + footer,
         .mainP + footer,
@@ -543,8 +523,20 @@
         }
 
         .modal {
-            bottom: 10%;
+            top: 37px;
+            max-height: 609px;
+            min-height: 609px;
+            form {
+                .inputBox {
+                    flex-direction: column;
+
+                    label:nth-of-type(2) {
+                        margin-left: 0;
+                    }
+                }
+            }
         }
+
         form {
             .contactFormButton {
                 margin-top: 40px;
@@ -552,12 +544,18 @@
         }
     }
 
-    @media (max-width: 769px) and (max-height: 639px) {
+    @media (max-width: 650px) and (max-height: 543px) {
         .modal {
-            bottom: 13%;
-            min-height: initial;
-            max-height: 80%;
-            max-width: 50%;
+            form {
+                .inputBox {
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                    label[type="email"] {
+                        margin-left: 20px;
+                    }
+                }
+            }
         }
     }
 
@@ -682,8 +680,8 @@
         }
 
         .modal {
-            bottom: -100;
-            top: auto;
+            bottom: auto;
+            top: -100px;
             min-height: 400px;
             padding: 11px 12px 9px 20px;
             bottom: -100px;
@@ -757,24 +755,6 @@
         }
     }
 
-    // Modal control
-
-    @media (max-width: 680px) {
-        .modal {
-            top: 37px;
-            max-height: 609px;
-            min-height: 609px;
-            form {
-                .inputBox {
-                    flex-direction: column;
-                    label:nth-of-type(2) {
-                        margin-left: 0;
-                    }
-                }
-            }
-        }
-    }
-
     /* Small phones */
     @media (max-width: 500px) {
         header {
@@ -794,7 +774,7 @@
                 }
             }
             .iconContainer.contactJump {
-                margin-top: 55px;
+                margin-top: 40px;
             }
         }
 
@@ -985,6 +965,36 @@
                 }
                 .contactFormButton {
                     width: 67%;
+                }
+            }
+        }
+    }
+
+    @media (max-height: 650px) {
+        .mainDiv:not(.projectsMain) {
+            section {
+                padding: 100px 0 200px;
+            }
+        }
+
+        .projectsMain {
+            height: 4800px;
+        }
+
+        .modal.openModal {
+            bottom: 2%;
+        }
+    }
+
+    @media (max-height: 650px) and (min-width: 650px) {
+        .modal.openModal {
+            form {
+                .inputBox {
+                    flex-direction: row;
+
+                    label[for="email"] {
+                        margin-left: 20px;
+                    }
                 }
             }
         }
@@ -1224,10 +1234,12 @@
     }
 }
 
-.colorContainer:not(.sideNav) {
-    @media (max-width: 500px) {
-        header .navBox nav ul.mainNavList {
-            width: 100%;
+.colorContainer.sideNav {
+    @media (max-width: 780px) {
+        header {
+            .bm-burger-button {
+                top: 0;
+            }
         }
     }
 }
@@ -1382,9 +1394,15 @@
     h1,
     h2,
     h3,
+    h4,
+    h5,
     nav ul,
     .subtleTextShadow {
+        color: $black;
         text-shadow: $lightModeTextShadow;
+    }
+    p {
+        color: $black;
     }
     .splash .galaxy {
         .stars {
@@ -1452,11 +1470,7 @@
         .contactWrapper a {
             color: $black;
         }
-        h1,
-        h2,
-        p {
-            color: $black;
-        }
+
         .smallFlexBox {
             a:focus {
                 outline: 2px solid $black;
@@ -1465,25 +1479,31 @@
     }
 
     .about {
+        background-color: $white;
         box-shadow: 1px -6px 15px -17px rgba(0, 0, 0, 0.82);
-    }
 
-    .projects {
-        background: $white;
-        .wrapper.flexBox {
-            h2 {
+        .wrapper {
+            .about1 figure figcaption {
                 color: $black;
             }
         }
     }
 
-    .projectInfo {
-        h3,
-        h4,
-        h5,
-        p {
-            color: $black;
+    .skills {
+        background-color: $white;
+        .skillsGallery {
+            i,
+            svg {
+                color: $black;
+            }
         }
+    }
+
+    .projects {
+        background: $white;
+    }
+
+    .projectInfo {
         a {
             background: $teal;
             color: $black;
@@ -1495,10 +1515,13 @@
         }
     }
 
+    .iconContainer.contactJump svg {
+        color: $black;
+    }
+
     footer {
         background: $white;
         background: rgb(214, 229, 233);
-        color: $black;
         .contactWrapper {
             > a {
                 font-weight: 500;
@@ -1510,6 +1533,7 @@
         .homeBottomMargin.bottom {
             margin-bottom: 60px;
         }
+
         .bottom {
             a {
                 text-shadow: $lightModeTextShadow;
@@ -1522,9 +1546,6 @@
                 }
             }
         }
-        p {
-            color: $black;
-        }
     }
     footer::before {
         background: linear-gradient(
@@ -1536,13 +1557,7 @@
                 transparent 0
             ),
             linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0);
-        background-position: bottom;
-        background-repeat: repeat-x;
-        background-size: 32px 32px;
-        height: 36px;
-        margin-bottom: 40px;
-        position: relative;
-        top: -36px;
+        @include footerBeforeProps;
     }
     .errorHeader {
         background-image: none;
@@ -1581,10 +1596,15 @@
     h1,
     h2,
     h3,
+    h4,
+    h5,
     nav ul,
-    h2,
     .subtleTextShadow {
+        color: $white;
         text-shadow: $darkModeTextShadow;
+    }
+    p {
+        color: $white;
     }
 
     .mainA,
@@ -1592,6 +1612,8 @@
         h1,
         h2,
         h3,
+        h4,
+        h5,
         nav ul,
         .subtleTextShadow {
             text-shadow: $lightModeTextShadow;
@@ -1657,10 +1679,6 @@
         .contactWrapper a {
             color: $white;
         }
-        h1,
-        h2 {
-            color: $white;
-        }
 
         .relativeColumnBox {
             .smallFlexBox {
@@ -1670,23 +1688,29 @@
             }
         }
     }
-    .projects {
-        background: $black;
-        .wrapper.flexBox {
-            h1,
-            h2 {
+    .about {
+        background-color: $black;
+        .wrapper {
+            .about1 figure figcaption {
                 color: $white;
             }
         }
     }
 
-    .projectInfo {
-        h3,
-        h4,
-        h5,
-        p {
-            color: $white;
+    .skills {
+        background-color: $black;
+        .skillsGallery {
+            i,
+            svg {
+                color: $white;
+            }
         }
+    }
+    .projects {
+        background: $black;
+    }
+
+    .projectInfo {
         a {
             background: $white;
             color: $darkTeal;
@@ -1697,10 +1721,24 @@
             text-shadow: 3px 3px 5px $black;
         }
     }
+    .iconContainer.contactJump svg {
+        color: $white;
+    }
+    footer::before {
+        background: linear-gradient(
+                -28deg,
+                rgba(0, 5, 15, 1) 14px,
+                #ddd 15px,
+                #bbb 16px,
+                transparent 19px,
+                transparent 0
+            ),
+            linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0);
+        @include footerBeforeProps;
+    }
 
     footer {
         background: $black;
-        color: $white;
         .contactWrapper {
             a:focus {
                 outline: 2px solid $white;
@@ -1718,9 +1756,6 @@
                 }
             }
         }
-        p {
-            color: $white;
-        }
     }
     .mainP + footer::before,
     .mainP + footer::after,
@@ -1729,36 +1764,6 @@
     .mainE + footer::before,
     .mainE + footer::after {
         display: none;
-    }
-    footer::before {
-        background: radial-gradient(ellipse, $black, $black 7px, $black 7px, $black 10px, transparent 11px);
-        background-repeat: repeat-x;
-        margin-bottom: 60px;
-        position: relative;
-        top: 0;
-    }
-    footer::after {
-        background: radial-gradient(ellipse, transparent, transparent 7.3px, $black 7px, $black 10px, $black 11px);
-        background-position: -18px -20px;
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 20px;
-        width: 100%;
-    }
-    footer::before,
-    footer::after {
-        height: 25px;
-        background-size: 36px 0px;
-    }
-    .transitionBorder::before,
-    .transitionBorder::after {
-        background-size: 36px 40px;
-    }
-    .mainS + .transitionBorder,
-    .mainA + .transitionBorder {
-        box-shadow: inset 0px 50px 3px -22px $white;
-        transition: box-shadow 2s;
     }
     .errorSection {
         h1 {
@@ -1824,7 +1829,6 @@
     // When user prefers reduced motion and no touchscreen
     @media (prefers-reduced-motion: reduce) and (hover: hover) and (pointer: fine) {
         header {
-            background-attachment: local;
             .navBox {
                 nav {
                     ul.mainNavList {

@@ -15,7 +15,7 @@
 
     .mainDiv {
         display: block;
-        height: 96vh;
+        height: 100%;
         position: relative;
     }
 
@@ -59,8 +59,23 @@
         opacity: 0;
     }
 
+    .homeHeader {
+        transition: all 0s;
+        padding-bottom: 53px;
+    }
+
+    .headerShadow {
+        box-shadow: -9px 29px 16px -38px $black;
+    }
+
     .static {
         position: static !important;
+    }
+
+    .relativeHeader {
+        min-height: 103px;
+        max-height: 110px;
+        position: relative;
     }
     .rotate180 {
         transform: rotate(180deg);
@@ -68,7 +83,6 @@
 
     .iconContainer.contactJump {
         align-items: center;
-        color: $white;
         justify-content: center;
         position: relative;
         z-index: 10;
@@ -79,7 +93,6 @@
             padding: 10px 20px;
         }
         svg {
-            color: $black;
             font-size: 1.2rem;
             margin-left: 20px;
         }

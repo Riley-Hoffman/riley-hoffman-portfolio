@@ -1,8 +1,15 @@
 .colorContainer.sideNav header {
+    background: transparent;
+    box-shadow: none;
+    position: fixed;
+    &:not(.transparentBackground)::after {
+        box-shadow: -9px 29px 16px -36px $black;
+    }
     .bm-burger-button {
         margin-right: 10px;
         left: initial;
         right: -6%;
+        top: 25px;
     }
 
     .navBox div div {
@@ -67,6 +74,13 @@
             }
         }
     }
+}
+
+.colorContainer.sideNav header.whiteBackground:not(.transparentBackground),
+.colorContainer.sideNav header.blackBackground:not(.transparentBackground),
+.colorContainer.sideNav header.transparentBackground {
+    background: transparent;
+    box-shadow: none;
 }
 
 .colorContainer.sideNav footer {

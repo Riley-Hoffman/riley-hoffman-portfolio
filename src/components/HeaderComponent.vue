@@ -3,14 +3,15 @@
         class="flexBox"
         :class="{
             absoluteHeader: scrolledToFooter,
-            blackBackground: darkOn && $route.path === '/page-not-found',
+            blackBackground: darkOn,
+            homeHeader: $route.path === '/',
+            headerShadow: $route.path != '/',
+            relativeHeader: $route.path != '/',
+            scrolledToMain: scrolledToMain && $route.path != '/projects',
             transparent: scrolledToFooter && !scrolledToTop,
             transparentBackground:
                 $route.path === '/' || $route.path === '/projects',
-            whiteBackground:
-                (!darkOn && $route.path != '/') ||
-                $route.path != '/about' ||
-                $route.path != '/skills',
+            whiteBackground: !darkOn && $route.path != '/',
         }"
     >
         <button class="skip-link" :class="focusOutline" @click="main.focus()">
@@ -48,14 +49,8 @@
                     :class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
-                        darkBackground:
-                            darkOn &&
-                            $route.path != '/about' &&
-                            $route.path != '/skills',
-                        lightBackground:
-                            !darkOn ||
-                            $route.path === '/about' ||
-                            $route.path === '/skills',
+                        darkBackground: darkOn,
+                        lightBackground: !darkOn,
                     }"
                     v-if="scrolledToMain && !scrolledToTop"
                 >
@@ -65,6 +60,7 @@
                     :class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
+                        transparent: scrolledToMain && !scrolledToTop,
                     }"
                     v-if="scrolledToTop || scrolledToFooter"
                 >
