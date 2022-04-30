@@ -12,15 +12,19 @@
 
 .colorContainer header.whiteBackground:not(.transparentBackground) {
     background-color: $white;
+    background-image: url('../img/egg-shell.png');
     &::after {
         background-color: $white;
+        background-image: url('../img/egg-shell.png');
     }
 }
 
 .colorContainer header.blackBackground:not(.transparentBackground) {
     background-color: $black;
+    background-image: url('../img/egg-shell-inverted.png');
     &::after {
         background-color: $black;
+        background-image: url('../img/egg-shell-inverted.png');
     }
 }
 
