@@ -13,6 +13,6 @@
 </template>
 <script>
 export default {
-    props: ['darkOn', 'name', 'navBarColor', 'noTransition', 'path'],
+  props: ['darkOn', 'name', 'navBarColor', 'noTransition', 'path']
 }
 </script>

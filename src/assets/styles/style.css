@@ -2063,6 +2063,9 @@ body.bm-overlay {
   }
 }
 @media (max-width: 780px) {
+  .colorContainer header {
+    padding-left: 40px;
+  }
   .colorContainer header .favLink {
     display: none;
   }
