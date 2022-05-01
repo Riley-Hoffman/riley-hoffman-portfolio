@@ -1412,7 +1412,7 @@
     }
 
     main:not(.mainH) {
-        background-image: url('../img/egg-shell.png');
+        background-image: url("../img/egg-shell.png");
     }
 
     main:not(.mainH)::after {
@@ -1425,7 +1425,7 @@
                 transparent 0
             ),
             linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0),
-            url('../img/egg-shell.png');
+            url("../img/egg-shell.png");
         @include mainAfterProps;
     }
     .splash .galaxy {
@@ -1618,20 +1618,20 @@
     }
 
     main:not(.mainH) {
-        background-image: url('../img/egg-shell-inverted.png');
+        background-image: url("../img/egg-shell-inverted.png");
     }
 
     main:not(.mainH)::after {
         background: linear-gradient(
                 -28deg,
                 $darkBehindColor 14px,
-                #ddd 15px,
-                #bbb 16px,
+                #203c3a 15px,
+                #afc4c8 16px,
                 transparent 19px,
                 transparent 0
             ),
-            linear-gradient(28deg, #091516 2px, transparent 15px, #b8b8b8 14px, transparent 0),
-            url('../img/egg-shell-inverted.png');
+            linear-gradient(28deg, #091516 2px, transparent 15px, #b8b8b8 0, transparent 0),
+            url(/img/e8a59c53fbab814315579b40a9b472ddfc66c5ee/egg-shell-inverted.ee1eb4b8.png);
         @include mainAfterProps;
     }
 
