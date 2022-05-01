@@ -51,7 +51,7 @@
 
     .navBox div .lightBackground {
         .bm-menu {
-            background-color: #9bd0d2;
+            background-color: $lightBehindColor;
 
             .bm-cross {
                 background-color: $black;
@@ -67,7 +67,7 @@
 
     .navBox div .darkBackground {
         .bm-menu {
-            background-color: #07262a;
+            background-color: $darkBehindColor;
 
             .bm-cross {
                 background-color: $white;
