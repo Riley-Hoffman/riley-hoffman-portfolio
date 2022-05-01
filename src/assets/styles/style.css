@@ -249,10 +249,11 @@ time {
 }
 
 html {
-  background-color: #e5e8ee;
+  background-color: #329ea4;
 }
 
 body {
+  background-color: #e5e8ee;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
   line-height: 1.5;
@@ -337,13 +338,14 @@ body.bm-overlay {
   justify-content: center;
   min-height: 97vh;
   padding: 40px 0;
+  z-index: 20;
 }
 .colorContainer section,
 .colorContainer footer {
   position: relative;
 }
 .colorContainer footer {
-  z-index: 20;
+  z-index: 30;
 }
 .colorContainer form,
 .colorContainer label,
@@ -2957,7 +2959,7 @@ body.bm-overlay {
   margin-bottom: 32px;
   top: 32px;
 }
-.colorContainer:not(.darkModeOn) .splash .galaxy .stars {
+.colorContainer:not(.darkModeOn) .splash .galaxy {
   display: none;
 }
 .colorContainer:not(.darkModeOn) .subtleTextGradient {
