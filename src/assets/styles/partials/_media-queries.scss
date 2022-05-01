@@ -1547,6 +1547,9 @@
             a:focus {
                 outline: 2px solid $black;
             }
+            svg {
+                color: $black;
+            }
         }
         .homeBottomMargin.bottom {
             margin-bottom: 60px;
@@ -1622,13 +1625,13 @@
     main:not(.mainH)::after {
         background: linear-gradient(
                 -28deg,
-                rgba(0, 5, 15, 1) 14px,
+                rgba(9, 21, 22, 1) 14px,
                 #ddd 15px,
                 #bbb 16px,
                 transparent 19px,
                 transparent 0
             ),
-            linear-gradient(28deg, $black 2px, transparent 15px, #b8b8b8 14px, transparent 0),
+            linear-gradient(28deg, #091516 2px, transparent 15px, #b8b8b8 14px, transparent 0),
             url('../img/egg-shell-inverted.png');
         @include mainAfterProps;
     }
@@ -1748,10 +1751,13 @@
     }
 
     footer {
-        background: $black;
+        background: #091516;
         .contactWrapper {
             a:focus {
                 outline: 2px solid $white;
+            }
+            svg {
+                color: $white;
             }
         }
         .bottom {
