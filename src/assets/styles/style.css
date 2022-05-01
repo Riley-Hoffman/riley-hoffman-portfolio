@@ -3029,7 +3029,7 @@ body.bm-overlay {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) footer {
-  background: rgb(2, 31, 42);
+  background: rgb(197, 225, 233);
 }
 .colorContainer:not(.darkModeOn) footer .contactWrapper > a {
   font-weight: 500;
