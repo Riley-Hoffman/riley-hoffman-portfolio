@@ -34,7 +34,7 @@ export default {
           title: 'Out Of Context',
           skills: 'React, JSX, AXIOS, SCSS',
           description:
-                        '<p>Created with <span translate="no">React</span>, this app allows users to search by movie name and displays GIFs based on themes (keywords) from the movie (love, war, sports etc). Three GIFs are displayed initially, with their keywords underneath. By clicking, the user can cycle through all GIFs per keyword, or look at other keywords associated with the movie, returning new GIFs!</p>',
+                        'Created with <span translate="no">React</span>, this app allows users to search by movie name and displays GIFs based on themes (keywords) from the movie (love, war, sports etc). Three GIFs are displayed initially, with their keywords underneath. By clicking, the user can cycle through all GIFs per keyword, or look at other keywords associated with the movie, returning new GIFs!</p>',
           liveUrl: 'https://focused-varahamihira-abf5da.netlify.app/',
           gitUrl: 'https://github.com/dearJuno/outofContext',
           srcSet: 'https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:low/v1642782917/out-of-context3x_krpnlk.webp 1280w, https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/v1642782917/out-of-context_oeh1on.webp 900w, https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/v1642782917/out-of-context1x_ojtnhg.webp 550w',
