@@ -249,7 +249,7 @@ time {
 }
 
 html {
-  background-color: #e5e8ee;
+  background-color: #329ea4;
 }
 
 body {
@@ -1860,7 +1860,7 @@ body.bm-overlay {
   right: initial;
 }
 .colorContainer.sideNav header .navBox div .lightBackground .bm-menu {
-  background-color: #9bd0d2;
+  background-color: rgb(197, 225, 233);
 }
 .colorContainer.sideNav header .navBox div .lightBackground .bm-menu .bm-cross {
   background-color: #00050f;
@@ -1869,7 +1869,7 @@ body.bm-overlay {
   background-color: #00050f;
 }
 .colorContainer.sideNav header .navBox div .darkBackground .bm-menu {
-  background-color: #07262a;
+  background-color: rgb(2, 31, 42);
 }
 .colorContainer.sideNav header .navBox div .darkBackground .bm-menu .bm-cross {
   background-color: #e5e8ee;
@@ -3029,8 +3029,7 @@ body.bm-overlay {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) footer {
-  background: #e5e8ee;
-  background: rgb(197, 225, 233);
+  background: rgb(2, 31, 42);
 }
 .colorContainer:not(.darkModeOn) footer .contactWrapper > a {
   font-weight: 500;
