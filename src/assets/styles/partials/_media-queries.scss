@@ -1418,7 +1418,7 @@
     main:not(.mainH)::after {
         background: linear-gradient(
                 -28deg,
-                rgb(214, 229, 233) 14px,
+                rgb(197, 225, 233) 14px,
                 #ddd 15px,
                 #bbb 16px,
                 transparent 19px,
@@ -1625,7 +1625,7 @@
     main:not(.mainH)::after {
         background: linear-gradient(
                 -28deg,
-                rgba(9, 21, 22, 1) 14px,
+                rgb(2, 31, 42) 14px,
                 #ddd 15px,
                 #bbb 16px,
                 transparent 19px,
@@ -1751,7 +1751,7 @@
     }
 
     footer {
-        background: #021F2A;
+        background: rgb(2, 31, 42);
         .contactWrapper {
             a:focus {
                 outline: 2px solid $white;
