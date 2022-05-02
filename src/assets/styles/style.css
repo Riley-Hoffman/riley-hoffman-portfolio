@@ -771,20 +771,20 @@ body.bm-overlay {
 
 .colorContainer header.whiteBackground:not(.transparentBackground) {
   background-color: #e5e8ee;
-  background-image: url("../img/egg-shell.png");
+  background-image: url("../img/cross-scratches.png");
 }
 .colorContainer header.whiteBackground:not(.transparentBackground)::after {
   background-color: #e5e8ee;
-  background-image: url("../img/egg-shell.png");
+  background-image: url("../img/cross-scratches.png");
 }
 
 .colorContainer header.blackBackground:not(.transparentBackground) {
   background-color: #00050f;
-  background-image: url("../img/egg-shell-inverted.png");
+  background-image: url("../img/cross-scratches-inverted.png");
 }
 .colorContainer header.blackBackground:not(.transparentBackground)::after {
   background-color: #00050f;
-  background-image: url("../img/egg-shell-inverted.png");
+  background-image: url("../img/cross-scratches-inverted.png");
 }
 
 .colorContainer header.transparentBackground {
@@ -1606,6 +1606,7 @@ body.bm-overlay {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 15px 0 10px;
 }
 .colorContainer footer .bottom {
   align-items: center;
@@ -2661,7 +2662,7 @@ body.bm-overlay {
   }
 }
 @media (max-width: 350px) {
-  .colorContainer header {
+  .colorContainer header:not(.scrolledToMain) {
     padding-left: 40px;
   }
   .colorContainer .modal {
@@ -2943,21 +2944,16 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) p {
   color: #00050f;
 }
-.colorContainer:not(.darkModeOn) main:not(.mainH) {
-  background-image: url("../img/egg-shell.png");
-}
 .colorContainer:not(.darkModeOn) main:not(.mainH)::after {
-  background: linear-gradient(-28deg, rgb(197, 225, 233) 14px, #ddd 15px, #bbb 16px, transparent 19px, transparent 0), linear-gradient(28deg, #e5e8ee 2px, transparent 15px, #b8b8b8 14px, transparent 0), url("../img/egg-shell.png");
+  background: linear-gradient(-28deg, transparent 14px, transparent 15px, #bbb 16px, #e5e8ee 19px, #e5e8ee 0);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
-  height: 36px;
-  margin-bottom: 40px;
-  position: relative;
-  top: 41px;
-  height: 49px;
+  height: 22px;
   margin-bottom: 32px;
-  top: 32px;
+  position: absolute;
+  top: 99.9%;
+  z-index: 9999;
 }
 .colorContainer:not(.darkModeOn) .splash .galaxy {
   display: none;
@@ -3032,6 +3028,7 @@ body.bm-overlay {
 }
 .colorContainer:not(.darkModeOn) footer {
   background: rgb(197, 225, 233);
+  background-image: url("../img/cross-scratches.png");
 }
 .colorContainer:not(.darkModeOn) footer .contactWrapper > a {
   font-weight: 500;
@@ -3092,21 +3089,16 @@ body.bm-overlay {
 .colorContainer.darkModeOn p {
   color: #e5e8ee;
 }
-.colorContainer.darkModeOn main:not(.mainH) {
-  background-image: url("../img/egg-shell-inverted.png");
-}
 .colorContainer.darkModeOn main:not(.mainH)::after {
-  background: linear-gradient(-28deg, rgb(2, 31, 42) 14px, #203c3a 15px, #afc4c8 16px, transparent 19px, transparent 0), linear-gradient(28deg, #091516 2px, transparent 15px, #b8b8b8 0, transparent 0), url(/img/e8a59c53fbab814315579b40a9b472ddfc66c5ee/egg-shell-inverted.ee1eb4b8.png);
+  background: linear-gradient(-28deg, transparent 14px, #203c3a 15px, #afc4c8 16px, #00050f 19px, #00050f 0);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
-  height: 36px;
-  margin-bottom: 40px;
-  position: relative;
-  top: 41px;
-  height: 49px;
+  height: 22px;
   margin-bottom: 32px;
-  top: 32px;
+  position: absolute;
+  top: 99.9%;
+  z-index: 9999;
 }
 .colorContainer.darkModeOn .mainA h1,
 .colorContainer.darkModeOn .mainA h2,
@@ -3191,6 +3183,7 @@ body.bm-overlay {
 }
 .colorContainer.darkModeOn footer {
   background: rgb(2, 31, 42);
+  background-image: url("../img/cross-scratches-inverted.png");
 }
 .colorContainer.darkModeOn footer .contactWrapper a:focus {
   outline: 2px solid #e5e8ee;
