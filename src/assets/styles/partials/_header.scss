@@ -12,19 +12,19 @@
 
 .colorContainer header.whiteBackground:not(.transparentBackground) {
     background-color: $white;
-    background-image: url('../img/egg-shell.png');
+    background-image: url("../img/cross-scratches.png");
     &::after {
         background-color: $white;
-        background-image: url('../img/egg-shell.png');
+        background-image: url("../img/cross-scratches.png");
     }
 }
 
 .colorContainer header.blackBackground:not(.transparentBackground) {
     background-color: $black;
-    background-image: url('../img/egg-shell-inverted.png');
+    background-image: url("../img/cross-scratches-inverted.png");
     &::after {
         background-color: $black;
-        background-image: url('../img/egg-shell-inverted.png');
+        background-image: url("../img/cross-scratches-inverted.png");
     }
 }
 
