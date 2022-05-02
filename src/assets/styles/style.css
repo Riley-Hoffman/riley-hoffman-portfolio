@@ -326,10 +326,14 @@ body.bm-overlay {
   display: block;
   left: 0px;
   width: 100%;
+  top: 97.6%;
   z-index: 999;
 }
 .colorContainer main:not(.mainH)::after {
   transition: background-size 2s;
+}
+.colorContainer main.mainP::after {
+  top: 99.6%;
 }
 .colorContainer section {
   align-items: center;
@@ -2952,7 +2956,6 @@ body.bm-overlay {
   height: 22px;
   margin-bottom: 32px;
   position: absolute;
-  top: 97.6%;
   z-index: 9999;
 }
 .colorContainer:not(.darkModeOn) .splash .galaxy {
@@ -3096,7 +3099,6 @@ body.bm-overlay {
   height: 22px;
   margin-bottom: 32px;
   position: absolute;
-  top: 97.6%;
   z-index: 9999;
 }
 .colorContainer.darkModeOn .mainA h1,
