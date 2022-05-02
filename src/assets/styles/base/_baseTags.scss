@@ -76,11 +76,16 @@ body.bm-overlay {
         display: block;
         left: 0px;
         width: 100%;
+        top: 97.6%;
         z-index: 999;
     }
 
     main:not(.mainH)::after {
         transition: background-size 2s;
+    }
+
+    main.mainP::after {
+        top: 99.6%;
     }
 
     section {
