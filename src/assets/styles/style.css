@@ -2945,14 +2945,14 @@ body.bm-overlay {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) main:not(.mainH)::after {
-  background: linear-gradient(-28deg, transparent 14px, transparent 15px, #bbb 16px, #e5e8ee 19px, #e5e8ee 0);
+  background: linear-gradient(-28deg, rgb(197, 225, 233) 14px, #6d9c99 15px, #bbb 16px, transparent 19px, transparent 0);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
   height: 22px;
   margin-bottom: 32px;
   position: absolute;
-  top: 99.9%;
+  top: 97.6%;
   z-index: 9999;
 }
 .colorContainer:not(.darkModeOn) .splash .galaxy {
@@ -3028,7 +3028,6 @@ body.bm-overlay {
 }
 .colorContainer:not(.darkModeOn) footer {
   background: rgb(197, 225, 233);
-  background-image: url("../img/cross-scratches.png");
 }
 .colorContainer:not(.darkModeOn) footer .contactWrapper > a {
   font-weight: 500;
@@ -3090,14 +3089,14 @@ body.bm-overlay {
   color: #e5e8ee;
 }
 .colorContainer.darkModeOn main:not(.mainH)::after {
-  background: linear-gradient(-28deg, transparent 14px, #203c3a 15px, #afc4c8 16px, #00050f 19px, #00050f 0);
+  background: linear-gradient(-28deg, rgb(2, 31, 42) 14px, #203c3a 15px, #afc4c8 16px, transparent 19px, transparent 0);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
   height: 22px;
   margin-bottom: 32px;
   position: absolute;
-  top: 99.9%;
+  top: 97.6%;
   z-index: 9999;
 }
 .colorContainer.darkModeOn .mainA h1,
@@ -3183,7 +3182,6 @@ body.bm-overlay {
 }
 .colorContainer.darkModeOn footer {
   background: rgb(2, 31, 42);
-  background-image: url("../img/cross-scratches-inverted.png");
 }
 .colorContainer.darkModeOn footer .contactWrapper a:focus {
   outline: 2px solid #e5e8ee;
