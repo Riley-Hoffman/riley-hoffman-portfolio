@@ -1412,7 +1412,14 @@
     }
 
     main:not(.mainH)::after {
-        background: linear-gradient(-28deg, transparent 14px, transparent 15px, #bbb 16px, $white 19px, $white 0);
+        background: linear-gradient(
+            -28deg,
+            $lightBehindColor 14px,
+            #6d9c99 15px,
+            #bbb 16px,
+            transparent 19px,
+            transparent 0
+        );
         @include mainAfterProps;
     }
     .splash .galaxy {
@@ -1524,7 +1531,6 @@
 
     footer {
         background: $lightBehindColor;
-        background-image: url("../img/cross-scratches.png");
         .contactWrapper {
             > a {
                 font-weight: 500;
@@ -1604,7 +1610,14 @@
     }
 
     main:not(.mainH)::after {
-        background: linear-gradient(-28deg, transparent 14px, #203c3a 15px, #afc4c8 16px, $black 19px, $black 0);
+        background: linear-gradient(
+            -28deg,
+            $darkBehindColor 14px,
+            #203c3a 15px,
+            #afc4c8 16px,
+            transparent 19px,
+            transparent 0
+        );
         @include mainAfterProps;
     }
 
@@ -1724,7 +1737,6 @@
 
     footer {
         background: $darkBehindColor;
-        background-image: url("../img/cross-scratches-inverted.png");
         .contactWrapper {
             a:focus {
                 outline: 2px solid $white;
