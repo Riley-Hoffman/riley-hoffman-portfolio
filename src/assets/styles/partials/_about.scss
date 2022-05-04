@@ -67,6 +67,7 @@
         }
         p::after {
             background: $buttonGradient;
+            background-image: $hslGradient;
             border-radius: 15px;
             content: "";
             margin-top: 30px;
