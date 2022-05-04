@@ -126,7 +126,8 @@
     }
 
     .styledButton {
-        background: $buttonGradient;
+        background: $buttonGradient; /* fallback */
+        background-image: $hslGradient;
         background-color: rgba(0, 0, 0, 0);
         background-color: $grayTeal;
         border: none;

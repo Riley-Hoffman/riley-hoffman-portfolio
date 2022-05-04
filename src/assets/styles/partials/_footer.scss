@@ -121,7 +121,8 @@
             margin-top: 30px;
             padding: 13px 32px;
             width: 50%;
-            background: $buttonGradient;
+            background: $buttonGradient; /* fallback */
+            background-image: $hslGradient;
         }
         .contactFormButton:active {
             outline: none;
