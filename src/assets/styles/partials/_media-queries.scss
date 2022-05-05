@@ -297,6 +297,16 @@
             }
         }
 
+        .mainDiv:not(.projectsMain) {
+            section {
+                padding: 100px 0 200px;
+            }
+        
+            .splash {
+                padding-top: 200px;
+            }
+        }
+
         .splash .smallFlexBox {
             margin-top: 20px;
             width: 100%;
@@ -310,11 +320,6 @@
             width: 40%;
         }
 
-        .mainDiv:not(.projectsMain) {
-            section {
-                padding: 100px 0 200px;
-            }
-        }
         .projects {
             padding: 120px 0 40px;
             .projectBox {

@@ -2146,6 +2146,12 @@ body.bm-overlay {
   .colorContainer .about .iconContainer.contactJump {
     margin-top: 48px;
   }
+  .colorContainer .mainDiv:not(.projectsMain) section {
+    padding: 100px 0 200px;
+  }
+  .colorContainer .mainDiv:not(.projectsMain) .splash {
+    padding-top: 200px;
+  }
   .colorContainer .splash .smallFlexBox {
     margin-top: 20px;
     width: 100%;
@@ -2155,9 +2161,6 @@ body.bm-overlay {
   }
   .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 40%;
-  }
-  .colorContainer .mainDiv:not(.projectsMain) section {
-    padding: 100px 0 200px;
   }
   .colorContainer .projects {
     padding: 120px 0 40px;
