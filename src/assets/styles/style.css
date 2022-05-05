@@ -813,13 +813,13 @@ body.bm-overlay {
 }
 .colorContainer header::after {
   transition: all 0s;
-  content: "";
   min-height: 75px;
-  position: absolute;
   top: 0;
   height: 9vh;
   width: 100vw;
   z-index: -1;
+  content: "";
+  position: absolute;
 }
 .colorContainer header * {
   transition: all 0.5s;
@@ -913,13 +913,13 @@ body.bm-overlay {
 }
 .colorContainer header .navBox nav ul.mainNavList a::after,
 .colorContainer header .navBox nav ul.mainNavList a::before {
-  content: "";
-  position: absolute;
   transform: translateX(-50%);
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   width: 0;
   left: 50%;
   top: 100%;
+  content: "";
+  position: absolute;
 }
 .colorContainer header .navBox nav ul.mainNavList a::after {
   background: linear-gradient(to right bottom, #65a5a8 5%, #17a2aa);
@@ -1054,15 +1054,15 @@ body.bm-overlay {
   border-radius: 30px;
   bottom: 20%;
   left: 14%;
-  content: "";
   display: block;
   opacity: 0.95;
-  position: absolute;
   transform: translate(0);
   transition: transform 0.5s ease;
   height: 61%;
   width: 30%;
   z-index: 2;
+  content: "";
+  position: absolute;
 }
 .colorContainer header .navBox div.themeToggleBox.safariToggle::before {
   width: 20%;
@@ -1095,12 +1095,12 @@ body.bm-overlay {
 .colorContainer header .navBox .themeToggleBox input:focus + span.flexBox::before {
   border: 1px solid #17a2aa;
   bottom: -22px;
-  content: "";
   left: -28px;
   min-height: 57px;
-  position: absolute;
   height: 7vh;
   width: 80px;
+  content: "";
+  position: absolute;
 }
 .colorContainer header .navBox .themeToggleBox input:active + span.flexBox::before {
   border: none;
@@ -1271,10 +1271,10 @@ body.bm-overlay {
 .colorContainer .galaxy .stars:before,
 .colorContainer .galaxy .stars:after {
   box-shadow: inherit;
-  content: "";
-  position: absolute;
   height: inherit;
   width: inherit;
+  content: "";
+  position: absolute;
 }
 .colorContainer .galaxy .stars:before {
   -webkit-animation: hideme1 10s linear infinite;
@@ -1315,13 +1315,13 @@ body.bm-overlay {
   border: 10px solid #17a2aa;
   box-shadow: 0 0 50px #e5e8ee, inset 0 0 50px #e5e8ee;
   filter: url(#wave) blur(10px);
-  content: "";
-  position: absolute;
   opacity: 0.9;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
+  content: "";
+  position: absolute;
 }
 
 @-webkit-keyframes zooms {
@@ -1435,9 +1435,7 @@ body.bm-overlay {
 }
 .colorContainer .about2 p::after {
   border-radius: 15px;
-  content: "";
   margin-top: 30px;
-  position: absolute;
   left: 25%;
   top: 100%;
   height: 2px;
@@ -1445,6 +1443,8 @@ body.bm-overlay {
   background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
   /* fallback */
   background-image: linear-gradient(0deg, hsl(183deg, 53%, 42%) 0%, hsl(183deg, 57%, 41%) 12%, hsl(183deg, 62%, 40%) 23%, hsl(183deg, 66%, 40%) 34%, hsl(183deg, 71%, 39%) 45%, hsl(183deg, 76%, 38%) 50%, hsl(183deg, 63%, 41%) 56%, hsl(183deg, 51%, 44%) 66%, hsl(183deg, 41%, 47%) 77%, hsl(183deg, 33%, 50%) 89%, hsl(183deg, 28%, 53%) 100%);
+  content: "";
+  position: absolute;
 }
 
 .colorContainer .projectsMain {
@@ -1646,11 +1646,11 @@ body.bm-overlay {
 .colorContainer footer .bottom a:focus::before {
   border: 1px solid #e5e8ee;
   bottom: 0;
-  content: "";
   left: 0;
   min-height: 39px;
-  position: absolute;
   width: 129px;
+  content: "";
+  position: absolute;
 }
 .colorContainer footer .bottom a.resume:active {
   outline: none;
