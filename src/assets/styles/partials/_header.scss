@@ -122,12 +122,10 @@
             height: 100%;
             ul {
                 align-items: center;
-                display: flex;
-                justify-content: space-between;
                 position: relative;
                 transition: all 0s;
-                width: 100%;
-                height: 100%;
+                @include heightWidth100Percent;
+                @include makeBetweenFlexBox;
                 li:first-child,
                 li:nth-child(2) {
                     transition: transform 0.7s;
@@ -207,9 +205,8 @@
         .themeToggleWrapper {
             display: block;
             position: relative;
-            height: 100%;
-            width: 100%;
             z-index: 10;
+            @include heightWidth100Percent;
             .mode {
                 font-size: 0.57rem;
                 letter-spacing: 0.5px;
