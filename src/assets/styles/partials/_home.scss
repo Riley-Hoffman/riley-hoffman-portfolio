@@ -78,14 +78,13 @@
                 border-radius: 3px;
                 color: $black;
                 cursor: pointer;
-                display: flex;
                 font-size: 0.9rem;
                 font-weight: 500;
-                justify-content: center;
                 margin-top: 25px;
                 padding: 22px 5px;
                 text-align: center;
                 width: 35%;
+                @include makeCenteredFlexBox;
             }
             button.homeButton.tealContactButton:active {
                 padding: 22px 5px;

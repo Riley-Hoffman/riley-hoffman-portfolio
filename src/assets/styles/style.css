@@ -336,13 +336,13 @@ body.bm-overlay {
   top: 99.6%;
 }
 .colorContainer section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 97vh;
   padding: 40px 0;
   z-index: 20;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 .colorContainer section,
 .colorContainer footer {
@@ -489,10 +489,10 @@ body.bm-overlay {
   transform: rotate(180deg);
 }
 .colorContainer .iconContainer.contactJump {
-  align-items: center;
-  justify-content: center;
   position: relative;
   z-index: 10;
+  align-items: center;
+  justify-content: center;
 }
 .colorContainer .iconContainer.contactJump button {
   padding: 10px 20px;
@@ -1184,14 +1184,14 @@ body.bm-overlay {
   border-radius: 3px;
   color: #00050f;
   cursor: pointer;
-  display: flex;
   font-size: 0.9rem;
   font-weight: 500;
-  justify-content: center;
   margin-top: 25px;
   padding: 22px 5px;
   text-align: center;
   width: 35%;
+  display: flex;
+  justify-content: center;
 }
 .colorContainer .relativeColumnBox .smallFlexBox button.homeButton.tealContactButton:active {
   padding: 22px 5px;
@@ -1408,12 +1408,12 @@ body.bm-overlay {
   width: 57px;
 }
 .colorContainer .about1 figure {
-  align-items: flex-start;
   display: flex;
-  flex-direction: column;
   margin: 20px 0 0;
   max-width: 50%;
   min-width: 275px;
+  align-items: center;
+  flex-direction: column;
 }
 .colorContainer .about1 figure img {
   border-radius: 1px;
@@ -1583,15 +1583,15 @@ body.bm-overlay {
   width: 80vw;
 }
 .colorContainer .skillsGallery li {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 .colorContainer .skillsGallery li .skillsIconBox {
-  display: flex;
-  justify-content: center;
   padding: 0 10px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .colorContainer .skillsGallery li .skillsIconBox i,
 .colorContainer .skillsGallery li .skillsIconBox svg {
@@ -1608,19 +1608,19 @@ body.bm-overlay {
 }
 
 .colorContainer footer {
-  align-items: center;
   box-shadow: inset 0px 0px 0px 0px #e5e8ee;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   padding: 15px 0 10px;
+  align-items: center;
+  flex-direction: column;
 }
 .colorContainer footer .bottom {
-  align-items: center;
-  justify-content: center;
   margin: 10px 0 20px;
   padding-bottom: 15px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .colorContainer footer .bottom p {
   padding: 0px 20px 0 0;
@@ -2026,7 +2026,7 @@ body.bm-overlay {
     padding-top: 2px;
   }
   .colorContainer form .inputBox {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
   .colorContainer form .inputBox label {
@@ -2146,6 +2146,12 @@ body.bm-overlay {
   .colorContainer .about .iconContainer.contactJump {
     margin-top: 48px;
   }
+  .colorContainer .mainDiv:not(.projectsMain) section {
+    padding: 100px 0 200px;
+  }
+  .colorContainer .mainDiv:not(.projectsMain) .splash {
+    padding-top: 200px;
+  }
   .colorContainer .splash .smallFlexBox {
     margin-top: 20px;
     width: 100%;
@@ -2155,9 +2161,6 @@ body.bm-overlay {
   }
   .colorContainer .relativeColumnBox .smallFlexBox .homeButton {
     width: 40%;
-  }
-  .colorContainer .mainDiv:not(.projectsMain) section {
-    padding: 100px 0 200px;
   }
   .colorContainer .projects {
     padding: 120px 0 40px;
@@ -2301,17 +2304,17 @@ body.bm-overlay {
 .colorContainer .mainP + footer,
 .colorContainer .mainS + footer,
 .colorContainer .mainE + footer {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .colorContainer .mainA + footer .bottom,
 .colorContainer .mainP + footer .bottom,
 .colorContainer .mainS + footer .bottom,
 .colorContainer .mainE + footer .bottom {
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
     width: 100%;
+    align-items: center;
+    flex-direction: column;
   }
   .colorContainer .mainA + footer .bottom p,
 .colorContainer .mainP + footer .bottom p,
@@ -2405,10 +2408,10 @@ body.bm-overlay {
   }
   .colorContainer header .navBox button.styledButton.lightDarkButton span.mode:first-of-type,
 .colorContainer header .navBox button.styledButton.lightDarkButton span.flexBox:nth-of-type(2) {
-    align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .colorContainer header .navBox button.styledButton.lightDarkButton .mode span {
     display: none !important;
