@@ -530,10 +530,6 @@ body.bm-overlay {
   position: relative;
 }
 .colorContainer .styledButton {
-  background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
-  /* fallback */
-  background-image: linear-gradient(0deg, hsl(183deg, 53%, 42%) 0%, hsl(183deg, 57%, 41%) 12%, hsl(183deg, 62%, 40%) 23%, hsl(183deg, 66%, 40%) 34%, hsl(183deg, 71%, 39%) 45%, hsl(183deg, 76%, 38%) 50%, hsl(183deg, 63%, 41%) 56%, hsl(183deg, 51%, 44%) 66%, hsl(183deg, 41%, 47%) 77%, hsl(183deg, 33%, 50%) 89%, hsl(183deg, 28%, 53%) 100%);
-  background-color: rgba(0, 0, 0, 0);
   background-color: #65a5a8;
   border: none;
   border-radius: 8px;
@@ -543,6 +539,9 @@ body.bm-overlay {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   text-shadow: 0 1px 0 #469ea3;
+  background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
+  /* fallback */
+  background-image: linear-gradient(0deg, hsl(183deg, 53%, 42%) 0%, hsl(183deg, 57%, 41%) 12%, hsl(183deg, 62%, 40%) 23%, hsl(183deg, 66%, 40%) 34%, hsl(183deg, 71%, 39%) 45%, hsl(183deg, 76%, 38%) 50%, hsl(183deg, 63%, 41%) 56%, hsl(183deg, 51%, 44%) 66%, hsl(183deg, 41%, 47%) 77%, hsl(183deg, 33%, 50%) 89%, hsl(183deg, 28%, 53%) 100%);
 }
 .colorContainer .styledButton:active {
   border: none;
@@ -1435,8 +1434,6 @@ body.bm-overlay {
   position: relative;
 }
 .colorContainer .about2 p::after {
-  background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
-  background-image: linear-gradient(0deg, hsl(183deg, 53%, 42%) 0%, hsl(183deg, 57%, 41%) 12%, hsl(183deg, 62%, 40%) 23%, hsl(183deg, 66%, 40%) 34%, hsl(183deg, 71%, 39%) 45%, hsl(183deg, 76%, 38%) 50%, hsl(183deg, 63%, 41%) 56%, hsl(183deg, 51%, 44%) 66%, hsl(183deg, 41%, 47%) 77%, hsl(183deg, 33%, 50%) 89%, hsl(183deg, 28%, 53%) 100%);
   border-radius: 15px;
   content: "";
   margin-top: 30px;
@@ -1445,6 +1442,9 @@ body.bm-overlay {
   top: 100%;
   height: 2px;
   width: 50%;
+  background: linear-gradient(180deg, #65a5a8 5%, #17a2aa);
+  /* fallback */
+  background-image: linear-gradient(0deg, hsl(183deg, 53%, 42%) 0%, hsl(183deg, 57%, 41%) 12%, hsl(183deg, 62%, 40%) 23%, hsl(183deg, 66%, 40%) 34%, hsl(183deg, 71%, 39%) 45%, hsl(183deg, 76%, 38%) 50%, hsl(183deg, 63%, 41%) 56%, hsl(183deg, 51%, 44%) 66%, hsl(183deg, 41%, 47%) 77%, hsl(183deg, 33%, 50%) 89%, hsl(183deg, 28%, 53%) 100%);
 }
 
 .colorContainer .projectsMain {
