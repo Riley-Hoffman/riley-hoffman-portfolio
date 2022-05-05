@@ -1,3 +1,8 @@
+@mixin buttonGradient {
+    background: $buttonGradient; /* fallback */
+    background-image: $hslGradient;
+}
+
 @mixin mainAfterProps {
     background-position: bottom;
     background-repeat: repeat-x;

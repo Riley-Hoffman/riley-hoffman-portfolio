@@ -126,9 +126,6 @@
     }
 
     .styledButton {
-        background: $buttonGradient; /* fallback */
-        background-image: $hslGradient;
-        background-color: rgba(0, 0, 0, 0);
         background-color: $grayTeal;
         border: none;
         border-radius: 8px;
@@ -138,6 +135,7 @@
         font-family: "Poppins", sans-serif;
         text-decoration: none;
         text-shadow: 0 1px 0 #469ea3;
+        @include buttonGradient;
     }
     .styledButton:active {
         border: none;
