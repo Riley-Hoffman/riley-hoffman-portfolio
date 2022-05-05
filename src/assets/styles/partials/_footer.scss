@@ -34,11 +34,10 @@
             a:focus::before {
                 border: 1px solid $white;
                 bottom: 0;
-                content: "";
                 left: 0;
                 min-height: 39px;
-                position: absolute;
                 width: 129px;
+                @include pseudoAbsolute;
             }
             a.resume:active {
                 outline: none;

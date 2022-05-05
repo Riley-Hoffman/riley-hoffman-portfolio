@@ -48,13 +48,12 @@
     z-index: 999;
     &::after {
         transition: all 0s;
-        content: "";
         min-height: 75px;
-        position: absolute;
         top: 0;
         height: 9vh;
         width: 100vw;
         z-index: -1;
+        @include pseudoAbsolute;
     }
     * {
         transition: all 0.5s;
@@ -152,8 +151,6 @@
                 z-index: 999;
                 a::after,
                 a::before {
-                    content: "";
-                    position: absolute;
                     -webkit-transform: translateX(-50%);
                     -ms-transform: translateX(-50%);
                     transform: translateX(-50%);
@@ -163,6 +160,7 @@
                     width: 0;
                     left: 50%;
                     top: 100%;
+                    @include pseudoAbsolute;
                 }
                 a::after {
                     background: linear-gradient(to right bottom, $grayTeal 5%, #17a2aa);
@@ -301,15 +299,14 @@
             border-radius: 30px;
             bottom: 20%;
             left: 14%;
-            content: "";
             display: block;
             opacity: 0.95;
-            position: absolute;
             transform: translate(0);
             transition: transform 0.5s ease;
             height: 61%;
             width: 30%;
             z-index: 2;
+            @include pseudoAbsolute;
         }
         div.themeToggleBox.safariToggle::before {
             width: 20%;
@@ -343,12 +340,11 @@
             + span.flexBox::before {
                 border: 1px solid $teal;
                 bottom: -22px;
-                content: "";
                 left: -28px;
                 min-height: 57px;
-                position: absolute;
                 height: 7vh;
                 width: 80px;
+                @include pseudoAbsolute;
             }
         }
         .themeToggleBox input:active {
