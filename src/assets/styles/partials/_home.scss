@@ -150,8 +150,7 @@
         perspective: 340px;
         position: absolute;
         top: 0;
-        height: 100%;
-        width: 100%;
+        @include heightWidth100Percent;
         z-index: 0;
         .stars {
             border-radius: 50%;
@@ -208,8 +207,7 @@
             }
             opacity: 0.3;
             position: relative;
-            height: 100%;
-            width: 100%;
+            @include heightWidth100Percent;
             .smoke {
                 filter: url(#wave);
                 position: relative;

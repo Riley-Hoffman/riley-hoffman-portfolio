@@ -13,6 +13,11 @@
     flex-direction: column;
 }
 
+@mixin heightWidth100Percent {
+    height: 100%;
+    width: 100%;
+}
+
 @mixin mainAfterProps {
     background-position: bottom;
     background-repeat: repeat-x;
@@ -23,6 +28,11 @@
     z-index: 9999;
 }
 
+@mixin makeBetweenFlexBox {
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin makeCenteredFlexBox {
     display: flex;
     justify-content: center;
@@ -31,4 +41,10 @@
 @mixin pseudoAbsolute {
     content: "";
     position: absolute;
+}
+
+@mixin subtleGradientBackgroundClip {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
