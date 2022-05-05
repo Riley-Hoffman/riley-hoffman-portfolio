@@ -3,6 +3,16 @@
     background-image: $hslGradient;
 }
 
+@mixin centerFlexXY {
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexColumnCentered {
+    align-items: center;
+    flex-direction: column;
+}
+
 @mixin mainAfterProps {
     background-position: bottom;
     background-repeat: repeat-x;
@@ -11,4 +21,9 @@
     margin-bottom: 32px;
     position: absolute;
     z-index: 9999;
+}
+
+@mixin makeCenteredFlexBox {
+    display: flex;
+    justify-content: center;
 }

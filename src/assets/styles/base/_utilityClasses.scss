@@ -78,10 +78,9 @@
     }
 
     .iconContainer.contactJump {
-        align-items: center;
-        justify-content: center;
         position: relative;
         z-index: 10;
+        @include centerFlexXY;
         button {
             padding: 10px 20px;
         }

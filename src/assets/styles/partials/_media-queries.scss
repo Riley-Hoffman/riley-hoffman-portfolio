@@ -169,8 +169,7 @@
         }
         form {
             .inputBox {
-                align-items: flex-start;
-                flex-direction: column;
+                @include flexColumnCentered;
                 label {
                     text-align: left;
                 }
@@ -266,8 +265,7 @@
         .about {
             padding-bottom: 83px;
             > .wrapper:not(.iconContainer.contactJump) {
-                align-items: center;
-                flex-direction: column;
+                @include flexColumnCentered;
                 .about1 {
                     align-items: center;
                     width: 100%;
@@ -497,13 +495,11 @@
         .mainP + footer,
         .mainS + footer,
         .mainE + footer {
-            flex-direction: column;
-            align-items: center;
+            @include flexColumnCentered;
             .bottom {
-                align-items: center;
-                flex-direction: column;
                 justify-content: center;
                 width: 100%;
+                @include flexColumnCentered;
                 p {
                     padding: 0;
                 }
@@ -621,10 +617,9 @@
                     min-width: 27px;
                     span.mode:first-of-type,
                     span.flexBox:nth-of-type(2) {
-                        align-items: center;
                         display: flex;
-                        flex-direction: column;
                         justify-content: center;
+                        @include flexColumnCentered;
                     }
 
                     .mode {

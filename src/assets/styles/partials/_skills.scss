@@ -6,8 +6,7 @@
         padding: 120px 0 75px;
         .wrapper {
             .flexBox {
-                align-items: center;
-                flex-direction: column;
+                @include flexColumnCentered;
                 h1 {
                     margin-bottom: 30px;
                 }
@@ -30,14 +29,12 @@
         margin-top: 20px;
         width: 80vw;
         li {
-            align-items: center;
             display: flex;
-            flex-direction: column;
+            @include flexColumnCentered;
             .skillsIconBox {
-                display: flex;
-                justify-content: center;
                 padding: 0 10px;
                 width: 100%;
+                @include makeCenteredFlexBox;
                 i,
                 svg {
                     font-size: 2.5rem;

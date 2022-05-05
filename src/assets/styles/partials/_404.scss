@@ -35,8 +35,7 @@
     }
 
     .errorNav {
-        align-items: center;
-        justify-content: center;
+        @include centerFlexXY;
         ul {
             font-size: 1.4rem;
             li {
