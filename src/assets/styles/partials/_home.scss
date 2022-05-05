@@ -172,10 +172,9 @@
         .stars:after {
             -webkit-box-shadow: inherit;
             box-shadow: inherit;
-            content: "";
-            position: absolute;
             height: inherit;
             width: inherit;
+            @include pseudoAbsolute;
         }
 
         .stars:before {
@@ -223,13 +222,12 @@
                     border: 10px solid $teal;
                     box-shadow: 0 0 50px $white, inset 0 0 50px $white;
                     filter: url(#wave) blur(10px);
-                    content: "";
-                    position: absolute;
                     opacity: 0.9;
                     bottom: 0;
                     left: 0;
                     right: 0;
                     top: 0;
+                    @include pseudoAbsolute;
                 }
             }
         }
