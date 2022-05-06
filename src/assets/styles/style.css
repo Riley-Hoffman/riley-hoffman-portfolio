@@ -338,7 +338,6 @@ body.bm-overlay {
 .colorContainer section {
   min-height: 97vh;
   padding: 40px 0;
-  z-index: 20;
   align-items: center;
   flex-direction: column;
   display: flex;
@@ -809,7 +808,7 @@ body.bm-overlay {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 888;
 }
 .colorContainer header::after {
   transition: all 0s;
@@ -848,7 +847,7 @@ body.bm-overlay {
   left: -5px;
   top: 0;
   transition: top 0s;
-  z-index: 999;
+  z-index: 888;
 }
 .colorContainer header .favLink img {
   padding: 4px;
@@ -905,9 +904,6 @@ body.bm-overlay {
 }
 .colorContainer header .navBox nav ul a:focus {
   outline: none;
-}
-.colorContainer header .navBox nav ul.mainNavList {
-  z-index: 999;
 }
 .colorContainer header .navBox nav ul.mainNavList a::after,
 .colorContainer header .navBox nav ul.mainNavList a::before {
@@ -1118,8 +1114,6 @@ body.bm-overlay {
   padding-top: 20px;
 }
 .colorContainer .splash {
-  background-attachment: fixed;
-  background-position-x: 100%;
   padding: 30vh 0 50px;
   padding: 20vh 0 30px;
   position: absolute;
@@ -1155,6 +1149,9 @@ body.bm-overlay {
   flex-direction: column;
   height: 60vh;
   width: 45vw;
+}
+.colorContainer .relativeColumnBox .smallFlexBox *:not(.modal) {
+  z-index: 20;
 }
 .colorContainer .relativeColumnBox .smallFlexBox .iconContainer {
   height: 16px;
@@ -1207,7 +1204,7 @@ body.bm-overlay {
   overflow-y: auto;
   padding: 20px 12px 25px 20px;
   position: absolute;
-  z-index: 9999;
+  z-index: 999;
 }
 .colorContainer .modal .modalClose {
   position: relative;
@@ -1874,6 +1871,9 @@ body.bm-overlay {
 }
 .colorContainer.sideNav header .navBox div .lightBackground .bm-menu .bm-cross {
   background-color: #00050f;
+}
+.colorContainer.sideNav header .navBox div .lightBackground .bm-burger-button {
+  transition: top 0s;
 }
 .colorContainer.sideNav header .navBox div .lightBackground .bm-burger-button .bm-burger-bars {
   background-color: #00050f;
@@ -2849,7 +2849,12 @@ body.bm-overlay {
 
 @media (max-width: 780px) {
   .colorContainer.sideNav header .bm-burger-button {
-    top: 0;
+    top: 25px;
+  }
+}
+@media (max-width: 650px) {
+  .colorContainer.sideNav header .bm-burger-button {
+    top: 5px;
   }
 }
 
@@ -3005,7 +3010,6 @@ body.bm-overlay {
   top: 0;
   height: 100vh;
   width: 100%;
-  z-index: -1;
 }
 .colorContainer:not(.darkModeOn) .splash .contactWrapper a {
   color: #00050f;
@@ -3159,7 +3163,9 @@ body.bm-overlay {
   }
 }
 .colorContainer.darkModeOn .splash {
+  background-attachment: fixed;
   background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
+  background-position-x: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }

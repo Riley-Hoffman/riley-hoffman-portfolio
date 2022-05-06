@@ -91,7 +91,6 @@ body.bm-overlay {
     section {
         min-height: 97vh;
         padding: 40px 0;
-        z-index: 20;
         @include flexColumnCentered;
         @include makeCenteredFlexBox;
     }

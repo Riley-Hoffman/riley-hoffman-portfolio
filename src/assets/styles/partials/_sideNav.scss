@@ -59,6 +59,7 @@
         }
 
         .bm-burger-button {
+            transition: top 0s;
             .bm-burger-bars {
                 background-color: $black;
             }

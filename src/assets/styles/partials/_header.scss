@@ -45,7 +45,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 999;
+    z-index: 888;
     &::after {
         transition: all 0s;
         min-height: 75px;
@@ -84,7 +84,7 @@
         left: -5px;
         top: 0;
         transition: top 0s;
-        z-index: 999;
+        z-index: 888;
         img {
             padding: 4px;
         }
@@ -145,7 +145,6 @@
             }
 
             ul.mainNavList {
-                z-index: 999;
                 a::after,
                 a::before {
                     -webkit-transform: translateX(-50%);
