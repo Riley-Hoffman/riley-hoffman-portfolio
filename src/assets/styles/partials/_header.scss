@@ -11,20 +11,16 @@
 }
 
 .colorContainer header.whiteBackground:not(.transparentBackground) {
-    background-color: $white;
-    background-image: url("../img/cross-scratches.png");
+    @include headerBackgroundWhite;
     &::after {
-        background-color: $white;
-        background-image: url("../img/cross-scratches.png");
+        @include headerBackgroundWhite;
     }
 }
 
 .colorContainer header.blackBackground:not(.transparentBackground) {
-    background-color: $black;
-    background-image: url("../img/cross-scratches-inverted.png");
+    @include headerBackgroundBlack;
     &::after {
-        background-color: $black;
-        background-image: url("../img/cross-scratches-inverted.png");
+        @include headerBackgroundBlack;
     }
 }
 
