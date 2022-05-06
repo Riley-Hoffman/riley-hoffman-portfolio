@@ -547,17 +547,9 @@ body.bm-overlay {
   outline: none;
 }
 
-:root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
-}
-
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-duration: var(--animate-duration);
-  animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -603,25 +595,6 @@ body.bm-overlay {
     opacity: 1;
   }
 }
-@keyframes backInLeft {
-  0% {
-    transform: translateX(-2000px) scale(0.7);
-    opacity: 0.7;
-  }
-  80% {
-    transform: translateX(0) scale(0.7);
-    opacity: 0.7;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.animate__backInLeft {
-  -webkit-animation-name: backInLeft;
-  animation-name: backInLeft;
-}
-
 .animate__backInLeft {
   -webkit-animation-name: backInLeft;
   animation-name: backInLeft;
