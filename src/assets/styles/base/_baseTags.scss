@@ -68,8 +68,7 @@ body.bm-overlay {
     }
 
     main {
-        height: 100%;
-        position: relative;
+        @include height100Relative;
     }
     main:not(.mainH)::after {
         content: " ";

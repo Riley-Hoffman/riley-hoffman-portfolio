@@ -18,6 +18,11 @@
     width: 100%;
 }
 
+@mixin height100Relative {
+    height: 100%;
+    position: relative;
+}
+
 @mixin mainAfterProps {
     background-position: bottom;
     background-repeat: repeat-x;
