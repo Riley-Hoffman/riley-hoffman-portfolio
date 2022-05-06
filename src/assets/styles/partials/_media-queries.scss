@@ -1240,7 +1240,15 @@
     @media (max-width: 780px) {
         header {
             .bm-burger-button {
-                top: 0;
+                top: 25px;
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+        header {
+            .bm-burger-button {
+                top: 5px;
             }
         }
     }
@@ -1479,7 +1487,6 @@
             top: 0;
             height: 100vh;
             width: 100%;
-            z-index: -1;
         }
         .contactWrapper a {
             color: $black;
@@ -1684,7 +1691,9 @@
         }
     }
     .splash {
+        background-attachment: fixed;
         background-image: url("https://res.cloudinary.com/riley-hoffman-web-developer/image/upload/q_auto:best/v1642797068/portfolio-background_jiw8ft.webp");
+        background-position-x: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         .contactWrapper a {
