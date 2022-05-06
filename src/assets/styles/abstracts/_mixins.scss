@@ -13,6 +13,16 @@
     flex-direction: column;
 }
 
+@mixin headerBackgroundWhite {
+    background-color: $white;
+    background-image: url("../img/cross-scratches.png");
+}
+
+@mixin headerBackgroundBlack {
+    background-color: $black;
+    background-image: url("../img/cross-scratches-inverted.png");
+}
+
 @mixin heightWidth100Percent {
     height: 100%;
     width: 100%;
