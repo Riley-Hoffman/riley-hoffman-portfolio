@@ -2933,7 +2933,7 @@ body.bm-overlay {
   color: #00050f;
 }
 .colorContainer:not(.darkModeOn) main:not(.mainH)::after {
-  background: linear-gradient(-28deg, rgb(197, 225, 233) 14px, #6d9c99 15px, #bbb 16px, transparent 19px, transparent 0);
+  background: linear-gradient(-28deg, rgb(197, 225, 233) 14px, #6d9c99 15px, #bbb 16px, transparent 19px, transparent 30px);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
