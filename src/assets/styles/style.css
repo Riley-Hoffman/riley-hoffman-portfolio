@@ -255,6 +255,7 @@ html {
 body {
   background-color: #e5e8ee;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
@@ -310,12 +311,18 @@ body.bm-overlay {
 .colorContainer h3 {
   font-size: 1.15rem;
 }
+.colorContainer h4 {
+  font-size: 1rem;
+}
 .colorContainer a {
   padding: 2px;
   transition: all 0.1s;
 }
 .colorContainer p {
   margin: 10px 0;
+}
+.colorContainer p, .colorContainer a, .colorContainer button {
+  font-size: 1rem;
 }
 .colorContainer main {
   height: 100%;
@@ -957,7 +964,7 @@ body.bm-overlay {
   -webkit-backdrop-filter: opacity(0%);
           backdrop-filter: opacity(0%);
   opacity: 0.9;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 .colorContainer header .navBox .themeToggleWrapper .mode + span.flexBox .show.lightsOn {
   right: 27%;
@@ -1599,6 +1606,8 @@ body.bm-overlay {
   font-size: 1.1rem;
   font-weight: 500;
   margin-right: 1px;
+  max-height: 40px;
+  min-width: 145px;
   padding: 3px 5px;
   position: relative;
   display: flex;
@@ -1613,18 +1622,20 @@ body.bm-overlay {
 }
 .colorContainer footer .bottom a:focus::before {
   border: 1px solid #e5e8ee;
-  bottom: 0;
+  bottom: auto;
   left: 0;
   min-height: 39px;
-  width: 129px;
+  max-width: 122px;
+  width: 100%;
   content: "";
   position: absolute;
 }
-.colorContainer footer .bottom a.resume:active {
-  outline: none;
+.colorContainer footer .bottom a.resume:focus:active:before {
+  border: none;
 }
 .colorContainer .backToTop {
   background: #65a5a8;
+  font-size: 0.9rem;
   margin: 5px auto;
   padding: 8px;
   text-transform: capitalize;
@@ -1654,12 +1665,14 @@ body.bm-overlay {
 }
 .colorContainer .contactWrapper .contactIcons {
   align-items: center;
-  font-size: 2em;
   justify-content: flex-end;
   width: 135px;
 }
 .colorContainer .contactWrapper .contactIcons a {
   padding: 0 5px;
+}
+.colorContainer .contactWrapper .contactIcons a {
+  font-size: 2rem;
 }
 .colorContainer .contactWrapper .contactIcons a:first-child {
   margin: 0 60px 0 0;
@@ -1744,6 +1757,17 @@ body.bm-overlay {
   border: 3px solid #00050f;
   padding: 45px 30px;
   width: 100%;
+}
+.colorContainer .resumeSvg {
+  font: bold 70px "Rubik", sans-serif;
+  width: 100%;
+  height: 120px;
+}
+.colorContainer .resumeSvg text {
+  fill: #17a2aa;
+  stroke: #00050f;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
 }
 
 .colorContainer .errorHeader {
@@ -2746,7 +2770,7 @@ body.bm-overlay {
 .colorContainer footer .contactWrapper .contactIcons .contactIcon:hover:not(:active) .fa-github {
     color: #17a2aa;
   }
-  .colorContainer footer .bottom .resume:active svg {
+  .colorContainer footer .bottom .resume:active svg:last-of-type {
     transform: translateY(2px);
   }
   .colorContainer button.modalClose:active {
@@ -2764,6 +2788,9 @@ body.bm-overlay {
   }
   .colorContainer:not(.sideNav) header .relativeColumnBox {
     justify-content: center;
+  }
+  .colorContainer:not(.sideNav) header .homeRelColBox {
+    margin-top: 40px;
   }
   .colorContainer:not(.sideNav) header .navBox {
     align-items: flex-start;
@@ -2942,6 +2969,9 @@ body.bm-overlay {
   position: absolute;
   z-index: 9999;
 }
+.colorContainer:not(.darkModeOn) section {
+  background-image: linear-gradient(0deg, hsl(220deg, 21%, 92%) 20%, hsl(216deg, 21%, 91%) 62%, hsl(212deg, 20%, 90%) 77%, hsl(209deg, 19%, 89%) 86%, hsl(206deg, 19%, 88%) 92%, hsl(203deg, 18%, 87%) 96%, hsl(200deg, 17%, 86%) 99%, hsl(197deg, 16%, 86%) 101%, hsl(195deg, 15%, 85%) 102%, hsl(192deg, 14%, 84%) 102%, hsl(189deg, 13%, 83%) 101%, hsl(185deg, 12%, 82%) 100%);
+}
 .colorContainer:not(.darkModeOn) .splash .galaxy {
   display: none;
 }
@@ -3083,6 +3113,9 @@ body.bm-overlay {
   margin-bottom: 32px;
   position: absolute;
   z-index: 9999;
+}
+.colorContainer.darkModeOn section {
+  background-image: linear-gradient(0deg, hsl(220deg, 100%, 3%) 20%, hsl(215deg, 83%, 4%) 62%, hsl(210deg, 70%, 4%) 77%, hsl(206deg, 59%, 5%) 86%, hsl(203deg, 50%, 5%) 92%, hsl(201deg, 41%, 6%) 96%, hsl(199deg, 34%, 7%) 99%, hsl(197deg, 28%, 7%) 101%, hsl(195deg, 24%, 8%) 102%, hsl(193deg, 20%, 8%) 102%, hsl(191deg, 17%, 9%) 101%, hsl(189deg, 15%, 9%) 100%);
 }
 .colorContainer.darkModeOn .mainA h1,
 .colorContainer.darkModeOn .mainA h2,
