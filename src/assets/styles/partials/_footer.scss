@@ -19,6 +19,8 @@
                 font-size: 1.1rem;
                 font-weight: 500;
                 margin-right: 1px;
+                max-height: 40px;
+                min-width: 145px;
                 padding: 3px 5px;
                 position: relative;
                 @include makeBetweenFlexBox;
@@ -32,20 +34,23 @@
             }
             a:focus::before {
                 border: 1px solid $white;
-                bottom: 0;
+                bottom: auto;
                 left: 0;
                 min-height: 39px;
-                width: 129px;
+                max-width: 122px;
+                width: 100%;
                 @include pseudoAbsolute;
             }
-            a.resume:active {
-                outline: none;
+
+            a.resume:focus:active:before {
+                border: none;
             }
         }
     }
 
     .backToTop {
         background: $grayTeal;
+        font-size: 0.9rem;
         margin: 5px auto;
         padding: 8px;
         text-transform: capitalize;
@@ -77,11 +82,13 @@
 
         .contactIcons {
             align-items: center;
-            font-size: 2em;
             justify-content: flex-end;
             width: 135px;
             a {
                 padding: 0 5px;
+            }
+            a {
+                font-size: 2rem;
             }
             a:first-child {
                 margin: 0 60px 0 0;
@@ -172,5 +179,17 @@
         border: 3px solid #00050f;
         padding: 45px 30px;
         width: 100%;
+    }
+
+    .resumeSvg {
+        font: bold 70px "Rubik", sans-serif;
+        width: 100%;
+        height: 120px;
+        text {
+            fill: $teal;
+            stroke: $black;
+            stroke-width: 0.5px;
+            stroke-linejoin: round;
+        }
     }
 }

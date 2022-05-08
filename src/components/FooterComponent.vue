@@ -39,7 +39,9 @@
                 href="./riley-hoffman-resume.pdf"
                 download
             >
-                Resume
+                <svg class="resumeSvg" viewBox="0 0 80 87" width="50">
+                    <text y="50">Resume</text>
+                </svg>
                 <font-awesome-icon
                     aria-hidden="true"
                     class="fa-solid fa-file-arrow-down"

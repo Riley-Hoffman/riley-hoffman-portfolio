@@ -1139,7 +1139,7 @@
             }
             .bottom {
                 .resume:active {
-                    svg {
+                    svg:last-of-type {
                         transform: translateY(2px);
                     }
                 }
@@ -1165,6 +1165,10 @@
 
             .relativeColumnBox {
                 justify-content: center;
+            }
+
+            .homeRelColBox {
+                margin-top: 40px;
             }
             .navBox {
                 align-items: flex-start;
@@ -1430,6 +1434,11 @@
         );
         @include mainAfterProps;
     }
+    
+    section {
+        background-image: $whiteBackground;
+    }
+
     .splash .galaxy {
         display: none;
     }
@@ -1624,6 +1633,10 @@
             transparent 0
         );
         @include mainAfterProps;
+    }
+
+    section {
+        background-image: $blackBackground;
     }
 
     .mainA,

@@ -2,6 +2,36 @@ $animate-duration: 1s;
 $animate-delay: 1s;
 $animate-repeat: 1;
 $black: #00050f;
+$blackBackground: linear-gradient(
+    0deg,
+    hsl(220deg 100% 3%) 20%,
+    hsl(215deg 83% 4%) 62%,
+    hsl(210deg 70% 4%) 77%,
+    hsl(206deg 59% 5%) 86%,
+    hsl(203deg 50% 5%) 92%,
+    hsl(201deg 41% 6%) 96%,
+    hsl(199deg 34% 7%) 99%,
+    hsl(197deg 28% 7%) 101%,
+    hsl(195deg 24% 8%) 102%,
+    hsl(193deg 20% 8%) 102%,
+    hsl(191deg 17% 9%) 101%,
+    hsl(189deg 15% 9%) 100%
+);
+$whiteBackground: linear-gradient(
+    0deg,
+    hsl(220deg 21% 92%) 20%,
+    hsl(216deg 21% 91%) 62%,
+    hsl(212deg 20% 90%) 77%,
+    hsl(209deg 19% 89%) 86%,
+    hsl(206deg 19% 88%) 92%,
+    hsl(203deg 18% 87%) 96%,
+    hsl(200deg 17% 86%) 99%,
+    hsl(197deg 16% 86%) 101%,
+    hsl(195deg 15% 85%) 102%,
+    hsl(192deg 14% 84%) 102%,
+    hsl(189deg 13% 83%) 101%,
+    hsl(185deg 12% 82%) 100%
+);
 $white: #e5e8ee;
 $teal: #17a2aa;
 $tealVariant: #329ea4;
