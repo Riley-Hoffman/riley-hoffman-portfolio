@@ -3057,8 +3057,8 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) footer .homeBottomMargin.bottom {
   margin-bottom: 60px;
 }
-.colorContainer:not(.darkModeOn) footer .bottom a {
-  text-shadow: 0 0 1000px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 109, 255, 0.17);
+.colorContainer:not(.darkModeOn) footer .bottom .resumeSvg {
+  filter: drop-shadow(3px -1px 8px #9CCEE3);
 }
 .colorContainer:not(.darkModeOn) footer .bottom .resume svg,
 .colorContainer:not(.darkModeOn) footer .bottom .resume:active svg,
@@ -3211,6 +3211,9 @@ body.bm-overlay {
 }
 .colorContainer.darkModeOn footer .bottom a {
   text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
+}
+.colorContainer.darkModeOn footer .bottom .resumeSvg {
+  filter: drop-shadow(3px -1px 8px #3C464D);
 }
 .colorContainer.darkModeOn footer .bottom .resume svg,
 .colorContainer.darkModeOn footer .bottom .resume:active svg,
