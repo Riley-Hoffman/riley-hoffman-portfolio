@@ -1561,8 +1561,8 @@
         }
 
         .bottom {
-            a {
-                text-shadow: $lightModeTextShadow;
+            .resumeSvg {
+                filter: drop-shadow(3px -1px 8px #9CCEE3);
             }
             .resume,
             .resume:active,
@@ -1766,6 +1766,9 @@
         .bottom {
             a {
                 text-shadow: $darkModeTextShadow;
+            }
+            .resumeSvg {
+                filter: drop-shadow(3px -1px 8px #3C464D);
             }
             .resume,
             .resume:active,
