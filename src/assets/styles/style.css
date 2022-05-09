@@ -3208,7 +3208,7 @@ body.bm-overlay {
   text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
 }
 .colorContainer.darkModeOn footer .bottom .resumeSvg {
-  filter: drop-shadow(3px -1px 8px #3c464d);
+  filter: drop-shadow(3px -1px 8px #31373c);
 }
 .colorContainer.darkModeOn footer .bottom .resume svg,
 .colorContainer.darkModeOn footer .bottom .resume:active svg,
