@@ -99,13 +99,13 @@
         }
     }
     .relativeColumnBox {
-        transition: all 1s, transform 0.1s;
+        transition: all 1s, margin-top 0s, transform 0.1s;
     }
     .navBox {
         align-items: flex-start;
         justify-content: flex-end;
         padding: 28px 0px;
-        transition: flex-direction 1s, width 1s, background 0.2;
+        transition: background 0.2, flex-direction 1s, width 1s;
         @include height100Relative;
         nav {
             transition: margin 0.3s, width 0.6s;

@@ -24,9 +24,22 @@
                 padding: 3px 5px;
                 position: relative;
                 @include makeBetweenFlexBox;
-                svg {
+
+                .resumeSvg {
+                    font: bold 70px "Rubik", sans-serif;
                     font-size: 1rem;
-                    padding-left: 8px;
+                    width: 100%;
+                    height: 120px;
+                    text {
+                        fill: $teal;
+                        stroke: $black;
+                        stroke-width: 0.5px;
+                        stroke-linejoin: round;
+                    }
+                }
+                svg:last-of-type {
+                    position: relative;
+                    left: 8px;
                 }
             }
             a:focus {
@@ -179,17 +192,5 @@
         border: 3px solid #00050f;
         padding: 45px 30px;
         width: 100%;
-    }
-
-    .resumeSvg {
-        font: bold 70px "Rubik", sans-serif;
-        width: 100%;
-        height: 120px;
-        text {
-            fill: $teal;
-            stroke: $black;
-            stroke-width: 0.5px;
-            stroke-linejoin: round;
-        }
     }
 }

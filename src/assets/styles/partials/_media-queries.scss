@@ -408,6 +408,18 @@
         }
     }
 
+    // Keeps light indicator round on windows resize
+    @media (max-width: 780px) and (min-width: 500px) {
+        header {
+            .navBox {
+                .themeToggleBox::before {
+                    left: 21%;
+                    width: 25%;
+                }
+            }
+        }
+    }
+
     /* Small page length contol */
     @media (max-height: 850px) {
         .about1 .aboutH1box {
@@ -1209,7 +1221,7 @@
                 }
 
                 .toggle-wrapper {
-                    right: 50px;
+                    right: 35px;
                     top: 7px;
 
                     .themeToggleWrapper {
@@ -1217,10 +1229,6 @@
 
                         .themeToggleBox {
                             width: 100%;
-                        }
-
-                        svg {
-                            margin: none;
                         }
                     }
                 }
@@ -1430,11 +1438,11 @@
             #6d9c99 15px,
             #bbb 16px,
             transparent 19px,
-            transparent 30px,
+            transparent 30px
         );
         @include mainAfterProps;
     }
-    
+
     section {
         background-image: $whiteBackground;
     }
@@ -1562,7 +1570,7 @@
 
         .bottom {
             .resumeSvg {
-                filter: drop-shadow(3px -1px 8px #9CCEE3);
+                filter: drop-shadow(3px -1px 8px #9ccee3);
             }
             .resume,
             .resume:active,
@@ -1768,7 +1776,7 @@
                 text-shadow: $darkModeTextShadow;
             }
             .resumeSvg {
-                filter: drop-shadow(3px -1px 8px #3C464D);
+                filter: drop-shadow(3px -1px 8px #3c464d);
             }
             .resume,
             .resume:active,
