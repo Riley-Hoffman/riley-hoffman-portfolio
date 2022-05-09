@@ -10,21 +10,21 @@
     }
 }
 
-.colorContainer header.whiteBackground:not(.transparentBackground) {
+.colorContainer header.whiteBackground:not(.homeHeader) {
     @include headerBackgroundWhite;
     &::after {
         @include headerBackgroundWhite;
     }
 }
 
-.colorContainer header.blackBackground:not(.transparentBackground) {
+.colorContainer header.blackBackground:not(.homeHeader) {
     @include headerBackgroundBlack;
     &::after {
         @include headerBackgroundBlack;
     }
 }
 
-.colorContainer header.transparentBackground {
+.colorContainer header.homeHeader {
     background-color: transparent;
     &::after {
         background-color: transparent;

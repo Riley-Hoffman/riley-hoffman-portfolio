@@ -744,28 +744,28 @@ body.bm-overlay {
   padding: 40px 0 160px;
 }
 
-.colorContainer header.whiteBackground:not(.transparentBackground) {
+.colorContainer header.whiteBackground:not(.homeHeader) {
   background-color: #e5e8ee;
   background-image: url("../img/cross-scratches.png");
 }
-.colorContainer header.whiteBackground:not(.transparentBackground)::after {
+.colorContainer header.whiteBackground:not(.homeHeader)::after {
   background-color: #e5e8ee;
   background-image: url("../img/cross-scratches.png");
 }
 
-.colorContainer header.blackBackground:not(.transparentBackground) {
+.colorContainer header.blackBackground:not(.homeHeader) {
   background-color: #00050f;
   background-image: url("../img/cross-scratches-inverted.png");
 }
-.colorContainer header.blackBackground:not(.transparentBackground)::after {
+.colorContainer header.blackBackground:not(.homeHeader)::after {
   background-color: #00050f;
   background-image: url("../img/cross-scratches-inverted.png");
 }
 
-.colorContainer header.transparentBackground {
+.colorContainer header.homeHeader {
   background-color: transparent;
 }
-.colorContainer header.transparentBackground::after {
+.colorContainer header.homeHeader::after {
   background-color: transparent;
 }
 
@@ -1815,11 +1815,11 @@ body.bm-overlay {
   margin-left: 20px;
 }
 
-.colorContainer.sideNav:not(.darkModeOn) header:not(.transparentBackground)::after {
+.colorContainer.sideNav:not(.darkModeOn) header:not(.homeHeader)::after {
   box-shadow: -9px 29px 16px -36px #00050f;
 }
 
-.colorContainer.sideNav.darkModeOn header:not(.transparentBackground)::after {
+.colorContainer.sideNav.darkModeOn header:not(.homeHeader)::after {
   box-shadow: -9px 29px 16px -36px #e5e8ee;
 }
 
@@ -1878,9 +1878,9 @@ body.bm-overlay {
   background-color: #e5e8ee;
 }
 
-.colorContainer.sideNav header.whiteBackground:not(.transparentBackground),
-.colorContainer.sideNav header.blackBackground:not(.transparentBackground),
-.colorContainer.sideNav header.transparentBackground {
+.colorContainer.sideNav header.whiteBackground:not(.homeHeader),
+.colorContainer.sideNav header.blackBackground:not(.homeHeader),
+.colorContainer.sideNav header.homeHeader {
   background: transparent;
   box-shadow: none;
 }
@@ -2938,7 +2938,7 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) {
   background-color: #e5e8ee;
 }
-.colorContainer:not(.darkModeOn) .headerShadow {
+.colorContainer:not(.darkModeOn) .relativeHeader {
   box-shadow: -9px 29px 16px -38px #00050f;
 }
 .colorContainer:not(.darkModeOn) h1,
@@ -3083,7 +3083,7 @@ body.bm-overlay {
   background: #00050f;
   letter-spacing: 0.65px;
 }
-.colorContainer.darkModeOn .headerShadow {
+.colorContainer.darkModeOn .relativeHeader {
   box-shadow: -9px 29px 16px -38px #e5e8ee;
 }
 .colorContainer.darkModeOn h1,
