@@ -1772,11 +1772,8 @@
             }
         }
         .bottom {
-            a {
-                text-shadow: $darkModeTextShadow;
-            }
             .resumeSvg {
-                filter: drop-shadow(3px -1px 8px #31373c);
+                filter: drop-shadow(3px -1px 8px #3c464d);
             }
             .resume,
             .resume:active,

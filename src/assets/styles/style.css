@@ -3204,11 +3204,8 @@ body.bm-overlay {
 .colorContainer.darkModeOn footer .contactWrapper svg {
   color: #e5e8ee;
 }
-.colorContainer.darkModeOn footer .bottom a {
-  text-shadow: 0 0 20px rgba(192, 219, 255, 0.38), 0 0 12px rgba(65, 120, 255, 0.15);
-}
 .colorContainer.darkModeOn footer .bottom .resumeSvg {
-  filter: drop-shadow(3px -1px 8px #31373c);
+  filter: drop-shadow(3px -1px 8px #3c464d);
 }
 .colorContainer.darkModeOn footer .bottom .resume svg,
 .colorContainer.darkModeOn footer .bottom .resume:active svg,
