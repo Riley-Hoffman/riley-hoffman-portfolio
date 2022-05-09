@@ -1414,7 +1414,7 @@
 }
 .colorContainer:not(.darkModeOn) {
     background-color: $white;
-    .headerShadow {
+    .relativeHeader {
         box-shadow: -9px 29px 16px -38px $black;
     }
     h1,
@@ -1614,7 +1614,7 @@
 .colorContainer.darkModeOn {
     background: $black;
     letter-spacing: 0.65px;
-    .headerShadow {
+    .relativeHeader {
         box-shadow: -9px 29px 16px -38px $white;
     }
     h1,

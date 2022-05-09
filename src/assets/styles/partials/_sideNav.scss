@@ -1,10 +1,10 @@
 .colorContainer.sideNav:not(.darkModeOn) header {
-    &:not(.transparentBackground)::after {
+    &:not(.homeHeader)::after {
         box-shadow: -9px 29px 16px -36px $black;
     }
 }
 .colorContainer.sideNav.darkModeOn header {
-    &:not(.transparentBackground)::after {
+    &:not(.homeHeader)::after {
         box-shadow: -9px 29px 16px -36px $white;
     }
 }
@@ -84,9 +84,9 @@
     }
 }
 
-.colorContainer.sideNav header.whiteBackground:not(.transparentBackground),
-.colorContainer.sideNav header.blackBackground:not(.transparentBackground),
-.colorContainer.sideNav header.transparentBackground {
+.colorContainer.sideNav header.whiteBackground:not(.homeHeader),
+.colorContainer.sideNav header.blackBackground:not(.homeHeader),
+.colorContainer.sideNav header.homeHeader {
     background: transparent;
     box-shadow: none;
 }

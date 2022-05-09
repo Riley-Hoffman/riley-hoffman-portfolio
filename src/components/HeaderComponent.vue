@@ -5,11 +5,9 @@
             absoluteHeader: scrolledToFooter,
             blackBackground: darkOn,
             homeHeader: $route.path === '/',
-            headerShadow: $route.path != '/',
             relativeHeader: $route.path != '/',
             scrolledToMain: scrolledToMain && $route.path != '/projects',
             transparent: scrolledToFooter && !scrolledToTop,
-            transparentBackground: $route.path === '/',
             whiteBackground: !darkOn && $route.path != '/',
         }"
     >
