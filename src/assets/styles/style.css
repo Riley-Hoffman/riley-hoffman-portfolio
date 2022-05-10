@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -312,7 +312,9 @@ body.bm-overlay {
 .colorContainer p {
   margin: 10px 0;
 }
-.colorContainer p, .colorContainer a, .colorContainer button {
+.colorContainer p,
+.colorContainer a,
+.colorContainer button {
   font-size: 1rem;
 }
 .colorContainer main {
@@ -387,8 +389,9 @@ body.bm-overlay {
 .colorContainer textarea {
   border: none;
   caret-color: #245056;
-  font-family: "Rubik", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.4px;
 }
 .colorContainer textarea {
   padding-left: 15px;
@@ -1605,8 +1608,9 @@ body.bm-overlay {
   justify-content: space-between;
 }
 .colorContainer footer .bottom a .resumeSvg {
-  font: bold 70px "Rubik", sans-serif;
+  font: 70px "Atkinson Hyperlegible", sans-serif;
   font-size: 1rem;
+  font-weight: 700;
   width: 100%;
   height: 120px;
 }
@@ -3057,7 +3061,7 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) footer .bottom .resume:hover:not(:active) .resumeSvg text {
   fill: #00050f;
   stroke: #e5e8ee;
-  stroke-width: 0.4px;
+  stroke-width: 0.3px;
 }
 .colorContainer:not(.darkModeOn) .errorHeader {
   background-image: none;
