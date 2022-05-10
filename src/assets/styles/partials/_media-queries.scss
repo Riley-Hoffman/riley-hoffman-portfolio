@@ -1318,11 +1318,6 @@
                     color: $white;
                 }
             }
-            .bottom {
-                .resume:hover:not(:active) {
-                    color: $white;
-                }
-            }
         }
 
         .errorNav {
@@ -1383,11 +1378,6 @@
                 }
                 .fa-linkedin:active,
                 .fa-github:active {
-                    color: $black;
-                }
-            }
-            .bottom {
-                .resume:hover:not(:active) {
                     color: $black;
                 }
             }
@@ -1578,6 +1568,11 @@
                 svg {
                     color: $black;
                 }
+            }
+            .resume:hover:not(:active) .resumeSvg text {
+                fill: $black;
+                stroke: $white;
+                stroke-width: 0.4px;
             }
         }
     }
@@ -1781,6 +1776,10 @@
                 svg {
                     color: $white;
                 }
+            }
+            .resume:hover:not(:active) .resumeSvg text {
+                fill: $white;
+                stroke: $black;
             }
         }
     }

@@ -2883,9 +2883,6 @@ body.bm-overlay {
 .colorContainer.darkModeOn footer .contactWrapper .fa-github:active {
     color: #e5e8ee;
   }
-  .colorContainer.darkModeOn footer .bottom .resume:hover:not(:active) {
-    color: #e5e8ee;
-  }
   .colorContainer.darkModeOn .errorNav ul li a:hover {
     color: #17a2aa;
   }
@@ -2919,9 +2916,6 @@ body.bm-overlay {
   }
   .colorContainer:not(.darkModeOn) footer .contactWrapper .fa-linkedin:active,
 .colorContainer:not(.darkModeOn) footer .contactWrapper .fa-github:active {
-    color: #00050f;
-  }
-  .colorContainer:not(.darkModeOn) footer .bottom .resume:hover:not(:active) {
     color: #00050f;
   }
   .colorContainer:not(.darkModeOn) .errorNav ul li a:hover {
@@ -3059,6 +3053,11 @@ body.bm-overlay {
 .colorContainer:not(.darkModeOn) footer .bottom .resume:active svg,
 .colorContainer:not(.darkModeOn) footer .bottom .resume:hover svg {
   color: #00050f;
+}
+.colorContainer:not(.darkModeOn) footer .bottom .resume:hover:not(:active) .resumeSvg text {
+  fill: #00050f;
+  stroke: #e5e8ee;
+  stroke-width: 0.4px;
 }
 .colorContainer:not(.darkModeOn) .errorHeader {
   background-image: none;
@@ -3211,6 +3210,10 @@ body.bm-overlay {
 .colorContainer.darkModeOn footer .bottom .resume:active svg,
 .colorContainer.darkModeOn footer .bottom .resume:hover svg {
   color: #e5e8ee;
+}
+.colorContainer.darkModeOn footer .bottom .resume:hover:not(:active) .resumeSvg text {
+  fill: #e5e8ee;
+  stroke: #00050f;
 }
 .colorContainer.darkModeOn .errorSection h1 {
   color: #e5e8ee;
