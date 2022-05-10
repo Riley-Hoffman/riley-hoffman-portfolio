@@ -6,6 +6,7 @@
                 <div class="flexBox inputBox">
                     <label for="name">Name:</label>
                     <input
+                        class="test"
                         enterkeyhint="next"
                         id="name"
                         name="name"
@@ -16,6 +17,7 @@
 
                     <label for="email">Email:</label>
                     <input
+                        class="test"
                         enterkeyhint="next"
                         id="email"
                         name="email"
@@ -26,6 +28,7 @@
                 </div>
                 <label for="message">Message:</label>
                 <textarea
+                    class="test"
                     id="message"
                     name="message"
                     placeholder="Write something.."
