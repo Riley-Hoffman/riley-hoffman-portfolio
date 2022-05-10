@@ -11,7 +11,11 @@
             whiteBackground: !darkOn && $route.path != '/',
         }"
     >
-        <button class="skip-link" :class="focusOutline" @click="main.focus()">
+        <button
+            class="skip-link"
+            :class="focusOutline"
+            @click="main.querySelectorAll('a, button')[0].focus()"
+        >
             Skip To Content
         </button>
         <router-link
