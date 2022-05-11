@@ -7,7 +7,6 @@
                         <div class="flexBox iconContainer">
                             <font-awesome-icon
                                 aria-hidden="true"
-                                class="fas fa-water"
                                 icon="water"
                             />
                         </div>

@@ -20,7 +20,6 @@
             Back To top
             <font-awesome-icon
                 aria-hidden="true"
-                class="fa-solid fa-arrow-up"
                 icon="arrow-up"
             />
         </button>
@@ -44,7 +43,6 @@
                 </svg>
                 <font-awesome-icon
                     aria-hidden="true"
-                    class="fa-solid fa-file-arrow-down"
                     icon="file-arrow-down"
                 />
             </a>

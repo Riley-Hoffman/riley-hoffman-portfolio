@@ -31,9 +31,9 @@
                     :href="imgUrl"
                     :srcset="srcSet"
                     :title="title"
-                    sizes="(max-width: 900px) 100vw, 900px"
                     height="887"
                     width="887"
+                    sizes="(max-width: 900px) 100vw, 900px"
                 />
                 <div class="oval"></div>
             </a>

@@ -5,7 +5,6 @@
                 <button class="modalClose" @click="hideModal">
                     <font-awesome-icon
                         aria-hidden="true"
-                        class="fa-solid fa-xmark"
                         icon="xmark"
                     />
                     <span class="sr-only">Close contact form</span>

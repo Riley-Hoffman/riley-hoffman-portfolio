@@ -8,7 +8,6 @@
         >
             <font-awesome-icon
                 aria-hidden="true"
-                class="fab fa-github"
                 :icon="['fab', 'github']"
             />
             <span class="sr-only">Github</span>
@@ -21,7 +20,6 @@
         >
             <font-awesome-icon
                 aria-hidden="true"
-                class="fab fa-linkedin"
                 :icon="['fab', 'linkedin']"
             />
             <span class="sr-only">Linkedin</span>
