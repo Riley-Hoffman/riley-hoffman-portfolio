@@ -33,7 +33,7 @@
                                 >
                                 <font-awesome-icon
                                     aria-hidden="true"
-                                    class="fa-solid fa-arrow-right-long homeLinkArrow animate__animated animate__backInLeft"
+                                    class="homeLinkArrow animate__animated animate__backInLeft"
                                     icon="arrow-right-long"
                                     :class="
                                         !this.reduceMotion && {

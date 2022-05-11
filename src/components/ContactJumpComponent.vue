@@ -12,7 +12,6 @@
         </button>
         <font-awesome-icon
             icon="arrow-down"
-            class="fa-solid arrow-down"
             aria-hidden="true"
             :class="
                 !this.reduceMotion && {
