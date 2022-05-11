@@ -2,6 +2,7 @@ $animate-duration: 1s;
 $animate-delay: 1s;
 $animate-repeat: 1;
 $black: #00050f;
+$white: #e5e8ee;
 $blackBackground: linear-gradient(
     0deg,
     hsl(220deg 100% 3%) 20%,
@@ -32,7 +33,6 @@ $whiteBackground: linear-gradient(
     hsl(189deg 13% 83%) 101%,
     hsl(185deg 12% 82%) 100%
 );
-$white: #e5e8ee;
 $teal: #17a2aa;
 $tealVariant: #329ea4;
 $darkTeal: #245056;
