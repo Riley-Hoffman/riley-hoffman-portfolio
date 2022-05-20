@@ -59,9 +59,6 @@ export default {
   },
   props: ['darkOn', 'noTransition'],
   methods: {
-    consoleLogNoColorTransition () {
-      console.log(this.noTransition)
-    },
     backToTop () {
       window.scrollTo({
         top: 0,
