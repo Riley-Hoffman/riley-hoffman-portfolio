@@ -1,14 +1,16 @@
 <template>
     <header
+        ref="header"
         class="flexBox"
         :class="{
-            absoluteHeader: scrolledToFooter,
-            blackBackground: darkOn,
             homeHeader: $route.path === '/',
+            blackBackground: darkOn,
+            whiteBackground: !darkOn && $route.path != '/',
             relativeHeader: $route.path != '/',
             scrolledToMain: scrolledToMain && $route.path != '/projects',
+            transitionOpacity: scrolledToFooter,
             transparent: scrolledToFooter && !scrolledToTop,
-            whiteBackground: !darkOn && $route.path != '/',
+            noAfter: menuOpen,
         }"
     >
         <button
@@ -47,6 +49,8 @@
             >
                 <Slide
                     right
+                    ref="slide"
+                    :closeOnNavigation="true"
                     :class="{
                         aboutNav: $route.path === '/about',
                         skillsNav: $route.path === '/skills',
@@ -54,6 +58,8 @@
                         lightBackground: !darkOn,
                     }"
                     v-if="scrolledToMain && !scrolledToTop"
+                    @openMenu="hideTopStrip(true)"
+                    @closeMenu="hideTopStrip(false)"
                 >
                     <NavContentComponent :="this.$props" />
                 </Slide>
@@ -92,6 +98,13 @@ export default {
     'toggleColor',
     'toggleIcon'
   ],
+  data () {
+    return {
+      menuOpen: false,
+      closeMenu: Slide.methods.closeMenu,
+      isClosed: Slide.components.Menu.props
+    }
+  },
   computed: {
     focusOutline () {
       if (
@@ -109,6 +122,27 @@ export default {
         return 'whiteOutline'
       }
       return 'blackOutline'
+    }
+  },
+  methods: {
+    hideTopStrip (open) {
+      if (open) {
+        this.menuOpen = true
+      } else if (!open) {
+        this.menuOpen = false
+      }
+    }
+  },
+  watch: {
+    hideStripOnTopScroll () {
+      if (window.scrollY < 40) {
+        clickBody()
+      }
+      function clickBody () {
+        if (window.scrollY > 40) {
+          document.querySelector('body').click()
+        }
+      }
     }
   }
 }

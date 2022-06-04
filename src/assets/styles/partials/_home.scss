@@ -10,6 +10,8 @@
         }
     }
     .splash {
+        content-visibility: auto;
+        contain-intrinsic-size: 1px 5000px;
         padding: 30vh 0 50px;
         padding: 20vh 0 30px;
         position: absolute;

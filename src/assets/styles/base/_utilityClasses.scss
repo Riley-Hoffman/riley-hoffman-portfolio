@@ -35,9 +35,8 @@
         display: flex;
     }
 
-    .absoluteHeader {
+    .transitionOpacity {
         transition: all 0s, opacity 0.1s !important;
-        position: absolute;
     }
 
     .black {
