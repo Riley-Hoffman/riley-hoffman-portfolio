@@ -453,9 +453,8 @@ body.bm-overlay {
 .colorContainer .flexBox {
   display: flex;
 }
-.colorContainer .absoluteHeader {
+.colorContainer .transitionOpacity {
   transition: all 0s, opacity 0.1s !important;
-  position: absolute;
 }
 .colorContainer .black {
   color: #00050f !important;
@@ -793,6 +792,9 @@ body.bm-overlay {
   content: "";
   position: absolute;
 }
+.colorContainer header.noAfter::after {
+  display: none !important;
+}
 .colorContainer header * {
   transition: all 0.5s;
 }
@@ -1087,6 +1089,8 @@ body.bm-overlay {
   padding-top: 20px;
 }
 .colorContainer .splash {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 5000px;
   padding: 30vh 0 50px;
   padding: 20vh 0 30px;
   position: absolute;
