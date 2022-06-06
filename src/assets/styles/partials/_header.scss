@@ -112,11 +112,15 @@
         @include height100Relative;
         nav {
             transition: margin 0.3s, width 0.6s;
-            align-items: center;
             display: flex;
-            justify-content: flex-end;
             width: 75%;
             height: 100%;
+            > .navContent {
+                align-items: center;
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
             ul {
                 align-items: center;
                 position: relative;
