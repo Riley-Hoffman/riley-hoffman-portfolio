@@ -10,7 +10,6 @@
             scrolledToMain: scrolledToMain && $route.path != '/projects',
             transitionOpacity: scrolledToFooter,
             transparent: scrolledToFooter && !scrolledToTop,
-            noAfter: menuOpen,
         }"
     >
         <button
@@ -58,8 +57,6 @@
                         lightBackground: !darkOn,
                     }"
                     v-if="scrolledToMain && !scrolledToTop"
-                    @openMenu="hideTopStrip(true)"
-                    @closeMenu="hideTopStrip(false)"
                 >
                     <NavContentComponent :="this.$props" />
                 </Slide>
@@ -102,7 +99,7 @@ export default {
     return {
       menuOpen: false,
       closeMenu: Slide.methods.closeMenu,
-      isClosed: Slide.components.Menu.props
+      isClosed: Slide.components.Menu.props.width
     }
   },
   computed: {
@@ -122,15 +119,6 @@ export default {
         return 'whiteOutline'
       }
       return 'blackOutline'
-    }
-  },
-  methods: {
-    hideTopStrip (open) {
-      if (open) {
-        this.menuOpen = true
-      } else if (!open) {
-        this.menuOpen = false
-      }
     }
   },
   watch: {
